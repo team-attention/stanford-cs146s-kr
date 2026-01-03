@@ -24,7 +24,7 @@ export const syllabus: Week[] = [
       {
         title: 'Prompt Engineering Guide',
         url: 'https://www.promptingguide.ai/techniques',
-        // krSlug: 'prompt-engineering-guide', // TODO: 번역 완료 후 공개
+        translationStatus: 'in_progress',
       },
       {
         title: 'AI Prompt Engineering: A Deep Dive',
@@ -67,7 +67,7 @@ export const syllabus: Week[] = [
       {
         title: 'MCP Introduction',
         url: 'https://stytch.com/blog/model-context-protocol-introduction/',
-        // krSlug: 'mcp-documentation', // TODO: 번역 완료 후 공개
+        translationStatus: 'in_progress',
       },
       {
         title: 'Sample MCP Server Implementations',

@@ -1,53 +1,61 @@
 import { Link } from 'react-router-dom'
-import type { Reading } from '@/types/syllabus'
+import type { Reading, TranslationStatus } from '@/types/syllabus'
 
 interface ReadingListProps {
   readings: Reading[]
   weekNumber: number
 }
 
+// 번역 상태 결정: 명시된 status > krSlug 유무로 판단
+function getTranslationStatus(reading: Reading): TranslationStatus {
+  if (reading.translationStatus) return reading.translationStatus
+  return reading.krSlug ? 'complete' : 'none'
+}
+
+// 상태별 라벨
+const statusLabel: Record<Exclude<TranslationStatus, 'complete'>, string> = {
+  in_progress: '번역중',
+  none: '예정',
+}
+
 export default function ReadingList({ readings, weekNumber }: ReadingListProps) {
   return (
     <ul className="pl-3 space-y-2">
-      {readings.map((reading, i) => (
-        <li key={i} className="text-[20.8px] leading-[33.28px] text-text-body">
-          <div>• {reading.title}</div>
-          <div className="ml-4 text-[14px]">
-            {reading.krSlug ? (
-              <>
-                <span className="text-text-secondary">→ </span>
+      {readings.map((reading, i) => {
+        const status = getTranslationStatus(reading)
+        const hasKorean = reading.krSlug && status === 'complete'
+
+        return (
+          <li key={i} className="text-[20.8px] leading-[33.28px] text-text-body">
+            <div>• {reading.title}</div>
+            <div className="ml-4 text-[14px]">
+              <span className="text-text-secondary">→ </span>
+              {hasKorean ? (
                 <Link
                   to={`/readings/week${weekNumber}/${reading.krSlug}`}
                   className="text-kr-accent hover:underline"
                 >
                   한국어
                 </Link>
-                <span className="text-text-secondary mx-2">|</span>
-                <a
-                  href={reading.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-stanford-red hover:underline"
-                >
-                  English
-                </a>
-              </>
-            ) : (
-              <>
-                <span className="text-text-secondary">→ </span>
-                <a
-                  href={reading.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-stanford-red hover:underline"
-                >
-                  English
-                </a>
-              </>
-            )}
-          </div>
-        </li>
-      ))}
+              ) : (
+                <span className="text-text-secondary/60">
+                  한국어
+                  <span className="text-[12px] ml-1 opacity-70">({statusLabel[status as Exclude<TranslationStatus, 'complete'>]})</span>
+                </span>
+              )}
+              <span className="text-text-secondary mx-2">|</span>
+              <a
+                href={reading.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-stanford-red hover:underline"
+              >
+                English
+              </a>
+            </div>
+          </li>
+        )
+      })}
     </ul>
   )
 }
