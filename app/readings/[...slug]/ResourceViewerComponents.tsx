@@ -212,6 +212,34 @@ export function YouTubeAnalysis({ resource, onSeekTo }: AnalysisComponentProps) 
 }
 
 /**
+ * detailedNote_ko에서 슬라이드별 노트를 추출하는 함수
+ */
+function parseSlideNotes(detailedNote: string): Map<number, string> {
+  const slideNotes = new Map<number, string>();
+
+  // "#### 📍 슬라이드 N:" 패턴으로 분리
+  const slidePattern = /#### 📍 슬라이드 (\d+):[^\n]*\n/g;
+  const parts = detailedNote.split(slidePattern);
+
+  // parts[0]은 첫 슬라이드 이전 내용 (핵심 내용 등)
+  // parts[1]은 슬라이드 번호, parts[2]는 슬라이드 내용, ...
+  for (let i = 1; i < parts.length; i += 2) {
+    const slideNumber = parseInt(parts[i], 10);
+    let content = parts[i + 1] || '';
+
+    // 다음 슬라이드나 섹션 구분자까지의 내용만 추출
+    const nextSectionMatch = content.match(/\n---\n/);
+    if (nextSectionMatch && nextSectionMatch.index !== undefined) {
+      content = content.substring(0, nextSectionMatch.index);
+    }
+
+    slideNotes.set(slideNumber, content.trim());
+  }
+
+  return slideNotes;
+}
+
+/**
  * Slides 분석 결과 (정적 표시)
  */
 export function SlidesAnalysis({ resource, onSlideChange }: AnalysisComponentProps) {
@@ -224,11 +252,15 @@ export function SlidesAnalysis({ resource, onSlideChange }: AnalysisComponentPro
     }
   };
 
-  // 목차 아이템 생성 (상세 노트가 먼저)
+  // detailedNote_ko에서 슬라이드별 노트 추출
+  const slideNotes = analysis?.detailedNote_ko
+    ? parseSlideNotes(analysis.detailedNote_ko)
+    : new Map<number, string>();
+
+  // 목차 아이템 생성 (상세 노트 제거, 요약과 슬라이드만)
   const tocItems = [
-    { id: 'detailed-note', label: '1. 상세 학습 노트', available: !!analysis?.detailedNote_ko },
-    { id: 'summary', label: '2. 전체 요약', available: !!analysis?.summary_ko },
-    { id: 'slides-detail', label: '3. 슬라이드별 번역 및 분석', available: analysis?.slides && analysis.slides.length > 0 },
+    { id: 'summary', label: '1. 전체 요약', available: !!analysis?.summary_ko },
+    { id: 'slides-detail', label: '2. 슬라이드별 학습 노트', available: analysis?.slides && analysis.slides.length > 0 },
   ].filter(item => item.available);
 
   const scrollToSection = (id: string) => {
@@ -275,7 +307,7 @@ export function SlidesAnalysis({ resource, onSlideChange }: AnalysisComponentPro
       )}
 
       {/* Table of Contents (목차) */}
-      {tocItems.length > 0 && (analysis?.detailedNote_ko || analysis?.summary_ko) && (
+      {tocItems.length > 0 && analysis?.summary_ko && (
         <div className="rounded-lg border border-gray-200 bg-white p-6">
           <h2 className="text-lg font-bold text-black mb-4 flex items-center gap-2">
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -300,28 +332,11 @@ export function SlidesAnalysis({ resource, onSlideChange }: AnalysisComponentPro
         </div>
       )}
 
-      {/* 1. 상세 학습 노트 (Detailed Note) */}
-      {analysis?.detailedNote_ko && (
-        <div id="detailed-note" className="rounded-xl border border-gray-200 bg-white p-8">
-          <h2 className="text-xl font-bold text-black mb-6 flex items-center gap-3">
-            <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-black text-white text-base font-bold">1</span>
-            상세 학습 노트
-          </h2>
-          <div className="prose prose-lg max-w-none prose-headings:text-black prose-headings:font-semibold prose-headings:mb-4 prose-headings:mt-8 prose-p:text-black prose-p:leading-loose prose-p:mb-6 prose-li:text-black prose-li:leading-loose prose-li:mb-2 prose-ul:space-y-2 prose-ol:space-y-2 prose-strong:text-black prose-a:text-black prose-table:text-base prose-th:bg-gray-100 prose-th:p-3 prose-td:p-3 prose-td:border prose-th:border">
-            <ReactMarkdown remarkPlugins={[remarkGfm]}>
-              {analysis.detailedNote_ko}
-            </ReactMarkdown>
-          </div>
-        </div>
-      )}
-
-      {/* 2. 전체 요약 (Summary) */}
+      {/* 1. 전체 요약 (Summary) */}
       {analysis?.summary_ko && (
         <div id="summary" className="rounded-lg border border-gray-200 bg-white p-6">
           <h2 className="text-xl font-bold text-black mb-4 flex items-center gap-3">
-            {analysis?.detailedNote_ko && (
-              <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-black text-white text-base font-bold">2</span>
-            )}
+            <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-black text-white text-base font-bold">1</span>
             전체 요약
           </h2>
           <p className="text-black leading-relaxed">
@@ -330,115 +345,132 @@ export function SlidesAnalysis({ resource, onSlideChange }: AnalysisComponentPro
         </div>
       )}
 
-      {/* 3. 슬라이드별 번역 및 분석 (Slides) */}
+      {/* 2. 슬라이드별 학습 노트 (Slides) */}
       {analysis?.slides && analysis.slides.length > 0 && (
         <div id="slides-detail" className="space-y-8">
           <div className="rounded-lg border border-gray-200 bg-white p-4">
             <h2 className="text-xl font-bold text-black flex items-center gap-3">
-              {analysis?.detailedNote_ko && (
-                <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-black text-white text-base font-bold">3</span>
-              )}
-              슬라이드별 번역 및 분석 ({analysis.totalSlides}장)
+              <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-black text-white text-base font-bold">2</span>
+              슬라이드별 학습 노트 ({analysis.totalSlides}장)
             </h2>
           </div>
 
-          {analysis.slides.map((slide, idx) => (
-            <div
-              key={idx}
-              id={`slide-${slide.slideNumber}`}
-              className="rounded-lg border border-gray-200 bg-white overflow-hidden scroll-mt-32"
-            >
-              {/* Slide Header - Clickable to sync with left panel */}
-              <div
-                className="relative cursor-pointer hover:bg-gray-200/50 transition-colors bg-black p-4"
-                onClick={() => handleSlideClick(slide.slideNumber)}
-                title={`슬라이드 ${slide.slideNumber} 클릭하여 왼쪽 패널로 이동`}
-              >
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-4">
-                    <div className="flex items-center justify-center w-16 h-16 rounded-xl bg-white/20 backdrop-blur">
-                      <span className="text-3xl font-bold text-white">
-                        {slide.slideNumber}
-                      </span>
-                    </div>
-                    <div>
-                      <p className="text-white/80 text-sm">슬라이드</p>
-                      <p className="text-white font-semibold text-lg">
-                        {slide.slideNumber} / {analysis.totalSlides}
-                      </p>
-                    </div>
-                  </div>
+          {analysis.slides.map((slide, idx) => {
+            const slideNote = slideNotes.get(slide.slideNumber);
 
-                  <div className="flex items-center gap-2 px-3 py-2 rounded-lg bg-white/10 text-white text-sm">
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                    </svg>
-                    <span>클릭하여 이동</span>
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
+            return (
+              <div
+                key={idx}
+                id={`slide-${slide.slideNumber}`}
+                className="rounded-lg border border-gray-200 bg-white overflow-hidden scroll-mt-32"
+              >
+                {/* Slide Header - Clickable to sync with left panel */}
+                <div
+                  className="relative cursor-pointer hover:bg-gray-200/50 transition-colors bg-black p-4"
+                  onClick={() => handleSlideClick(slide.slideNumber)}
+                  title={`슬라이드 ${slide.slideNumber} 클릭하여 왼쪽 패널로 이동`}
+                >
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-4">
+                      <div className="flex items-center justify-center w-16 h-16 rounded-xl bg-white/20 backdrop-blur">
+                        <span className="text-3xl font-bold text-white">
+                          {slide.slideNumber}
+                        </span>
+                      </div>
+                      <div>
+                        <p className="text-white/80 text-sm">슬라이드</p>
+                        <p className="text-white font-semibold text-lg">
+                          {slide.slideNumber} / {analysis.totalSlides}
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="flex items-center gap-2 px-3 py-2 rounded-lg bg-white/10 text-white text-sm">
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                      </svg>
+                      <span>클릭하여 이동</span>
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              {/* Translation and Analysis */}
-              <div className="divide-y divide-gray-100">
-                {/* Section 1: Translated Text */}
-                {slide.text_ko && (
+                {/* Content */}
+                <div className="divide-y divide-gray-100">
+                  {/* Section 1: 기술적 분석 (학습 노트 또는 기존 분석) */}
                   <div className="p-4 bg-white">
-                    <div className="flex items-center gap-2 mb-2">
-                      <span className="text-xs font-semibold text-black uppercase tracking-wide">번역</span>
-                    </div>
-                    <div className="bg-gray-200/30 border border-gray-300 rounded-lg p-4">
-                      <p className="text-black whitespace-pre-wrap leading-relaxed">
-                        {slide.text_ko}
-                      </p>
-                    </div>
-                    {slide.text_original && (
-                      <details className="mt-2">
-                        <summary className="text-xs text-[#666666] cursor-pointer hover:opacity-70">
-                          원문 보기
-                        </summary>
-                        <div className="mt-2 bg-gray-50 border border-gray-200 rounded-lg p-3">
-                          <p className="text-sm text-black whitespace-pre-wrap">
-                            {slide.text_original}
+
+                    {slideNote ? (
+                      /* 학습 노트가 있으면 학습 노트 표시 */
+                      <div className="prose prose-sm max-w-none prose-headings:text-black prose-headings:font-semibold prose-headings:mb-2 prose-headings:mt-4 prose-p:text-black prose-p:leading-relaxed prose-p:mb-3 prose-li:text-black prose-li:leading-relaxed prose-ul:space-y-1 prose-ol:space-y-1 prose-strong:text-black">
+                        <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                          {slideNote}
+                        </ReactMarkdown>
+                      </div>
+                    ) : (
+                      /* 학습 노트가 없으면 기존 분석 표시 */
+                      <>
+                        <div className="bg-[#F9F9F9] border border-gray-200 rounded-lg p-4 mb-3">
+                          <p className="text-black leading-relaxed">
+                            {slide.summary_ko}
                           </p>
                         </div>
-                      </details>
+                        {slide.keyPoints && slide.keyPoints.length > 0 && (
+                          <div className="mt-3">
+                            <span className="text-xs font-medium text-black block mb-2">핵심 포인트</span>
+                            <ul className="space-y-1.5">
+                              {slide.keyPoints.map((point, pidx) => (
+                                <li key={pidx} className="flex items-start gap-2 text-sm text-black">
+                                  <span className="text-black mt-0.5">•</span>
+                                  <span>{point}</span>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
+                      </>
                     )}
                   </div>
-                )}
 
-                {/* Section 2: Analysis */}
-                <div className="p-4 bg-gradient-to-b from-gray-50 to-white">
-                  <div className="flex items-center gap-2 mb-3">
-                    <span className="text-xs font-semibold text-black uppercase tracking-wide">기술적 분석</span>
-                  </div>
-
-                  <div className="bg-[#F9F9F9] border border-gray-200 rounded-lg p-4 mb-3">
-                    <p className="text-black leading-relaxed">
-                      {slide.summary_ko}
-                    </p>
-                  </div>
-
-                  {slide.keyPoints && slide.keyPoints.length > 0 && (
-                    <div className="mt-3">
-                      <span className="text-xs font-medium text-black block mb-2">핵심 포인트</span>
-                      <ul className="space-y-1.5">
-                        {slide.keyPoints.map((point, pidx) => (
-                          <li key={pidx} className="flex items-start gap-2 text-sm text-black">
-                            <span className="text-black mt-0.5">•</span>
-                            <span>{point}</span>
-                          </li>
-                        ))}
-                      </ul>
+                  {/* Section 2: 번역 (참고 - 접기) */}
+                  {slide.text_ko && (
+                    <div className="p-4 bg-gradient-to-b from-gray-50 to-white">
+                      <details className="group">
+                        <summary className="flex items-center gap-2 cursor-pointer hover:opacity-70 text-sm text-[#666666]">
+                          <svg className="w-4 h-4 transition-transform group-open:rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                          </svg>
+                          <span className="font-medium">번역 참고</span>
+                        </summary>
+                        <div className="mt-3 pl-6">
+                          <div className="bg-gray-100 border border-gray-200 rounded-lg p-4">
+                            <p className="text-black whitespace-pre-wrap leading-relaxed text-sm">
+                              {slide.text_ko}
+                            </p>
+                          </div>
+                          {slide.text_original && (
+                            <details className="mt-2">
+                              <summary className="text-xs text-[#888888] cursor-pointer hover:opacity-70">
+                                원문 보기
+                              </summary>
+                              <div className="mt-2 bg-gray-50 border border-gray-200 rounded-lg p-3">
+                                <p className="text-xs text-[#666666] whitespace-pre-wrap">
+                                  {slide.text_original}
+                                </p>
+                              </div>
+                            </details>
+                          )}
+                        </div>
+                      </details>
                     </div>
                   )}
                 </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       )}
     </div>
