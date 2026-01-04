@@ -1,0 +1,226 @@
+{
+  "slug": "week-8-lecture-월-11-10",
+  "title": "월 11/10: 단일 프롬프트로 엔드투엔드 앱 만들기",
+  "url": "https://docs.google.com/presentation/d/1GrVLsfMFIXMiGjIW9D7EJIyLYh_-3ReHHNd_vRfZUoo/edit?usp=sharing",
+  "type": "slides",
+  "week": 8,
+  "analyzedAt": "2026-01-03T23:23:56.806Z",
+  "analysis": {
+    "summary_ko": "이 프레젠테이션은 소프트웨어 개발의 진화, 특히 자동화된 UI 및 앱 빌딩 도구의 발전에 대해 다룹니다. 과거의 LAMP, MERN 스택과 같은 전통적인 웹 개발 방식에서 벗어나, 현재는 AI 기반의 로우코드/노코드 플랫폼을 통해 누구나 쉽게 앱을 만들 수 있는 시대가 왔음을 강조합니다. 이러한 새로운 패러다임은 엔지니어의 역할 변화와 디자인, 제품 관리 등 다양한 영역에서의 협업을 촉진하지만, 동시에 보안, 앱의 획일화, 복잡성 한계 등의 과제도 안고 있습니다. 궁극적으로 AI 기반 앱 빌더는 소프트웨어 개발의 접근성을 높이고 생산성을 향상시키는 잠재력을 지니고 있음을 시사합니다.\n",
+    "keyPoints": [],
+    "topics": [],
+    "slides": [
+      {
+        "slideNumber": 1,
+        "summary_ko": "이 슬라이드는 제목 슬라이드이며, 강의 제목, 과목 코드, 학교, 학기, 발표자 이름, 그리고 웹사이트 주소를 제공합니다.",
+        "keyPoints": [
+          "강의 소개",
+          "발표자 소개"
+        ],
+        "text_original": "The Modern Software Developer\nCS146S \nStanford University, Fall 2025\nMihail Eric\nthemodernsoftware.dev",
+        "text_ko": "현대 소프트웨어 개발자\nCS146S\n스탠포드 대학교, 2025년 가을 학기\nMihail Eric\nthemodernsoftware.dev"
+      },
+      {
+        "slideNumber": 2,
+        "summary_ko": "이 슬라이드는 프레젠테이션의 주요 주제인 자동화된 사용자 인터페이스(UI, User Interface) 및 앱 빌딩에 대해 소개합니다.",
+        "keyPoints": [
+          "자동화된 UI",
+          "자동화된 앱 빌딩"
+        ],
+        "text_original": "Automated UI and App Building\nthemodernsoftware.dev",
+        "text_ko": "자동화된 UI 및 앱 빌딩\nthemodernsoftware.dev"
+      },
+      {
+        "slideNumber": 3,
+        "summary_ko": "이 슬라이드는 발표자가 '바이브 코딩(vibe coding)'을 지향하지 않고 소프트웨어 개발 원칙을 중시한다는 점을 강조합니다.",
+        "keyPoints": [
+          "바이브 코딩 지양",
+          "소프트웨어 개발 순수주의"
+        ],
+        "text_original": "This is not the “vibe coding” class\nthemodernsoftware.dev\nBecause I’m a software development purist",
+        "text_ko": "이것은 \"바이브 코딩\" 수업이 아닙니다\nthemodernsoftware.dev\n왜냐하면 저는 소프트웨어 개발 순수주의자이기 때문입니다"
+      },
+      {
+        "slideNumber": 4,
+        "summary_ko": "이 슬라이드는 앞선 슬라이드와 대조적으로, 오늘은 예외적인 내용을 다룰 것임을 암시합니다.",
+        "keyPoints": [
+          "예외적인 내용 암시"
+        ],
+        "text_original": "…except today\nthemodernsoftware.dev",
+        "text_ko": "…오늘 빼고\nthemodernsoftware.dev"
+      },
+      {
+        "slideNumber": 5,
+        "summary_ko": "현대 서비스형 소프트웨어(SaaS, Software as a Service) 개발은 지난 20년 이상 웹 애플리케이션에 집중해 왔다는 점을 설명합니다.",
+        "keyPoints": [
+          "SaaS 개발",
+          "웹 앱 집중"
+        ],
+        "text_original": "Modern SaaS development has focused on web apps for over two decades",
+        "text_ko": "현대 SaaS 개발은 20년 넘게 웹 앱에 집중해 왔습니다"
+      },
+      {
+        "slideNumber": 6,
+        "summary_ko": "이 슬라이드는 서비스형 소프트웨어(SaaS, Software as a Service)가 웹 앱에 집중된 이유에 대한 질문을 던지고, Salesforce를 최초의 SaaS 플랫폼으로 언급합니다. 또한, 전통적인 및 최신 웹 개발 스택인 LAMP, MERN, JAM, Serverless를 나열합니다.",
+        "keyPoints": [
+          "SaaS의 웹 앱 집중 이유",
+          "최초의 SaaS 플랫폼",
+          "웹 개발 스택 종류"
+        ],
+        "text_original": "Why\nthemodernsoftware.dev\nSalesforce in 1999 often considered first SaaS platform\n\nLAMP\nMERN\nJAM\nServerless",
+        "text_ko": "왜?\nthemodernsoftware.dev\n1999년의 Salesforce는 종종 최초의 SaaS 플랫폼으로 여겨집니다\n\nLAMP\nMERN\nJAM\nServerless"
+      },
+      {
+        "slideNumber": 7,
+        "summary_ko": "이 슬라이드는 과거에 주로 사용되었던 다양한 웹 개발 스택인 LAMP, MERN, MEVN, Serverless 스택의 기술 구성 요소와 특징을 설명합니다.",
+        "keyPoints": [
+          "LAMP 스택 설명",
+          "MERN 스택 설명",
+          "MEVN 스택 설명",
+          "Serverless 스택 설명"
+        ],
+        "text_original": "The Old Days\nthemodernsoftware.dev\nLAMP Stack\nTechnologies: Linux (OS), Apache (Web Server), MySQL (Database), PHP (Backend)\nDescription: Classic open-source web stack for dynamic websites and traditional web apps.\n\nMERN Stack\nTechnologies: MongoDB, Express.js, React.js, Node.js\nDescription: Full JavaScript stack for building modern, interactive single-page web apps (SPAs).\n\nMEVN Stack\nTechnologies: MongoDB, Express.js, Vue.js, Node.js\nDescription: JavaScript-based stack using Vue instead of React — lightweight, flexible, and easy to learn.\n\nServerless Stack\nTechnologies: Frontend (React/Vue/Svelte), Backend (AWS Lambda, Google Cloud Functions), Database (DynamoDB, Firebase)\nDescription: Cloud-native stack — runs backend logic on-demand without managing servers; ideal for scalable, event-driven apps.",
+        "text_ko": "과거\nthemodernsoftware.dev\nLAMP 스택\n기술: Linux (OS), Apache (웹 서버), MySQL (데이터베이스), PHP (백엔드)\n설명: 동적 웹사이트 및 전통적인 웹 앱을 위한 고전적인 오픈 소스 웹 스택입니다.\n\nMERN 스택\n기술: MongoDB, Express.js, React.js, Node.js\n설명: 현대적이고 상호 작용적인 싱글 페이지 웹 앱(SPA, Single Page Application)을 구축하기 위한 전체 JavaScript 스택입니다.\n\nMEVN 스택\n기술: MongoDB, Express.js, Vue.js, Node.js\n설명: React 대신 Vue를 사용하는 JavaScript 기반 스택 — 가볍고, 유연하며, 배우기 쉽습니다.\n\n서버리스 스택\n기술: 프론트엔드 (React/Vue/Svelte), 백엔드 (AWS Lambda, Google Cloud Functions), 데이터베이스 (DynamoDB, Firebase)\n설명: 클라우드 네이티브 스택 — 서버 관리가 필요 없이 주문형으로 백엔드 로직을 실행합니다. 확장 가능하고 이벤트 기반 앱에 이상적입니다."
+      },
+      {
+        "slideNumber": 8,
+        "summary_ko": "이 슬라이드는 과거 웹 개발에서 클라이언트 측, 서버 측, 데이터베이스의 역할과 MERN 스택과의 연관성을 간략하게 보여줍니다.",
+        "keyPoints": [
+          "클라이언트-서버 모델",
+          "데이터베이스 역할",
+          "MERN 스택과 연관성"
+        ],
+        "text_original": "The Old Days\nthemodernsoftware.dev\nclient-side\nserver-side\ndatabase\nMERN",
+        "text_ko": "과거\nthemodernsoftware.dev\n클라이언트 측\n서버 측\n데이터베이스\nMERN"
+      },
+      {
+        "slideNumber": 9,
+        "summary_ko": "이 슬라이드는 JAM 스택의 구성 요소(JavaScript, API, Markup)와 사용 사례(정적 사이트 및 현대 웹 앱)를 설명하고, 관련 도구(Gatsby, Next.js, Nuxt.js, 헤드리스 CMS)를 예시로 제시합니다.",
+        "keyPoints": [
+          "JAM 스택 구성 요소",
+          "JAM 스택 사용 사례",
+          "관련 도구 예시"
+        ],
+        "text_original": "The Old Days\nthemodernsoftware.dev\nJAM\nComponents:\nJavaScript – for dynamic functionalities\nAPIs – to connect backend services\nMarkup – prebuilt static HTML\nUsage:\nUsed for static sites and modern web apps. Common tools include Gatsby, Next.js, or Nuxt.js with headless CMSs like Contentful or Sanity.",
+        "text_ko": "과거\nthemodernsoftware.dev\nJAM\n구성 요소:\nJavaScript – 동적 기능을 위해\nAPI(Application Programming Interface) – 백엔드 서비스 연결을 위해\nMarkup – 미리 빌드된 정적 HTML\n사용법:\n정적 사이트 및 현대적인 웹 앱에 사용됩니다. 일반적인 도구로는 Gatsby, Next.js 또는 Nuxt.js와 Contentful 또는 Sanity와 같은 헤드리스 CMS가 있습니다."
+      },
+      {
+        "slideNumber": 10,
+        "summary_ko": "이 슬라이드는 아마존 웹 서비스(AWS, Amazon Web Services) 스택을 과거 웹 개발 방식의 예시로 간략하게 언급합니다.",
+        "keyPoints": [
+          "AWS 스택",
+          "과거 웹 개발 방식 예시"
+        ],
+        "text_original": "The Old Days\nthemodernsoftware.dev\nAWS Stack",
+        "text_ko": "과거\nthemodernsoftware.dev\nAWS 스택"
+      },
+      {
+        "slideNumber": 11,
+        "summary_ko": "이 슬라이드는 로우코드/노코드 플랫폼의 초기 사례로 Wix, Squarespace, Webflow를 제시합니다.",
+        "keyPoints": [
+          "로우코드/노코드 플랫폼 초기 사례",
+          "Wix",
+          "Squarespace",
+          "Webflow"
+        ],
+        "text_original": "Take #1: Visual Low-code/No-code\n\nWix\nSquarespace\nWebflow\n\nthemodernsoftware.dev",
+        "text_ko": "첫 번째 시도: 시각적 로우코드/노코드\n\nWix\nSquarespace\nWebflow\n\nthemodernsoftware.dev"
+      },
+      {
+        "slideNumber": 12,
+        "summary_ko": "이 슬라이드는 인공지능(AI, Artificial Intelligence) 기술을 활용한 새로운 개발 도구 및 플랫폼인 Lovable, Replit, Vercel v0, Base44, Cursor/Claude Code 등을 소개합니다.",
+        "keyPoints": [
+          "AI 기반 개발 도구 및 플랫폼",
+          "Lovable",
+          "Replit",
+          "Vercel v0",
+          "Base44",
+          "Cursor/Claude Code"
+        ],
+        "text_original": "The New AI World\n\nLovable\nReplit\nVercel v0\nBase44\nCursor/Claude Code/etc\n\nthemodernsoftware.dev",
+        "text_ko": "새로운 AI 세계\n\nLovable\nReplit\nVercel v0\nBase44\nCursor/Claude Code/etc\n\nthemodernsoftware.dev"
+      },
+      {
+        "slideNumber": 13,
+        "summary_ko": "이 슬라이드는 프롬프트 기반 앱 개발, 엔지니어의 다기능화, 앱 개발 접근성 향상, 그리고 1세대 노코드 플랫폼 대비 사용자 친화적인 최신 플랫폼의 등장 등 개발 환경의 변화를 강조합니다.",
+        "keyPoints": [
+          "프롬프트 기반 앱 개발",
+          "엔지니어의 다기능화",
+          "앱 개발 접근성 향상",
+          "사용자 친화적인 플랫폼 등장"
+        ],
+        "text_original": "What Has Changed\nPrompt your way to a fully fledged app\nEngineers are becoming more cross-functional\nDesign\nProduct management\nAnyone can build an app now\nMore user-friendly than 1st generation no-code platforms like Webflow, Wix, Squarespace\n\nthemodernsoftware.dev",
+        "text_ko": "무엇이 바뀌었는가\n프롬프트를 사용하여 완전한 기능을 갖춘 앱을 만들 수 있습니다\n엔지니어는 더욱 다양한 기능을 수행할 수 있게 되었습니다\n디자인\n제품 관리\n이제 누구나 앱을 만들 수 있습니다\nWebflow, Wix, Squarespace와 같은 1세대 노코드 플랫폼보다 사용자 친화적입니다\n\nthemodernsoftware.dev"
+      },
+      {
+        "slideNumber": 14,
+        "summary_ko": "이 슬라이드는 Bolt를 사용하여 프론트엔드(FE, Front-End)와 백엔드(BE, Back-End)를 포함하는 살사 파트너 찾기 앱을 만드는 과정을 예시로 보여줍니다. 초기 생성 후 색상 팔레트, 아이콘, 타이포그래피를 업데이트하는 추가 변경 사항도 언급합니다.",
+        "keyPoints": [
+          "Bolt 예제",
+          "살사 파트너 찾기 앱 만들기",
+          "초기 생성 후 추가 변경 사항"
+        ],
+        "text_original": "Let’s Make An App Right Now\nthemodernsoftware.dev\nBolt example with FE/BE\nMake salsa partner finder\nAdditional changes after initial generation\nUpdate color palette\nIconography\nTypography\n—-",
+        "text_ko": "지금 바로 앱을 만들어 봅시다\nthemodernsoftware.dev\nFE/BE가 포함된 Bolt 예제\n살사 파트너 찾기 앱 만들기\n초기 생성 후 추가 변경 사항\n색상 팔레트 업데이트\n아이콘\n타이포그래피\n—-"
+      },
+      {
+        "slideNumber": 15,
+        "summary_ko": "이 슬라이드는 특정 색상 코드(#EF8354, #660000, #EFCA08)를 사용하여 앱의 색상 팔레트를 업데이트하려는 사용자의 요청을 나타냅니다.",
+        "keyPoints": [
+          "색상 팔레트 업데이트 요청",
+          "특정 색상 코드 사용"
+        ],
+        "text_original": "This looks good. I want to update the color pallette to follow the following colors:\n#EF8354\n#660000\n#EFCA08",
+        "text_ko": "이것은 좋아 보입니다. 다음 색상을 따르도록 색상 팔레트를 업데이트하고 싶습니다:\n#EF8354\n#660000\n#EFCA08"
+      },
+      {
+        "slideNumber": 16,
+        "summary_ko": "이 슬라이드는 앱 빌더의 아키텍처를 설명하며, WebContainer를 사용하여 임의로 생성된 코드를 실행하는 구조를 강조합니다.",
+        "keyPoints": [
+          "앱 빌더 아키텍처",
+          "WebContainer 사용",
+          "임의로 생성된 코드 실행"
+        ],
+        "text_original": "App Builder Architecture\n\n\nthemodernsoftware.dev\nWebContainer\nWebcontainer running arbitrary generated code",
+        "text_ko": "앱 빌더 아키텍처\n\n\nthemodernsoftware.dev\nWebContainer\n임의로 생성된 코드를 실행하는 WebContainer"
+      },
+      {
+        "slideNumber": 17,
+        "summary_ko": "이 슬라이드는 앱 빌더의 시스템 프롬프트가 확립되고 잘 알려진 기술 및 프레임워크만 사용하도록 명시적으로 요청하고 있음을 설명하며, 관련 링크와 WebContainer 내에서의 작업을 지정하는 boltartifact/Boltaction에 대해 언급합니다.",
+        "keyPoints": [
+          "시스템 프롬프트",
+          "확립된 기술/프레임워크 사용",
+          "관련 링크",
+          "boltartifact/Boltaction"
+        ],
+        "text_original": "App Builder System Prompt\n\n\nthemodernsoftware.dev\nExplicitly requests only established, well-known technologies/frameworks\nhttps://gist.github.com/curran/753aa62fd99b7df8f858743d605f1d02\nhttps://app.prompthub.us/prompthub/bolt-agent-system-prompt\nboltartifact/Boltaction to designate things that should happen (file creation, file running, etc) in the webcontainer",
+        "text_ko": "앱 빌더 시스템 프롬프트\n\n\nthemodernsoftware.dev\n명시적으로 확립되고 잘 알려진 기술/프레임워크만 요청합니다\nhttps://gist.github.com/curran/753aa62fd99b7df8f858743d605f1d02\nhttps://app.prompthub.us/prompthub/bolt-agent-system-prompt\nWebContainer에서 발생해야 하는 작업 (파일 생성, 파일 실행 등)을 지정하기 위한 boltartifact/Boltaction"
+      },
+      {
+        "slideNumber": 18,
+        "summary_ko": "이 슬라이드는 앱 빌더의 제한 사항으로 문제 발생 시 복구 어려움, 프롬프트의 한계, 보안 문제, 앱의 획일화 가능성, 앱 복잡성 한계 등을 지적합니다.",
+        "keyPoints": [
+          "문제 발생 시 복구 어려움",
+          "프롬프트의 한계",
+          "보안 문제",
+          "앱의 획일화 가능성",
+          "앱 복잡성 한계"
+        ],
+        "text_original": "Limitations\nEverything is awesome when it works but once things break we’re back at square 1\nPrompts are just suggestions. Not every user understands that\nSecurity has been an issue in the past\nHow do we prevent all these apps from looking the same?\nHow complex can these apps realistically get?\n\nthemodernsoftware.dev",
+        "text_ko": "제한 사항\n모든 것이 작동할 때는 훌륭하지만, 문제가 발생하면 원점으로 돌아갑니다\n프롬프트는 단지 제안일 뿐입니다. 모든 사용자가 그것을 이해하는 것은 아닙니다\n보안은 과거에 문제가 있었습니다\n이 모든 앱이 똑같아 보이는 것을 어떻게 방지할 수 있을까요?\n이러한 앱은 현실적으로 얼마나 복잡해질 수 있을까요?\n\nthemodernsoftware.dev"
+      },
+      {
+        "slideNumber": 19,
+        "summary_ko": "이 슬라이드는 프레젠테이션 종료를 알리고 질문을 받기 위한 페이지입니다.",
+        "keyPoints": [
+          "질문 시간"
+        ],
+        "text_original": "Questions?\n\nthemodernsoftware.dev",
+        "text_ko": "질문 있나요?\n\nthemodernsoftware.dev"
+      }
+    ],
+    "totalSlides": 19,
+    "presentationId": "1GrVLsfMFIXMiGjIW9D7EJIyLYh_-3ReHHNd_vRfZUoo",
+    "detailedNote_ko": "## 🎯 한눈에 보는 핵심 내용\n\n### 이 프레젠테이션의 핵심 메시지\nAI 기반의 로우코드/노코드 플랫폼은 소프트웨어 개발의 접근성을 크게 높여 누구나 쉽게 앱을 만들 수 있는 시대를 열었습니다. 이러한 변화는 개발자에게는 더 다양한 역할을 수행할 수 있는 기회를 제공하며, 새로운 도구와 방법론은 개발의 효율성을 극대화합니다. 그러나 보안 이슈, 앱의 획일화 등의 과제를 해결하기 위한 지속적인 노력도 필요합니다.\n\n### 📌 핵심 Q&A\n\n**Q1: AI 기반 로우코드/노코드 플랫폼이 소프트웨어 개발에 미치는 가장 큰 영향은 무엇인가요?**\n\nAI 기반 로우코드/노코드 플랫폼은 소프트웨어 개발의 접근성을 높여 비개발자도 쉽게 앱을 만들 수 있게 합니다. 프롬프트 기반의 앱 개발 방식은 사용자가 자연어를 통해 앱을 설계하고 구현할 수 있도록 하며, 이는 프로토타이핑과 MVP 개발을 가속화합니다. 또한, 엔지니어는 개발 외에도 디자인과 제품 관리 등 다양한 분야에 걸쳐 전문성을 발휘할 수 있게 됩니다.\n\n---\n\n**Q2: 실무에서 AI 기반 개발 도구를 활용할 때 주의해야 할 점은 무엇인가요?**\n\n- 안정성과 신뢰성을 확보하기 위해 검증된 기술과 프레임워크를 선택하는 것이 중요합니다.\n- 보안 문제를 예방하기 위한 철저한 보안 업데이트와 모니터링 시스템 구축이 필요합니다.\n- 사용자 교육을 통해 프롬프트의 한계와 시스템 복구 문제를 대비해야 합니다.\n\n---\n\n**Q3: 노코드 플랫폼을 사용할 때 발생할 수 있는 문제점은 무엇이며, 어떻게 해결할 수 있을까요?**\n\n노코드 플랫폼은 문제가 발생했을 때 복구가 어렵고, 보안 취약점이 있을 수 있습니다. 또한, 앱의 획일화와 복잡성 한계가 존재합니다. 해결 방안으로는 철저한 사용자 교육과 백업 시스템, 그리고 차별화된 UX/UI 디자인을 통해 획일화를 피하고, 모듈화 설계를 통해 복잡성을 관리하는 것이 필요합니다.\n\n---\n\n### 💡 학습 가치 (Why This Matters)\n\n이 프레젠테이션은 AI 기반 로우코드/노코드 플랫폼의 발전이 소프트웨어 개발의 패러다임을 어떻게 변화시키고 있는지를 보여줍니다. 이러한 변화는 비개발자도 앱 개발에 참여할 수 있는 기회를 제공함으로써 시장의 혁신 속도를 가속화할 수 있습니다. 실무적으로는 AI 기반 개발 도구를 활용하여 효율성을 극대화하는 동시에, 보안 강화 및 사용자 교육을 통해 새로운 도구의 한계를 극복해야 합니다. 이는 결국 더 많은 사람들이 소프트웨어 개발에 참여할 수 있도록 하고, 다양한 분야의 전문가가 협업하며 혁신을 이루어 나갈 수 있는 환경을 조성합니다.\n\n---\n\n\n## 📚 슬라이드별 상세 학습 노트\n\n### 월 11/10: 단일 프롬프트로 엔드투엔드 앱 만들기\n\n#### 📍 슬라이드 1: 현대 소프트웨어 개발자\n\n**핵심 내용**\n- **강의 소개**\n  - 이 슬라이드는 CS146S라는 과목 코드로 스탠포드 대학교에서 진행되는 강의의 제목을 소개합니다. 이 강의는 2025년 가을 학기에 열리며, 주제는 현대 소프트웨어 개발자에 대한 것입니다.\n  - 강의의 목적은 소프트웨어 개발의 최신 트렌드 및 기술을 학습하는 것입니다.\n- **발표자 소개**\n  - 발표자는 Mihail Eric이며, 그의 웹사이트 themodernsoftware.dev에서 추가 정보를 얻을 수 있습니다. 발표자는 소프트웨어 개발 분야에서의 전문성을 강조하고 있습니다.\n\n**💡 인사이트**\n이 슬라이드는 강의의 전반적인 주제와 발표자를 소개하여 학습자가 강의의 방향성을 이해하고 기대감을 가질 수 있도록 합니다.\n\n---\n\n#### 📍 슬라이드 2: 자동화된 UI 및 앱 빌딩\n\n**핵심 내용**\n- **자동화된 UI**\n  - 자동화된 사용자 인터페이스(UI)는 개발자가 UI 요소를 수동으로 코딩하는 대신 자동화 도구를 사용하여 효율적으로 디자인하고 배치할 수 있도록 합니다.\n  - 실무적 예로, Figma와 같은 도구가 자동화된 UI 디자인에 활용될 수 있습니다.\n- **자동화된 앱 빌딩**\n  - 자동화된 앱 빌딩은 애플리케이션의 개발 과정에서 반복적이고 수작업이 많이 필요한 단계를 자동화하여 개발 효율성을 높이는 것을 의미합니다.\n  - 이를 통해 개발자들은 더 중요한 로직이나 기능 개발에 집중할 수 있습니다.\n\n**💡 인사이트**\n자동화된 UI와 앱 빌딩은 개발 효율성을 극대화하고, 개발자들이 창의적이고 복잡한 문제 해결에 더 많은 시간을 할애할 수 있도록 합니다.\n\n---\n\n#### 📍 슬라이드 3: 이것은 \"바이브 코딩\" 수업이 아닙니다\n\n**핵심 내용**\n- **바이브 코딩 지양**\n  - '바이브 코딩'은 즉흥적이고 계획 없이 코딩하는 방식을 의미합니다. 발표자는 이러한 접근 방식을 지양하고 있습니다.\n  - 이는 체계적이고 계획된 소프트웨어 개발이 중요하다는 것을 강조합니다.\n- **소프트웨어 개발 순수주의**\n  - 소프트웨어 개발 순수주의는 개발 과정에서 고품질의 코드 작성과 엄격한 개발 원칙을 따르는 것을 의미합니다.\n  - 이러한 원칙은 개발자의 전문성과 코드의 유지 보수성을 높이는 데 기여합니다.\n\n**💡 인사이트**\n이 슬라이드는 체계적이고 원칙적인 소프트웨어 개발의 중요성을 강조하여, 개발자들이 감각적 코딩보다는 체계적인 접근을 통해 더 나은 결과를 얻을 수 있음을 상기시킵니다.\n\n---\n\n#### 📍 슬라이드 4: …오늘 빼고\n\n**핵심 내용**\n- **예외적인 내용 암시**\n  - 앞서 강조한 소프트웨어 개발의 원칙과 대조적으로, 오늘은 다소 자유로운 방식이나 새로운 접근 방법에 대해 다룰 것임을 암시합니다.\n  - 이는 학생들에게 새로운 시각을 제공하거나 창의적인 방법을 탐구할 기회를 줄 수 있습니다.\n\n**💡 인사이트**\n이 슬라이드는 학생들이 기존의 틀을 벗어나 새로운 접근 방식을 탐색할 수 있는 기회를 주며, 창의적 사고를 장려하는 분위기를 조성합니다.\n\n---\n\n### SaaS 개발과 웹 앱\n\n#### 📍 슬라이드 5: 현대 SaaS 개발의 흐름\n\n**핵심 내용**\n- 현대 서비스형 소프트웨어(SaaS, Software as a Service) 개발은 웹 애플리케이션에 집중해 왔습니다.\n  - 지난 20년 이상 SaaS 개발의 주요 초점은 웹 애플리케이션이었습니다. 이는 웹 기술의 발전과 접근성 개선 덕분에 가능했습니다.\n  - 웹 앱의 장점은 어디서나 접근 가능하고 유지보수가 용이하다는 점입니다.\n  \n**💡 인사이트**\nSaaS 개발의 역사는 웹 앱 중심으로 발전해왔으며, 이는 사용자 접근성 및 유지보수의 용이성을 통해 큰 가치를 제공했습니다.\n\n---\n\n#### 📍 슬라이드 6: SaaS의 웹 앱 집중 이유\n\n**핵심 내용**\n- SaaS가 웹 앱에 집중된 이유를 탐구합니다.\n  - 1999년 Salesforce는 최초의 SaaS 플랫폼으로 여겨집니다. 이는 SaaS 비즈니스 모델의 시초로, 웹 기반 애플리케이션의 효용성을 입증했습니다.\n  - 다양한 웹 개발 스택의 발전: LAMP, MERN, JAM, Serverless 등이 이 흐름을 지원했습니다.\n  - 각 스택은 특정 요구사항과 기술적 환경에 맞춰 발전했습니다.\n\n**💡 인사이트**\nSaaS가 웹 앱에 집중된 이유는 Salesforce와 같은 초기 성공 사례와 다양한 웹 개발 스택의 발전 덕분입니다. 이는 웹 기술이 SaaS의 기초를 이루는 데 결정적 역할을 했음을 보여줍니다.\n\n---\n\n#### 📍 슬라이드 7: 과거의 웹 개발 스택\n\n**핵심 내용**\n- LAMP 스택: Linux, Apache, MySQL, PHP로 구성된 전통적인 오픈 소스 웹 스택입니다.\n  - 동적 웹사이트와 전통적인 웹 애플리케이션을 구축하는 데 사용되었습니다.\n  \n- MERN 스택: MongoDB, Express.js, React.js, Node.js로 구성된 전체 JavaScript 스택입니다.\n  - 현대적이고 상호작용적인 싱글 페이지 애플리케이션(SPA)을 구축하는 데 적합합니다.\n\n- MEVN 스택: MongoDB, Express.js, Vue.js, Node.js로 구성된 JavaScript 스택입니다.\n  - Vue.js를 사용하여 가볍고 유연한 웹 애플리케이션 개발을 지원합니다.\n\n- 서버리스 스택: 클라우드 네이티브 스택으로서, 서버 관리 없이 확장 가능하고 이벤트 기반 애플리케이션을 지원합니다.\n  - AWS Lambda, Google Cloud Functions 등을 통해 백엔드 로직을 주문형으로 실행합니다.\n\n**💡 인사이트**\n과거의 웹 개발 스택은 특정 요구사항에 맞춰 발전했으며, 각 스택은 특정 기술적 장점을 제공합니다. 이는 개발자들이 애플리케이션의 특성에 맞는 최적의 스택을 선택할 수 있도록 합니다.\n\n---\n\n#### 📍 슬라이드 8: 클라이언트-서버 모델과 MERN 스택\n\n**핵심 내용**\n- 과거 웹 개발에서 클라이언트 측, 서버 측, 데이터베이스의 역할을 설명합니다.\n  - 클라이언트-서버 모델은 웹 애플리케이션의 기본 구조로, 클라이언트는 사용자 인터페이스를 제공하고, 서버는 데이터 처리 및 스토리지를 담당합니다.\n  - MERN 스택은 이러한 구조에서 JavaScript를 전면에 내세운 예시로, 클라이언트 측에서 React, 서버 측에서 Node.js, 데이터베이스로 MongoDB를 사용합니다.\n\n**💡 인사이트**\nMERN 스택은 클라이언트-서버 모델의 전형적인 예로, 웹 애플리케이션 개발의 효율성을 높이는 데 기여합니다. JavaScript를 기반으로 한 통합적인 접근은 개발자 생산성을 향상시킵니다.\n\n---\n\n### [JAM 스택과 웹 개발의 발전]\n\n#### 📍 슬라이드 9: JAM 스택의 구성 요소와 사용법\n\n**핵심 내용**\n- **JAM 스택 구성 요소**\n  - JavaScript는 웹 애플리케이션에서 동적 기능을 구현하는 데 사용됩니다. 클라이언트 측 상호작용을 가능하게 하며, 데이터 처리 및 사용자 입력을 관리합니다.\n  - API(Application Programming Interface)는 웹 애플리케이션이 백엔드 서비스와 통신할 수 있도록 지원합니다. 데이터베이스와 서버 간의 데이터 전송을 중개하는 역할을 합니다.\n  - Markup은 미리 빌드된 정적 HTML을 의미하며, 웹 페이지의 기본 구조를 제공합니다. 성능이 뛰어나고 로드 시간이 짧은 웹 페이지를 구현하는 데 유리합니다.\n- **사용 사례 및 도구**\n  - JAM 스택은 정적 사이트와 현대적인 웹 애플리케이션에 적합합니다. 이러한 사이트는 성능이 우수하고, 확장성이 뛰어납니다.\n  - 일반적인 도구로는 Gatsby, Next.js, Nuxt.js가 있으며, Contentful 또는 Sanity와 같은 헤드리스 CMS(Content Management System)가 있습니다.\n\n**💡 인사이트**\nJAM 스택은 웹 개발의 효율성을 높이는 동시에 사용자 경험을 향상시키기 위한 현대적인 접근 방식입니다. 특히 성능과 확장성을 중시하는 프로젝트에 유용합니다.\n\n---\n\n#### 📍 슬라이드 10: 과거 웹 개발 방식으로서의 AWS 스택\n\n**핵심 내용**\n- **AWS 스택**\n  - 아마존 웹 서비스(AWS)는 과거 웹 개발에서 널리 사용된 서비스 스택을 제공합니다. 이는 다양한 웹 서비스와 도구를 통해 백엔드 인프라를 지원합니다.\n  - AWS는 Elastic Beanstalk, Lambda, S3 등 다양한 서비스로 구성되어 있어, 복잡한 애플리케이션을 위한 견고한 백엔드 솔루션을 제공합니다.\n\n**💡 인사이트**\nAWS 스택은 여전히 많은 기업에서 사용되고 있지만, JAM 스택과 같은 새로운 기술 스택이 등장하면서 웹 개발 방식이 점차 변화하고 있습니다. 이러한 변화는 개발 속도와 효율성을 증가시킵니다.\n\n---\n\n#### 📍 슬라이드 11: 로우코드/노코드 플랫폼의 초기 사례\n\n**핵심 내용**\n- **로우코드/노코드 플랫폼**\n  - Wix, Squarespace, Webflow는 초기 로우코드/노코드 플랫폼으로, 개발자들이 소스 코드 없이도 웹사이트를 쉽게 구축할 수 있게 해줍니다.\n  - 이러한 플랫폼은 사용자 친화적인 인터페이스를 제공하여, 개발에 대한 지식이 적은 사용자도 직관적으로 웹사이트를 생성할 수 있습니다.\n\n**💡 인사이트**\n로우코드/노코드 플랫폼은 개발자와 비개발자 모두에게 웹사이트 구축의 문턱을 낮추어, 빠른 프로토타이핑과 배포를 가능하게 합니다. 이는 특히 스타트업과 중소기업에게 경제적인 솔루션을 제공합니다.\n\n---\n\n#### 📍 슬라이드 12: AI 기반 개발 도구 및 플랫폼\n\n**핵심 내용**\n- **AI 기반 개발 도구**\n  - Lovable, Replit, Vercel v0, Base44, Cursor/Claude Code 등은 인공지능 기술을 활용하여 개발자들이 더욱 효율적으로 작업할 수 있도록 지원합니다.\n  - 이러한 도구들은 코드 자동 완성, 오탐지, 성능 최적화 등 다양한 기능을 제공하여 개발 생산성을 높입니다.\n\n**💡 인사이트**\nAI 기반 개발 도구는 개발 프로세스를 혁신적으로 변화시키고 있습니다. 이는 특히 복잡한 문제를 신속하게 해결하고, 개발자의 일상적인 작업을 자동화하는 데 큰 도움을 줍니다.\n\n---\n\n### 월 11/10: 단일 프롬프트로 엔드투엔드 앱 만들기\n\n#### 📍 슬라이드 13: 무엇이 바뀌었는가\n\n**핵심 내용**\n- 프롬프트를 사용하여 완전한 기능을 갖춘 앱을 만들 수 있습니다\n  - 전통적으로 앱 개발은 프로그래밍 언어에 대한 깊은 이해가 필요했지만, 이제 프롬프트 기반의 접근 방식은 사용자가 자연어를 통해 앱을 설계하고 구현할 수 있도록 합니다.\n  - 실무적으로 비전문가도 자신이 원하는 기능을 빠르게 구현할 수 있어 프로토타이핑 및 MVP(최소 기능 제품)를 빠르게 개발할 수 있습니다.\n- 엔지니어는 더욱 다양한 기능을 수행할 수 있게 되었습니다\n  - 엔지니어는 프로그래밍 외에도 디자인, 제품 관리 등 다양한 분야에 걸쳐 전문성을 발휘할 수 있습니다.\n  - 이런 다기능화는 팀의 효율성을 높이고, 개발 주기의 모든 단계에서 전문가의 통합적 관점이 반영될 수 있게 합니다.\n- 이제 누구나 앱을 만들 수 있습니다\n  - 노코드 플랫폼의 발전으로 기술적 배경이 없는 사람도 앱을 개발할 수 있는 시대가 되었습니다.\n  - Webflow, Wix, Squarespace와 같은 1세대 노코드 플랫폼보다 더 사용자 친화적이며 직관적인 인터페이스를 제공합니다.\n\n**💡 인사이트**\n프롬프트 기반의 앱 개발은 개발 진입 장벽을 크게 낮추고, 다양한 기능을 수행할 수 있는 엔지니어의 역할을 확장시킵니다. 이는 시장의 혁신 속도를 가속화할 것입니다.\n\n---\n\n#### 📍 슬라이드 14: 지금 바로 앱을 만들어 봅시다\n\n**핵심 내용**\n- Bolt를 사용하여 FE/BE가 포함된 살사 파트너 찾기 앱 만들기\n  - Bolt는 프론트엔드와 백엔드를 포함한 앱 개발을 지원하는 도구로, 엔드투엔드 솔루션을 제공합니다.\n  - 실무 환경에서는 다양한 앱을 빠르게 시제품으로 개발하여 시장 반응을 테스트하거나 내부 용도로 활용할 수 있습니다.\n- 초기 생성 후 추가 변경 사항\n  - 사용자는 초기 앱 생성 후, 색상 팔레트, 아이콘, 타이포그래피 등 UI 요소들을 손쉽게 업데이트할 수 있습니다.\n  - 디자인 변경을 통해 앱의 브랜딩과 사용자 경험을 손쉽게 개선할 수 있습니다.\n\n**💡 인사이트**\nBolt와 같은 도구는 빠른 프로토타이핑을 가능하게 하고, 사용자 피드백에 기반한 신속한 수정 및 업데이트를 지원하여 제품 개발의 유연성을 높입니다.\n\n---\n\n#### 📍 슬라이드 15: 색상 팔레트 업데이트 요청\n\n**핵심 내용**\n- 특정 색상 코드(#EF8354, #660000, #EFCA08)를 사용하여 앱의 색상 팔레트를 업데이트\n  - 사용자는 자신의 요구에 맞는 색상 팔레트를 쉽게 지정할 수 있어 앱의 시각적 일관성과 브랜드 정체성을 유지할 수 있습니다.\n  - 실무에서는 기업의 CI(Corporate Identity)에 맞춰 빠르게 앱의 디자인을 변경할 수 있어 마케팅 및 브랜딩 측면에서 유리합니다.\n\n**💡 인사이트**\n색상 팔레트의 손쉬운 변경은 개인화된 사용자 경험을 제공하고, 브랜드 일관성을 유지하는 데 중요한 역할을 합니다.\n\n---\n\n#### 📍 슬라이드 16: 앱 빌더 아키텍처\n\n**핵심 내용**\n- WebContainer를 사용하여 임의로 생성된 코드를 실행하는 구조\n  - WebContainer는 브라우저 내에서 Node.js 환경을 실행할 수 있게 하여, 사용자가 직접 코드 실행 결과를 실시간으로 확인할 수 있습니다.\n  - 이는 코드 개발 및 테스트 환경을 간소화하고, 사용자 경험을 향상시킵니다.\n- 앱 빌더 아키텍처\n  - 웹 기반의 개발 환경을 제공하여, 복잡한 설치나 설정 없이도 바로 개발을 시작할 수 있습니다.\n  - 실무적으로 개발 및 배포 시간을 단축시키고, 다양한 실험을 빠르게 수행할 수 있는 장점이 있습니다.\n\n**💡 인사이트**\nWebContainer 기반의 앱 빌더 아키텍처는 개발 환경의 복잡성을 줄이고, 사용자 중심의 개발 경험을 제공하여 빠른 개발 주기를 지원합니다.\n\n---\n\n### [앱 빌더 시스템 프롬프트]\n\n#### 📍 슬라이드 17: 앱 빌더 시스템 프롬프트\n\n**핵심 내용**\n- **명시적으로 확립되고 잘 알려진 기술/프레임워크만 요청**\n  - 앱 빌더의 시스템 프롬프트는 새로운 기술이나 실험적인 프레임워크 대신, 이미 검증된 기술과 프레임워크를 사용할 것을 강조합니다. 이는 안정성과 신뢰성을 확보하기 위해 중요합니다.\n  - 실무에서는 기술 선택 시 안정성과 지원 커뮤니티가 잘 형성된 기술을 선택하는 것이 프로젝트의 성공을 높이는 방법입니다.\n- **관련 링크 제공**\n  - 'themodernsoftware.dev' 및 관련된 두 개의 링크(gist 및 prompthub)는 시스템 프롬프트에 대한 추가 정보를 제공합니다. 이를 통해 개발자는 더 깊이 있는 학습과 적용이 가능합니다.\n  - 링크를 통해 제공된 자료는 개발자에게 실질적인 가이드라인을 제공합니다.\n- **WebContainer 내 작업 지정**\n  - WebContainer에서 파일 생성, 실행 등의 작업을 지정하기 위해 boltartifact/Boltaction을 사용하는 것을 설명합니다. 이는 개발 환경에서의 작업 흐름을 명확히 하고 자동화의 기초를 제공합니다.\n  - 실무에서 자동화된 배포나 테스트 환경을 설정할 때 유용하게 활용될 수 있습니다.\n\n**💡 인사이트**\n앱 빌더 시스템 프롬프트는 안정성과 일관성을 위해 검증된 기술을 강조하며, 이를 통해 개발자는 복잡한 문제를 피하고 효율적인 개발을 추구할 수 있습니다.\n\n---\n\n### [앱 빌더의 제한 사항]\n\n#### 📍 슬라이드 18: 제한 사항\n\n**핵심 내용**\n- **문제 발생 시 복구 어려움**\n  - 시스템이 정상적으로 작동할 때는 문제가 없지만, 문제가 발생하면 복구가 어렵다는 점을 지적합니다. 이는 프롬프트 기반 시스템의 한계로, 모든 상황을 예측할 수 없기 때문입니다.\n  - 실무에서는 이러한 문제를 대비해 백업 시스템이나 로그 분석을 통한 문제 추적이 중요합니다.\n- **프롬프트의 한계**\n  - 프롬프트가 단지 제안일 뿐이며, 모든 사용자가 이를 제대로 이해하지 못할 수 있음을 설명합니다. 이는 사용자 경험 및 교육의 중요성을 강조합니다.\n  - 사용자 교육을 통해 이러한 한계를 극복할 수 있습니다.\n- **보안 문제**\n  - 과거에 보안 문제가 있었음을 언급합니다. 이는 시스템 설계 시 보안성을 강화해야 한다는 점을 시사합니다.\n  - 보안 강화를 위해 보안 업데이트와 모니터링 시스템을 구축하는 것이 중요합니다.\n- **앱의 획일화 가능성과 복잡성 한계**\n  - 모든 앱이 비슷하게 보일 수 있는 문제와, 현실적으로 얼마나 복잡하게 설계될 수 있는지에 대한 한계를 지적합니다.\n  - 차별화된 UX/UI 디자인을 통해 획일화를 피하고, 모듈화 설계를 통해 복잡성을 관리할 수 있습니다.\n\n**💡 인사이트**\n앱 빌더 시스템은 한계를 가지고 있지만, 이를 극복하기 위해서는 철저한 사용자 교육, 보안 강화, 그리고 차별화된 디자인 전략이 필요합니다.\n\n---\n\n### [질문 시간]\n\n#### 📍 슬라이드 19: 질문 있나요?\n\n**핵심 내용**\n- **질문 시간**\n  - 프레젠테이션을 마무리하며 청중에게 질문할 기회를 제공합니다. 이는 청중의 이해도를 높이고, 발표자가 전달하지 못한 부분을 보완할 수 있는 기회입니다.\n  - 실무에서는 질문 시간을 통해 피드백을 받고, 프로젝트의 방향성을 조정할 수 있는 유용한 기회를 제공합니다.\n\n**💡 인사이트**\n질문 시간은 단순한 피드백 수집을 넘어, 프로젝트의 개선과 발전을 위한 소중한 시간으로 활용할 수 있습니다. 이는 발표자와 청중 간의 소통을 강화하는 중요한 순간입니다."
+  }
+}

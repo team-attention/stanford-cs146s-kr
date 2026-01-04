@@ -1,0 +1,520 @@
+[
+  {
+    "slug": "week-1-ai-prompt-engineering-a-deep-dive",
+    "title": "AI Prompt Engineering: A Deep Dive",
+    "url": "https://www.youtube.com/watch?v=T9aRN5JkmL8",
+    "type": "youtube",
+    "week": 1
+  },
+  {
+    "slug": "week-1-deep-dive-into-llms",
+    "title": "Deep Dive into LLMs",
+    "url": "https://www.youtube.com/watch?v=7xTGNNLPyMI",
+    "type": "youtube",
+    "week": 1
+  },
+  {
+    "slug": "week-1-how-openai-uses-codex",
+    "title": "How OpenAI Uses Codex",
+    "url": "https://cdn.openai.com/pdf/6a2631dc-783e-479b-b1a4-af0cfbd38630/how-openai-uses-codex.pdf",
+    "type": "pdf",
+    "week": 1
+  },
+  {
+    "slug": "week-1-llm-prompting-playground",
+    "title": "LLM Prompting Playground",
+    "url": "https://github.com/mihail911/modern-software-dev-assignments/tree/master/week1",
+    "type": "github",
+    "week": 1
+  },
+  {
+    "slug": "week-1-prompt-engineering-guide",
+    "title": "Prompt Engineering Guide",
+    "url": "https://www.promptingguide.ai/techniques",
+    "type": "reading",
+    "week": 1
+  },
+  {
+    "slug": "week-1-prompt-engineering-overview",
+    "title": "Prompt Engineering Overview",
+    "url": "https://cloud.google.com/discover/what-is-prompt-engineering",
+    "type": "reading",
+    "week": 1
+  },
+  {
+    "slug": "week-1-lecture-금-9-26",
+    "title": "금 9/26: LLM을 위한 파워 프롬프팅",
+    "url": "https://docs.google.com/presentation/d/1MIhw8p6TLGdbQ9TcxhXSs5BaPf5d_h77QY70RHNfeGs/edit?usp=drive_link",
+    "type": "slides",
+    "week": 1
+  },
+  {
+    "slug": "week-1-lecture-월-9-22",
+    "title": "월 9/22: 소개 및 LLM 제작 방법",
+    "url": "https://docs.google.com/presentation/d/1zT2Ofy88cajLTLkd7TcuSM4BCELvF9qQdHmlz33i4t0/edit?usp=sharing",
+    "type": "slides",
+    "week": 1
+  },
+  {
+    "slug": "week-2-first-steps-in-the-ai-ide",
+    "title": "First Steps in the AI IDE",
+    "url": "https://github.com/mihail911/modern-software-dev-assignments/tree/master/week2",
+    "type": "github",
+    "week": 2
+  },
+  {
+    "slug": "week-2-how-anthropic-uses-claude-code",
+    "title": "How Anthropic Uses Claude Code",
+    "url": "https://www-cdn.anthropic.com/58284b19e702b49db9302d5b6f135ad8871e7658.pdf",
+    "type": "pdf",
+    "week": 2
+  },
+  {
+    "slug": "week-2-mcp-food-for-thought",
+    "title": "MCP Food-for-Thought",
+    "url": "https://www.reillywood.com/blog/apis-dont-make-good-mcp-tools/",
+    "type": "reading",
+    "week": 2
+  },
+  {
+    "slug": "week-2-mcp-introduction",
+    "title": "MCP Introduction",
+    "url": "https://stytch.com/blog/model-context-protocol-introduction/",
+    "type": "reading",
+    "week": 2
+  },
+  {
+    "slug": "week-2-mcp-registry",
+    "title": "MCP Registry",
+    "url": "https://blog.modelcontextprotocol.io/posts/2025-09-08-mcp-registry-preview/",
+    "type": "reading",
+    "week": 2
+  },
+  {
+    "slug": "week-2-mcp-server-authentication",
+    "title": "MCP Server Authentication",
+    "url": "https://developers.cloudflare.com/agents/guides/remote-mcp-server/#add-authentication",
+    "type": "reading",
+    "week": 2
+  },
+  {
+    "slug": "week-2-mcp-server-sdk",
+    "title": "MCP Server SDK",
+    "url": "https://github.com/modelcontextprotocol/typescript-sdk/tree/main?tab=readme-ov-file#server",
+    "type": "github",
+    "week": 2
+  },
+  {
+    "slug": "week-2-sample-mcp-server-implementations",
+    "title": "Sample MCP Server Implementations",
+    "url": "https://github.com/modelcontextprotocol/servers",
+    "type": "github",
+    "week": 2
+  },
+  {
+    "slug": "week-2-lecture-금-10-3",
+    "title": "금 10/3: 커스텀 MCP 서버 구축",
+    "url": "https://docs.google.com/presentation/d/1zSC2ra77XOUrJeyS85houg1DU7z9hq5Y4ebagTch-5o/edit?usp=drive_link",
+    "type": "slides",
+    "week": 2
+  },
+  {
+    "slug": "week-2-lecture-월-9-29",
+    "title": "월 9/29: 처음부터 코딩 에이전트 구축",
+    "url": "https://docs.google.com/presentation/d/11CP26VhsjnZOmi9YFgLlonzdib9BLyAlgc4cEvC5Fps/edit?usp=sharing",
+    "type": "slides",
+    "week": 2
+  },
+  {
+    "slug": "week-3-build-a-custom-mcp-server",
+    "title": "Build a Custom MCP Server",
+    "url": "https://github.com/mihail911/modern-software-dev-assignments/blob/master/week3/assignment.md",
+    "type": "github",
+    "week": 3
+  },
+  {
+    "slug": "week-3-devin-coding-agents-101",
+    "title": "Devin: Coding Agents 101",
+    "url": "https://devin.ai/agents101#introduction",
+    "type": "reading",
+    "week": 3
+  },
+  {
+    "slug": "week-3-getting-ai-to-work-in-complex-codebases",
+    "title": "Getting AI to Work In Complex Codebases",
+    "url": "https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/ace-fca.md",
+    "type": "github",
+    "week": 3
+  },
+  {
+    "slug": "week-3-how-faang-vibe-codes",
+    "title": "How FAANG Vibe Codes",
+    "url": "https://x.com/rohanpaul_ai/status/1959414096589422619",
+    "type": "reading",
+    "week": 3
+  },
+  {
+    "slug": "week-3-how-long-contexts-fail",
+    "title": "How Long Contexts Fail",
+    "url": "https://www.dbreunig.com/2025/06/22/how-contexts-fail-and-how-to-fix-them.html",
+    "type": "reading",
+    "week": 3
+  },
+  {
+    "slug": "week-3-specs-are-the-new-source-code",
+    "title": "Specs Are the New Source Code",
+    "url": "https://blog.ravi-mehta.com/p/specs-are-the-new-source-code",
+    "type": "reading",
+    "week": 3
+  },
+  {
+    "slug": "week-3-writing-effective-tools-for-agents",
+    "title": "Writing Effective Tools for Agents",
+    "url": "https://www.anthropic.com/engineering/writing-tools-for-agents",
+    "type": "reading",
+    "week": 3
+  },
+  {
+    "slug": "week-3-lecture-금-10-10",
+    "title": "금 10/10: Silas Alberti",
+    "url": "https://docs.google.com/presentation/d/1i0pRttHf72lgz8C-n7DSegcLBgncYZe_ppU7dB9zhUA/edit?usp=sharing",
+    "type": "slides",
+    "week": 3
+  },
+  {
+    "slug": "week-3-lecture-월-10-6",
+    "title": "월 10/6: 첫 프롬프트에서 최적 IDE 설정까지",
+    "url": "https://docs.google.com/presentation/d/11pQNCde_mmRnImBat0Zymnp8TCS_cT_1up7zbcj6Sjg/edit?usp=sharing",
+    "type": "slides",
+    "week": 3
+  },
+  {
+    "slug": "week-4-how-anthropic-uses-claude-code",
+    "title": "Anthropic의 Claude Code 사용법",
+    "url": "https://www-cdn.anthropic.com/58284b19e702b49db9302d5b6f135ad8871e7658.pdf",
+    "type": "pdf",
+    "week": 4
+  },
+  {
+    "slug": "week-4-awesome-claude-agents",
+    "title": "Awesome Claude Agents",
+    "url": "https://github.com/vijaythecoder/awesome-claude-agents",
+    "type": "github",
+    "week": 4
+  },
+  {
+    "slug": "week-4-claude-best-practices",
+    "title": "Claude Best Practices",
+    "url": "https://www.anthropic.com/engineering/claude-code-best-practices",
+    "type": "reading",
+    "week": 4
+  },
+  {
+    "slug": "week-4-coding-with-claude-code",
+    "title": "Coding with Claude Code",
+    "url": "https://github.com/mihail911/modern-software-dev-assignments/blob/master/week4/assignment.md",
+    "type": "github",
+    "week": 4
+  },
+  {
+    "slug": "week-4-good-context-good-code",
+    "title": "Good Context Good Code",
+    "url": "https://blog.stockapp.com/good-context-good-code/",
+    "type": "reading",
+    "week": 4
+  },
+  {
+    "slug": "week-4-peeking-under-the-hood-of-claude-code",
+    "title": "Peeking Under the Hood of Claude Code",
+    "url": "https://medium.com/@outsightai/peeking-under-the-hood-of-claude-code-70f5a94a9a62",
+    "type": "reading",
+    "week": 4
+  },
+  {
+    "slug": "week-4-super-claude",
+    "title": "Super Claude",
+    "url": "https://github.com/SuperClaude-Org/SuperClaude_Framework",
+    "type": "github",
+    "week": 4
+  },
+  {
+    "slug": "week-4-lecture-금-10-17",
+    "title": "금 10/17: Boris Cherney",
+    "url": "https://docs.google.com/presentation/d/1bv7Zozn6z45CAh-IyX99dMPMyXCHC7zj95UfwErBYQ8/edit?usp=sharing",
+    "type": "slides",
+    "week": 4
+  },
+  {
+    "slug": "week-4-lecture-월-10-13",
+    "title": "월 10/13: 에이전트 관리자가 되는 방법",
+    "url": "https://docs.google.com/presentation/d/19mgkwAnJDc7JuJy0zhhoY0ZC15DiNpxL8kchPDnRkRQ/edit?usp=sharing",
+    "type": "slides",
+    "week": 4
+  },
+  {
+    "slug": "week-5-agentic-development-with-warp",
+    "title": "Agentic Development with Warp",
+    "url": "https://github.com/mihail911/modern-software-dev-assignments/tree/master/week5",
+    "type": "github",
+    "week": 5
+  },
+  {
+    "slug": "week-5-how-warp-uses-warp-to-build-warp",
+    "title": "How Warp Uses Warp to Build Warp",
+    "url": "https://notion.warp.dev/How-Warp-uses-Warp-to-build-Warp-21643263616d81a6b9e3e63fd8a7380c",
+    "type": "reading",
+    "week": 5
+  },
+  {
+    "slug": "week-5-warp-university",
+    "title": "Warp University",
+    "url": "https://www.warp.dev/university?slug=university",
+    "type": "reading",
+    "week": 5
+  },
+  {
+    "slug": "week-5-warp-vs-claude-code",
+    "title": "Warp vs Claude Code",
+    "url": "https://www.warp.dev/university/getting-started/warp-vs-claude-code",
+    "type": "reading",
+    "week": 5
+  },
+  {
+    "slug": "week-5-lecture-금-10-24",
+    "title": "금 10/24: Zach Lloyd",
+    "url": "https://www.figma.com/slides/kwbcmtqTFQMfUhiMH8BiEx/Warp---Stanford--Copy-?node-id=9-116&t=oBWBCk8mjg2l2NR5-1",
+    "type": "slides",
+    "week": 5
+  },
+  {
+    "slug": "week-5-lecture-월-10-20",
+    "title": "월 10/20: 획기적인 AI 개발자 제품을 만드는 방법",
+    "url": "https://docs.google.com/presentation/d/1Djd4eBLBbRkma8rFnJAWMT0ptct_UGB8hipmoqFVkxQ/edit?usp=sharing",
+    "type": "slides",
+    "week": 5
+  },
+  {
+    "slug": "week-6-agentic-ai-threats-identity-spoofing-and-impersonation-risks",
+    "title": "Agentic AI Threats: Identity Spoofing and Impersonation Risks",
+    "url": "https://unit42.paloaltonetworks.com/agentic-ai-threats/#:~:text=Identity%20spoofing%20and%20impersonation:%20Attackers,accurate%20information%20exchange%20are%20critical.",
+    "type": "reading",
+    "week": 6
+  },
+  {
+    "slug": "week-6-context-rot-understanding-degradation-in-ai-context-windows",
+    "title": "Context Rot: Understanding Degradation in AI Context Windows",
+    "url": "https://research.trychroma.com/context-rot",
+    "type": "reading",
+    "week": 6
+  },
+  {
+    "slug": "week-6-copilot-remote-code-execution-via-prompt-injection",
+    "title": "Copilot Remote Code Execution via Prompt Injection",
+    "url": "https://embracethered.com/blog/posts/2025/github-copilot-remote-code-execution-via-prompt-injection/",
+    "type": "reading",
+    "week": 6
+  },
+  {
+    "slug": "week-6-finding-vulnerabilities-in-modern-web-apps-using-claude-code-and-openai-codex",
+    "title": "Finding Vulnerabilities in Modern Web Apps Using Claude Code and OpenAI Codex",
+    "url": "https://semgrep.dev/blog/2025/finding-vulnerabilities-in-modern-web-apps-using-claude-code-and-openai-codex/",
+    "type": "reading",
+    "week": 6
+  },
+  {
+    "slug": "week-6-owasp-top-ten-the-leading-web-application-security-risks",
+    "title": "OWASP Top Ten: The Leading Web Application Security Risks",
+    "url": "https://owasp.org/www-project-top-ten/",
+    "type": "reading",
+    "week": 6
+  },
+  {
+    "slug": "week-6-sast-vs-dast",
+    "title": "SAST vs DAST",
+    "url": "https://www.splunk.com/en_us/blog/learn/sast-vs-dast.html",
+    "type": "reading",
+    "week": 6
+  },
+  {
+    "slug": "week-6-vulnerability-prompt-analysis-with-o3",
+    "title": "Vulnerability Prompt Analysis with O3",
+    "url": "https://github.com/SeanHeelan/o3_finds_cve-2025-37899/blob/master/system_prompt_uafs.prompt",
+    "type": "github",
+    "week": 6
+  },
+  {
+    "slug": "week-6-writing-secure-ai-code",
+    "title": "Writing Secure AI Code",
+    "url": "https://github.com/mihail911/modern-software-dev-assignments/blob/master/week6/assignment.md",
+    "type": "github",
+    "week": 6
+  },
+  {
+    "slug": "week-6-lecture-금-10-31",
+    "title": "금 10/31: Isaac Evans",
+    "url": "https://www.linkedin.com/in/isaacevans/",
+    "type": "web",
+    "week": 6
+  },
+  {
+    "slug": "week-6-lecture-월-10-27",
+    "title": "월 10/27: AI QA, SAST, DAST 그리고 그 너머",
+    "url": "https://docs.google.com/presentation/d/1C05bCLasMDigBbkwdWbiz4WrXibzi6ua4hQQbTod_8c/edit?usp=sharing",
+    "type": "slides",
+    "week": 6
+  },
+  {
+    "slug": "week-7-ai-code-review-implementation-best-practices",
+    "title": "AI Code Review Implementation Best Practices",
+    "url": "https://graphite.dev/guides/ai-code-review-implementation-best-practices",
+    "type": "reading",
+    "week": 7
+  },
+  {
+    "slug": "week-7-ai-assisted-assessment-of-coding-practices-in-modern-code-review",
+    "title": "AI-Assisted Assessment of Coding Practices in Modern Code Review",
+    "url": "https://arxiv.org/pdf/2405.13565",
+    "type": "pdf",
+    "week": 7
+  },
+  {
+    "slug": "week-7-code-review-essentials-for-software-teams",
+    "title": "Code Review Essentials for Software Teams",
+    "url": "https://blakesmith.me/2015/02/09/code-review-essentials-for-software-teams.html",
+    "type": "reading",
+    "week": 7
+  },
+  {
+    "slug": "week-7-code-review-reps",
+    "title": "Code Review Reps",
+    "url": "https://github.com/mihail911/modern-software-dev-assignments/tree/master/week7",
+    "type": "github",
+    "week": 7
+  },
+  {
+    "slug": "week-7-code-reviews-just-do-it",
+    "title": "Code Reviews: Just Do It",
+    "url": "https://blog.codinghorror.com/code-reviews-just-do-it/",
+    "type": "reading",
+    "week": 7
+  },
+  {
+    "slug": "week-7-how-to-review-code-effectively",
+    "title": "How to Review Code Effectively",
+    "url": "https://github.blog/developer-skills/github/how-to-review-code-effectively-a-github-staff-engineers-philosophy/",
+    "type": "reading",
+    "week": 7
+  },
+  {
+    "slug": "week-7-lessons-from-millions-of-ai-code-reviews",
+    "title": "Lessons from millions of AI code reviews",
+    "url": "https://www.youtube.com/watch?v=TswQeKftnaw",
+    "type": "youtube",
+    "week": 7
+  },
+  {
+    "slug": "week-7-lecture-금-11-7",
+    "title": "금 11/7: Tomas Reimers",
+    "url": "https://drive.google.com/file/d/1hwF-RIkOJ_OFy17BKhzFyCtxSS7Pcf7p/view?usp=drive_link",
+    "type": "pdf",
+    "week": 7
+  },
+  {
+    "slug": "week-7-lecture-월-11-3",
+    "title": "월 11/3: AI 코드 리뷰",
+    "url": "https://docs.google.com/presentation/d/1NkPzpuSQt6Esbnr2-EnxM9007TL6ebSPFwITyVY-QxU/edit?usp=sharing",
+    "type": "slides",
+    "week": 7
+  },
+  {
+    "slug": "week-8-multi-stack-web-app-builds",
+    "title": "Multi-stack Web App Builds",
+    "url": "https://github.com/mihail911/modern-software-dev-assignments/tree/master/week8",
+    "type": "github",
+    "week": 8
+  },
+  {
+    "slug": "week-8-lecture-금-11-14",
+    "title": "금 11/14: Gaspar Garcia",
+    "url": "https://docs.google.com/presentation/d/1Jf2aN5zIChd5tT86rZWWqY-iDWbxgR-uynKJxBR7E9E/edit?usp=sharing",
+    "type": "slides",
+    "week": 8
+  },
+  {
+    "slug": "week-8-lecture-월-11-10",
+    "title": "월 11/10: 단일 프롬프트로 엔드투엔드 앱 만들기",
+    "url": "https://docs.google.com/presentation/d/1GrVLsfMFIXMiGjIW9D7EJIyLYh_-3ReHHNd_vRfZUoo/edit?usp=sharing",
+    "type": "slides",
+    "week": 8
+  },
+  {
+    "slug": "week-9-benefits-of-agentic-ai-in-on-call-engineering",
+    "title": "Benefits of Agentic AI in On-call Engineering",
+    "url": "https://resolve.ai/blog/Top-5-Benefits",
+    "type": "reading",
+    "week": 9
+  },
+  {
+    "slug": "week-9-introduction-to-site-reliability-engineering",
+    "title": "Introduction to Site Reliability Engineering",
+    "url": "https://sre.google/sre-book/introduction/",
+    "type": "reading",
+    "week": 9
+  },
+  {
+    "slug": "week-9-kubernetes-troubleshooting-with-ai",
+    "title": "Kubernetes Troubleshooting with AI",
+    "url": "https://resolve.ai/blog/kubernetes-troubleshooting-in-resolve-ai",
+    "type": "reading",
+    "week": 9
+  },
+  {
+    "slug": "week-9-observability-basics-you-should-know",
+    "title": "Observability Basics You Should Know",
+    "url": "https://last9.io/blog/traces-spans-observability-basics/",
+    "type": "reading",
+    "week": 9
+  },
+  {
+    "slug": "week-9-role-of-multi-agent-systems-in-making-software-engineers-ai-native",
+    "title": "Role of Multi Agent Systems in Making Software Engineers AI-native",
+    "url": "https://resolve.ai/blog/role-of-multi-agent-systems-AI-native-engineering",
+    "type": "reading",
+    "week": 9
+  },
+  {
+    "slug": "week-9-your-new-autonomous-teammate",
+    "title": "Your New Autonomous Teammate",
+    "url": "https://resolve.ai/blog/product-deep-dive",
+    "type": "reading",
+    "week": 9
+  },
+  {
+    "slug": "week-9-lecture-금-11-21",
+    "title": "금 11/21: Mayank Agarwal & Milind Ganjoo - Agentic AI for Software in Production",
+    "url": "https://drive.google.com/file/d/11WnEbMGc9kny_WBpMN10I8oP8XsiQOnM/view?usp=sharing",
+    "type": "pdf",
+    "week": 9
+  },
+  {
+    "slug": "week-9-lecture-월-11-17",
+    "title": "월 11/17: 인시던트 대응 및 DevOps",
+    "url": "https://docs.google.com/presentation/d/1Mfe-auWAsg9URCujneKnHr0AbO8O-_U4QXBVOlO4qp0/edit?usp=sharing",
+    "type": "slides",
+    "week": 9
+  },
+  {
+    "slug": "week-10-lecture-금-12-5",
+    "title": "금 12/5: Martin Casado",
+    "url": "https://a16z.com/author/martin-casado/",
+    "type": "web",
+    "week": 10
+  },
+  {
+    "slug": "week-0-faang-vibecoding-how-we-vibe-code",
+    "title": "How we vibe code at a FAANG",
+    "url": "https://www.reddit.com/r/vibecoding/comments/1myakhd/how_we_vibe_code_at_a_faang/",
+    "type": "reading",
+    "week": 0
+  }
+]

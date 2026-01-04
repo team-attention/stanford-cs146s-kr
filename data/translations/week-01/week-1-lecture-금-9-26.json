@@ -1,0 +1,269 @@
+{
+  "slug": "week-1-lecture-금-9-26",
+  "title": "금 9/26: LLM을 위한 파워 프롬프팅",
+  "url": "https://docs.google.com/presentation/d/1MIhw8p6TLGdbQ9TcxhXSs5BaPf5d_h77QY70RHNfeGs/edit?usp=drive_link",
+  "type": "slides",
+  "week": 1,
+  "analyzedAt": "2026-01-03T22:52:00.439Z",
+  "analysis": {
+    "summary_ko": "이 프레젠테이션은 현대 소프트웨어 개발자를 위한 LLM 프롬프트 엔지니어링 기법을 소개합니다. 프롬프트 작성은 LLM을 효과적으로 \"프로그래밍\"하는 방법이며, Zero-shot, K-shot, Chain-of-Thought, Self-consistency, Tool Use, Retrieval Augmented Generation, Reflexion 등 다양한 기법들이 제시됩니다. 시스템 프롬프트, 사용자 프롬프트, 어시스턴트 프롬프트와 같은 용어 정의와 함께, 명확한 프롬프트 작성 및 역할 부여, 구조화된 형식 사용 등 프롬프트 개선을 위한 모범 사례를 강조합니다. 궁극적으로 LLM을 활용한 소프트웨어 개발 효율성을 높이는 데 필요한 실질적인 지침을 제공합니다.\n",
+    "keyPoints": [],
+    "topics": [],
+    "slides": [
+      {
+        "slideNumber": 1,
+        "summary_ko": "이 슬라이드는 2025년 가을 스탠포드 대학교 CS146S 강의에서 Mihail Eric이 발표하는 '현대 소프트웨어 개발자' 프레젠테이션의 시작 슬라이드입니다.",
+        "keyPoints": [
+          "강의 제목: 현대 소프트웨어 개발자",
+          "강의 코드: CS146S",
+          "대학교: 스탠포드 대학교",
+          "학기: 2025년 가을",
+          "발표자: Mihail Eric"
+        ],
+        "text_original": "The Modern Software Developer\nCS146S \nStanford University, Fall 2025\nMihail Eric\nthemodernsoftware.dev\nAny GSB students still left?",
+        "text_ko": "현대 소프트웨어 개발자\nCS146S\n스탠포드 대학교, 2025년 가을\nMihail Eric\nthemodernsoftware.dev\n아직 GSB 학생 남았나요?"
+      },
+      {
+        "slideNumber": 2,
+        "summary_ko": "이 슬라이드는 프레젠테이션의 주제인 'LLM(Large Language Model) 파워 프롬프팅'을 소개합니다.",
+        "keyPoints": [
+          "주제: LLM 파워 프롬프팅"
+        ],
+        "text_original": "LLM Power Prompting\nthemodernsoftware.dev",
+        "text_ko": "LLM 파워 프롬프팅\nthemodernsoftware.dev"
+      },
+      {
+        "slideNumber": 3,
+        "summary_ko": "프롬프팅은 LLM을 효과적으로 활용하기 위한 핵심 기술이며, 프로그래밍 언어 진화의 다음 단계로 간주됩니다. Andrej Karpathy의 의견을 인용했습니다.",
+        "keyPoints": [
+          "프롬프트는 LLM을 프로그래밍하는 링구아 프랑카임",
+          "프롬프팅은 프로그래밍 언어 진화의 다음 단계임",
+          "Andrej Karpathy의 인용"
+        ],
+        "text_original": "Prompting background\nPrompts are the lingua franca for getting LLMs to do what we want and also effectively programming them\n\n\n\nCourtesy of Andrej Karpathy\nthemodernsoftware.dev\nIn the evolution of programming languages, prompting is the next phase in the progression",
+        "text_ko": "프롬프팅 배경\n프롬프트는 LLM이 우리가 원하는 작업을 수행하도록 하고 효과적으로 프로그래밍하는 데 사용되는 링구아 프랑카(lingua franca)입니다.\n\n\n\nAndrej Karpathy 제공\nthemodernsoftware.dev\n프로그래밍 언어의 진화에서 프롬프팅은 발전의 다음 단계입니다."
+      },
+      {
+        "slideNumber": 4,
+        "summary_ko": "프롬프팅의 진화를 검색 엔진 상호작용의 변화에 비유하며, Google 검색 쿼리가 부울 대수에서 자연어 형태로 변화한 것처럼 프롬프팅도 더욱 자연스러워지고 있다고 설명합니다.",
+        "keyPoints": [
+          "프롬프팅 진화를 검색 엔진 상호작용 변화에 비유",
+          "Google 검색 쿼리의 변화 (부울 대수 -> 자연어)",
+          "프롬프팅의 자연어적 진화"
+        ],
+        "text_original": "An analogy\nLook to how we’ve changed our search engine interactions\n\n\n\n\nthemodernsoftware.dev\nConsider how google search queries have changed from explicit boolean algebra to more naturalistic english language\nPrompting has evolved (and will continue to evolve) to be more naturalistic",
+        "text_ko": "유사점\n검색 엔진 상호 작용이 어떻게 변화했는지 살펴보세요.\n\n\n\n\nthemodernsoftware.dev\nGoogle 검색 쿼리가 명시적인 부울 대수에서 보다 자연스러운 영어로 어떻게 변경되었는지 고려해 보세요.\n프롬프팅은 더욱 자연스럽게 진화했습니다(그리고 계속 진화할 것입니다)."
+      },
+      {
+        "slideNumber": 5,
+        "summary_ko": "프롬프팅은 예술과 과학의 융합이며, LLM의 블랙박스 특성으로 인해 효과적인 프롬프팅에는 기술과 함께 약간의 '마법'이 필요합니다. Claude Code/Cursor와 같은 시스템 이해에도 중요하며, 주요 프롬프팅 기술을 논의할 예정입니다.",
+        "keyPoints": [
+          "프롬프팅은 예술과 과학의 융합",
+          "LLM의 블랙박스 특성",
+          "경험적으로 입증된 프롬프팅 기술 존재",
+          "Claude Code/Cursor와 같은 시스템 이해에 중요",
+          "주요 프롬프팅 기술 논의 예정"
+        ],
+        "text_original": "Prompting Background\nPrompting is both an art and a science \nBlack-box nature of LLMs means there’s some magic to LLM-whispering effectively\n…but there are established techniques that have empirically improved LLM performance\n\n\n\n\nthemodernsoftware.dev\nPrompting is important both for you prompting AI software systems more effectively but also for understanding what’s going on under the hood with existing systems like Claude Code/Cursor (they have a lot of extra prompting added). \nLet’s discuss some of the most important techniques",
+        "text_ko": "프롬프팅 배경\n프롬프팅은 예술이자 과학입니다.\nLLM의 블랙박스 특성은 LLM을 효과적으로 속삭이는 데 약간의 마법이 필요함을 의미합니다.\n…하지만 경험적으로 LLM 성능을 향상시킨 입증된 기술이 있습니다.\n\n\n\n\nthemodernsoftware.dev\n프롬프팅은 AI 소프트웨어 시스템을 보다 효과적으로 프롬프팅하는 것뿐만 아니라 Claude Code/Cursor와 같은 기존 시스템의 내부 작동 방식을 이해하는 데도 중요합니다(여기에는 많은 추가 프롬프팅이 추가되어 있습니다).\n가장 중요한 기술 중 일부를 논의해 보겠습니다."
+      },
+      {
+        "slideNumber": 6,
+        "summary_ko": "제로샷 프롬프팅은 추가적인 지원이나 예제 없이 LLM에게 직접 작업을 요청하는 방법입니다. Rust for-loop 작성이나 C 힙 할당자 생성과 같은 요청이 그 예시입니다.",
+        "keyPoints": [
+          "제로샷 프롬프팅: 지원/예제 없이 LLM에 직접 작업 요청",
+          "Rust for-loop 예시",
+          "C 힙 할당자 예시"
+        ],
+        "text_original": "Zero-shot prompting\nAsk the LLM to do a thing\nno support\nno examples\nthemodernsoftware.dev\nWrite me a Rust for-loop that iterates over a list of strings for every, printing every value in an even index\n“Make me a heap allocator in C”.\nExample in green",
+        "text_ko": "제로샷 프롬프팅(Zero-shot prompting)\nLLM에게 어떤 작업을 요청합니다.\n지원 없음\n예제 없음\nthemodernsoftware.dev\n짝수 인덱스의 모든 값을 출력하면서 문자열 목록을 반복하는 Rust for-loop를 작성해 주세요.\n“C로 힙 할당자(heap allocator)를 만들어 주세요.”\n녹색으로 표시된 예시"
+      },
+      {
+        "slideNumber": 7,
+        "summary_ko": "K-샷 프롬프팅은 LLM에게 작업을 요청할 때 몇 가지 예시를 함께 제공하여 LLM이 작업을 수행하는 방식을 안내하는 방법입니다. 특히 도메인 특정 API나 특정 코딩 스타일이 필요한 경우에 유용하며, 너무 많은 예제를 제공하여 LLM을 과도하게 제약하는 것은 피해야 합니다.",
+        "keyPoints": [
+          "K-샷 프롬프팅: 예시를 제공하여 LLM을 안내",
+          "인 컨텍스트 학습이라고도 함",
+          "도메인 특정 API에 적합",
+          "특정 코딩 스타일 적용에 유용",
+          "LLM 과도하게 제약하는 것 피해야 함"
+        ],
+        "text_original": "K-shot prompting\nAsk the LLM to do the thing but give it some examples of how to do it\nSometimes called in-context learning\nk-shot\n1, 3, 5 (some empirical results justify these numbers)\nIdeal for tasks that don’t have too many reasoning steps\nthemodernsoftware.dev\nBest for domain-specific APIs (languages LLM hasn’t seen, typically in enterprise use-cases)\nGenerate code in specific style, format, or with consistent naming conventions\nAvoid\nApplying for well-known libraries/general coding tasks\nOver-constraining the LLM (too many examples)",
+        "text_ko": "K-샷 프롬프팅(K-shot prompting)\nLLM에게 작업을 요청하되, 수행 방법에 대한 몇 가지 예시를 제공합니다.\n때로는 인 컨텍스트 학습(in-context learning)이라고도 합니다.\nk-샷\n1, 3, 5 (일부 경험적 결과가 이러한 숫자를 뒷받침합니다.)\n추론 단계가 너무 많지 않은 작업에 적합합니다.\nthemodernsoftware.dev\n도메인 특정 API(LLM이 본 적이 없는 언어, 일반적으로 엔터프라이즈 사용 사례)에 가장 적합합니다.\n특정 스타일, 형식 또는 일관된 명명 규칙으로 코드 생성\n피해야 할 사항\n잘 알려진 라이브러리/일반 코딩 작업에 적용\nLLM을 과도하게 제약(너무 많은 예제)"
+      },
+      {
+        "slideNumber": 8,
+        "summary_ko": "이 슬라이드는 K-샷 프롬프팅의 예시를 보여줍니다. 특정 리포지토리의 명명 규칙을 사용하여 for-loop를 작성하도록 LLM에 요청하고, 예시를 제공하여 명명 규칙을 따르도록 안내합니다. 빨간색은 naive한 프롬프트 방식이고, 녹색은 새로운 기술을 적용한 프롬프트 방식임을 설명합니다.",
+        "keyPoints": [
+          "K-샷 프롬프팅 예시: 명명 규칙을 사용하는 for-loop 작성",
+          "예시 제공을 통한 명명 규칙 안내",
+          "Naive한 프롬프트 방식과 새로운 기술 적용 방식 비교"
+        ],
+        "text_original": "Write a for-loop iterating over a list of strings using the naming convention in our repo.\nWrite a for-loop iterating over a list of strings using the naming convention in our repo. Here are some examples of how we typically format variable names.\n\n<example>\nvar StRaRrAy = [‘cat’, ‘dog’, ‘wombat’]\n</example>\n\n<example>\ndef func CaPiTaLiZeStR = () => {}\n</example>\n\nthemodernsoftware.dev\nRed is the before (naive way to prompt)\nGreen is the converted prompt using the new technique",
+        "text_ko": "리포지토리의 명명 규칙을 사용하여 문자열 목록을 반복하는 for-loop를 작성하십시오.\n리포지토리의 명명 규칙을 사용하여 문자열 목록을 반복하는 for-loop를 작성하십시오. 다음은 일반적으로 변수 이름을 지정하는 방법의 예입니다.\n\n<예제>\nvar StRaRrAy = ['고양이', '개', '웜뱃']\n</예제>\n\n<예제>\ndef func CaPiTaLiZeStR = () => {}\n</예제>\n\nthemodernsoftware.dev\n빨간색은 이전 (순진한 프롬프트 방식)\n녹색은 새로운 기술을 사용하여 변환된 프롬프트"
+      },
+      {
+        "slideNumber": 9,
+        "summary_ko": "사고 사슬 프롬프팅(CoT)은 LLM이 작업을 수행하는 과정을 추론 단계별로 보여주는 방식입니다. 멀티샷 CoT는 추론 흔적을 계산하고, 제로샷 CoT는 '단계별로 생각해 봅시다'와 같은 프롬프트를 사용합니다. 여러 논리적 단계가 필요한 프로그래밍이나 수학 문제 해결에 유용하며, 많은 추론 모델의 핵심 기술입니다.",
+        "keyPoints": [
+          "사고 사슬 프롬프팅(CoT): 추론 단계를 보여주는 방식",
+          "멀티샷 CoT: 추론 흔적 계산",
+          "제로샷 CoT: '단계별로 생각해 봅시다' 프롬프트 사용",
+          "여러 논리적 단계 필요 작업에 적합 (프로그래밍, 수학)",
+          "많은 추론 모델의 핵심 기술"
+        ],
+        "text_original": "Chain-of-Thought Prompting\nShow reasoning steps for a given task\nMulti-shot CoT\nWork out reasoning traces\nZero-shot CoT\n“Let’s think step-by-step”\nPrompt for reasoning in explicit <reasoning> tags\nBest for steps with multiple logical steps\nProgramming\nMath\nthemodernsoftware.dev\nThis is the workhorse for a lot of reasoning models!",
+        "text_ko": "사고 사슬 프롬프팅(Chain-of-Thought Prompting)\n주어진 작업에 대한 추론 단계를 보여줍니다.\n멀티샷 CoT(Multi-shot CoT)\n추론 흔적을 계산합니다.\n제로샷 CoT(Zero-shot CoT)\n“단계별로 생각해 봅시다.”\n명시적인 <추론> 태그로 추론을 요청합니다.\n여러 논리적 단계가 있는 단계에 가장 적합합니다.\n프로그래밍\n수학\nthemodernsoftware.dev\n이것은 많은 추론 모델의 핵심입니다!"
+      },
+      {
+        "slideNumber": 10,
+        "summary_ko": "이 슬라이드는 멀티샷 CoT 프롬프팅의 예시를 보여줍니다. LLM에게 완전 세제곱수이자 완전 제곱수인지 확인하는 함수를 작성하도록 요청하고, 함수 작성 전 추론 단계를 먼저 제공하도록 지시합니다. 목록의 최대값 찾기, 회문 확인 함수 작성 예시를 통해 추론 단계 제공 방법을 안내합니다.",
+        "keyPoints": [
+          "멀티샷 CoT 예시: 완전 세제곱수이자 완전 제곱수 확인 함수 작성",
+          "추론 단계 먼저 제공 지시",
+          "목록 최대값 찾기, 회문 확인 함수 작성 예시"
+        ],
+        "text_original": "Write a function to check if a number is a perfect cube and a perfect square.\nI want to write a function to check if a number is a perfect cube and a perfect square. Make sure to provide your reasoning first. Here are some examples of how to  provide reasoning for a coding task.\n\n<example>\nWrite a function that finds the maximum element in a list.\nSteps: Initialize a variable with the first element. Traverse the list, comparing…\n</example>\n\n<example>\nWrite a function that checks is a number is a palindrome\nSteps: Take the number. Reverse the elements in the numbers. Check if …\n</example>\nthemodernsoftware.dev\nMulti-shot CoT\nMulti-shot CoT",
+        "text_ko": "숫자가 완전 세제곱수이자 완전 제곱수인지 확인하는 함수를 작성하세요.\n숫자가 완전 세제곱수이자 완전 제곱수인지 확인하는 함수를 작성하고 싶습니다. 먼저 추론을 제공해야 합니다. 코딩 작업에 대한 추론을 제공하는 방법에 대한 몇 가지 예는 다음과 같습니다.\n\n<예제>\n목록에서 최대 요소를 찾는 함수를 작성하십시오.\n단계: 첫 번째 요소로 변수를 초기화합니다. 목록을 순회하면서 비교...\n</예제>\n\n<예제>\n숫자가 회문인지 확인하는 함수를 작성하십시오.\n단계: 숫자를 가져옵니다. 숫자의 요소를 반전시킵니다. 확인...\n</예제>\nthemodernsoftware.dev\n멀티샷 CoT(Multi-shot CoT)\n멀티샷 CoT(Multi-shot CoT)"
+      },
+      {
+        "slideNumber": 11,
+        "summary_ko": "이 슬라이드는 제로샷 CoT 프롬프팅의 예시를 보여줍니다. LLM에게 배열에서 가장 긴 증가하는 부분 수열을 찾는 함수를 작성하도록 요청하고, 코딩 전에 하위 문제에 대해 단계별로 생각하고 고려 중인 하위 배열의 예시를 포함하도록 지시합니다.",
+        "keyPoints": [
+          "제로샷 CoT 예시: 가장 긴 증가하는 부분 수열 찾기 함수 작성",
+          "코딩 전 하위 문제 단계별 사고 지시",
+          "고려 중인 하위 배열 예시 포함 지시"
+        ],
+        "text_original": "Write a function to find the longest increasing subsequence in an array.\nWrite a function to find the longest increasing subsequence in an array.\n\nThink step by step about the subproblems before coding. Include worked out examples of subarrays you are considering as you answer this question.\nthemodernsoftware.dev\nZero-shot CoT\nZero-shot CoT",
+        "text_ko": "배열에서 가장 긴 증가하는 부분 수열을 찾는 함수를 작성하십시오.\n배열에서 가장 긴 증가하는 부분 수열을 찾는 함수를 작성하십시오.\n\n코딩하기 전에 하위 문제에 대해 단계별로 생각하십시오. 이 질문에 답할 때 고려하고 있는 하위 배열의 예시를 포함하십시오.\nthemodernsoftware.dev\n제로샷 CoT(Zero-shot CoT)\n제로샷 CoT(Zero-shot CoT)"
+      },
+      {
+        "slideNumber": 12,
+        "summary_ko": "자기 일관성 프롬프팅은 LLM의 출력을 여러 번 샘플링하고, 가장 일반적인 결과를 집계하여 모델 앙상블 효과를 통해 환각(hallucinations)이나 잘못된 답변을 줄이는 방식입니다. 일반적으로 CoT와 함께 사용됩니다.",
+        "keyPoints": [
+          "자기 일관성 프롬프팅: 출력 다중 샘플링 및 결과 집계",
+          "모델 앙상블 효과를 통한 환각/오답 감소",
+          "일반적으로 CoT와 함께 사용"
+        ],
+        "text_original": "Self-consistency Prompting\nSample multiple times from output (typically with CoT) and aggregate most common results\nReduces hallucinations/incorrect answers via a form of model ensembling by sampling diverse reasoning paths\nthemodernsoftware.dev",
+        "text_ko": "자기 일관성 프롬프팅(Self-consistency Prompting)\n출력에서 여러 번 샘플링하고(일반적으로 CoT 사용) 가장 일반적인 결과를 집계합니다.\n다양한 추론 경로를 샘플링하여 모델 앙상블(model ensembling) 형태를 통해 환각/잘못된 답변을 줄입니다.\nthemodernsoftware.dev"
+      },
+      {
+        "slideNumber": 13,
+        "summary_ko": "이 슬라이드는 자기 일관성 프롬프팅의 예시를 보여줍니다. 주어진 IndexError에 대한 근본 원인을 파악하기 위해 LLM에 동일한 프롬프트를 5번 실행하고, 그 중 가장 많이 나온 결과를 채택합니다.",
+        "keyPoints": [
+          "자기 일관성 프롬프팅 예시: IndexError 근본 원인 파악",
+          "동일 프롬프트 5번 실행",
+          "다수결 결과 채택"
+        ],
+        "text_original": "What’s the root cause for this error: \nTraceback (most recent call last):\n  File \"example.py\", line 3, in <module>\n    print(nums[i])\nIndexError: list index out of range\n\nWhat’s the root cause for this error: \nTraceback (most recent call last):\n  File \"example.py\", line 3, in <module>\n    print(nums[i])\nIndexError: list index out of range\nPrompt 5x\nTake majority result\nthemodernsoftware.dev",
+        "text_ko": "이 오류의 근본 원인은 무엇입니까?\nTraceback (최근 호출 마지막):\n  File \"example.py\", line 3, in <module>\n    print(nums[i])\nIndexError: list index out of range\n\n이 오류의 근본 원인은 무엇입니까?\nTraceback (최근 호출 마지막):\n  File \"example.py\", line 3, in <module>\n    print(nums[i])\nIndexError: list index out of range\n프롬프트 5번 실행\n다수결 결과 채택\nthemodernsoftware.dev"
+      },
+      {
+        "slideNumber": 14,
+        "summary_ko": "도구 사용(Tool Use)은 LLM이 필요한 경우 외부 시스템을 활용하도록 허용하는 기술입니다. 이는 환각을 줄이고 LLM의 자율성을 높이는 데 매우 중요합니다.",
+        "keyPoints": [
+          "도구 사용: LLM이 외부 시스템 활용",
+          "환각 감소",
+          "LLM 자율성 증가"
+        ],
+        "text_original": "Tool Use\nAllow LLM to defer to an external system that it needs to interact with\nOne of the most important techniques for reducing hallucinations and enabling the autonomy of LLMs\nthemodernsoftware.dev",
+        "text_ko": "도구 사용(Tool Use)\nLLM이 상호 작용해야 하는 외부 시스템으로 연기하도록 허용합니다.\n환각을 줄이고 LLM의 자율성을 가능하게 하는 가장 중요한 기술 중 하나입니다.\nthemodernsoftware.dev"
+      },
+      {
+        "slideNumber": 15,
+        "summary_ko": "이 슬라이드는 도구 사용의 예시로, LLM에게 IndexError를 수정하고 CI 테스트를 통과하도록 요청하며, 사용 가능한 테스트 도구를 제공합니다.",
+        "keyPoints": [
+          "도구 사용 예시: IndexError 수정 및 CI 테스트 통과",
+          "사용 가능한 테스트 도구 제공 (pytest)"
+        ],
+        "text_original": "After you have fixed this IndexError can you ensure that the CI tests still pass?\n\nFix the IndexError. Ensure the CI tests still pass once you have made the fix. Here are the available tools. \n\n<tools>\npytest -s /path/to/unit_tests\n\npytest -v /path/to/integration_tests\n</tools>",
+        "text_ko": "이 IndexError를 수정한 후 CI 테스트가 여전히 통과하는지 확인할 수 있습니까?\n\nIndexError를 수정하십시오. 수정을 완료한 후 CI 테스트가 여전히 통과하는지 확인하십시오. 사용 가능한 도구는 다음과 같습니다.\n\n<도구>\npytest -s /path/to/unit_tests\n\npytest -v /path/to/integration_tests\n</도구>"
+      },
+      {
+        "slideNumber": 16,
+        "summary_ko": "검색 증강 생성(RAG)은 LLM에 문맥 데이터를 주입하여 최신 정보를 유지하고, 빠른 반복을 가능하게 하며, 해석 가능성과 인용을 제공하고, 환각을 줄이는 기술입니다. Cursor/Windsurf 등의 도구에서 @context 기능을 통해 RAG를 활용할 수 있습니다.",
+        "keyPoints": [
+          "검색 증강 생성(RAG): 문맥 데이터 주입",
+          "재학습 없이 LLM 최신 상태 유지",
+          "빠른 반복 가능",
+          "해석 가능성 및 인용 제공",
+          "환각 감소",
+          "Cursor/Windsurf의 @context 기능이 RAG 활용"
+        ],
+        "text_original": "Retrieval Augmented Generation\nInfuse the LLM with contextual data\nKeeps LLMs up-to-date (without retraining)\nFaster iteration\nYou get interpretability and citations for free\nReduces hallucinations\nthemodernsoftware.dev\nWhen you @context in Cursor/Windsurf/etc this is utilizing RAG.",
+        "text_ko": "검색 증강 생성(Retrieval Augmented Generation)\nLLM에 문맥 데이터를 주입합니다.\nLLM을 최신 상태로 유지합니다(재학습 없이).\n더 빠른 반복.\n해석 가능성 및 인용을 무료로 얻을 수 있습니다.\n환각을 줄입니다.\nthemodernsoftware.dev\nCursor/Windsurf 등에서 @context를 사용하는 것은 RAG를 활용하는 것입니다."
+      },
+      {
+        "slideNumber": 17,
+        "summary_ko": "이 슬라이드는 검색 증강 생성(RAG)의 예시입니다. LLM에게 UserAuthService 클래스를 확장하여 유효한 OAuth 토큰을 검증하도록 요청하고, UserAuthService의 현재 작동 방식 코드 스니펫과 requests-oauthlib 문서 URL을 제공합니다.",
+        "keyPoints": [
+          "검색 증강 생성 예시: UserAuthService 클래스 확장",
+          "OAuth 토큰 검증 기능 추가 요청",
+          "UserAuthService 코드 스니펫 제공",
+          "requests-oauthlib 문서 URL 제공"
+        ],
+        "text_original": "Extend the UserAuthService class to check that the client provides a valid OAuth token.\nI want to extend the UserAuthService class to check that the client provides a valid OAuth token. \n\nHere is how the UserAuthService works now:\n<code_snippet>\ndef issue_oauth_token():\n\t….\n</code_snippet>\n\nHere is the path to the requests-oauthlib documentation:\n<url>\nhttps://requests-oauthlib.readthedocs.io/en/latest/\n</url>",
+        "text_ko": "클라이언트가 유효한 OAuth 토큰을 제공하는지 확인하도록 UserAuthService 클래스를 확장하십시오.\n클라이언트가 유효한 OAuth 토큰을 제공하는지 확인하도록 UserAuthService 클래스를 확장하고 싶습니다.\n\n다음은 UserAuthService가 현재 작동하는 방식입니다.\n<코드 스니펫>\ndef issue_oauth_token():\n\t….\n</코드 스니펫>\n\n다음은 requests-oauthlib 문서의 경로입니다.\n<url>\nhttps://requests-oauthlib.readthedocs.io/en/latest/\n</url>"
+      },
+      {
+        "slideNumber": 18,
+        "summary_ko": "리플렉션(Reflexion)은 LLM이 자신의 출력에 대해 반성하고, 환경 피드백을 통해 컨텍스트를 강화하여 답변을 개선하는 기술입니다. 다중 턴 프롬프팅을 통해 '자기 비판'을 유도하며, 자율 코딩 에이전트의 핵심 기술로 사용됩니다.",
+        "keyPoints": [
+          "리플렉션: LLM의 자체 출력 반성 및 개선",
+          "환경 피드백을 통한 컨텍스트 강화",
+          "다중 턴 프롬프팅: '자기 비판' 유도",
+          "자율 코딩 에이전트의 핵심 기술",
+          "'자기 비판'이라고도 함"
+        ],
+        "text_original": "Reflexion\nMake the LLM reflect on its output\nVerbal feedback from environment signals are reincorporated into the LLM by augmenting the context\nAfter an action is taken in an environment and an observation made, add a prompt suffix:\n“Now critique your answer. Was it correct? If not, explain why and try again.”\nMulti-turn prompting\nTurn 1: Model gives a first try.\nTurn 2: You ask “Was that correct? Reflect and revise if needed.”\nthemodernsoftware.dev\nWorkhorse of autonomous coding agents\nReflexion is how we get fully agentic behaviors in modern coding IDEs\nAlso sometimes called “self-critique”",
+        "text_ko": "리플렉션(Reflexion)\nLLM이 자체 출력에 대해 반성하도록 만듭니다.\n환경 신호로부터의 언어적 피드백은 컨텍스트를 확대하여 LLM에 다시 통합됩니다.\n환경에서 작업이 수행되고 관찰이 이루어진 후 프롬프트 접미사를 추가합니다.\n“이제 당신의 답변을 비판하십시오. 그것이 정확했습니까? 그렇지 않다면 이유를 설명하고 다시 시도하십시오.”\n다중 턴 프롬프팅(Multi-turn prompting)\n턴 1: 모델이 처음 시도합니다.\n턴 2: “그것이 정확했습니까? 필요하다면 반성하고 수정하십시오.”라고 묻습니다.\nthemodernsoftware.dev\n자율 코딩 에이전트의 주력\n리플렉션은 현대 코딩 IDE에서 완전한 에이전트 동작을 얻는 방법입니다.\n때로는 “자기 비판(self-critique)”이라고도 합니다."
+      },
+      {
+        "slideNumber": 19,
+        "summary_ko": "이 슬라이드는 리플렉션의 예시로, LLM에게 company_location 열이 문자열과 JSON 표현을 모두 처리하도록 확장하도록 요청합니다. 현재 단위 테스트가 실패하고 JSONDecodeError가 발생하는 상황을 설명하고, 문자열 입력 시 JSONDecodeError가 발생하지 않도록 해야 함을 강조합니다. '관찰-반성-프롬프트 확장'의 단계를 보여줍니다.",
+        "keyPoints": [
+          "리플렉션 예시: company_location 열 확장",
+          "문자열 및 JSON 표현 처리 기능 추가",
+          "JSONDecodeError 해결",
+          "'관찰-반성-프롬프트 확장' 단계 제시"
+        ],
+        "text_original": "Ensure that the company_location column can handle string and json representations.\nExtend the logic for company_location to be able to handle string and json representations\nThe unit tests for the company_location type aren’t passing.\nIt appears that the unit tests for company_location are throwing a JSONDecodeError. \nI am extending the company_location column.\n\nI must ensure that when a string is provided as input it doesn’t throw a JSONDecodeError.\nobserve\nreflect\nExtend prompt \nthemodernsoftware.dev",
+        "text_ko": "company_location 열이 문자열 및 JSON 표현을 처리할 수 있는지 확인하십시오.\ncompany_location에 대한 로직을 확장하여 문자열 및 JSON 표현을 처리할 수 있도록 합니다.\ncompany_location 유형에 대한 단위 테스트가 통과하지 못하고 있습니다.\ncompany_location에 대한 단위 테스트가 JSONDecodeError를 발생시키는 것 같습니다.\ncompany_location 열을 확장하고 있습니다.\n\n문자열이 입력으로 제공될 때 JSONDecodeError를 발생시키지 않도록 해야 합니다.\n관찰(observe)\n반성(reflect)\n프롬프트 확장(Extend prompt)\nthemodernsoftware.dev"
+      },
+      {
+        "slideNumber": 20,
+        "summary_ko": "이 슬라이드는 시스템 프롬프트에 대해 설명합니다. 시스템 프롬프트는 LLM에게 제공되는 첫 번째 메시지로, 페르소나, 출력 규칙, 스타일 등을 정의하며, 일반적으로 최종 사용자에게는 노출되지 않습니다.",
+        "keyPoints": [
+          "시스템 프롬프트: LLM에 제공되는 첫 번째 메시지",
+          "페르소나, 출력 규칙, 스타일 정의",
+          "최종 사용자에게는 일반적으로 노출되지 않음"
+        ],
+        "text_original": "Additional Terminology\nSystem prompt\nFirst message provided to LLM (usually not seen by end user)\nProvides persona, rules about LLM output, style",
+        "text_ko": "추가 용어\n시스템 프롬프트(System prompt)\nLLM에 제공되는 첫 번째 메시지(일반적으로 최종 사용자에게는 표시되지 않음)\n페르소나(persona), LLM 출력에 대한 규칙, 스타일을 제공합니다."
+      },
+      {
+        "slideNumber": 21,
+        "summary_ko": "이 슬라이드는 최첨단 LLM의 시스템 프롬프트 예시를 살펴볼 것임을 안내합니다.",
+        "keyPoints": [
+          "최첨단 LLM 시스템 프롬프트 예시 소개 예정"
+        ],
+        "text_original": "Let’s look at a sample system prompt for a state-of-the-art LLM\n\nthemodernsoftware.dev",
+        "text_ko": "최첨단 LLM에 대한 샘플 시스템 프롬프트를 살펴보겠습니다.\n\nthemodernsoftware.dev"
+      },
+      {
+        "slideNumber": 22,
+        "summary_ko": "이 슬라이드는 Claude 4.1 opus의 시스템 프롬프트를 소개하며, 아이작 아시모프의 로봇 3원칙과 유사한 측면이 있음을 언급합니다.",
+        "keyPoints": [
+          "Claude 4.1 opus 시스템 프롬프트",
+          "아이작 아시모프의 로봇 3원칙과 유사성"
+        ],
+        "text_original": "…\nClaude 4.1 opus system prompt\nAlmost like a loosely followed Isaac Asimov’s 3 laws of robotics\n\nthemodernsoftware.dev",
+        "text_ko": "…\nClaude 4.1 opus 시스템 프롬프트\n마치 아이작 아시모프의 로봇 3원칙을 느슨하게 따르는 것과 같습니다.\n\nthemodernsoftware.dev"
+      }
+    ],
+    "totalSlides": 22,
+    "presentationId": "1MIhw8p6TLGdbQ9TcxhXSs5BaPf5d_h77QY70RHNfeGs",
+    "detailedNote_ko": "## 🎯 한눈에 보는 핵심 내용\n\n### 이 프레젠테이션의 핵심 메시지\n이 프레젠테이션은 LLM(대형 언어 모델) 프롬프트 엔지니어링 기법을 통해 소프트웨어 개발자의 AI 활용 효율성을 극대화하는 방법을 제시합니다. 다양한 프롬프팅 기법과 모범 사례를 통해 LLM의 성능을 극대화하고, 실시간 정보 처리 및 외부 도구 활용을 통해 신뢰성과 정확성을 높이는 방안을 다룹니다.\n\n### 📌 핵심 Q&A\n\n**Q1: LLM 프롬프팅의 핵심 기법은 무엇이며, 각각의 목적은 무엇인가요?**\n\nLLM 프롬프팅의 핵심 기법에는 Zero-shot, K-shot, Chain-of-Thought(CoT), Self-consistency, Tool Use, Retrieval Augmented Generation(RAG), Reflexion 등이 있습니다. Zero-shot 프롬프팅은 예제 없이 직접 작업을 요청하여 모델의 기본 능력을 테스트하고, K-shot 프롬프팅은 예제를 제공하여 모델의 정확성을 높입니다. CoT는 복잡한 문제를 단계적으로 해결하며, Self-consistency는 일관된 결과를 집계해 신뢰성을 높입니다. Tool Use는 외부 시스템과의 연계를 통해 LLM의 기능을 확장하고, RAG는 최신 문맥 데이터를 주입하여 실시간 정보를 처리합니다. Reflexion 기법은 모델의 자기 비판을 통해 질적 향상을 도모합니다.\n\n---\n\n**Q2: 실무에서 LLM 프롬프팅을 어떻게 활용할 수 있나요?**\n\n- **코드 개발 및 수정**: Zero-shot 및 K-shot 프롬프팅을 통해 LLM이 코드 작성 및 문제 해결에 필요한 지침을 제공할 수 있습니다.\n- **복잡한 문제 해결**: CoT와 Self-consistency 기법을 활용하여 복잡한 문제를 단계적으로 해결하고, 일관된 결과를 도출할 수 있습니다.\n- **실시간 정보 처리 및 외부 도구 연계**: RAG와 Tool Use 기법을 통해 최신 정보를 반영하고 외부 시스템과의 상호작용을 통해 더 정확한 결과를 얻을 수 있습니다.\n\n---\n\n**Q3: LLM을 활용한 소프트웨어 개발에서 중요한 고려사항은 무엇인가요?**\n\nLLM을 활용한 소프트웨어 개발에서는 프롬프트의 명확성과 구조화된 형식이 중요합니다. 시스템 프롬프트를 통해 모델의 초기 설정을 명확히 하고, 다양한 프롬프팅 기법을 적절히 조합하여 모델의 성능을 최적화해야 합니다. 또한, 윤리적 사용과 안전성을 고려하여 시스템 프롬프트를 설계해야 하며, 외부 도구 및 최신 문맥 데이터 활용을 통해 모델의 신뢰성을 높이는 것이 중요합니다.\n\n---\n\n### 💡 학습 가치 (Why This Matters)\n\n이 프레젠테이션은 LLM을 활용한 소프트웨어 개발의 효율성을 높이는 방법을 깊이 있게 다룹니다. 프롬프트 엔지니어링의 다양한 기법과 모범 사례를 통해 개발자들은 LLM의 성능을 극대화하고, 복잡한 문제를 효과적으로 해결할 수 있는 능력을 갖출 수 있습니다. 실시간 정보 처리 기술과 외부 도구 연계를 통해 LLM의 신뢰성과 정확성을 확보하는 방법을 학습하며, 이러한 기술들은 실무에서 코드 개발 및 최적화, 문제 해결 능력을 강화하는 데 직접적으로 기여할 수 있습니다. 또한, 시스템 프롬프트의 중요성을 이해함으로써 LLM의 초기 설정과 응답 방향성을 조정하여 사용자 경험을 최적화할 수 있습니다. 이러한 지식은 AI를 활용한 혁신적 소프트웨어 개발을 위한 중요한 기초가 됩니다.\n\n---\n\n\n## 📚 슬라이드별 상세 학습 노트\n\n### [주제: LLM을 위한 파워 프롬프팅]\n\n#### 📍 슬라이드 1: 현대 소프트웨어 개발자\n\n**핵심 내용**\n- 스탠포드 대학교 CS146S 강의 정보\n  - 강의 제목은 '현대 소프트웨어 개발자'이며, 이는 소프트웨어 개발의 최신 트렌드와 기술을 다룰 것으로 예상됩니다.\n  - 강의는 2025년 가을에 진행되며, Mihail Eric이 발표자로 나섭니다. \n- 발표자 및 관련 정보\n  - Mihail Eric은 themodernsoftware.dev 사이트를 통해 소프트웨어 개발 관련 자료를 제공하는 인물입니다.\n\n**💡 인사이트**\n이 슬라이드는 소프트웨어 개발에 대한 최신 지식을 전달하는 강의의 도입부로, 발표자의 배경과 강의의 방향성을 이해하는 데 도움을 줍니다.\n\n---\n\n#### 📍 슬라이드 2: LLM 파워 프롬프팅\n\n**핵심 내용**\n- 프레젠테이션 주제 소개\n  - LLM(Large Language Model) 파워 프롬프팅이 주제로 설정되어 있으며, 이는 LLM을 효과적으로 사용할 수 있는 방법론에 대한 탐구를 의미합니다.\n\n**💡 인사이트**\nLLM 파워 프롬프팅은 현대 소프트웨어 개발에서 AI 모델을 활용하는 핵심 기술로, 이를 통해 AI의 성능을 극대화할 수 있는 방법을 배울 수 있을 것입니다.\n\n---\n\n#### 📍 슬라이드 3: 프롬프팅 배경\n\n**핵심 내용**\n- 프롬프팅의 중요성\n  - 프롬프트는 LLM이 수행해야 할 작업을 지시하는 언어로, LLM을 프로그래밍하는 데 필수적인 역할을 합니다.\n  - Andrej Karpathy의 견해에 따르면, 프롬프팅은 기존 프로그래밍 언어의 발전을 이어받아 다음 단계로 진화하고 있습니다.\n\n**💡 인사이트**\n프롬프팅 기술은 LLM 활용의 핵심으로 자리잡고 있으며, 이는 개발자들이 AI 모델과 상호작용하는 방식에 혁신을 불러올 수 있습니다.\n\n---\n\n#### 📍 슬라이드 4: 유사점\n\n**핵심 내용**\n- 검색 엔진과 프롬프팅의 진화 비교\n  - 과거 Google 검색 쿼리가 부울 대수 형태에서 자연어로 변화한 것처럼, 프롬프팅도 점점 더 자연스러운 형태로 진화하고 있습니다.\n  - 이러한 변화는 사용자와 시스템 간의 상호작용을 더욱 직관적이고 효율적으로 만들어 줍니다.\n\n**💡 인사이트**\n프롬프팅의 진화는 사용자 경험을 보다 향상시키며, AI 모델과의 상호작용을 자연스럽게 만들어주는 중요한 발전입니다. 이는 개발자들이 AI를 보다 쉽게 통합하고 활용할 수 있는 환경을 제공합니다.\n\n---\n\n---\n\n### [프롬프팅의 기초 및 응용]\n\n#### 📍 슬라이드 5: 프롬프팅 배경\n\n**핵심 내용**\n- **프롬프팅의 이중적 역할**: 프롬프팅은 예술과 과학의 융합입니다. LLM(대형 언어 모델)의 블랙박스 특성으로 인해 효과적인 프롬프팅에는 기술과 약간의 '마법'이 필요합니다. 이는 프롬프팅을 통해 LLM의 성능을 최대화하는 동시에 그 내부 작동 방식을 이해해야 함을 의미합니다.\n  - **실무적 적용 예시**: AI 기반 소프트웨어 개발 시, 프롬프팅 기술을 사용하여 모델의 성능을 극대화하는 동시에 시스템의 작동 원리를 이해하며 최적화할 수 있습니다.\n- **시스템 이해의 중요성**: Claude Code/Cursor와 같은 시스템 내부 작동 방식을 이해하는 데 프롬프팅은 중요합니다. 이러한 시스템은 많은 추가 프롬프팅을 통해 개선될 수 있습니다.\n  - **관련 개념 설명**: LLM의 블랙박스 특성은 입력과 출력의 관계를 명확히 알기 어려움을 의미하며, 이는 프롬프트 작성의 중요성을 강조합니다.\n\n**💡 인사이트**\n프롬프팅은 단순한 기술 이상의 것으로, LLM의 효율적인 활용을 위해 시스템에 대한 깊은 이해가 필요합니다. 이는 AI 시스템의 성능을 높이고, 최적화된 출력을 얻기 위한 필수적인 과정입니다.\n\n---\n\n#### 📍 슬라이드 6: 제로샷 프롬프팅(Zero-shot prompting)\n\n**핵심 내용**\n- **제로샷 프롬프팅의 정의와 사용**: 제로샷 프롬프팅은 추가적인 지원이나 예제 없이 LLM에게 직접 작업을 요청하는 방법입니다. 이는 기본적으로 사용자가 원하는 결과를 모델에 명확히 전달하는 방식입니다.\n  - **세부 설명**: 사용자는 구체적인 맥락이나 예제를 제공하지 않고, 단순히 원하는 결과를 명확히 기술하여 모델의 이해력을 테스트합니다.\n  - **실무적 적용 예시**: 새로운 코드 작성이나 특정 문제 해결을 위해 LLM의 기본 학습 능력을 평가할 때 활용할 수 있습니다.\n- **예시**: Rust로 짝수 인덱스의 값을 출력하는 for-loop 작성, C로 힙 할당자 생성 요청.\n  - **관련 개념 설명**: 이러한 예시는 제로샷 프롬프팅의 직접적인 활용 사례로, 사용자가 원하는 코드나 기능을 명확히 요청하는 방식입니다.\n\n**💡 인사이트**\n제로샷 프롬프팅은 LLM의 기본 능력을 확인하고, 추가적인 맥락 없이도 모델이 원하는 결과를 생성할 수 있는지를 평가하는 데 유용합니다.\n\n---\n\n#### 📍 슬라이드 7: K-샷 프롬프팅(K-shot prompting)\n\n**핵심 내용**\n- **K-샷 프롬프팅의 정의와 활용**: K-샷 프롬프팅은 LLM에게 작업을 요청할 때 몇 가지 예시를 제공하여 작업 수행 방식을 안내하는 방법입니다.\n  - **세부 설명**: 이는 인 컨텍스트 학습(in-context learning)의 한 형태로, 모델에게 필요한 정보를 제공하여 보다 정확한 결과를 도출합니다.\n  - **실무적 적용 예시**: 도메인 특정 API나 특정 코딩 스타일이 요구되는 작업에서 LLM을 유도하는 데 효과적입니다.\n- **적용 및 피해야 할 사항**: 특정 스타일, 형식, 일관된 명명 규칙에 적합하며, 잘 알려진 라이브러리나 일반 코딩 작업에서는 피해야 합니다. 또한, 너무 많은 예제를 제공하여 LLM을 과도하게 제약하지 않도록 주의해야 합니다.\n  - **관련 개념 설명**: K-샷 프롬프팅은 LLM의 학습 능력을 활용하여 보다 세밀한 조정을 가능하게 합니다.\n\n**💡 인사이트**\nK-샷 프롬프팅은 예시를 통해 LLM의 출력을 세밀하게 조정할 수 있는 방법으로, 복잡한 도메인 작업에서 특히 유용합니다. 그러나 과도한 예시는 모델의 자유도를 제한할 수 있으므로 주의가 필요합니다.\n\n---\n\n#### 📍 슬라이드 8: 명명 규칙을 사용하는 for-loop 작성 예시\n\n**핵심 내용**\n- **K-샷 프롬프팅의 구체적 예시**: 특정 리포지토리의 명명 규칙을 사용하여 문자열 목록을 반복하는 for-loop를 작성하도록 LLM에 요청하는 방식입니다.\n  - **세부 설명**: 예시를 통해 LLM이 명명 규칙을 따르도록 유도하며, 이는 특정 스타일이나 규칙을 코드 작성에 반영하는 데 유용합니다.\n  - **실무적 적용 예시**: 기업 내부의 코드베이스에서 통일성을 유지하기 위해 특정 규칙에 맞춘 코드를 생성할 때 활용할 수 있습니다.\n- **Naive한 프롬프트 방식과 새로운 기술 적용 방식 비교**: 빨간색은 이전의 단순한 프롬프트 방식이며, 녹색은 새로운 기술을 적용한 변형된 프롬프트 방식을 나타냅니다.\n  - **관련 개념 설명**: 이는 프롬프팅 기술의 진화를 보여주며, 보다 정교한 결과를 위해 프롬프트를 어떻게 개선할 수 있는지를 설명합니다.\n\n**💡 인사이트**\nK-샷 프롬프팅을 통해 특정 명명 규칙을 따르는 코드를 생성함으로써 코드의 일관성을 높일 수 있으며, 이는 개발 및 유지보수의 효율성을 극대화할 수 있습니다.\n\n---\n\n### 사고 사슬 프롬프팅(Chain-of-Thought Prompting)\n\n#### 📍 슬라이드 9: 사고 사슬 프롬프팅 개념\n\n**핵심 내용**\n- 사고 사슬 프롬프팅(CoT)은 주어진 작업에 대해 추론 단계를 명시적으로 보여주는 방식입니다.\n  - 이는 LLM(Large Language Model)이 복잡한 문제를 해결할 때, 문제를 단계별로 나누어 처리하는 방법입니다.\n  - 실무적으로 프로그래밍이나 수학과 같이 여러 논리적 단계가 필요한 작업에 유용합니다.\n- 멀티샷 CoT(Multi-shot CoT)\n  - 여러 예시를 통해 LLM이 추론 경로를 계산하도록 합니다.\n  - 이는 모델이 문제 해결 과정을 학습하는 데 도움이 됩니다.\n- 제로샷 CoT(Zero-shot CoT)\n  - '단계별로 생각해 봅시다'와 같은 프롬프트를 사용하여 모델이 스스로 추론하도록 유도합니다.\n  - 명시적인 <추론> 태그를 사용하여 단계별 사고를 유도합니다.\n\n**💡 인사이트**\n사고 사슬 프롬프팅은 복잡한 문제를 단계별로 해결하는 데 매우 유용하며, 특히 프로그래밍과 수학 문제에서 LLM의 성능을 크게 향상시킬 수 있습니다.\n\n---\n\n### 멀티샷 CoT 프롬프팅 예시\n\n#### 📍 슬라이드 10: 멀티샷 CoT의 실전 적용\n\n**핵심 내용**\n- 숫자가 완전 세제곱수이자 완전 제곱수인지 확인하는 함수를 작성하는 예시를 통해 멀티샷 CoT 프롬프팅을 설명합니다.\n  - 함수 작성 전에 추론 단계를 명확히 제공하여 LLM이 문제를 단계적으로 접근하도록 합니다.\n- 예시:\n  - 목록에서 최대 요소를 찾는 함수 작성: 첫 번째 요소로 변수를 초기화하고, 목록을 순회하며 비교하는 단계를 제시합니다.\n  - 숫자가 회문인지 확인하는 함수 작성: 숫자를 가져와 반전시키고 확인하는 단계를 제시합니다.\n\n**💡 인사이트**\n멀티샷 CoT는 LLM에게 문제 해결의 명확한 단계를 제공하여 보다 정확한 답변을 도출하게 합니다. 이는 복잡한 문제에서 특히 유용합니다.\n\n---\n\n### 제로샷 CoT 프롬프팅 예시\n\n#### 📍 슬라이드 11: 제로샷 CoT의 실전 적용\n\n**핵심 내용**\n- 배열에서 가장 긴 증가하는 부분 수열을 찾는 문제를 통해 제로샷 CoT 프롬프팅을 설명합니다.\n  - 코딩 전에 하위 문제에 대해 단계별로 생각하도록 유도합니다.\n  - 하위 배열의 예시를 포함하여 모델이 문제를 보다 명확히 이해할 수 있도록 합니다.\n\n**💡 인사이트**\n제로샷 CoT는 사전 정보 없이도 LLM이 스스로 논리적 추론을 할 수 있도록 유도하며, 이는 빠르게 문제에 접근해야 할 때 유용합니다.\n\n---\n\n### 자기 일관성 프롬프팅(Self-consistency Prompting)\n\n#### 📍 슬라이드 12: 자기 일관성 프롬프팅의 개념\n\n**핵심 내용**\n- 자기 일관성 프롬프팅은 출력에서 여러 번 샘플링하고 가장 일반적인 결과를 집계하는 방법입니다.\n  - 다양한 추론 경로를 샘플링하여 모델 앙상블(model ensembling) 효과를 통해 잘못된 답변이나 환각(hallucinations)을 줄입니다.\n  - 일반적으로 CoT와 함께 사용하여 모델의 신뢰성을 높입니다.\n\n**💡 인사이트**\n자기 일관성 프롬프팅은 여러 번의 결과 집계를 통해 LLM의 예측 정확도를 높이며, 이는 복잡한 문제에 대한 안정적인 해결책을 제공하는 데 중요합니다.\n\n--- \n\n이 슬라이드 그룹은 다양한 프롬프팅 기법을 통해 LLM의 추론 능력을 강화하여 복잡한 문제를 해결하는 방법을 제시합니다. 실무에서는 이러한 기법들을 적절히 활용하여 AI 모델의 효율성과 정확성을 높일 수 있습니다.\n\n---\n\n### 금 9/26: LLM을 위한 파워 프롬프팅\n\n#### 📍 슬라이드 13: 자기 일관성 프롬프팅 예시\n\n**핵심 내용**\n- **자기 일관성 프롬프팅(Self-consistency prompting)**\n  - 동일한 프롬프트를 LLM에 여러 번 실행하여 가장 일관적인 결과를 도출하는 방법입니다. IndexError의 근본 원인을 파악하기 위해 동일한 질문을 5번 실행하고, 다수결의 결과를 채택하는 것이 그 예시입니다.\n  - 실무에서는 복잡한 문제 해결에 있어 LLM의 일관성을 높이고 신뢰할 수 있는 답변을 얻기 위해 이 기법을 활용할 수 있습니다.\n\n**💡 인사이트**\n자기 일관성 프롬프팅은 LLM의 응답에서 신뢰성을 높이는 방법으로, 특히 오류의 원인을 파악하거나 복잡한 문제를 해결할 때 유용합니다.\n\n---\n\n#### 📍 슬라이드 14: 도구 사용(Tool Use)\n\n**핵심 내용**\n- **외부 시스템과의 상호작용**\n  - LLM이 외부 도구를 활용하여 환각을 줄이고 자율성을 높이는 기술입니다. 이는 LLM이 단독으로 처리하기 어려운 작업을 외부 시스템과의 연계를 통해 해결할 수 있도록 합니다.\n  - 실무에서는 LLM이 데이터를 수집하거나 분석하는 작업에서 외부 API나 데이터베이스와의 연결을 통해 더욱 정확한 결과를 도출할 수 있습니다.\n\n**💡 인사이트**\n도구 사용은 LLM의 기능을 확장하고 환각을 줄여 신뢰성을 높이는 중요한 기법으로, 다양한 외부 시스템과의 연계를 통해 LLM의 활용 범위를 넓힐 수 있습니다.\n\n---\n\n#### 📍 슬라이드 15: 도구 사용 예시 - CI 테스트 통과\n\n**핵심 내용**\n- **IndexError 수정 및 CI 테스트**\n  - IndexError를 수정한 후, 제공된 도구(pytest)를 사용하여 CI(Continuous Integration) 테스트가 통과하는지 확인하는 과정입니다. \n  - pytest를 통해 유닛 테스트와 통합 테스트를 실행하여 코드의 안정성과 기능성을 검증합니다.\n  - 실무에서는 코드 수정을 신속하고 정확하게 수행하고, 즉각적인 테스트를 통해 배포 전 코드 품질을 보장할 수 있습니다.\n\n**💡 인사이트**\n도구 사용의 구체적인 예시는 코드 수정 후 신속한 테스트와 검증을 통해 개발 프로세스의 효율성을 높이는 방법을 보여줍니다.\n\n---\n\n#### 📍 슬라이드 16: 검색 증강 생성(Retrieval Augmented Generation)\n\n**핵심 내용**\n- **문맥 데이터 주입**\n  - LLM에 최신 문맥 데이터를 주입하여 재학습 없이 최신 상태를 유지하는 기술입니다. 빠른 반복, 해석 가능성 및 인용 제공, 환각 감소 등의 이점을 제공합니다.\n  - Cursor/Windsurf에서 @context 기능을 통해 RAG를 활용할 수 있습니다.\n  - 실무에서는 지속적으로 변화하는 정보를 처리하는 데 있어 LLM의 적응성을 높여줍니다.\n\n**💡 인사이트**\n검색 증강 생성은 LLM의 실시간 정보 처리 능력을 강화하여, 빠른 변화에 대응하고 신뢰할 수 있는 정보를 제공하는 데 중요한 역할을 합니다.\n\n---\n\n각 슬라이드는 LLM의 다양한 활용 기법을 설명하며, 실무에 적용할 때 LLM의 효율성과 신뢰성을 높이는 방법을 제시합니다. 이러한 기법들을 통해 LLM을 더욱 강력하고 유용하게 활용할 수 있습니다.\n\n---\n\n### LLM을 위한 파워 프롬프팅\n\n#### 📍 슬라이드 17: 검색 증강 생성(RAG) 예시\n\n**핵심 내용**\n- **UserAuthService 클래스 확장**\n  - UserAuthService 클래스를 확장하여 클라이언트가 유효한 OAuth 토큰을 제공하는지를 검증하는 기능을 추가합니다.\n  - 이 작업은 기존의 UserAuthService 클래스에 대한 이해가 필요하며, OAuth 프로토콜에 대한 지식을 활용하여 보안성을 강화합니다.\n- **코드 스니펫 및 문서 참조**\n  - 현재 UserAuthService 클래스의 작동 방식을 보여주는 코드 스니펫이 제공됩니다. 이는 개발자가 기존 코드를 이해하고 수정 방향을 정하는 데 도움을 줍니다.\n  - OAuth 토큰 관리를 위해 requests-oauthlib 문서의 URL이 제공됩니다. 이는 추가적인 라이브러리 사용 방법을 학습하는 데 유용합니다.\n\n**💡 인사이트**\n검색 증강 생성(RAG)은 LLM에게 구체적인 코드와 문서 레퍼런스를 제공함으로써 작업의 정확성과 효율성을 높일 수 있는 방법입니다. 이는 실무에서 코드 개발 및 수정 시 유용하게 활용될 수 있습니다.\n\n---\n\n#### 📍 슬라이드 18: 리플렉션(Reflexion)\n\n**핵심 내용**\n- **LLM의 자체 출력 반성**\n  - LLM이 자신의 출력에 대해 반성하도록 하여 더 나은 답변을 도출합니다. 이는 환경 신호로부터의 언어적 피드백을 통해 이루어집니다.\n  - \"이제 당신의 답변을 비판하십시오. 그것이 정확했습니까?\"라는 질문을 통해 모델의 자기 비판을 유도합니다.\n- **다중 턴 프롬프팅**\n  - 처음 시도한 결과에 대해 반성을 요구하고, 필요 시 수정하도록 유도하는 다중 턴 프롬프팅 기법을 사용합니다.\n  - 이는 자율 코딩 에이전트의 핵심 기술로, 모델이 자기 비판을 통해 지속적으로 학습하고 개선할 수 있도록 돕습니다.\n\n**💡 인사이트**\n리플렉션 기법은 LLM의 출력 품질을 크게 향상시킬 수 있는 방법으로, 특히 복잡한 문제 해결이나 자율적인 시스템 개발 시 중요한 역할을 합니다.\n\n---\n\n#### 📍 슬라이드 19: 리플렉션 예시 - company_location 열 확장\n\n**핵심 내용**\n- **company_location 열 확장**\n  - 문자열과 JSON 표현 모두를 처리할 수 있도록 company_location 열의 기능을 확장합니다.\n  - 현재 단위 테스트가 실패하고 JSONDecodeError가 발생하는 상황을 분석하여, 코드 수정 방향을 제시합니다.\n- **'관찰-반성-프롬프트 확장' 단계**\n  - 관찰 단계에서 문제를 파악하고, 반성 단계를 통해 해결 방법을 모색하며, 프롬프트 확장을 통해 최적의 솔루션을 도출합니다.\n\n**💡 인사이트**\n리플렉션을 통해 문제 상황을 분석하고, 개선 방향을 모색하는 과정은 실무에서 코드의 신뢰성과 유연성을 높이는 데 필수적인 접근법입니다.\n\n---\n\n#### 📍 슬라이드 20: 시스템 프롬프트(System Prompt)\n\n**핵심 내용**\n- **시스템 프롬프트의 역할**\n  - 시스템 프롬프트는 LLM에게 제공되는 첫 번째 메시지로, 페르소나, 출력 규칙, 스타일 등을 설정합니다.\n  - 이는 최종 사용자에게는 보이지 않지만, LLM의 초기 상태와 응답 특성을 결정짓는 중요한 요소입니다.\n\n**💡 인사이트**\n시스템 프롬프트는 LLM의 초기 설정을 통해 전체 출력의 방향성을 결정짓는 중요한 요소로, 초기 프롬프트 설계에 따라 모델의 응답 품질과 일관성이 크게 달라질 수 있습니다.\n\n---\n\n### [최첨단 LLM 시스템 프롬프트]\n\n#### 📍 슬라이드 21: 최첨단 LLM에 대한 샘플 시스템 프롬프트\n\n**핵심 내용**\n- 최첨단 LLM(System Prompt)에 대한 예시를 살펴볼 예정\n  - 이 슬라이드는 최신 대형 언어 모델(LLM)의 시스템 프롬프트를 분석할 것임을 예고합니다. 시스템 프롬프트는 LLM의 초기 설정이나 지침을 제공하여 모델의 동작 방식을 결정하는 중요한 요소입니다.\n  - 시스템 프롬프트는 모델이 사용자 입력을 어떻게 처리할지에 대한 방향성을 제시하는 역할을 합니다. 이를 통해 개발자는 모델의 응답을 더 일관되게 조정할 수 있습니다.\n\n**💡 인사이트**\n최신 LLM의 시스템 프롬프트를 이해하는 것은 모델의 성능과 사용자 경험을 최적화하는 데 필수적입니다. 이러한 이해는 실제 적용 시 모델의 응답을 보다 정확하게 조정하는 데 기여할 수 있습니다.\n\n---\n\n#### 📍 슬라이드 22: Claude 4.1 opus 시스템 프롬프트\n\n**핵심 내용**\n- Claude 4.1 opus 시스템 프롬프트 소개\n  - Claude 4.1 opus의 시스템 프롬프트는 그 구조가 아이작 아시모프의 로봇 3원칙과 유사하다고 설명됩니다. 로봇 3원칙은 로봇의 행동을 제어하기 위한 가상의 규칙으로, 인간에게 해를 끼치지 않으며, 명령을 따르고, 로봇 스스로를 보호하는 내용을 포함합니다.\n  - 이러한 원칙과 유사하게 Claude 4.1 opus의 시스템 프롬프트는 모델이 사용자와 상호작용할 때 안전하고 윤리적인 기준을 따르도록 설계되어 있습니다.\n\n**💡 인사이트**\nClaude 4.1 opus의 시스템 프롬프트가 아시모프의 로봇 3원칙과 유사하다는 점은, LLM 개발자들이 모델의 윤리적 사용과 안전성을 우선시하고 있음을 보여줍니다. 이는 기업과 개발자가 사용자와 상호작용 시 발생할 수 있는 에러나 오용을 방지하기 위한 중요한 전략이 될 수 있습니다.\n\n---\n\n이 두 슬라이드는 최첨단 LLM의 시스템 프롬프트가 어떻게 설계되고 어떤 기준을 따르는지에 대한 통찰을 제공합니다. 특히, Claude 4.1 opus의 예를 통해 시스템 프롬프트가 모델의 행동을 제어하고, 이를 통해 사용자 경험을 향상시킬 수 있음을 알 수 있습니다. 실무적으로는 이러한 원칙을 바탕으로 LLM을 설계하거나 조정할 때, 사용자와의 상호작용에서 발생할 수 있는 문제를 사전에 방지할 수 있습니다."
+  }
+}

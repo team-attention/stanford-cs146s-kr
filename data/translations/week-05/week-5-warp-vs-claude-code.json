@@ -1,0 +1,14 @@
+{
+  "slug": "week-5-warp-vs-claude-code",
+  "title": "Warp vs Claude Code",
+  "url": "https://www.warp.dev/university/getting-started/warp-vs-claude-code",
+  "type": "reading",
+  "week": 5,
+  "analyzedAt": "2026-01-03T23:28:24.094Z",
+  "analysis": {
+    "summary_ko": null,
+    "keyPoints": [],
+    "topics": [],
+    "pdfContent": "[Back to Home](https://www.warp.dev/university)\n\n# [시작하기](https://www.warp.dev/university/getting-started/all)\n\n# Warp와 Claude Code 비교\n\n!![](https://i.ytimg.com/vi_webp/NUVftxAqZQo/maxresdefault.webp)\n\n이 포괄적인 비교 동영상은 다양한 측면에서 Claude Code CLI와 Warp의 내장 코딩 에이전트를 검토합니다. Ben Holmes는 파일 작업, 코드 비교, 컨텍스트 수집, 모델 선택, 구성 옵션 등 두 도구의 기능을 시연합니다. Sentry 문제를 사용한 성능 테스트에서 두 도구 모두 2-4분의 유사한 완료 시간으로 근본 원인을 식별하고 수정했습니다. 이 비교에서 Claude Code는 터미널 중심 워크플로우와 하위 에이전트에 강점을 보이고, Warp는 내장 파일 트리, 차이점 편집, GPT-5를 포함한 다중 모델 지원과 같은 UI 기능에 강점을 가지고 있음을 보여줍니다.\n\n!![Dark background with beams of light and scattered white dots, resembling underwater light rays or a starry night sky.](https://framerusercontent.com/images/DBbesRMGp2ck7b4oPPcPRF78mg0.png?width=2760&height=644)\n\nWarp 다운로드\n\nNo.1 코딩 에이전트\n\n[다운로드\\\\\n\\\\\nWarp 다운로드](https://app.warp.dev/get_warp)"
+  }
+}

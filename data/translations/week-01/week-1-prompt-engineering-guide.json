@@ -1,0 +1,14 @@
+{
+  "slug": "week-1-prompt-engineering-guide",
+  "title": "Prompt Engineering Guide",
+  "url": "https://www.promptingguide.ai/techniques",
+  "type": "reading",
+  "week": 1,
+  "analyzedAt": "2026-01-04T05:38:55.092Z",
+  "analysis": {
+    "summary_ko": null,
+    "keyPoints": [],
+    "topics": [],
+    "pdfContent": "# 프롬프트 기법\n\n프롬프트 엔지니어링은 다양한 작업에서 더 나은 결과를 얻기 위해 프롬프트를 효과적으로 설계하고 개선하는 데 도움을 줍니다.\n\n이전 기본 예제들은 재미있었지만, 이 섹션에서는 더 복잡한 작업을 수행하고 대규모 언어 모델의 신뢰성과 성능을 개선할 수 있는 더 발전된 프롬프트 엔지니어링 기법을 다룹니다.\n\n- [제로 샷 프롬프팅](https://www.promptingguide.ai/techniques/zeroshot)\n- [소수 샷 프롬프팅](https://www.promptingguide.ai/techniques/fewshot)\n- [연쇄적 사고 프롬프팅](https://www.promptingguide.ai/techniques/cot)\n- [메타 프롬프팅](https://www.promptingguide.ai/techniques/meta-prompting)\n- [자기 일관성](https://www.promptingguide.ai/techniques/consistency)\n- [지식 생성 프롬프팅](https://www.promptingguide.ai/techniques/knowledge)\n- [프롬프트 체이닝](https://www.promptingguide.ai/techniques/prompt_chaining)\n- [사고의 나무](https://www.promptingguide.ai/techniques/tot)\n- [검색 보조 생성](https://www.promptingguide.ai/techniques/rag)\n- [자동 추론 및 도구 사용](https://www.promptingguide.ai/techniques/art)\n- [자동 프롬프트 엔지니어](https://www.promptingguide.ai/techniques/ape)\n- [액티브 프롬프트](https://www.promptingguide.ai/techniques/activeprompt)\n- [방향성 자극 프롬프팅](https://www.promptingguide.ai/techniques/dsp)\n- [프로그램 지원 언어 모델](https://www.promptingguide.ai/techniques/pal)\n- [ReAct](https://www.promptingguide.ai/techniques/react)\n- [반성](https://www.promptingguide.ai/techniques/reflexion)\n- [멀티모달 CoT](https://www.promptingguide.ai/techniques/multimodalcot)\n- [그래프 프롬프팅](https://www.promptingguide.ai/techniques/graph)\n\n[프롬프트 예시](https://www.promptingguide.ai/introduction/examples \"프롬프트 예시\")"
+  }
+}

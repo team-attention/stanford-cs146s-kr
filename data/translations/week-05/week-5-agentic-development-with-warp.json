@@ -1,0 +1,14 @@
+{
+  "slug": "week-5-agentic-development-with-warp",
+  "title": "Agentic Development with Warp",
+  "url": "https://github.com/mihail911/modern-software-dev-assignments/tree/master/week5",
+  "type": "github",
+  "week": 5,
+  "analyzedAt": "2026-01-04T05:49:16.385Z",
+  "analysis": {
+    "summary_ko": null,
+    "keyPoints": [],
+    "topics": [],
+    "pdfContent": "# 5주차\n\n자율 코딩 에이전트를 실험하기 위한 최소한의 풀스택 스타터.\n\n- SQLite를 사용하는 FastAPI 백엔드 (SQLAlchemy)\n- 정적 프론트엔드 (Node 도구 체인 필요 없음)\n- 최소한의 테스트 (pytest)\n- 사전 커밋 (black + ruff)\n- 에이전트 주도 워크플로우 연습 과제\n\n## 빠른 시작\n\n1) 가상 환경을 생성하고 활성화한 후, 의존성을 설치합니다.\n\n```bash\ncd /Users/mihaileric/Documents/code/modern-software-dev-assignments\npython -m venv .venv && source .venv/bin/activate\npip install -e .[dev]\n```\n\n2) (선택 사항) 사전 커밋 훅을 설치합니다.\n\n```bash\npre-commit install\n```\n\n3) 앱을 실행합니다 (`week5/`에서).\n\n```bash\ncd week5 && make run\n```\n\n프론트엔드는 `http://localhost:8000`에서, API 문서는 `http://localhost:8000/docs`에서 확인할 수 있습니다.\n\n## 구조\n\n```\nbackend/                # FastAPI 앱\nfrontend/               # FastAPI가 제공하는 정적 UI\ndata/                   # SQLite DB + 초기 데이터\ndocs/                   # 에이전트 주도 워크플로우를 위한 과제\n```\n\n## 테스트\n\n```bash\ncd week5 && make test\n```\n\n## 포맷팅/린팅\n\n```bash\ncd week5 && make format\ncd week5 && make lint\n```\n\n## 구성\n\n기본값(예: 데이터베이스 경로)을 덮어쓰려면 `.env.example`을 `.env`로 복사하세요 (`week5/`에서)."
+  }
+}

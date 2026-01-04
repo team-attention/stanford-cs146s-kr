@@ -1,0 +1,96 @@
+{
+  "slug": "week-2-lecture-월-9-29",
+  "title": "월 9/29: 처음부터 코딩 에이전트 구축",
+  "url": "https://docs.google.com/presentation/d/11CP26VhsjnZOmi9YFgLlonzdib9BLyAlgc4cEvC5Fps/edit?usp=sharing",
+  "type": "slides",
+  "week": 2,
+  "analyzedAt": "2026-01-03T23:34:53.516Z",
+  "analysis": {
+    "summary_ko": "이 프레젠테이션은 2025년 스탠포드 대학 CS146S 강의에서 진행된 \"The Modern Software Developer\"라는 주제의 강연 내용입니다. 주요 내용은 LLM(대규모 언어 모델)을 활용하여 코딩 에이전트를 직접 구축하는 방법에 대한 것입니다. 코딩 에이전트의 작동 방식은 사용자와의 상호작용을 통해 LLM이 도구 호출을 요청하고, 클라이언트가 이를 실행하는 과정을 반복하는 방식으로 이루어집니다. 핵심 기술로는 상황 인지 컨텍스트 유지, 명령어 추출, 그리고 컨텍스트 과부하 방지를 위한 하위 에이전트 활용 등이 제시됩니다.\n",
+    "keyPoints": [],
+    "topics": [],
+    "slides": [
+      {
+        "slideNumber": 1,
+        "summary_ko": "이 슬라이드는 현대 소프트웨어 개발자에 대한 프레젠테이션의 제목 슬라이드입니다. CS146S 스탠포드 대학교 2025년 가을 학기에서 진행되며, 발표자는 Mihail Eric이고, 관련 웹사이트는 themodernsoftware.dev 입니다.",
+        "keyPoints": [
+          "프레젠테이션 소개",
+          "CS146S 스탠포드 대학교 2025년 가을 학기",
+          "Mihail Eric 발표"
+        ],
+        "text_original": "The Modern Software Developer\nCS146S \nStanford University, Fall 2025\nMihail Eric\nthemodernsoftware.dev",
+        "text_ko": "현대 소프트웨어 개발자\nCS146S\n스탠포드 대학교, 2025년 가을\nMihail Eric\nthemodernsoftware.dev"
+      },
+      {
+        "slideNumber": 2,
+        "summary_ko": "이 슬라이드는 코딩 에이전트를 처음부터 구축하는 것에 대한 프레젠테이션이며, 관련 웹사이트는 themodernsoftware.dev 입니다.",
+        "keyPoints": [
+          "코딩 에이전트 구축",
+          "themodernsoftware.dev"
+        ],
+        "text_original": "Building a Coding Agent From Scratch\nthemodernsoftware.dev",
+        "text_ko": "코딩 에이전트 처음부터 구축하기\nthemodernsoftware.dev"
+      },
+      {
+        "slideNumber": 3,
+        "summary_ko": "사용자는 코딩 에이전트 클라이언트와 상호 작용하며, LLM(Large Language Model)을 기반으로 루프를 실행합니다. LLM은 필요에 따라 도구 호출을 실행하며, 클라이언트는 이를 오프-LLM 방식으로 처리합니다.",
+        "keyPoints": [
+          "코딩 에이전트와 사용자 상호작용",
+          "LLM 기반 루프",
+          "도구 호출 및 실행 (오프-LLM)"
+        ],
+        "text_original": "themodernsoftware.dev\nIt’s that simple\nUser interacts with coding agent client (windsurf, cursor, claude code) and runs a loop with an underlying llm. Sometimes the llm issues tool calls which the client executes (off-LLM)",
+        "text_ko": "themodernsoftware.dev\n그만큼 간단합니다.\n사용자는 코딩 에이전트 클라이언트 (windsurf, cursor, claude code)와 상호 작용하고, 기반 LLM(Large Language Model)과 함께 루프를 실행합니다. 때로는 LLM이 도구 호출(tool call)을 발행하고, 클라이언트는 이를 실행합니다 (오프-LLM)."
+      },
+      {
+        "slideNumber": 4,
+        "summary_ko": "이 슬라이드는 코딩 에이전트와 관련된 주요 용어를 정의합니다. 시스템 프롬프트는 LLM의 동작을 정의하고, 사용자 프롬프트는 사용자의 요청을 나타내며, 어시스턴트 프롬프트는 LLM의 응답을 의미합니다.",
+        "keyPoints": [
+          "시스템 프롬프트 정의",
+          "사용자 프롬프트 정의",
+          "어시스턴트 프롬프트 정의"
+        ],
+        "text_original": "Terminology\nSystem prompt\nDefine the behavior and some directives for the overall LLM\nUser prompt\nCustom user requests\nAssistant prompt\nLLM’s response\nthemodernsoftware.dev",
+        "text_ko": "용어\n시스템 프롬프트 (System prompt)\n전반적인 LLM의 동작 및 일부 지침을 정의합니다.\n사용자 프롬프트 (User prompt)\n맞춤형 사용자 요청\n어시스턴트 프롬프트 (Assistant prompt)\nLLM의 응답\nthemodernsoftware.dev"
+      },
+      {
+        "slideNumber": 5,
+        "summary_ko": "이 슬라이드는 코딩 에이전트 작동 단계에 대해 설명합니다. 터미널 입력을 대화에 추가하고, LLM에게 사용 가능한 도구를 알리고, LLM의 요청에 따라 오프라인에서 도구를 실행하고 응답을 반환합니다. 주요 도구로는 'Read_file', 'List_dir', 'Edit_file' 등이 있습니다.",
+        "keyPoints": [
+          "터미널 입력 처리",
+          "LLM에게 도구 정보 제공",
+          "오프라인 도구 실행 및 응답 반환",
+          "주요 도구: Read_file, List_dir, Edit_file"
+        ],
+        "text_original": "Steps\nRead in terminal and keep appending to conversation\nTell LLM what tools are available\nIt asks for tool use at appropriate time\nYou execute tool offline and return response\n“Read_file”\n“List_dir”\n“Edit_file”\nCreate a new file, edit a new file\nthemodernsoftware.dev",
+        "text_ko": "단계\n터미널에서 읽고 대화에 계속 추가합니다.\nLLM에게 사용 가능한 도구를 알려줍니다.\nLLM은 적절한 시기에 도구 사용을 요청합니다.\n오프라인에서 도구를 실행하고 응답을 반환합니다.\n“Read_file”\n“List_dir”\n“Edit_file”\n새 파일을 만들고, 새 파일을 편집합니다.\nthemodernsoftware.dev"
+      },
+      {
+        "slideNumber": 6,
+        "summary_ko": "이 슬라이드는 코딩 에이전트를 처음부터 구축하는 것을 강조하며, 관련 웹사이트는 themodernsoftware.dev 입니다.",
+        "keyPoints": [
+          "코딩 에이전트 구축 강조",
+          "themodernsoftware.dev"
+        ],
+        "text_original": "Let’s build a coding agent from scratch!\nthemodernsoftware.dev",
+        "text_ko": "코딩 에이전트 처음부터 구축하기!\nthemodernsoftware.dev"
+      },
+      {
+        "slideNumber": 7,
+        "summary_ko": "이 슬라이드는 Claude의 내부 구조를 분석하여 '비밀 소스'를 설명합니다. 주요 요소는 작고 목표가 분명한 프롬프트로 컨텍스트를 미리 로드하고, 시스템 알림을 사용하여 드리프트를 방지하고, 명령어 접두사를 추출하고, 컨텍스트 과부하를 방지하기 위해 하위 에이전트를 생성하는 것입니다.",
+        "keyPoints": [
+          "Claude 내부 구조 분석",
+          "작은 프롬프트로 컨텍스트 로드",
+          "시스템 알림을 통한 드리프트 방지",
+          "명령어 접두사 추출",
+          "하위 에이전트 생성 (컨텍스트 과부하 방지)"
+        ],
+        "text_original": "The “Secret” Sauce\nLooking under the hood of Claude\nFront-load context with tiny targeted prompts\nSystem reminders everywhere including system/user prompts, tool calls, tool results to prevent drift (<system-reminder> tags)\nCommand prefix extraction\nSpawns sub agents (likely to help with preventing context overloading)\nthemodernsoftware.dev",
+        "text_ko": "“비밀” 소스\nClaude의 내부 구조 살펴보기\n작고 목표가 분명한 프롬프트로 컨텍스트를 미리 로드합니다.\n시스템/사용자 프롬프트, 도구 호출, 도구 결과를 포함하여 도처에 시스템 알림을 배치하여 드리프트(drift)를 방지합니다 (<system-reminder> 태그).\n명령어 접두사 추출(Command prefix extraction)\n하위 에이전트를 생성합니다 (컨텍스트 과부하 방지에 도움이 될 가능성이 높습니다).\nthemodernsoftware.dev"
+      }
+    ],
+    "totalSlides": 7,
+    "presentationId": "11CP26VhsjnZOmi9YFgLlonzdib9BLyAlgc4cEvC5Fps",
+    "detailedNote_ko": "## 🎯 한눈에 보는 핵심 내용\n\n### 이 프레젠테이션의 핵심 메시지\n이 프레젠테이션은 LLM(대규모 언어 모델)을 활용하여 처음부터 코딩 에이전트를 구축하는 방법을 설명합니다. 코딩 에이전트는 사용자와 상호작용하며 실시간으로 명령을 이해하고 실행할 수 있는 시스템을 개발하는 데 중점을 두고 있습니다. 이를 통해 개발자가 더 효율적이고 사용자 맞춤형 소프트웨어 솔루션을 제공할 수 있도록 지원합니다.\n\n### 📌 핵심 Q&A\n\n**Q1: 코딩 에이전트는 어떻게 사용자와 상호작용하며 작동합니까?**\n\n코딩 에이전트는 사용자가 코딩 에이전트 클라이언트와 상호작용하면, LLM이 필요에 따라 도구 호출을 발행하여 처리하는 방식으로 작동합니다. 사용자의 요청은 LLM 기반 루프를 통해 이해되고 클라이언트에 의해 실행됩니다. 이 과정은 LLM이 명령을 이해하고, 필요한 작업을 수행하는 능력을 활용하여 이루어집니다.\n\n---\n\n**Q2: 실무에서 코딩 에이전트를 처음부터 구축할 때 중요한 요소는 무엇입니까?**\n\n- 터미널 입력을 실시간으로 처리하여 사용자와의 상호작용을 원활하게 유지합니다.\n- LLM에게 사용 가능한 도구 정보를 사전에 제공하여 적절한 도구를 최적의 시점에 사용할 수 있게 합니다.\n- 오프라인 도구 실행 및 응답 반환을 통해 실질적인 작업을 수행하고 필요한 결과를 제공합니다.\n\n---\n\n**Q3: 코딩 에이전트의 효율적인 작동을 위해 Claude의 내부 구조는 어떻게 설계되었습니까?**\n\nClaude는 작고 명확한 프롬프트를 사용하여 컨텍스트를 미리 로드하고, 시스템 알림을 통해 드리프트를 방지하며, 명령어 접두사를 추출하여 하위 에이전트를 생성합니다. 이러한 설계는 시스템의 효율성을 높이고 복잡한 작업을 효과적으로 처리할 수 있도록 돕습니다.\n\n---\n\n### 💡 학습 가치 (Why This Matters)\n\n이 프레젠테이션은 현대 소프트웨어 개발에서 LLM을 활용하여 코딩 에이전트를 구축하는 방법을 깊이 있게 설명합니다. 실무적으로, 이는 개발자들이 복잡한 명령을 처리하고 사용자와의 상호작용을 최적화하는 시스템을 설계할 수 있는 능력을 제공합니다. 학습자들은 이를 통해 AI 기반 도구의 작동 원리를 이해하고, 맞춤형 솔루션을 개발할 수 있는 능력을 갖출 수 있습니다. 또한, 이러한 기술은 빠르게 변화하는 소프트웨어 개발 환경에서 경쟁력을 유지하고, 보다 효율적인 작업 흐름을 창출하는 데 필수적입니다.\n\n---\n\n\n## 📚 슬라이드별 상세 학습 노트\n\n### 현대 소프트웨어 개발자: 처음부터 코딩 에이전트 구축\n\n#### 📍 슬라이드 1: 현대 소프트웨어 개발자 소개\n\n**핵심 내용**\n- [프레젠테이션 소개]\n  - 이 슬라이드는 \"현대 소프트웨어 개발자\"라는 주제의 프레젠테이션을 소개하는 제목 슬라이드입니다.\n  - 이 강의는 스탠포드 대학교의 CS146S 코스의 일환으로 2025년 가을 학기에 진행됩니다.\n- [발표자 정보]\n  - 발표자는 Mihail Eric이며, 그가 운영하는 웹사이트는 themodernsoftware.dev입니다.\n  - 이 웹사이트는 현대 소프트웨어 개발과 관련된 자료와 정보를 제공합니다.\n\n**💡 인사이트**\n이 슬라이드는 프레젠테이션의 전반적인 주제와 강의의 배경을 설명하며, 발표자의 전문성과 관련된 웹사이트를 통해 추가적인 학습 자원을 제공할 수 있음을 시사합니다.\n\n---\n\n#### 📍 슬라이드 2: 코딩 에이전트 처음부터 구축하기\n\n**핵심 내용**\n- [코딩 에이전트 구축]\n  - 이 슬라이드는 \"코딩 에이전트를 처음부터 구축하기\"라는 주제를 명확히 설정하고 있습니다.\n  - 주된 초점은 코딩 에이전트를 어떻게 처음부터 구축할 수 있는지를 탐구하는 것입니다.\n- [관련 웹사이트]\n  - 관련 웹사이트 themodernsoftware.dev는 이 주제에 대한 추가 정보와 리소스를 제공합니다.\n\n**💡 인사이트**\n코딩 에이전트를 처음부터 구축하는 과정은 복잡할 수 있지만, 이 프레젠테이션은 그 과정을 단계별로 이해하고 적용할 수 있도록 도와줄 것입니다.\n\n---\n\n#### 📍 슬라이드 3: 코딩 에이전트와 사용자 상호작용\n\n**핵심 내용**\n- [사용자와 코딩 에이전트 상호작용]\n  - 사용자는 코딩 에이전트 클라이언트(예: windsurf, cursor, claude code)와 상호작용하며, 이를 통해 LLM을 기반으로 한 루프가 실행됩니다.\n- [LLM 기반 루프 및 도구 호출]\n  - LLM(Large Language Model)은 필요에 따라 도구 호출을 발행하며, 이러한 호출은 클라이언트에 의해 처리됩니다. 이 과정은 오프-LLM 방식으로 이루어집니다.\n  - 이는 LLM이 단순히 명령을 이해하는 것에 그치지 않고, 필요한 작업을 수행할 수 있도록 진화했음을 보여줍니다.\n\n**💡 인사이트**\n코딩 에이전트는 LLM을 통해 사용자의 요구를 이해하고 적절한 작업을 수행함으로써, 개발자가 보다 효율적으로 소프트웨어를 개발할 수 있도록 지원합니다.\n\n---\n\n#### 📍 슬라이드 4: 용어 정의\n\n**핵심 내용**\n- [시스템 프롬프트]\n  - 시스템 프롬프트는 LLM의 동작 및 일부 지침을 정의하는 역할을 합니다. 이는 에이전트가 전반적으로 어떻게 작동할지를 결정합니다.\n- [사용자 프롬프트]\n  - 사용자 프롬프트는 맞춤형 사용자 요청을 나타내며, 사용자가 에이전트에게 구체적인 작업을 요청하는 방식입니다.\n- [어시스턴트 프롬프트]\n  - 어시스턴트 프롬프트는 LLM의 응답을 의미하며, 사용자의 요청에 대한 에이전트의 반응을 정의합니다.\n\n**💡 인사이트**\n이러한 용어들은 코딩 에이전트의 작동 방식을 이해하는 데 필수적입니다. 각 프롬프트는 에이전트의 기능을 최적화하고, 사용자 경험을 향상시키는 데 중요한 역할을 합니다.\n\n---\n\n### 코딩 에이전트 구축 단계\n\n#### 📍 슬라이드 5: 코딩 에이전트 작동 단계\n\n**핵심 내용**\n- **터미널 입력 처리**\n  - 코딩 에이전트는 터미널에서 입력을 읽고 이를 대화에 추가합니다. 이는 사용자와의 상호작용을 통해 실시간으로 데이터를 처리하고 반영하는 핵심 기능입니다.\n  - 실무에서는 사용자 명령을 실시간으로 처리하여 시스템과의 상호작용을 원활하게 유지하는 데 중요합니다.\n- **LLM에게 도구 정보 제공**\n  - LLM(대형 언어 모델)에게 사용 가능한 도구를 사전에 알려줌으로써, 모델이 어떤 도구를 언제 사용할 수 있는지 결정할 수 있게 합니다.\n  - 이는 AI 시스템이 여러 기능과 도구를 최적의 시점에 사용할 수 있도록 하는 데 필수적입니다.\n- **오프라인 도구 실행 및 응답 반환**\n  - LLM이 도구 사용을 요청하면, 이 도구들은 오프라인에서 실행되고 결과를 반환합니다.\n  - 예를 들어, 'Read_file', 'List_dir', 'Edit_file' 등의 도구가 사용됩니다. 이는 파일을 읽고, 디렉토리를 나열하며 파일을 편집하는 일련의 작업을 수행합니다.\n  \n**💡 인사이트**\n코딩 에이전트는 터미널 입력을 기반으로 실시간 상호작용을 통해 다양한 도구를 적재적소에 활용함으로써 사용자 경험을 극대화할 수 있습니다.\n\n---\n\n### 코딩 에이전트 처음부터 구축하기\n\n#### 📍 슬라이드 6: 코딩 에이전트 구축 강조\n\n**핵심 내용**\n- **코딩 에이전트 구축 강조**\n  - 코딩 에이전트를 처음부터 구축하는 과정의 중요성이 강조됩니다. 이는 시스템 설계 및 구현의 기초를 다지는 데 필수적입니다.\n  - 실무에서는 처음부터 시스템을 구축함으로써 요구사항에 정확히 맞는 맞춤형 솔루션을 개발할 수 있습니다.\n- **themodernsoftware.dev**\n  - 관련 웹사이트인 themodernsoftware.dev가 언급되며, 추가적인 리소스를 제공하는 플랫폼으로서의 역할을 합니다.\n\n**💡 인사이트**\n처음부터 코딩 에이전트를 구축하는 것은 사용자 요구에 맞는 맞춤형 솔루션을 개발하고 지속적으로 개선할 수 있는 가능성을 제공합니다.\n\n---\n\n### Claude의 내부 구조\n\n#### 📍 슬라이드 7: Claude의 내부 구조 분석\n\n**핵심 내용**\n- **작고 목표가 분명한 프롬프트로 컨텍스트 로드**\n  - Claude 시스템은 작고 명확한 프롬프트를 사용하여 컨텍스트를 미리 로드합니다. 이는 시스템의 효율성을 높이는 전략입니다.\n  - 실무에서는 명확한 목표를 가진 프롬프트를 통해 AI 모델이 필요한 데이터를 빠르게 이해하고 처리할 수 있도록 합니다.\n- **시스템 알림을 통한 드리프트 방지**\n  - 시스템/사용자 프롬프트, 도구 호출, 도구 결과를 포함하는 시스템 알림을 통해 드리프트(drift)를 방지합니다. 이 작업은 <system-reminder> 태그를 사용하여 구현됩니다.\n  - 이는 AI 시스템이 일관성을 유지하며 정확한 결과를 제공하는 데 중요합니다.\n- **명령어 접두사 추출 및 하위 에이전트 생성**\n  - 명령어의 접두사를 추출하여 명령어의 의도를 명확히 파악하고, 컨텍스트 과부하를 방지하기 위해 하위 에이전트를 생성합니다.\n  - 이는 복잡한 작업을 여러 작은 작업으로 나누어 처리함으로써 효율성을 높이는 데 기여합니다.\n\n**💡 인사이트**\nClaude의 내부 구조는 명확한 프롬프트와 시스템 알림을 통해 효율성을 극대화하며, 명령어 추출 및 하위 에이전트 생성을 통한 컨텍스트 관리로 복잡한 작업을 효과적으로 처리할 수 있습니다."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "slug": "week-3-build-a-custom-mcp-server",
+  "title": "Build a Custom MCP Server",
+  "url": "https://github.com/mihail911/modern-software-dev-assignments/blob/master/week3/assignment.md",
+  "type": "github",
+  "week": 3,
+  "analyzedAt": "2026-01-03T23:40:30.552Z",
+  "analysis": {
+    "summary_ko": null,
+    "keyPoints": [],
+    "topics": [],
+    "pdfContent": "# 3주차 — 맞춤형 MCP 서버 구축하기\n\n외부 API를 감싸는 모델 컨텍스트 프로토콜(MCP) 서버를 설계하고 구현하세요. 다음을 수행할 수 있습니다:\n- **로컬**로 실행(STDIO 전송)하고 MCP 클라이언트(예: Claude Desktop)와 통합\n- 또는 **원격**으로 실행(HTTP 전송)하고 모델 에이전트나 클라이언트에서 호출. 이 방법이 더 어렵지만 추가 점수를 획득할 수 있습니다.\n\nMCP 인증 사양에 맞춰 인증(API 키 또는 OAuth2)을 추가하면 추가 점수가 있습니다.\n\n## 학습 목표\n- MCP의 핵심 기능 이해: 도구, 리소스 및 프롬프트.\n- 형식화된 매개변수와 견고한 오류 처리가 있는 도구 정의 구현.\n- 로깅 및 전송 모범 사례 준수(STDIO 서버에서는 stdout 사용 금지).\n- 옵션으로 HTTP 전송을 위한 인증 흐름을 구현.\n\n## 요구사항\n1. 사용할 외부 API를 선택하고 사용할 엔드포인트를 문서화. 예: 날씨, GitHub 이슈, 노션 페이지, 영화/TV 데이터베이스, 캘린더, 작업 관리자, 금융/암호화폐, 여행, 스포츠 통계.\n2. 최소 두 개의 MCP 도구 노출\n3. 기본적인 복원력 구현:\n   - HTTP 실패, 타임아웃 및 빈 결과에 대한 우아한 오류 처리.\n   - API 속도 제한 준수(예: 단순 백오프 또는 사용자 관련 경고).\n4. 패키징 및 문서화:\n   - 명확한 설정 지침, 환경 변수 및 실행 명령 제공.\n   - 예제 호출 흐름 포함(클라이언트에서 도구를 트리거하기 위해 입력/클릭할 내용).\n5. 배포 모드 하나 선택:\n   - 로컬: STDIO 서버, 머신에서 실행 가능하고 Claude Desktop 또는 Cursor 같은 AI IDE에서 검색 가능.\n   - 원격: 네트워크를 통해 접근할 수 있는 HTTP 서버, MCP 인식 클라이언트 또는 에이전트 런타임에서 호출 가능. 배포 및 액세스 가능하면 추가 점수.\n6. (선택 사항) 보너스: 인증\n   - 환경 변수와 클라이언트 구성으로 API 키 지원 또는\n   - HTTP 전송을 위한 OAuth2 스타일의 베어러 토큰, 토큰 청중 검증 및 업스트림 API로의 토큰 전달 금지.\n\n## 제출물\n- `week3/`에 소스 코드 (추천: `week3/server/`에 `main.py` 또는 `app.py`처럼 명확한 진입점을 갖춘 코드).\n- `week3/README.md` 포함:\n  - 전제 조건, 환경 설정 및 실행 지침(로컬 및/또는 원격).\n  - MCP 클라이언트(로컬의 Claude Desktop 예제) 또는 원격 에이전트 런타임 구성 방법.\n  - 도구 참조: 이름, 매개변수, 예제 입력/출력 및 기대되는 동작.\n\n## 평가 기준 (총 90점)\n- 기능(35): 2개 이상의 도구 구현, 올바른 API 통합, 의미 있는 출력.\n- 신뢰성(20): 입력 검증, 오류 처리, 로깅, 속도 제한 인식.\n- 개발자 경험(20): 명확한 설정/문서화, 로컬 실행 용이; 적절한 폴더 구조.\n- 코드 품질(15): 읽기 쉬운 코드, 설명적인 이름, 최소한의 복잡성, 적재적소의 유형 힌트.\n- 추가 점수(10):\n  - +5 에이전트/클라이언트(예: OpenAI/Claude SDK)에서 호출 가능한 원격 HTTP MCP 서버.\n  - +5 인증 제대로 구현(API 키 또는 청중 검증을 가지는 OAuth2).\n\n## 유용한 참고 자료\n- MCP 서버 빠른 시작: [modelcontextprotocol.io/quickstart/server](https://modelcontextprotocol.io/quickstart/server).\n*주의: 이 예제 그대로 제출할 수 없습니다.*\n- MCP 인증(HTTP): [modelcontextprotocol.io/specification/2025-06-18/basic/authorization](https://modelcontextprotocol.io/specification/2025-06-18/basic/authorization)\n- Cloudflare의 원격 MCP(에이전트): [developers.cloudflare.com/agents/guides/remote-mcp-server/](https://developers.cloudflare.com/agents/guides/remote-mcp-server/). 배포 전에 로컬에서 서버를 디버그하려면 modelcontextprotocol 검사 도구를 사용하세요.\n- https://vercel.com/docs/mcp/deploy-mcp-servers-to-vercel 원격 MCP 배포를 선택할 경우, Vercel은 무료 계층을 제공하는 좋은 옵션입니다."
+  }
+}

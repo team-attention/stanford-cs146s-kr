@@ -1,0 +1,169 @@
+{
+  "slug": "week-2-lecture-금-10-3",
+  "title": "금 10/3: 커스텀 MCP 서버 구축",
+  "url": "https://docs.google.com/presentation/d/1zSC2ra77XOUrJeyS85houg1DU7z9hq5Y4ebagTch-5o/edit?usp=drive_link",
+  "type": "slides",
+  "week": 2,
+  "analyzedAt": "2026-01-03T23:22:47.645Z",
+  "analysis": {
+    "summary_ko": "이 프레젠테이션은 LLM(대규모 언어 모델)이 외부 데이터와 상호 작용하여 자율 시스템을 구축하는 데 필요한 기술, 특히 MCP(Model Context Protocol)에 대해 설명합니다. MCP는 다양한 API들을 LLM이 일관된 방식으로 사용할 수 있도록 표준화된 인터페이스를 제공하여, LLM 애플리케이션과 API 간의 연결 복잡성을 줄입니다.  MCP는 JSON-RPC 기반으로 도구 목록, 실행, 응답을 표준화하며, Language Server Protocol에서 확장되어 에이전트 기반 워크플로우를 지원합니다. 실제 MCP 서버 구축 예시를 통해 사용법을 제시하며, API 설계 시 AI 친화적으로 만들고, 현재 기술의 한계점과 개선 방안을 논의합니다.\n",
+    "keyPoints": [],
+    "topics": [],
+    "slides": [
+      {
+        "slideNumber": 1,
+        "summary_ko": "이 슬라이드는 프레젠테이션의 제목 슬라이드로, 주제, 과목 정보, 발표자 이름, 웹사이트 주소를 나타냅니다.",
+        "keyPoints": [
+          "프레젠테이션 제목: 최신 소프트웨어 개발자",
+          "과목: CS146S",
+          "발표자: Mihail Eric"
+        ],
+        "text_original": "The Modern Software Developer\nCS146S \nStanford University, Fall 2025\nMihail Eric\nthemodernsoftware.dev",
+        "text_ko": "최신 소프트웨어 개발자\nCS146S\n스탠포드 대학교, 2025년 가을\nMihail Eric\nthemodernsoftware.dev"
+      },
+      {
+        "slideNumber": 2,
+        "summary_ko": "이 슬라이드는 프레젠테이션의 주제를 간략하게 소개하는 슬라이드입니다.",
+        "keyPoints": [
+          "주제: MCP (Model Context Protocol) 및 관련 기술"
+        ],
+        "text_original": "To MCP and Beyond\nthemodernsoftware.dev",
+        "text_ko": "MCP 그리고 그 너머\nthemodernsoftware.dev"
+      },
+      {
+        "slideNumber": 3,
+        "summary_ko": "이 슬라이드는 대규모 언어 모델(LLM)의 한계와 동적 데이터의 필요성을 강조하며, RAG(검색 증강 생성)와 도구 호출(tool-calling)이 해결책이 될 수 있음을 제시합니다.",
+        "keyPoints": [
+          "LLM의 정적 지식 한계",
+          "동적 데이터 필요",
+          "RAG 및 도구 호출의 중요성"
+        ],
+        "text_original": "Why\nLLMs have vast (but static) world knowledge that only updates when we retrain\nTo build fully autonomous systems we need robust ways to feed dynamic data in\nWhat’s the weather today\nWho’s president\nWhat’s the price of Bitcoin\nWho’s the narrator in Nike’s latest ad campaign\nRAG and tool-calling are the best answer we have today\nthemodernsoftware.dev",
+        "text_ko": "왜?\nLLM(대규모 언어 모델)은 방대한 (하지만 정적인) 세계 지식을 가지고 있으며, 재학습을 통해서만 업데이트됩니다.\n완전 자동화된 시스템을 구축하려면 동적 데이터를 제공하는 강력한 방법이 필요합니다.\n오늘 날씨는 어떤가요?\n누가 대통령인가요?\n비트코인 가격은 얼마인가요?\n나이키의 최신 광고 캠페인의 내레이터는 누구인가요?\nRAG(검색 증강 생성)와 도구 호출(tool-calling)은 오늘날 우리가 가진 최선의 해답입니다.\nthemodernsoftware.dev"
+      },
+      {
+        "slideNumber": 4,
+        "summary_ko": "이 슬라이드는 모델 컨텍스트 프로토콜(MCP)의 기본 개념과 역사적 배경을 설명하며, LLM과 도구 통합을 위한 표준 형식의 필요성을 강조합니다. 과거에는 API 형식이 잘 갖춰져 LLM 사용이 어렵지 않았음을 언급합니다.",
+        "keyPoints": [
+          "모델 컨텍스트 프로토콜 (MCP) 정의",
+          "LLM과 도구 통합의 표준 형식",
+          "MCP 도입 이전 시대의 API 사용"
+        ],
+        "text_original": "Basics\nModel Context Protocol\nOpen protocol that allows systems to provide context to AI models in a manner generalizable across integrations\nIn English: standard format for exposing tools to LLMs\nHistory: in the distant past pre-November 2024 when MCP was introduced…\nthemodernsoftware.dev\nRecall what we did in the last class, this was like the pre-MCP days. The APIs were pretty well-formatted so getting the LLM to use them wasn’t super challenging.",
+        "text_ko": "기본\n모델 컨텍스트 프로토콜(Model Context Protocol)\n시스템이 AI 모델에 통합 전반에 걸쳐 일반화될 수 있는 방식으로 컨텍스트를 제공할 수 있도록 하는 개방형 프로토콜입니다.\n영어: LLM에 도구를 노출하기 위한 표준 형식\n역사: MCP가 도입된 2024년 11월 이전의 먼 과거에...\nthemodernsoftware.dev\n지난 수업에서 했던 것을 떠올려보면, 이것은 MCP 이전 시대와 같았습니다. API(애플리케이션 프로그래밍 인터페이스)가 꽤 잘 구성되어 있어서 LLM이 API를 사용하도록 하는 것이 그다지 어렵지 않았습니다."
+      },
+      {
+        "slideNumber": 5,
+        "summary_ko": "이 슬라이드는 LLM이 타사 API에 접근할 때 발생할 수 있는 문제점을 지적합니다. 부족한 문서, 일관성 없는 데이터 형식, 인증, 오류 처리 등의 어려움을 언급하며, 개발자의 책임을 강조합니다.",
+        "keyPoints": [
+          "타사 API 통합의 어려움",
+          "부족한 문서, 불일치 데이터 형식, 인증, 오류 처리 문제",
+          "개발자의 해석 책임"
+        ],
+        "text_original": "????\nWhat APIs do you expose?\nImagine integrating with a questionable 3rd party API\nYou want to enable your LLM to access a 3rd party API\nBut think of all the things that could be challenging:\nPoor documentation\nInconsistent data exchange formats\nAuthentication\nError handling\nThe onus is on your to interpret all of those factors for this API",
+        "text_ko": "????\n어떤 API(애플리케이션 프로그래밍 인터페이스)를 노출하시겠습니까?\n의심스러운 타사 API와 통합한다고 상상해보세요.\nLLM이 타사 API에 접근할 수 있도록 하고 싶습니다.\n하지만 어려울 수 있는 모든 것들을 생각해 보세요.\n부족한 문서\n일관성 없는 데이터 교환 형식\n인증\n오류 처리\n이러한 API에 대해 이러한 모든 요소를 해석하는 것은 여러분의 책임입니다."
+      },
+      {
+        "slideNumber": 6,
+        "summary_ko": "이 슬라이드는 많은 API를 통합해야 하는 상황을 강조하며, 이전 슬라이드에서 언급된 문제점들이 API 수가 증가함에 따라 더욱 심화될 수 있음을 암시합니다.",
+        "keyPoints": [
+          "API 수 증가",
+          "통합 복잡도 증가"
+        ],
+        "text_original": "????\nNow many APIs\n????\n????\nNow imagine having to do that for 100s of APIs",
+        "text_ko": "????\n이제 많은 API(애플리케이션 프로그래밍 인터페이스)\n????\n????\n이제 100개의 API에 대해 그렇게 해야 한다고 상상해 보세요."
+      },
+      {
+        "slideNumber": 7,
+        "summary_ko": "이 슬라이드는 많은 LLM 앱을 통합하는 복잡성을 강조하며, LLM 앱과 API 통합 지점 간에 NxM 커넥터가 필요함을 지적합니다. 이는 통합 과정이 매우 복잡하고 관리하기 어려울 수 있음을 의미합니다.",
+        "keyPoints": [
+          "LLM 앱 통합의 복잡성",
+          "NxM 커넥터의 필요성",
+          "통합 관리의 어려움"
+        ],
+        "text_original": "Now many LLM apps\nNow imagine integrating many LLM apps\nIt’s a mess: NxM connectors across LLM apps and API integration points",
+        "text_ko": "이제 많은 LLM 앱\n이제 많은 LLM 앱을 통합한다고 상상해 보세요.\n엉망진창입니다: LLM 앱과 API 통합 지점에 걸쳐 NxM 커넥터가 필요합니다."
+      },
+      {
+        "slideNumber": 8,
+        "summary_ko": "이 슬라이드는 모델 컨텍스트 프로토콜(MCP)의 장점을 설명합니다. MCP는 LLM 호스트/에이전트와 도구 간의 MxN 커넥터 구축 필요성을 없애고, 인증, 오류 처리 등의 재구현을 방지하며, 일관된 출력 형식을 제공합니다. 또한, 사전 예방적인 워크플로를 지원하고, 도구 통합을 단순화합니다.",
+        "keyPoints": [
+          "MCP의 장점: MxN 커넥터 불필요, 재구현 방지",
+          "JSON-RPC 기반 일관된 출력 형식",
+          "사전 예방적 워크플로 지원",
+          "단순화된 도구 통합"
+        ],
+        "text_original": "Basics\nMCP\nDoes away with the need to build M x N connectors from LLM host/agent to underlying tool\nDon’t need to reimplement auth, error handling, rate-limiting, etc\nEnforces consistent output format using JSON-RPC\nExtends from Language Server Protocols\nAllows for proactive agentic workflows rather than purely reactive ones as in LSP\nIntegrating with tools goes from M x N →M + N connectors\nthemodernsoftware.dev",
+        "text_ko": "기본\nMCP(모델 컨텍스트 프로토콜)\nLLM 호스트/에이전트에서 기본 도구로 M x N 커넥터를 구축할 필요성을 없애줍니다.\n인증, 오류 처리, 속도 제한 등을 다시 구현할 필요가 없습니다.\nJSON-RPC를 사용하여 일관된 출력 형식을 적용합니다.\nLanguage Server Protocol(언어 서버 프로토콜)에서 확장됩니다.\nLSP에서처럼 순전히 반응적인 워크플로가 아닌 사전 예방적인 에이전트 워크플로를 허용합니다.\n도구와의 통합은 M x N → M + N 커넥터로 바뀝니다.\nthemodernsoftware.dev"
+      },
+      {
+        "slideNumber": 9,
+        "summary_ko": "이 슬라이드는 MCP의 핵심 용어와 작동 흐름을 자세히 설명합니다. 호스트, 클라이언트, 서버, 도구의 역할을 정의하고, 클라이언트가 서버에 도구 목록을 요청하고, 서버가 JSON 형식으로 도구 정보를 제공하며, 호스트가 모델 컨텍스트에 정보를 주입하는 과정을 설명합니다. 마지막으로 사용자 프롬프트에 따른 도구 호출 및 MCP 서버 실행, 대화 재개 과정을 설명합니다.",
+        "keyPoints": [
+          "MCP 핵심 용어 정의 (호스트, 클라이언트, 서버, 도구)",
+          "MCP 작동 흐름 상세 설명",
+          "JSON 기반 도구 정보 교환",
+          "사용자 프롬프트 기반 도구 호출"
+        ],
+        "text_original": "MCP A Bit Deeper\nTerminology\nHost: Cursor, Claude Desktop\nMCP Client: Library embedded on host (stateful session per server)\nMCP Server: Lightweight wrapper in front of a tool \nTool: Callable function (could be data source, API)\nFlow\nClient calls tools/list to MCP server (what can you do?)\nServer returns JSON describing each tool (name, summary, JSON schema)\nHost injects that JSON into model’s context\nUser prompt triggers model, emitting a structured tool call\nMCP server executes and conversation resumes\nMCP provides stdio and SSE transport layer\nthemodernsoftware.dev",
+        "text_ko": "MCP 조금 더 깊이\n용어\n호스트: Cursor, Claude Desktop\nMCP 클라이언트: 호스트에 임베드된 라이브러리 (서버당 상태 저장 세션)\nMCP 서버: 도구 앞에 있는 경량 래퍼\n도구: 호출 가능한 함수 (데이터 소스, API일 수 있음)\n흐름\n클라이언트는 MCP 서버에 tools/list를 호출합니다 (무엇을 할 수 있나요?)\n서버는 각 도구를 설명하는 JSON을 반환합니다 (이름, 요약, JSON 스키마)\n호스트는 해당 JSON을 모델의 컨텍스트에 주입합니다.\n사용자 프롬프트가 모델을 트리거하여 구조화된 도구 호출을 내보냅니다.\nMCP 서버가 실행되고 대화가 재개됩니다.\nMCP는 stdio 및 SSE 전송 계층을 제공합니다.\nthemodernsoftware.dev"
+      },
+      {
+        "slideNumber": 10,
+        "summary_ko": "이 슬라이드는 MCP 클라이언트와 서버 간의 상호 작용 예시를 보여줍니다. 클라이언트가 특정 요청을 하고, 서버는 쿼리를 요청, 도구를 가져오기, 도구 선택 및 호출, 응답 전송의 단계를 거쳐 클라이언트에게 응답을 제공하는 과정을 설명합니다.",
+        "keyPoints": [
+          "MCP 클라이언트-서버 상호 작용 예시",
+          "요청-응답 과정 설명",
+          "쿼리, 도구 선택, 함수 호출, 응답 전송 단계"
+        ],
+        "text_original": "MCP client\nSummarize my emails from Jack\nMCP server\n1\nAsk query\n2\nGet tools\n3\nSend query and pick tool with params\n4\nCall function for tool and get response\nSend response\n5",
+        "text_ko": "MCP 클라이언트\nJack에게서 온 내 이메일을 요약해 주세요.\nMCP 서버\n1\n쿼리 요청\n2\n도구 가져오기\n3\n쿼리 전송 및 매개변수를 사용하여 도구 선택\n4\n도구에 대한 함수 호출 및 응답 받기\n응답 전송\n5"
+      },
+      {
+        "slideNumber": 11,
+        "summary_ko": "이 슬라이드는 맞춤형 MCP 서버를 직접 구축해보자는 제안을 담고 있습니다.",
+        "keyPoints": [
+          "맞춤형 MCP 서버 구축 제안"
+        ],
+        "text_original": "Let’s build a custom MCP server from scratch!\nthemodernsoftware.dev",
+        "text_ko": "맞춤형 MCP 서버를 처음부터 구축해 봅시다!\nthemodernsoftware.dev"
+      },
+      {
+        "slideNumber": 12,
+        "summary_ko": "이 슬라이드는 MCP 서버에서 `list_files`와 `edit_file` 도구를 테스트하는 과정을 보여주며, 여러 도구가 있을 때 특정 서버를 명확하게 지정해야 함을 강조합니다. 또한, 관련 완화 전략에 대한 링크를 제공합니다.",
+        "keyPoints": [
+          "MCP 서버 도구 테스트 (`list_files`, `edit_file`)",
+          "서버 명시 필요",
+          "완화 전략 링크 제공"
+        ],
+        "text_original": "Test list_files\nTest edit_file\nYou can see the tool being called by the MCP server, though we have to be a bit more explicit about mentioning what server to use since there are a lot of tools. \nMitigations: https://arxiv.org/pdf/2505.03275",
+        "text_ko": "list_files 테스트\nedit_file 테스트\nMCP 서버에서 도구가 호출되는 것을 볼 수 있지만, 도구가 많기 때문에 어떤 서버를 사용해야 하는지 좀 더 명확하게 언급해야 합니다.\n완화: https://arxiv.org/pdf/2505.03275"
+      },
+      {
+        "slideNumber": 13,
+        "summary_ko": "이 슬라이드는 MCP 사용 시 제한 사항을 지적합니다. 에이전트의 도구 처리 능력 부족, API의 컨텍스트 창 소모, AI 네이티브 API 설계의 필요성을 언급합니다. 또한, 특정 도구(Cursor)의 도구 수 제한에 대한 논의를 제안합니다.",
+        "keyPoints": [
+          "에이전트의 도구 처리 능력 부족",
+          "API의 컨텍스트 창 소모",
+          "AI 네이티브 API 설계 필요",
+          "Cursor의 도구 수 제한"
+        ],
+        "text_original": "Limitations\nAgents don’t handle many tools very well today\nAPIs eat up your context window quickly\nDesign APIs to be AI-native rather that rigid\nthemodernsoftware.dev\nDiscuss Cursor hard limit on # of tools",
+        "text_ko": "제한사항\n에이전트는 오늘날 많은 도구를 잘 처리하지 못합니다.\nAPI(애플리케이션 프로그래밍 인터페이스)는 컨텍스트 창을 빠르게 소모합니다.\nAPI를 경직되게 설계하기보다는 AI 네이티브로 설계하세요.\nthemodernsoftware.dev\nCursor의 도구 수에 대한 엄격한 제한에 대해 논의해 보세요."
+      },
+      {
+        "slideNumber": 14,
+        "summary_ko": "이 슬라이드는 질문을 받고, Cursor의 도구 수 제한에 대한 논의를 유도합니다.",
+        "keyPoints": [
+          "질문 유도",
+          "Cursor 도구 수 제한 논의"
+        ],
+        "text_original": "Questions?\nDiscuss Cursor hard limit on # of tools",
+        "text_ko": "질문?\nCursor의 도구 수에 대한 엄격한 제한에 대해 논의해 보세요."
+      }
+    ],
+    "totalSlides": 14,
+    "presentationId": "1zSC2ra77XOUrJeyS85houg1DU7z9hq5Y4ebagTch-5o",
+    "detailedNote_ko": "## 🎯 한눈에 보는 핵심 내용\n\n### 이 프레젠테이션의 핵심 메시지\n이 프레젠테이션은 MCP(Model Context Protocol)를 통해 LLM(대규모 언어 모델)과 다양한 API 간의 통합을 표준화하여 복잡성을 줄이고, 실시간 동적 데이터 활용 가능성을 높이는 방법을 설명합니다. MCP는 JSON-RPC 기반으로 에이전트 기반 워크플로우를 지원하며, AI 친화적인 API 설계의 필요성을 강조합니다.\n\n### 📌 핵심 Q&A\n\n**Q1: MCP(Model Context Protocol)의 주요 기능은 무엇인가요?**\n\nMCP는 LLM과 다양한 도구 간의 통합을 표준화하여 복잡성을 줄이는 역할을 합니다. JSON-RPC 기반으로 도구 목록, 실행, 응답을 표준화하며, 각 LLM 에이전트와 도구 간의 연결을 M+N으로 단순화합니다. 이를 통해 인증, 오류 처리, 속도 제한 등의 기능을 별도로 구현할 필요 없이 다양한 API와의 통합을 용이하게 합니다.\n\n---\n\n**Q2: 실무에서 MCP를 활용할 때 고려해야 할 중요한 포인트는 무엇인가요?**\n\n- 타사 API 통합 시 문서 부족, 데이터 형식 일관성 등의 문제를 사전에 해결해야 합니다.\n- 많은 API를 통합할 때, 자동화된 테스트 도구를 활용하여 오류를 최소화해야 합니다.\n- MCP를 통해 API와의 통합을 단순화하고, 확장성을 높이는 전략을 세워야 합니다.\n\n---\n\n**Q3: MCP 서버 구축 시 예상되는 제한 사항은 무엇인가요?**\n\n에이전트는 다양한 도구를 효과적으로 처리하지 못할 수 있으며, 전통적인 API는 컨텍스트 창 소모가 빠릅니다. AI 네이티브 API 설계를 통해 이러한 문제를 완화할 수 있으며, 특정 도구의 수 제한은 시스템 설계 및 확장성에 영향을 미칠 수 있습니다.\n\n---\n\n### 💡 학습 가치 (Why This Matters)\n\n이 프레젠테이션은 MCP를 통해 LLM과 API 간의 통합을 단순화하고 표준화하는 방법을 제시함으로써, 개발자들이 복잡한 시스템 통합 문제를 해결할 수 있는 인사이트를 제공합니다. 실무에서 MCP를 활용하여 API와의 연결을 효율화하고, AI 친화적인 API 설계를 통해 시스템의 확장성을 높일 수 있습니다. 또한, API 통합 시 발생할 수 있는 문제를 사전에 인식하고 대비할 수 있는 전략을 제공하여, 더욱 안정적이고 효율적인 소프트웨어 개발을 가능하게 합니다. 이러한 내용은 실제 프로젝트에서의 문제 해결과 전략 수립에 중요한 가치를 제공합니다.\n\n---\n\n\n## 📚 슬라이드별 상세 학습 노트\n\n### 커스텀 MCP 서버 구축\n\n#### 📍 슬라이드 1: 최신 소프트웨어 개발자\n\n**핵심 내용**\n- **프레젠테이션 제목: 최신 소프트웨어 개발자**\n  - 이 슬라이드는 프레젠테이션의 제목을 강조하며, 해당 내용이 현대 소프트웨어 개발의 최신 경향을 설명할 것임을 암시합니다.\n  - 현대 소프트웨어 개발자는 빠르게 진화하는 기술 환경에 적응하고, 최신 기술을 활용하여 효과적인 솔루션을 개발할 수 있어야 합니다.\n- **과목 정보: CS146S, 스탠포드 대학교, 2025년 가을**\n  - 이 과목은 스탠포드 대학교에서 제공하는 과목으로, 2025년 가을 학기에 진행됩니다. 이는 과목의 신뢰성과 최신성을 강조합니다.\n- **발표자: Mihail Eric**\n  - 발표자는 Mihail Eric으로, 이 분야의 전문가로서 신뢰성을 부여합니다.\n- **웹사이트: themodernsoftware.dev**\n  - 이 웹사이트는 발표자가 제공하는 추가 리소스나 자료를 탐색할 수 있는 곳일 수 있습니다.\n\n**💡 인사이트**\n이 슬라이드는 프레젠테이션의 전반적인 방향성과 발표자의 전문성을 미리 엿볼 수 있게 하며, 학습자가 기대할 수 있는 내용을 설정하는 데 도움을 줍니다.\n\n---\n\n#### 📍 슬라이드 2: MCP 그리고 그 너머\n\n**핵심 내용**\n- **주제: MCP (Model Context Protocol) 및 관련 기술**\n  - 이 슬라이드는 MCP와 그와 관련된 기술이 프레젠테이션의 주제임을 간략하게 소개합니다.\n  - MCP는 AI 모델과의 통합을 위한 프로토콜로, 이 슬라이드에서는 MCP가 어떻게 현대 소프트웨어 개발에서 중요한 역할을 하는지를 탐색할 것임을 암시합니다.\n\n**💡 인사이트**\n이 슬라이드는 MCP가 현대 소프트웨어 개발에서 차지하는 중요성과 함께, 이 기술이 어떻게 사용될 수 있는지를 이해하는 데 초점을 맞추고 있음을 나타냅니다.\n\n---\n\n#### 📍 슬라이드 3: 왜?\n\n**핵심 내용**\n- **LLM의 정적 지식 한계**\n  - 대규모 언어 모델(LLM)은 방대한 세계 지식을 보유하고 있으나, 정적 데이터에 의존하며, 업데이트를 위해서는 재학습이 필요합니다.\n  - 이는 LLM이 현재의 동적 정보를 즉각적으로 반영하지 못하는 한계를 가집니다.\n- **동적 데이터 필요**\n  - 실제 세계에서 완전 자동화된 시스템을 구축하려면 실시간으로 변화하는 동적 데이터를 효과적으로 제공할 수 있어야 합니다.\n  - 예를 들어, 날씨, 정치 상황, 금융 정보 등은 시시각각 변화하며, 이러한 정보를 즉각적으로 반영하는 시스템이 필요합니다.\n- **RAG 및 도구 호출의 중요성**\n  - RAG(검색 증강 생성)와 도구 호출(tool-calling)은 이러한 동적 데이터의 필요성을 해결하기 위한 현재 최선의 방법으로 제시됩니다.\n  - 이는 LLM의 정적 한계를 보완하고, 실시간 정보 업데이트를 가능하게 합니다.\n\n**💡 인사이트**\n이 슬라이드는 LLM의 한계를 극복하기 위해 RAG 및 도구 호출이 필수적이며, 이를 통해 동적 데이터를 활용하여 보다 완전한 자동화 시스템을 구축할 수 있음을 보여줍니다.\n\n---\n\n#### 📍 슬라이드 4: 기본\n\n**핵심 내용**\n- **모델 컨텍스트 프로토콜 (MCP) 정의**\n  - MCP는 AI 모델 통합 전반에 걸쳐 일반화될 수 있도록 컨텍스트를 제공하는 개방형 프로토콜입니다.\n  - 이는 LLM에 도구를 노출하기 위한 표준 형식을 제시합니다.\n- **LLM과 도구 통합의 표준 형식**\n  - MCP는 LLM이 다양한 도구와 효율적으로 통합될 수 있도록 표준화된 형식을 제공합니다.\n  - 표준 형식은 개발자들이 쉽게 접근할 수 있도록 하여, 복잡성을 줄이고 통합을 용이하게 합니다.\n- **MCP 도입 이전 시대의 API 사용**\n  - 과거에는 API가 이미 잘 구성되어 있어, LLM이 API를 사용하는 것이 그다지 어렵지 않았습니다.\n  - 이는 MCP가 도입되기 전의 상황을 설명하며, MCP가 이러한 과거의 방식을 어떻게 개선했는지를 이해하는 데 도움을 줍니다.\n\n**💡 인사이트**\n이 슬라이드는 MCP가 도입됨으로써 LLM과 도구의 통합이 어떻게 표준화되고 개선되었는지를 설명하며, MCP의 중요성을 강조합니다. 이를 통해 개발자들은 복잡한 통합 과정을 단순화할 수 있습니다.\n\n---\n\n### [커스텀 MCP 서버 구축]\n\n#### 📍 슬라이드 5: 타사 API 통합의 어려움\n\n**핵심 내용**\n- **타사 API 통합의 난점**\n  - 타사 API를 통합할 때 발생할 수 있는 여러 문제점들을 경고합니다. 이러한 문제점에는 부족한 문서, 일관성 없는 데이터 교환 형식, 인증 문제, 오류 처리 등이 포함됩니다.\n  - 예를 들어, 문서가 부족하면 API의 작동 방식이나 사용법을 제대로 이해하기 어려워 개발이 지연될 수 있습니다.\n- **개발자의 책임**\n  - 이러한 문제들을 해석하고 해결하는 것은 개발자의 책임입니다. 이는 API를 사용하는 LLM(Large Language Model) 애플리케이션의 신뢰성과 기능성을 보장하기 위해 필수적입니다.\n  - 실무에서 개발자는 API 문서를 꼼꼼히 검토하고, 필요시 API 제공자와 소통하여 문제를 해결해야 합니다.\n\n**💡 인사이트**\n타사 API 통합 시 발생할 수 있는 다양한 문제를 예측하고 준비하는 것이 중요합니다. 이는 애플리케이션의 안정성과 효율성을 높이는 데 필수적입니다.\n\n---\n\n#### 📍 슬라이드 6: 많은 API 통합의 복잡성\n\n**핵심 내용**\n- **API 수 증가**\n  - 한두 개의 API가 아닌, 100개 이상의 API를 통합해야 할 경우를 상상해 보세요. 이는 복잡성을 크게 증가시킵니다.\n  - 많은 API를 통합하는 상황에서는 각 API의 특성을 이해하고 일관된 방식으로 통합하는 것이 어렵습니다.\n- **통합 복잡도 증가**\n  - API 수가 많아질수록 각 API의 호환성과 데이터 일관성을 확보하는 것이 중요해집니다.\n  - 실무에서는 자동화된 테스트 도구를 활용하여 통합 과정에서 발생할 수 있는 오류를 사전에 발견하고 수정할 필요가 있습니다.\n\n**💡 인사이트**\nAPI 통합의 복잡성은 API의 수에 비례하여 증가합니다. 이에 대한 대비책으로는 표준화된 통합 절차와 자동화된 테스트가 필요합니다.\n\n---\n\n#### 📍 슬라이드 7: LLM 앱 통합의 복잡성\n\n**핵심 내용**\n- **LLM 앱 통합**\n  - 많은 LLM 앱을 통합하는 과정에서는 NxM 커넥터가 필요합니다. 이는 각 LLM 앱과 API 간의 상호작용을 위한 연결 지점을 의미합니다.\n  - 이러한 다수의 연결 지점은 관리가 매우 복잡하고 번거로울 수 있습니다.\n- **통합 관리의 어려움**\n  - NxM 커넥터 구조는 모든 LLM 앱이 각 API와 직접 연결되어야 함을 의미하므로, 각 연결 지점에서 발생하는 문제를 해결하는 데 많은 자원이 소모됩니다.\n  - 실무에서는 이러한 통합 구조를 관리하기 위해 중앙 관리 시스템을 구축하거나, API 게이트웨이와 같은 솔루션을 도입할 수 있습니다.\n\n**💡 인사이트**\n다수의 LLM 앱을 통합하는 것은 매우 복잡하며, 효과적인 관리 시스템이 필요합니다. 이는 통합 과정의 효율성을 높이고 오류를 최소화할 수 있습니다.\n\n---\n\n#### 📍 슬라이드 8: MCP의 장점\n\n**핵심 내용**\n- **MCP(모델 컨텍스트 프로토콜)의 개요**\n  - MCP는 MxN 커넥터의 필요성을 제거하여 통합을 단순화합니다. 이는 각 LLM 에이전트와 도구 간의 연결을 M+N으로 줄입니다.\n  - 인증, 오류 처리, 속도 제한 등의 기능을 별도로 구현할 필요가 없으며, JSON-RPC를 사용하여 일관된 출력 형식을 제공합니다.\n- **사전 예방적 워크플로**\n  - Language Server Protocol(LSP)에서 확장되어, 반응적인 워크플로가 아닌 사전 예방적인 에이전트 워크플로를 허용합니다.\n  - 실무에서는 MCP를 통해 다양한 API와의 통합을 단순화하고, LLM 애플리케이션의 확장성을 높일 수 있습니다.\n\n**💡 인사이트**\nMCP는 복잡한 통합 과정을 간소화할 수 있는 강력한 도구입니다. 이를 통해 다양한 API와의 통합 문제를 효과적으로 해결할 수 있습니다.\n\n---\n\n### [커스텀 MCP 서버 구축]\n\n#### 📍 슬라이드 9: MCP 조금 더 깊이\n\n**핵심 내용**\n- **주요 용어 정의**\n  - **호스트**: Cursor, Claude Desktop 같은 플랫폼으로, MCP 클라이언트가 호스트에 임베드됩니다.\n  - **MCP 클라이언트**: 호스트에 임베드되어 서버당 상태 저장 세션을 유지하는 라이브러리.\n  - **MCP 서버**: 도구 앞에 있는 경량 래퍼로 다양한 기능을 제공합니다.\n  - **도구**: 호출 가능한 함수로, 데이터 소스나 API일 수 있습니다.\n\n- **MCP 작동 흐름**\n  - 클라이언트는 MCP 서버에 `tools/list`를 호출하여 사용 가능한 도구 목록을 요청합니다.\n  - 서버는 각 도구의 이름, 요약 및 JSON 스키마를 포함한 정보를 JSON 형식으로 반환합니다.\n  - 호스트는 이 JSON 정보를 모델의 컨텍스트에 주입합니다.\n  - 사용자 프롬프트가 모델을 트리거하여 구조화된 도구 호출을 내보내면, MCP 서버가 이를 처리하고 대화를 재개합니다.\n  - MCP는 표준 입출력(stdio) 및 서버 전송 이벤트(SSE) 전송 계층을 제공합니다.\n\n**💡 인사이트**\nMCP의 작동 방식과 사용되는 주요 용어를 이해하면, 클라이언트와 서버 간의 통신 흐름을 더 명확히 파악할 수 있습니다. 이는 다양한 도구와의 원활한 통합을 가능하게 합니다.\n\n---\n\n#### 📍 슬라이드 10: MCP 클라이언트\n\n**핵심 내용**\n- **MCP 클라이언트-서버 상호 작용 예시**\n  1. **쿼리 요청**: 클라이언트가 서버에 쿼리를 요청합니다.\n  2. **도구 가져오기**: 서버가 요청에 따라 적절한 도구를 가져옵니다.\n  3. **쿼리 전송 및 도구 선택**: 매개변수를 사용하여 적절한 도구를 선택하고 쿼리를 전송합니다.\n  4. **도구 호출 및 응답 받기**: 서버가 도구에 대한 함수를 호출하고 응답을 받습니다.\n  5. **응답 전송**: 서버가 클라이언트에게 응답을 전송합니다.\n\n**💡 인사이트**\n이 슬라이드는 클라이언트와 서버 간의 상호 작용 과정을 구체적으로 설명하여, MCP 시스템이 어떻게 요청을 처리하는지에 대한 실질적인 이해를 제공합니다.\n\n---\n\n#### 📍 슬라이드 11: 맞춤형 MCP 서버를 처음부터 구축해 봅시다!\n\n**핵심 내용**\n- **맞춤형 MCP 서버 구축 제안**\n  - 개인의 필요에 맞춘 MCP 서버를 직접 구축해보자는 제안을 담고 있습니다.\n  - 이를 통해 MCP의 작동 원리와 맞춤형 환경 구축의 중요성을 체험할 수 있습니다.\n\n**💡 인사이트**\n맞춤형 MCP 서버를 구축함으로써, 개인의 요구와 환경에 맞는 최적의 솔루션을 개발할 수 있는 능력을 키울 수 있습니다.\n\n---\n\n#### 📍 슬라이드 12: list_files 및 edit_file 테스트\n\n**핵심 내용**\n- **MCP 서버 도구 테스트**\n  - `list_files`와 `edit_file` 도구를 MCP 서버에서 테스트하는 과정을 설명합니다.\n  - 여러 도구가 있을 때, 특정 서버를 명확하게 지정하여 사용하는 것이 중요함을 강조합니다.\n  - 관련 완화 전략에 대한 링크를 제공하여 추가적인 정보를 제공합니다.\n\n**💡 인사이트**\n다양한 도구가 존재하는 환경에서 특정 도구를 명확하게 지정할 수 있는 방법을 이해하는 것은 서버 설정의 필수 요소입니다. 이는 효율적인 시스템 운영에 도움을 줄 수 있습니다.\n\n---\n\n### [커스텀 MCP 서버 구축의 제한사항]\n\n#### 📍 슬라이드 13: 제한사항\n\n**핵심 내용**\n- 에이전트의 도구 처리 능력 부족\n  - 현재의 에이전트는 다양한 도구를 효과적으로 처리하지 못하는 경우가 많습니다. 이로 인해 에이전트가 복잡한 작업을 수행하는 데 어려움을 겪을 수 있습니다.\n  - 실무적 적용 예시: 고객 지원 챗봇이 여러 API를 동시에 호출해야 하는 상황에서 성능 저하가 발생할 수 있습니다.\n  \n- API의 컨텍스트 창 소모\n  - 전통적인 API는 컨텍스트 창을 빠르게 소모하게 되어, 대량의 데이터를 처리해야 하는 상황에서 효율성이 떨어질 수 있습니다.\n  - 관련 개념 설명: 컨텍스트 창은 API가 한 번에 처리할 수 있는 정보의 양을 의미하며, 이를 효율적으로 관리하지 않으면 시스템 성능에 부정적인 영향을 미칩니다.\n  \n- AI 네이티브 API 설계 필요\n  - API를 경직되게 설계하기보다는 AI 친화적으로 설계하여 유연성을 높이는 것이 필요합니다.\n  - 실무적 적용 예시: AI 네이티브 API는 머신러닝 모델이 쉽게 데이터를 읽고 처리할 수 있도록 설계되어야 합니다.\n  \n- Cursor의 도구 수 제한 논의\n  - 특정 도구인 Cursor에 대해 엄격한 도구 수 제한이 존재하며, 이 제한이 개발자들에게 어떤 영향을 미치는지 논의가 필요합니다.\n  - 실무적 적용 예시: Cursor의 도구 수 제한은 개발자들이 필요한 기능을 추가할 때 고려해야 할 중요한 요소입니다.\n\n**💡 인사이트**\nAPI 설계와 에이전트의 성능은 현대 소프트웨어 개발에서 중요한 요소입니다. AI 네이티브 설계를 통해 더 효율적인 시스템을 구축할 수 있으며, 도구 수 제한과 같은 요소는 시스템 확장성에 영향을 미칠 수 있습니다.\n\n---\n\n### [커스텀 MCP 서버 구축의 질의응답]\n\n#### 📍 슬라이드 14: 질문?\n\n**핵심 내용**\n- 질문 유도\n  - 이 슬라이드는 청중에게 질문을 유도하여 상호작용적인 논의를 촉진합니다. 특히, 슬라이드 13에서 언급된 제한 사항에 대해 청중의 의견을 듣고자 합니다.\n  \n- Cursor 도구 수 제한 논의\n  - Cursor의 도구 수 제한에 대한 논의를 통해, 이 제한이 소프트웨어 개발 및 시스템 설계에 미치는 영향을 탐구합니다.\n  - 실무적 적용 예시: 개발자들이 Cursor를 사용할 때, 도구 수 제한을 고려하여 프로젝트 계획을 세워야 합니다.\n\n**💡 인사이트**\n질문을 통해 청중과의 적극적인 상호작용을 유도함으로써, 더 깊이 있는 이해와 문제 해결 방안을 모색할 수 있습니다. 특히, 특정 도구의 제한 사항은 개발 전략에 직접적인 영향을 줄 수 있으므로, 이에 대한 논의는 매우 중요합니다."
+  }
+}

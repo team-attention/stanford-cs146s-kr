@@ -1,0 +1,14 @@
+{
+  "slug": "week-1-llm-prompting-playground",
+  "title": "LLM Prompting Playground",
+  "url": "https://github.com/mihail911/modern-software-dev-assignments/tree/master/week1",
+  "type": "github",
+  "week": 1,
+  "analyzedAt": "2026-01-03T23:14:52.651Z",
+  "analysis": {
+    "summary_ko": null,
+    "keyPoints": [],
+    "topics": [],
+    "pdfContent": "## LLM 프롬프트 플레이그라운드\n\n코딩 LLM을 사용하고 이해하는 데 필수적인 핵심 LLM 프롬프트 기법을 연습하세요. 전체 과제 설명은 [assignment.md](./assignment.md)에서 제공됩니다."
+  }
+}

@@ -1,0 +1,182 @@
+{
+  "slug": "week-4-lecture-월-10-13",
+  "title": "월 10/13: 에이전트 관리자가 되는 방법",
+  "url": "https://docs.google.com/presentation/d/19mgkwAnJDc7JuJy0zhhoY0ZC15DiNpxL8kchPDnRkRQ/edit?usp=sharing",
+  "type": "slides",
+  "week": 4,
+  "analyzedAt": "2026-01-03T23:34:57.502Z",
+  "analysis": {
+    "summary_ko": "이 프레젠테이션은 소프트웨어 개발의 진화, 특히 AI 에이전트의 도움을 받아 개발자가 더 많은 작업을 효율적으로 관리하는 '에이전트 관리자'의 역할에 초점을 맞춥니다. 개발자는 AI 에이전트들을 활용하여 코드 작성, 테스트, 문서화 등 다양한 작업을 자동화하고, 궁극적으로는 기술 리드처럼 여러 전문 에이전트 팀을 통제하게 됩니다.  에이전트 관리 기술 (행동 파일, 훅, 명령, 서브 에이전트)과 함께 테스트, CI/CD, 모델 선택 등 실제 작업 환경에서의 모범 사례를 소개합니다.  마지막으로, 초기 연구 단계 자동화와 작업 큐 유지 관리와 같은 미래 과제를 제시합니다.\n",
+    "keyPoints": [],
+    "topics": [],
+    "slides": [
+      {
+        "slideNumber": 1,
+        "summary_ko": "이 슬라이드는 프레젠테이션의 제목 슬라이드이며, 강좌명, 학교, 학기, 발표자 이름, 웹사이트 주소를 포함합니다.",
+        "keyPoints": [
+          "프레젠테이션 제목",
+          "발표자 정보",
+          "강좌 정보"
+        ],
+        "text_original": "The Modern Software Developer\nCS146S \nStanford University, Fall 2025\nMihail Eric\nthemodernsoftware.dev",
+        "text_ko": "현대 소프트웨어 개발자\nCS146S\n스탠포드 대학교, 2025년 가을 학기\nMihail Eric\nthemodernsoftware.dev"
+      },
+      {
+        "slideNumber": 2,
+        "summary_ko": "이 슬라이드는 특별 강연에 대한 정보와 발표자, 강연 주제를 소개합니다. 강연 주제는 '에이전트 관리자가 되는 방법'입니다.",
+        "keyPoints": [
+          "특별 강연 정보",
+          "발표자 정보",
+          "강연 주제"
+        ],
+        "text_original": "themodernsoftware.dev\nGuest Lecture - 10/17/25\nAnthropic Creator of Claude Code, Boris Cherny\n\nHow to be an Agent Manager  \nthemodernsoftware.dev",
+        "text_ko": "themodernsoftware.dev\n특별 강연 - 2025년 10월 17일\nAnthropic Claude Code 제작자, Boris Cherny\n\n에이전트 관리자가 되는 방법\nthemodernsoftware.dev"
+      },
+      {
+        "slideNumber": 3,
+        "summary_ko": "이 슬라이드는 개발 관리 방식의 진화 과정을 보여줍니다. 단일 개발자 관리에서 AI 에이전트 관리로의 변화를 강조합니다.",
+        "keyPoints": [
+          "개발 관리 진화",
+          "AI 에이전트의 역할 증가"
+        ],
+        "text_original": "Why\nDevelopment evolution\nSingle developer managing single developer’s output\nLead managing many developers worth of output\nLead managing many developers worth of output (assisted by an AI system)\nSingle developer managing many AI agents worth of work\n\nthemodernsoftware.dev",
+        "text_ko": "왜?\n개발 진화\n단일 개발자가 단일 개발자의 결과물을 관리\n리드가 여러 개발자의 결과물을 관리\n리드가 여러 개발자의 결과물을 관리 (AI 시스템의 도움을 받아)\n단일 개발자가 여러 AI 에이전트의 업무를 관리\n\nthemodernsoftware.dev"
+      },
+      {
+        "slideNumber": 4,
+        "summary_ko": "이 슬라이드는 소프트웨어 팀의 역사를 연대기적으로 보여줍니다. NASA 및 DoD 프로젝트에서 시작하여 AI 에이전트 관리 팀으로 발전하는 과정을 설명합니다.",
+        "keyPoints": [
+          "소프트웨어 팀 역사",
+          "AI 코딩 시스템의 영향",
+          "팀의 전문화"
+        ],
+        "text_original": "A brief history of software teams\nthemodernsoftware.dev\nMainstream adoption of software teams, specialization emerges\n\nFirst software teams emerge driven by requirements of NASA, DoD projects\n\n\n1940\n2030\n2025\nTeams with developers managing groups of diverse agents\n\n2023\nSoftware teams with developers assisted by AI coding systems\n\n1960\nSolo developers handling full projects\n\n1970\n1990",
+        "text_ko": "소프트웨어 팀의 간략한 역사\nthemodernsoftware.dev\n소프트웨어 팀의 주류 채택, 전문화의 등장\n\nNASA, DoD 프로젝트의 요구 사항에 따라 최초의 소프트웨어 팀 등장\n\n\n1940\n2030\n2025\n개발자가 다양한 에이전트 그룹을 관리하는 팀\n\n2023\nAI 코딩 시스템의 도움을 받는 개발자가 있는 소프트웨어 팀\n\n1960\n솔로 개발자가 전체 프로젝트를 처리\n\n1970\n1990"
+      },
+      {
+        "slideNumber": 5,
+        "summary_ko": "이 슬라이드는 개발자가 AI 에이전트를 활용하여 전문화된 작업을 수행하는 미래를 제시합니다. 모든 개발자가 기술 리드처럼 행동하고, 심지어 PM도 이를 활용할 수 있게 될 것이라는 목표를 나타냅니다.",
+        "keyPoints": [
+          "AI 에이전트 활용",
+          "개발자의 역할 변화",
+          "PM의 AI 활용 가능성"
+        ],
+        "text_original": "Goals\nthemodernsoftware.dev\n….\nEvery developer operates as a tech lead controlling their own army of agents handling specialized tasks (PR, quality assurance, etc), languages (react, fastapi python, svelte), role responsibilities (data engineer, ml engineer, devops)\nEventually a moderately technical PM will be able to do the same thing",
+        "text_ko": "목표\nthemodernsoftware.dev\n….\n모든 개발자는 홍보(PR), 품질 보증(Quality Assurance) 등 특화된 작업, 언어 (react, fastapi python, svelte), 역할 책임 (데이터 엔지니어(Data Engineer), 머신러닝 엔지니어(ML Engineer), 데브옵스(DevOps))을 처리하는 자신만의 에이전트 군단을 제어하는 기술 리드(Tech Lead)로 운영됩니다.\n결국 적당히 기술적인 PM도 같은 일을 할 수 있을 것입니다."
+      },
+      {
+        "slideNumber": 6,
+        "summary_ko": "이 슬라이드는 소프트웨어 개발 과정을 단계별로 나누고, 각 단계에서 인간과 AI 에이전트의 역할을 구분합니다. 녹색은 인간, 파란색은 에이전트를 나타냅니다.",
+        "keyPoints": [
+          "소프트웨어 개발 단계",
+          "인간과 AI 역할 분담",
+          "자동화 가능성"
+        ],
+        "text_original": "Software task steps\nthemodernsoftware.dev\nProvide high level requirements 🟩\nConvert requirements into a design doc 🟩/🟦\nImplement solution from doc 🟦\nAdd tests 🟦\nEnsure CI (continuous integration) passes 🟦\nCode review 🟦\nUpdate docs 🟦 \nBreakdown of typical tasks and who is responsible for what: green is human, blue is agent",
+        "text_ko": "소프트웨어 작업 단계\nthemodernsoftware.dev\n높은 수준의 요구 사항 제공 🟩\n요구 사항을 설계 문서로 변환 🟩/🟦\n문서에서 솔루션 구현 🟦\n테스트 추가 🟦\nCI(지속적 통합(Continuous Integration)) 통과 확인 🟦\n코드 검토 🟦\n문서 업데이트 🟦\n일반적인 작업 분석 및 담당자: 녹색은 인간, 파란색은 에이전트"
+      },
+      {
+        "slideNumber": 7,
+        "summary_ko": "이 슬라이드는 AI 에이전트를 효과적으로 지시하기 위한 여러 가지 기술을 소개합니다: 에이전트 동작 파일, 후크, 명령, 서브 에이전트.",
+        "keyPoints": [
+          "에이전트 지시 기술",
+          "Claude.md",
+          "후크, 명령, 서브 에이전트"
+        ],
+        "text_original": "Techniques for directing agents\nthemodernsoftware.dev\nAgent behavior files (Claude.md/Cursorrules/agents.md)\nHooks\nCommands\nSubagents\n\nSee examples of all of these IRL",
+        "text_ko": "에이전트 지시 기술\nthemodernsoftware.dev\n에이전트 동작 파일 (Claude.md/Cursorrules/agents.md)\n후크(Hooks)\n명령(Commands)\n서브 에이전트(Subagents)\n\n이 모든 것의 실제 사례를 참조하십시오."
+      },
+      {
+        "slideNumber": 8,
+        "summary_ko": "이 슬라이드는 후크(Hooks)의 개념을 설명하고, 몇 가지 예시를 제공합니다. 후크는 특정 이벤트 발생 시 자동으로 실행되는 스크립트입니다.",
+        "keyPoints": [
+          "후크 정의",
+          "후크 예시",
+          "자동화"
+        ],
+        "text_original": "Hooks\nDeterministic scripts that run on predefined event types\nPreToolUse\nPostToolUse\nUserPromptSubmit\nPreCompact\n…and more\nthemodernsoftware.dev\nProvide a sample",
+        "text_ko": "후크(Hooks)\n미리 정의된 이벤트 유형에서 실행되는 결정적 스크립트\nPreToolUse\nPostToolUse\nUserPromptSubmit\nPreCompact\n…그리고 더 많은 것\nthemodernsoftware.dev\n샘플 제공"
+      },
+      {
+        "slideNumber": 9,
+        "summary_ko": "이 슬라이드는 명령(Commands)의 개념을 설명하고, 몇 가지 사용 사례를 제공합니다. 명령은 자주 사용되는 프롬프트를 파일로 제공하여 에이전트가 실행할 수 있게 합니다.",
+        "keyPoints": [
+          "명령 정의",
+          "명령 사용 사례",
+          "자동화"
+        ],
+        "text_original": "Commands\nProvide frequently-used prompts as files that the agent can execute\nUse cases\nRunning tests\nReviewing code\nForm a git commit, push\nthemodernsoftware.dev\nProvide a sample\nShip-it command in claude code",
+        "text_ko": "명령(Commands)\n자주 사용되는 프롬프트를 에이전트가 실행할 수 있는 파일로 제공\n사용 사례\n테스트 실행\n코드 검토\ngit 커밋 생성, 푸시\nthemodernsoftware.dev\n샘플 제공\nClaude code의 Ship-it 명령"
+      },
+      {
+        "slideNumber": 10,
+        "summary_ko": "이 슬라이드는 서브 에이전트(Subagents)의 개념을 설명하고, 그 목적과 사용 사례를 제공합니다. 서브 에이전트는 런타임에 작업을 위임받아 수행하며, 다양한 작업 유형에 맞는 개발자 페르소나를 생성하고 컨텍스트를 분리하는 데 사용됩니다.",
+        "keyPoints": [
+          "서브 에이전트 정의",
+          "서브 에이전트 목적",
+          "서브 에이전트 사용 사례"
+        ],
+        "text_original": "Subagents\nRuntime delegation\nPurposes of a subagent is to\nCreate distinct developer personas for different types of work (frontend, backend, etc)\nCleanly separate contexts for different work streams\nOffer\nCustomized system prompts, tools, and a separate context window\nA move toward agents managing other agents\nUse cases\nhttps://github.com/vijaythecoder/awesome-claude-agents/blob/main/CLAUDE.md\nhttps://github.com/SuperClaude-Org/SuperClaude_Framework",
+        "text_ko": "서브 에이전트(Subagents)\n런타임 위임\n서브 에이전트의 목적은\n다양한 유형의 작업 (프론트엔드(Frontend), 백엔드(Backend) 등)을 위한 고유한 개발자 페르소나 생성\n다양한 작업 흐름에 대한 컨텍스트를 깔끔하게 분리\n제공\n사용자 정의 시스템 프롬프트(System Prompts), 도구 및 별도의 컨텍스트 창\n에이전트가 다른 에이전트를 관리하는 방향으로 이동\n사용 사례\nhttps://github.com/vijaythecoder/awesome-claude-agents/blob/main/CLAUDE.md\nhttps://github.com/SuperClaude-Org/SuperClaude_Framework"
+      },
+      {
+        "slideNumber": 11,
+        "summary_ko": "이 슬라이드는 서브 에이전트와 Claude.md 파일을 비교하여 설명합니다. Claude.md 파일은 동작을 고정하는 데 더 중점을 둡니다. 예시를 위한 GitHub 링크가 제공됩니다.",
+        "keyPoints": [
+          "서브 에이전트와 Claude.md 비교",
+          "동작 고정",
+          "GitHub 예시 링크"
+        ],
+        "text_original": "themodernsoftware.dev\nCompare to Claude.md files which are more about anchoring behavior\nExamples: https://github.com/SuperClaude-Org/SuperClaude_Framework/tree/master/SuperClaude/Agents",
+        "text_ko": "themodernsoftware.dev\n동작을 고정하는 데 더 중점을 둔 Claude.md 파일과 비교\n예시: https://github.com/SuperClaude-Org/SuperClaude_Framework/tree/master/SuperClaude/Agents"
+      },
+      {
+        "slideNumber": 12,
+        "summary_ko": "이 슬라이드는 AI 에이전트 사용 시 필요한 안전장치를 강조합니다. 코드베이스 테스트, CI/CD 모범 사례 준수, 에이전트 감사 가능성 확보, diff 레이블링, 작업별 모델 사용 등을 권장합니다.",
+        "keyPoints": [
+          "안전장치의 필요성",
+          "테스트, CI/CD, 감사",
+          "작업별 모델"
+        ],
+        "text_original": "You need careful backstops\nTests in codebase\nCI/CD best practices\nAuditability of each agent\nLabel every diff made by an agent \nDifferent models for different classes of tasks\nMore complex tasks you may need to handhold a bit more upfront vs fully async ones\nCheckpoint (commit) regularly \n\nthemodernsoftware.dev",
+        "text_ko": "신중한 안전장치가 필요합니다\n코드베이스의 테스트\nCI/CD 모범 사례\n각 에이전트의 감사 가능성\n에이전트가 만든 모든 diff에 레이블 지정\n다양한 작업 클래스에 대한 다양한 모델\n더 복잡한 작업은 완전히 비동기적인 작업에 비해 초기에 조금 더 직접적으로 도와야 할 수 있습니다.\n정기적으로 체크포인트 (커밋)\n\nthemodernsoftware.dev"
+      },
+      {
+        "slideNumber": 13,
+        "summary_ko": "이 슬라이드는 AI 모델을 작업 유형에 따라 다르게 사용하는 모범 사례를 제시합니다. Opus는 계획에, Sonnet은 주력 모델로 사용하는 것을 권장합니다.",
+        "keyPoints": [
+          "모범 사례",
+          "작업별 모델 사용",
+          "Opus와 Sonnet"
+        ],
+        "text_original": "Best practices\nDifferent models for different tasks\nOpus for planning, sonnet as a workhorse\n\nthemodernsoftware.dev",
+        "text_ko": "모범 사례\n다양한 작업에 대한 다양한 모델\nOpus는 계획, Sonnet은 주력 모델\n\nthemodernsoftware.dev"
+      },
+      {
+        "slideNumber": 14,
+        "summary_ko": "이 슬라이드는 실제 작업 환경에서 AI 에이전트를 활용한 워크플로우를 안내하고, 필요한 변경 사항과 에이전트 작동 방식을 보여줍니다. Claude 프록시 출력을 예시로 제시합니다.",
+        "keyPoints": [
+          "워크플로우 안내",
+          "실제 작업 환경",
+          "Claude 프록시 출력"
+        ],
+        "text_original": "Workflow walkthrough\nthemodernsoftware.dev\nOn an actual set of tasks, what changes are necessary - see how agents are getting spun up\nShow claude proxy output",
+        "text_ko": "워크플로우 안내\nthemodernsoftware.dev\n실제 작업 집합에서 어떤 변경이 필요한지 - 에이전트가 어떻게 시작되는지 확인\nClaude 프록시 출력 표시"
+      },
+      {
+        "slideNumber": 15,
+        "summary_ko": "이 슬라이드는 AI 자동화와 관련된 몇 가지 미해결 질문을 제시합니다. 작업 초기 연구 단계의 자동화 방법, 보류 중인 작업 대기열 관리 방법 등이 논의 주제입니다.",
+        "keyPoints": [
+          "미해결 질문",
+          "자동화 방법",
+          "작업 대기열 관리"
+        ],
+        "text_original": "How can we automate the first 10-20% research phase of any task?\nHow to maintain a queue of pending tasks (easier for 1-off changes)?\n\nthemodernsoftware.dev\nOpen questions",
+        "text_ko": "어떤 작업의 처음 10-20% 연구 단계를 어떻게 자동화할 수 있을까요?\n보류 중인 작업 대기열을 유지하는 방법 (일회성 변경에 더 쉬움)?\n\nthemodernsoftware.dev\n미해결 질문"
+      }
+    ],
+    "totalSlides": 15,
+    "presentationId": "19mgkwAnJDc7JuJy0zhhoY0ZC15DiNpxL8kchPDnRkRQ",
+    "detailedNote_ko": "## 🎯 한눈에 보는 핵심 내용\n\n### 이 프레젠테이션의 핵심 메시지\n이 프레젠테이션은 소프트웨어 개발에서 AI 에이전트를 활용하여 개발자들이 '에이전트 관리자'로서 역할을 확장할 수 있음을 강조합니다. AI 에이전트를 통해 반복적이고 계산적인 작업을 자동화함으로써, 개발자들은 전략적이고 창의적인 문제 해결에 집중할 수 있습니다. 이러한 변화는 소프트웨어 개발의 효율성을 높이고, 새로운 팀 구조와 작업 방식을 제안합니다.\n\n### 📌 핵심 Q&A\n\n**Q1: 에이전트 관리자가 되는 방법은 무엇인가요?**\n\n에이전트 관리자는 AI 에이전트를 활용하여 다양한 소프트웨어 개발 작업을 관리합니다. 이 과정에서 개발자는 행동 파일, 후크, 명령, 서브 에이전트 등의 기술을 사용하여 에이전트의 동작을 지시하고 제어합니다. 이러한 기술을 통해 복잡한 AI 시스템을 효과적으로 운영하며, 반복적인 작업을 자동화할 수 있습니다.\n\n---\n\n**Q2: 에이전트 관리자가 실무적으로 중요한 이유는 무엇인가요?**\n\n- AI 에이전트를 활용해 반복적인 작업을 자동화하여 효율성을 높입니다.\n- AI 모델을 작업 특성에 맞게 적용함으로써 자원 배분을 최적화할 수 있습니다.\n- 에이전트의 자동화를 통해 개발자는 창의적이고 복잡한 문제 해결에 집중할 수 있습니다.\n\n---\n\n**Q3: AI 에이전트를 도입할 때 고려해야 할 핵심 요소는 무엇인가요?**\n\nAI 에이전트를 도입할 때는 코드베이스의 철저한 테스트와 CI/CD 모범 사례를 따르는 것이 필수적입니다. 에이전트가 생성한 모든 변경에 대한 감사 가능성을 확보하고, 각 작업 클래스에 맞는 모델을 사용하여 안정성을 높여야 합니다. 정기적인 체크포인트를 통해 작업의 흐름을 지속적으로 모니터링하는 것도 중요합니다.\n\n---\n\n### 💡 학습 가치 (Why This Matters)\n\n이 프레젠테이션은 AI 에이전트를 활용하여 소프트웨어 개발의 효율성을 극대화하는 방법을 제시합니다. 개발자들은 AI를 통해 반복적인 작업을 자동화하고, 더 창의적이고 전략적인 문제 해결에 집중할 수 있게 됩니다. 이는 조직의 생산성을 높이고, 경쟁력을 강화하는 데 중요한 역할을 합니다. 에이전트 관리 기술을 통해 어떻게 복잡한 AI 시스템을 효과적으로 운영할 수 있는지를 배우고, 실무에서 이를 적용하여 프로젝트의 성공 가능성을 높일 수 있습니다. 이러한 변화는 미래의 소프트웨어 개발 환경에서 필수적인 능력이 될 것입니다.\n\n---\n\n\n## 📚 슬라이드별 상세 학습 노트\n\n### 에이전트 관리자가 되는 방법\n\n#### 📍 슬라이드 1: 현대 소프트웨어 개발자\n\n**핵심 내용**\n- **프레젠테이션 제목 및 정보**\n  - 프레젠테이션의 제목은 '현대 소프트웨어 개발자'로, CS146S 강좌에서 다루는 주제입니다.\n  - 강좌는 스탠포드 대학교에서 2025년 가을 학기에 진행됩니다.\n  - 발표자는 Mihail Eric이며, 웹사이트 themodernsoftware.dev를 통해 관련 자료를 제공합니다.\n  - 이 슬라이드는 프레젠테이션의 개요를 제공하며, 참석자들에게 강좌의 기본 정보를 제공합니다.\n\n**💡 인사이트**\n이 슬라이드는 프레젠테이션의 전반적인 방향성과 발표자의 배경을 이해하는 데 중요한 시작점을 제공합니다.\n\n---\n\n#### 📍 슬라이드 2: 특별 강연 소개\n\n**핵심 내용**\n- **특별 강연 정보**\n  - 강연 주제는 '에이전트 관리자가 되는 방법'입니다.\n  - 발표자는 Anthropic Claude Code의 창립자인 Boris Cherny입니다.\n  - 강연은 2025년 10월 17일에 진행됩니다.\n  - 웹사이트 themodernsoftware.dev를 통해 더 많은 정보를 얻을 수 있습니다.\n\n**💡 인사이트**\n이 슬라이드는 특별 강연의 중요성과 주제에 대한 기대감을 높입니다. 청중은 Boris Cherny의 전문성과 경험을 통해 에이전트 관리의 실제 사례와 통찰을 기대할 수 있습니다.\n\n---\n\n#### 📍 슬라이드 3: 개발 관리 방식의 진화\n\n**핵심 내용**\n- **개발 관리의 진화 과정**\n  - 초기에는 단일 개발자가 자신의 결과물을 직접 관리했습니다.\n  - 이후 리드 개발자가 여러 개발자의 결과물을 관리하는 단계로 발전했습니다.\n  - 최근에는 리드 개발자가 AI 시스템의 도움을 받아 여러 개발자의 결과물을 관리하는 방식으로 진화했습니다.\n  - 현재는 단일 개발자가 여러 AI 에이전트의 업무를 관리하는 단계로 발전하고 있습니다.\n\n**💡 인사이트**\n이 슬라이드는 개발 관리 방식의 변화와 AI 에이전트의 역할 증가를 보여줍니다. 이는 소프트웨어 개발의 효율성을 높이고 더 복잡한 프로젝트를 처리할 수 있는 능력을 제공함을 시사합니다.\n\n---\n\n#### 📍 슬라이드 4: 소프트웨어 팀의 간략한 역사\n\n**핵심 내용**\n- **소프트웨어 팀의 역사적 발전**\n  - 1940년대: NASA와 DoD 프로젝트에 의해 최초의 소프트웨어 팀이 구성되었습니다.\n  - 1960년대: 솔로 개발자가 전체 프로젝트를 처리하는 시기였습니다.\n  - 1970년에서 1990년대: 팀의 전문화가 진행되었습니다.\n  - 2023년: AI 코딩 시스템의 도움을 받는 개발자가 등장했습니다.\n  - 2025년: 개발자가 다양한 에이전트 그룹을 관리하는 팀으로 발전하고 있습니다.\n  - 2030년: 이 미래 시점까지 발전을 예상할 수 있습니다.\n\n**💡 인사이트**\n이 슬라이드는 소프트웨어 팀의 발전과 AI 기술의 영향을 시간의 흐름에 따라 설명합니다. 이는 팀 구조의 변화와 기술의 발전이 어떻게 시장의 요구에 대응해왔는지를 이해하는 데 도움을 줍니다.\n\n---\n\n### [에이전트 관리자가 되는 방법]\n\n#### 📍 슬라이드 5: 목표\n\n**핵심 내용**\n- AI 에이전트 활용\n  - 모든 개발자는 다양한 특화된 작업과 언어를 처리하는 에이전트 군단을 제어하는 기술 리드로 운영될 것입니다. 이러한 작업에는 PR, 품질 보증 등이 포함됩니다.\n  - 실무적 적용 예시: 개발자는 AI 에이전트를 활용하여 효율적으로 프로젝트를 관리하고, 반복적인 작업을 자동화하여 시간을 절약할 수 있습니다.\n- 개발자의 역할 변화\n  - 개발자는 기술 리드처럼 행동하며, AI 에이전트를 통해 복잡한 작업을 수행할 수 있습니다. 이는 개발자의 역할이 전문적이고 전략적인 방향으로 변화함을 의미합니다.\n- PM의 AI 활용 가능성\n  - 결국 기술적인 PM도 AI 에이전트를 활용하여 프로젝트 관리를 향상시킬 수 있습니다.\n  - 관련 개념 설명: PM은 프로젝트의 성공적인 완료를 위해 자원을 관리하고, AI 에이전트는 이러한 과정에서 효율성을 극대화합니다.\n\n**💡 인사이트**\n이 슬라이드는 AI 에이전트가 개발자와 PM의 역할을 혁신적으로 변화시킬 수 있다는 미래 비전을 제시합니다. AI를 활용하여 생산성을 높이고, 보다 전략적인 역할을 수행하게 됩니다.\n\n---\n\n#### 📍 슬라이드 6: 소프트웨어 작업 단계\n\n**핵심 내용**\n- 소프트웨어 개발 단계\n  - 요구 사항 제공, 설계 문서 변환, 솔루션 구현, 테스트 추가, CI 통과 확인, 코드 검토, 문서 업데이트의 단계로 구성됩니다.\n  - 실무적 적용 예시: 각 단계에서 무엇을 해야 하는지 명확히 정의하여, 작업의 효율성을 높일 수 있습니다.\n- 인간과 AI 역할 분담\n  - 녹색은 인간, 파란색은 에이전트를 나타내며, 특정 단계에서 인간과 AI가 각각 맡는 역할을 구분합니다.\n  - 관련 개념 설명: AI는 반복적이고 계산적인 작업을, 인간은 창의적이고 전략적인 작업을 담당합니다.\n- 자동화 가능성\n  - 에이전트가 파란색으로 표시된 작업을 자동화하여, 개발자는 보다 중요한 작업에 집중할 수 있습니다.\n\n**💡 인사이트**\nAI 에이전트를 활용한 역할 분담은 개발 과정의 효율성을 극대화하고, 인간은 창의적이고 복잡한 문제 해결에 집중할 수 있게 합니다. 이는 프로젝트 관리와 개발의 새로운 패러다임을 제시합니다.\n\n---\n\n#### 📍 슬라이드 7: 에이전트 지시 기술\n\n**핵심 내용**\n- 에이전트 지시 기술\n  - 에이전트 행동을 정의하고 지시하기 위한 다양한 기술을 활용합니다. 여기에는 에이전트 동작 파일, 후크, 명령, 서브 에이전트가 포함됩니다.\n  - 실무적 적용 예시: 이러한 기술을 통해 개발자는 복잡한 AI 에이전트 시스템을 효과적으로 관리하고 제어할 수 있습니다.\n- Claude.md, 후크, 명령, 서브 에이전트\n  - 각각의 기술 요소는 AI 에이전트를 세부적으로 제어하고, 특정 작업을 수행하는 데 필요합니다.\n  - 관련 개념 설명: 후크는 사전 정의된 이벤트에서 자동으로 실행되는 스크립트이며, 명령과 서브 에이전트는 동작을 세부적으로 제어합니다.\n\n**💡 인사이트**\n에이전트 지시 기술을 통해 개발자는 AI 시스템을 세밀하게 제어할 수 있으며, 이는 복잡한 작업의 자동화와 최적화에 기여합니다.\n\n---\n\n#### 📍 슬라이드 8: 후크(Hooks)\n\n**핵심 내용**\n- 후크 정의\n  - 후크는 미리 정의된 이벤트 유형에서 실행되는 결정적 스크립트로, 특정 조건에서 자동으로 작동합니다.\n  - 실무적 적용 예시: 개발자는 후크를 활용하여 특정 이벤트가 발생할 때 자동화된 조치를 취할 수 있습니다.\n- 후크 예시\n  - PreToolUse, PostToolUse, UserPromptSubmit, PreCompact 등의 후크가 있으며, 다양한 상황에서 유용하게 활용됩니다.\n  - 관련 개념 설명: 후크는 특정 작업의 자동화를 용이하게 하며, 개발자가 직접 개입하지 않고도 시스템을 효율적으로 운영할 수 있게 합니다.\n\n**💡 인사이트**\n후크는 특정 이벤트에 반응하여 자동으로 동작을 수행하게 함으로써, 개발자는 반복적인 작업에서 벗어나 보다 전략적인 업무에 집중할 수 있게 합니다. 이는 생산성을 크게 향상시킬 수 있습니다.\n\n---\n\n### 명령과 서브 에이전트 관리\n\n#### 📍 슬라이드 9: 명령(Commands)\n\n**핵심 내용**\n- **명령 정의**\n  - 명령은 자주 사용되는 프롬프트를 파일로 저장하여 에이전트가 이를 실행할 수 있게 하는 기능입니다.\n  - 이를 통해 에이전트는 반복적인 작업을 자동화할 수 있습니다.\n- **명령 사용 사례**\n  - 테스트 실행, 코드 검토, git 커밋 생성 및 푸시 등 다양한 개발 작업에서 활용됩니다.\n  - 예를 들어, `themodernsoftware.dev`의 Claude code의 Ship-it 명령은 이러한 자동화를 구현한 사례입니다.\n\n**💡 인사이트**\n명령은 에이전트의 효율성을 극대화하여 반복적인 작업을 자동화할 수 있는 강력한 도구입니다. 이는 개발자들이 보다 창의적이고 복잡한 문제에 집중할 수 있게 하며, 업무 효율성을 크게 향상시킵니다.\n\n---\n\n#### 📍 슬라이드 10: 서브 에이전트(Subagents)\n\n**핵심 내용**\n- **서브 에이전트 정의**\n  - 서브 에이전트는 런타임에 작업을 위임받아 수행하는 에이전트의 하위 구성 요소입니다.\n  - 다양한 작업 유형(프론트엔드, 백엔드 등)에 맞는 개발자 페르소나를 생성하여, 작업 흐름을 깔끔하게 분리합니다.\n- **서브 에이전트 목적**\n  - 여러 작업 흐름을 분리하여 각각에 적합한 컨텍스트를 제공합니다.\n  - 사용자 정의 시스템 프롬프트와 도구를 사용하여 에이전트가 효율적으로 작업을 관리할 수 있게 합니다.\n- **서브 에이전트 사용 사례**\n  - 예시로는 GitHub의 `awesome-claude-agents`와 `SuperClaude_Framework`가 있습니다.\n\n**💡 인사이트**\n서브 에이전트를 활용하면 복잡한 프로젝트에서 다양한 작업을 효율적으로 처리할 수 있으며, 이는 에이전트가 여러 작업을 동시에 관리하는 데 유리합니다. 이는 특히 대규모 프로젝트에서 유용하게 적용될 수 있습니다.\n\n---\n\n#### 📍 슬라이드 11: 서브 에이전트와 Claude.md 비교\n\n**핵심 내용**\n- **서브 에이전트와 Claude.md 비교**\n  - Claude.md 파일은 동작을 고정하는 데 중점을 두어, 반복적인 작업의 일관성을 유지합니다.\n  - 서브 에이전트와 비교하여, 특정 작업에 대한 구체적인 실행 방법을 명시하고 있습니다.\n- **GitHub 예시 링크**\n  - `SuperClaude_Framework`의 GitHub 링크는 이러한 구현 예시를 제공합니다.\n\n**💡 인사이트**\nClaude.md 파일은 특정 작업 프로세스를 고정하여 예측 가능하고 안정적인 결과를 얻을 수 있도록 돕습니다. 이는 개발 환경에서 작업의 일관성을 보장하는 데 중요한 요소로 작용합니다.\n\n---\n\n#### 📍 슬라이드 12: 신중한 안전장치의 필요성\n\n**핵심 내용**\n- **안전장치의 필요성**\n  - AI 에이전트 사용 시에는 코드베이스의 철저한 테스트와 CI/CD 모범 사례를 따르는 것이 필수적입니다.\n  - 에이전트가 생성한 모든 변경(diff)에 대한 감사 가능성을 확보하고, 각 작업 클래스에 맞는 모델을 사용해야 합니다.\n  - 복잡한 작업은 비동기적인 방식보다 초기에 더 직접적인 지원이 필요할 수 있습니다.\n  - 정기적인 체크포인트(커밋)를 통해 작업의 흐름을 지속적으로 모니터링합니다.\n\n**💡 인사이트**\n안전장치는 AI 에이전트의 작업을 신뢰할 수 있게 만드는 중요한 요소입니다. 이를 통해 예상치 못한 오류를 예방하고, 개발 프로세스의 안정성을 높일 수 있습니다. 이는 특히 대규모 시스템에서 필수적인 절차입니다.\n\n---\n\n---\n\n### 에이전트 관리자가 되는 방법\n\n#### 📍 슬라이드 13: 모범 사례\n\n**핵심 내용**\n- 다양한 작업에 대한 다양한 모델\n  - 이 슬라이드는 AI 모델을 특정 작업 유형에 맞게 다르게 사용하는 것이 효과적이라는 점을 강조합니다. 즉, 다양한 작업에는 각각 적합한 모델을 사용하는 것이 중요합니다.\n  - 실무적으로, 고객 서비스 분야에서는 Opus 모델을 사용하여 고객 요구에 맞춘 계획을 세우고, Sonnet 모델을 사용하여 실시간 고객 응대 및 문제 해결을 수행할 수 있습니다.\n- Opus는 계획, Sonnet은 주력 모델\n  - Opus 모델은 계획 수립에 특화되어 있어 전략적이고 분석적인 작업에 적합합니다.\n  - Sonnet 모델은 실시간 상호작용 및 문제 해결에 강점을 가지고 있어 에이전트의 주력 모델로 사용됩니다.\n\n**💡 인사이트**\n다양한 AI 모델을 작업 특성에 맞게 적용함으로써 효율성을 극대화할 수 있으며, 이는 자원 배분 최적화와 성과 향상으로 이어질 수 있습니다.\n\n---\n\n#### 📍 슬라이드 14: 워크플로우 안내\n\n**핵심 내용**\n- 실제 작업 집합에서의 변경 필요성\n  - AI 에이전트를 실제 업무 환경에 도입할 때, 기존 워크플로우에 어떤 변경이 필요한지를 이해하는 것이 중요합니다.\n  - 예를 들어, 고객 서비스 팀은 AI 도입 시 업무 프로세스 재구성이 필요할 수 있습니다.\n- 에이전트 시작 방식 확인\n  - 에이전트가 어떻게 작동하는지를 이해함으로써, AI 도구의 활용을 극대화할 수 있습니다.\n  - 실시간 데이터 처리 및 상호작용을 통해 워크플로우의 연속성을 유지합니다.\n- Claude 프록시 출력\n  - Claude 프록시는 AI 모델의 출력을 예시로 제시하며, 이를 통해 에이전트의 결과를 시각적으로 확인할 수 있습니다.\n\n**💡 인사이트**\nAI 에이전트를 도입할 때는 기존 워크플로우를 재검토하여 최적화해야 하며, 이를 통해 효율성을 향상시킬 수 있습니다. Claude 프록시 출력을 통해 결과를 모니터링하는 것은 실무 적용의 핵심입니다.\n\n---\n\n#### 📍 슬라이드 15: 미해결 질문\n\n**핵심 내용**\n- 작업의 처음 10-20% 연구 단계 자동화\n  - AI를 통해 작업 초기 연구 단계를 자동화하면, 효율성을 높이고 시간을 절약할 수 있습니다.\n  - 예를 들어, 시장 조사를 AI로 자동화하여 신제품 개발 초기 단계를 가속화할 수 있습니다.\n- 보류 중인 작업 대기열 유지 방법\n  - 작업 대기열을 효율적으로 관리하는 것은 프로젝트의 성공적 완료에 필수적입니다.\n  - 일회성 변경에 유연하게 대응할 수 있는 시스템이 필요합니다.\n\n**💡 인사이트**\nAI를 활용한 연구 단계의 자동화와 작업 대기열 관리의 최적화는 프로젝트의 전반적인 효율성을 높이고, 자원 관리의 유연성을 제공합니다. 이러한 미해결 질문에 대한 답을 찾는 것이 경쟁력 강화의 열쇠입니다.\n\n---"
+  }
+}

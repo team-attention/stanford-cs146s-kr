@@ -1,0 +1,117 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  /* Stanford colors - exact match */
+  --color-stanford-red: #8B0000;
+  --color-stanford-red-light: #B22222;
+  --color-stanford-red-dark: #6B0F0F;
+  --color-kr-accent: #0066CC;
+
+  /* Text colors - exact match */
+  --color-text-primary: #2C3E50;
+  --color-text-secondary: #6C757D;
+  --color-text-body: #4A5568;
+
+  /* Background colors */
+  --color-bg-light: #F4F4F4;
+  --color-bg-card: #F9F9F9;
+  --color-border: #E1E8ED;
+
+  /* Font - Inter for English, Noto Sans KR for Korean */
+  --font-sans: Inter, -apple-system, system-ui, "Segoe UI", "Noto Sans KR", sans-serif;
+}
+
+:root {
+  --stanford-red: #8B0000;
+  --stanford-dark-red: #6B0F0F;
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+/* Tailwind CSS v4 preflight가 기본 normalize를 제공하므로
+   추가 reset은 최소화합니다 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  max-width: 100vw;
+  overflow-x: hidden;
+  background: #ffffff;
+  min-height: 100vh;
+  color: var(--color-text-body);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+a {
+  color: var(--color-stanford-red);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header gradient background */
+.header-gradient {
+  background: linear-gradient(135deg, #8B0000, #B22222);
+}
+
+/* Header links should be white */
+.header-gradient a {
+  color: white !important;
+}
+
+.header-gradient a:hover {
+  text-decoration: none;
+}
+
+/* Typography 플러그인 prose 스타일 보강 */
+.prose {
+  --tw-prose-body: #374151;
+  --tw-prose-headings: #111827;
+  --tw-prose-lead: #4b5563;
+  --tw-prose-links: #2563eb;
+  --tw-prose-bold: #111827;
+  --tw-prose-counters: #6b7280;
+  --tw-prose-bullets: #9ca3af;
+  --tw-prose-hr: #e5e7eb;
+  --tw-prose-quotes: #111827;
+  --tw-prose-quote-borders: #e5e7eb;
+  --tw-prose-captions: #6b7280;
+  --tw-prose-code: #111827;
+  --tw-prose-pre-code: #e5e7eb;
+  --tw-prose-pre-bg: #1f2937;
+  --tw-prose-th-borders: #d1d5db;
+  --tw-prose-td-borders: #e5e7eb;
+}
+
+.prose-invert {
+  --tw-prose-body: #d1d5db;
+  --tw-prose-headings: #f9fafb;
+  --tw-prose-lead: #9ca3af;
+  --tw-prose-links: #60a5fa;
+  --tw-prose-bold: #f9fafb;
+  --tw-prose-counters: #9ca3af;
+  --tw-prose-bullets: #6b7280;
+  --tw-prose-hr: #374151;
+  --tw-prose-quotes: #f3f4f6;
+  --tw-prose-quote-borders: #374151;
+  --tw-prose-captions: #9ca3af;
+  --tw-prose-code: #f9fafb;
+  --tw-prose-pre-code: #d1d5db;
+  --tw-prose-pre-bg: #111827;
+  --tw-prose-th-borders: #4b5563;
+  --tw-prose-td-borders: #374151;
+}

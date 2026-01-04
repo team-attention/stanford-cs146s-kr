@@ -1,0 +1,14 @@
+{
+  "slug": "week-7-code-review-reps",
+  "title": "Code Review Reps",
+  "url": "https://github.com/mihail911/modern-software-dev-assignments/tree/master/week7",
+  "type": "github",
+  "week": 7,
+  "analyzedAt": "2026-01-03T23:10:44.915Z",
+  "analysis": {
+    "summary_ko": null,
+    "keyPoints": [],
+    "topics": [],
+    "pdfContent": "# 7주차\n\n약간 향상된 풀스택 스타터(5주차에서 복사)로, 몇 가지 백엔드 개선이 있습니다.\n\n- SQLite를 사용하는 FastAPI 백엔드(SQLAlchemy)\n- 정적 프론트엔드 (Node 도구 체인 불필요)\n- 최소한의 테스트 (pytest)\n- 사전 커밋 (black + ruff)\n- 5주차 대비 개선 사항:\n  - 모델에 타임스탬프 추가 (`created_at`, `updated_at`)\n  - 목록 엔드포인트에 대한 페이지네이션과 정렬\n  - 선택적 필터 (예: 완료를 기준으로 작업 항목 필터링)\n  - 부분 업데이트를 위한 PATCH 엔드포인트\n\n## 빠른 시작\n\n1) 가상 환경을 생성하고 활성화한 후, 의존성을 설치합니다.\n\n```bash\ncd /Users/mihaileric/Documents/code/modern-software-dev-assignments\npython -m venv .venv && source .venv/bin/activate\npip install -e .[dev]\n```\n\n2) (선택적) 사전 커밋 훅 설치\n\n```bash\npre-commit install\n```\n\n3) 앱을 실행합니다 (`week6/`에서)\n\n```bash\ncd week7 && make run\n```\n\n프론트엔드를 위해 `http://localhost:8000`을 열고, API 문서를 위해 `http://localhost:8000/docs`를 엽니다.\n\n## 구조\n\n```\nbackend/                # FastAPI 앱\nfrontend/               # FastAPI에서 서비스되는 정적 UI\ndata/                   # SQLite DB + 시드\ndocs/                   # 에이전트 중심 워크플로우를 위한 TASKS\n```\n\n## 테스트\n\n```bash\ncd week7 && make test\n```\n\n## 형식 지정/린팅\n\n```bash\ncd week7 && make format\ncd week7 && make lint\n```\n\n## 설정\n\n기본값(예: 데이터베이스 경로)을 재정의하기 위해 `.env.example`을 `.env`(in `week7/`에서)로 복사하세요."
+  }
+}
