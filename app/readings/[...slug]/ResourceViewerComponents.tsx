@@ -214,15 +214,20 @@ export function YouTubeAnalysis({ resource, onSeekTo }: AnalysisComponentProps) 
 /**
  * detailedNote_ko에서 슬라이드별 노트를 추출하는 함수
  */
-function parseSlideNotes(detailedNote: string): Map<number, string> {
-  const slideNotes = new Map<number, string>();
+function parseSlideNotes(detailedNote: string): {
+  byNumber: Map<number, string>;
+  byIndex: Map<number, string>;
+} {
+  const byNumber = new Map<number, string>();
+  const byIndex = new Map<number, string>();
 
-  // "#### 📍 슬라이드 N:" 패턴으로 분리
-  const slidePattern = /#### 📍 슬라이드 (\d+):[^\n]*\n/g;
+  // "#### 📍 슬라이드 N:" 또는 "#### 슬라이드 N:" 패턴으로 분리
+  const slidePattern = /#{3,4}\s*(?:📍\s*)?(?:\[[^\]]+\]\s*)?슬라이드\s+(\d+)[^\n]*\n/g;
   const parts = detailedNote.split(slidePattern);
 
   // parts[0]은 첫 슬라이드 이전 내용 (핵심 내용 등)
   // parts[1]은 슬라이드 번호, parts[2]는 슬라이드 내용, ...
+  let index = 1;
   for (let i = 1; i < parts.length; i += 2) {
     const slideNumber = parseInt(parts[i], 10);
     let content = parts[i + 1] || '';
@@ -233,10 +238,13 @@ function parseSlideNotes(detailedNote: string): Map<number, string> {
       content = content.substring(0, nextSectionMatch.index);
     }
 
-    slideNotes.set(slideNumber, content.trim());
+    const trimmed = content.trim();
+    byNumber.set(slideNumber, trimmed);
+    byIndex.set(index, trimmed);
+    index += 1;
   }
 
-  return slideNotes;
+  return { byNumber, byIndex };
 }
 
 /**
@@ -255,7 +263,15 @@ export function SlidesAnalysis({ resource, onSlideChange }: AnalysisComponentPro
   // detailedNote_ko에서 슬라이드별 노트 추출
   const slideNotes = analysis?.detailedNote_ko
     ? parseSlideNotes(analysis.detailedNote_ko)
-    : new Map<number, string>();
+    : { byNumber: new Map<number, string>(), byIndex: new Map<number, string>() };
+
+  const slideNumbers = analysis.slides
+    .map((slide) => slide.slideNumber)
+    .filter((num): num is number => typeof num === 'number');
+  const hasContiguousNumbers =
+    slideNumbers.length === analysis.slides.length &&
+    slideNumbers[0] === 1 &&
+    slideNumbers.every((num, idx) => num === idx + 1);
 
   // 목차 아이템 생성 (상세 노트 제거, 요약과 슬라이드만)
   const tocItems = [
@@ -289,19 +305,26 @@ export function SlidesAnalysis({ resource, onSlideChange }: AnalysisComponentPro
             슬라이드 네비게이션 ({analysis.slides.length}장)
           </h2>
           <div className="flex flex-wrap gap-2">
-            {analysis.slides.map((slide) => (
+            {analysis.slides.map((slide, idx) => {
+              const displaySlideNumber = hasContiguousNumbers
+                ? (slide.slideNumber ?? idx + 1)
+                : idx + 1;
+              const syncSlideNumber = slide.slideNumber ?? displaySlideNumber;
+
+              return (
               <button
-                key={slide.slideNumber}
+                key={displaySlideNumber}
                 onClick={() => {
-                  scrollToSlide(slide.slideNumber);
-                  handleSlideClick(slide.slideNumber);
+                  scrollToSlide(displaySlideNumber);
+                  handleSlideClick(syncSlideNumber);
                 }}
                 className="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-gray-100 hover:bg-gray-200 text-black transition-colors text-sm"
                 title={slide.summary_ko?.substring(0, 100) + '...'}
               >
-                <span className="font-bold">{slide.slideNumber}</span>
+                <span className="font-bold">{displaySlideNumber}</span>
               </button>
-            ))}
+              );
+            })}
           </div>
         </div>
       )}
@@ -351,36 +374,44 @@ export function SlidesAnalysis({ resource, onSlideChange }: AnalysisComponentPro
           <div className="rounded-lg border border-gray-200 bg-white p-4">
             <h2 className="text-xl font-bold text-black flex items-center gap-3">
               <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-black text-white text-base font-bold">2</span>
-              슬라이드별 학습 노트 ({analysis.totalSlides}장)
+              슬라이드별 학습 노트 ({analysis.totalSlides ?? analysis.slides.length}장)
             </h2>
           </div>
 
           {analysis.slides.map((slide, idx) => {
-            const slideNote = slideNotes.get(slide.slideNumber);
+            const displaySlideNumber = hasContiguousNumbers
+              ? (slide.slideNumber ?? idx + 1)
+              : idx + 1;
+            const syncSlideNumber = slide.slideNumber ?? displaySlideNumber;
+            const slideNote = hasContiguousNumbers
+              ? (slideNotes.byNumber.get(slide.slideNumber ?? displaySlideNumber)
+                ?? slideNotes.byIndex.get(displaySlideNumber))
+              : (slideNotes.byIndex.get(displaySlideNumber)
+                ?? slideNotes.byNumber.get(slide.slideNumber ?? displaySlideNumber));
 
             return (
               <div
                 key={idx}
-                id={`slide-${slide.slideNumber}`}
+                id={`slide-${displaySlideNumber}`}
                 className="rounded-lg border border-gray-200 bg-white overflow-hidden scroll-mt-32"
               >
                 {/* Slide Header - Clickable to sync with left panel */}
                 <div
                   className="relative cursor-pointer hover:bg-gray-200/50 transition-colors bg-black p-4"
-                  onClick={() => handleSlideClick(slide.slideNumber)}
-                  title={`슬라이드 ${slide.slideNumber} 클릭하여 왼쪽 패널로 이동`}
+                  onClick={() => handleSlideClick(syncSlideNumber)}
+                  title={`슬라이드 ${displaySlideNumber} 클릭하여 왼쪽 패널로 이동`}
                 >
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-4">
                       <div className="flex items-center justify-center w-16 h-16 rounded-xl bg-white/20 backdrop-blur">
                         <span className="text-3xl font-bold text-white">
-                          {slide.slideNumber}
+                          {displaySlideNumber}
                         </span>
                       </div>
                       <div>
                         <p className="text-white/80 text-sm">슬라이드</p>
                         <p className="text-white font-semibold text-lg">
-                          {slide.slideNumber} / {analysis.totalSlides}
+                          {displaySlideNumber} / {analysis.totalSlides ?? analysis.slides.length}
                         </p>
                       </div>
                     </div>
