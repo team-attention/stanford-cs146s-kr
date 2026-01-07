@@ -6,9 +6,16 @@ import type { Lecture } from '@/types/syllabus'
 interface LectureListProps {
   lectures: Lecture[]
   weekNumber: number
+  blockKoreanLinks?: boolean
+  onKoreanClick?: () => void
 }
 
-export default function LectureList({ lectures, weekNumber }: LectureListProps) {
+export default function LectureList({
+  lectures,
+  weekNumber,
+  blockKoreanLinks,
+  onKoreanClick,
+}: LectureListProps) {
   return (
     <div className="space-y-1">
       {lectures.map((lecture, i) => (
@@ -69,12 +76,22 @@ export default function LectureList({ lectures, weekNumber }: LectureListProps) 
             <>
               {' - Slides '}
               {lecture.krSlidesSlug ? (
-                <Link
-                  href={`/readings/week${weekNumber}/${lecture.krSlidesSlug}`}
-                  className="text-kr-accent hover:underline"
-                >
-                  [한국어]
-                </Link>
+                blockKoreanLinks ? (
+                  <button
+                    type="button"
+                    onClick={onKoreanClick}
+                    className="text-kr-accent hover:underline"
+                  >
+                    [한국어]
+                  </button>
+                ) : (
+                  <Link
+                    href={`/readings/week${weekNumber}/${lecture.krSlidesSlug}`}
+                    className="text-kr-accent hover:underline"
+                  >
+                    [한국어]
+                  </Link>
+                )
               ) : (
                 <span className="text-text-secondary/60">
                   [한국어<span className="text-[12px] ml-0.5 opacity-70">예정</span>]

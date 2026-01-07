@@ -1,9 +1,11 @@
 'use client'
 
+import { useState } from 'react'
 import Link from 'next/link'
 import type { Week, TranslationStatus } from '@/types/syllabus'
 import ReadingList from './ReadingList'
 import LectureList from './LectureList'
+import ComingSoonModal from './ComingSoonModal'
 
 interface WeekCardProps {
   week: Week
@@ -16,6 +18,13 @@ const statusLabel: Record<Exclude<TranslationStatus, 'complete'>, string> = {
 }
 
 export default function WeekCard({ week }: WeekCardProps) {
+  const [isModalOpen, setIsModalOpen] = useState(false)
+  const blockKoreanLinks = week.number >= 2
+
+  const handleKoreanClick = () => {
+    setIsModalOpen(true)
+  }
+
   return (
     <section className="mb-12 border-2 border-stanford-red rounded-xl px-8 pt-4 pb-8">
       {/* Week Header */}
@@ -39,7 +48,12 @@ export default function WeekCard({ week }: WeekCardProps) {
         {week.readings.length > 0 && (
           <div className="mb-6">
             <p className="text-[16px] font-bold text-text-primary mb-2">Reading</p>
-            <ReadingList readings={week.readings} weekNumber={week.number} />
+            <ReadingList
+              readings={week.readings}
+              weekNumber={week.number}
+              blockKoreanLinks={blockKoreanLinks}
+              onKoreanClick={handleKoreanClick}
+            />
           </div>
         )}
 
@@ -50,18 +64,29 @@ export default function WeekCard({ week }: WeekCardProps) {
               {week.assignments.map((assignment, i) => {
                 const status = assignment.translationStatus || (assignment.krSlug ? 'complete' : 'none')
                 const hasKorean = assignment.krSlug && status === 'complete'
+                const shouldBlockKorean = Boolean(hasKorean && blockKoreanLinks)
 
                 return (
                   <li key={i} className="text-[16px] leading-[24px] text-text-body">
                     <span>• {assignment.title}</span>
                     <span className="ml-2">
                       {hasKorean ? (
-                        <Link
-                          href={`/readings/week${week.number}/${assignment.krSlug}`}
-                          className="text-kr-accent hover:underline"
-                        >
-                          [한국어]
-                        </Link>
+                        shouldBlockKorean ? (
+                          <button
+                            type="button"
+                            onClick={handleKoreanClick}
+                            className="text-kr-accent hover:underline"
+                          >
+                            [한국어]
+                          </button>
+                        ) : (
+                          <Link
+                            href={`/readings/week${week.number}/${assignment.krSlug}`}
+                            className="text-kr-accent hover:underline"
+                          >
+                            [한국어]
+                          </Link>
+                        )
                       ) : (
                         <span className="text-text-secondary/60">
                           [한국어<span className="text-[12px] ml-0.5 opacity-70">{statusLabel[status as Exclude<TranslationStatus, 'complete'>]}</span>]
@@ -86,9 +111,16 @@ export default function WeekCard({ week }: WeekCardProps) {
         )}
 
         {week.lectures.length > 0 && (
-          <LectureList lectures={week.lectures} weekNumber={week.number} />
+          <LectureList
+            lectures={week.lectures}
+            weekNumber={week.number}
+            blockKoreanLinks={blockKoreanLinks}
+            onKoreanClick={handleKoreanClick}
+          />
         )}
       </div>
+
+      <ComingSoonModal open={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </section>
   )
 }

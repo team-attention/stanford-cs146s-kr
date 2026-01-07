@@ -44,7 +44,7 @@ export default function ResourceViewer({ resource, onSeekTo, onSlideChange, onPa
   };
 
   // YouTube 분석 결과
-  if (type === 'youtube' || analysis?.youtubeSegments) {
+  if (type === 'youtube' || (analysis?.youtubeSegments && analysis.youtubeSegments.length > 0)) {
     return <YouTubeAnalysis {...analysisProps} />;
   }
 

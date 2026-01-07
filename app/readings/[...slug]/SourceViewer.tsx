@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef, useCallback, useImperativeHandle, forwardRef } from 'react';
+import { detectActualType } from '@/lib/resourceType';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { extractYouTubeVideoId } from '@/lib/utils/youtube-parser';
@@ -591,28 +592,6 @@ function WebsiteMarkdownViewer({ url }: { url: string }) {
       </div>
     </div>
   );
-}
-
-// URL 기반으로 실제 타입 감지 (type 속성보다 우선)
-function detectActualType(url: string, declaredType: string): string {
-  // YouTube URL 감지
-  if (url.includes('youtube.com') || url.includes('youtu.be')) {
-    return 'youtube';
-  }
-  // Google Slides 감지
-  if (url.includes('docs.google.com/presentation')) {
-    return 'slides';
-  }
-  // GitHub 감지
-  if (url.includes('github.com')) {
-    return 'github';
-  }
-  // PDF 감지
-  if (url.endsWith('.pdf') || url.includes('/pdf/')) {
-    return 'pdf';
-  }
-  // 그 외는 선언된 타입 사용
-  return declaredType;
 }
 
 const SourceViewer = forwardRef<SourceViewerRef, SourceViewerProps>(

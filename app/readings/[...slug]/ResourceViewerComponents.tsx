@@ -142,7 +142,6 @@ export function YouTubeAnalysis({ resource, onSeekTo }: AnalysisComponentProps) 
         </div>
       )}
 
-      {/* 5. 구간별 상세 내용 (Segment Details) */}
       {analysis?.youtubeSegments && analysis.youtubeSegments.length > 0 && (
         <div id="segments-detail" className="rounded-xl border border-gray-200 bg-white p-8">
           <h2 className="text-xl font-bold text-black mb-6 flex items-center gap-3">
@@ -155,7 +154,6 @@ export function YouTubeAnalysis({ resource, onSeekTo }: AnalysisComponentProps) 
                 key={idx}
                 className="border-l-4 border-gray-300 pl-6 py-4"
               >
-                {/* 헤더: 타임스탬프 + 태그 */}
                 <div className="flex items-center gap-3 mb-4">
                   {onSeekTo ? (
                     <button
@@ -178,17 +176,16 @@ export function YouTubeAnalysis({ resource, onSeekTo }: AnalysisComponentProps) 
                   </span>
                 </div>
 
-                {/* 제목 */}
                 <h3 className="font-semibold text-black text-lg mb-3">
                   {seg.title}
                 </h3>
 
-                {/* 설명 */}
-                <p className="text-base text-[#444444] mb-4 leading-loose">
-                  {seg.description}
-                </p>
+                {seg.description && (
+                  <p className="text-base text-[#444444] mb-4 leading-loose">
+                    {seg.description}
+                  </p>
+                )}
 
-                {/* 번역된 자막 */}
                 {seg.subtitlesTranslated && (
                   <div className="bg-[#F9F9F9] border border-gray-100 rounded-xl p-6">
                     <div className="flex items-center gap-2 mb-3">
@@ -207,6 +204,7 @@ export function YouTubeAnalysis({ resource, onSeekTo }: AnalysisComponentProps) 
           </div>
         </div>
       )}
+
     </div>
   );
 }
