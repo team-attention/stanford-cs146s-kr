@@ -79,14 +79,41 @@ status: "draft"
 - 애매한 부분은 일단 직역
 - 번역체가 남아있어도 OK (refiner가 정리)
 
+## 용어 검색 (Terminology Lookup)
+
+glossary.md에 없는 용어는 terminology-lookup agent를 호출하여 검색합니다.
+
+### 호출 시점
+- glossary.md에 없는 기술 용어 발견 시
+- 고유명사(회사명, 제품명, 인명) 번역 필요 시
+
+### 호출 방법
+Task tool로 terminology-lookup agent 호출:
+- subagent_type: "general-purpose"
+- prompt에 terminology-lookup.md 내용 + 검색할 용어 목록 포함
+- description: "terminology lookup"
+
+### 추출 대상
+- 대문자로 시작하는 고유명사
+- CamelCase, snake_case 형태의 기술 용어
+- 제품명, 서비스명
+- 인명
+
+### 결과 활용
+- `confidence: "high"`: 그대로 사용
+- `confidence: "medium"`: alternatives 검토 후 선택
+- `confidence: "low"`: notes 참조하여 판단
+
 ## 실행 지침
 
 1. 원문을 처음부터 끝까지 읽고 문서 유형 파악
 2. 용어집 확인하여 용어 번역 기준 숙지
-3. 섹션별로 순차 번역
-4. 메타데이터(frontmatter) 작성
-5. 핵심 요약 섹션 추가
-6. 전체 마크다운 출력
+3. **용어 검색**: 원문에서 고유명사/기술 용어 추출 후, glossary.md에 없는 용어는 terminology-lookup agent 호출
+4. 용어 검색 결과를 참조하여 번역 기준 수립
+5. 섹션별로 순차 번역
+6. 메타데이터(frontmatter) 작성
+7. 핵심 요약 섹션 추가
+8. 전체 마크다운 출력
 
 ## 출력 예시
 

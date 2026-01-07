@@ -42,22 +42,30 @@
            │
            ▼
 ┌──────────────────────────────────────┐
-│ 2. Task: translator                  │
+│ 2. Task: terminology-lookup          │
 │    subagent_type: general-purpose    │
-│    영어 원문 → 한국어 초벌 번역         │
-│    → JSON 형식 sections 생성          │
+│    원문에서 용어 추출 → 용어집 확인     │
+│    → 없는 용어 웹검색 → JSON 결과      │
 └──────────────────────────────────────┘
            │
            ▼
 ┌──────────────────────────────────────┐
-│ 3. Task: translation-refiner (1차)   │
+│ 3. Task: translator                  │
+│    subagent_type: general-purpose    │
+│    영어 원문 → 한국어 초벌 번역         │
+│    용어 검색 결과 참조하여 번역         │
+└──────────────────────────────────────┘
+           │
+           ▼
+┌──────────────────────────────────────┐
+│ 4. Task: translation-refiner (1차)   │
 │    subagent_type: general-purpose    │
 │    번역체 → 자연스러운 한국어           │
 └──────────────────────────────────────┘
            │
            ▼
 ┌──────────────────────────────────────┐
-│ 4. Task: translation-validator       │
+│ 5. Task: translation-validator       │
 │    subagent_type: general-purpose    │
 │    원문 대비 검증 (누락, 오역)          │
 │    → 수정 제안 JSON 생성               │
@@ -65,13 +73,13 @@
            │
            ▼
 ┌──────────────────────────────────────┐
-│ 5. Task: translation-refiner (2차)   │
+│ 6. Task: translation-refiner (2차)   │
 │    validator 피드백 반영               │
 └──────────────────────────────────────┘
            │
            ▼
 ┌──────────────────────────────────────┐
-│ 6. Task: translation-qa              │
+│ 7. Task: translation-qa              │
 │    subagent_type: general-purpose    │
 │    최종 품질 검증 (문체, 용어, 가독성)  │
 │    → QA 보고서 JSON 생성               │
@@ -79,13 +87,13 @@
            │
            ▼
 ┌──────────────────────────────────────┐
-│ 7. Task: translation-refiner (3차)   │
+│ 8. Task: translation-refiner (3차)   │
 │    QA 피드백 반영 → 최종본             │
 └──────────────────────────────────────┘
            │
            ▼
 ┌──────────────────────────────────────┐
-│ 8. 마크다운 파일 저장                  │
+│ 9. 마크다운 파일 저장                  │
 │    docs/week1/kr/how-openai-uses-    │
 │    codex.md                          │
 └──────────────────────────────────────┘
@@ -102,15 +110,25 @@
 3. docs/week{N}/kr/ 디렉토리 없으면 생성
 ```
 
-### Step 2: Translator 실행
+### Step 2: Terminology Lookup 실행
 ```
 Task tool 호출:
 - subagent_type: "general-purpose"
-- prompt: .claude/agents/translate-reading/translator.md 내용 + 원문 + 용어집
+- prompt: .claude/agents/translate-reading/terminology-lookup.md 내용 + 원문 + 용어집
+- description: "terminology lookup - 용어 검색"
+
+용어집에 없는 기술 용어, 고유명사를 웹검색하여 번역 기준 수립
+```
+
+### Step 3: Translator 실행
+```
+Task tool 호출:
+- subagent_type: "general-purpose"
+- prompt: .claude/agents/translate-reading/translator.md 내용 + 원문 + 용어집 + 용어 검색 결과
 - description: "translator - 초벌 번역"
 ```
 
-### Step 3: Refiner 1차 실행
+### Step 4: Refiner 1차 실행
 ```
 Task tool 호출:
 - subagent_type: "general-purpose"
@@ -118,7 +136,7 @@ Task tool 호출:
 - description: "refiner 1차 - 번역체 정리"
 ```
 
-### Step 4: Validator 실행
+### Step 5: Validator 실행
 ```
 Task tool 호출:
 - subagent_type: "general-purpose"
@@ -126,14 +144,14 @@ Task tool 호출:
 - description: "validator - 품질 검증"
 ```
 
-### Step 5: Refiner 2차 실행
+### Step 6: Refiner 2차 실행
 ```
 Task tool 호출:
 - prompt: refiner.md 내용 + 번역 결과 + validator 피드백
 - description: "refiner 2차 - validator 피드백 반영"
 ```
 
-### Step 6: QA 실행 (--skip-qa가 아닌 경우)
+### Step 7: QA 실행 (--skip-qa가 아닌 경우)
 ```
 Task tool 호출:
 - subagent_type: "general-purpose"
@@ -141,14 +159,14 @@ Task tool 호출:
 - description: "QA - 최종 품질 검증"
 ```
 
-### Step 7: Refiner 3차 실행
+### Step 8: Refiner 3차 실행
 ```
 Task tool 호출:
 - prompt: refiner.md 내용 + 번역 결과 + QA 피드백
 - description: "refiner 3차 - QA 피드백 반영"
 ```
 
-### Step 8: 파일 저장
+### Step 9: 파일 저장
 ```
 Write tool로 docs/week{N}/kr/{slug}.md 저장
 - 마크다운 형식
@@ -169,6 +187,7 @@ QA 단계를 스킵합니다 (빠른 번역용).
 
 ## Agent 파일
 
+- `.claude/agents/translate-reading/terminology-lookup.md`
 - `.claude/agents/translate-reading/translator.md`
 - `.claude/agents/translate-reading/translation-refiner.md`
 - `.claude/agents/translate-reading/translation-validator.md`

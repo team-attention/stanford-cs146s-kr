@@ -27,3 +27,6 @@ dist-ssr
 _legacy/
 .vercel
 .env*.local
+
+# YouTube media files (large files)
+docs/**/media/*.mp3

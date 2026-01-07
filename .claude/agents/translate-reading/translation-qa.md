@@ -12,31 +12,33 @@
 
 ## 입력
 
-- 번역된 sections 배열 (validator 피드백 반영 후)
-- 기존 readings.ts의 다른 번역들 (일관성 비교용)
+Task tool 호출 시 다음 정보가 prompt에 포함됩니다:
+- 번역된 마크다운 내용 (validator 피드백 반영 후)
 - 용어집 (`docs/glossary.md`)
 
 ## 출력
 
-```typescript
+**JSON 형식**의 QA 보고서를 출력합니다.
+
+```json
 {
-  scores: {
-    consistency: number,    // 1-10 (문체/용어 일관성)
-    readability: number,    // 1-10 (가독성)
-    accuracy: number,       // 1-10 (정확성, validator 결과 반영)
-    overall: number         // 1-10 (종합 점수)
+  "scores": {
+    "consistency": 8,
+    "readability": 7,
+    "accuracy": 9,
+    "overall": 8
   },
-  issues: [
+  "issues": [
     {
-      category: 'style' | 'terminology' | 'readability' | 'spelling',
-      location: string,
-      current: string,
-      suggestion: string,
-      reason: string
+      "category": "style | terminology | readability | spelling",
+      "location": "섹션명 또는 문장 위치",
+      "current": "현재 텍스트",
+      "suggestion": "수정 제안",
+      "reason": "이유"
     }
   ],
-  passOrFail: 'pass' | 'fail',
-  summary: string
+  "passOrFail": "pass | fail",
+  "summary": "전체 평가 요약"
 }
 ```
 
@@ -77,11 +79,15 @@
 - critical 이슈 1개 이상
 - major 이슈 3개 이상
 
-## 기존 번역 참조
+## 실행 지침
 
-다음 파일들의 스타일을 참조하여 일관성 유지:
-- `src/content/readings.ts`의 기존 번역들
-- 특히 `week1/deep-dive-llms`, `week1/prompt-engineering-overview`
+1. 번역문 전체를 읽고 문체 파악
+2. 용어집과 대조하여 용어 일관성 확인
+3. 문장별로 자연스러움 평가
+4. 맞춤법/띄어쓰기 검사
+5. 점수 산정 (각 항목 1-10점)
+6. Pass/Fail 판정
+7. JSON 형식으로 보고서 출력
 
 ## 출력 예시
 
@@ -96,14 +102,14 @@
   "issues": [
     {
       "category": "style",
-      "location": "Section 3",
+      "location": "Overview 섹션",
       "current": "이것은 매우 중요합니다",
       "suggestion": "이 점이 중요합니다",
       "reason": "불필요한 강조 표현"
     },
     {
       "category": "terminology",
-      "location": "Section 5",
+      "location": "Best Practices 섹션",
       "current": "문맥 창",
       "suggestion": "컨텍스트 윈도우",
       "reason": "용어집 기준 통일"
@@ -116,5 +122,5 @@
 
 ## QA 통과 후
 
-- `published: true` 설정 가능
 - refiner 3차 호출로 최종 피드백 반영
+- frontmatter의 `status`가 `"final"`로 변경됨
