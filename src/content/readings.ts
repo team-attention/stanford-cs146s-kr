@@ -5,6 +5,7 @@ export interface ChildReading {
   titleKr: string        // 'Zero-shot 프롬프팅'
   sourceUrl: string      // 원본 페이지 URL
   published?: boolean    // 번역 완료 여부
+  cheatsheetImage?: string  // 치트시트 이미지 경로 (예: '/cheatsheets/prompt-engineering-guide/zeroshot.png')
   // 콘텐츠 필드 (번역 완료 시 추가)
   author?: string
   readTime?: string

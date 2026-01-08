@@ -439,6 +439,17 @@ function ChildReadingPage({
               </a>
             </div>
 
+            {/* Cheatsheet Image */}
+            {child.cheatsheetImage && (
+              <div className="mb-6">
+                <img
+                  src={child.cheatsheetImage}
+                  alt={`${child.titleKr} 치트시트`}
+                  className="w-full rounded-lg border border-border shadow-sm"
+                />
+              </div>
+            )}
+
             {/* 콘텐츠 렌더링 */}
             {child.sections && child.sections.length > 0 ? (
               <>
