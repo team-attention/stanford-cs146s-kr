@@ -34,6 +34,8 @@ export const syllabus: Week[] = [
       {
         title: 'How OpenAI Uses Codex',
         url: 'https://cdn.openai.com/pdf/6a2631dc-783e-479b-b1a4-af0cfbd38630/how-openai-uses-codex.pdf',
+        krSlug: 'how-openai-uses-codex',
+        translationStatus: 'complete',
       },
     ],
     assignments: [
