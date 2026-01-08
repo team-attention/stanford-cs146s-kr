@@ -668,15 +668,412 @@ export const readings: Record<string, ReadingContent> = {
           { title: '질의응답, 사실 검증, 콘텐츠 생성, 고객 지원 등 다양한 분야에 적용', content: '' },
         ],
       },
-      { slug: 'art', title: 'Automatic Reasoning and Tool-use', titleKr: 'ART (자동 추론 및 도구 사용)', sourceUrl: 'https://www.promptingguide.ai/techniques/art', published: true },
-      { slug: 'ape', title: 'Automatic Prompt Engineer', titleKr: 'APE (자동 프롬프트 엔지니어)', sourceUrl: 'https://www.promptingguide.ai/techniques/ape', published: true },
-      { slug: 'activeprompt', title: 'Active-Prompt', titleKr: 'Active-Prompt', sourceUrl: 'https://www.promptingguide.ai/techniques/activeprompt', published: true },
-      { slug: 'dsp', title: 'Directional Stimulus Prompting', titleKr: '방향성 자극 프롬프팅', sourceUrl: 'https://www.promptingguide.ai/techniques/dsp', published: true },
-      { slug: 'pal', title: 'Program-Aided Language Models', titleKr: 'PAL (프로그램 보조 언어 모델)', sourceUrl: 'https://www.promptingguide.ai/techniques/pal', published: true },
-      { slug: 'react', title: 'ReAct', titleKr: 'ReAct', sourceUrl: 'https://www.promptingguide.ai/techniques/react', published: true },
-      { slug: 'reflexion', title: 'Reflexion', titleKr: 'Reflexion', sourceUrl: 'https://www.promptingguide.ai/techniques/reflexion', published: true },
-      { slug: 'multimodalcot', title: 'Multimodal CoT', titleKr: '멀티모달 CoT', sourceUrl: 'https://www.promptingguide.ai/techniques/multimodalcot', published: true },
-      { slug: 'graph', title: 'Graph Prompting', titleKr: '그래프 프롬프팅', sourceUrl: 'https://www.promptingguide.ai/techniques/graph', published: true },
+      {
+        slug: 'art',
+        title: 'Automatic Reasoning and Tool-use',
+        titleKr: 'ART (자동 추론 및 도구 사용)',
+        sourceUrl: 'https://www.promptingguide.ai/techniques/art',
+        published: true,
+        author: 'DAIR.AI',
+        readTime: '약 2분',
+        sections: [
+          {
+            title: '개요',
+            content: 'ART는 Chain of Thought 프롬프팅과 도구 통합을 교차 방식으로 결합한 프레임워크입니다. 연구에 따르면 이 프레임워크는 "고정된(frozen) LLM으로 중간 추론 단계를 프로그램 형태로 자동 생성"합니다.',
+          },
+          {
+            title: 'ART의 작동 방식',
+            content: '다음 단계로 구성됩니다:',
+            items: [
+              '선택: 새로운 태스크를 만나면 시스템이 태스크 라이브러리에서 관련 있는 다단계 추론 및 도구 사용 예시를 검색',
+              '실행: 테스트 중 외부 도구 호출이 필요하면 생성을 일시 중지',
+              '통합: 도구 출력을 통합한 후 생성을 재개',
+            ],
+          },
+          {
+            title: '주요 장점',
+            content: 'ART는 다음과 같은 장점을 제공합니다:',
+            items: [
+              '확장성: 사람이 라이브러리를 업데이트하여 추론 단계를 개선하거나 새로운 도구를 추가할 수 있음',
+              '성능: ART는 이전에 접하지 않은 BigBench와 MMLU 태스크에서 few-shot 프롬프팅과 자동 Chain of Thought를 크게 능가',
+              '유연성: 사람의 피드백을 반영하면 수작업 Chain of Thought 프롬프트보다 뛰어난 성능',
+            ],
+          },
+          {
+            title: '출처',
+            content: 'Paranjape 외(2023)가 이 프레임워크를 소개했으며, 언어 모델을 활용한 복잡한 문제 해결에서 추론과 도구 통합을 결합한 중요한 발전입니다.',
+          },
+        ],
+        keyTakeaways: [
+          { title: 'ART는 Chain of Thought 프롬프팅과 도구 사용을 결합한 프레임워크', content: '' },
+          { title: '고정된(frozen) LLM으로 중간 추론 단계를 자동 생성', content: '' },
+          { title: '태스크 라이브러리에서 관련 예시를 검색해 새로운 태스크에 적용', content: '' },
+          { title: 'BigBench, MMLU에서 few-shot 프롬프팅 대비 우수한 성능', content: '' },
+          { title: '사람의 피드백으로 확장 가능', content: '' },
+        ],
+      },
+      {
+        slug: 'ape',
+        title: 'Automatic Prompt Engineer',
+        titleKr: 'APE (자동 프롬프트 엔지니어)',
+        sourceUrl: 'https://www.promptingguide.ai/techniques/ape',
+        published: true,
+        author: 'DAIR.AI',
+        readTime: '약 2분',
+        sections: [
+          {
+            title: 'APE 작동 방식',
+            content: 'APE는 다음 세 단계로 작동합니다:',
+            items: [
+              '생성: LLM이 출력 예시를 바탕으로 후보 지시문을 생성합니다.',
+              '실행: 타겟 모델이 후보 지시문들을 실행합니다.',
+              '선택: 평가 점수를 기준으로 가장 효과적인 지시문을 선택합니다.',
+            ],
+          },
+          {
+            title: '주요 발견',
+            content: 'APE는 널리 사용되는 "Let\'s think step by step"보다 더 나은 제로샷 Chain-of-Thought(연쇄적 사고) 프롬프트를 발견했습니다. 최적화된 프롬프트는 "Let\'s work this out in a step by step way to be sure we have the right answer."(정답을 확인하기 위해 단계별로 풀어봅시다.)입니다. 이 프롬프트는 MultiArith와 GSM8K 벤치마크에서 성능 향상을 보였습니다.',
+          },
+          {
+            title: '관련 연구',
+            content: '프롬프트 최적화 관련 연구들:',
+            items: [
+              'Prompt-OIRL: 쿼리 의존적 프롬프트를 위한 오프라인 역강화학습 활용',
+              'OPRO: LLM을 활용한 프롬프트 최적화',
+              'AutoPrompt: 그래디언트 기반 자동 프롬프트 생성',
+              'Prefix Tuning & Prompt Tuning: 전체 파인튜닝 대신 파라미터 효율적 학습',
+            ],
+          },
+          {
+            title: '참고 문헌',
+            content: 'Zhou et al. (2022). "Large Language Models Are Human-Level Prompt Engineers" (https://arxiv.org/abs/2211.01910)',
+          },
+        ],
+        keyTakeaways: [
+          { title: 'APE는 LLM으로 최적의 프롬프트를 자동 탐색하는 프레임워크', content: '' },
+          { title: '인간이 만든 "Let\'s think step by step"보다 효과적인 프롬프트를 찾음', content: '' },
+          { title: '수학 추론 벤치마크(MultiArith, GSM8K)에서 성능 향상을 입증', content: '' },
+        ],
+      },
+      {
+        slug: 'activeprompt',
+        title: 'Active-Prompt',
+        titleKr: 'Active-Prompt',
+        sourceUrl: 'https://www.promptingguide.ai/techniques/activeprompt',
+        published: true,
+        author: 'DAIR.AI',
+        readTime: '약 2분',
+        sections: [
+          {
+            title: '개요',
+            content: 'Chain-of-Thought(CoT) 방법은 사람이 주석을 단 고정된 예시 세트에 의존합니다. 하지만 이 예시가 모든 과제에 최적이 아닐 수 있다는 문제가 있습니다. Diao et al.(2023)은 이 문제를 해결하기 위해 Active-Prompt라는 새로운 프롬프팅 방법을 제안했습니다. Active-Prompt는 LLM을 다양한 과제별 예시 프롬프트에 맞게 조정합니다.',
+          },
+          {
+            title: 'Active-Prompt의 작동 방식',
+            content: '먼저 LLM에 몇 개의 CoT 예시를 포함하거나 제외한 채로 질문합니다. 훈련 질문 세트에 대해 k개의 답변을 생성합니다. k개 답변을 바탕으로 불확실성 지표를 계산하는데, 여기서는 불일치 정도를 사용합니다. 불확실성이 가장 높은 질문을 선별해 사람에게 주석을 요청합니다.',
+            items: [
+              '불확실성 추정: 훈련 세트의 각 질문을 LLM에 입력해 k개의 답변 생성',
+              '불일치 계산: k개 답변 사이의 불일치를 기준으로 불확실성 측정',
+              '선택: 불확실성이 가장 높은 질문을 골라 사람의 주석 대상으로 지정',
+              '주석 작업: 선택된 질문에 대해 사람이 CoT 주석 작성',
+              '추론: 새로 확보한 주석 예시를 활용해 새로운 질문에 추론 수행',
+            ],
+          },
+          {
+            title: '핵심 인사이트',
+            content: 'Active-Prompt의 핵심 혁신은 고정된 예시에 의존하지 않고, 특정 과제에 가장 유용한 예시를 동적으로 선택한다는 점입니다. 여러 모델 출력 간의 불일치로 불확실성을 측정해, 성능 향상에 필요한 주석 대상 예시를 효과적으로 식별합니다.',
+          },
+        ],
+        keyTakeaways: [
+          { title: 'Active-Prompt는 과제별로 가장 효과적인 예시를 동적으로 선택하는 프롬프팅 기법', content: '' },
+          { title: '불확실성 추정(여러 답변 간 불일치 측정)으로 주석이 필요한 질문을 식별', content: '' },
+          { title: '고정된 예시 대신 적응형 예시 선택으로 다양한 과제에서 성능 향상', content: '' },
+        ],
+      },
+      {
+        slug: 'dsp',
+        title: 'Directional Stimulus Prompting',
+        titleKr: '방향 자극 프롬프팅',
+        sourceUrl: 'https://www.promptingguide.ai/techniques/dsp',
+        published: true,
+        author: 'DAIR.AI',
+        readTime: '약 2분',
+        sections: [
+          {
+            title: '개요',
+            content: '방향 자극 프롬프팅(Directional Stimulus Prompting)은 Li et al. (2023)이 제안한 기법입니다. 언어 모델이 원하는 출력을 더 효과적으로 생성하도록 안내합니다. 특히 요약(summarization) 작업에서 유용합니다.',
+          },
+          {
+            title: '핵심 메커니즘',
+            content: '이 접근법은 조정 가능한(tunable) 정책 언어 모델(policy language model)을 활용합니다. 정책 모델은 더 큰 고정(frozen) LLM을 안내하는 자극(stimuli)이나 힌트를 생성하도록 훈련됩니다. 이는 강화학습(reinforcement learning)으로 언어 모델 출력을 최적화하는 새로운 트렌드입니다.',
+          },
+          {
+            title: '기술적 접근 방식',
+            content: '이 방법론은 표준 프롬프팅과 다릅니다. 수동으로 프롬프트를 작성하는 대신, 방향성 프롬프트(directional prompts)를 체계적으로 생성하는 중간 단계를 도입합니다. 덕분에 모델 행동을 더 구조적으로 안내할 수 있습니다.',
+          },
+          {
+            title: '장점',
+            content: '방향 자극 프롬프팅의 주요 장점:',
+            items: [
+              '효율성: 전체 시스템을 파인튜닝하지 않고 작은 모델만 효율적으로 최적화합니다.',
+              '유연성: 블랙박스 LLM과 함께 작동하므로 API 기반 모델에도 적용할 수 있습니다.',
+              '확장성: 작은 정책 모델이 큰 LLM을 안내하는 구조로 확장성이 뛰어납니다.',
+            ],
+          },
+        ],
+        keyTakeaways: [
+          { title: '작은 정책 LM이 큰 고정 LLM을 안내하는 힌트를 생성하는 기법', content: '' },
+          { title: '강화학습으로 힌트 생성 최적화', content: '' },
+          { title: '요약 작업에 효과적이며, API 기반 블랙박스 모델에도 적용 가능', content: '' },
+        ],
+      },
+      {
+        slug: 'pal',
+        title: 'Program-Aided Language Models',
+        titleKr: 'PAL (프로그램 보조 언어 모델)',
+        sourceUrl: 'https://www.promptingguide.ai/techniques/pal',
+        published: true,
+        author: 'DAIR.AI',
+        readTime: '약 5분',
+        sections: [
+          {
+            title: 'PAL 작동 방식',
+            content: 'PAL은 언어 모델이 자유 형식 텍스트 설명 대신 실행 가능한 프로그램을 중간 추론 단계로 생성하는 접근 방식입니다. 모델은 자연어 문제를 읽고 런타임 환경(주로 Python)에서 실행하여 답을 도출하는 프로그램을 생성합니다.',
+          },
+          {
+            title: 'Chain of Thought와의 핵심 차이점',
+            content: '자연어 추론을 사용하는 Chain of Thought 프롬프팅과 달리 PAL은 코드 실행을 활용합니다. 이 방식은 모델 예측에만 의존하지 않고 결정론적 프로그래밍에 계산 작업을 위임하여 추론 정확도를 높입니다.',
+          },
+          {
+            title: '실제 구현',
+            content: '워크플로우는 다음과 같습니다:',
+            items: [
+              '설정: API 키를 구성하고 언어 모델 인스턴스를 생성',
+              '프롬프트 엔지니어링: 문제를 Python 코드로 구조화하는 few-shot 예시 제공',
+              '모델 출력: LLM이 Python 코드 스니펫을 생성',
+              '실행: Python exec() 함수로 생성된 코드를 실행해 최종 답 도출',
+            ],
+          },
+          {
+            title: 'PAL이 효과적인 이유',
+            content: 'PAL이 효과적인 이유는 다음과 같습니다:',
+            items: [
+              '계산 위임: 수학적, 논리적 연산을 신뢰할 수 있는 런타임이 처리',
+              '환각 감소: 모델이 계산 결과를 "상상"할 필요가 없음',
+              '검증 가능성: 생성된 코드를 검사하고 디버깅 가능',
+              '모델 강점 활용: LLM은 문제 이해와 구조화된 코드 생성에 뛰어남',
+            ],
+          },
+        ],
+        keyTakeaways: [
+          { title: 'PAL은 LLM이 추론 단계로 실행 가능한 프로그램을 생성하고 Python 런타임이 이를 실행하는 방법', content: '' },
+          { title: 'Chain of Thought 프롬프팅과 달리 자유 형식 텍스트 대신 코드 실행을 활용', content: '' },
+          { title: '계산을 런타임에 위임하여 정확도를 높이고 환각을 줄임', content: '' },
+          { title: '날짜 계산, 수학 문제 등 결정론적 연산이 필요한 작업에 특히 효과적', content: '' },
+        ],
+      },
+      {
+        slug: 'react',
+        title: 'ReAct',
+        titleKr: 'ReAct 프롬프팅',
+        sourceUrl: 'https://www.promptingguide.ai/techniques/react',
+        published: true,
+        author: 'DAIR.AI',
+        readTime: '약 5분',
+        sections: [
+          {
+            title: '개요',
+            content: 'Yao et al. (2022)이 소개한 ReAct는 "LLM으로 추론 추적과 작업별 행동을 번갈아 생성하는" 프레임워크입니다. 이 접근법을 통해 모델은 내부 추론과 외부 도구 상호작용을 결합하여 복잡한 작업을 처리할 수 있습니다.',
+          },
+          {
+            title: '핵심 개념',
+            content: 'ReAct 프레임워크는 외부 정보 검색을 도입해 Chain-of-Thought 프롬프팅의 한계를 극복합니다. CoT는 추론에 뛰어나지만 실제 데이터에 접근할 수 없어 사실적 환각이 발생합니다. ReAct는 사고와 행동을 번갈아 수행하며, 위키피디아나 검색 엔진 같은 외부 소스를 쿼리해 이 문제를 해결합니다.',
+          },
+          {
+            title: '작동 방식',
+            content: 'ReAct는 사고-행동-관찰 사이클로 동작합니다:',
+            items: [
+              '사고(Thought): 내부 추론 단계',
+              '행동(Action): 외부 도구 쿼리 (검색, 조회)',
+              '관찰(Observation): 환경에서 반환된 결과',
+            ],
+          },
+          {
+            title: '성능 결과',
+            content: 'ReAct는 HotpotQA와 Fever 데이터셋에서 행동만 수행하는 방식보다 우수한 성능을 보입니다. ReAct를 Chain-of-Thought, Self-Consistency와 결합하면 최상의 결과를 얻을 수 있습니다. ALFWorld와 WebShop 환경에서도 행동만 수행하는 기준선을 크게 앞섭니다.',
+          },
+          {
+            title: '주요 장점',
+            content: 'ReAct의 핵심 이점:',
+            items: [
+              '내부 지식과 외부 정보 결합',
+              '해석 가능성과 신뢰성 향상',
+              '복잡한 추론 및 의사결정 작업 처리',
+              '근거 기반 접근으로 환각 감소',
+              '실행 중 동적 계획 조정 가능',
+            ],
+          },
+          {
+            title: '한계점',
+            content: 'ReAct의 주요 한계:',
+            items: [
+              '검색 결과 품질에 크게 의존',
+              '유용하지 않은 정보를 받았을 때 회복이 어려울 수 있음',
+              '특정 추론 작업에서는 순수 CoT보다 유연성이 낮음',
+            ],
+          },
+        ],
+        keyTakeaways: [
+          { title: 'ReAct는 추론(Reasoning)과 행동(Acting)을 결합한 프롬프팅 프레임워크', content: '' },
+          { title: '사고-행동-관찰 사이클로 외부 도구와 상호작용', content: '' },
+          { title: 'Chain-of-Thought의 환각 문제를 외부 정보 검색으로 해결', content: '' },
+          { title: '지식 집약적 작업과 의사결정 작업 모두에서 기준선 대비 우수한 성능', content: '' },
+          { title: 'LangChain으로 실제 구현 가능', content: '' },
+        ],
+      },
+      {
+        slug: 'reflexion',
+        title: 'Reflexion',
+        titleKr: 'Reflexion',
+        sourceUrl: 'https://www.promptingguide.ai/techniques/reflexion',
+        published: true,
+        author: 'DAIR.AI',
+        readTime: '약 3분',
+        sections: [
+          {
+            title: '개요',
+            content: 'Reflexion은 언어적 피드백을 통해 언어 기반 에이전트를 강화하도록 설계된 프레임워크입니다. 핵심 메커니즘은 환경 피드백을 언어적 자기 성찰로 변환한 뒤, 이후 에이전트 반복 시 컨텍스트로 활용합니다. 이 방식으로 에이전트는 실수에서 배우고 복잡한 작업 성능을 높입니다.',
+          },
+          {
+            title: '프레임워크 구성요소',
+            content: 'Reflexion 시스템은 세 가지 모델로 구성됩니다:',
+            items: [
+              '액터(Actor): 관찰을 바탕으로 텍스트와 행동을 생성하며, Chain-of-Thought와 ReAct 방법론을 사용',
+              '평가자(Evaluator): 궤적(trajectory)을 분석하고 보상 점수를 생성해 액터의 출력을 평가',
+              '자기 성찰(Self-Reflection): 언어적 강화 신호를 생성하는 LLM 기반 구성요소',
+            ],
+          },
+          {
+            title: '프로세스 흐름',
+            content: 'Reflexion의 프로세스는 다음 단계를 따릅니다: 작업 정의 → 궤적 생성 → 평가 → 성찰 → 다음 궤적 생성.',
+          },
+          {
+            title: '성능 결과',
+            content: '연구 결과 여러 영역에서 상당한 개선을 확인했습니다:',
+            items: [
+              '의사 결정: ReAct + Reflexion이 AlfWorld 작업 134개 중 130개 완료',
+              '추론: HotPotQA에서 기존 접근법 대비 우수한 성능',
+              '프로그래밍: HumanEval, MBPP, Leetcode Hard 벤치마크에서 최고 수준 달성',
+            ],
+          },
+          {
+            title: '이상적인 사용 사례',
+            content: 'Reflexion은 다음 상황에서 가장 효과적입니다:',
+            items: [
+              '에이전트가 시행착오를 통해 학습해야 할 때',
+              '전통적인 강화 학습이 현실적으로 어려울 때',
+              '미묘하고 해석 가능한 피드백이 필수일 때',
+              '명시적인 에피소드 메모리가 작업에 유용할 때',
+            ],
+          },
+          {
+            title: '한계점',
+            content: 'Reflexion의 주요 한계점:',
+            items: [
+              '정확한 자기 평가 능력이 필요함',
+              '슬라이딩 윈도우 아키텍처의 메모리 제약',
+              '비결정적 함수가 포함된 코드 생성 시 어려움',
+            ],
+          },
+        ],
+        keyTakeaways: [
+          { title: 'Reflexion은 언어적 자기 성찰을 통해 에이전트를 강화하는 프레임워크', content: '' },
+          { title: '액터, 평가자, 자기 성찰 세 가지 구성요소로 이루어짐', content: '' },
+          { title: '의사 결정, 추론, 프로그래밍 작업에서 우수한 성능', content: '' },
+          { title: '시행착오 학습과 해석 가능한 피드백이 필요한 상황에 적합', content: '' },
+        ],
+      },
+      {
+        slug: 'multimodalcot',
+        title: 'Multimodal CoT',
+        titleKr: '멀티모달 CoT',
+        sourceUrl: 'https://www.promptingguide.ai/techniques/multimodalcot',
+        published: true,
+        author: 'DAIR.AI',
+        readTime: '약 2분',
+        sections: [
+          {
+            title: '개요',
+            content: 'Zhang et al. (2023)은 기존 Chain-of-Thought 추론을 확장한 멀티모달 CoT 접근법을 제안했습니다. 언어에만 의존하는 대신, 이 프레임워크는 여러 모달리티(양식)를 함께 처리합니다.',
+          },
+          {
+            title: '핵심 접근법',
+            content: '이 방법론은 두 단계로 나뉩니다:',
+            items: [
+              '근거 생성(Rationale Generation): 텍스트와 이미지 데이터를 결합해 설명적 추론을 만듭니다',
+              '답변 추론(Answer Inference): 생성한 근거를 바탕으로 최종 답변을 도출합니다',
+            ],
+          },
+          {
+            title: '성능',
+            content: '연구에 따르면 "멀티모달 CoT 모델(1B)이 ScienceQA 벤치마크에서 GPT-3.5를 능가"했습니다. 이는 언어만 사용하는 대형 모델 대비 상당한 효율성 향상을 보여줍니다.',
+          },
+          {
+            title: '프레임워크 구조',
+            content: '이 접근법은 시각 정보와 언어 정보를 동시에 활용해, 두 모달리티를 모두 이해해야 하는 콘텐츠를 추론합니다. 텍스트 추론 경로에만 집중하는 기존 CoT 방식과 다릅니다.',
+          },
+          {
+            title: '추가 자료',
+            content: '이 페이지는 관련 논문 "Language Is Not All You Need: Aligning Perception with Language Models"(2023년 2월)를 참조합니다. 이 논문은 시각적 인식과 언어 모델 기능 사이의 유사한 교차점을 탐구합니다.',
+          },
+        ],
+        keyTakeaways: [
+          { title: '멀티모달 CoT는 텍스트와 시각 정보를 결합해 Chain-of-Thought 추론을 확장', content: '' },
+          { title: '두 단계 접근법: 근거 생성 → 답변 추론', content: '' },
+          { title: '1B 파라미터 모델이 ScienceQA에서 GPT-3.5 능가', content: '' },
+          { title: '기존 텍스트 전용 CoT와 달리 여러 모달리티를 처리할 수 있음', content: '' },
+        ],
+      },
+      {
+        slug: 'graph',
+        title: 'Graph Prompting',
+        titleKr: '그래프 프롬프팅',
+        sourceUrl: 'https://www.promptingguide.ai/techniques/graph',
+        published: true,
+        author: 'DAIR.AI',
+        readTime: '약 2분',
+        sections: [
+          {
+            title: '개요',
+            content: 'GraphPrompts는 Liu et al. (2023)이 소개한 프롬프팅 프레임워크입니다. 그래프 관련 다운스트림 태스크의 성능을 높이는 것이 목표이며, AI 모델을 위한 구조화된 프롬프팅 방법론의 발전을 보여줍니다.',
+          },
+          {
+            title: '현재 상태',
+            content: '이 가이드 섹션은 현재 개발 중입니다. 원본 페이지에서 "More coming soon!"이라고 안내합니다.',
+          },
+          {
+            title: '관련 학습 자료',
+            content: '다음 학습 자료를 통해 관련 주제를 더 깊이 학습할 수 있습니다:',
+            items: [
+              'Prompt Engineering for LLMs (초급, 2시간) - Graph 프롬프팅과 고급 기법을 다룹니다',
+              'Building Effective AI Agents (중급, 5시간) - Function calling과 도구 통합을 다룹니다',
+            ],
+          },
+          {
+            title: '참고 자료',
+            content: '관련 연구 및 자료:',
+            items: [
+              'Liu et al. (2023) - GraphPrompts 연구 논문',
+              '원본 가이드: Prompt Engineering Guide - Graph Prompting',
+            ],
+          },
+        ],
+        keyTakeaways: [
+          { title: 'GraphPrompts는 그래프 관련 작업의 성능을 높이는 프롬프팅 프레임워크', content: '' },
+          { title: 'Liu et al. (2023) 연구에서 처음 소개됨', content: '' },
+          { title: '현재 가이드 콘텐츠를 확장 중', content: '' },
+        ],
+      },
     ],
     sections: [
       {
