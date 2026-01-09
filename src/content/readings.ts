@@ -20,6 +20,15 @@ export interface ChildReading {
   }[]
 }
 
+// 챕터별 요약 (YouTube 콘텐츠용)
+export interface ChapterSummary {
+  number: number
+  title: string
+  timestamp: string
+  summary: string
+  keyPoints: string[]
+}
+
 export interface ReadingContent {
   slug: string
   week: number
@@ -53,6 +62,14 @@ export interface ReadingContent {
   isParent?: boolean        // 부모 페이지 여부 (하위 페이지가 있는 경우)
   children?: ChildReading[] // 하위 페이지 목록
   parentSlug?: string       // 부모 페이지 slug (자식 페이지인 경우)
+  // YouTube 콘텐츠 전용 필드
+  contentType?: 'youtube' | 'article' | 'pdf'
+  duration?: string         // 영상 길이 (예: "3:31:05")
+  totalChapters?: number    // 총 챕터 수
+  // 요약 필드 (YouTube 콘텐츠)
+  tldr?: string             // TL;DR 요약
+  learningGoals?: string[]  // 학습 목표
+  chapterSummaries?: ChapterSummary[] // 챕터별 요약
 }
 
 export const readings: Record<string, ReadingContent> = {

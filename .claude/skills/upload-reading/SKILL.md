@@ -3,6 +3,7 @@ name: upload-reading
 description: |
   번역된 한국어 마크다운 파일을 readings.ts에 추가하여 웹에 게시합니다.
   마크다운 파싱 → ReadingContent 객체 생성 → readings.ts/syllabus.ts 업데이트.
+  YouTube 콘텐츠의 경우 요약(tldr, chapterSummaries) 필드도 파싱.
   사용: /upload-reading week1/slug 또는 /upload-reading week1/parent/child
 arguments:
   - name: path
@@ -79,6 +80,7 @@ arguments:
 ┌──────────────────────────────────────┐
 │ 2. 마크다운 파싱                       │
 │    - 프론트매터 → 메타데이터            │
+│    - YouTube 구분자 확인               │
 │    - h2 → sections                   │
 │    - bullet lists → items            │
 │    - 핵심 요약 → keyTakeaways         │
@@ -91,7 +93,10 @@ arguments:
 │      slug, week, title, titleKr,     │
 │      author, readTime, sourceUrl,    │
 │      sections: [...],                │
-│      keyTakeaways: [...]             │
+│      keyTakeaways: [...],            │
+│      // YouTube 콘텐츠 추가 필드       │
+│      contentType?, tldr?,            │
+│      chapterSummaries?               │
 │    }                                 │
 └──────────────────────────────────────┘
            │
@@ -206,6 +211,8 @@ arguments:
 
 ### Step 2: 마크다운 파싱
 
+#### 일반 콘텐츠
+
 마크다운 구조를 ReadingContent 형식으로 변환:
 
 ```markdown
@@ -238,15 +245,113 @@ translatedAt: "2025-01-07"
 - 포인트 2
 ```
 
-파싱 규칙:
+#### YouTube 콘텐츠 (요약 포함)
+
+YouTube 콘텐츠는 구분자로 요약/전체 번역 섹션이 구분됩니다:
+
+```markdown
+---
+title: "한국어 제목"
+originalTitle: "English Title"
+author: "저자명"
+sourceUrl: "https://..."
+translatedAt: "2025-01-07"
+status: "final"
+contentType: "youtube"
+duration: "3:31:05"
+totalChapters: 24
+hasSummary: true
+---
+
+# 한국어 제목
+
+[원본 영상](URL)
+
+<!-- SUMMARY_START -->
+
+## TL;DR
+
+전체 요약 내용...
+
+## 이 콘텐츠에서 배울 수 있는 것
+
+- 학습 목표 1
+- 학습 목표 2
+
+---
+
+## 챕터별 요약
+
+### 1. 챕터 제목 (0:00)
+
+챕터 요약 내용...
+
+**핵심 포인트:**
+- 포인트 1
+- 포인트 2
+
+<!-- SUMMARY_END -->
+
+---
+
+<!-- FULL_TRANSLATION_START -->
+
+## 전체 번역
+
+### 목차
+...
+
+### 1. 챕터1
+[0:00] 번역된 본문...
+
+<!-- FULL_TRANSLATION_END -->
+
+---
+
+## 핵심 요약
+- 포인트 1
+- 포인트 2
+```
+
+#### 파싱 규칙
 
 1. **프론트매터**:
    - `title` → `titleKr`
    - `originalTitle` → `title`
    - `author` → `author`
    - `sourceUrl` → `sourceUrl`
+   - `contentType` → `contentType` (있으면)
+   - `duration` → `duration` (있으면)
+   - `totalChapters` → `totalChapters` (있으면)
 
-2. **본문 섹션** (h2 기준):
+2. **YouTube 구분자 확인**:
+   ```
+   hasSummary: true 또는 <!-- SUMMARY_START --> 존재 시:
+   → isYouTube = true
+   → 요약 섹션과 전체 번역 섹션을 별도로 파싱
+   ```
+
+3. **YouTube 요약 파싱** (`<!-- SUMMARY_START -->` ~ `<!-- SUMMARY_END -->`):
+   - `## TL;DR` → `tldr` (텍스트 그대로)
+   - `## 이 콘텐츠에서 배울 수 있는 것` → `learningGoals` (불릿 배열)
+   - `### N. 챕터명 (타임스탬프)` → `chapterSummaries` 배열:
+     ```typescript
+     chapterSummaries: [
+       {
+         number: 1,
+         title: "챕터명",
+         timestamp: "0:00",
+         summary: "요약 텍스트",
+         keyPoints: ["포인트1", "포인트2"]
+       }
+     ]
+     ```
+
+4. **전체 번역 파싱** (`<!-- FULL_TRANSLATION_START -->` ~ `<!-- FULL_TRANSLATION_END -->`):
+   - 기존 섹션 파싱 로직 적용
+   - `## 전체 번역` 하위의 `### N. 챕터명` → sections
+
+5. **일반 본문 섹션** (h2 기준):
    ```typescript
    sections: [
      {
@@ -257,7 +362,7 @@ translatedAt: "2025-01-07"
    ]
    ```
 
-3. **핵심 요약** (`## 핵심 요약` 또는 `## Key Takeaways`):
+6. **핵심 요약** (`## 핵심 요약` 또는 `## Key Takeaways`):
    ```typescript
    keyTakeaways: [
      { title: "포인트 1", content: "" },
@@ -265,13 +370,14 @@ translatedAt: "2025-01-07"
    ]
    ```
 
-4. **읽기 시간 추정**:
+7. **읽기 시간 추정**:
    - 한글 기준 분당 500자
    - `readTime: "약 {N}분"`
+   - YouTube 콘텐츠: frontmatter의 `duration` 사용
 
 ### Step 3: 객체 생성
 
-**단일 페이지** (ReadingContent):
+**일반 콘텐츠** (ReadingContent):
 ```typescript
 const newReading: ReadingContent = {
   slug: '{slug}',
@@ -285,6 +391,30 @@ const newReading: ReadingContent = {
   published: false,  // --publish 플래그 없으면 기본 false
   sections: [...],
   keyTakeaways: [...]
+}
+```
+
+**YouTube 콘텐츠** (ReadingContent + 요약 필드):
+```typescript
+const newReading: ReadingContent = {
+  slug: '{slug}',
+  week: {N},
+  title: '{originalTitle}',
+  titleKr: '{title}',
+  author: '{author}',
+  readTime: '{duration}', // 예: "약 3시간 31분"
+  sourceUrl: '{sourceUrl}',
+  sourceTitle: '{YouTube - 제목}',
+  published: false,
+  sections: [...],
+  keyTakeaways: [...],
+  // YouTube 전용 필드
+  contentType: 'youtube',
+  duration: '{duration}',
+  totalChapters: {N},
+  tldr: '{tldr}',
+  learningGoals: [...],
+  chapterSummaries: [...]
 }
 ```
 
@@ -366,7 +496,7 @@ const childContent = {
 
 ## 출력
 
-### 단일 페이지 업로드 완료 시:
+### 일반 콘텐츠 업로드 완료 시:
 ```
 ✓ readings.ts 업데이트 완료
   - 키: week1/how-openai-uses-codex
@@ -380,6 +510,26 @@ const childContent = {
 
 다음 단계:
   1. 웹에서 확인: pnpm dev → /readings/week1/how-openai-uses-codex
+  2. 공개하려면: readings.ts에서 published: true로 변경
+```
+
+### YouTube 콘텐츠 업로드 완료 시:
+```
+✓ readings.ts 업데이트 완료
+  - 키: week1/deep-dive-llms
+  - 제목: Deep Dive into LLMs / ChatGPT 같은 LLM 심층 분석
+  - 콘텐츠 유형: youtube
+  - 섹션: 24개
+  - TL;DR: 포함
+  - 챕터별 요약: 24개
+  - published: false
+
+✓ syllabus.ts 업데이트 완료
+  - Week 1 readings에 krSlug 추가
+  - translationStatus: complete
+
+다음 단계:
+  1. 웹에서 확인: pnpm dev → /readings/week1/deep-dive-llms
   2. 공개하려면: readings.ts에서 published: true로 변경
 ```
 
@@ -426,6 +576,33 @@ Codex helps our teams...            ← sections[0].content
 | `## Summary` | → keyTakeaways |
 | `## Contents` | 무시 (목차) |
 | `## 목차` | 무시 (목차) |
+| `## TL;DR` | → tldr (YouTube) |
+| `## 이 콘텐츠에서 배울 수 있는 것` | → learningGoals (YouTube) |
+| `## 챕터별 요약` | → chapterSummaries 시작 (YouTube) |
+| `## 전체 번역` | → sections 시작 (YouTube) |
+
+### YouTube 챕터 요약 파싱
+
+```markdown
+### 1. 소개 (0:00)
+
+ChatGPT와 같은 LLM에 대한...
+
+**핵심 포인트:**
+- 포인트 1
+- 포인트 2
+```
+
+파싱 결과:
+```typescript
+{
+  number: 1,
+  title: "소개",
+  timestamp: "0:00",
+  summary: "ChatGPT와 같은 LLM에 대한...",
+  keyPoints: ["포인트 1", "포인트 2"]
+}
+```
 
 ### 인용문 처리
 
@@ -438,7 +615,7 @@ Codex helps our teams...            ← sections[0].content
 
 ## 참고 파일
 
-- `src/content/readings.ts`: ReadingContent 인터페이스 정의
+- `src/content/readings.ts`: ReadingContent, ChapterSummary 인터페이스 정의
 - `src/content/syllabus.ts`: Reading 타입 및 week 데이터
 - `docs/week{N}/kr/{slug}.md`: 번역된 마크다운 입력
 
@@ -450,3 +627,4 @@ Codex helps our teams...            ← sections[0].content
 | readings.ts 구문 오류 | 파싱 에러 표시, 수동 수정 필요 |
 | 이미 존재하는 키 | 덮어쓰기 확인 후 진행 |
 | syllabus에 URL 없음 | 경고 표시, readings.ts만 업데이트 |
+| YouTube 구분자 누락 | 일반 콘텐츠로 파싱 |
