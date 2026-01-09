@@ -434,12 +434,42 @@ const childContent = {
 
 **단일 페이지**:
 1. `src/content/readings.ts` 파일 읽기
-2. 기존 readings 객체에 새 항목 추가:
+2. 기존 readings 객체에서 동일 키 확인:
+   - 키가 없으면: 새 항목 추가
+   - 키가 있으면: **병합(merge)** 처리 (아래 참조)
+3. Edit 도구로 파일 수정
+
+**기존 엔트리가 있는 경우 (병합 처리)**:
+
+readings.ts에 동일한 키가 이미 존재하면 기존 데이터를 보존하면서 새 데이터를 추가합니다.
+
+1. **기존 Reading에서 보존할 필드**:
+   - `isParent` (계층 구조 플래그)
+   - `children` (자식 페이지 배열)
+   - `relatedReadings` (관련 읽기)
+   - `nextReading` (다음 읽기)
+
+2. **새 Reading에서 추가/덮어쓸 필드**:
+   - `tldr`, `learningGoals`, `chapterSummaries` (YouTube 요약)
+   - `sections`, `keyTakeaways` (콘텐츠)
+   - `titleKr`, `author`, `readTime` (메타데이터 업데이트)
+
+3. **병합 로직**:
    ```typescript
-   'week{N}/{slug}': newReading
+   const mergedReading = {
+     ...existingReading,           // 기존 필드 모두 유지
+     ...newReading,                // 새 필드로 덮어쓰기
+     // 단, 계층 구조 필드는 기존 값 보존
+     isParent: existingReading.isParent,
+     children: existingReading.children,
+     relatedReadings: existingReading.relatedReadings,
+     nextReading: existingReading.nextReading,
+   }
    ```
-3. 이미 존재하면 덮어쓰기 (확인 메시지 표시)
-4. Edit 도구로 파일 수정
+
+4. **확인 메시지에 표시**:
+   - "기존 엔트리와 병합됨"
+   - "보존된 필드: isParent=true, children=24개" (해당되는 경우)
 
 **자식 페이지**:
 1. `src/content/readings.ts` 파일 읽기

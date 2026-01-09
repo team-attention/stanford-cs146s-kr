@@ -1,4 +1,6 @@
 import { useParams, Link } from 'react-router-dom'
+import { useState, useEffect } from 'react'
+import ReactMarkdown from 'react-markdown'
 import { readings, ChildReading } from '@/content/readings'
 import ReadingSidebar from '@/components/reading/ReadingSidebar'
 
@@ -404,6 +406,25 @@ function ChildReadingPage({
   const prevChild = currentIndex > 0 ? siblings[currentIndex - 1] : null
   const nextChild = currentIndex < siblings.length - 1 ? siblings[currentIndex + 1] : null
 
+  // 마크다운 파일 로딩 상태
+  const [markdown, setMarkdown] = useState<string | null>(null)
+  const [loading, setLoading] = useState(false)
+
+  useEffect(() => {
+    if (child.hasMarkdown) {
+      setLoading(true)
+      fetch(`/readings/${week}/${parentSlug}/${child.slug}.md`)
+        .then(res => res.ok ? res.text() : Promise.reject('Not found'))
+        .then(text => {
+          // frontmatter 제거 (--- ... --- 블록)
+          const contentWithoutFrontmatter = text.replace(/^---[\s\S]*?---\n*/, '')
+          setMarkdown(contentWithoutFrontmatter)
+        })
+        .catch(() => setMarkdown(null))
+        .finally(() => setLoading(false))
+    }
+  }, [child.slug, child.hasMarkdown, week, parentSlug])
+
   return (
     <>
       {/* Header */}
@@ -464,8 +485,22 @@ function ChildReadingPage({
               </div>
             )}
 
-            {/* 콘텐츠 렌더링 */}
-            {child.sections && child.sections.length > 0 ? (
+            {/* 마크다운 콘텐츠 렌더링 */}
+            {child.hasMarkdown ? (
+              loading ? (
+                <div className="bg-bg-card border border-border rounded-lg p-8 mb-8 text-center">
+                  <p className="text-text-secondary">콘텐츠를 로딩 중입니다...</p>
+                </div>
+              ) : markdown ? (
+                <article className="prose prose-lg max-w-none prose-headings:text-stanford-red prose-a:text-stanford-red prose-strong:text-text-primary">
+                  <ReactMarkdown>{markdown}</ReactMarkdown>
+                </article>
+              ) : (
+                <div className="bg-bg-card border border-border rounded-lg p-8 mb-8 text-center">
+                  <p className="text-text-secondary">콘텐츠를 불러올 수 없습니다.</p>
+                </div>
+              )
+            ) : child.sections && child.sections.length > 0 ? (
               <>
                 {/* Translation Note */}
                 <div className="bg-bg-card border border-border rounded-lg p-4 mb-8 text-sm text-text-secondary">
