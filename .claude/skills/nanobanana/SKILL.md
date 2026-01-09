@@ -34,13 +34,13 @@ Reading 원문에서 나노바나나 프로용 치트시트 프롬프트를 생�
 ## 입출력
 
 - **입력**: `docs/week{N}/{slug}.md` (원문)
-- **출력**: `docs/week{N}/{slug}-cheatsheet-prompt.md` (나노바나나 프롬프트)
+- **출력**: `.claude/outputs/nanobanana/week{N}/{slug}-cheatsheet-prompt.md` (나노바나나 프롬프트)
 
 ### 경로 예시
 ```
 week1/how-openai-uses-codex
 → 입력: docs/week1/how-openai-uses-codex.md
-→ 출력: docs/week1/how-openai-uses-codex-cheatsheet-prompt.md
+→ 출력: .claude/outputs/nanobanana/week1/how-openai-uses-codex-cheatsheet-prompt.md
 ```
 
 ## 워크플로우
@@ -121,7 +121,7 @@ week1/how-openai-uses-codex
 → weekNum: 1
 → slug: how-openai-uses-codex
 → 입력 경로: docs/week1/how-openai-uses-codex.md
-→ 출력 경로: docs/week1/how-openai-uses-codex-cheatsheet-prompt.md
+→ 출력 경로: .claude/outputs/nanobanana/week1/how-openai-uses-codex-cheatsheet-prompt.md
 ```
 
 ### Step 2: 원본 파일 읽기
@@ -215,7 +215,12 @@ Task tool 호출:
 
 Write tool로 결과 저장:
 ```
-docs/week{N}/{slug}-cheatsheet-prompt.md
+.claude/outputs/nanobanana/week{N}/{slug}-cheatsheet-prompt.md
+```
+
+출력 디렉토리가 없으면 Bash tool로 먼저 생성:
+```bash
+mkdir -p .claude/outputs/nanobanana/week{N}/{parent-if-any}
 ```
 
 ### Step 8: 완료 메시지
@@ -223,7 +228,7 @@ docs/week{N}/{slug}-cheatsheet-prompt.md
 ```
 ✅ 나노바나나 프롬프트 생성 완료!
 
-📄 출력 파일: docs/week1/how-openai-uses-codex-cheatsheet-prompt.md
+📄 출력 파일: .claude/outputs/nanobanana/week1/how-openai-uses-codex-cheatsheet-prompt.md
 📊 콘텐츠 유형: use-case
 🔧 사용된 템플릿: use-case-style
 

@@ -229,4 +229,4 @@ content-analyzer → structure-planner → prompt-generator
 - `lecture-style.md`: 강의 콘텐츠용
 
 **입력**: `docs/week{N}/{slug}.md`
-**출력**: `docs/week{N}/{slug}-cheatsheet-prompt.md`
+**출력**: `.claude/outputs/nanobanana/week{N}/{slug}-cheatsheet-prompt.md`
