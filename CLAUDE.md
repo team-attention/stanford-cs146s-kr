@@ -128,6 +128,7 @@ Reading 콘텐츠의 수집 → 번역 → 웹 게시를 3단계 스킬로 자�
 | `/fetch-reading` | 완료 | URL에서 원본 수집 → `docs/week{N}/{slug}.md` |
 | `/translate-reading` | 완료 | 한국어 번역 → `docs/week{N}/kr/{slug}.md` |
 | `/upload-reading` | 완료 | 웹 게시 → `readings.ts` + `syllabus.ts` 업데이트 |
+| `/split-youtube-chapters` | 완료 | YouTube 챕터 → 하위페이지 구조 생성 |
 
 ---
 
@@ -230,3 +231,27 @@ content-analyzer → structure-planner → prompt-generator
 
 **입력**: `docs/week{N}/{slug}.md`
 **출력**: `.claude/outputs/nanobanana/week{N}/{slug}-cheatsheet-prompt.md`
+
+---
+
+### `/split-youtube-chapters` - YouTube 챕터 분리
+
+**위치**: `.claude/skills/split-youtube-chapters/`
+
+YouTube 콘텐츠의 챕터별 하위페이지 구조를 readings.ts에 생성합니다.
+
+```bash
+/split-youtube-chapters week1/deep-dive-llms
+```
+
+**동작**:
+1. `docs/week{N}/{slug}.md`에서 챕터 구조 파싱
+2. 챕터 제목 → slug 변환 (예: "Tokenization" → "tokenization")
+3. `readings.ts`에서 해당 Reading을 `isParent: true` + `children` 배열로 변환
+4. 각 챕터를 ChildReading으로 생성 (slug, title, titleKr, sourceUrl)
+
+**입력**: `docs/week{N}/{slug}.md`
+**출력**: `readings.ts` 자동 수정 (isParent: true + children 배열)
+
+**URL 구조**: `/readings/week{N}/{parentSlug}/{childSlug}`
+예: `/readings/week1/deep-dive-llms/tokenization`

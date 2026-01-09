@@ -83,126 +83,15 @@ export const readings: Record<string, ReadingContent> = {
     sourceUrl: 'https://www.youtube.com/watch?v=7xTGNNLPyMI',
     sourceTitle: 'YouTube - Deep Dive into LLMs like ChatGPT (2025.02.05)',
     published: true,
+    isParent: true,
+    contentType: 'youtube',
+    duration: '3:31:05',
+    totalChapters: 24,
     sections: [
       {
-        title: '1. Introduction (0:00)',
+        title: '개요',
         content:
-          'ChatGPT와 같은 대규모 언어 모델(LLM)에 대한 포괄적인 소개로, 이 도구가 무엇이고 어떻게 작동하는지에 대한 mental model을 제공합니다. LLM이 잘하는 것과 못하는 것, 그리고 주의해야 할 함정들에 대해 다룹니다.',
-      },
-      {
-        title: '2. Pretraining Data (1:00)',
-        content:
-          'LLM 사전학습의 첫 단계인 인터넷 데이터 수집을 설명합니다. Common Crawl에서 시작해 URL 필터링, 텍스트 추출, 언어 필터링, 중복 제거, PII 제거 등 여러 단계를 거쳐 약 44TB의 고품질 텍스트 데이터셋(예: FineWeb)을 구축합니다.',
-      },
-      {
-        title: '3. Tokenization (7:47)',
-        content:
-          '텍스트를 신경망에 입력하기 위해 토큰으로 변환하는 과정을 설명합니다. UTF-8 바이트에서 시작해 Byte Pair Encoding(BPE) 알고리즘을 사용하여 약 100,000개의 토큰 어휘를 생성하며, GPT-4는 100,277개의 토큰을 사용합니다.',
-      },
-      {
-        title: '4. Neural Network I/O (14:27)',
-        content:
-          '신경망의 입출력 구조를 설명합니다. 토큰 시퀀스가 입력으로 들어가면, 신경망은 다음 토큰에 대한 확률 분포(약 100,000개 토큰 각각의 확률)를 출력합니다. 학습 과정에서 정답 토큰의 확률을 높이도록 신경망을 조정합니다.',
-      },
-      {
-        title: '5. Neural Network Internals (20:11)',
-        content:
-          '신경망 내부 구조를 설명합니다. Transformer 아키텍처의 파라미터(가중치)는 수십억 개에 달하며, 이 파라미터들이 입력 토큰과 수학적으로 결합되어 다음 토큰을 예측합니다. 학습은 GPU 클러스터에서 수개월간 진행됩니다.',
-      },
-      {
-        title: '6. Inference (26:01)',
-        content:
-          '학습된 모델로 텍스트를 생성하는 추론(inference) 과정을 설명합니다. 모델은 확률 분포에서 다음 토큰을 샘플링하고, 이를 반복하여 텍스트를 생성합니다. 추론은 학습보다 훨씬 빠르며, 단일 GPU로도 가능합니다.',
-      },
-      {
-        title: '7. GPT-2: Training and Inference (31:09)',
-        content:
-          'OpenAI의 GPT-2 모델을 예시로 학습과 추론을 시연합니다. 2019년에 공개된 GPT-2는 15억 개의 파라미터를 가지며, GitHub의 llm.c 프로젝트로 직접 학습해볼 수 있습니다. 인터넷 데이터의 통계적 패턴을 학습한 모델의 특성을 보여줍니다.',
-      },
-      {
-        title: '8. Llama 3.1 Base Model Inference (42:52)',
-        content:
-          'Meta의 Llama 3.1 베이스 모델을 사용한 추론을 시연합니다. 베이스 모델은 아직 대화형으로 학습되지 않아 질문에 직접 답하지 않고, 인터넷 텍스트 패턴을 따라 문서를 완성하려 합니다. 이를 "token simulator" 또는 "document completer"라고 부릅니다.',
-      },
-      {
-        title: '9. Pretraining to Post-Training (59:23)',
-        content:
-          '사전학습(pretraining)에서 후속학습(post-training)으로 전환하는 과정을 설명합니다. 베이스 모델은 인터넷 텍스트를 모방할 뿐이지만, 후속학습을 통해 유용한 어시스턴트로 변환됩니다. 이 단계가 ChatGPT와 같은 대화형 AI를 만드는 핵심입니다.',
-      },
-      {
-        title: '10. Post-Training Data (1:01:06)',
-        content:
-          '후속학습 데이터인 대화 데이터셋에 대해 설명합니다. 인간 라벨러들이 수만 개의 고품질 대화 예시를 작성하고, 이를 모델에 학습시킵니다. 이 과정을 Supervised Fine-Tuning(SFT)이라 하며, 모델이 어시스턴트처럼 행동하도록 만듭니다.',
-      },
-      {
-        title: '11. Hallucinations, Tool Use, Knowledge/Working Memory (1:20:32)',
-        content:
-          'LLM의 환각(hallucination) 문제와 도구 사용(tool use)을 설명합니다. 모델은 지식이 파라미터에 저장되어 있어 정확하지 않을 수 있으며, 검색이나 코드 실행 같은 외부 도구를 사용하여 이를 보완합니다. 지식 메모리(파라미터)와 작업 메모리(컨텍스트)의 차이도 다룹니다.',
-      },
-      {
-        title: '12. Knowledge of Self (1:41:46)',
-        content:
-          'LLM의 자기 인식에 대해 설명합니다. 모델은 자신이 무엇인지, 누가 만들었는지 등에 대한 지식이 학습 데이터에서 왔기 때문에 불완전할 수 있습니다. "당신은 Claude입니다"와 같은 시스템 프롬프트로 정체성을 부여합니다.',
-      },
-      {
-        title: '13. Models Need Tokens to Think (1:46:56)',
-        content:
-          '모델이 "생각"하기 위해 토큰이 필요하다는 개념을 설명합니다. 복잡한 문제는 중간 단계(chain of thought)를 거쳐야 풀 수 있으며, 바로 답을 요구하면 실패합니다. 이것이 o1 같은 추론 모델의 기반이 됩니다.',
-      },
-      {
-        title: '14. Tokenization Revisited: Models Struggle with Spelling (2:01:11)',
-        content:
-          "토큰화가 모델의 철자 처리 능력에 미치는 영향을 설명합니다. 모델은 글자 수준이 아닌 토큰 수준에서 작동하므로, \"strawberry\"에서 'r'이 몇 개인지 묻는 질문에 어려움을 겪습니다. 이는 토큰화의 구조적 한계입니다.",
-      },
-      {
-        title: '15. Jagged Intelligence (2:04:53)',
-        content:
-          'LLM의 "들쭉날쭉한 지능(jagged intelligence)"을 설명합니다. 모델은 어떤 영역에서는 매우 뛰어나지만 다른 영역에서는 기본적인 실수를 합니다. 이는 인간의 지능과 다른 형태이며, 모델을 사용할 때 이러한 특성을 이해해야 합니다.',
-      },
-      {
-        title: '16. Supervised Finetuning to Reinforcement Learning (2:07:28)',
-        content:
-          '지도학습 미세조정(SFT)에서 강화학습(RL)으로의 전환을 설명합니다. SFT는 모델에게 "어떻게 답해야 하는지" 가르치지만, RL은 모델이 스스로 더 나은 답을 찾도록 합니다. 이 단계에서 모델 성능이 크게 향상됩니다.',
-      },
-      {
-        title: '17. Reinforcement Learning (2:14:42)',
-        content:
-          '강화학습(RL)의 핵심 개념을 설명합니다. 보상 함수(reward function)를 정의하고, 모델이 높은 보상을 받는 출력을 생성하도록 학습시킵니다. 수학 문제처럼 정답을 자동으로 검증할 수 있는 영역에서 특히 효과적입니다.',
-      },
-      {
-        title: '18. DeepSeek-R1 (2:37:47)',
-        content:
-          'DeepSeek-R1 모델과 그 특징을 설명합니다. 중국 스타트업 DeepSeek이 개발한 이 모델은 순수 RL만으로 학습되어 자체적인 사고 과정(thinking)을 발전시켰습니다. 때로는 영어에서 중국어로 전환하며 생각하는 등 흥미로운 행동을 보입니다.',
-      },
-      {
-        title: '19. AlphaGo (2:48:47)',
-        content:
-          'DeepMind의 AlphaGo와 AlphaZero를 통해 강화학습의 역사를 설명합니다. AlphaGo는 바둑에서 인간을 이기기 위해 RL을 사용했으며, AlphaZero는 인간 데이터 없이 자기 대국만으로 학습했습니다. 이 접근법이 현재 LLM 학습에도 적용되고 있습니다.',
-      },
-      {
-        title: '20. Reinforcement Learning from Human Feedback (3:01:46)',
-        content:
-          '인간 피드백 기반 강화학습(RLHF)을 설명합니다. 창작 글쓰기처럼 자동 검증이 어려운 영역에서는 인간이 여러 응답 중 더 좋은 것을 선택하고, 이를 학습시킨 보상 모델을 사용합니다. RLHF는 ChatGPT 등 현대 LLM의 핵심 기술입니다.',
-      },
-      {
-        title: '21. Preview of Things to Come (3:09:39)',
-        content:
-          'LLM의 미래 발전 방향을 전망합니다. 멀티모달(이미지, 오디오, 비디오), 에이전트 시스템, 더 긴 컨텍스트 윈도우, 로봇공학 통합 등이 활발히 연구되고 있습니다. AI 시스템이 점점 더 자율적으로 작동하는 방향으로 발전하고 있습니다.',
-      },
-      {
-        title: '22. Keeping Track of LLMs (3:15:15)',
-        content:
-          '최신 LLM 동향을 추적하는 방법을 안내합니다. LMSys Chatbot Arena의 ELO 랭킹을 통해 다양한 모델의 성능을 비교할 수 있으며, 현재 최고 성능 모델들(GPT-4o, Claude, Gemini 등)의 순위를 확인할 수 있습니다.',
-      },
-      {
-        title: '23. Where to Find LLMs (3:18:34)',
-        content:
-          'LLM을 사용할 수 있는 주요 플랫폼들을 소개합니다. ChatGPT(OpenAI), Claude(Anthropic), Gemini(Google) 등 상용 서비스와 OpenRouter 같은 통합 API 서비스, 그리고 로컬에서 실행할 수 있는 Ollama 등을 소개합니다.',
-      },
-      {
-        title: '24. Grand Summary (3:21:46)',
-        content:
-          '전체 강의 내용을 요약합니다. LLM은 인터넷 데이터로 사전학습된 후, 대화 데이터로 미세조정되고, 강화학습으로 개선됩니다. 이들은 강력하지만 완벽하지 않은 도구이며, 신뢰하되 검증하는 자세로 활용해야 합니다.',
+          'Andrej Karpathy의 LLM 심층 분석 강의입니다. 총 24개의 챕터로 구성되어 있으며, 약 3시간 31분 분량입니다. 각 챕터를 클릭하여 상세 내용을 확인하세요.',
       },
     ],
     keyTakeaways: [
@@ -230,6 +119,176 @@ export const readings: Record<string, ReadingContent> = {
       title: 'Prompt Engineering Overview',
       slug: 'prompt-engineering-overview',
     },
+    children: [
+      {
+        slug: 'introduction',
+        title: '1. Introduction',
+        titleKr: '1. 소개',
+        sourceUrl: 'https://www.youtube.com/watch?v=7xTGNNLPyMI&t=0s',
+        published: false,
+      },
+      {
+        slug: 'pretraining-data',
+        title: '2. Pretraining Data (Internet)',
+        titleKr: '2. 사전학습 데이터 (인터넷)',
+        sourceUrl: 'https://www.youtube.com/watch?v=7xTGNNLPyMI&t=60s',
+        published: false,
+      },
+      {
+        slug: 'tokenization',
+        title: '3. Tokenization',
+        titleKr: '3. 토큰화',
+        sourceUrl: 'https://www.youtube.com/watch?v=7xTGNNLPyMI&t=467s',
+        published: false,
+      },
+      {
+        slug: 'neural-network-io',
+        title: '4. Neural Network I/O',
+        titleKr: '4. 신경망 입출력',
+        sourceUrl: 'https://www.youtube.com/watch?v=7xTGNNLPyMI&t=867s',
+        published: false,
+      },
+      {
+        slug: 'neural-network-internals',
+        title: '5. Neural Network Internals',
+        titleKr: '5. 신경망 내부 구조',
+        sourceUrl: 'https://www.youtube.com/watch?v=7xTGNNLPyMI&t=1211s',
+        published: false,
+      },
+      {
+        slug: 'inference',
+        title: '6. Inference',
+        titleKr: '6. 추론',
+        sourceUrl: 'https://www.youtube.com/watch?v=7xTGNNLPyMI&t=1561s',
+        published: false,
+      },
+      {
+        slug: 'gpt2-training-inference',
+        title: '7. GPT-2: Training and Inference',
+        titleKr: '7. GPT-2: 학습과 추론',
+        sourceUrl: 'https://www.youtube.com/watch?v=7xTGNNLPyMI&t=1869s',
+        published: false,
+      },
+      {
+        slug: 'llama-31-base-model',
+        title: '8. Llama 3.1 Base Model Inference',
+        titleKr: '8. Llama 3.1 베이스 모델 추론',
+        sourceUrl: 'https://www.youtube.com/watch?v=7xTGNNLPyMI&t=2572s',
+        published: false,
+      },
+      {
+        slug: 'pretraining-to-post-training',
+        title: '9. Pretraining to Post-Training',
+        titleKr: '9. 사전학습에서 후속학습으로',
+        sourceUrl: 'https://www.youtube.com/watch?v=7xTGNNLPyMI&t=3563s',
+        published: false,
+      },
+      {
+        slug: 'post-training-data',
+        title: '10. Post-Training Data (Conversations)',
+        titleKr: '10. 후속학습 데이터 (대화)',
+        sourceUrl: 'https://www.youtube.com/watch?v=7xTGNNLPyMI&t=3666s',
+        published: false,
+      },
+      {
+        slug: 'hallucinations-tool-use',
+        title: '11. Hallucinations, Tool Use, Knowledge/Working Memory',
+        titleKr: '11. 환각, 도구 사용, 지식/작업 메모리',
+        sourceUrl: 'https://www.youtube.com/watch?v=7xTGNNLPyMI&t=4832s',
+        published: false,
+      },
+      {
+        slug: 'knowledge-of-self',
+        title: '12. Knowledge of Self',
+        titleKr: '12. 자기 인식',
+        sourceUrl: 'https://www.youtube.com/watch?v=7xTGNNLPyMI&t=6106s',
+        published: false,
+      },
+      {
+        slug: 'models-need-tokens-to-think',
+        title: '13. Models Need Tokens to Think',
+        titleKr: '13. 모델은 생각하기 위해 토큰이 필요하다',
+        sourceUrl: 'https://www.youtube.com/watch?v=7xTGNNLPyMI&t=6416s',
+        published: false,
+      },
+      {
+        slug: 'tokenization-spelling',
+        title: '14. Tokenization Revisited: Models Struggle with Spelling',
+        titleKr: '14. 토큰화 재탐구: 철자 처리의 어려움',
+        sourceUrl: 'https://www.youtube.com/watch?v=7xTGNNLPyMI&t=7271s',
+        published: false,
+      },
+      {
+        slug: 'jagged-intelligence',
+        title: '15. Jagged Intelligence',
+        titleKr: '15. 들쭉날쭉한 지능',
+        sourceUrl: 'https://www.youtube.com/watch?v=7xTGNNLPyMI&t=7493s',
+        published: false,
+      },
+      {
+        slug: 'sft-to-rl',
+        title: '16. Supervised Finetuning to Reinforcement Learning',
+        titleKr: '16. 지도학습 미세조정에서 강화학습으로',
+        sourceUrl: 'https://www.youtube.com/watch?v=7xTGNNLPyMI&t=7648s',
+        published: false,
+      },
+      {
+        slug: 'reinforcement-learning',
+        title: '17. Reinforcement Learning',
+        titleKr: '17. 강화학습',
+        sourceUrl: 'https://www.youtube.com/watch?v=7xTGNNLPyMI&t=8082s',
+        published: false,
+      },
+      {
+        slug: 'deepseek-r1',
+        title: '18. DeepSeek-R1',
+        titleKr: '18. DeepSeek-R1',
+        sourceUrl: 'https://www.youtube.com/watch?v=7xTGNNLPyMI&t=9467s',
+        published: false,
+      },
+      {
+        slug: 'alphago',
+        title: '19. AlphaGo',
+        titleKr: '19. AlphaGo',
+        sourceUrl: 'https://www.youtube.com/watch?v=7xTGNNLPyMI&t=10127s',
+        published: false,
+      },
+      {
+        slug: 'rlhf',
+        title: '20. Reinforcement Learning from Human Feedback (RLHF)',
+        titleKr: '20. 인간 피드백 강화학습 (RLHF)',
+        sourceUrl: 'https://www.youtube.com/watch?v=7xTGNNLPyMI&t=10906s',
+        published: false,
+      },
+      {
+        slug: 'preview-of-things-to-come',
+        title: '21. Preview of Things to Come',
+        titleKr: '21. 미래 전망',
+        sourceUrl: 'https://www.youtube.com/watch?v=7xTGNNLPyMI&t=11379s',
+        published: false,
+      },
+      {
+        slug: 'keeping-track-of-llms',
+        title: '22. Keeping Track of LLMs',
+        titleKr: '22. LLM 동향 추적하기',
+        sourceUrl: 'https://www.youtube.com/watch?v=7xTGNNLPyMI&t=11715s',
+        published: false,
+      },
+      {
+        slug: 'where-to-find-llms',
+        title: '23. Where to Find LLMs',
+        titleKr: '23. LLM을 찾을 수 있는 곳',
+        sourceUrl: 'https://www.youtube.com/watch?v=7xTGNNLPyMI&t=11914s',
+        published: false,
+      },
+      {
+        slug: 'grand-summary',
+        title: '24. Grand Summary',
+        titleKr: '24. 전체 요약',
+        sourceUrl: 'https://www.youtube.com/watch?v=7xTGNNLPyMI&t=12106s',
+        published: false,
+      },
+    ],
   },
   'week1/prompt-engineering-overview': {
     slug: 'prompt-engineering-overview',

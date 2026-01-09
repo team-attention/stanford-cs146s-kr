@@ -278,8 +278,11 @@ function ParentReadingPage({ week, reading }: { week: string; reading: typeof re
 
         {/* Translation Note */}
         <div className="bg-bg-card border border-border rounded-lg p-4 mb-8 text-sm text-text-secondary">
-          이 가이드는 18개의 프롬프팅 기법을 다룹니다.
-          각 기법을 클릭하여 상세 내용을 확인하세요.
+          {reading.contentType === 'youtube' ? (
+            <>이 강의는 {reading.totalChapters}개의 챕터로 구성되어 있습니다. 각 챕터를 클릭하여 상세 내용을 확인하세요.</>
+          ) : (
+            <>이 가이드는 {reading.children?.length || 0}개의 프롬프팅 기법을 다룹니다. 각 기법을 클릭하여 상세 내용을 확인하세요.</>
+          )}
         </div>
 
         {/* Sections (개요) */}
@@ -306,7 +309,7 @@ function ParentReadingPage({ week, reading }: { week: string; reading: typeof re
         {/* Children List */}
         <section className="mb-8">
           <h2 className="text-xl font-bold text-stanford-red mb-4 pb-2 border-b border-border">
-            기법 목록
+            {reading.contentType === 'youtube' ? '챕터 목록' : '기법 목록'}
           </h2>
           <div className="grid gap-3">
             {reading.children?.map((child, i) => (
