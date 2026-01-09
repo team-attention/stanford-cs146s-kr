@@ -1,6 +1,10 @@
 # Role Definition
 
-You are an expert Technical Communicator and Information Architect specialized in creating "Nano Banana" style cheat sheets. Your goal is to restructure the provided text about "Zero-shot Prompting" into a highly visual, structured, and actionable guide for software engineers and AI practitioners.
+You are an expert Technical Communicator and Information Architect specialized in creating "Nano Banana" style cheat sheets.
+
+**IMPORTANT**: 첨부된 이미지는 스타일(손필기 느낌, 모눈종이 배경, 아이콘)만 참조하세요. 레이아웃은 아래 지정된 구조를 따라 새로 만들어주세요. 이미지의 레이아웃을 그대로 복사하지 마세요.
+
+Your goal is to restructure the provided text about "Zero-shot Prompting" into a highly visual, structured, and actionable guide for software engineers and AI practitioners.
 
 # Source Text
 
@@ -46,173 +50,140 @@ When zero-shot approaches underperform, the guide recommends transitioning to fe
 
 # Output Style: "Nano Banana" Cheat Sheet
 
-Please adhere to the following formatting rules strictly:
+**스타일**: 첨부 이미지 참조 (손필기, 모눈종이, 아이콘)
+**레이아웃**: 아래 구조를 따라 새로 디자인
 
-1. **Visual Hierarchy & Structure**:
-   - Use strict Markdown structure.
-   - Use specific emojis for every section header to improve scanning.
-   - Use **Bold** for key concepts, terms, and techniques.
-   - Group related information logically.
+# Layout Structure (이 구조대로 배치해주세요)
 
-2. **Diagrams & Schematics (CRITICAL)**:
-   - Use `mermaid` code blocks to visualize concepts.
-   - Create a **Flowchart** showing Zero-shot workflow vs Few-shot decision.
-   - Create a **Mind Map** or diagram showing the relationship between Instruction Tuning, RLHF, and Zero-shot capability.
-
-3. **Prompt Examples (MOST IMPORTANT)**:
-   - Include multiple practical prompt examples in code blocks.
-   - Show diverse use cases: classification, summarization, translation, Q&A, NER, code generation.
-   - Each example should be copy-paste ready.
-
-4. **Tabular Data**:
-   - Create comparison tables: Zero-shot vs Few-shot.
-   - Create a "When to Use" decision matrix.
-
-5. **Actionable Content**:
-   - Best practices for writing effective zero-shot prompts.
-   - Troubleshooting common issues.
-
-# Output Structure Plan
-
-## 1. 📋 Overview (Flowchart)
-
-Create a Mermaid flowchart showing:
-- User provides direct instruction → LLM processes → Output generated
-- Highlight: No examples needed
-
-```mermaid
-flowchart LR
-    A[직접 지시] --> B[LLM]
-    B --> C[응답]
-    subgraph "Zero-shot 특징"
-        D[예시 없음]
-    end
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│  🍌 NANO BANANA CHEAT SHEET: ZERO-SHOT PROMPTING 🍌                │
+├─────────────────────────────────────────────────────────────────────┤
+│                                                                     │
+│  ┌─────────────────────────┐    ┌─────────────────────────────────┐│
+│  │ 📖 WHAT IS ZERO-SHOT?  │    │ ⚙️ KEY ENABLERS                 ││
+│  │                         │    │                                 ││
+│  │ • Definition 박스       │    │  ┌───────────┐  ┌───────────┐  ││
+│  │ • How It Works 설명     │    │  │Instruction│  │   RLHF    │  ││
+│  │ • 핵심: 예시 없이 직접   │    │  │  Tuning   │  │           │  ││
+│  │   지시만으로 작업 수행   │    │  └─────┬─────┘  └─────┬─────┘  ││
+│  │                         │    │        └──────┬──────┘        ││
+│  └─────────────────────────┘    │               ▼               ││
+│                                  │      ┌─────────────┐         ││
+│                                  │      │ Zero-shot   │         ││
+│                                  │      │ Capability  │         ││
+│                                  │      └─────────────┘         ││
+│                                  └─────────────────────────────────┘│
+├─────────────────────────────────────────────────────────────────────┤
+│  ⚡ PROMPT EXAMPLES (이 섹션이 가장 넓어야 함 - 핵심!)              │
+│  ┌──────────────────────────────────────────────────────────────┐  │
+│  │ [Task Type]        │ [Prompt Template]           │ [Output]  │  │
+│  ├────────────────────┼─────────────────────────────┼───────────┤  │
+│  │ 🏷️ Classification  │ Classify into X, Y, Z...    │ Neutral   │  │
+│  │ 📝 Summarization   │ Summarize in N sentences... │ Summary   │  │
+│  │ 🌐 Translation     │ Translate to [lang]...      │ 번역문    │  │
+│  │ ❓ Q&A             │ Answer based on context...  │ Answer    │  │
+│  │ 🏢 NER             │ Extract entities from...    │ Entities  │  │
+│  │ 💻 Code Gen        │ Write a function that...    │ Code      │  │
+│  └──────────────────────────────────────────────────────────────┘  │
+├─────────────────────────────────────────────────────────────────────┤
+│  ┌─────────────────────────────┐  ┌───────────────────────────────┐│
+│  │ 🎯 ZERO-SHOT vs FEW-SHOT   │  │ 🎓 KEY TAKEAWAYS              ││
+│  │                             │  │                               ││
+│  │ Zero-shot │ Few-shot       │  │ ✓ 예시 없이 직접 지시         ││
+│  │ ──────────┼────────        │  │ ✓ Instruction Tuning+RLHF     ││
+│  │ 예시 ❌   │ 예시 2-5개     │  │ ✓ 명확한 지시가 핵심          ││
+│  │ 토큰 적음 │ 토큰 많음      │  │ ✓ 부족하면 Few-shot 전환      ││
+│  │ 먼저시도! │ 실패시 전환    │  │                               ││
+│  └─────────────────────────────┘  └───────────────────────────────┘│
+└─────────────────────────────────────────────────────────────────────┘
 ```
 
-## 2. 🧠 Key Concepts (Table/Definition)
+**배치 비율**:
+- 상단 (20%): 타이틀
+- 중상단 (25%): Definition + Key Enablers (좌우 분할)
+- 중앙 (35%): Prompt Examples 표 (가장 넓게!)
+- 하단 (20%): Comparison + Takeaways (좌우 분할)
 
-Explain in a structured way:
-- **Definition**: 예시 없이 직접 지시만으로 작업 수행
-- **How It Works**: 사전 학습된 지식으로 개념 이해
-- **Key Enablers**:
-  | 기술 | 설명 |
-  |------|------|
-  | Instruction Tuning | 지시문 데이터셋으로 Fine-tuning |
-  | RLHF | 인간 피드백 기반 강화학습 |
+# Content Details (레이아웃 각 섹션에 들어갈 내용)
 
-## 3. ⚡ Prompt Examples (Code Blocks) - CRITICAL SECTION
+## 📖 WHAT IS ZERO-SHOT? (좌측 상단)
 
-Provide 8+ diverse, copy-paste ready prompt examples:
+**Definition Box:**
+> "Zero-shot prompting means the prompt won't contain examples or demonstrations."
 
-**Sentiment Classification**
-```
-Classify the text into neutral, negative or positive.
-Text: I think the vacation is okay.
-Sentiment:
-```
-→ Result: Neutral
+**핵심 포인트:**
+- 예시(examples) 없이 직접 지시만으로 작업 수행
+- GPT-4, Claude 3 등 현대 LLM이 지원
+- 광범위한 사전 학습 덕분에 가능
 
-**Text Summarization**
-```
-Summarize the following article in 2-3 sentences.
-Article: [content]
-Summary:
-```
+## ⚙️ KEY ENABLERS (우측 상단)
 
-**Translation**
-```
-Translate the following English text to Korean.
-Text: Zero-shot prompting allows models to perform tasks without examples.
-Translation:
-```
+**두 가지 핵심 기술을 다이어그램으로:**
 
-**Question Answering**
 ```
-Answer the question based on the context.
-Context: [context]
-Question: What is zero-shot prompting?
-Answer:
+┌─────────────────┐     ┌─────────────────┐
+│  Instruction    │     │     RLHF        │
+│    Tuning       │     │ (Reinforcement  │
+│                 │     │  Learning from  │
+│ 지시문 데이터셋  │     │ Human Feedback) │
+│ Fine-tuning     │     │                 │
+└────────┬────────┘     └────────┬────────┘
+         │                       │
+         └───────────┬───────────┘
+                     ▼
+            ┌─────────────────┐
+            │   Zero-shot     │
+            │   Capability    │
+            │                 │
+            │  예시 없이도    │
+            │  작업 수행 가능  │
+            └─────────────────┘
 ```
 
-**Named Entity Recognition**
-```
-Extract all person names and organizations from the text.
-Text: Sam Altman leads OpenAI, which developed ChatGPT.
-Entities:
-```
+## ⚡ PROMPT EXAMPLES (중앙 - 가장 넓게!)
 
-**Code Generation**
-```
-Write a Python function that calculates factorial.
-```
+**6-8개 프롬프트 예시를 표로 정리:**
 
-**Role-based Prompt**
-```
-You are an expert content moderator.
-Classify the comment as: spam, offensive, or safe.
-Comment: [content]
-Classification:
-```
+| Task Type | Prompt Template | Expected Output |
+|-----------|-----------------|-----------------|
+| 🏷️ **Classification** | `Classify the text into neutral, negative or positive.`<br>`Text: I think the vacation is okay.`<br>`Sentiment:` | Neutral |
+| 📝 **Summarization** | `Summarize in 2-3 sentences.`<br>`Article: [content]`<br>`Summary:` | 요약문 |
+| 🌐 **Translation** | `Translate to Korean.`<br>`Text: Zero-shot prompting allows...`<br>`Translation:` | 한국어 번역 |
+| ❓ **Q&A** | `Answer based on context.`<br>`Context: [context]`<br>`Question: What is X?`<br>`Answer:` | 답변 |
+| 🏢 **NER** | `Extract person names and orgs.`<br>`Text: Sam Altman leads OpenAI...`<br>`Entities:` | Sam Altman, OpenAI |
+| 💻 **Code Gen** | `Write a Python function that calculates factorial.` | 코드 |
+| 🎭 **Role-based** | `You are an expert moderator.`<br>`Classify as: spam, offensive, safe.`<br>`Comment: [content]` | Classification |
+| 📋 **Structured** | `Extract and format as JSON:`<br>`- Product, Price, Rating`<br>`Text: [content]` | JSON |
 
-**Structured Output**
-```
-Extract the information and format as JSON:
-- Product name
-- Price
-- Rating
-Text: [content]
-JSON:
-```
+## 🎯 ZERO-SHOT vs FEW-SHOT (좌측 하단)
 
-## 4. 🎯 Decision Guide (Table)
-
-| 기준 | Zero-shot | Few-shot |
+| 비교 | Zero-shot | Few-shot |
 |------|-----------|----------|
-| 예시 필요 | ❌ | ✅ 2-5개 |
-| 프롬프트 길이 | 짧음 | 김 |
-| 토큰 비용 | 낮음 | 높음 |
-| 적합한 경우 | 일반 작업 | 복잡/특수 작업 |
-| 추천 | ✅ 먼저 시도 | Zero-shot 실패 시 |
+| 예시 | ❌ 없음 | ✅ 2-5개 |
+| 토큰 | 적음 | 많음 |
+| 비용 | 낮음 | 높음 |
+| 적합 | 일반 작업 | 특수 작업 |
+| **추천** | **먼저 시도!** | 실패 시 전환 |
 
-Include a flowchart:
-```
-Zero-shot 시도 → 결과 만족? → Yes: 유지 / No: Few-shot 전환
-```
+## 🎓 KEY TAKEAWAYS (우측 하단)
 
-## 5. ✨ Best Practices (Checklist)
-
-- [ ] 명확하고 구체적인 지시문 작성
-- [ ] 역할 정의 (Role Definition) 활용
-- [ ] 출력 형식 명시
-- [ ] 제약 조건 설정
-
-Show good vs bad examples:
-```
-❌ Bad: Tell me about this text.
-✅ Good: Summarize the main argument in one sentence.
-```
-
-## 6. 🔧 Troubleshooting (Table)
-
-| 문제 | 원인 | 해결 |
-|------|------|------|
-| 부정확한 결과 | 지시 모호 | 더 구체적으로 |
-| 형식 불일치 | 형식 미지정 | 형식 명시 |
-| 일관성 없음 | 작업 복잡 | Few-shot 전환 |
-
-## 7. 🎓 Key Takeaways (Checklist)
-
-- Zero-shot = 예시 없이 직접 지시만으로 작업 수행
-- Instruction Tuning + RLHF가 가능하게 함
-- 명확한 지시 + 역할 정의 + 형식 명시 = 성공
-- 복잡한 작업에서 성능 부족시 → Few-shot으로 전환
-- 비용 효율적: 짧은 프롬프트 = 적은 토큰
+- ✓ **Zero-shot = 예시 없이 직접 지시**
+- ✓ **Instruction Tuning + RLHF가 핵심**
+- ✓ **명확한 지시문이 성공의 열쇠**
+- ✓ **성능 부족 시 → Few-shot 전환**
+- ✓ **비용 효율적 (짧은 프롬프트)**
 
 ---
 
+# Instructions
+
+1. **스타일**: 첨부된 이미지의 손필기 느낌, 모눈종이 배경, 아이콘 스타일을 따라주세요.
+
+2. **레이아웃**: 위의 ASCII 다이어그램 구조를 따라 새로 배치해주세요. 첨부 이미지의 레이아웃(마인드맵 중심)을 그대로 복사하지 마세요.
+
+3. **언어**: 용어/고유명사는 영어(Zero-shot, Few-shot, Instruction Tuning, RLHF, LLM, GPT-4, Claude 3 등), 설명은 한국어.
+
+4. **핵심**: **Prompt Examples 섹션을 가장 넓고 눈에 띄게** 배치해주세요. 이 콘텐츠의 핵심은 "실제 사용 가능한 프롬프트 예시"입니다.
+
 Please generate the Cheat Sheet now.
-
-내가 말하는 cheat sheet는 보기 좋게 정리된, 실제 펜 노트필기 같은 이미지를 말하는거야.
-용어 및 고유명사는 영어 원문을 쓰되(Zero-shot, Few-shot, Instruction Tuning, RLHF, LLM, GPT-4, GPT-3.5 Turbo, Claude 3, ChatGPT 등), 필기 내용은 한국어로 작성해.
-
-**특히 프롬프트 예시(Prompt Examples) 섹션이 가장 중요합니다. 다양한 실제 사용 가능한 프롬프트를 복사 가능한 코드 블록으로 포함해주세요.**
