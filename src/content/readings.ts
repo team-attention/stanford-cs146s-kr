@@ -136,6 +136,7 @@ export const readings: Record<string, ReadingContent> = {
         sourceUrl: 'https://www.youtube.com/watch?v=7xTGNNLPyMI&t=60s',
         published: true,
         hasMarkdown: true,
+        cheatsheetImage: '/cheatsheets/week1/deep-dive-llms/pretraining-data.png',
       },
       {
         slug: 'tokenization',
@@ -144,6 +145,7 @@ export const readings: Record<string, ReadingContent> = {
         sourceUrl: 'https://www.youtube.com/watch?v=7xTGNNLPyMI&t=467s',
         published: true,
         hasMarkdown: true,
+        cheatsheetImage: '/cheatsheets/week1/deep-dive-llms/tokenization.png',
       },
       {
         slug: 'neural-network-io',
@@ -152,6 +154,7 @@ export const readings: Record<string, ReadingContent> = {
         sourceUrl: 'https://www.youtube.com/watch?v=7xTGNNLPyMI&t=867s',
         published: true,
         hasMarkdown: true,
+        cheatsheetImage: '/cheatsheets/week1/deep-dive-llms/neural-network-io.png',
       },
       {
         slug: 'neural-network-internals',
@@ -160,6 +163,7 @@ export const readings: Record<string, ReadingContent> = {
         sourceUrl: 'https://www.youtube.com/watch?v=7xTGNNLPyMI&t=1211s',
         published: true,
         hasMarkdown: true,
+        cheatsheetImage: '/cheatsheets/week1/deep-dive-llms/neural-network-internals.jpg',
       },
       {
         slug: 'inference',
@@ -168,6 +172,7 @@ export const readings: Record<string, ReadingContent> = {
         sourceUrl: 'https://www.youtube.com/watch?v=7xTGNNLPyMI&t=1561s',
         published: true,
         hasMarkdown: true,
+        cheatsheetImage: '/cheatsheets/week1/deep-dive-llms/inference.png',
       },
       {
         slug: 'gpt2-training-inference',
@@ -176,6 +181,7 @@ export const readings: Record<string, ReadingContent> = {
         sourceUrl: 'https://www.youtube.com/watch?v=7xTGNNLPyMI&t=1869s',
         published: true,
         hasMarkdown: true,
+        cheatsheetImage: '/cheatsheets/week1/deep-dive-llms/gpt2-training-inference.png',
       },
       {
         slug: 'llama-31-base-model',
@@ -184,6 +190,7 @@ export const readings: Record<string, ReadingContent> = {
         sourceUrl: 'https://www.youtube.com/watch?v=7xTGNNLPyMI&t=2572s',
         published: true,
         hasMarkdown: true,
+        cheatsheetImage: '/cheatsheets/week1/deep-dive-llms/llama-31-base-model.png',
       },
       {
         slug: 'pretraining-to-post-training',
@@ -192,6 +199,7 @@ export const readings: Record<string, ReadingContent> = {
         sourceUrl: 'https://www.youtube.com/watch?v=7xTGNNLPyMI&t=3563s',
         published: true,
         hasMarkdown: true,
+        cheatsheetImage: '/cheatsheets/week1/deep-dive-llms/pretraining-to-post-training.png',
       },
       {
         slug: 'post-training-data',
@@ -200,6 +208,7 @@ export const readings: Record<string, ReadingContent> = {
         sourceUrl: 'https://www.youtube.com/watch?v=7xTGNNLPyMI&t=3666s',
         published: true,
         hasMarkdown: true,
+        cheatsheetImage: '/cheatsheets/week1/deep-dive-llms/post-training-data.png',
       },
       {
         slug: 'hallucinations-tool-use',
@@ -208,6 +217,7 @@ export const readings: Record<string, ReadingContent> = {
         sourceUrl: 'https://www.youtube.com/watch?v=7xTGNNLPyMI&t=4832s',
         published: true,
         hasMarkdown: true,
+        cheatsheetImage: '/cheatsheets/week1/deep-dive-llms/hallucinations-tool-use.png',
       },
       {
         slug: 'knowledge-of-self',
@@ -216,6 +226,7 @@ export const readings: Record<string, ReadingContent> = {
         sourceUrl: 'https://www.youtube.com/watch?v=7xTGNNLPyMI&t=6106s',
         published: true,
         hasMarkdown: true,
+        cheatsheetImage: '/cheatsheets/week1/deep-dive-llms/knowledge-of-self.png',
       },
       {
         slug: 'models-need-tokens-to-think',
@@ -224,6 +235,7 @@ export const readings: Record<string, ReadingContent> = {
         sourceUrl: 'https://www.youtube.com/watch?v=7xTGNNLPyMI&t=6416s',
         published: true,
         hasMarkdown: true,
+        cheatsheetImage: '/cheatsheets/week1/deep-dive-llms/models-need-tokens-to-think.png',
       },
       {
         slug: 'tokenization-spelling',
@@ -232,6 +244,7 @@ export const readings: Record<string, ReadingContent> = {
         sourceUrl: 'https://www.youtube.com/watch?v=7xTGNNLPyMI&t=7271s',
         published: true,
         hasMarkdown: true,
+        cheatsheetImage: '/cheatsheets/week1/deep-dive-llms/tokenization-spelling.png',
       },
       {
         slug: 'jagged-intelligence',
@@ -240,6 +253,7 @@ export const readings: Record<string, ReadingContent> = {
         sourceUrl: 'https://www.youtube.com/watch?v=7xTGNNLPyMI&t=7493s',
         published: true,
         hasMarkdown: true,
+        cheatsheetImage: '/cheatsheets/week1/deep-dive-llms/jagged-intelligence.png',
       },
       {
         slug: 'sft-to-rl',
@@ -248,6 +262,7 @@ export const readings: Record<string, ReadingContent> = {
         sourceUrl: 'https://www.youtube.com/watch?v=7xTGNNLPyMI&t=7648s',
         published: true,
         hasMarkdown: true,
+        cheatsheetImage: '/cheatsheets/week1/deep-dive-llms/sft-to-rl.png',
       },
       {
         slug: 'reinforcement-learning',
@@ -256,6 +271,7 @@ export const readings: Record<string, ReadingContent> = {
         sourceUrl: 'https://www.youtube.com/watch?v=7xTGNNLPyMI&t=8082s',
         published: true,
         hasMarkdown: true,
+        cheatsheetImage: '/cheatsheets/week1/deep-dive-llms/reinforcement-learning.png',
       },
       {
         slug: 'deepseek-r1',
@@ -264,6 +280,7 @@ export const readings: Record<string, ReadingContent> = {
         sourceUrl: 'https://www.youtube.com/watch?v=7xTGNNLPyMI&t=9467s',
         published: true,
         hasMarkdown: true,
+        cheatsheetImage: '/cheatsheets/week1/deep-dive-llms/deepseek-r1.png',
       },
       {
         slug: 'alphago',
@@ -272,6 +289,7 @@ export const readings: Record<string, ReadingContent> = {
         sourceUrl: 'https://www.youtube.com/watch?v=7xTGNNLPyMI&t=10127s',
         published: true,
         hasMarkdown: true,
+        cheatsheetImage: '/cheatsheets/week1/deep-dive-llms/alphago.png',
       },
       {
         slug: 'rlhf',
@@ -280,6 +298,7 @@ export const readings: Record<string, ReadingContent> = {
         sourceUrl: 'https://www.youtube.com/watch?v=7xTGNNLPyMI&t=10906s',
         published: true,
         hasMarkdown: true,
+        cheatsheetImage: '/cheatsheets/week1/deep-dive-llms/rlhf.png',
       },
       {
         slug: 'preview-of-things-to-come',
@@ -288,6 +307,7 @@ export const readings: Record<string, ReadingContent> = {
         sourceUrl: 'https://www.youtube.com/watch?v=7xTGNNLPyMI&t=11379s',
         published: true,
         hasMarkdown: true,
+        cheatsheetImage: '/cheatsheets/week1/deep-dive-llms/preview-of-things-to-come.png',
       },
       {
         slug: 'keeping-track-of-llms',
@@ -296,6 +316,7 @@ export const readings: Record<string, ReadingContent> = {
         sourceUrl: 'https://www.youtube.com/watch?v=7xTGNNLPyMI&t=11715s',
         published: true,
         hasMarkdown: true,
+        cheatsheetImage: '/cheatsheets/week1/deep-dive-llms/keeping-track-of-llms.png',
       },
       {
         slug: 'where-to-find-llms',
@@ -304,6 +325,7 @@ export const readings: Record<string, ReadingContent> = {
         sourceUrl: 'https://www.youtube.com/watch?v=7xTGNNLPyMI&t=11914s',
         published: true,
         hasMarkdown: true,
+        cheatsheetImage: '/cheatsheets/week1/deep-dive-llms/where-to-find-llms.png',
       },
       {
         slug: 'grand-summary',
@@ -312,6 +334,7 @@ export const readings: Record<string, ReadingContent> = {
         sourceUrl: 'https://www.youtube.com/watch?v=7xTGNNLPyMI&t=12106s',
         published: true,
         hasMarkdown: true,
+        cheatsheetImage: '/cheatsheets/week1/deep-dive-llms/grand-summary.png',
       },
     ],
   },
