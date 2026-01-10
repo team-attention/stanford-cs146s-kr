@@ -30,6 +30,8 @@ export const syllabus: Week[] = [
       {
         title: 'AI Prompt Engineering: A Deep Dive',
         url: 'https://www.youtube.com/watch?v=T9aRN5JkmL8',
+        krSlug: 'ai-prompt-engineering-deep-dive',
+        translationStatus: 'complete',
       },
       {
         title: 'How OpenAI Uses Codex',
