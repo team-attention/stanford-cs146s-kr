@@ -10,6 +10,8 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
           <Route path="readings/:week/:slug" element={<ReadingPage />} />
+          {/* 자식 페이지 라우트 (prompt-engineering-guide/:childSlug) */}
+          <Route path="readings/:week/:slug/:childSlug" element={<ReadingPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

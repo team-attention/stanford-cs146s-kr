@@ -50,3 +50,33 @@ a:hover {
 .header-gradient a:hover {
   text-decoration: none;
 }
+
+/* Sidebar active item - white text on red background */
+.sidebar-active {
+  color: white !important;
+}
+
+.sidebar-active:hover {
+  text-decoration: none;
+}
+
+/* Markdown 콘텐츠 스타일링 */
+.prose ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.prose li {
+  margin-bottom: 0.5rem;
+}
+
+/* 타임스탬프 배지 호버 효과 */
+.prose a[href*="youtube.com"]:has(span) {
+  text-decoration: none !important;
+}
+
+/* 요약 섹션 강조 */
+.prose h2 + p {
+  font-size: 1.05rem;
+  line-height: 1.75;
+}

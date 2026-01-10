@@ -26,3 +26,7 @@ dist-ssr
 # Legacy files (old HTML/CSS/JS implementation)
 _legacy/
 .vercel
+.env*.local
+
+# YouTube media files (large files)
+docs/**/media/*.mp3
