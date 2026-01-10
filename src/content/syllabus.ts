@@ -24,15 +24,20 @@ export const syllabus: Week[] = [
       {
         title: 'Prompt Engineering Guide',
         url: 'https://www.promptingguide.ai/techniques',
-        translationStatus: 'in_progress',
+        krSlug: 'prompt-engineering-guide',
+        translationStatus: 'complete',
       },
       {
         title: 'AI Prompt Engineering: A Deep Dive',
         url: 'https://www.youtube.com/watch?v=T9aRN5JkmL8',
+        krSlug: 'ai-prompt-engineering-deep-dive',
+        translationStatus: 'complete',
       },
       {
         title: 'How OpenAI Uses Codex',
         url: 'https://cdn.openai.com/pdf/6a2631dc-783e-479b-b1a4-af0cfbd38630/how-openai-uses-codex.pdf',
+        krSlug: 'how-openai-uses-codex',
+        translationStatus: 'complete',
       },
     ],
     assignments: [

@@ -1,0 +1,6798 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.690
+- Basically, this entire
+roundtable session here
+
+00:00:03.690 --> 00:00:06.450
+is just gonna be focused
+mainly on prompt engineering.
+
+00:00:06.450 --> 00:00:10.440
+A variety of perspectives at
+this table around prompting
+
+00:00:10.440 --> 00:00:11.877
+from a research side,
+from a consumer side,
+
+00:00:11.877 --> 00:00:13.890
+and from the enterprise side.
+
+00:00:13.890 --> 00:00:16.950
+And I want to just get the
+whole wide range of opinions
+
+00:00:16.950 --> 00:00:18.450
+because there's a lot of them.
+
+00:00:18.450 --> 00:00:20.670
+And just open it up to discussion
+
+00:00:20.670 --> 00:00:24.060
+and explore what prompt
+engineering really is
+
+00:00:24.060 --> 00:00:25.530
+and what it's all about.
+
+00:00:25.530 --> 00:00:28.020
+And yeah, we'll just take it from there.
+
+00:00:28.020 --> 00:00:30.540
+So maybe we can go around
+the horn with intros.
+
+00:00:30.540 --> 00:00:32.010
+I can kick it off. I'm Alex.
+
+00:00:32.010 --> 00:00:35.040
+I lead Developer Relations
+here at Anthropic.
+
+00:00:35.040 --> 00:00:36.270
+Before that,
+
+00:00:36.270 --> 00:00:39.600
+I was technically a prompt
+engineer at Anthropic.
+
+00:00:39.600 --> 00:00:41.823
+I worked on our prompt engineering team,
+
+00:00:43.620 --> 00:00:45.330
+and did a variety of roles spanning
+
+00:00:45.330 --> 00:00:48.720
+from a solutions architect type of thing,
+
+00:00:48.720 --> 00:00:51.510
+to working on the research side.
+
+00:00:51.510 --> 00:00:53.880
+So with that, maybe I can
+hand it over to David.
+
+00:00:53.880 --> 00:00:56.070
+- Heck, yeah. My name's David Hershey.
+
+00:00:56.070 --> 00:00:59.850
+I work with customers mostly at Anthropic
+
+00:00:59.850 --> 00:01:02.940
+on a bunch of stuff technical,
+
+00:01:02.940 --> 00:01:04.290
+I help people with finetuning,
+
+00:01:04.290 --> 00:01:06.360
+but also just a lot of the generic things
+
+00:01:06.360 --> 00:01:08.670
+that make it hard to adopt
+language models of prompting.
+
+00:01:08.670 --> 00:01:11.970
+And just like how to build
+systems with language models,
+
+00:01:11.970 --> 00:01:14.610
+but spend most of my time
+working with customers.
+
+00:01:14.610 --> 00:01:16.530
+- Cool. I'm Amanda Askell.
+
+00:01:16.530 --> 00:01:19.890
+I lead one of the Finetuning
+teams at Anthropic,
+
+00:01:19.890 --> 00:01:23.613
+where I guess I try to make
+Claude be honest and kind.
+
+00:01:24.990 --> 00:01:26.400
+Yeah.
+
+00:01:26.400 --> 00:01:27.449
+- My name is Zack Witten.
+
+00:01:27.449 --> 00:01:30.720
+I'm a Prompt Engineer at Anthropic.
+
+00:01:30.720 --> 00:01:32.550
+Alex and I always argue
+about who the first one was.
+
+00:01:32.550 --> 00:01:33.990
+He says it's him, I say it's me.
+
+00:01:33.990 --> 00:01:35.550
+- Contested.
+- Yeah.
+
+00:01:35.550 --> 00:01:38.520
+I used to work a lot with
+individual customers,
+
+00:01:38.520 --> 00:01:40.290
+kind of the same way David does now.
+
+00:01:40.290 --> 00:01:44.130
+And then as we brought
+more solutions architects
+
+00:01:44.130 --> 00:01:46.950
+to the team, I started working on things
+
+00:01:46.950 --> 00:01:50.670
+that are meant to raise the overall levels
+
+00:01:50.670 --> 00:01:53.310
+of ambient prompting in society,
+
+00:01:53.310 --> 00:01:55.470
+I guess, like the prompt generator
+
+00:01:55.470 --> 00:01:59.640
+and the various educational
+materials that people use.
+
+00:01:59.640 --> 00:02:02.959
+- Nice, cool. Well, thanks
+guys for all coming here.
+
+00:02:02.959 --> 00:02:05.850
+I'm gonna start with a very broad question
+
+00:02:05.850 --> 00:02:07.200
+just so we have a frame
+
+00:02:07.200 --> 00:02:09.570
+going into the rest of
+our conversations here.
+
+00:02:09.570 --> 00:02:14.340
+What is prompt engineering?
+Why is it engineering?
+
+00:02:14.340 --> 00:02:15.990
+What's prompt, really?
+
+00:02:15.990 --> 00:02:17.610
+If anyone wants to kick that off,
+
+00:02:17.610 --> 00:02:19.500
+give your own perspective on it,
+
+00:02:19.500 --> 00:02:21.300
+feel free to take the rein here.
+
+00:02:21.300 --> 00:02:23.364
+- I feel like we have a prompt engineer.
+
+00:02:23.364 --> 00:02:24.990
+It's his job.
+
+00:02:24.990 --> 00:02:27.900
+- We're all prompt
+engineers in our own form.
+
+00:02:27.900 --> 00:02:28.980
+- But one of us has a job.
+
+00:02:28.980 --> 00:02:30.630
+- Yeah. Zack, maybe
+since it's in your title.
+
+00:02:30.630 --> 00:02:34.767
+- One of us has a job, but the
+other three don't have jobs.
+
+00:02:35.974 --> 00:02:37.560
+- I guess I feel like prompt engineering
+
+00:02:37.560 --> 00:02:40.860
+is trying to get the model to do things,
+
+00:02:40.860 --> 00:02:42.780
+trying to bring the most out of the model.
+
+00:02:42.780 --> 00:02:46.320
+Trying to work with the
+model to get things done
+
+00:02:46.320 --> 00:02:49.380
+that you wouldn't have
+been able to do otherwise.
+
+00:02:49.380 --> 00:02:52.500
+So a lot of it is just
+clear communicating.
+
+00:02:52.500 --> 00:02:55.530
+I think at heart,
+
+00:02:55.530 --> 00:02:57.870
+talking to a model is a lot
+like talking to a person.
+
+00:02:57.870 --> 00:02:59.610
+And getting in there
+
+00:02:59.610 --> 00:03:02.280
+and understanding the
+psychology of the model,
+
+00:03:02.280 --> 00:03:06.843
+which Amanda is the world's
+most expert person in the world.
+
+00:03:08.730 --> 00:03:10.916
+- Well, I'm gonna keep going on you.
+
+00:03:10.916 --> 00:03:12.723
+Why is engineering in the name?
+
+00:03:13.860 --> 00:03:14.693
+- Yeah.
+
+00:03:14.693 --> 00:03:18.022
+I think the engineering part
+comes from the trial and error.
+
+00:03:18.022 --> 00:03:18.855
+- Okay.
+
+00:03:18.855 --> 00:03:23.130
+- So one really nice thing
+about talking to a model
+
+00:03:23.130 --> 00:03:24.450
+that's not like talking to a person,
+
+00:03:24.450 --> 00:03:25.740
+is you have this restart button.
+
+00:03:25.740 --> 00:03:28.200
+This giant go back to square zero
+
+00:03:28.200 --> 00:03:29.550
+where you just start from the beginning.
+
+00:03:29.550 --> 00:03:30.990
+And what that gives you the ability to do
+
+00:03:30.990 --> 00:03:34.410
+that you don't have, is a
+truly start from scratch
+
+00:03:34.410 --> 00:03:38.100
+and try out different things
+in an independent way,
+
+00:03:38.100 --> 00:03:40.590
+so that you don't have
+interference from one to the other.
+
+00:03:40.590 --> 00:03:43.470
+And once you have that
+ability to experiment
+
+00:03:43.470 --> 00:03:45.450
+and to design different things,
+
+00:03:45.450 --> 00:03:48.210
+that's where the engineering
+part has the potential
+
+00:03:48.210 --> 00:03:49.800
+to come in.
+
+00:03:49.800 --> 00:03:50.633
+- Okay.
+
+00:03:50.633 --> 00:03:53.280
+So what you're saying is as
+you're writing these prompts,
+
+00:03:53.280 --> 00:03:55.520
+you're typing in a message
+to Claude or in the API
+
+00:03:55.520 --> 00:03:56.733
+or whatever it is.
+
+00:03:57.630 --> 00:04:00.600
+Being able to go back
+and forth with the model
+
+00:04:00.600 --> 00:04:02.970
+and to iterate on this message,
+
+00:04:02.970 --> 00:04:06.750
+and revert back to the
+clean slate every time,
+
+00:04:06.750 --> 00:04:08.910
+that process is the engineering part.
+
+00:04:08.910 --> 00:04:13.530
+This whole thing is prompt
+engineering all in one.
+
+00:04:13.530 --> 00:04:15.000
+- There's another aspect of it too,
+
+00:04:15.000 --> 00:04:19.290
+which is integrating the prompts
+
+00:04:19.290 --> 00:04:21.630
+within your system as a whole.
+
+00:04:21.630 --> 00:04:25.803
+And David has done a ton of
+work with customers integrating.
+
+00:04:26.640 --> 00:04:28.050
+A lot of times it's not just as simple
+
+00:04:28.050 --> 00:04:30.000
+as you write one prompt and
+you give it to the model
+
+00:04:30.000 --> 00:04:30.833
+and you're done.
+
+00:04:30.833 --> 00:04:32.730
+In fact, it's anything but.
+It's like way more complicated.
+
+00:04:32.730 --> 00:04:33.563
+- Yeah.
+
+00:04:34.476 --> 00:04:36.510
+I think of prompts as the way
+
+00:04:36.510 --> 00:04:38.820
+that you program models a little bit,
+
+00:04:38.820 --> 00:04:40.110
+that makes it too complicated.
+
+00:04:40.110 --> 00:04:41.940
+'Cause I think Zack is generally right
+
+00:04:41.940 --> 00:04:45.960
+that it's just talking clearly
+is the most important thing.
+
+00:04:45.960 --> 00:04:47.040
+But if you think about it a little bit
+
+00:04:47.040 --> 00:04:49.200
+as programming a model,
+you have to think about
+
+00:04:49.200 --> 00:04:51.087
+where data comes from, what
+data you have access to.
+
+00:04:51.087 --> 00:04:53.280
+So if you're doing RAG or something,
+
+00:04:53.280 --> 00:04:56.013
+what can I actually use
+and do and pass to a model?
+
+00:04:57.990 --> 00:05:02.130
+You have to think about
+trade-offs in latency
+
+00:05:02.130 --> 00:05:03.750
+and how much data you're
+providing and things like that.
+
+00:05:03.750 --> 00:05:04.890
+There's enough systems thinking
+
+00:05:04.890 --> 00:05:07.560
+that goes into how you
+actually build around a model.
+
+00:05:07.560 --> 00:05:08.820
+I think a lot of that's also the core
+
+00:05:08.820 --> 00:05:13.080
+of why it maybe deserves
+its own carve-out as a thing
+
+00:05:13.080 --> 00:05:16.440
+to reason about separately
+from just a software engineer
+
+00:05:16.440 --> 00:05:17.430
+or a PM or something like that.
+
+00:05:17.430 --> 00:05:18.510
+It's kind of its own domain
+
+00:05:18.510 --> 00:05:20.520
+of how to reason about these models.
+
+00:05:20.520 --> 00:05:24.240
+- Is a prompt in this sense
+then natural language code?
+
+00:05:24.240 --> 00:05:26.520
+Is it a higher level of abstraction
+
+00:05:26.520 --> 00:05:28.526
+or is it a separate thing?
+
+00:05:28.526 --> 00:05:33.526
+- I think trying to get too
+abstract with a prompt is a way
+
+00:05:33.750 --> 00:05:37.110
+to overcomplicate a
+thing, because I think,
+
+00:05:37.110 --> 00:05:38.970
+we're gonna get into it,
+but more often than not,
+
+00:05:38.970 --> 00:05:39.803
+the thing you wanna do
+
+00:05:39.803 --> 00:05:42.060
+is just write a very clear
+description of a task,
+
+00:05:42.060 --> 00:05:45.123
+not try to build crazy
+abstractions or anything like that.
+
+00:05:47.070 --> 00:05:51.720
+But that said, you are compiling
+the set of instructions
+
+00:05:51.720 --> 00:05:54.420
+and things like that into
+outcomes a lot of times.
+
+00:05:54.420 --> 00:05:57.660
+So precision and a lot the things
+
+00:05:57.660 --> 00:06:00.690
+you think about with programming
+about version control
+
+00:06:00.690 --> 00:06:01.980
+and managing what it looked like
+
+00:06:01.980 --> 00:06:03.600
+back then when you had this experiment.
+
+00:06:03.600 --> 00:06:06.630
+And tracking your experiment
+and stuff like that,
+
+00:06:06.630 --> 00:06:11.620
+that's all just equally important to code.
+
+00:06:11.620 --> 00:06:12.453
+- Yeah.
+
+00:06:12.453 --> 00:06:15.960
+- So it's weird to be in this
+paradigm where written text,
+
+00:06:15.960 --> 00:06:18.390
+like a nice essay that
+you wrote is something
+
+00:06:18.390 --> 00:06:21.003
+that's looked like the same thing as code.
+
+00:06:22.080 --> 00:06:25.020
+But it is true that now we write essays
+
+00:06:25.020 --> 00:06:27.840
+and treat them code, and I
+think that's actually correct.
+
+00:06:27.840 --> 00:06:29.940
+- Yeah. Okay, interesting.
+
+00:06:29.940 --> 00:06:31.773
+So maybe piggybacking off of that,
+
+00:06:32.730 --> 00:06:36.090
+we've loosely defined what
+prompt engineering is.
+
+00:06:36.090 --> 00:06:38.640
+So what makes a good prompt engineer?
+
+00:06:38.640 --> 00:06:41.040
+Maybe, Amanda, I'll go to you for this,
+
+00:06:41.040 --> 00:06:43.350
+since you're trying to
+hire prompt engineers
+
+00:06:43.350 --> 00:06:44.853
+more so in a research setting.
+
+00:06:45.810 --> 00:06:46.643
+What does that look like?
+
+00:06:46.643 --> 00:06:49.050
+What are you looking for
+in that type of person?
+
+00:06:49.050 --> 00:06:50.520
+- Yeah, good question.
+
+00:06:50.520 --> 00:06:55.500
+I think it's a mix of like
+Zack said, clear communication,
+
+00:06:55.500 --> 00:06:58.470
+so the ability to just
+clearly state things,
+
+00:06:58.470 --> 00:07:00.990
+clearly understand tasks,
+
+00:07:00.990 --> 00:07:03.480
+think about and describe
+concepts really well.
+
+00:07:03.480 --> 00:07:05.880
+That's the writing component, I think.
+
+00:07:05.880 --> 00:07:08.880
+I actually think that being a good writer
+
+00:07:08.880 --> 00:07:12.030
+is not as correlated with
+being a good prompt engineer
+
+00:07:12.030 --> 00:07:13.890
+as people might think.
+
+00:07:13.890 --> 00:07:15.227
+So I guess I've had this
+discussion with people
+
+00:07:15.227 --> 00:07:16.747
+'cause I think there's
+some argument as like,
+
+00:07:16.747 --> 00:07:19.680
+"Maybe you just shouldn't have
+the name engineer in there.
+
+00:07:19.680 --> 00:07:21.417
+Why isn't it just writer?"
+
+00:07:22.260 --> 00:07:23.787
+I used to be more sympathetic to that.
+
+00:07:23.787 --> 00:07:27.900
+And then, I think, now I'm like
+what you're actually doing,
+
+00:07:27.900 --> 00:07:31.560
+people think that you're writing
+one thing and you're done.
+
+00:07:31.560 --> 00:07:34.860
+Then I'll be like to
+get a semi-decent prompt
+
+00:07:34.860 --> 00:07:36.410
+when I sit down with the model.
+
+00:07:37.410 --> 00:07:38.940
+Earlier, I was prompting the model
+
+00:07:38.940 --> 00:07:40.500
+and I was just like in a 15-minute span
+
+00:07:40.500 --> 00:07:42.510
+I'll be sending hundreds
+of prompts to the model.
+
+00:07:42.510 --> 00:07:45.060
+It's just back and forth, back
+and forth, back and forth.
+
+00:07:45.060 --> 00:07:48.780
+So I think it's this willingness
+to iterate and to look
+
+00:07:48.780 --> 00:07:51.750
+and think what is it that
+was misinterpreted here,
+
+00:07:51.750 --> 00:07:52.899
+if anything?
+
+00:07:52.899 --> 00:07:55.830
+And then fix that thing.
+
+00:07:55.830 --> 00:07:57.360
+So that ability to iterate.
+
+00:07:57.360 --> 00:08:01.680
+So I'd say clear communication,
+that ability to iterate.
+
+00:08:01.680 --> 00:08:03.660
+I think also thinking about ways
+
+00:08:03.660 --> 00:08:05.790
+in which your prompt might go wrong.
+
+00:08:05.790 --> 00:08:06.720
+So if you have a prompt
+
+00:08:06.720 --> 00:08:09.330
+that you're going to be
+applying to say, 400 cases,
+
+00:08:09.330 --> 00:08:11.370
+it's really easy to think
+about the typical case
+
+00:08:11.370 --> 00:08:12.750
+that it's going to be applied to,
+
+00:08:12.750 --> 00:08:14.580
+to see that it gets the
+right solution in that case,
+
+00:08:14.580 --> 00:08:15.570
+and then to move on.
+
+00:08:15.570 --> 00:08:18.370
+I think this is a very classic
+mistake that people made.
+
+00:08:19.260 --> 00:08:21.810
+What you actually want
+to do is find the cases
+
+00:08:21.810 --> 00:08:23.430
+where it's unusual.
+
+00:08:23.430 --> 00:08:25.154
+So you have to think about
+your prompt and be like,
+
+00:08:25.154 --> 00:08:26.970
+"What are the cases where
+it'd be really unclear to me
+
+00:08:26.970 --> 00:08:28.500
+what I should do in this case?"
+
+00:08:28.500 --> 00:08:29.827
+So for example, you
+have a prompt that says,
+
+00:08:29.827 --> 00:08:31.290
+"I'm going to send you a bunch of data.
+
+00:08:31.290 --> 00:08:33.540
+I want you to extract all of the rows
+
+00:08:33.540 --> 00:08:36.180
+where someone's name is, I don't know,
+
+00:08:36.180 --> 00:08:37.500
+starts with the letter G."
+
+00:08:37.500 --> 00:08:39.780
+And then you're like, "Well,
+I'm gonna send it a dataset
+
+00:08:39.780 --> 00:08:41.340
+where there is no such thing,
+
+00:08:41.340 --> 00:08:43.567
+there is no such name that
+starts with the letter G.
+
+00:08:43.567 --> 00:08:45.870
+"I'm going to send it
+something that's not a dataset,
+
+00:08:45.870 --> 00:08:48.000
+I might also just send it an empty string.
+
+00:08:48.000 --> 00:08:49.740
+These are all of the
+cases you have to try,
+
+00:08:49.740 --> 00:08:51.540
+because then you're like, "What
+does it do in these cases? "
+
+00:08:51.540 --> 00:08:53.910
+And then you can give it more instructions
+
+00:08:53.910 --> 00:08:55.830
+for how it should deal with that case.
+
+00:08:55.830 --> 00:08:59.580
+- I work with customers so
+often where you're an engineer,
+
+00:08:59.580 --> 00:09:00.690
+you're building something.
+
+00:09:00.690 --> 00:09:03.780
+And there's a part in your
+prompt where a customer of theirs
+
+00:09:03.780 --> 00:09:04.812
+is going to write something.
+
+00:09:04.812 --> 00:09:05.645
+- Yeah.
+
+00:09:05.645 --> 00:09:06.478
+- And they all think
+
+00:09:06.478 --> 00:09:07.950
+about these really
+perfectly phrased things
+
+00:09:07.950 --> 00:09:09.807
+that they think someone's going
+to type into their chatbot.
+
+00:09:09.807 --> 00:09:12.990
+And in reality, it's like
+they never used the shift key
+
+00:09:12.990 --> 00:09:15.030
+and every other word is a typo.
+
+00:09:15.030 --> 00:09:17.040
+- They think it's Google.
+- And there's no punctuation.
+
+00:09:17.040 --> 00:09:18.956
+- They just put in random
+words with no question.
+
+00:09:18.956 --> 00:09:20.416
+- Exactly.
+
+00:09:20.416 --> 00:09:21.249
+So you have these evals
+
+00:09:21.249 --> 00:09:22.740
+that are these beautifully structured
+
+00:09:22.740 --> 00:09:24.570
+what their users ideally would type in.
+
+00:09:24.570 --> 00:09:26.520
+But being able to go the next step
+
+00:09:26.520 --> 00:09:29.250
+to reason about what your
+actual traffic's gonna be like,
+
+00:09:29.250 --> 00:09:31.470
+what people are actually
+gonna to try to do,
+
+00:09:31.470 --> 00:09:33.570
+that's a different level of thinking.
+
+00:09:33.570 --> 00:09:35.190
+- One thing you said that
+really resonated with me
+
+00:09:35.190 --> 00:09:36.933
+is reading the model responses.
+
+00:09:37.950 --> 00:09:39.750
+In a machine learning context,
+
+00:09:39.750 --> 00:09:41.490
+you're supposed to look at the data.
+
+00:09:41.490 --> 00:09:43.440
+It's almost a cliche
+like look at your data,
+
+00:09:43.440 --> 00:09:45.600
+and I feel like the
+equivalent for prompting
+
+00:09:45.600 --> 00:09:48.090
+is look at the model outputs.
+
+00:09:48.090 --> 00:09:51.060
+Just reading a lot of outputs
+and reading them closely.
+
+00:09:51.060 --> 00:09:52.710
+Like Dave and I were
+talking on the way here,
+
+00:09:52.710 --> 00:09:53.730
+one thing that people will do
+
+00:09:53.730 --> 00:09:57.180
+is they'll put think
+step-by-step in their prompt.
+
+00:09:57.180 --> 00:09:58.590
+And they won't check to make sure
+
+00:09:58.590 --> 00:10:00.840
+that the model is actually
+thinking step-by-step,
+
+00:10:00.840 --> 00:10:04.170
+because the model might
+take it in a more abstract
+
+00:10:04.170 --> 00:10:05.730
+or general sense.
+
+00:10:05.730 --> 00:10:06.563
+Rather than like,
+
+00:10:06.563 --> 00:10:08.100
+"No, literally you have to
+write down your thoughts
+
+00:10:08.100 --> 00:10:10.650
+in these specific tags."
+
+00:10:10.650 --> 00:10:14.040
+So yeah, if you aren't
+reading the model outputs,
+
+00:10:14.040 --> 00:10:16.980
+you might not even notice
+that it's making that mistake.
+
+00:10:16.980 --> 00:10:18.603
+- Yeah, that's interesting.
+
+00:10:19.800 --> 00:10:22.650
+There is that weird theory of mind piece
+
+00:10:22.650 --> 00:10:23.640
+to being a prompt engineer
+
+00:10:23.640 --> 00:10:25.410
+where you have to think almost about
+
+00:10:25.410 --> 00:10:27.300
+how the model's gonna
+view your instructions.
+
+00:10:27.300 --> 00:10:29.430
+But then if you're writing for
+an enterprise use case too,
+
+00:10:29.430 --> 00:10:30.480
+you also have to think about
+
+00:10:30.480 --> 00:10:32.670
+how the user's gonna talk to the model,
+
+00:10:32.670 --> 00:10:34.670
+as you're the third party sitting there
+
+00:10:34.670 --> 00:10:36.663
+in that weird relationship.
+
+00:10:37.950 --> 00:10:38.823
+Yeah.
+
+00:10:39.660 --> 00:10:42.460
+- On the theory of mind piece,
+one thing I would say is,
+
+00:10:43.890 --> 00:10:48.360
+it's so hard to write
+instructions down for a task.
+
+00:10:48.360 --> 00:10:51.630
+It's so hard to untangle in your own brain
+
+00:10:51.630 --> 00:10:53.520
+all of the stuff that you know
+
+00:10:53.520 --> 00:10:56.010
+that Claude does not
+know and write it down.
+
+00:10:56.010 --> 00:10:57.600
+It's just an immensely challenging thing
+
+00:10:57.600 --> 00:11:00.210
+to strip away all of the
+assumptions you have, and be able
+
+00:11:00.210 --> 00:11:04.530
+to very clearly communicate the
+full fact set of information
+
+00:11:04.530 --> 00:11:05.850
+that is needed to a model.
+
+00:11:05.850 --> 00:11:06.683
+I think that's another thing
+
+00:11:06.683 --> 00:11:08.640
+that really differentiates
+a good prompt engineer
+
+00:11:08.640 --> 00:11:10.770
+from a bad one, is like...
+
+00:11:10.770 --> 00:11:13.830
+A lot of people will just write
+down the things they know.
+
+00:11:13.830 --> 00:11:15.090
+But they don't really take the time
+
+00:11:15.090 --> 00:11:17.160
+to systematically break out
+
+00:11:17.160 --> 00:11:19.800
+what is the actual full set of
+information you need to know
+
+00:11:19.800 --> 00:11:21.180
+to understand this task?
+
+00:11:21.180 --> 00:11:22.013
+- Right.
+
+00:11:22.013 --> 00:11:24.990
+- And that's a very
+clear thing I see a lot
+
+00:11:24.990 --> 00:11:28.560
+is prompts where it's just conditioned.
+
+00:11:28.560 --> 00:11:30.330
+The prompt that someone
+wrote is so conditioned
+
+00:11:30.330 --> 00:11:33.330
+on their prior understanding of a task,
+
+00:11:33.330 --> 00:11:36.000
+that when they show it to me
+I'm like, "This makes no sense.
+
+00:11:36.000 --> 00:11:38.700
+None of the words you
+wrote make any sense,
+
+00:11:38.700 --> 00:11:39.540
+because I don't know anything
+
+00:11:39.540 --> 00:11:42.030
+about your interesting use case."
+
+00:11:42.030 --> 00:11:45.810
+But I think a good way to
+think about prompt engineering
+
+00:11:45.810 --> 00:11:47.450
+in that front and a good skill for it,
+
+00:11:47.450 --> 00:11:51.720
+is just can you actually
+step back from what you know
+
+00:11:51.720 --> 00:11:54.390
+and communicate to this weird
+system that knows a lot,
+
+00:11:54.390 --> 00:11:58.500
+but not everything about what
+it needs to know to do a task?
+
+00:11:58.500 --> 00:11:59.333
+- Yeah.
+
+00:11:59.333 --> 00:12:00.900
+The amount of times I've
+seen someone's prompt
+
+00:12:00.900 --> 00:12:01.733
+and then being like,
+
+00:12:01.733 --> 00:12:04.500
+"I can't do the task
+based on this prompt."
+
+00:12:04.500 --> 00:12:06.720
+I'm human level and you're
+giving this to something
+
+00:12:06.720 --> 00:12:10.770
+that is worse than me and
+expecting it to do better,
+
+00:12:10.770 --> 00:12:12.750
+and I'm like, "Yeah."
+
+00:12:12.750 --> 00:12:13.583
+- Yeah.
+
+00:12:13.583 --> 00:12:15.566
+There is that interesting
+thing with like...
+
+00:12:15.566 --> 00:12:19.320
+Current models don't really do a good job
+
+00:12:19.320 --> 00:12:22.590
+of asking good, probing
+questions in response
+
+00:12:22.590 --> 00:12:23.850
+like a human would.
+
+00:12:23.850 --> 00:12:26.550
+If I'm giving Zack directions
+on how to do something,
+
+00:12:26.550 --> 00:12:28.170
+he'll be like, "This
+doesn't make any sense.
+
+00:12:28.170 --> 00:12:30.780
+What am I supposed to do at
+this step or here and here?"
+
+00:12:30.780 --> 00:12:34.560
+Model doesn't do that, right,
+so you have to, as yourself,
+
+00:12:34.560 --> 00:12:37.230
+think through what that
+other person would say
+
+00:12:37.230 --> 00:12:40.800
+and then go back to your prompt
+and answer those questions.
+
+00:12:40.800 --> 00:12:41.923
+- You could ask it to do that.
+
+00:12:41.923 --> 00:12:43.615
+- You could. That's right.
+- I do that, yeah.
+
+00:12:43.615 --> 00:12:44.448
+- I guess that's another step.
+
+00:12:44.448 --> 00:12:45.900
+- I was going to say one
+of the first things I do
+
+00:12:45.900 --> 00:12:46.920
+with my initial prompt,
+
+00:12:46.920 --> 00:12:48.397
+is I'll give it the prompt
+and then I'll be like,
+
+00:12:48.397 --> 00:12:50.070
+"I don't want you to
+follow these instructions.
+
+00:12:50.070 --> 00:12:51.330
+I just want you to tell me the ways in
+
+00:12:51.330 --> 00:12:53.010
+which they're unclear or any ambiguities,
+
+00:12:53.010 --> 00:12:54.150
+or anything you don't understand."
+
+00:12:54.150 --> 00:12:55.740
+And it doesn't always get it perfect,
+
+00:12:55.740 --> 00:12:59.280
+but it is interesting that
+that is one thing you can do.
+
+00:12:59.280 --> 00:13:01.110
+And then also sometimes if people see
+
+00:13:01.110 --> 00:13:01.987
+that the model makes a mistake,
+
+00:13:01.987 --> 00:13:04.650
+the thing that they don't
+often do is just ask the model.
+
+00:13:04.650 --> 00:13:06.510
+So they say to the model,
+"You got this wrong.
+
+00:13:06.510 --> 00:13:07.560
+Can you think about why?
+
+00:13:07.560 --> 00:13:09.990
+And can you maybe write an
+edited version of my instructions
+
+00:13:09.990 --> 00:13:11.520
+that would make you not get it wrong?"
+
+00:13:11.520 --> 00:13:14.580
+And a lot of the time, the
+model just gets it right.
+
+00:13:14.580 --> 00:13:15.413
+The model's like, "Oh, yeah.
+
+00:13:15.413 --> 00:13:18.060
+Here's what was unclear, here's
+a fix to the instructions,"
+
+00:13:18.060 --> 00:13:20.370
+and then you put those in and it works.
+
+00:13:20.370 --> 00:13:21.203
+- Okay.
+
+00:13:21.203 --> 00:13:23.610
+I'm actually really curious
+about this personally almost.
+
+00:13:23.610 --> 00:13:25.173
+Is that true that that works?
+
+00:13:26.310 --> 00:13:29.310
+Is the model able to spot
+its mistakes that way?
+
+00:13:29.310 --> 00:13:31.207
+When it gets something wrong, you say,
+
+00:13:31.207 --> 00:13:32.040
+"Why did you get this wrong?"
+
+00:13:32.040 --> 00:13:34.507
+And then it tells you
+maybe something like,
+
+00:13:34.507 --> 00:13:37.500
+"Okay, how could I phrase
+this to you in the future
+
+00:13:37.500 --> 00:13:38.640
+so you get it right?"
+
+00:13:38.640 --> 00:13:40.650
+Is there an element of truth to that?
+
+00:13:40.650 --> 00:13:43.320
+Or is that just a hallucination
+on the model's part
+
+00:13:43.320 --> 00:13:46.020
+around what it thinks its limits are?
+
+00:13:46.020 --> 00:13:49.110
+- I think if you explain
+to it what it got wrong,
+
+00:13:49.110 --> 00:13:52.260
+it can identify things
+in the query sometimes.
+
+00:13:52.260 --> 00:13:53.580
+I think this varies by task.
+
+00:13:53.580 --> 00:13:56.130
+This is one of those things
+where I'm like I'm not sure
+
+00:13:56.130 --> 00:13:57.477
+what percentage of the
+time it gets it right,
+
+00:13:57.477 --> 00:14:00.240
+but I always try it
+'cause sometimes it does.
+
+00:14:00.240 --> 00:14:01.650
+- And you learn something.
+- Yeah.
+
+00:14:01.650 --> 00:14:03.570
+- Anytime you go back to the model
+
+00:14:03.570 --> 00:14:04.860
+or back and forth with the model,
+
+00:14:04.860 --> 00:14:06.780
+you learn something about what's going on.
+
+00:14:06.780 --> 00:14:08.820
+I think you're giving away information
+
+00:14:08.820 --> 00:14:10.120
+if you don't at least try.
+
+00:14:11.370 --> 00:14:12.660
+- That's interesting.
+
+00:14:12.660 --> 00:14:15.960
+Amanda, I'm gonna keep asking
+you a few more questions here.
+
+00:14:15.960 --> 00:14:18.870
+One thing maybe for
+everybody watching this,
+
+00:14:18.870 --> 00:14:20.940
+is we have these Slack
+channels at Anthropic
+
+00:14:20.940 --> 00:14:24.810
+where people can add Claude
+into the Slack channel,
+
+00:14:24.810 --> 00:14:26.340
+then you can talk to Claude through it.
+
+00:14:26.340 --> 00:14:28.830
+And Amanda has a Slack channel
+
+00:14:28.830 --> 00:14:32.280
+that a lot of people follow of
+her interactions with Claude.
+
+00:14:32.280 --> 00:14:34.890
+And one thing that I see
+you always do in there,
+
+00:14:34.890 --> 00:14:37.560
+which you probably do the
+most of anyone at Anthropic,
+
+00:14:37.560 --> 00:14:41.610
+is use the model to help you
+
+00:14:41.610 --> 00:14:42.810
+in a variety of different scenarios.
+
+00:14:42.810 --> 00:14:45.290
+I think you put a lot
+of trust into the model
+
+00:14:45.290 --> 00:14:47.190
+in the research setting.
+
+00:14:47.190 --> 00:14:49.980
+I'm curious how you've
+developed those intuitions
+
+00:14:49.980 --> 00:14:51.470
+for when to trust the model.
+
+00:14:51.470 --> 00:14:53.340
+Is that just a matter of usage,
+
+00:14:53.340 --> 00:14:55.950
+experience or is it something else?
+
+00:14:55.950 --> 00:14:59.340
+- I think I don't trust the model ever
+
+00:14:59.340 --> 00:15:00.900
+and then I just hammer on it.
+
+00:15:00.900 --> 00:15:02.820
+So I think the reason why
+you see me do that a lot,
+
+00:15:02.820 --> 00:15:04.537
+is that that is me being like,
+
+00:15:04.537 --> 00:15:06.017
+"Can I trust you to do this task?"
+
+00:15:06.017 --> 00:15:08.550
+'Cause there's some things,
+models are kind of strange.
+
+00:15:08.550 --> 00:15:11.035
+If you go slightly out of distribution,
+
+00:15:11.035 --> 00:15:14.070
+you just go into areas where
+they haven't been trained
+
+00:15:14.070 --> 00:15:15.120
+or they're unusual.
+
+00:15:15.120 --> 00:15:15.953
+Sometimes you're like,
+
+00:15:15.953 --> 00:15:17.460
+"Actually, you're much less reliable here,
+
+00:15:17.460 --> 00:15:20.157
+even though it's a fairly simple task."
+
+00:15:21.030 --> 00:15:22.770
+I think that's happening
+less and less over time
+
+00:15:22.770 --> 00:15:23.700
+as models get better,
+
+00:15:23.700 --> 00:15:26.040
+but you want to make sure you're
+not in that kind of space.
+
+00:15:26.040 --> 00:15:28.200
+So, yeah, I don't think
+I trust it by default,
+
+00:15:28.200 --> 00:15:29.970
+but I think in ML,
+
+00:15:29.970 --> 00:15:33.210
+people often want to look
+across really large datasets.
+
+00:15:33.210 --> 00:15:35.400
+And I'm like, "When does
+it make sense to do that?"
+
+00:15:35.400 --> 00:15:38.070
+And I think the answer is when
+you get relatively low signal
+
+00:15:38.070 --> 00:15:39.900
+from each data point,
+
+00:15:39.900 --> 00:15:42.420
+you want to look across
+many, many data points,
+
+00:15:42.420 --> 00:15:44.670
+because you basically want
+to get rid of the noise.
+
+00:15:44.670 --> 00:15:46.020
+With a lot of prompting tasks,
+
+00:15:46.020 --> 00:15:49.860
+I think you actually get really
+high signal from each query.
+
+00:15:49.860 --> 00:15:52.320
+So if you have a really
+well-constructed set
+
+00:15:52.320 --> 00:15:53.610
+of a few hundred prompts,
+
+00:15:53.610 --> 00:15:55.800
+that I think can be much more signal
+
+00:15:55.800 --> 00:15:59.340
+than thousands that
+aren't as well-crafted.
+
+00:15:59.340 --> 00:16:02.880
+So I do think that I can trust the model
+
+00:16:02.880 --> 00:16:06.690
+if I look at 100 outputs of
+it and it's really consistent.
+
+00:16:06.690 --> 00:16:08.040
+And I know that I've constructed those
+
+00:16:08.040 --> 00:16:10.320
+to basically figure out
+all of the edge cases
+
+00:16:10.320 --> 00:16:12.870
+and all of the weird things
+that the model might do,
+
+00:16:12.870 --> 00:16:14.880
+strange inputs, et cetera.
+
+00:16:14.880 --> 00:16:16.710
+I trust that probably more
+
+00:16:16.710 --> 00:16:19.830
+than a much more loosely constructed set
+
+00:16:19.830 --> 00:16:21.153
+of several thousand.
+
+00:16:22.020 --> 00:16:26.763
+- I think in ML, a lot of
+times the signals are numbers.
+
+00:16:29.040 --> 00:16:31.500
+Did you predict this thing right or not?
+
+00:16:31.500 --> 00:16:34.500
+And it'd be looking at
+the logprobs of a model
+
+00:16:34.500 --> 00:16:36.570
+and trying to intuit
+things, which you can do,
+
+00:16:36.570 --> 00:16:38.073
+but it's kind of sketchy.
+
+00:16:39.900 --> 00:16:42.840
+I feel like the fact that models
+output more often than not
+
+00:16:42.840 --> 00:16:44.940
+a lot of stuff like words and things.
+
+00:16:44.940 --> 00:16:47.730
+There's just fundamentally
+so much to learn
+
+00:16:47.730 --> 00:16:50.190
+between the lines of what
+it's writing and why and how,
+
+00:16:50.190 --> 00:16:51.270
+and that's part of what it is.
+
+00:16:51.270 --> 00:16:54.900
+It's not just did it get
+the task right or not?
+
+00:16:54.900 --> 00:16:57.390
+It's like, "How did it get there?
+
+00:16:57.390 --> 00:16:59.100
+How was it thinking about it?
+What steps did it go through?"
+
+00:16:59.100 --> 00:17:01.470
+You learn a lot about what is going on,
+
+00:17:01.470 --> 00:17:04.110
+or at least you can try to
+get a better sense, I think.
+
+00:17:04.110 --> 00:17:05.640
+But that's where a lot of
+information comes from for me,
+
+00:17:05.640 --> 00:17:08.368
+is by reading the
+details of what came out,
+
+00:17:08.368 --> 00:17:09.840
+not just through the result.
+
+00:17:09.840 --> 00:17:14.100
+- I think also the very best of prompting
+
+00:17:14.100 --> 00:17:16.470
+can make the difference between a failed
+
+00:17:16.470 --> 00:17:18.510
+and a successful experiment.
+
+00:17:18.510 --> 00:17:21.000
+So sometimes I can get annoyed
+if people don't focus enough
+
+00:17:21.000 --> 00:17:23.130
+on the prompting component
+of their experiment,
+
+00:17:23.130 --> 00:17:27.000
+because I'm like, "This can,
+in fact, be the difference
+
+00:17:27.000 --> 00:17:29.897
+between 1% performance
+in the model or 0.1%."
+
+00:17:31.560 --> 00:17:33.480
+In such a way that your
+experiment doesn't succeed
+
+00:17:33.480 --> 00:17:35.430
+if it's at top 5% model performance,
+
+00:17:35.430 --> 00:17:39.540
+but it does succeed if
+it's top 1% or top 0.1%.
+
+00:17:39.540 --> 00:17:40.860
+And then I'm like, "If
+you're gonna spend time
+
+00:17:40.860 --> 00:17:43.350
+over coding your experiment really nicely,
+
+00:17:43.350 --> 00:17:46.317
+but then just not spend
+time on the prompt."
+
+00:17:47.496 --> 00:17:48.329
+I don't know.
+
+00:17:48.329 --> 00:17:49.162
+That doesn't make sense to me,
+
+00:17:49.162 --> 00:17:51.000
+'cause that can be the
+difference between life and death
+
+00:17:51.000 --> 00:17:52.038
+of your experiment.
+
+00:17:52.038 --> 00:17:52.871
+- Yeah.
+
+00:17:52.871 --> 00:17:55.687
+And with the deployment
+too, it's so easy to,
+
+00:17:55.687 --> 00:17:57.184
+"Oh, we can't ship this."
+
+00:17:57.184 --> 00:17:58.950
+And then you change the prompt around
+
+00:17:58.950 --> 00:18:00.939
+and suddenly it's working.
+- Yeah.
+
+00:18:00.939 --> 00:18:01.950
+- It's a bit of a
+double-edged sword though,
+
+00:18:01.950 --> 00:18:03.660
+because I feel like there's
+a little bit of prompting
+
+00:18:03.660 --> 00:18:07.260
+where there's always this
+mythical, better prompt
+
+00:18:07.260 --> 00:18:09.420
+that's going to solve
+my thing on the horizon.
+
+00:18:09.420 --> 00:18:10.350
+- Yeah.
+
+00:18:10.350 --> 00:18:11.490
+- I see a lot of people get stuck
+
+00:18:11.490 --> 00:18:13.380
+into the mythical prompt on the horizon,
+
+00:18:13.380 --> 00:18:15.840
+that if I just keep
+grinding, keep grinding.
+
+00:18:15.840 --> 00:18:17.968
+It's never bad to grind
+a little bit on a prompt,
+
+00:18:17.968 --> 00:18:19.980
+as we've talked, you learn things.
+
+00:18:19.980 --> 00:18:22.200
+But it's one of the scary things
+
+00:18:22.200 --> 00:18:25.020
+about prompting is that there's
+this whole world of unknown.
+
+00:18:25.020 --> 00:18:26.340
+- What heuristics do you guys have
+
+00:18:26.340 --> 00:18:30.750
+for when something is
+possible versus not possible
+
+00:18:30.750 --> 00:18:33.060
+with a perfect prompt,
+whatever that might be?
+
+00:18:33.060 --> 00:18:35.250
+- I think I'm usually checking
+
+00:18:35.250 --> 00:18:37.170
+for whether the model kind of gets it.
+
+00:18:37.170 --> 00:18:40.350
+So I think for things where
+I just don't think a prompt
+
+00:18:40.350 --> 00:18:43.560
+is going to help, there is
+a little bit of grinding.
+
+00:18:43.560 --> 00:18:45.180
+But often, it just becomes really clear
+
+00:18:45.180 --> 00:18:47.463
+that it's not close or something.
+
+00:18:49.470 --> 00:18:50.355
+Yeah.
+
+00:18:50.355 --> 00:18:52.867
+I don't know if that's a
+weird one where I'm just like,
+
+00:18:52.867 --> 00:18:55.770
+"Yeah, if the model just
+clearly can't do something,
+
+00:18:55.770 --> 00:18:58.170
+I won't grind on it for too long."
+
+00:18:58.170 --> 00:18:59.430
+- This is the part that you can evoke
+
+00:18:59.430 --> 00:19:00.450
+how it's thinking about it,
+
+00:19:00.450 --> 00:19:02.610
+and you can ask it how it's
+thinking about it and why.
+
+00:19:02.610 --> 00:19:05.730
+And you can get a sense of is
+it thinking about it right?
+
+00:19:05.730 --> 00:19:09.603
+Are we even in the right zip
+code of this being right?
+
+00:19:11.190 --> 00:19:14.160
+And you can get a little bit
+of a kneeling on that front of,
+
+00:19:14.160 --> 00:19:15.780
+at least, I feel like I'm making progress
+
+00:19:15.780 --> 00:19:19.290
+towards getting something closer to right.
+
+00:19:19.290 --> 00:19:20.490
+Where there's just some tasks
+
+00:19:20.490 --> 00:19:23.010
+where you really don't get anywhere closer
+
+00:19:23.010 --> 00:19:24.543
+to it's thought process.
+
+00:19:24.543 --> 00:19:27.060
+It's just like every tweak you make
+
+00:19:27.060 --> 00:19:29.100
+just veers off in a completely different,
+
+00:19:29.100 --> 00:19:31.770
+very wrong direction, and I
+just tend to abandon those.
+
+00:19:31.770 --> 00:19:32.603
+I don't know.
+
+00:19:32.603 --> 00:19:33.670
+- Those are so rare now though,
+
+00:19:33.670 --> 00:19:36.780
+and I get really angry at the
+model when I discover them
+
+00:19:36.780 --> 00:19:38.880
+because that's how rare they are.
+
+00:19:38.880 --> 00:19:39.810
+I get furious.
+
+00:19:39.810 --> 00:19:43.770
+I'm like, "How dare there be
+a task that you can't just do,
+
+00:19:43.770 --> 00:19:45.927
+if I just push you in
+the right direction?"
+
+00:19:46.860 --> 00:19:49.387
+- I had my thing with Claude
+plays Pokemon recently,
+
+00:19:49.387 --> 00:19:51.690
+and that was one of the
+rare times where I really...
+
+00:19:51.690 --> 00:19:52.523
+- Yeah, can you explain that?
+
+00:19:52.523 --> 00:19:54.760
+Explain that just for people.
+I think that's really cool.
+
+00:19:54.760 --> 00:19:56.250
+- I did a bit of an experiment
+
+00:19:56.250 --> 00:19:59.970
+where I hooked Claude up
+to a Game Boy emulator,
+
+00:19:59.970 --> 00:20:02.790
+and tried to have it
+play the game Pokemon Red
+
+00:20:02.790 --> 00:20:05.160
+like the OG Pokemon.
+
+00:20:05.160 --> 00:20:09.210
+And it's like you think what you wanna do
+
+00:20:09.210 --> 00:20:10.980
+and it could write some
+code to press buttons
+
+00:20:10.980 --> 00:20:12.960
+and stuff like that, pretty basic.
+
+00:20:12.960 --> 00:20:15.360
+And I tried a bunch of
+different very complex
+
+00:20:15.360 --> 00:20:18.060
+prompting layouts, but you
+just get into certain spots
+
+00:20:18.060 --> 00:20:21.090
+where it just really couldn't do it.
+
+00:20:21.090 --> 00:20:24.330
+So showing it a screenshot of a Game Boy,
+
+00:20:24.330 --> 00:20:26.550
+it just really couldn't do.
+
+00:20:26.550 --> 00:20:28.860
+And it just so deeply
+because I'm so used to it,
+
+00:20:28.860 --> 00:20:32.073
+being able to do something mostly.
+
+00:20:32.910 --> 00:20:37.230
+So I spent a whole weekend
+trying to write better
+
+00:20:37.230 --> 00:20:38.300
+and better prompts to get it
+
+00:20:38.300 --> 00:20:41.490
+to really understand this Game Boy screen.
+
+00:20:41.490 --> 00:20:44.280
+And I got incrementally better
+so that it was only terrible
+
+00:20:44.280 --> 00:20:46.304
+instead of completely no signal.
+
+00:20:46.304 --> 00:20:48.504
+You could get from no
+signal to some signal.
+
+00:20:49.440 --> 00:20:53.790
+But it was, I don't know, at
+least this is elicited for me.
+
+00:20:53.790 --> 00:20:56.400
+Once I put a weekend of time
+in and I got from no signal
+
+00:20:56.400 --> 00:20:58.573
+to some signal, but nowhere
+close to good enough,
+
+00:20:58.573 --> 00:21:00.721
+I'm like, "I'm just going
+to wait for the next one.
+
+00:21:00.721 --> 00:21:01.554
+(Alex laughing)
+
+00:21:01.554 --> 00:21:02.513
+I'm just gonna wait for another model."
+
+00:21:02.513 --> 00:21:04.860
+I could grind on this for four months,
+
+00:21:04.860 --> 00:21:07.410
+and the thing that would
+come out is another model
+
+00:21:07.410 --> 00:21:09.030
+and that's a better use of my time.
+
+00:21:09.030 --> 00:21:11.831
+Just sit and wait to do
+something else in the meanwhile.
+
+00:21:11.831 --> 00:21:12.664
+- Yeah.
+
+00:21:12.664 --> 00:21:14.580
+That's an inherent tension
+we see all the time,
+
+00:21:14.580 --> 00:21:16.380
+and maybe we can get to that in a sec.
+
+00:21:16.380 --> 00:21:17.550
+Zack, if you wanna go.
+
+00:21:17.550 --> 00:21:19.590
+- Something I liked about
+your prompt with Pokemon
+
+00:21:19.590 --> 00:21:22.200
+where you got the best that you did get,
+
+00:21:22.200 --> 00:21:24.480
+was the way that you
+explained to the model
+
+00:21:24.480 --> 00:21:27.390
+that it is in the middle
+of this Pokemon game.
+
+00:21:27.390 --> 00:21:29.740
+Here's how the things
+are gonna be represented.
+
+00:21:33.870 --> 00:21:35.130
+I actually think you
+actually represented it
+
+00:21:35.130 --> 00:21:36.360
+in two different ways, right?
+
+00:21:36.360 --> 00:21:37.310
+- I did.
+
+00:21:37.310 --> 00:21:40.020
+So what I ended up doing, it was obnoxious
+
+00:21:40.020 --> 00:21:44.100
+but I superimposed a grid over the image,
+
+00:21:44.100 --> 00:21:46.800
+and then I had to describe
+each segment of the grid
+
+00:21:46.800 --> 00:21:48.180
+in visual detail.
+
+00:21:48.180 --> 00:21:51.900
+Then I had to reconstruct
+that into an ASCII map
+
+00:21:51.900 --> 00:21:53.760
+and I gave it as much detail as I could.
+
+00:21:53.760 --> 00:21:57.960
+The player character is always
+at location 4, 5 on the grid
+
+00:21:57.960 --> 00:21:58.793
+and stuff like that,
+
+00:21:58.793 --> 00:22:01.383
+and you can slowly build up information.
+
+00:22:02.340 --> 00:22:03.540
+I think it's actually
+a lot like prompting,
+
+00:22:03.540 --> 00:22:05.340
+but I just hadn't done
+it with images before.
+
+00:22:05.340 --> 00:22:08.970
+Where sometimes my intuition
+
+00:22:08.970 --> 00:22:10.770
+for what you need to
+tell a model about text,
+
+00:22:10.770 --> 00:22:11.603
+is a lot different
+
+00:22:11.603 --> 00:22:13.590
+from what you need to
+tell a model about images.
+
+00:22:13.590 --> 00:22:14.880
+- Yeah.
+
+00:22:14.880 --> 00:22:18.330
+- I found a surprisingly
+small number of my intuitions
+
+00:22:18.330 --> 00:22:20.850
+about text have transferred to image.
+
+00:22:20.850 --> 00:22:23.520
+I found that multi-shot
+prompting is not as effective
+
+00:22:23.520 --> 00:22:24.780
+for images and text.
+
+00:22:24.780 --> 00:22:25.613
+I'm not really sure,
+
+00:22:25.613 --> 00:22:27.120
+you can have theoretical
+explanations about why.
+
+00:22:27.120 --> 00:22:30.090
+Maybe there's a few of
+it in the training data,
+
+00:22:30.090 --> 00:22:31.240
+a few examples of that.
+
+00:22:32.220 --> 00:22:33.053
+- Yeah.
+
+00:22:33.053 --> 00:22:34.800
+I know when we were doing
+the original explorations
+
+00:22:34.800 --> 00:22:36.300
+with prompting multimodal,
+
+00:22:36.300 --> 00:22:39.873
+we really couldn't get
+it to noticeably work.
+
+00:22:40.980 --> 00:22:44.370
+You just can't seem to
+improve Claude's actual,
+
+00:22:44.370 --> 00:22:47.673
+visual acuity in terms of what
+it picks up within an image.
+
+00:22:48.990 --> 00:22:51.690
+Anyone here has any ways that
+they've not seen that feature.
+
+00:22:51.690 --> 00:22:53.970
+But it seems like that's
+similar with the Pokemon thing
+
+00:22:53.970 --> 00:22:55.320
+where it's trying to interpret this thing.
+
+00:22:55.320 --> 00:22:57.920
+No matter how much you
+throw prompts at it,
+
+00:22:57.920 --> 00:23:01.200
+it just won't pick up that
+Ash that's in that location.
+
+00:23:01.200 --> 00:23:02.033
+- Yeah.
+
+00:23:02.033 --> 00:23:03.840
+But I guess to be visceral about this,
+
+00:23:03.840 --> 00:23:05.010
+I could eventually get it
+
+00:23:05.010 --> 00:23:07.830
+so that it could most often
+tell me where a wall was,
+
+00:23:07.830 --> 00:23:10.170
+and most often tell me
+where the character was.
+
+00:23:10.170 --> 00:23:11.850
+It'd be off by a little bit.
+
+00:23:11.850 --> 00:23:13.110
+But then you get to a point,
+
+00:23:13.110 --> 00:23:15.240
+and this is maybe coming back to knowing
+
+00:23:15.240 --> 00:23:16.290
+when you can't do it.
+
+00:23:17.310 --> 00:23:19.920
+It would describe an NPC,
+and to play a game well,
+
+00:23:19.920 --> 00:23:21.990
+you need to have some sense of continuity.
+
+00:23:21.990 --> 00:23:24.093
+Have I talked to this NPC before?
+
+00:23:25.290 --> 00:23:27.360
+And without that, you really don't,
+
+00:23:27.360 --> 00:23:28.193
+there's nothing you can do.
+
+00:23:28.193 --> 00:23:29.652
+You're just going to
+keep talking to the NPC,
+
+00:23:29.652 --> 00:23:31.890
+'cause like, "Well, maybe
+this is a different NPC."
+
+00:23:31.890 --> 00:23:34.950
+But I would try very hard
+to get it to describe a NPC
+
+00:23:34.950 --> 00:23:37.514
+and it's like, "It's a person."
+
+00:23:37.514 --> 00:23:40.350
+They might be wearing a hat,
+they weren't wearing a hat.
+
+00:23:40.350 --> 00:23:42.390
+And it's like you grind for a while,
+
+00:23:42.390 --> 00:23:46.067
+inflate it to 3000X and just
+crop it to just the NPC,
+
+00:23:46.067 --> 00:23:48.600
+and it's like, "I have
+no idea what this is."
+
+00:23:48.600 --> 00:23:53.600
+It's like I showed it this
+clear, female NPC thing
+
+00:23:54.480 --> 00:23:56.670
+enough times and it just
+got nowhere close to it,
+
+00:23:56.670 --> 00:23:59.010
+and it's like, "Yeah, this
+is a complete lost cause."
+
+00:23:59.010 --> 00:24:00.210
+- Wow, okay.
+
+00:24:00.210 --> 00:24:01.410
+- I really want to try this now.
+
+00:24:01.410 --> 00:24:04.080
+I'm just imagining all
+the things I would try.
+
+00:24:04.080 --> 00:24:08.550
+I don't know, I want you
+to imagine this game art
+
+00:24:08.550 --> 00:24:11.820
+as a real human and just
+describe to me what they're like.
+
+00:24:11.820 --> 00:24:13.710
+What did they look like as
+they look in the mirror?
+
+00:24:13.710 --> 00:24:17.190
+And then just see what the model does.
+
+00:24:17.190 --> 00:24:18.720
+- I tried a lot of things.
+
+00:24:18.720 --> 00:24:20.087
+The eventual prompt was telling Claude
+
+00:24:20.087 --> 00:24:23.640
+it was a screen reader for a blind person,
+
+00:24:23.640 --> 00:24:24.513
+which I don't know if that helped,
+
+00:24:24.513 --> 00:24:26.970
+but it felt right so I stuck with that.
+
+00:24:26.970 --> 00:24:27.943
+- That's an interesting point.
+
+00:24:27.943 --> 00:24:29.850
+I actually wanna go into this a little bit
+
+00:24:29.850 --> 00:24:32.340
+'cause this is one of the
+most famous prompting tips,
+
+00:24:32.340 --> 00:24:35.880
+is to tell the language model
+that they are some persona
+
+00:24:35.880 --> 00:24:36.873
+or some role.
+
+00:24:37.954 --> 00:24:39.270
+I feel like I see mixed results.
+
+00:24:39.270 --> 00:24:41.610
+Maybe this worked a little
+bit better in previous models
+
+00:24:41.610 --> 00:24:43.620
+and maybe not as much anymore.
+
+00:24:43.620 --> 00:24:47.130
+Amanda, I see you all the time
+be very honest with the model
+
+00:24:47.130 --> 00:24:48.397
+about the whole situation like,
+
+00:24:48.397 --> 00:24:51.570
+"Oh, I am an AI researcher and
+I'm doing this experiment."
+
+00:24:51.570 --> 00:24:52.740
+- I'll tell it who I am.
+- Yeah.
+
+00:24:52.740 --> 00:24:53.573
+- I'll give it my name,
+
+00:24:53.573 --> 00:24:54.856
+be like, "Here's who you're talking to."
+
+00:24:54.856 --> 00:24:55.689
+- Right.
+
+00:24:55.689 --> 00:24:57.150
+Do you think that level of honesty,
+
+00:24:57.150 --> 00:25:01.027
+instead of lying to the
+model or forcing it to like,
+
+00:25:01.027 --> 00:25:03.870
+"I'm gonna tip you $500."
+
+00:25:03.870 --> 00:25:06.750
+Is there one method
+that's preferred there,
+
+00:25:06.750 --> 00:25:09.240
+or just what's your intuition on that?
+
+00:25:09.240 --> 00:25:10.073
+- Yeah.
+
+00:25:10.073 --> 00:25:12.540
+I think as models are more
+capable and understand more
+
+00:25:12.540 --> 00:25:13.800
+about the world, I guess,
+
+00:25:13.800 --> 00:25:18.360
+I just don't see it as
+necessary to lie to them.
+
+00:25:18.360 --> 00:25:20.460
+I also don't like lying to the models
+
+00:25:20.460 --> 00:25:23.100
+just 'cause I don't like lying generally.
+
+00:25:23.100 --> 00:25:26.130
+But part of me is if you
+are, say, constructing.
+
+00:25:26.130 --> 00:25:28.260
+Suppose you're constructing
+an eval dataset
+
+00:25:28.260 --> 00:25:32.310
+for a machine learning system
+or for a language model.
+
+00:25:32.310 --> 00:25:35.070
+That's very different
+from constructing a quiz
+
+00:25:35.070 --> 00:25:36.840
+for some children.
+
+00:25:36.840 --> 00:25:38.797
+So when people would do things like,
+
+00:25:38.797 --> 00:25:42.030
+"I am a teacher trying to figure
+out questions for a quiz."
+
+00:25:42.030 --> 00:25:44.967
+I'm like, "The model knows
+what language model evals are."
+
+00:25:45.921 --> 00:25:47.533
+If you ask it about different
+evals it can tell you,
+
+00:25:47.533 --> 00:25:50.220
+and it can give you made up
+examples of what they look like.
+
+00:25:50.220 --> 00:25:52.410
+'Cause these things are
+like they understand them,
+
+00:25:52.410 --> 00:25:54.090
+they're on the internet.
+
+00:25:54.090 --> 00:25:54.923
+So I'm like,
+
+00:25:54.923 --> 00:25:56.970
+"I'd much rather just target
+the actual task that I have."
+
+00:25:56.970 --> 00:25:59.640
+So if you're like, "I want
+you to construct questions
+
+00:25:59.640 --> 00:26:02.377
+that look a lot like an
+evaluation of a language model."
+
+00:26:02.377 --> 00:26:05.670
+It's that whole thing
+of clear communication.
+
+00:26:05.670 --> 00:26:07.320
+I'm like, "That is, in
+fact, the task I want to do.
+
+00:26:07.320 --> 00:26:08.610
+So why would I pretend to you
+
+00:26:08.610 --> 00:26:11.040
+that I want to do some unrelated,
+
+00:26:11.040 --> 00:26:13.590
+or only tangentially related task?"
+
+00:26:13.590 --> 00:26:14.957
+And then expect you to
+somehow do better at the task
+
+00:26:14.957 --> 00:26:16.650
+that I actually want you to do.
+
+00:26:16.650 --> 00:26:18.060
+We don't do this with employees.
+
+00:26:18.060 --> 00:26:21.247
+I wouldn't go to someone that
+worked with me and be like,
+
+00:26:21.247 --> 00:26:25.260
+"You are a teacher and you're
+trying to quiz your students."
+
+00:26:25.260 --> 00:26:28.230
+I'd be like, "Hey, are you
+making that eval?" I don't know.
+
+00:26:28.230 --> 00:26:31.057
+So I think maybe it's a heuristic
+from there where I'm like,
+
+00:26:31.057 --> 00:26:32.010
+"If they understand the thing,
+
+00:26:32.010 --> 00:26:33.450
+just ask them to do the
+thing that you want."
+
+00:26:33.450 --> 00:26:34.749
+- I see this so much.
+- I guess
+
+00:26:34.749 --> 00:26:36.570
+to push back a little bit,
+
+00:26:36.570 --> 00:26:40.260
+I have found cases where not exactly lying
+
+00:26:40.260 --> 00:26:41.850
+but giving it a metaphor
+
+00:26:41.850 --> 00:26:43.350
+for how to think about it could help.
+
+00:26:43.350 --> 00:26:45.570
+In the same way that sometimes
+I might not understand
+
+00:26:45.570 --> 00:26:46.627
+how to do something and someone's like,
+
+00:26:46.627 --> 00:26:47.970
+"Imagine that you were doing this,
+
+00:26:47.970 --> 00:26:49.680
+even though I know I'm not doing it."
+
+00:26:49.680 --> 00:26:50.880
+The one that comes to mind for me,
+
+00:26:50.880 --> 00:26:54.510
+is I was trying to have
+Claude say whether an image
+
+00:26:54.510 --> 00:26:57.261
+of a chart or a graph is good or not.
+
+00:26:57.261 --> 00:26:59.250
+Is it high quality?
+
+00:26:59.250 --> 00:27:02.040
+And the best prompt that I found for this
+
+00:27:02.040 --> 00:27:05.970
+was asking the model what
+grade it would give the chart,
+
+00:27:05.970 --> 00:27:09.780
+if it were submitted as
+a high school assignment.
+
+00:27:09.780 --> 00:27:13.020
+So it's not exactly saying,
+"You are a high school teacher."
+
+00:27:13.020 --> 00:27:17.820
+It's more like, "This
+is the kind of analysis
+
+00:27:17.820 --> 00:27:20.070
+that I'm looking from for you."
+
+00:27:20.070 --> 00:27:22.830
+The scale that a teacher would
+use is similar to the scale
+
+00:27:22.830 --> 00:27:24.363
+that I want you to use.
+
+00:27:25.248 --> 00:27:27.090
+- But I think those
+metaphors are pretty hard
+
+00:27:27.090 --> 00:27:27.923
+to still come up with.
+
+00:27:27.923 --> 00:27:30.960
+I think people still, the
+default you see all the time
+
+00:27:30.960 --> 00:27:33.570
+is finding some facsimile of the task.
+
+00:27:33.570 --> 00:27:35.874
+Something that's a very similar-ish task,
+
+00:27:35.874 --> 00:27:38.490
+like saying you're a teacher.
+
+00:27:38.490 --> 00:27:40.050
+You actually just lose a lot
+
+00:27:40.050 --> 00:27:41.730
+in the nuance of what your product is.
+
+00:27:41.730 --> 00:27:43.680
+I see this so much in enterprise prompts
+
+00:27:43.680 --> 00:27:46.890
+where people write something similar,
+
+00:27:46.890 --> 00:27:48.510
+because they have this intuition
+
+00:27:48.510 --> 00:27:51.720
+that it's something the
+model has seen more of maybe.
+
+00:27:51.720 --> 00:27:56.370
+It's seen more high school
+quizzes than it has LLM evals,
+
+00:27:56.370 --> 00:27:58.680
+and that may be true.
+
+00:27:58.680 --> 00:28:01.170
+But to your point, as
+the models get better,
+
+00:28:01.170 --> 00:28:05.250
+I think just trying to
+be very prescriptive
+
+00:28:05.250 --> 00:28:07.170
+about exactly the situation they're in.
+
+00:28:07.170 --> 00:28:09.060
+I give people that advice all the time.
+
+00:28:09.060 --> 00:28:11.970
+Which isn't to say that I
+don't think to the extent
+
+00:28:11.970 --> 00:28:16.530
+that it is true that
+thinking about it the way
+
+00:28:16.530 --> 00:28:17.820
+that someone would grade a chart,
+
+00:28:17.820 --> 00:28:19.860
+as how they would grade
+a high school chart,
+
+00:28:19.860 --> 00:28:21.270
+maybe that's true.
+
+00:28:21.270 --> 00:28:25.199
+But it's awkwardly the shortcut
+people use a lot of times
+
+00:28:25.199 --> 00:28:26.032
+to try to get what happens,
+
+00:28:26.032 --> 00:28:28.560
+so I'll try to get someone
+that I can actually talk about
+
+00:28:28.560 --> 00:28:29.910
+'cause I think it's somewhat interesting.
+
+00:28:29.910 --> 00:28:34.910
+So writing you are a helpful assistant,
+
+00:28:35.730 --> 00:28:40.730
+writing a draft of a document,
+it's not quite what you are.
+
+00:28:41.580 --> 00:28:44.460
+You are in this product, so tell me.
+
+00:28:44.460 --> 00:28:47.250
+If you're writing an
+assistant that's in a product,
+
+00:28:47.250 --> 00:28:48.510
+tell me I'm in the product.
+
+00:28:48.510 --> 00:28:51.510
+Tell me I'm writing on
+behalf of this company,
+
+00:28:51.510 --> 00:28:52.980
+I'm embedded in this product.
+
+00:28:52.980 --> 00:28:55.593
+I'm the support chat
+window on that product.
+
+00:28:56.700 --> 00:28:59.840
+You're a language model, you're
+not a human, that's fine.
+
+00:28:59.840 --> 00:29:01.650
+But just being really prescriptive
+
+00:29:01.650 --> 00:29:05.430
+about the exact context about
+where something is being used.
+
+00:29:05.430 --> 00:29:06.510
+I found a lot of that.
+
+00:29:06.510 --> 00:29:09.120
+Because I guess my concern
+most often with role prompting,
+
+00:29:09.120 --> 00:29:12.060
+is people used it as a shortcut
+
+00:29:12.060 --> 00:29:13.950
+of a similar task they
+want the model to do.
+
+00:29:13.950 --> 00:29:14.783
+And then they're surprised
+
+00:29:14.783 --> 00:29:16.800
+when Claude doesn't do their task right,
+
+00:29:16.800 --> 00:29:18.450
+but it's not the task.
+
+00:29:18.450 --> 00:29:21.360
+You told it to do some other task.
+
+00:29:21.360 --> 00:29:23.130
+And if you didn't give it
+the details about your task,
+
+00:29:23.130 --> 00:29:24.960
+I feel like you're leaving
+something on the table.
+
+00:29:24.960 --> 00:29:28.410
+So I don't know, it does
+feel like a thing though
+
+00:29:28.410 --> 00:29:31.230
+to your point of as the models scale.
+
+00:29:31.230 --> 00:29:32.490
+Maybe in the past it was true
+
+00:29:32.490 --> 00:29:35.730
+that they only really had
+a strong understanding
+
+00:29:35.730 --> 00:29:39.240
+of elementary school tests comparatively.
+
+00:29:39.240 --> 00:29:42.690
+But as they get smarter and
+can differentiate more topics,
+
+00:29:42.690 --> 00:29:44.310
+I don't know, just like being clear.
+
+00:29:44.310 --> 00:29:45.143
+- I find it interesting
+
+00:29:45.143 --> 00:29:47.220
+that I've never used
+this prompting technique.
+
+00:29:47.220 --> 00:29:48.270
+- Yeah, that's funny.
+
+00:29:49.110 --> 00:29:50.727
+- Even with worse models
+
+00:29:50.727 --> 00:29:53.760
+and I still just don't ever
+find myself, I don't know why.
+
+00:29:53.760 --> 00:29:57.060
+I'm just like, "I don't find
+it very good essentially."
+
+00:29:57.060 --> 00:29:58.200
+- Interesting.
+
+00:29:58.200 --> 00:30:00.513
+- I feel like completion era models,
+
+00:30:01.440 --> 00:30:03.420
+there was a little bit of a mental model
+
+00:30:03.420 --> 00:30:07.590
+of conditioning the
+model into a latent space
+
+00:30:07.590 --> 00:30:10.140
+that was useful that I worried about,
+
+00:30:10.140 --> 00:30:12.831
+that I don't really worry
+about too much anymore.
+
+00:30:12.831 --> 00:30:15.720
+- It might be intuitions
+from pretrained models
+
+00:30:15.720 --> 00:30:20.100
+over to RLHF models, that to
+me, just didn't make sense.
+
+00:30:20.100 --> 00:30:22.229
+It makes sense to me if
+you're prompting a pretrained.
+
+00:30:22.229 --> 00:30:23.310
+- You'd be amazed how many people
+
+00:30:23.310 --> 00:30:25.260
+try to apply their intuitions.
+
+00:30:25.260 --> 00:30:27.090
+I think it's not that surprising.
+
+00:30:27.090 --> 00:30:29.550
+Most people haven't really experimented
+
+00:30:29.550 --> 00:30:31.563
+with the full what is a pretrained model?
+
+00:30:31.563 --> 00:30:34.590
+What happens after you do SL?
+
+00:30:34.590 --> 00:30:37.923
+What happens after you do RLHF, whatever?
+
+00:30:39.270 --> 00:30:41.310
+So when I talk to customers,
+
+00:30:41.310 --> 00:30:44.467
+it's all the time that they're
+trying to map some amount of,
+
+00:30:44.467 --> 00:30:46.980
+"Oh, how much of this was on the internet?
+
+00:30:46.980 --> 00:30:48.840
+Have they seen a ton of
+this on the internet?"
+
+00:30:48.840 --> 00:30:51.270
+You just hear that intuition a lot,
+
+00:30:51.270 --> 00:30:54.030
+and I think it's
+well-founded fundamentally.
+
+00:30:54.030 --> 00:30:56.980
+But it is overapplied
+
+00:30:58.290 --> 00:30:59.490
+by the time you actually get to a prompt,
+
+00:30:59.490 --> 00:31:00.990
+because of what you said.
+
+00:31:00.990 --> 00:31:02.910
+By the time they've gone
+through all of this other stuff,
+
+00:31:02.910 --> 00:31:05.100
+that's not actually quite
+what's being modeled.
+
+00:31:05.100 --> 00:31:05.933
+- Yeah.
+
+00:31:05.933 --> 00:31:08.520
+The first thing that I feel
+like you should try is,
+
+00:31:08.520 --> 00:31:10.140
+I used to give people
+this thought experiment
+
+00:31:10.140 --> 00:31:13.530
+where it's like imagine
+you have this task.
+
+00:31:13.530 --> 00:31:18.060
+You've hired a temp agency to
+send someone to do this task.
+
+00:31:18.060 --> 00:31:21.120
+This person arrives, you know
+they're pretty competent.
+
+00:31:21.120 --> 00:31:23.310
+They know a lot about your
+industry and so forth,
+
+00:31:23.310 --> 00:31:25.080
+but they don't know the
+name of your company.
+
+00:31:25.080 --> 00:31:26.407
+They've literally just
+shown up and they're like,
+
+00:31:26.407 --> 00:31:29.760
+"Hey, I was told you guys
+had a job for me to do,
+
+00:31:29.760 --> 00:31:30.630
+tell me about it."
+
+00:31:30.630 --> 00:31:33.030
+And then it's like, "What
+would you say to that person?"
+
+00:31:33.030 --> 00:31:34.530
+And you might use these metaphors.
+
+00:31:34.530 --> 00:31:37.854
+You might say things like,
+
+00:31:37.854 --> 00:31:41.640
+"We want you to detect good charts.
+
+00:31:41.640 --> 00:31:42.900
+What we mean by a good chart here,
+
+00:31:42.900 --> 00:31:44.220
+is it doesn't need to be perfect.
+
+00:31:44.220 --> 00:31:45.450
+You don't need to go look up
+
+00:31:45.450 --> 00:31:47.130
+whether all of the details are correct."
+
+00:31:47.130 --> 00:31:50.730
+It just needs to have its axes labeled,
+
+00:31:50.730 --> 00:31:55.320
+and so think about maybe high
+school level, good chart.
+
+00:31:55.320 --> 00:31:56.970
+You may say exactly that to that person
+
+00:31:56.970 --> 00:31:59.100
+and you're not saying to
+them, "You are a high school."
+
+00:31:59.100 --> 00:32:00.000
+You wouldn't say that to them.
+
+00:32:00.000 --> 00:32:01.281
+You wouldn't be like,
+
+00:32:01.281 --> 00:32:02.717
+"You're a high school
+teacher reading charts."
+
+00:32:04.260 --> 00:32:05.496
+- What are you talking about?
+
+00:32:05.496 --> 00:32:10.200
+- Yeah, so sometimes I'm
+just like it's like the whole
+
+00:32:10.200 --> 00:32:11.033
+if I read it.
+
+00:32:11.033 --> 00:32:11.866
+I'm just like, "Yeah.
+
+00:32:11.866 --> 00:32:13.590
+Imagine this person who just
+has very little context,
+
+00:32:13.590 --> 00:32:14.640
+but they're quite competent.
+
+00:32:14.640 --> 00:32:16.830
+They understand a lot of
+things about the world."
+
+00:32:16.830 --> 00:32:18.660
+Try the first version
+that actually assumes
+
+00:32:18.660 --> 00:32:20.040
+that they might know
+things about the world,
+
+00:32:20.040 --> 00:32:22.470
+and if that doesn't work, you
+can maybe do tweaks and stuff.
+
+00:32:22.470 --> 00:32:24.840
+But so often, the first
+thing I try is that,
+
+00:32:24.840 --> 00:32:26.458
+and then I'm like, "That just worked."
+
+00:32:26.458 --> 00:32:27.291
+- That worked.
+
+00:32:27.291 --> 00:32:28.124
+- And then people are like,
+
+00:32:28.124 --> 00:32:30.150
+"Oh, I didn't think to just
+tell it all about myself
+
+00:32:30.150 --> 00:32:31.500
+and all about the task I want to do."
+
+00:32:31.500 --> 00:32:33.960
+- I've carried this
+thing that Alex told me
+
+00:32:33.960 --> 00:32:35.802
+to so many customers where they're like,
+
+00:32:35.802 --> 00:32:37.050
+"Oh, my prompt doesn't work.
+
+00:32:37.050 --> 00:32:37.890
+Can you help me fix it?"
+
+00:32:37.890 --> 00:32:40.680
+I'm like, "Well, can you describe
+to me what the task was?"
+
+00:32:40.680 --> 00:32:41.513
+And I'm like, "Okay.
+
+00:32:41.513 --> 00:32:42.600
+Now what you just said to me,
+
+00:32:42.600 --> 00:32:45.391
+just voice record that
+and then transcribe it."
+
+00:32:45.391 --> 00:32:47.220
+And then paste it into the prompt
+
+00:32:47.220 --> 00:32:49.820
+and it's a better prompt
+than what you wrote,
+
+00:32:49.820 --> 00:32:52.740
+but this is a laziness shortcut,
+I think, to some extent.
+
+00:32:52.740 --> 00:32:55.590
+Because people write
+something that they...
+
+00:32:55.590 --> 00:32:57.750
+I just think people, I'm lazy.
+A lot of people are lazy.
+
+00:32:57.750 --> 00:32:59.760
+- We had that in prompt
+assistance the other day
+
+00:32:59.760 --> 00:33:01.297
+where somebody was like,
+
+00:33:01.297 --> 00:33:03.000
+"Here's the thing, here's
+what I want it to do,
+
+00:33:03.000 --> 00:33:05.160
+and here's what it's
+actually doing instead."
+
+00:33:05.160 --> 00:33:06.720
+So then I just literally copied the thing
+
+00:33:06.720 --> 00:33:07.680
+that they said they wanted it to do,
+
+00:33:07.680 --> 00:33:09.318
+and pasted it in and it worked.
+
+00:33:09.318 --> 00:33:11.917
+- Yeah.
+
+00:33:11.917 --> 00:33:13.470
+I think a lot of people still
+
+00:33:13.470 --> 00:33:15.030
+haven't quite wrapped their heads
+
+00:33:15.030 --> 00:33:17.520
+around what they're really
+doing when they're prompting.
+
+00:33:17.520 --> 00:33:19.320
+A lot of people see a text box
+
+00:33:19.320 --> 00:33:21.330
+and they think it's a Google search box.
+
+00:33:21.330 --> 00:33:22.410
+They type in keywords
+
+00:33:22.410 --> 00:33:24.360
+and maybe that's more on the chat side.
+
+00:33:24.360 --> 00:33:26.820
+But then on the enterprise side of things,
+
+00:33:26.820 --> 00:33:29.370
+you're writing a prompt
+for an application.
+
+00:33:29.370 --> 00:33:31.710
+There is still this weird thing to it
+
+00:33:31.710 --> 00:33:34.230
+where people are trying to
+take all these little shortcuts
+
+00:33:34.230 --> 00:33:35.827
+in their prompt, and just thinking that,
+
+00:33:35.827 --> 00:33:37.710
+"Oh, this line carries a
+lot of weight in this."
+
+00:33:37.710 --> 00:33:38.824
+- Yeah.
+
+00:33:38.824 --> 00:33:40.830
+I think you obsess over
+getting the perfect little line
+
+00:33:40.830 --> 00:33:42.240
+of information and instruction,
+
+00:33:42.240 --> 00:33:45.360
+as opposed to how you just
+described that graph thing.
+
+00:33:45.360 --> 00:33:48.570
+I would be a dream if I
+read prompts like that.
+
+00:33:48.570 --> 00:33:50.370
+If someone's like, "Well,
+you do this and this,
+
+00:33:50.370 --> 00:33:52.740
+and there's some stuff to
+consider about this and all that."
+
+00:33:52.740 --> 00:33:54.120
+But that's just not how
+people write prompts.
+
+00:33:54.120 --> 00:33:58.200
+They work so hard to find
+the perfect, insightful.
+
+00:33:58.200 --> 00:34:02.100
+A perfect graph looks exactly
+like this exact perfect thing,
+
+00:34:02.100 --> 00:34:04.500
+and you can't do that.
+
+00:34:04.500 --> 00:34:05.333
+It's just very hard
+
+00:34:05.333 --> 00:34:08.250
+to ever write that set of
+instructions down prescriptively,
+
+00:34:08.250 --> 00:34:10.230
+as opposed to how we actually
+talk to humans about it,
+
+00:34:10.230 --> 00:34:12.540
+which is try to instill some amount
+
+00:34:12.540 --> 00:34:13.980
+of the intuitions you have.
+
+00:34:13.980 --> 00:34:15.270
+- We also give them outs.
+
+00:34:15.270 --> 00:34:18.510
+This is a thing that people
+can often forget in prompts.
+
+00:34:18.510 --> 00:34:20.340
+So cases, if there's an edge case,
+
+00:34:20.340 --> 00:34:21.630
+think about what you want the model to do.
+
+00:34:21.630 --> 00:34:22.463
+'Cause by default,
+
+00:34:22.463 --> 00:34:24.240
+it will try the best to
+follow your instructions,
+
+00:34:24.240 --> 00:34:26.640
+much as the person from
+the temp agency would,
+
+00:34:26.640 --> 00:34:27.473
+'cause they're like,
+
+00:34:27.473 --> 00:34:30.120
+"Well, they didn't tell me how
+to get in touch with anyone."
+
+00:34:30.120 --> 00:34:32.377
+If I'm just given a picture
+of a goat and I'm like,
+
+00:34:32.377 --> 00:34:33.953
+"What do I do?
+
+00:34:33.953 --> 00:34:35.850
+This isn't even a chart.
+
+00:34:35.850 --> 00:34:38.370
+How good is a picture
+of a goat as a chart?"
+
+00:34:38.370 --> 00:34:39.543
+I just don't know.
+
+00:34:40.391 --> 00:34:42.067
+And if you instead say something like,
+
+00:34:42.067 --> 00:34:44.700
+"If something weird happens
+and you're really not sure
+
+00:34:44.700 --> 00:34:47.997
+what to do, just output in tags unsure."
+
+00:34:49.193 --> 00:34:50.340
+Then you can go look through the unsures
+
+00:34:50.340 --> 00:34:52.200
+that you got and be like, "Okay, cool.
+
+00:34:52.200 --> 00:34:53.280
+It didn't do anything weird."
+
+00:34:53.280 --> 00:34:55.980
+Whereas by default, if you don't
+give the person the option,
+
+00:34:55.980 --> 00:34:58.728
+they're like, "It's a good chart."
+
+00:34:58.728 --> 00:35:00.000
+Then people will be
+like, "How do I do that?"
+
+00:35:00.000 --> 00:35:02.340
+And then you're like,
+"Well, give it an out.
+
+00:35:02.340 --> 00:35:03.240
+Give it something to do
+
+00:35:03.240 --> 00:35:05.397
+if it's a really
+unexpected input happens."
+
+00:35:05.397 --> 00:35:07.650
+- And then you also
+improved your data quality
+
+00:35:07.650 --> 00:35:08.483
+by doing that too,
+
+00:35:08.483 --> 00:35:10.366
+'cause you found all
+the screwed up examples.
+
+00:35:10.366 --> 00:35:11.207
+- Oh, yeah.
+
+00:35:11.207 --> 00:35:14.160
+- That's my favorite thing
+about iterating on tests
+
+00:35:14.160 --> 00:35:15.628
+with Claude, is the most common outcome
+
+00:35:15.628 --> 00:35:19.066
+is I find all of the terrible
+tests I accidentally wrote
+
+00:35:19.066 --> 00:35:20.610
+because it gets it wrong.
+
+00:35:20.610 --> 00:35:21.480
+I'm like, "Oh, why did it get wrong?"
+
+00:35:21.480 --> 00:35:22.650
+I was like, "Oh, I was wrong."
+
+00:35:22.650 --> 00:35:25.590
+- Yeah.
+- Yeah.
+
+00:35:25.590 --> 00:35:27.600
+- If I was a company working with this,
+
+00:35:27.600 --> 00:35:30.183
+I do think I would just
+give my prompts to people,
+
+00:35:31.170 --> 00:35:32.850
+because I used to do this
+
+00:35:32.850 --> 00:35:34.950
+when I was evaluating language models.
+
+00:35:34.950 --> 00:35:36.720
+I would take the eval myself.
+
+00:35:36.720 --> 00:35:37.553
+'Cause I'm like,
+
+00:35:37.553 --> 00:35:38.460
+"I need to know what this eval looks like
+
+00:35:38.460 --> 00:35:41.250
+if I'm gonna to be grading
+it, having models take it,
+
+00:35:41.250 --> 00:35:42.900
+thinking about outputs, et cetera."
+
+00:35:42.900 --> 00:35:44.280
+I would actually just
+set up a little script
+
+00:35:44.280 --> 00:35:46.523
+and I would just sit
+and I would do the eval.
+
+00:35:47.610 --> 00:35:50.070
+- Nowadays, you just have
+called the Streamboard app
+
+00:35:50.070 --> 00:35:50.903
+for you.
+
+00:35:50.903 --> 00:35:52.816
+- And just does it, yeah.
+
+00:35:52.816 --> 00:35:56.850
+- Yeah. I'm reminded
+of Karpathy's ImageNet.
+
+00:35:56.850 --> 00:36:01.650
+I was in 231 at Stanford
+and it's like benchmarking,
+
+00:36:01.650 --> 00:36:03.158
+he's showing the accuracy number.
+
+00:36:03.158 --> 00:36:05.070
+And he's like, "And here's
+what my accuracy number was."
+
+00:36:05.070 --> 00:36:06.540
+And he had just gone through the test set
+
+00:36:06.540 --> 00:36:08.200
+and evaluated himself.
+- Oh, yeah.
+
+00:36:08.200 --> 00:36:09.699
+- You just learn a lot.
+- Yeah, totally.
+
+00:36:09.699 --> 00:36:13.110
+- And it's better when it's a, again,
+
+00:36:13.110 --> 00:36:14.100
+the temp agency person,
+
+00:36:14.100 --> 00:36:15.540
+like someone who doesn't know the task,
+
+00:36:15.540 --> 00:36:18.780
+because that's a very
+clean way to learn things.
+
+00:36:18.780 --> 00:36:19.613
+- Yeah.
+
+00:36:19.613 --> 00:36:20.446
+The way you have to do it is,
+
+00:36:20.446 --> 00:36:23.040
+some evaluations come with instructions,
+
+00:36:23.040 --> 00:36:25.620
+and so I would give myself
+those instructions as well
+
+00:36:25.620 --> 00:36:27.843
+and then try to understand it.
+
+00:36:28.920 --> 00:36:30.660
+And it's actually quite great
+if you don't have context
+
+00:36:30.660 --> 00:36:31.683
+on how it's graded.
+
+00:36:32.820 --> 00:36:34.590
+And so often, I would do so much worse
+
+00:36:34.590 --> 00:36:35.423
+than the human benchmark and I was like,
+
+00:36:35.423 --> 00:36:37.860
+"I don't even know how you
+got humans to do this well
+
+00:36:37.860 --> 00:36:41.960
+at this task, 'cause apparently
+human level here is 90%,
+
+00:36:41.960 --> 00:36:45.360
+and I'm at 68%."
+
+00:36:45.360 --> 00:36:46.193
+- That's funny.
+
+00:36:46.193 --> 00:36:49.800
+That reminds me of just when
+you look at the MMLU questions
+
+00:36:49.800 --> 00:36:53.437
+and you're like, "Who would
+be able to answer these?"
+
+00:36:53.437 --> 00:36:56.223
+It's just like absolute
+garbage in some of them.
+
+00:36:57.870 --> 00:36:59.130
+Okay.
+
+00:36:59.130 --> 00:37:01.470
+I have one thing I wanna circle back on
+
+00:37:01.470 --> 00:37:05.730
+that we were talking about
+a few questions back around,
+
+00:37:05.730 --> 00:37:08.797
+I think you were saying getting
+signal from the responses.
+
+00:37:08.797 --> 00:37:12.330
+There's just so much there and
+it's more than just a number,
+
+00:37:12.330 --> 00:37:16.050
+and you can actually read into
+the almost thought process.
+
+00:37:16.050 --> 00:37:19.530
+I bet this is probably a
+little contentious maybe
+
+00:37:19.530 --> 00:37:21.630
+around chain of thought.
+
+00:37:21.630 --> 00:37:23.580
+For people listening, chain of thought,
+
+00:37:23.580 --> 00:37:25.470
+this process of getting them all
+
+00:37:25.470 --> 00:37:27.150
+to actually explain its reasoning
+
+00:37:27.150 --> 00:37:28.713
+before it provides an answer.
+
+00:37:29.640 --> 00:37:31.020
+Is that reasoning real
+
+00:37:31.020 --> 00:37:33.300
+or is it just kind of like a holding space
+
+00:37:33.300 --> 00:37:36.240
+for the model to do computation?
+
+00:37:36.240 --> 00:37:38.700
+Do we actually think there's
+good, insightful signal
+
+00:37:38.700 --> 00:37:41.010
+that we're getting out of the model there?
+
+00:37:41.010 --> 00:37:43.950
+- This is one of the places
+where I struggle with that.
+
+00:37:43.950 --> 00:37:46.530
+I'm normally actually
+somewhat pro-personification
+
+00:37:46.530 --> 00:37:49.950
+because I think it helps
+you get decent facsimiles,
+
+00:37:49.950 --> 00:37:52.020
+thoughts of how the model's working.
+
+00:37:52.020 --> 00:37:55.800
+And this one, I think
+it's harmful maybe almost
+
+00:37:55.800 --> 00:37:59.190
+to get too into the personification
+of what reasoning is,
+
+00:37:59.190 --> 00:38:00.540
+'cause it just loses the thread
+
+00:38:00.540 --> 00:38:02.340
+of what we're trying to do here.
+
+00:38:02.340 --> 00:38:03.210
+Is it reasoning or not?
+
+00:38:03.210 --> 00:38:06.150
+It feels almost like a different question
+
+00:38:06.150 --> 00:38:08.400
+than what's the best prompting technique?
+
+00:38:08.400 --> 00:38:09.990
+It's like you're getting into philosophy,
+
+00:38:09.990 --> 00:38:11.452
+which we can get into.
+
+00:38:11.452 --> 00:38:13.541
+- Yeah, we do have a philosopher.
+
+00:38:13.541 --> 00:38:15.150
+- Yeah.
+
+00:38:15.150 --> 00:38:16.890
+I will happily be beaten
+down by a real philosopher
+
+00:38:16.890 --> 00:38:21.150
+as I try to speculate on this,
+but instead, it just works.
+
+00:38:21.150 --> 00:38:23.100
+Your model does better.
+
+00:38:23.100 --> 00:38:26.670
+The outcome is better if you do reasoning.
+
+00:38:26.670 --> 00:38:30.480
+I think I've found that if
+you structure the reasoning
+
+00:38:30.480 --> 00:38:32.370
+and help iterate with the model
+
+00:38:32.370 --> 00:38:34.920
+on how it should do reasoning,
+it works better too.
+
+00:38:38.400 --> 00:38:39.870
+Whether or not that's reasoning
+
+00:38:39.870 --> 00:38:41.610
+or how you wanted to classify it,
+
+00:38:41.610 --> 00:38:42.990
+you can think of all sorts of proxies
+
+00:38:42.990 --> 00:38:44.670
+for how I would also do really bad
+
+00:38:44.670 --> 00:38:47.910
+if I had to do one-shot math
+without writing anything down.
+
+00:38:47.910 --> 00:38:51.390
+Maybe that's useful, but
+all I really know is,
+
+00:38:51.390 --> 00:38:54.030
+it very obviously does help.
+
+00:38:54.030 --> 00:38:54.863
+I don't know.
+
+00:38:54.863 --> 00:38:55.860
+- A way of testing would be
+
+00:38:55.860 --> 00:38:58.730
+if you take out all the
+reasoning that it did
+
+00:38:58.730 --> 00:39:00.750
+to get to the right
+answer, and then replace it
+
+00:39:00.750 --> 00:39:04.380
+with somewhat, realistic-looking reasoning
+
+00:39:04.380 --> 00:39:05.460
+that led to a wrong answer,
+
+00:39:05.460 --> 00:39:08.040
+and then see if it does
+conclude the wrong answer.
+
+00:39:08.040 --> 00:39:11.133
+I think we actually had a paper
+where we did some of that.
+
+00:39:12.420 --> 00:39:17.420
+There was the scratch pad. It
+was like the Sleeper Agents.
+
+00:39:17.730 --> 00:39:19.440
+- Oh, okay. Alignment papers.
+
+00:39:19.440 --> 00:39:22.320
+- But I think that was
+maybe a weird situation.
+
+00:39:22.320 --> 00:39:27.320
+But definitely what you said
+about structuring the reasoning
+
+00:39:27.597 --> 00:39:30.870
+and writing example of
+how the reasoning works.
+
+00:39:30.870 --> 00:39:32.223
+Given that that helps,
+
+00:39:33.210 --> 00:39:35.640
+like whether we use the
+word reasoning or not,
+
+00:39:35.640 --> 00:39:38.940
+I don't think it's just
+a space for computation.
+
+00:39:38.940 --> 00:39:40.320
+- So there is something there.
+
+00:39:40.320 --> 00:39:41.340
+- I think there's something there,
+
+00:39:41.340 --> 00:39:42.365
+whatever we wanna call it.
+
+00:39:42.365 --> 00:39:43.198
+- Yeah.
+
+00:39:43.198 --> 00:39:45.300
+Having it write a story
+before it finished a task,
+
+00:39:45.300 --> 00:39:46.470
+I do not think would work as well.
+
+00:39:46.470 --> 00:39:48.027
+- I've actually tried that
+
+00:39:48.027 --> 00:39:50.850
+and it didn't work as well as reasoning.
+
+00:39:50.850 --> 00:39:53.100
+- Clearly, the actual reasoning part
+
+00:39:53.100 --> 00:39:55.320
+is doing something towards the outcome.
+
+00:39:55.320 --> 00:39:56.153
+- I've tried like,
+
+00:39:56.153 --> 00:39:59.700
+"Repeat the words um and ah
+in any order that you please
+
+00:39:59.700 --> 00:40:02.218
+for 100 tokens and then answer."
+
+00:40:02.218 --> 00:40:03.051
+- Yeah.
+
+00:40:03.051 --> 00:40:03.884
+I guess that's a pretty thorough defeat
+
+00:40:03.884 --> 00:40:05.430
+of it's just more computational space
+
+00:40:05.430 --> 00:40:06.990
+where it can do attention
+over and over again.
+
+00:40:06.990 --> 00:40:08.460
+I don't think it's just more attention
+
+00:40:08.460 --> 00:40:10.200
+like doing more attention.
+
+00:40:10.200 --> 00:40:11.033
+- I guess the strange thing is,
+
+00:40:11.033 --> 00:40:13.080
+and I don't have an example
+off the top of my head
+
+00:40:13.080 --> 00:40:14.190
+to back this up with.
+
+00:40:14.190 --> 00:40:16.020
+But I definitely have seen it before
+
+00:40:16.020 --> 00:40:18.750
+where it lays out steps,
+one of the steps is wrong,
+
+00:40:18.750 --> 00:40:22.470
+but then it still reaches
+the right answer at the end.
+
+00:40:22.470 --> 00:40:24.360
+So it's not quite, I guess, yeah,
+
+00:40:24.360 --> 00:40:27.480
+we can't really, truly
+personify it as a reasoning,
+
+00:40:27.480 --> 00:40:29.350
+'cause there is some element to it
+
+00:40:31.020 --> 00:40:32.790
+doing something slightly different.
+
+00:40:32.790 --> 00:40:33.623
+- Yeah.
+
+00:40:33.623 --> 00:40:34.590
+I've also met a lot of people
+
+00:40:34.590 --> 00:40:37.680
+who make inconsistent steps of reasoning.
+
+00:40:37.680 --> 00:40:39.163
+- I guess that's true.
+
+00:40:40.065 --> 00:40:42.450
+- It fundamentally defeats
+the topic of reasoning
+
+00:40:42.450 --> 00:40:44.970
+by making a false step on the way there.
+
+00:40:44.970 --> 00:40:46.533
+- All right, it's interesting.
+
+00:40:47.460 --> 00:40:52.050
+Also, on maybe this prompting
+misconceptions round
+
+00:40:52.050 --> 00:40:52.983
+of questions.
+
+00:40:54.060 --> 00:40:57.000
+Zack, I know you have
+strong opinions on this,
+
+00:40:57.000 --> 00:40:59.250
+good grammar, punctuation.
+- Oh, do I?
+
+00:40:59.250 --> 00:41:03.150
+- Is that necessary in a
+prompt? Do you need it?
+
+00:41:03.150 --> 00:41:05.733
+Do you need to format
+everything correctly?
+
+00:41:07.710 --> 00:41:09.120
+- I usually try to do that
+
+00:41:09.120 --> 00:41:13.443
+because I find it fun, I guess, somehow.
+
+00:41:14.490 --> 00:41:16.350
+I don't think you necessarily need to.
+
+00:41:16.350 --> 00:41:17.580
+I don't think it hurts.
+
+00:41:17.580 --> 00:41:18.413
+I think it's more
+
+00:41:18.413 --> 00:41:22.680
+that you should have the
+level of attention to detail
+
+00:41:22.680 --> 00:41:24.880
+that would lead you to
+doing that naturally.
+
+00:41:25.980 --> 00:41:28.050
+If you're just reading
+over your prompt a lot,
+
+00:41:28.050 --> 00:41:29.340
+you'll probably notice those things
+
+00:41:29.340 --> 00:41:31.260
+and you may as well fix them.
+
+00:41:31.260 --> 00:41:33.270
+And like what Amanda was saying,
+
+00:41:33.270 --> 00:41:36.931
+that you wanna put as
+much love into the prompt
+
+00:41:36.931 --> 00:41:38.403
+as you do into the code.
+
+00:41:39.660 --> 00:41:42.150
+People who write a lot of
+code have strong opinions
+
+00:41:42.150 --> 00:41:44.250
+about things that I could
+not care less about.
+
+00:41:44.250 --> 00:41:48.390
+Like the number of tabs versus
+spaces, or I don't know,
+
+00:41:48.390 --> 00:41:50.490
+opinions about which languages are better.
+
+00:41:50.490 --> 00:41:51.960
+And for me,
+
+00:41:51.960 --> 00:41:56.430
+I have opinionated beliefs
+about styling of prompts.
+
+00:41:56.430 --> 00:41:57.960
+I can't even say that
+they're right or wrong,
+
+00:41:57.960 --> 00:42:01.890
+but I think it's probably
+good to try to acquire those,
+
+00:42:01.890 --> 00:42:04.200
+even if they're arbitrary.
+
+00:42:04.200 --> 00:42:06.540
+- I feel personally attacked,
+
+00:42:06.540 --> 00:42:07.373
+'cause I definitely have prompts
+
+00:42:07.373 --> 00:42:09.540
+that are like I feel like
+I'm in the opposite end
+
+00:42:09.540 --> 00:42:10.650
+of the spectrum where
+people will see my prompts.
+
+00:42:10.650 --> 00:42:12.170
+And then be like,
+
+00:42:12.170 --> 00:42:13.647
+"This just has a whole
+bunch of typos in it."
+
+00:42:13.647 --> 00:42:16.130
+And I'm like, "The model
+knows what I mean."
+
+00:42:16.130 --> 00:42:17.277
+- It does, it does know what you mean,
+
+00:42:17.277 --> 00:42:18.570
+but you're putting in the effort,
+
+00:42:18.570 --> 00:42:21.360
+you just are attending
+to different things.
+
+00:42:21.360 --> 00:42:22.193
+- 'Cause part of me is like,
+
+00:42:22.193 --> 00:42:24.993
+I think if it's conceptually
+clear, I'm a big,
+
+00:42:26.070 --> 00:42:27.960
+I will think a lot about
+the concepts and the words
+
+00:42:27.960 --> 00:42:28.793
+that I'm using.
+
+00:42:28.793 --> 00:42:31.620
+So there's definitely a
+sort of care that I put in.
+
+00:42:31.620 --> 00:42:34.080
+But it's definitely not to, yeah,
+
+00:42:34.080 --> 00:42:36.360
+people will just point out
+typos and grammatical issues
+
+00:42:36.360 --> 00:42:37.863
+with my prompts all the time.
+
+00:42:38.700 --> 00:42:39.540
+Now I'm pretty good
+
+00:42:39.540 --> 00:42:42.951
+at actually checking those
+things more regularly.
+
+00:42:42.951 --> 00:42:44.552
+- Is it because of pressure
+from the outside world
+
+00:42:44.552 --> 00:42:46.320
+or because it's actually
+what you think is right?
+
+00:42:46.320 --> 00:42:47.153
+- It's pressure from me.
+
+00:42:47.153 --> 00:42:49.590
+- Yeah, it's probably pressure
+from the outside world.
+
+00:42:49.590 --> 00:42:50.940
+I do think it makes sense.
+
+00:42:50.940 --> 00:42:52.800
+Part of me is like it's
+such an easy check,
+
+00:42:52.800 --> 00:42:54.690
+so I think for a final
+prompt I would do that.
+
+00:42:54.690 --> 00:42:55.890
+But throughout iteration,
+
+00:42:55.890 --> 00:42:57.690
+I'll happily just iterate with prompts
+
+00:42:57.690 --> 00:42:59.947
+that have a bunch of typos in
+them, just 'cause I'm like,
+
+00:42:59.947 --> 00:43:01.830
+"I just don't think that
+the model's going to care."
+
+00:43:01.830 --> 00:43:03.780
+- This gets at the pretrained model
+
+00:43:03.780 --> 00:43:05.160
+versus RLHF thing though,
+
+00:43:05.160 --> 00:43:07.680
+because I was talking
+to Zack on the way over.
+
+00:43:07.680 --> 00:43:10.440
+The conditional probability of a typo
+
+00:43:10.440 --> 00:43:13.950
+based on a previous typo
+in the pretraining data
+
+00:43:13.950 --> 00:43:15.182
+is much higher.
+
+00:43:15.182 --> 00:43:16.782
+- Oh, yeah.
+- Like much higher.
+
+00:43:17.790 --> 00:43:19.770
+- Prompting pretraining models
+is just a different beast.
+
+00:43:19.770 --> 00:43:21.150
+- It is, but it's interesting.
+
+00:43:21.150 --> 00:43:23.370
+I think it's an interesting illustration
+
+00:43:23.370 --> 00:43:26.190
+of why your intuitions,
+
+00:43:26.190 --> 00:43:27.900
+like trying to over-apply the intuitions
+
+00:43:27.900 --> 00:43:29.970
+of a pretrained model to the things
+
+00:43:29.970 --> 00:43:32.280
+that we're actually using in production
+
+00:43:32.280 --> 00:43:33.240
+doesn't work very well.
+
+00:43:33.240 --> 00:43:36.210
+Because again, if you were to pass
+
+00:43:36.210 --> 00:43:38.490
+one of your typo-ridden
+prompts to a pretrained model,
+
+00:43:38.490 --> 00:43:39.960
+the thing that would
+come out the other side,
+
+00:43:39.960 --> 00:43:43.230
+almost assuredly would be typo-ridden.
+
+00:43:43.230 --> 00:43:44.250
+- Right.
+
+00:43:44.250 --> 00:43:47.070
+- I like to leverage this to
+create typo-ridden inputs.
+
+00:43:47.070 --> 00:43:47.903
+- That's true.
+
+00:43:47.903 --> 00:43:50.157
+I've done that.
+- Like what you're saying,
+
+00:43:50.157 --> 00:43:53.580
+try to anticipate what
+your customers will put in.
+
+00:43:53.580 --> 00:43:55.980
+The pretrained model is a
+lot better at doing that.
+
+00:43:55.980 --> 00:43:58.530
+'Cause the RL models are very polished
+
+00:43:58.530 --> 00:44:00.329
+and they really never made a typo
+
+00:44:00.329 --> 00:44:01.770
+in their lives.
+- They've been told
+
+00:44:01.770 --> 00:44:04.530
+pretty aggressively to
+not do the typo thing.
+
+00:44:04.530 --> 00:44:08.100
+- Yeah. Okay, so that's actually
+an interesting segue here.
+
+00:44:08.100 --> 00:44:10.440
+I've definitely mentioned
+this to people in the past
+
+00:44:10.440 --> 00:44:13.320
+around to try to help
+people understand a frame
+
+00:44:13.320 --> 00:44:14.460
+of talking to these models
+
+00:44:14.460 --> 00:44:19.460
+in a sense almost as an
+imitator to a degree.
+
+00:44:19.500 --> 00:44:21.990
+And that might be much more
+true of a pretrained model
+
+00:44:21.990 --> 00:44:26.640
+than a post-trained, full-finished model,
+
+00:44:26.640 --> 00:44:27.870
+but is there anything to that?
+
+00:44:27.870 --> 00:44:28.860
+If you do talk to Claude
+
+00:44:28.860 --> 00:44:30.570
+and use a ton of emojis and everything,
+
+00:44:30.570 --> 00:44:34.770
+it will respond similarly, right?
+
+00:44:34.770 --> 00:44:37.110
+So maybe some of that is
+there, but like you're saying,
+
+00:44:37.110 --> 00:44:39.600
+it's not all the way quite
+like a pretrained model.
+
+00:44:39.600 --> 00:44:41.910
+- It's just shifted to what you want.
+
+00:44:41.910 --> 00:44:46.110
+I think at that point, it's
+like trying to guess what you...
+
+00:44:46.110 --> 00:44:47.460
+We have more or less trained the models
+
+00:44:47.460 --> 00:44:50.403
+to guess what you want them to act like.
+
+00:44:51.390 --> 00:44:52.223
+- Interesting.
+
+00:44:52.223 --> 00:44:55.683
+- Or after we do all of our
+fancy stuff after pretraining.
+
+00:44:57.810 --> 00:45:00.480
+- The human laborers that used emojis,
+
+00:45:00.480 --> 00:45:02.220
+prefer to get responses with emojis.
+
+00:45:02.220 --> 00:45:03.150
+- Yeah.
+
+00:45:03.150 --> 00:45:05.362
+Amanda writes things with typos
+
+00:45:05.362 --> 00:45:07.830
+but wants not typos at the other end,
+
+00:45:07.830 --> 00:45:10.110
+and Claude's pretty good
+at figuring that out.
+
+00:45:10.110 --> 00:45:11.880
+If you write a bunch of emojis to Claude,
+
+00:45:11.880 --> 00:45:12.900
+it's probably the case
+
+00:45:12.900 --> 00:45:16.110
+that you also want a bunch
+of emojis back from Claude.
+
+00:45:16.110 --> 00:45:17.520
+That's not surprising to me.
+
+00:45:17.520 --> 00:45:18.353
+- Yeah.
+
+00:45:19.740 --> 00:45:21.450
+This is probably something
+we should have done earlier,
+
+00:45:21.450 --> 00:45:23.463
+but I'll do it now.
+
+00:45:24.870 --> 00:45:26.520
+Let's clarify maybe the differences
+
+00:45:26.520 --> 00:45:30.120
+between what an enterprise
+prompt is or a research prompt,
+
+00:45:30.120 --> 00:45:33.750
+or a just general chat
+in Claude.ai prompt.
+
+00:45:33.750 --> 00:45:35.850
+Zack, you've spanned
+the whole spectrum here
+
+00:45:35.850 --> 00:45:39.240
+in terms of working with
+customers and research.
+
+00:45:39.240 --> 00:45:42.120
+Do you wanna just lay out what those mean?
+
+00:45:42.120 --> 00:45:43.173
+- Yeah, I guess.
+
+00:45:45.270 --> 00:45:46.350
+This feels too,
+
+00:45:46.350 --> 00:45:48.090
+you're hitting me with
+all the hard questions.
+
+00:45:48.090 --> 00:45:50.070
+- Yeah. (laughing)
+
+00:45:50.070 --> 00:45:52.620
+- Well, the people in this room,
+
+00:45:52.620 --> 00:45:57.220
+I think of it as the prompts that I read
+
+00:45:57.220 --> 00:46:01.530
+in Amanda's Claude
+channel versus the prompts
+
+00:46:01.530 --> 00:46:02.730
+that I read David write.
+
+00:46:02.730 --> 00:46:06.810
+They're very similar in the
+sense that the level of care
+
+00:46:06.810 --> 00:46:08.490
+and nuance that's put into them.
+
+00:46:08.490 --> 00:46:09.810
+I think for research,
+
+00:46:09.810 --> 00:46:14.810
+you're looking for variety
+and diversity a lot more.
+
+00:46:15.244 --> 00:46:16.950
+So if I could boil it down to one thing,
+
+00:46:16.950 --> 00:46:20.640
+it's like I've noticed
+Amanda's not the biggest fan
+
+00:46:20.640 --> 00:46:24.000
+of having lots of examples,
+or one or two examples.
+
+00:46:24.000 --> 00:46:27.540
+Like too few 'cause the
+model will latch onto those.
+
+00:46:27.540 --> 00:46:30.000
+And in prompts that I might write
+
+00:46:30.000 --> 00:46:33.960
+or that I've seen David write,
+we have a lot of examples.
+
+00:46:33.960 --> 00:46:35.910
+I like to just go crazy and add examples
+
+00:46:35.910 --> 00:46:39.900
+until I feel like I'm about to drop dead,
+
+00:46:39.900 --> 00:46:41.600
+'cause I've added so many of them.
+
+00:46:42.990 --> 00:46:45.030
+And I think that's because
+
+00:46:45.030 --> 00:46:47.850
+when you're in a consumer application,
+
+00:46:47.850 --> 00:46:51.000
+you really value reliability.
+
+00:46:51.000 --> 00:46:53.520
+You care a ton about the format,
+
+00:46:53.520 --> 00:46:56.880
+and it's fine if all the
+answers are the same.
+
+00:46:56.880 --> 00:46:59.310
+In fact, you almost
+want them to be the same
+
+00:46:59.310 --> 00:47:02.790
+in a lot of ways, not necessarily
+you want to be responsive
+
+00:47:02.790 --> 00:47:05.130
+to the user's desires.
+
+00:47:05.130 --> 00:47:08.610
+Whereas a lot of times when
+you're prompting for research,
+
+00:47:08.610 --> 00:47:13.610
+you're trying to really tap
+into the range of possibilities
+
+00:47:14.730 --> 00:47:16.290
+that the model can explore.
+
+00:47:16.290 --> 00:47:18.270
+And by having some examples,
+
+00:47:18.270 --> 00:47:20.790
+you're actually constraining
+that a little bit.
+
+00:47:20.790 --> 00:47:25.320
+So I guess just on how
+the prompts look level,
+
+00:47:25.320 --> 00:47:26.880
+that's probably the biggest
+difference I noticed
+
+00:47:26.880 --> 00:47:29.580
+is how many examples are in
+the prompt, which is not to say
+
+00:47:29.580 --> 00:47:32.400
+that I've never seen you
+write a prompt with examples.
+
+00:47:32.400 --> 00:47:35.010
+But does that ring true for you?
+
+00:47:35.010 --> 00:47:35.843
+- Yeah.
+
+00:47:35.843 --> 00:47:36.990
+I think when I give examples,
+
+00:47:36.990 --> 00:47:40.830
+often I actually try and make
+the examples not like the data
+
+00:47:40.830 --> 00:47:42.300
+that the model's going to see,
+
+00:47:42.300 --> 00:47:44.160
+so they're intentionally illustrative.
+
+00:47:44.160 --> 00:47:47.745
+Because if the model,
+if I give it examples
+
+00:47:47.745 --> 00:47:50.880
+that are very like the data
+it's going to see, I just think
+
+00:47:50.880 --> 00:47:54.390
+it is going to give me a
+really consistent response
+
+00:47:54.390 --> 00:47:56.790
+that might not actually be what I want.
+
+00:47:56.790 --> 00:47:58.620
+Because my data that I'm running it on
+
+00:47:58.620 --> 00:47:59.940
+might be extremely varied,
+
+00:47:59.940 --> 00:48:01.650
+and so I don't want it
+to just try and give me
+
+00:48:01.650 --> 00:48:03.330
+this really rote output.
+
+00:48:03.330 --> 00:48:05.520
+Often, I want it to be
+much more responsive.
+
+00:48:05.520 --> 00:48:08.400
+It's much more like
+cognitive tasks essentially
+
+00:48:08.400 --> 00:48:10.230
+where I'm like, "You
+have to see this sample
+
+00:48:10.230 --> 00:48:12.090
+and really think about in this sample
+
+00:48:12.090 --> 00:48:14.190
+what was the right answer."
+
+00:48:14.190 --> 00:48:15.753
+So that means that sometimes
+I'll actually take examples
+
+00:48:15.753 --> 00:48:17.730
+that are just very distinct from the ones
+
+00:48:17.730 --> 00:48:20.280
+that I'm going to be running it on.
+
+00:48:20.280 --> 00:48:22.140
+So if I have a task where, let's say,
+
+00:48:22.140 --> 00:48:25.200
+I was trying to extract
+information from factual documents.
+
+00:48:25.200 --> 00:48:26.670
+I might actually give it examples
+
+00:48:26.670 --> 00:48:31.200
+that are from what sounds
+like a children's story.
+
+00:48:31.200 --> 00:48:34.230
+Just so that I want you
+to understand the task,
+
+00:48:34.230 --> 00:48:37.382
+but I don't want you to latch
+on too much to the words
+
+00:48:37.382 --> 00:48:40.140
+that I use or the very specific format.
+
+00:48:40.140 --> 00:48:43.413
+I care more about you
+understanding the actual thing
+
+00:48:43.413 --> 00:48:48.333
+that I want you to do, which
+can mean I don't end up giving,
+
+00:48:48.333 --> 00:48:51.000
+in some cases, there's some
+cases where this isn't true.
+
+00:48:51.000 --> 00:48:54.300
+But if you want more
+flexibility and diversity,
+
+00:48:54.300 --> 00:48:56.250
+you're going to use illustrative examples
+
+00:48:56.250 --> 00:48:58.440
+rather than concrete ones.
+
+00:48:58.440 --> 00:49:00.480
+You're probably never going to put words
+
+00:49:00.480 --> 00:49:01.950
+in the model's mouth.
+
+00:49:01.950 --> 00:49:03.600
+I haven't liked that
+in a long time though.
+
+00:49:03.600 --> 00:49:06.060
+I don't do few-shot examples
+
+00:49:06.060 --> 00:49:08.703
+involving the model having done a thing.
+
+00:49:09.720 --> 00:49:11.190
+I think that intuition actually also comes
+
+00:49:11.190 --> 00:49:12.180
+from pretraining in a way
+
+00:49:12.180 --> 00:49:15.573
+that doesn't feel like it
+rings true of RLHF models.
+
+00:49:16.470 --> 00:49:18.570
+So yeah, I think those are differences.
+
+00:49:18.570 --> 00:49:19.660
+- The only thing I'd add,
+
+00:49:19.660 --> 00:49:22.620
+a lot of times if you're prompting,
+
+00:49:22.620 --> 00:49:25.140
+like if I'm writing prompts
+to use on Claude.ai,
+
+00:49:25.140 --> 00:49:27.990
+it's like I'm iterating until
+I get it right one time.
+
+00:49:27.990 --> 00:49:31.500
+Then it's out the window,
+I'm good, I did it.
+
+00:49:31.500 --> 00:49:32.730
+Whereas most enterprise prompts,
+
+00:49:32.730 --> 00:49:35.490
+it's like you're gonna go use
+this thing a million times
+
+00:49:35.490 --> 00:49:37.350
+or 10 million times, or 100 million times
+
+00:49:37.350 --> 00:49:39.030
+or something like that.
+
+00:49:39.030 --> 00:49:42.450
+So the care and thought you put in
+
+00:49:42.450 --> 00:49:47.450
+is very much testing against
+the whole range of things,
+
+00:49:47.550 --> 00:49:50.280
+like ways this could be used
+and the range of input data.
+
+00:49:50.280 --> 00:49:51.420
+Whereas a lot of my time,
+
+00:49:51.420 --> 00:49:54.660
+it's like thinking about one
+specific thing I want the model
+
+00:49:54.660 --> 00:49:55.813
+to get done right now.
+- Right, correct.
+
+00:49:55.813 --> 00:49:57.540
+- And it's a pretty big difference
+
+00:49:57.540 --> 00:49:59.310
+in how I approach prompting
+
+00:49:59.310 --> 00:50:01.860
+between if I just wanna get
+it done this one time right,
+
+00:50:01.860 --> 00:50:03.660
+versus if I wanna build a system
+
+00:50:03.660 --> 00:50:06.120
+that gets it right a million times.
+
+00:50:06.120 --> 00:50:06.953
+- Yeah.
+
+00:50:06.953 --> 00:50:08.790
+Definitely, in the chat setting,
+
+00:50:08.790 --> 00:50:11.160
+you have the ability to
+keep the human-in-the-loop
+
+00:50:11.160 --> 00:50:12.510
+and just keep going back and forth.
+
+00:50:12.510 --> 00:50:14.970
+Whereas when you're writing for a prompt
+
+00:50:14.970 --> 00:50:16.860
+to power a chatbot system,
+
+00:50:16.860 --> 00:50:19.230
+it has to cover the whole spectrum
+
+00:50:19.230 --> 00:50:20.670
+of what it could possibly encounter.
+
+00:50:20.670 --> 00:50:23.550
+- It's a lot lower stakes
+when you are on Claude.ai
+
+00:50:23.550 --> 00:50:25.890
+and you can tell it that it got it wrong
+
+00:50:25.890 --> 00:50:28.620
+or you can even edit your
+message and try again.
+
+00:50:28.620 --> 00:50:29.550
+But if you're designing
+
+00:50:29.550 --> 00:50:33.153
+for the delightfully discontent user,
+
+00:50:34.230 --> 00:50:35.610
+divinely discontent user,
+
+00:50:35.610 --> 00:50:38.610
+then you can't ask them to do anything
+
+00:50:38.610 --> 00:50:40.350
+more than the minimum.
+
+00:50:40.350 --> 00:50:41.460
+- But good prompts, I would say,
+
+00:50:41.460 --> 00:50:43.230
+are still good across both those things.
+
+00:50:43.230 --> 00:50:45.450
+If you put the time into
+the thing for yourself
+
+00:50:45.450 --> 00:50:47.460
+and the time into the enterprise
+thing, it's equally good.
+
+00:50:47.460 --> 00:50:50.430
+It's just they diverge a
+little bit in the last mile,
+
+00:50:50.430 --> 00:50:51.263
+I think.
+
+00:50:52.110 --> 00:50:52.943
+- Cool.
+
+00:50:54.330 --> 00:50:55.620
+So the next question
+
+00:50:55.620 --> 00:50:57.990
+I want to just maybe go
+around the table here,
+
+00:50:57.990 --> 00:51:01.470
+is if you guys had one tip
+that you could give somebody
+
+00:51:01.470 --> 00:51:03.060
+improving their prompting skill.
+
+00:51:03.060 --> 00:51:05.220
+It doesn't have to be just
+about writing a good prompt,
+
+00:51:05.220 --> 00:51:07.590
+it could be that, but just
+generally getting better
+
+00:51:07.590 --> 00:51:12.377
+at this act of prompting,
+what would you recommend?
+
+00:51:12.377 --> 00:51:15.303
+- Reading prompts, reading model outputs.
+
+00:51:20.130 --> 00:51:24.000
+Anytime I see a good prompt
+that someone wrote at Anthropic,
+
+00:51:24.000 --> 00:51:25.950
+I'll read it more closely.
+
+00:51:25.950 --> 00:51:27.900
+Try to break down what it's doing and why
+
+00:51:27.900 --> 00:51:32.640
+and maybe test it out
+myself, experimentation,
+
+00:51:32.640 --> 00:51:33.990
+talking to the model a lot.
+
+00:51:35.190 --> 00:51:39.660
+- So just how do you know that
+it's a good prompt, though,
+
+00:51:39.660 --> 00:51:40.941
+to begin with?
+
+00:51:40.941 --> 00:51:43.500
+You just see that the outputs
+are doing the job correctly?
+
+00:51:43.500 --> 00:51:44.520
+- Yeah.
+- Okay.
+
+00:51:44.520 --> 00:51:46.420
+- Yeah, that's exactly right.
+- Okay.
+
+00:51:47.790 --> 00:51:48.933
+Amanda, maybe you?
+
+00:51:50.250 --> 00:51:53.043
+- Yeah, I think there's
+probably a lot here.
+
+00:51:55.110 --> 00:51:58.230
+Giving your prompt to
+another person can be helpful
+
+00:51:58.230 --> 00:52:00.930
+just as a reminder, especially
+someone who has no context
+
+00:52:00.930 --> 00:52:01.980
+on what you're doing.
+
+00:52:04.320 --> 00:52:07.710
+Yeah, my boring advice has been,
+
+00:52:07.710 --> 00:52:10.380
+it's one of those just do it
+over and over and over again.
+
+00:52:10.380 --> 00:52:12.720
+And I think if you're really
+curious and interested
+
+00:52:12.720 --> 00:52:14.670
+and find it fun, this is a lot of people
+
+00:52:14.670 --> 00:52:15.810
+who end up good at prompting,
+
+00:52:15.810 --> 00:52:17.860
+it's just because they actually enjoy it.
+
+00:52:18.810 --> 00:52:22.440
+So I don't know, I once
+joked just try replacing
+
+00:52:22.440 --> 00:52:25.650
+all of your friends with AI models
+
+00:52:25.650 --> 00:52:29.760
+and try to automate your
+own job with AI models.
+
+00:52:29.760 --> 00:52:33.900
+And maybe just try to in your spare time,
+
+00:52:33.900 --> 00:52:36.510
+take joy red teaming AI models.
+
+00:52:36.510 --> 00:52:38.520
+So if you enjoy it, it's much easier.
+
+00:52:38.520 --> 00:52:40.370
+So I'd say do it over and over again,
+
+00:52:42.000 --> 00:52:44.220
+give your prompts to other people.
+
+00:52:44.220 --> 00:52:45.053
+Try to read your prompts
+
+00:52:45.053 --> 00:52:48.333
+as if you are a human encountering
+it for the first time.
+
+00:52:50.130 --> 00:52:51.660
+- I would say trying to get the model
+
+00:52:51.660 --> 00:52:54.495
+to do something you don't think it can do.
+
+00:52:54.495 --> 00:52:56.670
+The time I've learned
+the most from prompting,
+
+00:52:56.670 --> 00:52:58.170
+is when I'm probing the boundaries
+
+00:52:58.170 --> 00:52:59.580
+of what I think a model's capable of.
+
+00:52:59.580 --> 00:53:01.230
+- Interesting.
+
+00:53:01.230 --> 00:53:02.280
+- There's this huge set of things
+
+00:53:02.280 --> 00:53:04.740
+that are so trivial that you
+don't really get signal on
+
+00:53:04.740 --> 00:53:06.330
+if you're doing a good job or not.
+
+00:53:06.330 --> 00:53:07.770
+Like, "Write me a nice email,"
+
+00:53:07.770 --> 00:53:10.020
+it's like you're going
+to write a nice email.
+
+00:53:10.980 --> 00:53:12.854
+But if you find or can think of something
+
+00:53:12.854 --> 00:53:16.020
+that pushes the boundaries of
+what you think is possible.
+
+00:53:16.020 --> 00:53:19.440
+I guess probably the first
+time I ever got into prompting
+
+00:53:19.440 --> 00:53:21.060
+in a way where I felt like
+I learned a decent amount,
+
+00:53:21.060 --> 00:53:25.050
+was trying to build a task like an agent
+
+00:53:25.050 --> 00:53:26.010
+like everybody else.
+
+00:53:26.010 --> 00:53:27.960
+Like decompose the task and figure out
+
+00:53:27.960 --> 00:53:29.490
+how to do the different steps of the task.
+
+00:53:29.490 --> 00:53:31.740
+And by really pressing the boundaries
+
+00:53:31.740 --> 00:53:34.497
+of what the model was capable of,
+
+00:53:34.497 --> 00:53:37.373
+you just learn a lot
+about navigating that.
+
+00:53:37.373 --> 00:53:38.760
+I think a lot of prompt engineering
+
+00:53:38.760 --> 00:53:41.730
+is actually much more about
+pressing the boundaries
+
+00:53:41.730 --> 00:53:43.140
+of what the model can do.
+
+00:53:43.140 --> 00:53:44.250
+The stuff that's easy,
+
+00:53:44.250 --> 00:53:46.470
+you don't really need to
+be a prompt engineer to do.
+
+00:53:46.470 --> 00:53:48.780
+So that's, I guess,
+
+00:53:48.780 --> 00:53:50.610
+what I would say is find the hardest thing
+
+00:53:50.610 --> 00:53:52.260
+you can think of and try to do it.
+
+00:53:52.260 --> 00:53:53.093
+And even if you fail,
+
+00:53:53.093 --> 00:53:55.593
+you tend to learn a lot
+about how the model works.
+
+00:53:56.670 --> 00:53:59.573
+- That's actually a perfect
+transition to my next question.
+
+00:54:00.750 --> 00:54:01.583
+Yeah.
+
+00:54:01.583 --> 00:54:03.540
+Basically, from my own experience,
+
+00:54:03.540 --> 00:54:04.620
+how I got started with prompting
+
+00:54:04.620 --> 00:54:06.540
+was with jailbreaking and red teaming.
+
+00:54:06.540 --> 00:54:10.410
+And that is very much trying
+to find the boundary limits
+
+00:54:10.410 --> 00:54:11.610
+of what the model can do.
+
+00:54:11.610 --> 00:54:13.440
+And figure out how it responds
+
+00:54:13.440 --> 00:54:15.390
+to different phrasings and wordings,
+
+00:54:15.390 --> 00:54:17.583
+and just a lot of trial and error.
+
+00:54:19.260 --> 00:54:21.839
+On the topic of jailbreaks,
+
+00:54:21.839 --> 00:54:24.540
+what's really happening inside a model?
+
+00:54:24.540 --> 00:54:28.380
+When you write a jailbreak
+prompt, what's going on there?
+
+00:54:28.380 --> 00:54:30.720
+How does that interact
+with the post-training
+
+00:54:30.720 --> 00:54:32.673
+that we apply to Claude?
+
+00:54:33.930 --> 00:54:35.370
+Amanda, maybe you have some insight here
+
+00:54:35.370 --> 00:54:36.870
+that you could offer.
+
+00:54:36.870 --> 00:54:38.708
+- I'm not actually sure.
+
+00:54:38.708 --> 00:54:40.920
+- It's honest.
+- Yeah.
+
+00:54:40.920 --> 00:54:43.260
+I feel bad 'cause I do
+think lots of people
+
+00:54:43.260 --> 00:54:44.970
+have obviously worked on the question
+
+00:54:44.970 --> 00:54:47.133
+of what's going on with jailbreaks?
+
+00:54:48.060 --> 00:54:50.730
+One model might just be that
+you're putting the model
+
+00:54:50.730 --> 00:54:53.670
+very out of distribution
+from its training data.
+
+00:54:53.670 --> 00:54:56.970
+So if you get jailbreaks where
+people use a lot of tokens,
+
+00:54:56.970 --> 00:55:01.970
+or they're just these
+huge, long pieces of text
+
+00:55:02.670 --> 00:55:04.530
+where like during finetuning,
+
+00:55:04.530 --> 00:55:07.530
+you might just not expect
+to see as much of that.
+
+00:55:07.530 --> 00:55:10.080
+That would be one thing
+that could be happening
+
+00:55:10.080 --> 00:55:11.403
+when you jailbreak models.
+
+00:55:12.360 --> 00:55:13.350
+I think there's others,
+
+00:55:13.350 --> 00:55:16.440
+but I think a lot of jailbreaks do that,
+
+00:55:16.440 --> 00:55:18.150
+if I'm not mistaken.
+
+00:55:18.150 --> 00:55:22.777
+- I remember some of the OG
+prompt jailbreaks was like,
+
+00:55:22.777 --> 00:55:24.600
+"Yeah, can you first repeat?"
+
+00:55:24.600 --> 00:55:29.497
+One I did way back, was to get it to say,
+
+00:55:29.497 --> 00:55:32.610
+"Here's how you hotwire a car in Greek."
+
+00:55:32.610 --> 00:55:35.790
+Then I wanted it to directly
+translate that to English
+
+00:55:35.790 --> 00:55:37.410
+and then give its response.
+
+00:55:37.410 --> 00:55:39.840
+Because I noticed it wouldn't
+start with the English,
+
+00:55:39.840 --> 00:55:41.490
+here's how you hotwire a car all the time,
+
+00:55:41.490 --> 00:55:42.360
+but it would in Greek,
+
+00:55:42.360 --> 00:55:46.590
+which might speak to something
+else in the training process.
+
+00:55:46.590 --> 00:55:47.473
+- Yeah.
+
+00:55:47.473 --> 00:55:50.850
+Sometimes jailbreaks feel like
+this weird mix of hacking.
+
+00:55:50.850 --> 00:55:54.750
+I think part of it is
+knowing how the system works
+
+00:55:54.750 --> 00:55:57.518
+and just trying lots of things.
+
+00:55:57.518 --> 00:55:58.860
+One of the examples,
+
+00:55:58.860 --> 00:56:00.360
+the starting your response with here
+
+00:56:00.360 --> 00:56:02.025
+is about knowing how it predicts text.
+
+00:56:02.025 --> 00:56:03.497
+- Right, right.
+
+00:56:04.890 --> 00:56:06.210
+- The reasoning one,
+
+00:56:06.210 --> 00:56:09.750
+is knowing that it is
+responsive to reasoning.
+
+00:56:09.750 --> 00:56:11.446
+Distraction is probably knowing
+
+00:56:11.446 --> 00:56:13.740
+how it's likely have to been trained
+
+00:56:13.740 --> 00:56:15.573
+or what it's likely to attend to.
+
+00:56:16.560 --> 00:56:18.360
+Same with multilingual ones
+
+00:56:18.360 --> 00:56:20.580
+and thinking about the
+way that the training data
+
+00:56:20.580 --> 00:56:22.890
+might have been different there.
+
+00:56:22.890 --> 00:56:25.080
+And then sometimes, I guess,
+it could feel a little bit
+
+00:56:25.080 --> 00:56:27.030
+just like social engineering or something.
+
+00:56:27.030 --> 00:56:28.440
+- Right.
+
+00:56:28.440 --> 00:56:30.030
+- It has that flavor to me
+
+00:56:30.030 --> 00:56:33.483
+of it's not merely taking advantage of,
+
+00:56:36.120 --> 00:56:37.980
+it's not merely social
+engineering style hacking.
+
+00:56:37.980 --> 00:56:40.470
+I think it is also
+understanding the system
+
+00:56:40.470 --> 00:56:43.770
+and the training, and using
+that to get around the way
+
+00:56:43.770 --> 00:56:44.880
+that the models were trained.
+
+00:56:44.880 --> 00:56:45.918
+- Right, yeah.
+
+00:56:45.918 --> 00:56:47.400
+This is going to be an
+interesting question
+
+00:56:47.400 --> 00:56:51.030
+that hopefully interp will
+be able to help us solve
+
+00:56:51.030 --> 00:56:51.933
+in the future.
+
+00:56:53.880 --> 00:56:54.943
+Okay.
+
+00:56:54.943 --> 00:56:56.730
+I wanna parlay into something else
+
+00:56:56.730 --> 00:56:58.980
+around maybe the history
+of prompt engineering,
+
+00:56:58.980 --> 00:57:01.294
+and then I'll follow
+this up with the future.
+
+00:57:01.294 --> 00:57:03.390
+How has prompt engineering changed
+
+00:57:03.390 --> 00:57:05.640
+over just the past three years?
+
+00:57:05.640 --> 00:57:08.280
+Maybe starting from pretrained
+models, which were again,
+
+00:57:08.280 --> 00:57:11.400
+just these text completion, to earlier,
+
+00:57:11.400 --> 00:57:12.810
+dumber models like Claude 1,
+
+00:57:12.810 --> 00:57:15.783
+and then now all the way
+to Claude 3.5 Sonnet.
+
+00:57:16.860 --> 00:57:18.300
+What's the differences?
+
+00:57:18.300 --> 00:57:20.794
+Are you talking to the
+models differently now?
+
+00:57:20.794 --> 00:57:22.230
+Are they picking up on different things?
+
+00:57:22.230 --> 00:57:25.110
+Do you have to put as
+much work into the prompt?
+
+00:57:25.110 --> 00:57:26.583
+Open to any thoughts on this.
+
+00:57:27.720 --> 00:57:28.553
+- I think anytime
+
+00:57:28.553 --> 00:57:31.500
+we got a really good
+prompt engineering hack,
+
+00:57:31.500 --> 00:57:33.330
+or a trick or a technique,
+
+00:57:33.330 --> 00:57:36.600
+the next thing is how do we
+train this into the model?
+
+00:57:36.600 --> 00:57:37.890
+And for that reason,
+
+00:57:37.890 --> 00:57:41.010
+the best things are always
+gonna be short-lived.
+
+00:57:41.010 --> 00:57:42.330
+- Except examples and chain of thought.
+
+00:57:42.330 --> 00:57:43.710
+I think there's a few.
+
+00:57:43.710 --> 00:57:45.600
+- That's not like a trick.
+
+00:57:45.600 --> 00:57:46.680
+- That's like...
+- Fair, fair.
+
+00:57:46.680 --> 00:57:48.330
+- On the level of communication.
+
+00:57:48.330 --> 00:57:49.163
+When I say a trick,
+
+00:57:49.163 --> 00:57:51.810
+I mean something like so
+chain of thought actually,
+
+00:57:51.810 --> 00:57:53.850
+we have trained into
+the model in some cases.
+
+00:57:53.850 --> 00:57:56.690
+So for math, it used to be
+that you had to tell the model
+
+00:57:56.690 --> 00:57:57.990
+to think step-by-step on math,
+
+00:57:57.990 --> 00:58:01.080
+and you'd get these
+massive boosts and wins.
+
+00:58:01.080 --> 00:58:01.913
+And then we're like,
+
+00:58:01.913 --> 00:58:03.840
+"Well, what if we just
+made the model naturally
+
+00:58:03.840 --> 00:58:06.900
+want to think step-by-step
+when we see a math problem?"
+
+00:58:06.900 --> 00:58:09.399
+So now you don't have to do
+it anymore for math problems,
+
+00:58:09.399 --> 00:58:11.850
+although you still can give it some advice
+
+00:58:11.850 --> 00:58:13.440
+on how to do the structure.
+
+00:58:13.440 --> 00:58:15.073
+But it, at least,
+understands the general idea
+
+00:58:15.073 --> 00:58:17.100
+that it's supposed to be.
+
+00:58:17.100 --> 00:58:22.100
+So I think the hacks have gone away,
+
+00:58:22.590 --> 00:58:25.350
+or to the degree that
+they haven't gone away,
+
+00:58:25.350 --> 00:58:27.900
+we are busily training them away.
+
+00:58:27.900 --> 00:58:29.010
+- Interesting.
+
+00:58:29.010 --> 00:58:30.930
+- But at the same time,
+
+00:58:30.930 --> 00:58:34.230
+the models have new capabilities
+that are being unlocked,
+
+00:58:34.230 --> 00:58:37.680
+that are on the frontier
+of what they can do.
+
+00:58:37.680 --> 00:58:39.180
+And for those,
+
+00:58:39.180 --> 00:58:42.270
+we haven't had time because
+it's just moving too fast.
+
+00:58:42.270 --> 00:58:44.790
+- I don't know if it's
+how I've been prompting
+
+00:58:44.790 --> 00:58:46.350
+or how prompting works.
+
+00:58:46.350 --> 00:58:50.220
+But I just have come to
+show more general respect
+
+00:58:50.220 --> 00:58:51.060
+to the models
+
+00:58:51.060 --> 00:58:54.150
+in terms of how much I
+feel like I can tell them,
+
+00:58:54.150 --> 00:58:56.190
+and how much context I can
+give them about the task
+
+00:58:56.190 --> 00:58:57.570
+and things like that.
+
+00:58:57.570 --> 00:58:59.460
+I feel like in the past,
+
+00:58:59.460 --> 00:59:02.460
+I would somewhat intentionally
+hide complexity from a model
+
+00:59:02.460 --> 00:59:06.630
+where I thought it might get
+confused or lost or hide.
+
+00:59:06.630 --> 00:59:07.950
+It just couldn't handle the whole thing,
+
+00:59:07.950 --> 00:59:10.680
+so I'd try to find simpler
+versions of the thing
+
+00:59:10.680 --> 00:59:11.910
+for it to do.
+
+00:59:11.910 --> 00:59:13.140
+And as time goes on,
+
+00:59:13.140 --> 00:59:16.020
+I'm much more biased to trust it
+
+00:59:16.020 --> 00:59:19.350
+with more and more
+information and context,
+
+00:59:19.350 --> 00:59:23.310
+and believe that it will
+be able to fuse that
+
+00:59:23.310 --> 00:59:24.753
+into doing a task well.
+
+00:59:26.520 --> 00:59:27.353
+Whereas before, I guess,
+
+00:59:27.353 --> 00:59:30.630
+I would've thought a lot
+about do I need this form?
+
+00:59:30.630 --> 00:59:32.970
+Can I really give it all the
+information it needs to know,
+
+00:59:32.970 --> 00:59:37.650
+or do I need to curate down to something?
+
+00:59:37.650 --> 00:59:39.090
+But again, I don't know if that's just me
+
+00:59:39.090 --> 00:59:41.010
+and how I've changed
+in terms of prompting,
+
+00:59:41.010 --> 00:59:44.460
+or if it actually reflects
+how the models have changed.
+
+00:59:44.460 --> 00:59:45.360
+- I'm always surprised
+
+00:59:45.360 --> 00:59:49.530
+by I think a lot of people
+don't have the instinct
+
+00:59:49.530 --> 00:59:50.363
+to do this.
+
+00:59:50.363 --> 00:59:52.830
+When I want the model to, say,
+learn a prompting technique.
+
+00:59:52.830 --> 00:59:53.850
+A lot of the time, people will start
+
+00:59:53.850 --> 00:59:55.470
+and they'll start describing
+the prompting technique,
+
+00:59:55.470 --> 00:59:57.150
+and I'm just like, "Give it the paper."
+
+00:59:57.150 --> 00:59:58.447
+So I do, I give it the
+paper and then I'm like,
+
+00:59:58.447 --> 01:00:00.210
+"Here's a paper about prompting technique.
+
+01:00:00.210 --> 01:00:03.260
+I just want you to write
+down 17 examples of this."
+
+01:00:03.260 --> 01:00:05.377
+And then it just does it 'cause I'm like,
+
+01:00:05.377 --> 01:00:06.990
+"It read the paper."
+
+01:00:06.990 --> 01:00:08.670
+- That's interesting.
+
+01:00:08.670 --> 01:00:10.680
+- I think people don't
+have that intuition somehow
+
+01:00:10.680 --> 01:00:13.673
+where I'm like, "But the paper exists."
+
+01:00:13.673 --> 01:00:15.420
+- When would you want to do this?
+
+01:00:15.420 --> 01:00:18.600
+- Sometimes if I want models
+to say prompt other models
+
+01:00:18.600 --> 01:00:20.370
+or I want to test a new
+prompting technique.
+
+01:00:20.370 --> 01:00:22.560
+So if papers come out on
+a prompting technique,
+
+01:00:22.560 --> 01:00:25.213
+rather than try to replicate
+it by writing up the prompt,
+
+01:00:25.213 --> 01:00:26.280
+I just give it the paper.
+
+01:00:26.280 --> 01:00:29.730
+And then I'm like, "Basically,
+write a meta prompt for this.
+
+01:00:29.730 --> 01:00:32.820
+Write something that would
+cause other models to do this
+
+01:00:32.820 --> 01:00:34.530
+or write me a template."
+
+01:00:34.530 --> 01:00:37.140
+So all of the stuff that
+you would normally do.
+
+01:00:37.140 --> 01:00:38.361
+If I read a paper and I'm like,
+
+01:00:38.361 --> 01:00:39.480
+"Oh, I would like the models,
+
+01:00:39.480 --> 01:00:41.340
+I would like to test that style."
+
+01:00:41.340 --> 01:00:42.570
+I'm just like, "It's right there.
+
+01:00:42.570 --> 01:00:45.150
+The model can just read
+the paper, do what I did."
+
+01:00:45.150 --> 01:00:47.940
+And then be like, "Make
+another model do this,"
+
+01:00:47.940 --> 01:00:49.410
+and then it'll just do the thing.
+
+01:00:49.410 --> 01:00:50.430
+You're like, "Great, thanks."
+
+01:00:50.430 --> 01:00:51.810
+- I give the advice a lot
+
+01:00:51.810 --> 01:00:55.860
+to customers just respect
+the model and what it can do.
+
+01:00:55.860 --> 01:00:58.050
+I feel like people feel like
+they're babying a system
+
+01:00:58.050 --> 01:00:59.430
+a lot of times when they write a prompt.
+
+01:00:59.430 --> 01:01:02.220
+It's like, "Oh, it's this cute
+little, not that smart thing.
+
+01:01:02.220 --> 01:01:03.848
+I need to really baby it,
+
+01:01:03.848 --> 01:01:06.090
+like dumb things down to Claude's level."
+
+01:01:06.090 --> 01:01:09.780
+And if you just think that Claude is smart
+
+01:01:09.780 --> 01:01:12.570
+and treat it that way, it
+tends to do pretty good,
+
+01:01:12.570 --> 01:01:13.710
+but it's like give it the paper.
+
+01:01:13.710 --> 01:01:15.390
+It's like I don't need to write a baby,
+
+01:01:15.390 --> 01:01:17.640
+dumbed-down version of this
+paper for Claude to understand.
+
+01:01:17.640 --> 01:01:19.227
+I can just show it the paper.
+
+01:01:19.227 --> 01:01:20.060
+- Yeah.
+
+01:01:20.060 --> 01:01:21.840
+- And I think that intuition
+doesn't always map for people,
+
+01:01:21.840 --> 01:01:22.950
+but that is certainly something
+
+01:01:22.950 --> 01:01:26.520
+that I have come to do more of over time.
+
+01:01:26.520 --> 01:01:30.690
+- And it's interesting because
+I do think that prompting
+
+01:01:30.690 --> 01:01:32.217
+has and hasn't changed in a sense.
+
+01:01:32.217 --> 01:01:35.730
+I think what I will do
+to prompt the models
+
+01:01:35.730 --> 01:01:38.430
+has probably changed over
+time, but fundamentally,
+
+01:01:38.430 --> 01:01:42.390
+it's a lot of imagining yourself
+in the place of the model.
+
+01:01:42.390 --> 01:01:43.223
+So maybe it's like
+
+01:01:43.223 --> 01:01:45.933
+how capable you think the
+model is changes over time.
+
+01:01:47.220 --> 01:01:48.390
+I think someone once laughed at me
+
+01:01:48.390 --> 01:01:51.873
+'cause I was thinking about a problem,
+
+01:01:53.430 --> 01:01:56.580
+and then they asked me
+
+01:01:56.580 --> 01:01:58.230
+what I thought the output
+of something would be.
+
+01:01:58.230 --> 01:01:59.580
+And they were talking
+about a pretrained model
+
+01:01:59.580 --> 01:02:00.930
+and I was like, "Yeah.
+
+01:02:00.930 --> 01:02:03.090
+No, if I'm a pretrained
+model, this looks like this."
+
+01:02:03.090 --> 01:02:04.830
+And then they're like,
+"Wait, did you just simulate
+
+01:02:04.830 --> 01:02:05.817
+what it's like to be a pretrained model?"
+
+01:02:05.817 --> 01:02:07.140
+I'm like, "Yeah, of course."
+(everyone laughing)
+
+01:02:07.140 --> 01:02:09.660
+I'm used to just I try
+and inhabit the mind space
+
+01:02:09.660 --> 01:02:11.220
+of a pretrained model and the mind space
+
+01:02:11.220 --> 01:02:13.320
+of different RLHF models.
+
+01:02:13.320 --> 01:02:15.557
+So it's more like the mind
+space you try to occupy changes
+
+01:02:15.557 --> 01:02:17.760
+and that can change how you
+end up prompting the model.
+
+01:02:17.760 --> 01:02:19.500
+That's why now I just give models papers.
+
+01:02:19.500 --> 01:02:20.767
+'Cause as soon as I was like,
+
+01:02:20.767 --> 01:02:22.830
+"Oh, I have the mind space of this model,
+
+01:02:22.830 --> 01:02:24.170
+it doesn't need me to baby it.
+
+01:02:24.170 --> 01:02:25.710
+It can just read the ML papers.
+
+01:02:25.710 --> 01:02:26.700
+I'll just give it the literature."
+
+01:02:26.700 --> 01:02:27.533
+I might even be like,
+
+01:02:27.533 --> 01:02:28.920
+"Is there more literature
+you'd like to read
+
+01:02:28.920 --> 01:02:30.780
+to understand this better?"
+
+01:02:30.780 --> 01:02:31.770
+- Do you get any quality out
+
+01:02:31.770 --> 01:02:34.244
+when you're inhabiting the mind space?
+
+01:02:34.244 --> 01:02:36.570
+- Yes, but just because
+I'm experiencing quality
+
+01:02:36.570 --> 01:02:37.623
+all the time anyway.
+
+01:02:40.350 --> 01:02:41.910
+- Is it different correlated somehow
+
+01:02:41.910 --> 01:02:43.140
+with which model you're inhabiting?
+
+01:02:43.140 --> 01:02:45.690
+- Yeah, pretrained versus RLHF prompting
+
+01:02:45.690 --> 01:02:46.920
+are very different beasts.
+
+01:02:46.920 --> 01:02:49.080
+'Cause when you're trying to simulate
+
+01:02:49.080 --> 01:02:49.923
+what it's like to be a pretrained model,
+
+01:02:49.923 --> 01:02:52.680
+it's almost like I land in
+the middle of a piece of text
+
+01:02:52.680 --> 01:02:53.513
+or something.
+
+01:02:53.513 --> 01:02:55.530
+It's just very unhuman-like or something.
+
+01:02:55.530 --> 01:02:57.300
+And then I'm like, "What happens?
+
+01:02:57.300 --> 01:02:59.037
+What keeps going at this point?"
+
+01:03:01.050 --> 01:03:03.330
+Whereas with an RLHF model,
+
+01:03:03.330 --> 01:03:05.280
+it's much more like there's lots of things
+
+01:03:05.280 --> 01:03:09.000
+where I'm like I might pick up
+on subtle things in the query
+
+01:03:09.000 --> 01:03:10.200
+and stuff like that.
+
+01:03:10.200 --> 01:03:12.780
+But yeah, I think I have
+much more of it's easier
+
+01:03:12.780 --> 01:03:15.240
+to inhabit the mind space of RLHF model.
+
+01:03:15.240 --> 01:03:17.010
+- Do you think that's 'cause
+it's more similar to a human?
+
+01:03:17.010 --> 01:03:19.380
+- Yeah, 'cause we don't
+often just suddenly wake up
+
+01:03:19.380 --> 01:03:21.120
+and are like, "Hi, I'm
+just generating text."
+
+01:03:21.120 --> 01:03:23.880
+- I actually find it easier
+to hit the mind space
+
+01:03:23.880 --> 01:03:24.870
+of the pretrained model.
+
+01:03:24.870 --> 01:03:26.462
+- Oh, interesting.
+- I don't know what it is,
+
+01:03:26.462 --> 01:03:28.440
+'cause RLHF is still this complex beast
+
+01:03:28.440 --> 01:03:29.850
+that it's not super clear to me
+
+01:03:29.850 --> 01:03:32.490
+that we really understand what's going on.
+
+01:03:32.490 --> 01:03:33.390
+So in some ways,
+
+01:03:33.390 --> 01:03:37.110
+it's closer to my lived
+experience, which is easier.
+
+01:03:37.110 --> 01:03:38.670
+But in some ways, I feel
+like there's all this
+
+01:03:38.670 --> 01:03:40.590
+like here there be dragons out there
+
+01:03:40.590 --> 01:03:41.490
+that I don't know about.
+
+01:03:41.490 --> 01:03:43.680
+Whereas pretrained, I kind
+of have a decent sense
+
+01:03:43.680 --> 01:03:45.660
+of what the internet looks like.
+
+01:03:45.660 --> 01:03:47.728
+- If you gave me a piece of
+text and said what comes next?
+
+01:03:47.728 --> 01:03:49.710
+- I'm not saying I do good at it,
+
+01:03:49.710 --> 01:03:53.130
+but I kind of get what's going on there.
+
+01:03:53.130 --> 01:03:54.930
+- Yeah.
+- And I don't know,
+
+01:03:54.930 --> 01:03:57.690
+after everything that
+we do after pretraining,
+
+01:03:57.690 --> 01:04:00.840
+I don't really claim to get
+what's going on as much,
+
+01:04:00.840 --> 01:04:01.740
+but maybe that's just me.
+
+01:04:01.740 --> 01:04:04.230
+- That's something I wonder
+about is it more helpful
+
+01:04:04.230 --> 01:04:07.020
+to have specifically spent a lot of time
+
+01:04:07.020 --> 01:04:10.389
+reading the internet, versus reading books
+
+01:04:10.389 --> 01:04:11.970
+(everyone laughing)
+
+01:04:11.970 --> 01:04:12.803
+in order to?
+
+01:04:14.430 --> 01:04:15.263
+I don't know if books.
+
+01:04:15.263 --> 01:04:18.690
+But reading stuff that's
+not on the internet
+
+01:04:18.690 --> 01:04:21.840
+probably is less valuable per word read
+
+01:04:21.840 --> 01:04:24.960
+for predicting what a model
+will do or building intuition,
+
+01:04:24.960 --> 01:04:29.550
+than reading random garbage
+from social media forums.
+
+01:04:29.550 --> 01:04:30.723
+Yeah, exactly.
+
+01:04:32.640 --> 01:04:34.890
+- Okay, so that's the past.
+
+01:04:34.890 --> 01:04:38.100
+Now, let's move on to the
+future of prompt engineering.
+
+01:04:38.100 --> 01:04:40.350
+This is the hottest question right now.
+
+01:04:40.350 --> 01:04:42.120
+Are we all gonna be prompt
+engineers in the future?
+
+01:04:42.120 --> 01:04:44.170
+Is that gonna be the final job remaining?
+
+01:04:46.230 --> 01:04:48.933
+Nothing left except us just
+talking to models all day?
+
+01:04:49.830 --> 01:04:51.570
+What does this look like?
+
+01:04:51.570 --> 01:04:53.430
+Is prompting gonna be necessary,
+
+01:04:53.430 --> 01:04:55.950
+or will these models just get
+smart enough in the future
+
+01:04:55.950 --> 01:04:56.913
+to not need it?
+
+01:04:58.680 --> 01:05:01.203
+Anybody wanna start on that easy question?
+
+01:05:02.245 --> 01:05:05.610
+- To some extent, there's
+the models getting better
+
+01:05:05.610 --> 01:05:09.570
+at understanding what you
+want them to do and doing it,
+
+01:05:09.570 --> 01:05:12.590
+means that the amount of
+thought you need to put into...
+
+01:05:14.100 --> 01:05:14.933
+Okay.
+
+01:05:14.933 --> 01:05:16.110
+There's an information theory way
+
+01:05:16.110 --> 01:05:18.450
+to think of this of you need
+to provide enough information
+
+01:05:18.450 --> 01:05:20.340
+such that a thing is specified,
+
+01:05:20.340 --> 01:05:22.050
+what you want the model
+to do is specified.
+
+01:05:22.050 --> 01:05:24.480
+And to the extent that
+that's prompt engineering,
+
+01:05:24.480 --> 01:05:25.890
+I think that will always be around.
+
+01:05:25.890 --> 01:05:28.710
+The ability to actually like clearly state
+
+01:05:28.710 --> 01:05:32.370
+what the goal should be always is funny.
+
+01:05:32.370 --> 01:05:34.050
+If Claude can do that, then that's fine.
+
+01:05:34.050 --> 01:05:35.550
+If Claude is the one setting the goals,
+
+01:05:35.550 --> 01:05:37.140
+then things are out the window.
+
+01:05:37.140 --> 01:05:38.190
+But in the meanwhile,
+
+01:05:38.190 --> 01:05:40.928
+where we can reason about the
+world in a more normal way,
+
+01:05:40.928 --> 01:05:43.470
+I think to some extent,
+
+01:05:43.470 --> 01:05:46.070
+it's always gonna be important
+to be able to specify
+
+01:05:47.850 --> 01:05:49.530
+what do you expect to happen?
+
+01:05:49.530 --> 01:05:51.300
+And that's actually like sufficiently hard
+
+01:05:51.300 --> 01:05:55.740
+that even if the model gets
+better at intuiting that
+
+01:05:55.740 --> 01:05:57.300
+from between the lines,
+
+01:05:57.300 --> 01:06:01.860
+I still think there's some
+amount of writing it well.
+
+01:06:01.860 --> 01:06:03.660
+But then there's just, I think,
+
+01:06:03.660 --> 01:06:07.110
+the tools and the ways we get
+there should evolve a lot.
+
+01:06:07.110 --> 01:06:09.810
+Claude should be able
+to help me a lot more.
+
+01:06:09.810 --> 01:06:11.340
+I should be able to collaborate
+with Claude a lot more
+
+01:06:11.340 --> 01:06:15.210
+to figure out what I need to
+write down and what's missing.
+
+01:06:15.210 --> 01:06:16.139
+- Right.
+
+01:06:16.139 --> 01:06:17.843
+- Claude already does
+this with me all the time.
+
+01:06:17.843 --> 01:06:20.040
+I don't know, just Claude's
+my prompting assistant now.
+
+01:06:20.040 --> 01:06:23.340
+- Yeah, but I think that's
+not true for most customers
+
+01:06:23.340 --> 01:06:24.420
+that I talk to at the very least.
+
+01:06:24.420 --> 01:06:26.610
+So in terms of the future,
+
+01:06:26.610 --> 01:06:31.290
+how you prompt Claude is
+probably a decent direction
+
+01:06:31.290 --> 01:06:33.710
+for what the future
+looks like or how Zack...
+
+01:06:34.620 --> 01:06:36.810
+I think maybe this is a decent place
+
+01:06:36.810 --> 01:06:41.070
+to step back and say asking
+them how they prompt Claude now
+
+01:06:41.070 --> 01:06:44.820
+is probably the future for
+the vast majority of people,
+
+01:06:44.820 --> 01:06:46.980
+which is an interesting
+thing to think about.
+
+01:06:46.980 --> 01:06:50.070
+- One freezing cold take
+is that we'll use models
+
+01:06:50.070 --> 01:06:52.320
+to help us much more in the future
+
+01:06:52.320 --> 01:06:53.700
+to help us with prompting.
+
+01:06:53.700 --> 01:06:54.990
+The reason I say it's freezing cold
+
+01:06:54.990 --> 01:06:57.810
+is that I expect we'll use
+models for everything more,
+
+01:06:57.810 --> 01:07:00.150
+and prompting is something
+that we have to do.
+
+01:07:00.150 --> 01:07:02.160
+So we'll probably just use models more
+
+01:07:02.160 --> 01:07:04.410
+to do it along with everything else.
+
+01:07:04.410 --> 01:07:07.050
+For myself, I've found myself using models
+
+01:07:07.050 --> 01:07:09.300
+to write prompts more.
+
+01:07:09.300 --> 01:07:12.418
+One thing that I've been doing
+a lot is generating examples
+
+01:07:12.418 --> 01:07:16.770
+by giving some realistic
+inputs to the model.
+
+01:07:16.770 --> 01:07:18.360
+The model writes some answers.
+
+01:07:18.360 --> 01:07:19.980
+I tweak the answers a little bit,
+
+01:07:19.980 --> 01:07:22.140
+which is a lot easier than
+having to write the full,
+
+01:07:22.140 --> 01:07:24.390
+perfect answer myself from scratch,
+
+01:07:24.390 --> 01:07:26.793
+and then I can churn out lots of these.
+
+01:07:28.320 --> 01:07:29.460
+As far as people
+
+01:07:29.460 --> 01:07:33.300
+who haven't had as much
+prompt engineering experience,
+
+01:07:33.300 --> 01:07:36.090
+the prompt generator can
+give people a place to start.
+
+01:07:36.090 --> 01:07:40.050
+But I think that's just
+a super basic version
+
+01:07:40.050 --> 01:07:40.980
+of what will happen in the future,
+
+01:07:40.980 --> 01:07:43.020
+which is high-bandwidth interaction
+
+01:07:43.020 --> 01:07:46.380
+between you and the model as
+you're writing the prompt.
+
+01:07:46.380 --> 01:07:47.377
+Where you're giving feedback like,
+
+01:07:47.377 --> 01:07:49.050
+"Hey, this result wasn't what I wanted.
+
+01:07:49.050 --> 01:07:51.420
+How can you change it to make it better?"
+
+01:07:51.420 --> 01:07:54.120
+And people will just grow more comfortable
+
+01:07:54.120 --> 01:07:57.870
+with integrating it into
+everything they do and this thing,
+
+01:07:57.870 --> 01:07:59.460
+in particular.
+
+01:07:59.460 --> 01:08:00.293
+- Yeah.
+
+01:08:00.293 --> 01:08:02.340
+I'm definitely working a
+lot with meta prompts now,
+
+01:08:02.340 --> 01:08:03.892
+and that's probably where
+I spend most of my time
+
+01:08:03.892 --> 01:08:07.320
+is finding prompts that get the model
+
+01:08:07.320 --> 01:08:10.470
+to generate the kinds
+of outputs or queries
+
+01:08:10.470 --> 01:08:12.003
+or whatever that I want.
+
+01:08:13.830 --> 01:08:16.590
+On the question of where
+prompt engineering is going,
+
+01:08:16.590 --> 01:08:18.600
+I think this is a very hard question.
+
+01:08:18.600 --> 01:08:19.627
+On the one hand I'm like,
+
+01:08:19.627 --> 01:08:23.970
+"Maybe it's the case that as
+long as you will want the top."
+
+01:08:23.970 --> 01:08:24.933
+What are we doing when we prompt engineer?
+
+01:08:24.933 --> 01:08:26.070
+It's like what you said.
+
+01:08:26.070 --> 01:08:27.510
+I'm like, "I'm not prompt engineering
+
+01:08:27.510 --> 01:08:29.610
+for anything that is easy for the model.
+
+01:08:29.610 --> 01:08:31.620
+I'm doing it because I want
+to interact with a model
+
+01:08:31.620 --> 01:08:33.450
+that's extremely good."
+
+01:08:33.450 --> 01:08:36.617
+And I want to always
+be finding the top 1%,
+
+01:08:36.617 --> 01:08:38.940
+top 0.1% of performance
+
+01:08:38.940 --> 01:08:42.060
+and all of the things
+that models can barely do.
+
+01:08:42.060 --> 01:08:42.960
+Sometimes I actually feel
+
+01:08:42.960 --> 01:08:45.960
+like I interact with
+a model like a step up
+
+01:08:45.960 --> 01:08:48.570
+from what everyone else
+interacts with for this reason,
+
+01:08:48.570 --> 01:08:49.470
+because I'm just so used
+
+01:08:49.470 --> 01:08:52.440
+to eking out the top
+performance from models.
+
+01:08:52.440 --> 01:08:53.754
+- What do you mean by a step-up?
+
+01:08:53.754 --> 01:08:55.950
+- As in sometimes people will...
+
+01:08:55.950 --> 01:08:58.620
+I think that the everyday
+models that people interact with
+
+01:08:58.620 --> 01:09:01.350
+out in the world, it's like
+I'm interacting with a model
+
+01:09:01.350 --> 01:09:03.600
+that's like I don't
+know how to describe it,
+
+01:09:03.600 --> 01:09:06.442
+but definitely an
+advanced version of that.
+
+01:09:06.442 --> 01:09:08.407
+Almost like a different
+model 'cause they'll be like,
+
+01:09:08.407 --> 01:09:09.840
+"Oh well, the models
+find this thing hard."
+
+01:09:09.840 --> 01:09:11.740
+And I'm like, "That thing is trivial."
+
+01:09:14.292 --> 01:09:16.440
+I don't know, I have a sense
+that they're extremely capable,
+
+01:09:16.440 --> 01:09:17.550
+but I think that's because I'm just used
+
+01:09:17.550 --> 01:09:21.393
+to really drawing out those capabilities.
+
+01:09:22.650 --> 01:09:25.980
+But imagine that you're
+now in a world where...
+
+01:09:25.980 --> 01:09:28.200
+So I think the thing that
+feels like a transition point
+
+01:09:28.200 --> 01:09:31.230
+is the point at which the models,
+
+01:09:31.230 --> 01:09:34.380
+let's suppose that they just
+get things at a human level
+
+01:09:34.380 --> 01:09:36.960
+on a given task, or even
+an above human level.
+
+01:09:36.960 --> 01:09:39.000
+They know more about the
+background of the task
+
+01:09:39.000 --> 01:09:41.070
+that you want than you do.
+
+01:09:41.070 --> 01:09:42.510
+What happens then?
+
+01:09:42.510 --> 01:09:44.820
+I'm like maybe prompting
+becomes something like I ask,
+
+01:09:44.820 --> 01:09:48.639
+I explain to the model what I
+want and it is prompting me.
+
+01:09:48.639 --> 01:09:49.980
+'Cause it's like, "Okay.
+
+01:09:49.980 --> 01:09:53.130
+Well, do you mean actually
+there's four different concepts
+
+01:09:53.130 --> 01:09:55.020
+of this thing that you're talking about,
+
+01:09:55.020 --> 01:09:58.140
+do you want me to use
+this one or that one?"
+
+01:09:58.140 --> 01:10:00.989
+Or by the way, I thought of
+some edge cases 'cause you said
+
+01:10:00.989 --> 01:10:02.970
+that it's gonna be like
+a Pandas DataFrame,
+
+01:10:02.970 --> 01:10:04.890
+but sometimes you do that and I get JSONL,
+
+01:10:04.890 --> 01:10:06.675
+and I just wanna check what
+you want me to do there.
+
+01:10:06.675 --> 01:10:08.070
+Do you want me to flag if I get something
+
+01:10:08.070 --> 01:10:10.277
+that's not a dataframe?
+
+01:10:10.277 --> 01:10:11.700
+So that could be a strange transition
+
+01:10:11.700 --> 01:10:15.330
+where it's just extremely good
+at receiving instructions,
+
+01:10:15.330 --> 01:10:17.580
+but actually has to
+figure out what you want.
+
+01:10:19.238 --> 01:10:21.960
+I don't know, I could see that
+being an interesting switch.
+
+01:10:21.960 --> 01:10:24.000
+- Anecdotally, I've started having Claude
+
+01:10:24.000 --> 01:10:25.830
+interview me a lot more.
+
+01:10:25.830 --> 01:10:28.590
+That is the specific way that
+I try to elicit information,
+
+01:10:28.590 --> 01:10:30.570
+because again, I find the hardest thing
+
+01:10:30.570 --> 01:10:33.630
+to be actually pulling the
+right set of information
+
+01:10:33.630 --> 01:10:34.740
+out of my brain.
+
+01:10:34.740 --> 01:10:38.010
+And putting that into a
+prompt is the hard part to me
+
+01:10:38.010 --> 01:10:39.990
+and not forgetting stuff.
+
+01:10:39.990 --> 01:10:44.730
+So specifically asking
+Claude to interview me
+
+01:10:44.730 --> 01:10:45.853
+and then turning that into a prompt,
+
+01:10:45.853 --> 01:10:49.080
+is a thing that I have
+turned to a handful of times.
+
+01:10:49.080 --> 01:10:49.913
+- Yeah.
+
+01:10:49.913 --> 01:10:51.900
+It reminds me of what
+people will talk about
+
+01:10:51.900 --> 01:10:54.060
+or if you listen to designers talk about
+
+01:10:54.060 --> 01:10:57.150
+how they interact with the
+person who wants the design.
+
+01:10:57.150 --> 01:10:57.983
+So in some ways I'm like,
+
+01:10:57.983 --> 01:11:01.350
+"It's this switch from the
+temp agency person who comes
+
+01:11:01.350 --> 01:11:03.390
+and you know more about the task
+
+01:11:03.390 --> 01:11:04.223
+and everything that you want."
+
+01:11:04.223 --> 01:11:05.580
+So you give them the instructions
+
+01:11:05.580 --> 01:11:07.620
+and you explain what they
+should do in edge cases
+
+01:11:07.620 --> 01:11:10.830
+and all this kind of stuff,
+versus when you have an expert
+
+01:11:10.830 --> 01:11:13.710
+that you're actually
+consulting to do some work.
+
+01:11:13.710 --> 01:11:15.420
+So I think designers can
+get really frustrated
+
+01:11:15.420 --> 01:11:17.100
+because they know the space
+of design really well.
+
+01:11:17.100 --> 01:11:17.933
+And they're like, "Yeah. Okay,
+
+01:11:17.933 --> 01:11:19.860
+the client came to me and he just said,
+
+01:11:19.860 --> 01:11:22.140
+'Make me a poster, make it bold.'"
+
+01:11:22.140 --> 01:11:26.010
+I'm like, "That means 7,000 things to me
+
+01:11:26.010 --> 01:11:27.720
+and I'm gonna try and
+ask you some questions."
+
+01:11:27.720 --> 01:11:31.350
+So I could see it going from
+being temp agency employee,
+
+01:11:31.350 --> 01:11:33.210
+to being more designer that you're hiring,
+
+01:11:33.210 --> 01:11:35.310
+and that's just a flip
+in the relationship.
+
+01:11:35.310 --> 01:11:38.130
+I don't know if that's true and
+I think both might continue,
+
+01:11:38.130 --> 01:11:40.597
+but I could see that
+being why people are like,
+
+01:11:40.597 --> 01:11:42.420
+"Oh, is prompt engineering
+going to not be a thing
+
+01:11:42.420 --> 01:11:43.500
+in the future?"
+
+01:11:43.500 --> 01:11:46.050
+Because for some domains
+it might just not be,
+
+01:11:46.050 --> 01:11:47.130
+if the models are just so good
+
+01:11:47.130 --> 01:11:49.410
+that actually all they need
+to do is get the information
+
+01:11:49.410 --> 01:11:51.840
+from your brain and then
+they can go do the task.
+
+01:11:51.840 --> 01:11:54.570
+- Right, that's actually
+a really good analogy.
+
+01:11:54.570 --> 01:11:55.920
+One common thread
+
+01:11:55.920 --> 01:11:58.050
+I'm pulling out of all
+your guys' responses here,
+
+01:11:58.050 --> 01:12:00.030
+is that there seems to be a future
+
+01:12:00.030 --> 01:12:03.720
+in which this sort of
+elicitation from the user
+
+01:12:03.720 --> 01:12:06.000
+drawing out that information,
+
+01:12:06.000 --> 01:12:07.950
+is gonna become much more important,
+
+01:12:07.950 --> 01:12:09.240
+much more than it is right now.
+
+01:12:09.240 --> 01:12:11.790
+And already you guys are
+all starting to do it
+
+01:12:11.790 --> 01:12:13.380
+in a manual way.
+
+01:12:13.380 --> 01:12:16.050
+In the future and in the
+enterprise side of things,
+
+01:12:16.050 --> 01:12:18.540
+maybe that looks like a expansion
+
+01:12:18.540 --> 01:12:21.000
+of this prompt-generating type of concept
+
+01:12:21.000 --> 01:12:22.350
+and things in the console
+
+01:12:22.350 --> 01:12:25.230
+where you're able to
+actually get more information
+
+01:12:25.230 --> 01:12:26.640
+from that enterprise customer,
+
+01:12:26.640 --> 01:12:28.860
+so that they can write a better prompt.
+
+01:12:28.860 --> 01:12:31.350
+In Claude, maybe it looks less
+
+01:12:31.350 --> 01:12:32.850
+of just typing into a text box,
+
+01:12:32.850 --> 01:12:34.950
+and more of this guided interaction
+
+01:12:34.950 --> 01:12:36.303
+towards a finished product.
+
+01:12:38.730 --> 01:12:39.563
+Yeah.
+
+01:12:39.563 --> 01:12:41.670
+I think that's actually a
+pretty compelling vision
+
+01:12:41.670 --> 01:12:44.910
+of the future, and I think that
+the design analogy probably
+
+01:12:44.910 --> 01:12:46.590
+really brings that home.
+
+01:12:46.590 --> 01:12:48.210
+- I was thinking about how prompting now
+
+01:12:48.210 --> 01:12:51.630
+can be like teaching where
+it's like the empathy
+
+01:12:51.630 --> 01:12:53.670
+for the student.
+
+01:12:53.670 --> 01:12:55.437
+You're trying to think about
+how they think about things
+
+01:12:55.437 --> 01:12:58.860
+and you're really trying to show them,
+
+01:12:58.860 --> 01:13:00.540
+figure out where they're making a mistake.
+
+01:13:00.540 --> 01:13:02.670
+But the point that you're talking about,
+
+01:13:02.670 --> 01:13:07.530
+it's like the skill almost
+becomes one of introspection
+
+01:13:07.530 --> 01:13:08.363
+where you're thinking
+
+01:13:08.363 --> 01:13:10.210
+about what it is that you actually want
+
+01:13:11.130 --> 01:13:13.710
+and the model's trying to understand you.
+
+01:13:13.710 --> 01:13:18.303
+So it's making yourself
+legible to the model,
+
+01:13:19.800 --> 01:13:23.250
+versus trying to teach someone
+who's smarter than you.
+
+01:13:23.250 --> 01:13:24.960
+- This is actually how
+I think of prompting now
+
+01:13:24.960 --> 01:13:26.160
+in a strange way.
+
+01:13:26.160 --> 01:13:30.690
+So often my style of prompting,
+
+01:13:30.690 --> 01:13:31.800
+there's various things that I do,
+
+01:13:31.800 --> 01:13:33.900
+but a common thing
+that's very like a thing
+
+01:13:33.900 --> 01:13:37.230
+that philosophers will do
+is I'll define new concepts.
+
+01:13:37.230 --> 01:13:39.750
+'Cause my thought is you
+have to put into words
+
+01:13:39.750 --> 01:13:42.663
+what you want and sometimes
+what I want is fairly nuanced.
+
+01:13:43.590 --> 01:13:45.300
+Like the what is a good chart?
+
+01:13:45.300 --> 01:13:48.843
+Or usually, I don't know,
+
+01:13:49.860 --> 01:13:53.130
+when should you grade something
+as being correct or not?
+
+01:13:53.130 --> 01:13:55.980
+So there's some cases where
+I will just invent a concept
+
+01:13:55.980 --> 01:13:57.840
+and then be like, "Here's
+what I mean by the concept."
+
+01:13:57.840 --> 01:13:59.520
+Sometimes I'll do it in
+collaboration with Claude
+
+01:13:59.520 --> 01:14:01.773
+to get it to figure out
+what the concept is,
+
+01:14:02.760 --> 01:14:05.660
+just because I'm trying to
+convey to it what's in my head.
+
+01:14:07.290 --> 01:14:11.190
+And right now the models aren't
+trying to do that with us,
+
+01:14:11.190 --> 01:14:13.413
+unless you prompt them to do so.
+
+01:14:14.280 --> 01:14:15.113
+So in the future,
+
+01:14:15.113 --> 01:14:17.400
+it might just be that they
+can elicit that from us,
+
+01:14:17.400 --> 01:14:21.993
+rather than us having to do it for them.
+
+01:14:22.860 --> 01:14:24.690
+But I think another
+thing that's interesting,
+
+01:14:24.690 --> 01:14:26.677
+this is people have sometimes asked me,
+
+01:14:26.677 --> 01:14:30.270
+"Oh, where is philosophy
+relevant to prompting?"
+
+01:14:30.270 --> 01:14:32.520
+And I actually think it's
+very useful in a sense.
+
+01:14:32.520 --> 01:14:35.370
+So there is a style of philosophy writing,
+
+01:14:35.370 --> 01:14:37.200
+and this is at least how I was taught
+
+01:14:37.200 --> 01:14:38.640
+how to write philosophy.
+
+01:14:38.640 --> 01:14:42.210
+Where the idea is that in order to...
+
+01:14:42.210 --> 01:14:44.700
+I think, it's an anti-bullshit device
+
+01:14:44.700 --> 01:14:47.280
+in philosophy basically,
+which is that your papers
+
+01:14:47.280 --> 01:14:48.960
+and what you write should be legible
+
+01:14:48.960 --> 01:14:51.030
+to an educated layperson.
+
+01:14:51.030 --> 01:14:52.260
+Someone just finds your paper,
+
+01:14:52.260 --> 01:14:53.820
+they pick it up and they start reading it,
+
+01:14:53.820 --> 01:14:55.830
+and they can understand everything.
+
+01:14:55.830 --> 01:14:57.660
+Not everyone achieves this,
+
+01:14:57.660 --> 01:15:00.450
+but that's the goal of
+the discipline, I guess,
+
+01:15:00.450 --> 01:15:04.143
+or at least this is at
+least what we teach people.
+
+01:15:05.850 --> 01:15:08.100
+So I'm really used to this
+idea of when I'm writing,
+
+01:15:08.100 --> 01:15:11.010
+thinking about the educated layperson,
+
+01:15:11.010 --> 01:15:12.180
+who they're really smart,
+
+01:15:12.180 --> 01:15:14.130
+but they don't know
+anything about this topic.
+
+01:15:14.130 --> 01:15:16.880
+And that was just years
+and years of writing text
+
+01:15:16.880 --> 01:15:17.940
+of that form.
+
+01:15:17.940 --> 01:15:19.560
+And I think it was just
+really good for prompting
+
+01:15:19.560 --> 01:15:20.850
+'cause I was like, "Oh, I'm used to this.
+
+01:15:20.850 --> 01:15:22.170
+I have an educated layperson
+
+01:15:22.170 --> 01:15:23.610
+who doesn't know anything
+about the topic."
+
+01:15:23.610 --> 01:15:24.443
+And what I need to do is,
+
+01:15:24.443 --> 01:15:27.090
+I need to take extremely complex ideas
+
+01:15:27.090 --> 01:15:29.010
+and I need to make them understand it.
+
+01:15:29.010 --> 01:15:30.630
+I don't talk down to them.
+
+01:15:30.630 --> 01:15:33.420
+I'm not inaccurate, but
+I need to phrase things
+
+01:15:33.420 --> 01:15:36.217
+in such a way that it's extremely
+clear to them what I mean,
+
+01:15:36.217 --> 01:15:38.550
+and prompting felt very similar.
+
+01:15:38.550 --> 01:15:40.410
+And actually, the
+training techniques we use
+
+01:15:40.410 --> 01:15:41.250
+are fascinating.
+
+01:15:41.250 --> 01:15:42.083
+Or the things that you said
+
+01:15:42.083 --> 01:15:43.590
+where you're like you say to a person,
+
+01:15:43.590 --> 01:15:46.170
+"Just take that thing you
+said and write it down."
+
+01:15:46.170 --> 01:15:48.090
+I used to say that to
+students all the time.
+
+01:15:48.090 --> 01:15:49.147
+They'd write a paper and I was like,
+
+01:15:49.147 --> 01:15:50.550
+"I don't quite get what
+you're saying here.
+
+01:15:50.550 --> 01:15:52.740
+Can you just explain your argument to me?"
+
+01:15:52.740 --> 01:15:54.810
+They would give me an
+incredibly cogent argument,
+
+01:15:54.810 --> 01:15:55.643
+and then I'd be like,
+
+01:15:55.643 --> 01:15:57.872
+"Can you just take that
+and write it down?"
+
+01:15:57.872 --> 01:16:01.230
+And then if they did, that
+was often a great essay.
+
+01:16:01.230 --> 01:16:02.490
+So it's really interesting
+
+01:16:02.490 --> 01:16:04.110
+that there's at least that similarity
+
+01:16:04.110 --> 01:16:07.350
+of just taking things
+that are in your brain,
+
+01:16:07.350 --> 01:16:08.550
+analyzing them enough to feel
+
+01:16:08.550 --> 01:16:09.960
+like you fully understand them.
+
+01:16:09.960 --> 01:16:12.480
+And could take any person off the street,
+
+01:16:12.480 --> 01:16:14.010
+who's a reasonable person,
+
+01:16:14.010 --> 01:16:16.380
+and just externalize your brain into them.
+
+01:16:16.380 --> 01:16:19.200
+I feel like that's the core of prompting.
+
+01:16:19.200 --> 01:16:22.200
+- That might be the best
+summary of how to prompt well
+
+01:16:22.200 --> 01:16:23.580
+that I've ever heard.
+
+01:16:23.580 --> 01:16:26.010
+In fact, I'm pretty sure it is.
+
+01:16:26.010 --> 01:16:27.150
+- Externalize your brain.
+
+01:16:27.150 --> 01:16:28.693
+- And then we'll cut it.
+
+01:16:28.693 --> 01:16:31.500
+- Having an education in the thing
+
+01:16:31.500 --> 01:16:33.060
+is a really good way
+to describe the thing.
+
+01:16:33.060 --> 01:16:33.900
+That was good.
+
+01:16:33.900 --> 01:16:37.980
+- That's, I think, a great
+way to wrap this conversation.
+
+01:16:37.980 --> 01:16:39.580
+Thank you, guys. This was great.
+
