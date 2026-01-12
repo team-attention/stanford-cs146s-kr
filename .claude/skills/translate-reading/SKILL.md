@@ -291,6 +291,16 @@ Task tool 호출:
 - subagent_type: "general-purpose"
 - prompt: .claude/agents/translate-reading/translation-qa.md 내용 + 번역 결과
 - description: "QA - 최종 품질 검증"
+
+QA 결과에서 scores 추출하여 저장:
+qaScores = {
+  consistency: N,
+  readability: N,
+  accuracy: N,
+  overall: N
+}
+
+이 점수는 Step 10에서 frontmatter에 포함됩니다.
 ```
 
 ### Step 8: Refiner 3차 실행
@@ -337,6 +347,11 @@ contentType: "youtube"
 duration: "3:31:05"
 totalChapters: 24
 hasSummary: true
+qaScore:
+  consistency: 8
+  readability: 7
+  accuracy: 9
+  overall: 8
 ---
 
 # 한국어 제목
@@ -404,7 +419,23 @@ Write tool로 docs/week{N}/{parent}/kr/{child}.md 저장
 공통:
 - 마크다운 형식
 - 메타데이터 포함 (원문 URL, 번역일 등)
+- qaScore 포함 (Step 7에서 추출한 점수)
 - 기존 출력 형식 유지
+
+일반 콘텐츠 frontmatter 예시:
+---
+title: "한국어 제목"
+originalTitle: "English Title"
+author: "저자명"
+sourceUrl: "원문 URL"
+translatedAt: "YYYY-MM-DD"
+status: "final"
+qaScore:
+  consistency: 8
+  readability: 7
+  accuracy: 9
+  overall: 8
+---
 ```
 
 ## 옵션
@@ -418,6 +449,7 @@ Write tool로 docs/week{N}/{parent}/kr/{child}.md 저장
 ### --skip-qa
 QA 단계를 스킵합니다 (빠른 번역용).
 - translator → refiner(1차) → validator → refiner(2차) 까지만 실행
+- qaScore가 frontmatter에 포함되지 않음
 
 ### --skip-summary
 요약 단계를 스킵합니다.
@@ -514,6 +546,12 @@ originalTitle: "English Title"
 author: "저자명"
 sourceUrl: "원문 URL"
 translatedAt: "2025-01-07"
+status: "final"
+qaScore:
+  consistency: 8
+  readability: 7
+  accuracy: 9
+  overall: 8
 ---
 
 # 한국어 제목
@@ -548,6 +586,11 @@ contentType: "youtube"
 duration: "3:31:05"
 totalChapters: 24
 hasSummary: true
+qaScore:
+  consistency: 8
+  readability: 7
+  accuracy: 9
+  overall: 8
 ---
 
 # 한국어 제목
