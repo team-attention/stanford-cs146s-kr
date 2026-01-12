@@ -147,7 +147,7 @@ YouTube URL 입력
    yt-dlp --write-subs --write-auto-subs \
      --sub-langs "en" --sub-format "vtt" \
      --skip-download \
-     -o "docs/week{N}/media/{slug}" \
+     -o "docs/week{N}/{slug}/media/{slug}" \
      <URL>
    ```
 
