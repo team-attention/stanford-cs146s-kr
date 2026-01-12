@@ -17,6 +17,9 @@ arguments:
   - name: child
     description: 자식 페이지 slug (--parent와 함께 사용, 예: zeroshot)
     required: false
+  - name: no-subpages
+    description: 웹 문서의 하위 페이지 자동 탐색 건너뛰기
+    required: false
 ---
 
 # fetch-reading Skill
@@ -26,12 +29,19 @@ URL에서 reading 콘텐츠를 수집하여 마크다운 파일로 저장합니�
 ## 사용법
 
 ```
-# 단일 페이지 (기존)
+# 단일 페이지
 /fetch-reading <url>
 /fetch-reading <url> --week <N>
 /fetch-reading <local-file.pdf>
 
-# 계층적 구조 (부모-자식)
+# 웹 문서 - 하위 페이지 자동 탐색 (기본)
+# 하위 페이지가 감지되면 사용자 확인 후 전체 수집
+/fetch-reading https://www.promptingguide.ai/techniques
+
+# 웹 문서 - 하위 페이지 탐색 건너뛰기
+/fetch-reading <url> --no-subpages
+
+# 수동 계층적 구조 (부모-자식)
 /fetch-reading <url> --parent <parent-slug> --child <child-slug>
 /fetch-reading <url> --week 1 --parent prompt-engineering-guide --child zeroshot
 ```
@@ -271,6 +281,142 @@ PDF 파일 읽기
 - WebFetch로 HTML 수집
 - 본문 추출 및 마크다운 변환
 - 코드 블록, 리스트, 헤딩 구조 보존
+- **하위 페이지 자동 탐색**: 네비게이션/사이드바에서 하위 페이지 링크 감지
+
+##### 웹 문서 하위 페이지 자동 탐색 워크플로우
+
+웹 문서인 경우, 먼저 하위 페이지가 있는지 자동으로 탐색합니다.
+
+**자동 탐색이 건너뛰어지는 경우**:
+- `--no-subpages` 옵션 사용 시
+- `--parent`와 `--child` 옵션으로 수동 지정 시
+- PDF, GitHub, YouTube 등 웹 문서가 아닌 경우
+
+```
+웹 URL 입력
+    │
+    ▼
+┌──────────────────────────────────────┐
+│ WebFetch로 메인 페이지 HTML 수집       │
+│ - 네비게이션/사이드바 링크 분석         │
+│ - 같은 도메인의 하위 페이지 추출        │
+│ - URL 패턴 분석 (예: /techniques/*)    │
+└──────────────────────────────────────┘
+    │
+    ▼
+┌──────────────────────────────────────┐
+│ 하위 페이지 감지 여부 확인              │
+│ - 감지됨: 사용자 확인 단계로             │
+│ - 감지 안됨: 단일 페이지로 처리          │
+└──────────────────────────────────────┘
+    │
+    ▼ (하위 페이지 감지됨)
+┌──────────────────────────────────────┐
+│ AskUserQuestion으로 사용자 확인        │
+│ - 발견된 하위 페이지 목록 표시          │
+│ - 전체 수집 / 선택 수집 / 단일 페이지   │
+└──────────────────────────────────────┘
+    │
+    ▼ (사용자 승인)
+┌──────────────────────────────────────┐
+│ 각 하위 페이지 순차 수집               │
+│ - 부모 디렉토리 생성                   │
+│ - 각 하위 페이지 WebFetch로 수집       │
+│ - 개별 마크다운 파일로 저장            │
+└──────────────────────────────────────┘
+```
+
+##### 웹 하위 페이지 탐색 실행 지침
+
+1. **메인 페이지 수집 및 분석**:
+   ```
+   WebFetch로 메인 페이지 HTML 수집 후 다음을 분석:
+   - 사이드바/네비게이션 메뉴의 링크들
+   - 같은 도메인 또는 같은 경로 패턴의 링크
+   - "목차", "Table of Contents", "Chapters" 등의 섹션
+   ```
+
+2. **하위 페이지 링크 추출 기준**:
+   - 같은 도메인 내의 링크만 대상
+   - URL 패턴이 유사한 링크 그룹화 (예: `/techniques/zeroshot`, `/techniques/fewshot`)
+   - 네비게이션/사이드바에 있는 링크 우선
+   - 외부 링크, 앵커 링크(#), 이미지/미디어 링크 제외
+
+3. **하위 페이지 감지 시 사용자 확인**:
+
+   하위 페이지를 발견하면 **반드시** AskUserQuestion으로 사용자에게 확인:
+
+   ```
+   AskUserQuestion 호출:
+
+   questions:
+     - question: "이 웹 페이지에서 {N}개의 하위 페이지를 발견했습니다. 어떻게 처리할까요?"
+       header: "하위 페이지"
+       options:
+         - label: "전체 수집 (권장)"
+           description: "발견된 모든 하위 페이지를 수집하여 계층 구조로 저장합니다."
+         - label: "단일 페이지만"
+           description: "현재 페이지만 수집하고 하위 페이지는 무시합니다."
+         - label: "선택적 수집"
+           description: "수집할 하위 페이지를 직접 선택합니다."
+       multiSelect: false
+   ```
+
+   **확인 전에 발견된 하위 페이지 목록을 먼저 보여주기**:
+   ```
+   다음 {N}개의 하위 페이지를 발견했습니다:
+
+   | # | 제목 | URL |
+   |---|------|-----|
+   | 1 | Zero-shot Prompting | /techniques/zeroshot |
+   | 2 | Few-shot Prompting | /techniques/fewshot |
+   | 3 | Chain-of-Thought | /techniques/cot |
+   ...
+
+   이 페이지들을 어떻게 처리할까요?
+   ```
+
+4. **전체 수집 선택 시**:
+   - 부모 디렉토리 생성: `docs/week{N}/{parent-slug}/`
+   - 각 하위 페이지를 순차적으로 WebFetch
+   - 개별 마크다운 파일로 저장: `docs/week{N}/{parent-slug}/{child-slug}.md`
+   - 하위 페이지의 slug는 URL 경로 또는 제목에서 생성
+
+5. **선택적 수집 선택 시**:
+   - 추가 AskUserQuestion으로 수집할 페이지 선택 (multiSelect: true)
+   - 선택된 페이지만 수집
+
+##### 웹 하위 페이지 결과 구조
+
+```
+docs/week1/prompt-engineering-guide/
+├── zeroshot.md           # 하위 페이지 1
+├── fewshot.md            # 하위 페이지 2
+├── cot.md                # 하위 페이지 3
+├── self-consistency.md   # 하위 페이지 4
+└── ... (N개 하위 페이지)
+```
+
+**개별 하위 페이지 파일 형식**:
+```markdown
+---
+title: "Zero-shot Prompting"
+source_url: "https://www.promptingguide.ai/techniques/zeroshot"
+source_type: web
+author: "DAIR.AI"
+parent_slug: "prompt-engineering-guide"
+fetch_date: "YYYY-MM-DD"
+translation_status: none
+---
+
+# Zero-shot Prompting
+
+[원본 링크](https://www.promptingguide.ai/techniques/zeroshot)
+
+## 본문
+
+(수집된 콘텐츠)
+```
 
 ### 3. 마크다운 파일 생성
 
@@ -499,7 +645,31 @@ docs/week1/prompt-engineering-guide/
 ```
 결과: `docs/week3/` 디렉토리에 저장
 
-### 계층적 구조 수집 (부모-자식)
+### 웹 하위 페이지 자동 수집
+
+**하위 페이지가 있는 웹 문서**:
+```
+/fetch-reading https://www.promptingguide.ai/techniques
+```
+
+동작:
+1. 메인 페이지에서 하위 페이지 링크 자동 탐색
+2. 발견된 하위 페이지 목록 표시 (예: zeroshot, fewshot, cot...)
+3. AskUserQuestion으로 사용자 확인
+4. 승인 시 모든 하위 페이지를 `docs/week1/prompt-engineering-guide/` 구조로 저장
+
+결과:
+```
+docs/week1/prompt-engineering-guide/
+├── zeroshot.md
+├── fewshot.md
+├── cot.md
+└── ... (자동 탐색된 하위 페이지들)
+```
+
+### 계층적 구조 수동 수집 (부모-자식)
+
+자동 탐색을 사용하지 않고 수동으로 개별 페이지를 지정하는 경우:
 
 **자식 페이지 수집**:
 ```
@@ -563,4 +733,30 @@ docs/week1/prompt-engineering-guide/
 
   # 또는 특정 챕터만 번역
   /translate-reading week1/deep-dive-llms/tokenization
+```
+
+### 웹 하위 페이지 완료 메시지
+
+```
+✅ 웹 문서 수집 완료! (하위 페이지 자동 탐색)
+
+📁 디렉토리: docs/week1/prompt-engineering-guide/
+📊 하위 페이지: 18개
+🔗 원본: https://www.promptingguide.ai/techniques
+
+생성된 파일:
+  - zeroshot.md (Zero-shot Prompting)
+  - fewshot.md (Few-shot Prompting)
+  - cot.md (Chain-of-Thought Prompting)
+  - self-consistency.md (Self-Consistency)
+  ... (14개 더)
+
+다음 단계:
+  # 전체 하위 페이지 번역 (순차 실행)
+  /translate-reading week1/prompt-engineering-guide/zeroshot
+  /translate-reading week1/prompt-engineering-guide/fewshot
+  ...
+
+  # 또는 특정 페이지만 번역
+  /translate-reading week1/prompt-engineering-guide/cot
 ```
