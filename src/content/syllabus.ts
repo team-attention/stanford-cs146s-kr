@@ -532,6 +532,8 @@ export const syllabus: Week[] = [
       {
         title: 'Benefits of Agentic AI in On-call Engineering',
         url: 'https://resolve.ai/blog/Top-5-Benefits',
+        krSlug: 'agentic-ai-benefits',
+        translationStatus: 'complete',
       },
     ],
     assignments: [],
