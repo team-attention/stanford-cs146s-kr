@@ -3281,7 +3281,7 @@ export const readings: Record<string, ReadingContent> = {
     readTime: '약 2분',
     sourceUrl: 'https://blog.codinghorror.com/code-reviews-just-do-it/',
     sourceTitle: 'Coding Horror',
-    published: false,
+    published: true,
     sections: [
       {
         title: '본문',
@@ -3440,7 +3440,7 @@ export const readings: Record<string, ReadingContent> = {
     readTime: '약 15분',
     sourceUrl: 'https://arxiv.org/pdf/2405.13565',
     sourceTitle: 'arXiv - Google Research',
-    published: false,
+    published: true,
     contentType: 'pdf',
     sections: [
       {
@@ -3610,7 +3610,7 @@ export const readings: Record<string, ReadingContent> = {
     sourceUrl:
       'https://blakesmith.me/2015/02/09/code-review-essentials-for-software-teams.html',
     sourceTitle: 'Blake Smith Blog',
-    published: false,
+    published: true,
     sections: [
       {
         title: '소개',
@@ -3703,7 +3703,7 @@ export const readings: Record<string, ReadingContent> = {
     readTime: '약 10분',
     sourceUrl: 'https://github.blog/developer-skills/github/how-to-review-code-effectively-a-github-staff-engineers-philosophy/',
     sourceTitle: 'GitHub Blog',
-    published: false,
+    published: true,
     sections: [
       {
         title: '들어가며',
@@ -3954,7 +3954,7 @@ export const readings: Record<string, ReadingContent> = {
     readTime: '약 12분',
     sourceUrl: 'https://graphite.com/guides/ai-code-review-implementation-best-practices',
     sourceTitle: 'Graphite Guide',
-    published: false,
+    published: true,
     sections: [
       {
         title: '소개',
