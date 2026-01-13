@@ -3534,7 +3534,7 @@ export const readings: Record<string, ReadingContent> = {
     readTime: '약 8분',
     sourceUrl: 'https://resolve.ai/blog/role-of-multi-agent-systems-AI-native-engineering',
     sourceTitle: 'Resolve AI Blog',
-    published: false,
+    published: true,
     sections: [
       {
         title: '본문',
@@ -3808,7 +3808,7 @@ export const readings: Record<string, ReadingContent> = {
     readTime: '약 5분',
     sourceUrl: 'https://resolve.ai/blog/Top-5-Benefits',
     sourceTitle: 'Resolve AI Blog',
-    published: false,
+    published: true,
     sections: [
       {
         title: '1. 알림 피로 해소',
@@ -3888,7 +3888,7 @@ export const readings: Record<string, ReadingContent> = {
     readTime: '약 5분',
     sourceUrl: 'https://resolve.ai/blog/kubernetes-troubleshooting-in-resolve-ai',
     sourceTitle: 'Resolve AI Blog',
-    published: false,
+    published: true,
     sections: [
       {
         title: '쿠버네티스 트러블슈팅의 어려움',
@@ -4067,7 +4067,7 @@ export const readings: Record<string, ReadingContent> = {
     readTime: '약 10분',
     sourceUrl: 'https://last9.io/blog/traces-spans-observability-basics/',
     sourceTitle: 'Last9 Blog',
-    published: false,
+    published: true,
     sections: [
       {
         title: '트레이스와 스팬 이해하기: 핵심 개념',
@@ -4165,7 +4165,7 @@ export const readings: Record<string, ReadingContent> = {
     readTime: '약 5분',
     sourceUrl: 'https://resolve.ai/blog/product-deep-dive',
     sourceTitle: 'Resolve AI Blog',
-    published: false,
+    published: true,
     sections: [
       {
         title: '새로운 온콜 팀원을 만나보세요',
@@ -4238,7 +4238,7 @@ export const readings: Record<string, ReadingContent> = {
     readTime: '약 15분',
     sourceUrl: 'https://sre.google/sre-book/introduction/',
     sourceTitle: 'Google SRE Book',
-    published: false,
+    published: true,
     sections: [
       {
         title: '서비스 관리에 대한 시스템 관리자 접근 방식',
