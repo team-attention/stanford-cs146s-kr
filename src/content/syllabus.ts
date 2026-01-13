@@ -515,6 +515,8 @@ export const syllabus: Week[] = [
       {
         title: 'Introduction to Site Reliability Engineering',
         url: 'https://sre.google/sre-book/introduction/',
+        krSlug: 'introduction-to-sre',
+        translationStatus: 'complete',
       },
       {
         title: 'Observability Basics You Should Know',
