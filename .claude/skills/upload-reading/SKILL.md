@@ -18,6 +18,12 @@ arguments:
   - name: draft
     description: published=false로 설정 (기본값)
     required: false
+  - name: quick
+    description: YouTube 콘텐츠에서 요약만 포함 (질문 없이 빠르게 처리)
+    required: false
+  - name: full
+    description: YouTube 콘텐츠에서 모든 콘텐츠 포함 (질문 없이)
+    required: false
 ---
 
 # upload-reading Skill
@@ -34,6 +40,11 @@ arguments:
 # 계층적 구조 (자식 페이지)
 /upload-reading <week/parent/child>
 /upload-reading <week/parent/child> --publish
+
+# YouTube 콘텐츠 옵션
+/upload-reading <week/slug> --quick    # 요약만 포함 (빠른 처리)
+/upload-reading <week/slug> --full     # 모든 콘텐츠 포함
+/upload-reading <week/slug>            # 포함할 콘텐츠 선택 (AskUserQuestion)
 ```
 
 ## 예시
@@ -48,6 +59,22 @@ arguments:
 ```
 /upload-reading week1/prompt-engineering-guide/zeroshot
 /upload-reading week1/prompt-engineering-guide/fewshot --publish
+```
+
+### YouTube 콘텐츠 (포함 콘텐츠 선택)
+```
+# 요약만 빠르게 업로드
+/upload-reading week1/deep-dive-llms --quick
+
+# 모든 콘텐츠 포함
+/upload-reading week1/deep-dive-llms --full
+
+# 사용자에게 물어보기 (기본)
+/upload-reading week1/deep-dive-llms
+# → AskUserQuestion: "어떤 콘텐츠를 포함할까요?"
+#   [x] 요약 (TL;DR + 챕터별 요약)
+#   [x] Motivation (왜 읽어야 하는지)
+#   [ ] 전문 번역
 ```
 
 ## 입출력
@@ -207,6 +234,39 @@ arguments:
 1. docs/week{N}/{parent}/kr/{child}.md 파일 읽기
 2. 파일이 없으면 에러: "번역 파일을 찾을 수 없습니다. /translate-reading을 먼저 실행하세요."
 3. 원본 파일도 읽기: docs/week{N}/{parent}/eng/{child}.md (메타데이터 보완용)
+```
+
+### Step 1.5: 포함할 콘텐츠 선택 (YouTube 콘텐츠만)
+
+YouTube 콘텐츠인 경우 (`contentType: youtube` 또는 `<!-- SUMMARY_START -->` 존재), AskUserQuestion 도구로 사용자에게 포함할 콘텐츠를 물어봅니다.
+
+```
+AskUserQuestion:
+  questions:
+    - question: "어떤 콘텐츠를 포함할까요?"
+      header: "포함 콘텐츠"
+      multiSelect: true
+      options:
+        - label: "요약 (TL;DR + 챕터별 요약)"
+          description: "전체 요약과 챕터별 핵심 포인트를 포함합니다"
+        - label: "Motivation (왜 읽어야 하는지)"
+          description: "LLM이 생성한 동기부여 섹션을 포함합니다"
+        - label: "전문 번역"
+          description: "전체 번역 본문을 포함합니다 (긴 콘텐츠는 용량이 큼)"
+```
+
+**기본 동작** (일반 콘텐츠 또는 빠른 처리):
+- `--quick` 옵션: 질문 없이 요약만 포함
+- `--full` 옵션: 질문 없이 모든 콘텐츠 포함
+- 옵션 없음: AskUserQuestion으로 선택 요청
+
+**선택 결과 저장**:
+```typescript
+const includeOptions = {
+  summary: boolean,      // TL;DR + chapterSummaries
+  motivation: boolean,   // globalMotivation + sectionMotivations
+  fullTranslation: boolean  // sections (전문)
+}
 ```
 
 ### Step 2: 마크다운 파싱
@@ -377,7 +437,9 @@ hasSummary: true
 
 ### Step 2.5: Motivation 생성 (선택적)
 
-`--no-motivation` 플래그가 없으면 기본으로 실행됩니다.
+다음 조건에서 실행됩니다:
+- 일반 콘텐츠: `--no-motivation` 플래그가 없으면 기본 실행
+- YouTube 콘텐츠: Step 1.5에서 사용자가 "Motivation" 선택 시 (`includeOptions.motivation === true`)
 
 1. **motivation-generator agent 호출**:
    ```
@@ -445,29 +507,60 @@ const newReading: ReadingContent = {
 }
 ```
 
-**YouTube 콘텐츠** (ReadingContent + 요약 필드):
+**YouTube 콘텐츠** (ReadingContent + 선택된 필드):
+
+Step 1.5에서 선택한 `includeOptions`에 따라 포함할 필드가 결정됩니다:
+
 ```typescript
 const newReading: ReadingContent = {
+  // 항상 포함되는 기본 메타데이터
   slug: '{slug}',
   week: {N},
   title: '{originalTitle}',
   titleKr: '{title}',
   author: '{author}',
-  readTime: '{duration}', // 예: "약 3시간 31분"
+  readTime: '{duration}',
   sourceUrl: '{sourceUrl}',
   sourceTitle: '{YouTube - 제목}',
   published: false,
-  sections: [...],
-  keyTakeaways: [...],
-  // YouTube 전용 필드
   contentType: 'youtube',
   duration: '{duration}',
   totalChapters: {N},
-  tldr: '{tldr}',
-  learningGoals: [...],
-  chapterSummaries: [...]
+
+  // includeOptions.summary === true 일 때만 포함
+  ...(includeOptions.summary && {
+    tldr: '{tldr}',
+    learningGoals: [...],
+    chapterSummaries: [...]
+  }),
+
+  // includeOptions.motivation === true 일 때만 포함
+  ...(includeOptions.motivation && {
+    motivation: {
+      title: '왜 이 글을 읽어야 할까요?',
+      content: '...',
+      targetAudience: ['...']
+    }
+  }),
+
+  // includeOptions.fullTranslation === true 일 때만 포함
+  ...(includeOptions.fullTranslation && {
+    sections: [...],
+    keyTakeaways: [...]
+  })
 }
 ```
+
+**옵션별 포함 필드 정리**:
+
+| 옵션 | 포함 필드 |
+|------|----------|
+| `--quick` | 기본 메타 + tldr, learningGoals, chapterSummaries |
+| `--full` | 모든 필드 |
+| 요약만 선택 | 기본 메타 + tldr, learningGoals, chapterSummaries |
+| Motivation만 선택 | 기본 메타 + motivation |
+| 전문만 선택 | 기본 메타 + sections, keyTakeaways |
+| 모두 선택 | 모든 필드 |
 
 **자식 페이지** (ChildReading 확장):
 ```typescript
@@ -576,7 +669,13 @@ readings.ts에 동일한 키가 이미 존재하면 기존 데이터를 보존�
 `published: false`로 설정합니다. 나중에 readings.ts에서 수동으로 true로 변경하면 공개됩니다.
 
 ### --no-motivation
-Motivation 섹션 생성을 건너뜁니다. LLM 호출 없이 빠르게 업로드할 때 사용합니다.
+Motivation 섹션 생성을 건너뜁니다. LLM 호출 없이 빠르게 업로드할 때 사용합니다. (일반 콘텐츠에만 적용)
+
+### --quick
+YouTube 콘텐츠에서 요약만 포함합니다 (TL;DR + 챕터별 요약). 사용자에게 묻지 않고 빠르게 처리합니다.
+
+### --full
+YouTube 콘텐츠에서 모든 콘텐츠를 포함합니다 (요약 + Motivation + 전문). 사용자에게 묻지 않습니다.
 
 ## 출력
 
@@ -604,13 +703,19 @@ Motivation 섹션 생성을 건너뜁니다. LLM 호출 없이 빠르게 업로�
 
 ### YouTube 콘텐츠 업로드 완료 시:
 ```
+✓ 포함 콘텐츠 선택
+  - 요약 (TL;DR + 챕터별): ✓
+  - Motivation: ✓
+  - 전문 번역: ✗
+
 ✓ readings.ts 업데이트 완료
   - 키: week1/deep-dive-llms
   - 제목: Deep Dive into LLMs / ChatGPT 같은 LLM 심층 분석
   - 콘텐츠 유형: youtube
-  - 섹션: 24개
   - TL;DR: 포함
   - 챕터별 요약: 24개
+  - Motivation: 포함
+  - 전문 섹션: 미포함
   - published: false
 
 ✓ syllabus.ts 업데이트 완료
@@ -620,6 +725,7 @@ Motivation 섹션 생성을 건너뜁니다. LLM 호출 없이 빠르게 업로�
 다음 단계:
   1. 웹에서 확인: pnpm dev → /readings/week1/deep-dive-llms
   2. 공개하려면: readings.ts에서 published: true로 변경
+  3. 전문 추가하려면: /upload-reading week1/deep-dive-llms --full
 ```
 
 ### 자식 페이지 업로드 완료 시:
