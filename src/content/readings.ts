@@ -2698,6 +2698,129 @@ export const readings: Record<string, ReadingContent> = {
       { title: 'MCP Server Authentication', slug: 'mcp-server-authentication' },
     ],
   },
+  'week2/mcp-introduction': {
+    slug: 'mcp-introduction',
+    week: 2,
+    title: 'Model Context Protocol (MCP): A Comprehensive Introduction for Developers',
+    titleKr: '모델 컨텍스트 프로토콜(MCP): 개발자를 위한 종합 안내서',
+    author: 'Reed McGinley-Stempel',
+    readTime: '약 15분',
+    sourceUrl: 'https://stytch.com/blog/model-context-protocol-introduction/',
+    sourceTitle: 'Stytch Blog',
+    published: true,
+    sections: [
+      {
+        title: '요약',
+        content:
+          '모델 컨텍스트 프로토콜(MCP)은 AI 모델과 외부 데이터 및 서비스를 연결하는 개방형 표준으로, 대규모 언어 모델(LLM)이 일관되고 안전한 방식으로 구조화된 API 호출을 수행할 수 있게 합니다. MCP는 AI 애플리케이션과 외부 서비스 사이의 범용 어댑터 역할을 하며, 각 도구나 API마다 커스텀 통합 코드를 작성할 필요를 없앱니다.',
+      },
+      {
+        title: '모델 컨텍스트 프로토콜(MCP)이란?',
+        content:
+          'MCP는 LLM과 다양한 데이터베이스, 애플리케이션, API 사이의 다리 역할을 하며, 복잡한 커스텀 코딩 없이도 원활한 통합을 가능하게 합니다. 클라이언트-서버 아키텍처를 사용하는데, AI 애플리케이션이 MCP 클라이언트를 실행하는 호스트 역할을 하고, 외부 통합 기능은 함수, 데이터 리소스, 프롬프트 템플릿 같은 기능을 노출하는 MCP 서버로 동작합니다.',
+      },
+      {
+        title: 'MCP의 가치',
+        content:
+          'MCP는 빠른 도구 통합, 자율 에이전트 지원, 설정 부담 감소, 일관성과 상호운용성, 양방향 컨텍스트 등의 이점을 제공합니다.',
+        items: [
+          '빠른 도구 통합: 각각을 처음부터 커스텀 코딩하지 않고도 새로운 기능을 연결',
+          '자율 에이전트: 다단계 워크플로우를 자연스러운 흐름으로 연결',
+          '설정 부담 감소: 단일 메커니즘을 통해 얼마든지 많은 서비스에 연결',
+          '일관성과 상호운용성: 통일된 JSON 구조로 데이터 전달',
+          '양방향 컨텍스트: 프롬프트와 리소스를 지원하여 풍부한 상호작용',
+        ],
+      },
+      {
+        title: 'MCP 아키텍처',
+        content:
+          'MCP는 클라이언트-서버 구조를 따릅니다. MCP 클라이언트는 AI 애플리케이션(챗봇, IDE 어시스턴트, 에이전트)에 내장되고, MCP 서버는 표준화된 JSON-RPC 메시지를 통해 외부 기능을 노출합니다. 모든 상호작용은 구조화된 JSON-RPC 요청/응답을 통해 이루어집니다.',
+      },
+      {
+        title: 'MCP 서버 구축 및 배포',
+        content:
+          '개발자는 stdout으로 출력하거나 HTTP 엔드포인트를 제공할 수 있는 어떤 프로그래밍 언어로든 MCP 서버를 만들 수 있습니다. 로컬 개발 환경, 클라우드 플랫폼, 온프레미스 인프라 등 다양한 배포 옵션이 있으며, Cloudflare는 원격 MCP 서버 배포를 위한 강력한 기능을 제공합니다.',
+      },
+      {
+        title: 'MCP 클라이언트와 도구',
+        content:
+          'MCP 클라이언트는 외부 데이터 소스나 도구에 접근하기 위해 서버에 연결하는 애플리케이션으로, Python, JavaScript, Java 등 다양한 언어로 구축할 수 있습니다. Claude Desktop(채팅 인터페이스)과 Cursor(플러그인 시스템)가 대표적인 예입니다.',
+      },
+      {
+        title: 'MCP와 다른 접근 방식 비교',
+        content:
+          'MCP는 커스텀 통합, ChatGPT 플러그인, LangChain 등 기존 접근 방식과 비교했을 때 빠른 통합 속도, OAuth 표준 인증, 지속적이고 컨텍스트가 풍부한 상호작용, 개방형 표준이라는 장점이 있습니다. 커스텀 통합은 노동 집약적이고, ChatGPT 플러그인은 독점적이며, LangChain은 동적 도구 발견 기능이 부족했습니다.',
+      },
+      {
+        title: 'MCP 실전: 기술 심층 분석',
+        content:
+          'MCP 상호작용의 단계별 흐름: 1) MCP 서버에 연결하여 프로토콜 핸드셰이크 수행, 2) 사용 가능한 도구/리소스 탐색, 3) LLM이 적절한 도구 선택, 4) MCP를 통한 도구 호출, 5) LLM에 결과 반환. MCP는 도구 실행을 위한 표준화된 호출/응답 계층을 제공합니다.',
+      },
+      {
+        title: '초기 한계: 인증 공백',
+        content:
+          '2024년 후반에 MCP가 등장했을 때, 원격 서버를 위한 표준화된 인증이 없었습니다. 초기 구현에서는 서버를 로컬이나 신뢰할 수 있는 환경에서 실행해야 했고, 수동 자격 증명 제공을 가정했는데 이는 다중 사용자 애플리케이션에서 확장성 문제를 야기했습니다.',
+      },
+      {
+        title: 'OAuth 2.0 인증 흐름',
+        content:
+          'MCP는 안전하고 확장 가능한 원격 연결을 위해 OAuth 2.0을 채택했습니다.',
+        items: [
+          '동적 클라이언트 등록(DCR): 클라이언트가 OAuth 서버에 자동으로 등록',
+          '자동 엔드포인트 탐색: 표준화된 메타데이터 URL을 통해 자동 발견',
+          '안전한 인가와 토큰 관리: 사용자 권한에 맞게 범위가 지정된 토큰 획득',
+          '확장 가능한 다중 사용자 지원: 다수의 동시 사용자와 서비스 지원',
+        ],
+      },
+      {
+        title: '디버깅과 문제 해결',
+        content:
+          'MCP는 개발자가 서버를 테스트하고 검사할 수 있는 대화형 디버깅 도구인 MCP Inspector를 제공합니다. 이 도구는 클라이언트-서버 상호작용에 대한 상세한 뷰를 제공하여 문제를 체계적으로 파악할 수 있게 합니다.',
+      },
+      {
+        title: '실제 활용 사례',
+        content: 'MCP는 다양한 구현을 가능하게 합니다.',
+        items: [
+          'AI 기반 챗봇: 외부 데이터 소스와 도구에 접근하여 정확하고 최신 정보 제공',
+          'AI 기반 워크플로우: AI 모델을 외부 시스템과 통합하여 복잡한 프로세스 자동화',
+          '향상된 AI 모델: 외부 도구 및 데이터 소스와 상호작용하여 정확도 향상',
+          'AI 기반 자동화: 금융, 의료, 제조 분야의 업무 자동화',
+        ],
+      },
+      {
+        title: '결론',
+        content:
+          'MCP는 개발자가 지능형 언어 모델을 기존에 접근하기 어려웠던 소프트웨어와 데이터 생태계에 연결할 수 있게 하는 중요한 발전입니다. 공통 프로토콜을 도입함으로써, 팀은 커스텀 플러그인을 개발하지 않고도 더 통합적이고 자율적이며 확장하기 쉬운 AI 시스템을 구축할 수 있습니다. MCP는 AI 어시스턴트가 고립된 천재가 아니라, 다양한 시스템과 연동하고 필요에 따라 정보를 가져오거나 생성할 수 있는 잘 갖춰진 엔지니어이자 조수가 되는 세상을 가능하게 합니다.',
+      },
+    ],
+    keyTakeaways: [
+      {
+        title: 'MCP의 정의',
+        content:
+          'MCP는 AI 모델과 외부 데이터/서비스를 연결하는 개방형 표준으로, USB-C처럼 AI 도구와 외부 서비스 간의 범용 어댑터 역할을 합니다.',
+      },
+      {
+        title: '주요 이점',
+        content:
+          '빠른 도구 통합, 자율 에이전트 지원, 설정 부담 감소, 일관된 JSON 구조, 양방향 컨텍스트 지원으로 AI 시스템의 확장성과 유지보수성을 크게 향상시킵니다.',
+      },
+      {
+        title: '클라이언트-서버 아키텍처',
+        content:
+          'AI 애플리케이션이 MCP 클라이언트를 실행하고, 외부 통합 기능은 MCP 서버로 동작하며, JSON-RPC 2.0 기반의 표준화된 통신을 수행합니다.',
+      },
+      {
+        title: 'OAuth 2.0 통합',
+        content:
+          '동적 클라이언트 등록, 자동 엔드포인트 탐색, 안전한 토큰 관리를 통해 안전하고 확장 가능한 원격 연결을 지원합니다.',
+      },
+    ],
+    relatedReadings: [
+      { title: 'MCP Server Authentication', slug: 'mcp-server-authentication' },
+      { title: 'MCP Registry', slug: 'mcp-registry' },
+      { title: 'MCP Food-for-Thought', slug: 'mcp-food-for-thought' },
+    ],
+  },
   'week3/how-contexts-fail': {
     slug: 'how-contexts-fail',
     week: 3,
@@ -3402,6 +3525,81 @@ export const readings: Record<string, ReadingContent> = {
       },
     ],
   },
+  'week9/multi-agent-systems': {
+    slug: 'multi-agent-systems',
+    week: 9,
+    title: 'The Role of Multi-Agent Systems in Making Software Engineers AI-Native',
+    titleKr: '멀티 에이전트 시스템이 소프트웨어 엔지니어를 AI 네이티브로 만드는 역할',
+    author: 'Spiros Xanthos, Gabor Angeli, Bharat Khandelwal',
+    readTime: '약 8분',
+    sourceUrl: 'https://resolve.ai/blog/role-of-multi-agent-systems-AI-native-engineering',
+    sourceTitle: 'Resolve AI Blog',
+    published: false,
+    sections: [
+      {
+        title: '본문',
+        content:
+          '오늘날 엔지니어링에는 이상한 모순이 있다. AI를 활용하면 몇 시간 만에 전체 서비스를 구축할 수 있지만, 그 서비스에서 무엇이 잘못됐는지 파악하려면 여전히 분산된 여러 도구를 넘나들며 힘든 작업을 해야 한다.',
+      },
+      {
+        title: '코딩과 프로덕션의 격차',
+        content:
+          '코딩: 서비스를 작성할 때 AI 네이티브 개발 환경을 열고 AI에게 "재시도와 타임아웃을 처리하는 결제 서비스를 만들어줘"라고 요청한다. AI가 코드베이스 컨텍스트를 활용해 에러 처리가 포함된 구현을 생성한다. 프로덕션: 같은 서비스에서 높은 레이턴시가 발생하면 가설 수립부터 시작한다 → Datadog에서 메트릭 확인 → Loki로 전환해 로그 확인 → 배포 이력과 교차 참조 → 타임스탬프 상관관계 분석 → 계속 반복. 문제는 AI 능력이 아니라 AI 시스템 설계 방식에 있다. 대부분의 엔지니어링 팀은 여전히 AI로 기존 워크플로우를 더 빠르게 실행하는 데만 집중하고, 일하는 방식 자체를 재구상하지 않는다.',
+      },
+      {
+        title: 'AI 네이티브 엔지니어링이란? 왜 중요한가?',
+        content:
+          'AI 네이티브 엔지니어링은 엔지니어가 주로 AI와 상호작용해 작업을 조율하는 방식이다. 코드 작성이든 프로덕션 시스템 관리든 마찬가지다. "AI 네이티브"는 단순히 "AI를 사용하는" 것과 크게 다르다. AI 지원(AI-Assisted)에서는 AI 도구로 작업을 더 빠르게 수행하지만 워크플로우는 여전히 인간 중심이다. AI 네이티브(AI-Native)에서는 AI가 프로덕션 작업의 주요 인터페이스가 되어 엔지니어는 목표를 설정하고, AI 에이전트가 운영 작업을 처리한다.',
+      },
+      {
+        title: '왜 멀티 에이전트 시스템이 필수적인가?',
+        content:
+          '현대 프로덕션 시스템은 학계에서 "환원 불가능한 상호의존성(irreducible interdependence)"이라고 부르는 특성을 보인다. 단일 AI 도구로는 모든 도메인에 걸친 전문가 수준의 지식을 유지하면서 조사를 조율할 수 없다. API 레이턴시가 10배 급증하면, 50개 이상의 마이크로서비스에 걸친 트레이스 상관관계 분석, 느린 데이터베이스 쿼리와 커넥션 풀 고갈 분석, 최근 배포 및 인프라 변경 확인 등 동시적 전문 분석이 필요하다.',
+      },
+      {
+        title: '발전 프레임워크: 각 수준에서의 기술적 한계',
+        content:
+          'LLM: 피드백 루프나 실제 통합 없는 단일 패스 생성으로 엔지니어가 여전히 대부분의 운영 작업 수행. LLM + 도구: 제한된 컨텍스트 윈도우, 도구 상호작용 간 영속적 상태 관리 없음. 단일 에이전트: 다양한 추론 전략이나 병렬 조사 경로 관리 불가로 순차적 조사, 잘못된 가설에 갇힘. 멀티 에이전트: 분산 지능에는 형식적 통신 스키마와 충돌 해결이 필요하지만, 순차적 추론 제약을 돌파해 병렬 가설 테스트가 가능.',
+      },
+      {
+        title: '멀티 에이전트 시스템 구축은 어려운 엔지니어링 문제다',
+        content:
+          '프로덕션 수준의 멀티 에이전트 시스템을 구축하려면 깊은 도메인 전문성과 AI 엔지니어링 역량이라는 드문 조합이 필요하다. 도메인 전문성이 아키텍처를 결정하고, AI 전문성이 에이전트들을 함께 작동하게 한다. 교차점에서 혁신적 시스템이 탄생한다.',
+      },
+      {
+        title: 'Resolve AI 소개',
+        content:
+          'Resolve AI는 인시던트 해결과 프로덕션 운영을 돕는 상시 가동 AI SRE다. DataStax, Tubi, Rappi 같은 고객들은 Resolve AI를 통해 기계가 인간 대신 온콜을 맡게 하고 엔지니어들은 코딩에만 집중하게 함으로써 엔지니어링 속도와 시스템 신뢰성을 높였다.',
+      },
+      {
+        title: '저자 소개',
+        content:
+          'Spiros Xanthos - OpenTelemetry 창시에 참여하고, Log Insight와 Omnition을 창업했으며, Splunk에서 SVP이자 관측성 사업부 GM을 역임. Gabor Angeli - Google DeepMind와 Square에서의 경험을 바탕으로 Gemini와 Square Assistant 같은 제품을 개발. Bharat Khandelwal - WorldQuant, Moveworks, Tower Research Capital에서 ML 전략 개발, Stanford CS 석사, IIT Bombay CS 학사.',
+      },
+    ],
+    keyTakeaways: [
+      {
+        title: 'AI 네이티브 패러다임 전환',
+        content:
+          'AI 네이티브 엔지니어링은 단순히 AI를 사용하는 게 아니라 AI 에이전트가 주요 인터페이스가 되는 패러다임 전환',
+      },
+      {
+        title: '환원 불가능한 상호의존성',
+        content:
+          '프로덕션 시스템의 "환원 불가능한 상호의존성"으로 인해 단일 AI 도구로는 복잡한 인시던트 대응 불가',
+      },
+      {
+        title: '멀티 에이전트의 확장성',
+        content:
+          '멀티 에이전트 시스템만이 병렬 가설 테스트와 다중 도메인 전문화를 통해 확장 가능',
+      },
+      {
+        title: '이중 전문성 필수',
+        content:
+          '성공적인 멀티 에이전트 시스템 구축에는 도메인 전문성과 AI 엔지니어링 역량이 동시에 필요',
+      },
+    ],
+  },
   'week7/code-review-essentials': {
     slug: 'code-review-essentials',
     week: 7,
@@ -3678,6 +3876,356 @@ export const readings: Record<string, ReadingContent> = {
         title: '사전 예방적 이슈 방지',
         content:
           '사전 예방적 문제 식별로 다운타임과 운영 스트레스 감소',
+      },
+    ],
+  },
+  'week9/kubernetes-troubleshooting': {
+    slug: 'kubernetes-troubleshooting',
+    week: 9,
+    title: 'Kubernetes Troubleshooting in Resolve AI',
+    titleKr: 'Resolve AI의 쿠버네티스 트러블슈팅',
+    author: 'Resolve AI',
+    readTime: '약 5분',
+    sourceUrl: 'https://resolve.ai/blog/kubernetes-troubleshooting-in-resolve-ai',
+    sourceTitle: 'Resolve AI Blog',
+    published: false,
+    sections: [
+      {
+        title: '쿠버네티스 트러블슈팅의 어려움',
+        content:
+          '2014년 6월 첫 커밋 이후, 쿠버네티스는 44개국 8,000개 이상 기업의 88,000명 넘는 기여자가 참여하는 컨테이너 오케스트레이션의 사실상 표준이 되었습니다. 자가 복구와 선언적 특성 덕분에 손쉬운 확장과 고가용성을 약속하지만, 프로덕션 환경에서 쿠버네티스를 관리하기란 결코 간단하지 않습니다.',
+        items: [
+          '양치기 소년 같은 시끄러운 알림: 사소한 문제가 알림을 트리거하지만 대응 전에 저절로 해결되어 알림 피로 발생',
+          '일시적인 Pod, 사라진 컨텍스트: Pod 크래시 시 귀중한 트러블슈팅 컨텍스트도 함께 사라짐',
+          '관측성 데이터의 미로: 로그가 노드, Pod, 컨테이너에 흩어져 디버깅이 답답한 작업이 됨',
+        ],
+      },
+      {
+        title: '에이전틱 AI가 트러블슈팅을 바꾸는 방법',
+        content:
+          'Resolve AI의 에이전틱 AI는 24시간 연중무휴 쿠버네티스 전문가로서 점들을 연결하고, 실행 가능한 인사이트를 도출하며, 지루한 조사를 자동화합니다. 여러 소스에서 데이터를 수집하고, 고유한 문제와 반복되는 문제를 파악하며, 운영 오버헤드를 최소화하면서 해결을 간소화합니다.',
+        items: [
+          '항상 깨어있는 전문성: 알림 발생 시 클러스터에 뛰어들어 명확하고 실행 가능한 인사이트 제시',
+          '컨텍스트와 명확성을 위한 지식 그래프: Pod, 노드, 서비스 등 엔티티를 연결해 놓치기 쉬운 패턴 발견',
+          '모든 텔레메트리에서 노이즈 없는 분석: Prometheus 메트릭, Datadog 로그 등 다양한 소스 데이터를 분석해 실행 가능한 명확성으로 변환',
+        ],
+      },
+      {
+        title: '에이전틱 AI의 실제 동작',
+        content:
+          'Pod 크래시 알림을 받았을 때, kubectl과 씨름하거나 끝없는 로그를 파싱하는 대신 AI Production Engineer가 나섭니다.',
+        items: [
+          '이벤트 타임라인 재구성: 크래시로 이어진 과정을 조합—리소스 경합, 구성 실수, 외부 스로틀링 등',
+          '클러스터 전반의 이슈 상관관계 분석: 지식 그래프로 Pod, 노드, 네임스페이스 전반에서 유사한 이상 징후 확인',
+          '자동화된 조사 실행: 런북을 자동 실행해 "OOM 에러였나?", "잘못 구성된 시작 명령어인가?" 등 가설 테스트',
+          '해결책 제공: 해결책을 찾으면 제안하고, 찾지 못하면 명확한 다음 단계 제시',
+        ],
+      },
+      {
+        title: '어려울 필요가 없는데 왜 어렵게 하나요?',
+        content:
+          '쿠버네티스는 복잡하지만, 트러블슈팅은 그럴 필요가 없습니다. Resolve AI는 내장된 전문성을 활용해 반복적인 화재 진압을 없애고, 운영을 간소화하며, 밤과 주말을 돌려줌으로써 쿠버네티스 관리 방식을 혁신합니다. 패턴을 발견하고, 조사를 자동화하며, 클러스터가 원활하게 돌아가도록 유지합니다.',
+      },
+    ],
+    keyTakeaways: [
+      {
+        title: '쿠버네티스 트러블슈팅의 3대 과제',
+        content:
+          '알림 피로, 일시적 Pod의 컨텍스트 손실, 분산된 관측성 데이터로 인해 프로덕션 환경 트러블슈팅이 어려움',
+      },
+      {
+        title: '에이전틱 AI의 3대 핵심 기능',
+        content:
+          '24시간 연중무휴 전문성, 지식 그래프를 통한 시스템적 문제 파악, 노이즈 없는 텔레메트리 분석',
+      },
+      {
+        title: 'AI Production Engineer의 동작',
+        content:
+          '이벤트 타임라인 재구성, 클러스터 전반 상관관계 분석, 자동화된 조사 실행, 해결책 제시로 온콜 부담 감소',
+      },
+    ],
+  },
+  'week7/ai-code-review-best-practices': {
+    slug: 'ai-code-review-best-practices',
+    week: 7,
+    title: 'AI Code Review Implementation and Best Practices',
+    titleKr: 'AI 코드 리뷰 구현 및 모범 사례',
+    author: 'Graphite',
+    readTime: '약 12분',
+    sourceUrl: 'https://graphite.com/guides/ai-code-review-implementation-best-practices',
+    sourceTitle: 'Graphite Guide',
+    published: false,
+    sections: [
+      {
+        title: '소개',
+        content:
+          '인공지능이 소프트웨어 개발 워크플로우에 점점 더 깊이 통합되면서, AI 코드 리뷰가 코드 품질과 개발자 생산성을 높이는 강력한 도구로 부상했습니다.',
+      },
+      {
+        title: 'AI 코드 리뷰 이해하기',
+        content:
+          'AI 코드 리뷰는 머신러닝과 자연어 처리 기술을 활용해 버그, 보안 취약점, 성능 비효율, 스타일 불일치, 아키텍처 및 설계 결함을 자동으로 분석합니다.',
+      },
+      {
+        title: 'AI 코드 리뷰의 장점',
+        content: 'AI 코드 리뷰가 제공하는 주요 이점입니다.',
+        items: [
+          '효율성 향상 - 자동화로 리뷰 시간을 줄이고 문제를 조기에 발견',
+          '일관성 유지 - AI가 모든 코드 리뷰에 동일한 기준 적용',
+          '지식 공유 - 개발자가 AI 제안을 통해 모범 사례 학습',
+          '인지 부하 경감 - AI가 일상적인 검사를 처리',
+          '지속적 개선 - AI 시스템이 시간이 지나면서 성능 향상',
+        ],
+      },
+      {
+        title: 'AI 코드 리뷰 구현',
+        content: '효과적인 AI 코드 리뷰 구현을 위한 3단계 가이드입니다.',
+        items: [
+          '1단계: 적절한 도구 선택',
+          '2단계: 개발 워크플로우에 통합',
+          '3단계: 커스터마이징 및 미세 조정',
+        ],
+      },
+      {
+        title: 'AI 코드 리뷰 모범 사례',
+        content: 'AI 코드 리뷰를 효과적으로 활용하기 위한 핵심 사례입니다.',
+        items: [
+          '명확한 기대치 설정',
+          '휴먼 인 더 루프 접근법',
+          '실행 가능한 피드백에 집중',
+          '지속적 학습',
+          '보안 우선 마인드셋',
+          '성능 최적화',
+        ],
+      },
+      {
+        title: '인기 있는 AI 코드 리뷰 도구',
+        content: '주요 AI 코드 리뷰 도구들의 특징입니다.',
+        items: [
+          'Graphite Agent - 컨텍스트 기반 코드 분석',
+          'DeepCode - 보안 취약점 탐지에 특화',
+          'Codacy - 기존 분석과 AI 기능 결합',
+          'SonarQube AI - 엔터프라이즈급 코드 품질 플랫폼',
+        ],
+      },
+      {
+        title: '성공 측정',
+        content: 'AI 코드 리뷰 구현 효과를 평가하기 위한 메트릭입니다.',
+        items: [
+          '품질 메트릭 - 버그 감소, 보안 인시던트 감소',
+          '프로세스 메트릭 - 리뷰 완료 시간, 개발자 만족도',
+          'ROI 메트릭 - 절약된 개발 시간, 기술 부채 감소',
+        ],
+      },
+      {
+        title: '일반적인 문제와 해결책',
+        content: 'AI 코드 리뷰에서 자주 발생하는 문제와 대응 방안입니다.',
+        items: [
+          '오탐이 개발자를 압도 → 민감도 설정 조정',
+          'AI 리뷰에 대한 팀 저항 → 점진적 가치 입증',
+          'AI가 컨텍스트별 문제를 놓침 → 인간 리뷰로 보완',
+        ],
+      },
+    ],
+    keyTakeaways: [
+      {
+        title: 'AI 코드 리뷰의 역할',
+        content: '머신러닝과 자연어 처리를 활용해 버그, 보안 취약점, 성능 문제를 자동으로 탐지',
+      },
+      {
+        title: '주요 장점',
+        content: '효율성 향상, 일관성, 지식 공유, 인지 부하 경감 등의 이점 제공',
+      },
+      {
+        title: '구현 3단계',
+        content: '도구 선택, 워크플로우 통합, 커스터마이징의 3단계로 구현',
+      },
+      {
+        title: '휴먼 인 더 루프',
+        content: 'AI를 첫 번째 패스로 사용하고 인간이 검증하는 접근법 권장',
+      },
+      {
+        title: '보안 우선',
+        content: 'AI 제안이 새로운 취약점을 도입하지 않도록 주의',
+      },
+      {
+        title: '성공 측정',
+        content: '품질, 프로세스, ROI 메트릭으로 효과 측정',
+      },
+      {
+        title: 'AI는 보완 도구',
+        content: 'AI는 인간 전문성의 대체가 아닌 보완으로 접근해야 함',
+      },
+    ],
+  },
+  'week9/observability-basics': {
+    slug: 'observability-basics',
+    week: 9,
+    title: 'Traces & Spans: Observability Basics You Should Know',
+    titleKr: '트레이스와 스팬: 알아야 할 관측성 기초',
+    author: 'Anjali Udasi',
+    readTime: '약 10분',
+    sourceUrl: 'https://last9.io/blog/traces-spans-observability-basics/',
+    sourceTitle: 'Last9 Blog',
+    published: false,
+    sections: [
+      {
+        title: '트레이스와 스팬 이해하기: 핵심 개념',
+        content:
+          '트레이스는 요청이 분산 시스템을 통과하는 여정을 캡처합니다. 스팬은 트레이스의 구성 요소로, 각 스팬은 여정 내의 작업 단위를 나타냅니다.',
+        items: [
+          '트레이스는 여러 개의 스팬을 포함',
+          '각 스팬은 하나의 작업을 나타냄',
+          '스팬은 타이밍 데이터와 메타데이터를 보유',
+          '스팬이 중첩되어 작업들의 상호 관계를 표현',
+        ],
+      },
+      {
+        title: 'DevOps 전문가를 위한 트레이스와 스팬의 이점',
+        content:
+          '수십 개의 마이크로서비스로 구성된 복잡한 시스템에서 트레이스와 스팬으로 문제를 빠르게 해결할 수 있습니다.',
+        items: [
+          '병목 지점 즉시 발견: 어떤 서비스나 함수가 오래 걸리는지 정확히 확인',
+          '서비스 경계를 넘어 디버그: 요청이 서비스 간에 이동하는 과정을 추적',
+          '의존성 파악: 서비스들이 어떻게 연결되고 서로 의존하는지 시각화',
+          '성능 개선: 느린 작업을 정밀하게 식별하고 수정',
+          '평균 복구 시간(MTTR) 단축: 문제 발생 시 근본 원인을 더 빠르게 파악',
+        ],
+      },
+      {
+        title: '트레이스와 스팬의 기술적 구현',
+        content:
+          '트레이스 컨텍스트와 전파를 통해 서비스 경계를 넘어 동일한 요청을 추적합니다. 스팬은 Name, Timing, Status, Attributes, Events, Links 등 풍부한 데이터를 담고 있습니다. 샘플링 전략(헤드 기반, 테일 기반, 우선순위)으로 데이터 양을 관리합니다.',
+      },
+      {
+        title: '트레이싱 구현 가이드: 도구와 프레임워크',
+        content:
+          'OpenTelemetry가 업계 표준 프레임워크이며, Jaeger, Zipkin, Grafana Tempo, OpenTelemetry Collector 등 다양한 도구와 함께 사용할 수 있습니다. Node.js, Python 등 주요 언어에서 자동 계측을 지원합니다.',
+      },
+      {
+        title: '고급 트레이싱 기법',
+        content:
+          'W3C Trace Context 명세를 따르는 분산 컨텍스트 관리, Exemplar 트레이스와 로그의 트레이스 ID를 통한 상관관계, 스팬에 오류 상태와 예외를 기록하는 오류 처리 등 고급 기법을 활용할 수 있습니다.',
+      },
+      {
+        title: '실제 트레이싱 패턴과 안티패턴',
+        content:
+          '효과적인 패턴: 의미 있는 스팬 이름, 적절한 세분성, 컨텍스트 전파, 유용한 속성, 성능 인식. 안티패턴: 과도한 계측, 컨텍스트 누락, 일관성 없는 네이밍, 과다한 데이터, 서드파티 서비스 무시.',
+      },
+      {
+        title: '트레이스와 스팬의 비즈니스 가치',
+        content:
+          '트레이스는 기술적 문제 해결뿐 아니라 비즈니스 인사이트도 제공합니다. 핵심 사용자 여정 추적, 비즈니스 작업 성능 측정, SLO 설정, 성능 문제 비용 정량화 등에 활용 가능합니다.',
+      },
+      {
+        title: '결론',
+        content:
+          '트레이스와 스팬은 분산 시스템을 투시하는 X-ray 비전을 제공합니다. 시스템이 더욱 복잡해지면서, 이런 관측성은 사치가 아니라 필수입니다.',
+      },
+      {
+        title: 'FAQ',
+        content:
+          '트레이싱과 로깅의 차이, 성능 영향(일반적으로 3% 미만), 자동 계측 지원, 데이터 생성량, 보안/컴플라이언스 활용, 다른 관측성 신호와의 관계에 대한 질문과 답변.',
+      },
+    ],
+    keyTakeaways: [
+      {
+        title: '트레이스와 스팬 개념',
+        content:
+          '트레이스는 요청이 분산 시스템을 통과하는 전체 여정을 캡처하고, 스팬은 여정 내의 개별 작업 단위를 나타냄',
+      },
+      {
+        title: '트레이스와 스팬의 이점',
+        content:
+          '병목 지점을 즉시 발견하고, 서비스 경계를 넘어 디버그하며, MTTR을 단축할 수 있음',
+      },
+      {
+        title: 'OpenTelemetry 업계 표준',
+        content:
+          'OpenTelemetry가 트레이싱의 업계 표준이며, Jaeger, Zipkin, Grafana Tempo 등 다양한 도구와 함께 사용 가능',
+      },
+      {
+        title: '효과적인 트레이싱 패턴',
+        content:
+          '의미 있는 스팬 이름, 적절한 세분성, 컨텍스트 전파가 중요',
+      },
+      {
+        title: '비즈니스 인사이트 활용',
+        content:
+          '트레이스는 기술적 문제 해결뿐 아니라 비즈니스 인사이트와 SLO 설정에도 활용 가능',
+      },
+    ],
+  },
+  'week9/autonomous-teammate': {
+    slug: 'autonomous-teammate',
+    week: 9,
+    title: 'Resolve AI Product Deep Dive: Your New Autonomous Teammate',
+    titleKr: 'Resolve AI 제품 딥다이브: 새로운 자율 팀원',
+    author: 'Seerut Sidhu, Product Manager',
+    readTime: '약 5분',
+    sourceUrl: 'https://resolve.ai/blog/product-deep-dive',
+    sourceTitle: 'Resolve AI Blog',
+    published: false,
+    sections: [
+      {
+        title: '새로운 온콜 팀원을 만나보세요',
+        content:
+          'Resolve AI는 인시던트 조사와 해결을 혁신하는 프로덕션 엔지니어링을 위한 기반 AI 플랫폼을 구축했습니다. 덕분에 엔지니어들은 가장 잘하는 일, 혁신하고 미래를 만드는 일에 집중할 수 있습니다. Resolve AI는 프로덕션 시스템과 도구를 이해하고, 알림에 대응하며, 협업하고, 무엇이 잘못됐는지와 해결 방법을 파악해 시간을 아껴줍니다. 자동화된 인시던트 사후 검토까지 작성해줍니다.',
+      },
+      {
+        title: '빛의 속도로 시스템과 도구를 이해합니다',
+        content:
+          'Resolve AI는 빠르게 시작할 수 있습니다. 개별 파드까지 모든 인프라와 원활하게 연결됩니다. Grafana, Datadog 같은 관측성 플랫폼부터 Jenkins 같은 CI/CD 파이프라인, GitHub 코드베이스까지 모든 도구와 통합됩니다. Resolve AI를 통합하면 즉시 환경을 포괄적으로 매핑하기 시작합니다. 전체 시스템과 도구의 동적 지식 그래프를 구축하고, 새로운 배포, 시스템 이벤트, 설정 변경, 코드 변경이 발생할 때마다 실시간으로 업데이트합니다.',
+      },
+      {
+        title: '로그인하기 전에 알림에 대응합니다',
+        content:
+          '알림이 발생하면 Resolve AI가 즉시 움직입니다. 온콜 엔지니어처럼 관련 데이터를 모두 검토하며 곧바로 조사를 시작합니다. 메트릭, 대시보드, 코드 변경, 배포, 로그를 검토하는 적시 런북을 자율적으로 생성하고 실행합니다. 1분도 안 돼서 Resolve AI는 근본 원인 이론을 파악하고 해결 방법을 제안합니다.',
+      },
+      {
+        title: '무엇이 잘못됐고 어떻게 고칠지 알려줍니다',
+        content:
+          'Resolve AI는 전체 이벤트를 종합 분석하여 모든 변경 사항과 시스템 동작을 추적해 근본 원인을 찾습니다. 대시보드를 지능적으로 해석하고, 로그를 검토하며, 이상 징후를 탐지합니다. 설정 오류든 코드 변경이든 다운스트림 서비스 문제든 배포 문제든, Resolve AI는 정밀하게 식별합니다. 이론을 세우고, 어떻게 그 결론에 도달했는지 설명하며, 해결을 위한 실행 가능한 단계를 제공합니다.',
+      },
+      {
+        title: '협업하거나, 안내하거나, Resolve AI가 주도권을 잡게 하세요',
+        content:
+          'Resolve AI를 팀원처럼 함께 일할 수 있습니다. 질문하고, 다른 이론을 탐색하거나, 마지막 배포로 롤백하거나 파드를 재시작하라고 지시할 수 있습니다. Slack에서 @멘션으로 대화에 참여시키거나 Resolve AI UI로 사용할 수도 있습니다.',
+      },
+      {
+        title: '인시던트 검토 시간을 아껴줍니다',
+        content:
+          '인시던트가 해결되면 Resolve AI는 최초 알림부터 근본 원인, 해결 과정까지 모든 것을 요약한 상세한 인시던트 사후 검토를 작성합니다. 운영 시간을 절약하고, 다음에 배우고 개선할 명확하고 간결한 기록을 남깁니다.',
+      },
+      {
+        title: '온콜을 영원히 바꿀 준비가 되셨나요?',
+        content:
+          'Resolve AI는 인시던트 관리 경험을 혁신하러 왔습니다. 깊은 통합과 엔터프라이즈급 보안으로 온콜을 Resolve AI에게 맡길 수 있습니다. 프로덕션 운영의 복잡하고 시간 소모적인 부분을 자율적으로 처리해서 흥미로운 일에 집중할 수 있게 해줍니다.',
+      },
+    ],
+    keyTakeaways: [
+      {
+        title: 'AI 프로덕션 엔지니어',
+        content:
+          '알림 처리, 근본 원인 분석, 인시던트 해결을 자동화하는 자율 팀원',
+      },
+      {
+        title: '시스템 이해',
+        content:
+          '모든 인프라와 도구에 연결해 실시간 업데이트되는 동적 지식 그래프 구축',
+      },
+      {
+        title: '빠른 대응',
+        content:
+          '로그인 전 알림 분석, 1분 내 근본 원인 이론과 해결 방법 제시',
+      },
+      {
+        title: '협업 가능',
+        content: '팀원처럼 질문하고 지시하며 Slack이나 UI로 상호작용',
+      },
+      {
+        title: '사후 검토 자동화',
+        content: '인시던트 해결 후 상세한 검토 보고서 자동 생성',
       },
     ],
   },

@@ -72,7 +72,8 @@ export const syllabus: Week[] = [
       {
         title: 'MCP Introduction',
         url: 'https://stytch.com/blog/model-context-protocol-introduction/',
-        translationStatus: 'in_progress',
+        krSlug: 'mcp-introduction',
+        translationStatus: 'complete',
       },
       {
         title: 'Sample MCP Server Implementations',
@@ -426,6 +427,8 @@ export const syllabus: Week[] = [
       {
         title: 'AI Code Review Implementation Best Practices',
         url: 'https://graphite.dev/guides/ai-code-review-implementation-best-practices',
+        krSlug: 'ai-code-review-best-practices',
+        translationStatus: 'complete',
       },
       {
         title: 'Code Review Essentials for Software Teams',
@@ -516,18 +519,26 @@ export const syllabus: Week[] = [
       {
         title: 'Observability Basics You Should Know',
         url: 'https://last9.io/blog/traces-spans-observability-basics/',
+        krSlug: 'observability-basics',
+        translationStatus: 'complete',
       },
       {
         title: 'Kubernetes Troubleshooting with AI',
         url: 'https://resolve.ai/blog/kubernetes-troubleshooting-in-resolve-ai',
+        krSlug: 'kubernetes-troubleshooting',
+        translationStatus: 'complete',
       },
       {
         title: 'Your New Autonomous Teammate',
         url: 'https://resolve.ai/blog/product-deep-dive',
+        krSlug: 'autonomous-teammate',
+        translationStatus: 'complete',
       },
       {
         title: 'Role of Multi Agent Systems in Making Software Engineers AI-native',
         url: 'https://resolve.ai/blog/role-of-multi-agent-systems-AI-native-engineering',
+        krSlug: 'multi-agent-systems',
+        translationStatus: 'complete',
       },
       {
         title: 'Benefits of Agentic AI in On-call Engineering',
