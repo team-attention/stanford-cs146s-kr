@@ -7,6 +7,11 @@
   --color-stanford-red-dark: #6B0F0F;
   --color-kr-accent: #0066CC;
 
+  /* Motivation colors - violet theme */
+  --color-motivation: #7C3AED;
+  --color-motivation-light: #8B5CF6;
+  --color-motivation-bg: #F5F3FF;
+
   /* Text colors - exact match */
   --color-text-primary: #2C3E50;
   --color-text-secondary: #6C757D;

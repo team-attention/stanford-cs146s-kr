@@ -375,6 +375,44 @@ hasSummary: true
    - `readTime: "약 {N}분"`
    - YouTube 콘텐츠: frontmatter의 `duration` 사용
 
+### Step 2.5: Motivation 생성 (선택적)
+
+`--no-motivation` 플래그가 없으면 기본으로 실행됩니다.
+
+1. **motivation-generator agent 호출**:
+   ```
+   Task 도구 사용:
+   - subagent_type: "general-purpose"
+   - prompt: motivation-generator.md 에이전트 프롬프트 내용 + 번역된 마크다운 전체
+   - description: "motivation 생성"
+   ```
+
+   에이전트 프롬프트 위치: `.claude/agents/upload-reading/motivation-generator.md`
+
+2. **Agent 출력 파싱**:
+   - JSON 형식 응답 파싱
+   - `globalMotivation` → `reading.motivation`
+   - `sectionMotivations` → 각 `section.motivation`에 매핑
+
+3. **섹션 매칭 로직**:
+   ```typescript
+   // sectionMotivations의 sectionTitle과 파싱된 sections의 title 매칭
+   for (const sm of sectionMotivations) {
+     const section = sections.find(s => s.title === sm.sectionTitle)
+     if (section) {
+       section.motivation = sm.motivation
+     }
+   }
+   ```
+
+4. **결과 병합**:
+   - Step 2의 파싱 결과에 motivation 필드 추가
+   - 매칭되지 않은 섹션은 motivation이 비어있음 (정상)
+
+**Motivation 생성 실패 시**:
+- 경고 메시지 출력: "⚠️ Motivation 생성에 실패했습니다. 빈 값으로 진행합니다."
+- motivation 필드 없이 계속 진행 (기능 저하 허용)
+
 ### Step 3: 객체 생성
 
 **일반 콘텐츠** (ReadingContent):
@@ -389,7 +427,20 @@ const newReading: ReadingContent = {
   sourceUrl: '{sourceUrl}',
   sourceTitle: '{도메인 또는 유형}',
   published: false,  // --publish 플래그 없으면 기본 false
-  sections: [...],
+  // Motivation (Step 2.5에서 생성)
+  motivation: {
+    title: '왜 이 글을 읽어야 할까요?',
+    content: '...',
+    targetAudience: ['...']
+  },
+  sections: [
+    {
+      title: '섹션명',
+      content: '...',
+      items: ['...'],
+      motivation: '...'  // 섹션별 동기부여
+    }
+  ],
   keyTakeaways: [...]
 }
 ```
@@ -524,14 +575,22 @@ readings.ts에 동일한 키가 이미 존재하면 기존 데이터를 보존�
 ### --draft (기본값)
 `published: false`로 설정합니다. 나중에 readings.ts에서 수동으로 true로 변경하면 공개됩니다.
 
+### --no-motivation
+Motivation 섹션 생성을 건너뜁니다. LLM 호출 없이 빠르게 업로드할 때 사용합니다.
+
 ## 출력
 
 ### 일반 콘텐츠 업로드 완료 시:
 ```
+✓ Motivation 생성 완료
+  - 전체 동기부여: 생성됨
+  - 섹션별 동기부여: 8개 중 6개 매칭
+
 ✓ readings.ts 업데이트 완료
   - 키: week1/how-openai-uses-codex
   - 제목: How OpenAI Uses Codex / OpenAI의 Codex 활용법
   - 섹션: 8개
+  - Motivation: 포함
   - published: false
 
 ✓ syllabus.ts 업데이트 완료

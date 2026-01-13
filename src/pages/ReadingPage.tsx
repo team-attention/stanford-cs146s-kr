@@ -198,12 +198,40 @@ export default function ReadingPage() {
           전체 내용은 원본 자료를 참고해 주세요.
         </div>
 
+        {/* Global Motivation */}
+        {reading.motivation && (
+          <div className="bg-violet-50 border-l-4 border-violet-500 rounded-r-lg p-4 mb-8">
+            <h3 className="font-bold text-violet-700 mb-2 flex items-center gap-2">
+              <span>💡</span>
+              {reading.motivation.title}
+            </h3>
+            <p className="text-text-primary leading-relaxed mb-3">
+              {reading.motivation.content}
+            </p>
+            {reading.motivation.targetAudience && reading.motivation.targetAudience.length > 0 && (
+              <div className="flex flex-wrap gap-2">
+                {reading.motivation.targetAudience.map((audience, i) => (
+                  <span key={i} className="text-xs bg-violet-100 text-violet-700 px-2 py-1 rounded-full">
+                    {audience}
+                  </span>
+                ))}
+              </div>
+            )}
+          </div>
+        )}
+
         {/* Sections */}
         {reading.sections.map((section, i) => (
           <section key={i} className="mb-8">
             <h2 className="text-xl font-bold text-stanford-red mb-4 pb-2 border-b border-border">
               {section.title}
             </h2>
+            {/* Section Motivation */}
+            {section.motivation && (
+              <p className="text-sm text-violet-600 bg-violet-50/50 px-3 py-2 rounded mb-4 border-l-2 border-violet-300">
+                💡 {section.motivation}
+              </p>
+            )}
             <p className="text-text-primary leading-relaxed mb-4">
               {section.content}
             </p>
@@ -305,12 +333,40 @@ function ParentReadingPage({ week, reading }: { week: string; reading: typeof re
           )}
         </div>
 
+        {/* Global Motivation */}
+        {reading.motivation && (
+          <div className="bg-violet-50 border-l-4 border-violet-500 rounded-r-lg p-4 mb-8">
+            <h3 className="font-bold text-violet-700 mb-2 flex items-center gap-2">
+              <span>💡</span>
+              {reading.motivation.title}
+            </h3>
+            <p className="text-text-primary leading-relaxed mb-3">
+              {reading.motivation.content}
+            </p>
+            {reading.motivation.targetAudience && reading.motivation.targetAudience.length > 0 && (
+              <div className="flex flex-wrap gap-2">
+                {reading.motivation.targetAudience.map((audience, i) => (
+                  <span key={i} className="text-xs bg-violet-100 text-violet-700 px-2 py-1 rounded-full">
+                    {audience}
+                  </span>
+                ))}
+              </div>
+            )}
+          </div>
+        )}
+
         {/* Sections (개요) */}
         {reading.sections.map((section, i) => (
           <section key={i} className="mb-8">
             <h2 className="text-xl font-bold text-stanford-red mb-4 pb-2 border-b border-border">
               {section.title}
             </h2>
+            {/* Section Motivation */}
+            {section.motivation && (
+              <p className="text-sm text-violet-600 bg-violet-50/50 px-3 py-2 rounded mb-4 border-l-2 border-violet-300">
+                💡 {section.motivation}
+              </p>
+            )}
             <p className="text-text-primary leading-relaxed mb-4">
               {section.content}
             </p>
@@ -600,12 +656,40 @@ function ChildReadingPage({
                   전체 내용은 원본 자료를 참고해 주세요.
                 </div>
 
+                {/* Global Motivation */}
+                {child.motivation && (
+                  <div className="bg-violet-50 border-l-4 border-violet-500 rounded-r-lg p-4 mb-8">
+                    <h3 className="font-bold text-violet-700 mb-2 flex items-center gap-2">
+                      <span>💡</span>
+                      {child.motivation.title}
+                    </h3>
+                    <p className="text-text-primary leading-relaxed mb-3">
+                      {child.motivation.content}
+                    </p>
+                    {child.motivation.targetAudience && child.motivation.targetAudience.length > 0 && (
+                      <div className="flex flex-wrap gap-2">
+                        {child.motivation.targetAudience.map((audience, i) => (
+                          <span key={i} className="text-xs bg-violet-100 text-violet-700 px-2 py-1 rounded-full">
+                            {audience}
+                          </span>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                )}
+
                 {/* Sections */}
                 {child.sections.map((section, i) => (
                   <section key={i} className="mb-8">
                     <h2 className="text-xl font-bold text-stanford-red mb-4 pb-2 border-b border-border">
                       {section.title}
                     </h2>
+                    {/* Section Motivation */}
+                    {section.motivation && (
+                      <p className="text-sm text-violet-600 bg-violet-50/50 px-3 py-2 rounded mb-4 border-l-2 border-violet-300">
+                        💡 {section.motivation}
+                      </p>
+                    )}
                     <p className="text-text-primary leading-relaxed mb-4">
                       {section.content}
                     </p>

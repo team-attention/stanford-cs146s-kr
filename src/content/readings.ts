@@ -10,10 +10,17 @@ export interface ChildReading {
   // 콘텐츠 필드 (번역 완료 시 추가)
   author?: string
   readTime?: string
+  // 동기부여 섹션 (왜 이 글을 읽어야 하는지)
+  motivation?: {
+    title: string        // "왜 이 글을 읽어야 할까요?"
+    content: string      // 2-3문장 동기부여 설명
+    targetAudience?: string[]  // 대상 독자 태그
+  }
   sections?: {
     title: string
     content: string
     items?: string[]
+    motivation?: string  // 섹션별 동기부여 (1-2문장)
   }[]
   keyTakeaways?: {
     title: string
@@ -41,10 +48,17 @@ export interface ReadingContent {
   sourceTitle: string
   published?: boolean // 한국어 번역 페이지 공개 여부 (기본값: false)
   cheatsheetImage?: string // 치트시트 이미지 경로 (예: '/cheatsheets/week1/how-openai-uses-codex.png')
+  // 동기부여 섹션 (왜 이 글을 읽어야 하는지)
+  motivation?: {
+    title: string        // "왜 이 글을 읽어야 할까요?"
+    content: string      // 2-3문장 동기부여 설명
+    targetAudience?: string[]  // 대상 독자 태그
+  }
   sections: {
     title: string
     content: string
     items?: string[]
+    motivation?: string  // 섹션별 동기부여 (1-2문장)
   }[]
   keyTakeaways?: {
     title: string
