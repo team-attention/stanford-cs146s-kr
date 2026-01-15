@@ -40,5 +40,5 @@ export const faqItems: FaqItem[] = [
 
 export const contactInfo = {
   github: 'https://github.com/team-attention/stanford-cs146s-kr',
-  team: 'https://team-attention.com',
+  team: 'https://github.com/team-attention/',
 }

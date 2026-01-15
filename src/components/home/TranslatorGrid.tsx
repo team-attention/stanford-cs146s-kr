@@ -24,7 +24,7 @@ export default function TranslatorGrid() {
       <h2 className="text-[32px] font-semibold text-text-primary mb-6 pb-2 border-b-2 border-stanford-red">
         Korean Contributors
       </h2>
-      <div className="grid grid-cols-2 gap-6 max-w-2xl">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {translators.map((translator) => (
           <div
             key={translator.name}
