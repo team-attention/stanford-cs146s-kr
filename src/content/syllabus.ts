@@ -453,6 +453,8 @@ export const syllabus: Week[] = [
       {
         title: 'Lessons from millions of AI code reviews',
         url: 'https://www.youtube.com/watch?v=TswQeKftnaw',
+        krSlug: 'lessons-millions-ai-code-reviews',
+        translationStatus: 'complete',
       },
     ],
     assignments: [
