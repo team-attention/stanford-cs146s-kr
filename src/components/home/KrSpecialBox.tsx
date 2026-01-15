@@ -12,7 +12,10 @@ export default function KrSpecialBox() {
       <ul className="space-y-3 text-[19.2px] leading-[28.8px] text-text-body mb-6">
         <li className="flex items-start gap-3">
           <span className="text-stanford-red font-bold">✓</span>
-          <span>모든 Reading 자료 한국어 번역 제공</span>
+          <span>
+            모든 Reading 자료 한국어 번역 제공
+            <a href="https://github.com/team-attention/stanford-cs146s-kr" target="_blank" rel="noopener noreferrer" className="ml-2 text-stanford-red hover:underline">GitHub</a>
+          </span>
         </li>
         <li className="flex items-start gap-3">
           <span className="text-stanford-red font-bold">✓</span>

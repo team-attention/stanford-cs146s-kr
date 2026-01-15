@@ -124,6 +124,7 @@ Conventional Commits 형식을 따릅니다:
 - TypeScript strict 모드 활성화됨 - 타입 에러 해결 필수
 - 빌드 전 `pnpm lint` 실행 권장
 - 한글 콘텐츠 작성 시 맞춤법 검토
+- **대량 한글 파일 수정 시 Write 도구 사용** - Edit 도구는 UTF-8 한글 3바이트 경계 오류 발생 가능
 
 ---
 
@@ -165,6 +166,8 @@ Reading 콘텐츠의 수집 → 번역 → 웹 게시를 3단계 스킬로 자�
 | `/publish-cheatsheet` | 완료 | 치트시트 이미지 게시 |
 | `/split-youtube-chapters` | 레거시 | 기존 단일 파일 마이그레이션용 |
 | `/review-translation` | 완료 | 번역 품질 AI 검증 (Claude, Codex, Gemini 교차 검증) |
+| `/review-cheatsheet` | 완료 | 치트시트 이미지 검증 (Gemini Vision API) |
+| `/eval-summary` | 완료 | readings.ts 요약 필드 품질 검증 및 수정 |
 
 ---
 
@@ -202,6 +205,9 @@ YouTube 영상은 다음 순서로 처리합니다. 챕터가 있는 경우 **�
 
 6. /publish-cheatsheet week{N}/{slug}/{childSlug}
    → readings.ts에 cheatsheetImage 필드 추가
+
+7. /review-cheatsheet week{N}/{slug}/{childSlug}
+   → 치트시트 이미지와 kr md 파일 일치 여부 검증
 ```
 
 **새로운 방식의 장점**:
@@ -266,6 +272,11 @@ terminology-lookup → translator → refiner(1차) → validator → refiner(2�
 
 **입력**: `docs/week{N}/{slug}/eng/index.md`
 **출력**: `docs/week{N}/{slug}/kr/index.md`
+
+**YouTube 콘텐츠 번역 규칙**:
+- 타임스탬프 `[MM:SS]` 형식은 제거하고 산문체로 통합
+- `## 전체 번역` 섹션만 수정, 다른 섹션(요약, 핵심 개념)은 유지
+- 잘린 문장은 자연스럽게 연결
 
 ---
 
@@ -356,3 +367,88 @@ content-analyzer → structure-planner → prompt-generator
 /fetch-reading <youtube-url>
 # → docs/week{N}/{slug}/ 디렉토리로 자동 생성
 ```
+
+---
+
+### `/review-cheatsheet` - 치트시트 이미지 검증
+
+**위치**: `.claude/skills/review-cheatsheet/`
+
+나노바나나에서 생성한 치트시트 이미지를 Gemini Vision API로 분석하여
+해당 kr md 파일의 내용과 일치하는지 검증합니다.
+
+```bash
+/review-cheatsheet week1/deep-dive-llms/tokenization
+/review-cheatsheet week1/how-openai-uses-codex
+```
+
+**워크플로우**:
+```
+이미지 → Gemini Vision 분석 → kr md 비교 → 리포트 생성
+```
+
+**검증 항목**:
+- 텍스트 정확성: 이미지 내 텍스트가 md 파일 내용과 일치하는지
+- 기술적 정확성: 수치, 용어, 개념이 올바른지
+- 문맥적 일관성: 그래프/다이어그램이 설명과 맞는지
+
+**입력**:
+- 이미지: `public/cheatsheets/week{N}/{slug}/{chapter}.png`
+- 문서: `docs/week{N}/{slug}/kr/{chapter}.md`
+
+**출력**:
+- `.claude/outputs/review-cheatsheet/week{N}/{slug}/{chapter}-gemini-analysis.json`
+- `.claude/outputs/review-cheatsheet/week{N}/{slug}/{chapter}-review-report.md`
+
+**요구사항**:
+- Python 패키지: `google-generativeai`
+- 환경변수: `.env` 파일에 `GOOGLE_API_KEY` 설정
+- API 키 발급: https://aistudio.google.com/app/apikey
+
+---
+
+### `/eval-summary` - 요약 필드 품질 검증
+
+**위치**: `.claude/skills/eval-summary/`
+
+readings.ts의 요약 필드가 원본 kr 마크다운과 비교하여 잘 작성되었는지 평가합니다.
+이슈별로 개선사항을 제안하고 사용자 컨펌 후 readings.ts를 수정합니다.
+
+```bash
+# 주차 전체 검증
+/eval-summary week1
+
+# 개별 리딩 검증
+/eval-summary week1/deep-dive-llms
+
+# 옵션
+/eval-summary week1 --skip-apply    # 리포트만 생성
+/eval-summary week1 --auto-apply    # 자동 적용
+```
+
+**워크플로우**:
+```
+readings.ts 요약 필드 추출 → kr 마크다운 로드 → summary-evaluator 에이전트 호출
+→ 이슈별 사용자 컨펌 → readings.ts 수정
+```
+
+**검증 대상 필드**:
+- `tldr`: TL;DR 전체 요약
+- `learningGoals`: 학습 목표 배열
+- `chapterSummaries`: 챕터별 요약
+- `motivation`: 동기부여 섹션
+- `keyTakeaways`: 핵심 요점
+
+**검증 기준**:
+- 정확성: 원문 내용을 정확히 반영하는가
+- 완전성: 중요한 내용이 누락되지 않았는가
+- 간결성: 불필요하게 길거나 중복되지 않았는가
+- 일관성: 용어와 어조가 일관되는가
+
+**입력**:
+- `src/content/readings.ts`
+- `docs/week{N}/{slug}/kr/index.md` 또는 `_index.md`
+
+**출력**:
+- `.claude/outputs/eval-summary/week{N}/{slug}/evaluation-report.json`
+- readings.ts 수정 (사용자 컨펌 후)
