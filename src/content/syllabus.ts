@@ -252,6 +252,8 @@ export const syllabus: Week[] = [
       {
         title: 'Peeking Under the Hood of Claude Code',
         url: 'https://medium.com/@outsightai/peeking-under-the-hood-of-claude-code-70f5a94a9a62',
+        krSlug: 'peeking-under-hood-claude-code',
+        translationStatus: 'complete',
       },
     ],
     assignments: [

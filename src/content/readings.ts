@@ -4764,4 +4764,72 @@ export const readings: Record<string, ReadingContent> = {
       },
     ],
   },
+  'week4/peeking-under-hood-claude-code': {
+    slug: 'peeking-under-hood-claude-code',
+    week: 4,
+    title: 'Peeking Under the Hood of Claude Code',
+    titleKr: 'Claude Code의 내부 들여다보기',
+    author: 'OutSight AI',
+    readTime: '약 15분',
+    sourceUrl: 'https://medium.com/@outsightai/peeking-under-the-hood-of-claude-code-70f5a94a9a62',
+    sourceTitle: 'Medium',
+    published: true,
+    sections: [
+      {
+        title: 'TL;DR',
+        content:
+          'Claude Code는 실제 작업 전에 작고 타겟팅된 프롬프트로 컨텍스트를 선행 로딩합니다. 드리프트를 줄이기 위해 시스템/사용자 프롬프트, 도구 호출, 도구 결과에 "system-reminder"를 곳곳에 뿌립니다. Bash 실행 전 명시적인 명령어 접두사 추출과 인젝션 검사로 위험을 제어하며, 작업이 다단계가 되면 더 좁은 지시를 가진 서브 에이전트를 생성합니다.',
+      },
+      {
+        title: '설정: LiteLLM으로 Claude Code 모니터링하기',
+        content:
+          'Claude Code의 동작을 이해하기 위해, Claude Code와 Anthropic API 서버 사이에 LiteLLM을 투명한 프록시로 배치하여 수백 건의 API 호출을 캡처했습니다.',
+      },
+      {
+        title: '놀라움의 원천',
+        content:
+          'API 요청을 관찰하면서, 마법은 Claude Code 세션을 시작하기도 전에 시작된다는 것을 알게 되었습니다. 기존 프로젝트로 세션을 시작하면 먼저 대화를 요약해서 제목을 추출하고, 현재 메시지가 새로운 주제인지 분석합니다.',
+      },
+      {
+        title: 'system-reminder 태그',
+        content:
+          '가장 흥미로운 발견은 <system-reminder> 태그의 광범위한 사용이었습니다. 이 태그들은 시스템 프롬프트 내에서만 사용되는 것이 아니라, 사용자 메시지부터 도구 호출 결과까지 전체 파이프라인에 걸쳐 삽입되어 있습니다.',
+      },
+      {
+        title: '명령어 인젝션 감지',
+        content:
+          '명령어 권한들은 하드코딩된 것이 아니라 생성형입니다. Claude는 권한을 요청하거나 명령어 인젝션을 감지하기 위한 특정 서브 프롬프트를 가지고 있으며, 명령어 접두사를 추출하고 위험한 패턴을 탐지합니다.',
+      },
+      {
+        title: '서브 에이전트 아키텍처',
+        content:
+          'Task 도구는 내부에서 자체 버전의 Claude Code를 실행합니다. 핵심 차이점은 서브 에이전트에서 todoWrite 도구 사용을 피한다는 것입니다. 그러나 작업이 복잡해지면 system-reminder 태그를 조건부로 주입하여 todoWrite 사용을 상기시킵니다.',
+      },
+      {
+        title: '진짜 비밀 소스',
+        content:
+          'Claude Code의 마법은 기본 모델이 다르거나 특별한 것 때문이 아니라, 하나의 크고 아름다운 프롬프트와 영리한 도구 설명, 그리고 올바른 태그를 사용한 체계적인 컨텍스트 엔지니어링의 조합입니다.',
+      },
+    ],
+    keyTakeaways: [
+      {
+        title: '컨텍스트 선행 로딩',
+        content: '실제 작업 전에 대화를 요약하고, 주제를 분석하고, 컨텍스트를 설정합니다.',
+      },
+      {
+        title: 'system-reminder 태그',
+        content: '드리프트 방지를 위해 시스템 전체에서 <system-reminder> 태그를 사용합니다.',
+      },
+      {
+        title: '내장된 안전 및 권한',
+        content:
+          '명령어 검증과 인젝션 감지를 에이전트 루프에 직접 통합합니다.',
+      },
+      {
+        title: '특화된 서브 에이전트',
+        content:
+          '메인 루프가 작업 복잡도에 따라 조건부 컨텍스트 엔지니어링으로 서브 에이전트를 조율합니다.',
+      },
+    ],
+  },
 }
