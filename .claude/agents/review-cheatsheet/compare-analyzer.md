@@ -46,15 +46,15 @@
 ```json
 {
   "summary": {
-    "text_accuracy": "pass|warning|fail",
-    "technical_accuracy": "pass|warning|fail",
-    "contextual_consistency": "pass|warning|fail",
+    "text_accuracy": "pass",
+    "technical_accuracy": "pass",
+    "contextual_consistency": "pass",
     "overall_score": 8  // 1-10
   },
   "issues": [
     {
-      "severity": "critical|warning|info",
-      "category": "text|technical|contextual|typo",
+      "severity": "critical",
+      "category": "text",
       "location": "이미지 내 위치 또는 섹션명",
       "image_content": "이미지에서 발견된 내용",
       "expected_content": "md 파일 기준 예상 내용",
@@ -63,10 +63,10 @@
   ],
   "matches": [
     {
-      "category": "핵심 개념|숫자|다이어그램",
+      "category": "핵심 개념",
       "image_content": "이미지 내용",
       "md_content": "md 파일 내용",
-      "status": "match|partial|mismatch"
+      "status": "match"
     }
   ],
   "recommendations": [

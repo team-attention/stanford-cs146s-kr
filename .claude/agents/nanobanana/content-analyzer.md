@@ -20,8 +20,8 @@ Task tool 호출 시 다음 정보가 prompt에 포함됩니다:
 
 ```json
 {
-  "contentType": "use-case|tutorial|lecture",
-  "confidence": "high|medium|low",
+  "contentType": "use-case",
+  "confidence": "high",
   "title": "문서 제목",
   "author": "저자 (있으면)",
   "keyConcepts": [
@@ -31,7 +31,7 @@ Task tool 호출 시 다음 정보가 prompt에 포함됩니다:
   "structure": [
     {
       "section": "섹션명",
-      "type": "intro|use-case|step|concept|best-practice|conclusion",
+      "type": "intro",
       "subsections": ["하위 섹션 1", "하위 섹션 2"]
     }
   ],

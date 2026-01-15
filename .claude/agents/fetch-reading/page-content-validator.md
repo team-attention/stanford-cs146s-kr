@@ -25,7 +25,7 @@ Task tool 호출 시 다음 정보가 prompt에 포함됩니다:
   "cleaned_content": "정제된 마크다운 콘텐츠",
   "removed_items": [
     {
-      "type": "page_number | ocr_noise | irrelevant | header_footer",
+      "type": "page_number",
       "original": "제거된 텍스트",
       "reason": "제거 이유"
     }

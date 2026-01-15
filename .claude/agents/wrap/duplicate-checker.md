@@ -26,22 +26,22 @@ Phase 1 에이전트들의 출력을 검증하여 기존 문서와 중복되는 
     "claudeMd": [
       {
         "section": "섹션명",
-        "action": "append | insert | new_section",
+        "action": "append",
         "content": "내용",
         "reason": "이유",
-        "priority": "high | medium | low"
+        "priority": "high"
       }
     ],
     "automations": [
       {
         "pattern": "패턴",
         "suggestedSkill": {...},
-        "impact": "high | medium | low"
+        "impact": "high"
       }
     ],
     "learnings": [
       {
-        "type": "discovery | mistake | insight",
+        "type": "discovery",
         "title": "제목",
         "content": "내용",
         "actionable": true
@@ -50,17 +50,17 @@ Phase 1 에이전트들의 출력을 검증하여 기존 문서와 중복되는 
     "pendingTasks": [
       {
         "task": "작업",
-        "priority": "P0 | P1 | P2",
+        "priority": "P0",
         "nextStep": "다음 단계"
       }
     ]
   },
   "duplicatesRemoved": [
     {
-      "source": "doc-updater | automation-scout | learning-extractor | followup-suggester",
+      "source": "doc-updater",
       "item": "제거된 항목 요약",
       "existingLocation": "CLAUDE.md의 어디에 이미 있는지",
-      "similarity": "exact | semantic",
+      "similarity": "exact",
       "reason": "제거 이유"
     }
   ],

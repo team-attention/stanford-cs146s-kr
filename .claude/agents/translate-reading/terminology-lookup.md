@@ -24,8 +24,8 @@ Task tool 호출 시 다음 정보가 prompt에 포함됩니다:
     {
       "term": "원문 용어",
       "korean": "한국어 표현",
-      "source": "glossary | existing | web | original",
-      "confidence": "high | medium | low",
+      "source": "glossary",
+      "confidence": "high",
       "alternatives": ["대안 표현1", "대안 표현2"],
       "notes": "번역 결정 근거 또는 주의사항"
     }

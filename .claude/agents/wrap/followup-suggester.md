@@ -20,12 +20,12 @@
   "pendingTasks": [
     {
       "task": "작업 설명",
-      "priority": "P0 | P1 | P2",
-      "status": "not_started | blocked | partial",
+      "priority": "P0",
+      "status": "not_started",
       "reason": "미완성 이유",
       "nextStep": "다음에 해야 할 구체적 작업",
       "blockers": ["블로커 1", "블로커 2"],
-      "estimatedEffort": "small | medium | large"
+      "estimatedEffort": "small"
     }
   ],
   "deferredItems": [

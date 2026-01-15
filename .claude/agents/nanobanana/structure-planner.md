@@ -21,21 +21,21 @@ Task tool 호출 시 다음 정보가 prompt에 포함됩니다:
 
 ```json
 {
-  "contentType": "use-case|tutorial|lecture",
-  "templateUsed": "use-case-style|tutorial-style|lecture-style",
+  "contentType": "use-case",
+  "templateUsed": "use-case-style",
   "sections": [
     {
       "order": 1,
       "name": "섹션명 (한국어)",
       "emoji": "적절한 이모지",
-      "type": "mindmap|table|flowchart|checklist|codeblock|quote",
+      "type": "mindmap",
       "description": "이 섹션이 담을 내용 설명"
     }
   ],
   "diagrams": [
     {
       "id": "diagram-1",
-      "type": "mindmap|flowchart|sequence",
+      "type": "mindmap",
       "title": "다이어그램 제목",
       "purpose": "이 다이어그램의 목적",
       "nodes": [
@@ -58,7 +58,7 @@ Task tool 호출 시 다음 정보가 prompt에 포함됩니다:
     {
       "id": "code-1",
       "title": "코드 블록 제목",
-      "language": "text|bash|python|etc",
+      "language": "text",
       "source": "actionItems.prompts 또는 commands에서"
     }
   ],

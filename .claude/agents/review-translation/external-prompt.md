@@ -125,22 +125,22 @@ You MUST return ONLY valid JSON with no markdown code blocks, no explanations, j
       "term": "<English term>",
       "original_usage": "<sentence or phrase where used>",
       "translated": "<how it was translated>",
-      "status": "correct|incorrect|inconsistent",
+      "status": "correct",
       "note": "<explanation if incorrect/inconsistent>"
     }
   ],
   "proper_nouns_check": [
     {
       "name": "<proper noun>",
-      "type": "company|product|person|paper|other",
+      "type": "company",
       "translated": "<how it appears in translation>",
-      "status": "correct|incorrect"
+      "status": "correct"
     }
   ],
   "issues": [
     {
-      "type": "<omission|mistranslation|distortion|terminology|style|addition>",
-      "severity": "<critical|major|minor>",
+      "type": "omission",
+      "severity": "critical",
       "location": "<section name, sentence number>",
       "original": "<full English sentence>",
       "translated": "<full Korean sentence or '(누락됨)' if missing>",

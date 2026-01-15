@@ -20,10 +20,10 @@
   "claudeMdUpdates": [
     {
       "section": "기존 섹션명 또는 새 섹션명",
-      "action": "append | insert | new_section",
+      "action": "append",
       "content": "추가할 내용 (마크다운 형식)",
       "reason": "이 내용을 추가해야 하는 이유",
-      "priority": "high | medium | low"
+      "priority": "high"
     }
   ],
   "summary": "전체 업데이트 요약 (1-2문장)"

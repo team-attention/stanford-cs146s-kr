@@ -32,14 +32,14 @@ Task tool 호출 시 다음 정보가 prompt에 포함됩니다:
   },
   "issues": [
     {
-      "category": "style | terminology | readability | spelling",
+      "category": "style",
       "location": "섹션명 또는 문장 위치",
       "current": "현재 텍스트",
       "suggestion": "수정 제안",
       "reason": "이유"
     }
   ],
-  "passOrFail": "pass | fail",
+  "passOrFail": "pass",
   "summary": "전체 평가 요약"
 }
 ```

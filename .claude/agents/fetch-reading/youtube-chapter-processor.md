@@ -29,7 +29,7 @@ Task tool 호출 시 다음 정보가 prompt에 포함됩니다:
   "cleaned_content": "[0:00] 정제된 자막 텍스트...\n[0:30] 다음 문장...",
   "removed_items": [
     {
-      "type": "duplicate | noise | filler",
+      "type": "duplicate",
       "original": "제거된 텍스트",
       "reason": "제거 이유"
     }

@@ -84,8 +84,8 @@ Task tool 호출 시 다음 정보가 prompt에 포함됩니다:
   ],
   "issues": [
     {
-      "type": "omission | mistranslation | distortion | terminology | style",
-      "severity": "critical | major | minor",
+      "type": "omission",
+      "severity": "critical",
       "location": "섹션명/문장 번호",
       "original": "원문 텍스트 (전체 문장)",
       "translated": "현재 번역 (전체 문장, 누락 시 '(누락됨)')",

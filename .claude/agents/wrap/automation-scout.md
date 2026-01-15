@@ -29,10 +29,10 @@
         "name": "제안-스킬-이름",
         "description": "스킬이 수행할 작업",
         "usage": "/skill-name <arg>",
-        "complexity": "low | medium | high",
+        "complexity": "low",
         "estimatedAgents": 0
       },
-      "impact": "high | medium | low",
+      "impact": "high",
       "reason": "이 자동화가 필요한 이유"
     }
   ],
