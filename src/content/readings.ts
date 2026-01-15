@@ -4662,6 +4662,56 @@ export const readings: Record<string, ReadingContent> = {
       },
     ],
   },
+  'week3/how-faang-vibe-codes': {
+    slug: 'how-faang-vibe-codes',
+    week: 3,
+    title: 'How FAANG Vibe Codes',
+    titleKr: 'FAANG에서는 어떻게 바이브 코딩을 하는가',
+    author: 'Reddit',
+    readTime: '약 3분',
+    sourceUrl: 'https://www.reddit.com/r/vibecoding/comments/1myakhd/how_we_vibe_code_at_a_faang/',
+    sourceTitle: 'Reddit',
+    published: true,
+    sections: [
+      {
+        title: '배경',
+        content:
+          'AI 어시스턴트를 활용한 코딩이 프로덕션 코드에 사용될 수 없다고 생각하는 분들이 많지만, 이는 사실이 아닙니다. 저자는 10년 넘게 일해온 AI 소프트웨어 엔지니어로, 그중 절반은 FAANG이나 비슷한 수준의 회사에서 근무했습니다.',
+      },
+      {
+        title: 'FAANG의 AI 활용 프로덕션 워크플로우',
+        content: 'FAANG에서 AI를 프로덕션 코드에 활용하는 단계별 프로세스입니다.',
+        items: [
+          '기술 설계 문서(Technical Design Document)로 시작 - 대부분의 작업이 여기서 이루어짐',
+          '설계 리뷰 - 시니어 엔지니어들이 설계 문서를 철저하게 검토 ("고통의 선결제")',
+          '하위 시스템 문서화 - 개별 개발팀이 구축할 각 하위 시스템에 대한 문서화',
+          '백로그 개발과 스프린트 플래닝 - PM, TPM과 함께 세부 태스크와 순서 결정',
+          '소프트웨어 개발 - TDD 방식으로 AI가 먼저 테스트 작성, 그 후 기능 구현',
+          '코드 리뷰 - 두 명의 개발자 승인 필요, AI가 리뷰 보조',
+          '스테이징 테스트 후 프로덕션 배포',
+        ],
+      },
+      {
+        title: '결과',
+        content:
+          '기능 제안부터 프로덕션 배포까지 약 30% 속도 향상을 경험하고 있습니다.',
+      },
+    ],
+    keyTakeaways: [
+      {
+        title: '설계 문서 먼저',
+        content: '항상 탄탄한 설계 문서와 아키텍처로 시작하세요.',
+      },
+      {
+        title: '작은 단위로 구축',
+        content: '설계 문서에서부터 작은 단위로 나눠서 구축하세요.',
+      },
+      {
+        title: '테스트 먼저',
+        content: 'TDD 방식으로 AI에게 먼저 테스트를 작성하게 한 후 기능을 구현하세요.',
+      },
+    ],
+  },
   'week4/super-claude': {
     slug: 'super-claude',
     week: 4,

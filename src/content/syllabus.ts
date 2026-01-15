@@ -167,7 +167,9 @@ export const syllabus: Week[] = [
       },
       {
         title: 'How FAANG Vibe Codes',
-        url: 'https://x.com/rohanpaul_ai/status/1959414096589422619',
+        url: 'https://www.reddit.com/r/vibecoding/comments/1myakhd/how_we_vibe_code_at_a_faang/',
+        krSlug: 'how-faang-vibe-codes',
+        translationStatus: 'complete',
       },
       {
         title: 'Writing Effective Tools for Agents',
