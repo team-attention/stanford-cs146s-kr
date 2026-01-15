@@ -30,3 +30,16 @@ _legacy/
 
 # YouTube media files (large files)
 docs/**/media/*.mp3
+
+# Build outputs
+.next/
+.vite/
+next-env.d.ts
+
+# Environment variables
+.env
+.env.local
+
+# Local files
+todo.md
+*.pptx
