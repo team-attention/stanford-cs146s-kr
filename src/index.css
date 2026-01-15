@@ -42,6 +42,11 @@ a:hover {
   text-decoration: underline;
 }
 
+/* 버튼 스타일 링크는 Tailwind 클래스 우선 적용 */
+a.hover\:text-white:hover {
+  color: white;
+}
+
 /* Header gradient background */
 .header-gradient {
   background: linear-gradient(135deg, #8B0000, #B22222);
