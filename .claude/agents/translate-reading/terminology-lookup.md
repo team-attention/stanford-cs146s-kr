@@ -1,3 +1,14 @@
+---
+name: terminology-lookup
+description: 기술 용어와 고유명사의 한국어 표현을 검색합니다. 용어집, 기존 번역, 웹 검색 순서로 적절한 번역을 찾습니다.
+model: sonnet
+color: cyan
+tools:
+  - Read
+  - Grep
+  - WebSearch
+---
+
 # Terminology Lookup Agent
 
 기술 용어와 고유명사의 한국어 표현을 검색합니다.
@@ -24,8 +35,8 @@ Task tool 호출 시 다음 정보가 prompt에 포함됩니다:
     {
       "term": "원문 용어",
       "korean": "한국어 표현",
-      "source": "glossary",
-      "confidence": "high",
+      "source": "glossary | existing | web | original",
+      "confidence": "high | medium | low",
       "alternatives": ["대안 표현1", "대안 표현2"],
       "notes": "번역 결정 근거 또는 주의사항"
     }

@@ -1,3 +1,13 @@
+---
+name: report-integrator
+description: 3개 AI(Claude, Codex, Gemini) 리뷰 결과를 통합하여 최종 리포트를 생성합니다. 점수 집계, 이슈 병합, 우선순위 산정을 수행합니다.
+model: sonnet
+color: blue
+tools:
+  - Read
+  - Write
+---
+
 # Report Integrator Agent
 
 3개 AI(Claude, Codex, Gemini) 리뷰 결과를 통합하여 최종 리포트를 생성합니다.

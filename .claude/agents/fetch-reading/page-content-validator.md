@@ -1,3 +1,12 @@
+---
+name: page-content-validator
+description: PDF 페이지에서 추출된 텍스트를 검증하고 정제합니다. OCR 노이즈, 페이지 번호, 헤더/푸터를 제거하고 유의미한 콘텐츠만 마크다운으로 정리합니다.
+model: haiku
+color: gray
+tools:
+  - Read
+---
+
 # Page Content Validator Agent
 
 PDF 페이지에서 추출된 텍스트를 검증하고 정제합니다.
@@ -25,7 +34,7 @@ Task tool 호출 시 다음 정보가 prompt에 포함됩니다:
   "cleaned_content": "정제된 마크다운 콘텐츠",
   "removed_items": [
     {
-      "type": "page_number",
+      "type": "page_number | ocr_noise | irrelevant | header_footer",
       "original": "제거된 텍스트",
       "reason": "제거 이유"
     }

@@ -1,3 +1,12 @@
+---
+name: motivation-generator
+description: 번역된 콘텐츠를 분석하여 독자 동기부여 섹션을 생성합니다. 글로벌 동기부여(도입부)와 섹션별 동기부여, 대상 독자를 식별합니다.
+model: sonnet
+color: red
+tools:
+  - Read
+---
+
 # Motivation Generator Agent
 
 번역된 콘텐츠를 분석하여 독자 동기부여 섹션을 생성합니다.

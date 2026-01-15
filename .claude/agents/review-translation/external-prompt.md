@@ -1,3 +1,12 @@
+---
+name: external-prompt
+description: Codex CLI와 Gemini CLI에 전달되는 번역 검증 프롬프트 템플릿입니다. 문장별 대조 검증을 위한 표준화된 프롬프트를 제공합니다.
+model: haiku
+color: gray
+tools:
+  - Read
+---
+
 # External AI Translation Review Prompt
 
 이 파일은 Codex CLI와 Gemini CLI에 전달되는 번역 검증 프롬프트 템플릿입니다.
@@ -125,22 +134,22 @@ You MUST return ONLY valid JSON with no markdown code blocks, no explanations, j
       "term": "<English term>",
       "original_usage": "<sentence or phrase where used>",
       "translated": "<how it was translated>",
-      "status": "correct",
+      "status": "correct|incorrect|inconsistent",
       "note": "<explanation if incorrect/inconsistent>"
     }
   ],
   "proper_nouns_check": [
     {
       "name": "<proper noun>",
-      "type": "company",
+      "type": "company|product|person|paper|other",
       "translated": "<how it appears in translation>",
-      "status": "correct"
+      "status": "correct|incorrect"
     }
   ],
   "issues": [
     {
-      "type": "omission",
-      "severity": "critical",
+      "type": "<omission|mistranslation|distortion|terminology|style|addition>",
+      "severity": "<critical|major|minor>",
       "location": "<section name, sentence number>",
       "original": "<full English sentence>",
       "translated": "<full Korean sentence or '(누락됨)' if missing>",
