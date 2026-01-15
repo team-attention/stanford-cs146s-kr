@@ -24,15 +24,20 @@ export const syllabus: Week[] = [
       {
         title: 'Prompt Engineering Guide',
         url: 'https://www.promptingguide.ai/techniques',
-        translationStatus: 'in_progress',
+        krSlug: 'prompt-engineering-guide',
+        translationStatus: 'complete',
       },
       {
         title: 'AI Prompt Engineering: A Deep Dive',
         url: 'https://www.youtube.com/watch?v=T9aRN5JkmL8',
+        krSlug: 'ai-prompt-engineering-deep-dive',
+        translationStatus: 'complete',
       },
       {
         title: 'How OpenAI Uses Codex',
         url: 'https://cdn.openai.com/pdf/6a2631dc-783e-479b-b1a4-af0cfbd38630/how-openai-uses-codex.pdf',
+        krSlug: 'how-openai-uses-codex',
+        translationStatus: 'complete',
       },
     ],
     assignments: [
@@ -67,7 +72,8 @@ export const syllabus: Week[] = [
       {
         title: 'MCP Introduction',
         url: 'https://stytch.com/blog/model-context-protocol-introduction/',
-        translationStatus: 'in_progress',
+        krSlug: 'mcp-introduction',
+        translationStatus: 'complete',
       },
       {
         title: 'Sample MCP Server Implementations',
@@ -76,6 +82,8 @@ export const syllabus: Week[] = [
       {
         title: 'MCP Server Authentication',
         url: 'https://developers.cloudflare.com/agents/guides/remote-mcp-server/#add-authentication',
+        krSlug: 'mcp-server-authentication',
+        translationStatus: 'complete',
       },
       {
         title: 'MCP Server SDK',
@@ -84,10 +92,14 @@ export const syllabus: Week[] = [
       {
         title: 'MCP Registry',
         url: 'https://blog.modelcontextprotocol.io/posts/2025-09-08-mcp-registry-preview/',
+        krSlug: 'mcp-registry',
+        translationStatus: 'complete',
       },
       {
         title: 'MCP Food-for-Thought',
         url: 'https://www.reillywood.com/blog/apis-dont-make-good-mcp-tools/',
+        krSlug: 'mcp-food-for-thought',
+        translationStatus: 'complete',
       },
     ],
     assignments: [
@@ -134,14 +146,20 @@ export const syllabus: Week[] = [
       {
         title: 'Specs Are the New Source Code',
         url: 'https://blog.ravi-mehta.com/p/specs-are-the-new-source-code',
+        krSlug: 'specs-are-the-new-source-code',
+        translationStatus: 'complete',
       },
       {
         title: 'How Long Contexts Fail',
         url: 'https://www.dbreunig.com/2025/06/22/how-contexts-fail-and-how-to-fix-them.html',
+        krSlug: 'how-contexts-fail',
+        translationStatus: 'complete',
       },
       {
         title: 'Devin: Coding Agents 101',
         url: 'https://devin.ai/agents101#introduction',
+        krSlug: 'coding-agents-101',
+        translationStatus: 'complete',
       },
       {
         title: 'Getting AI to Work In Complex Codebases',
@@ -149,11 +167,15 @@ export const syllabus: Week[] = [
       },
       {
         title: 'How FAANG Vibe Codes',
-        url: 'https://x.com/rohanpaul_ai/status/1959414096589422619',
+        url: 'https://www.reddit.com/r/vibecoding/comments/1myakhd/how_we_vibe_code_at_a_faang/',
+        krSlug: 'how-faang-vibe-codes',
+        translationStatus: 'complete',
       },
       {
         title: 'Writing Effective Tools for Agents',
         url: 'https://www.anthropic.com/engineering/writing-tools-for-agents',
+        krSlug: 'writing-effective-tools-for-agents',
+        translationStatus: 'complete',
       },
     ],
     assignments: [
@@ -200,26 +222,38 @@ export const syllabus: Week[] = [
       {
         title: 'How Anthropic Uses Claude Code',
         url: 'https://www-cdn.anthropic.com/58284b19e702b49db9302d5b6f135ad8871e7658.pdf',
+        krSlug: 'how-anthropic-uses-claude-code',
+        translationStatus: 'complete',
       },
       {
         title: 'Claude Best Practices',
         url: 'https://www.anthropic.com/engineering/claude-code-best-practices',
+        krSlug: 'claude-code-best-practices',
+        translationStatus: 'complete',
       },
       {
         title: 'Awesome Claude Agents',
         url: 'https://github.com/vijaythecoder/awesome-claude-agents',
+        krSlug: 'awesome-claude-agents',
+        translationStatus: 'complete',
       },
       {
         title: 'Super Claude',
         url: 'https://github.com/SuperClaude-Org/SuperClaude_Framework',
+        krSlug: 'super-claude',
+        translationStatus: 'complete',
       },
       {
         title: 'Good Context Good Code',
         url: 'https://blog.stockapp.com/good-context-good-code/',
+        krSlug: 'good-context-good-code',
+        translationStatus: 'complete',
       },
       {
         title: 'Peeking Under the Hood of Claude Code',
         url: 'https://medium.com/@outsightai/peeking-under-the-hood-of-claude-code-70f5a94a9a62',
+        krSlug: 'peeking-under-hood-claude-code',
+        translationStatus: 'complete',
       },
     ],
     assignments: [
@@ -264,10 +298,14 @@ export const syllabus: Week[] = [
       {
         title: 'Warp vs Claude Code',
         url: 'https://www.warp.dev/university/getting-started/warp-vs-claude-code',
+        krSlug: 'warp-vs-claude-code',
+        translationStatus: 'complete',
       },
       {
         title: 'How Warp Uses Warp to Build Warp',
         url: 'https://notion.warp.dev/How-Warp-uses-Warp-to-build-Warp-21643263616d81a6b9e3e63fd8a7380c',
+        krSlug: 'how-warp-uses-warp',
+        translationStatus: 'complete',
       },
     ],
     assignments: [
@@ -309,26 +347,38 @@ export const syllabus: Week[] = [
       {
         title: 'SAST vs DAST',
         url: 'https://www.splunk.com/en_us/blog/learn/sast-vs-dast.html',
+        krSlug: 'sast-vs-dast',
+        translationStatus: 'complete',
       },
       {
         title: 'Copilot Remote Code Execution via Prompt Injection',
         url: 'https://embracethered.com/blog/posts/2025/github-copilot-remote-code-execution-via-prompt-injection/',
+        krSlug: 'copilot-rce-prompt-injection',
+        translationStatus: 'complete',
       },
       {
         title: 'Finding Vulnerabilities in Modern Web Apps Using Claude Code and OpenAI Codex',
         url: 'https://semgrep.dev/blog/2025/finding-vulnerabilities-in-modern-web-apps-using-claude-code-and-openai-codex/',
+        krSlug: 'finding-vulnerabilities-claude-code-codex',
+        translationStatus: 'complete',
       },
       {
         title: 'Agentic AI Threats: Identity Spoofing and Impersonation Risks',
         url: 'https://unit42.paloaltonetworks.com/agentic-ai-threats/#:~:text=Identity%20spoofing%20and%20impersonation:%20Attackers,accurate%20information%20exchange%20are%20critical.',
+        krSlug: 'agentic-ai-threats',
+        translationStatus: 'complete',
       },
       {
         title: 'OWASP Top Ten: The Leading Web Application Security Risks',
         url: 'https://owasp.org/www-project-top-ten/',
+        krSlug: 'owasp-top-ten',
+        translationStatus: 'complete',
       },
       {
         title: 'Context Rot: Understanding Degradation in AI Context Windows',
         url: 'https://research.trychroma.com/context-rot',
+        krSlug: 'context-rot',
+        translationStatus: 'complete',
       },
       {
         title: 'Vulnerability Prompt Analysis with O3',
@@ -373,26 +423,38 @@ export const syllabus: Week[] = [
       {
         title: 'Code Reviews: Just Do It',
         url: 'https://blog.codinghorror.com/code-reviews-just-do-it/',
+        krSlug: 'code-reviews-just-do-it',
+        translationStatus: 'complete',
       },
       {
         title: 'How to Review Code Effectively',
         url: 'https://github.blog/developer-skills/github/how-to-review-code-effectively-a-github-staff-engineers-philosophy/',
+        krSlug: 'how-to-review-code-effectively',
+        translationStatus: 'complete',
       },
       {
         title: 'AI-Assisted Assessment of Coding Practices in Modern Code Review',
         url: 'https://arxiv.org/pdf/2405.13565',
+        krSlug: 'ai-assisted-assessment-coding-practices',
+        translationStatus: 'complete',
       },
       {
         title: 'AI Code Review Implementation Best Practices',
         url: 'https://graphite.dev/guides/ai-code-review-implementation-best-practices',
+        krSlug: 'ai-code-review-best-practices',
+        translationStatus: 'complete',
       },
       {
         title: 'Code Review Essentials for Software Teams',
         url: 'https://blakesmith.me/2015/02/09/code-review-essentials-for-software-teams.html',
+        krSlug: 'code-review-essentials',
+        translationStatus: 'complete',
       },
       {
         title: 'Lessons from millions of AI code reviews',
         url: 'https://www.youtube.com/watch?v=TswQeKftnaw',
+        krSlug: 'lessons-millions-ai-code-reviews',
+        translationStatus: 'complete',
       },
     ],
     assignments: [
@@ -469,26 +531,38 @@ export const syllabus: Week[] = [
       {
         title: 'Introduction to Site Reliability Engineering',
         url: 'https://sre.google/sre-book/introduction/',
+        krSlug: 'introduction-to-sre',
+        translationStatus: 'complete',
       },
       {
         title: 'Observability Basics You Should Know',
         url: 'https://last9.io/blog/traces-spans-observability-basics/',
+        krSlug: 'observability-basics',
+        translationStatus: 'complete',
       },
       {
         title: 'Kubernetes Troubleshooting with AI',
         url: 'https://resolve.ai/blog/kubernetes-troubleshooting-in-resolve-ai',
+        krSlug: 'kubernetes-troubleshooting',
+        translationStatus: 'complete',
       },
       {
         title: 'Your New Autonomous Teammate',
         url: 'https://resolve.ai/blog/product-deep-dive',
+        krSlug: 'autonomous-teammate',
+        translationStatus: 'complete',
       },
       {
         title: 'Role of Multi Agent Systems in Making Software Engineers AI-native',
         url: 'https://resolve.ai/blog/role-of-multi-agent-systems-AI-native-engineering',
+        krSlug: 'multi-agent-systems',
+        translationStatus: 'complete',
       },
       {
         title: 'Benefits of Agentic AI in On-call Engineering',
         url: 'https://resolve.ai/blog/Top-5-Benefits',
+        krSlug: 'agentic-ai-benefits',
+        translationStatus: 'complete',
       },
     ],
     assignments: [],

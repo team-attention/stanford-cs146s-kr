@@ -1,0 +1,30 @@
+{
+  "reviewer": "gemini",
+  "timestamp": "2026-01-12T10:00:00Z",
+  "document": "week1/prompt-engineering-guide/zeroshot",
+  "scores": {
+    "accuracy": 10,
+    "completeness": 8,
+    "naturalness": 10,
+    "terminology": 10,
+    "overall": 9.5
+  },
+  "issues": [
+    {
+      "type": "distortion",
+      "severity": "major",
+      "location": "End of document",
+      "original": "The English source document ends after the 'When to Use Alternatives' section.",
+      "translated": "## 핵심 요약\n- Zero-shot은 예시 없이 직접 지시만으로 작업을 수행하는 프롬프팅 기법\n- 최신 LLM은 광범위한 사전 학습으로 zero-shot 수행이 가능\n- Instruction Tuning과 RLHF가 zero-shot 성능 향상의 핵심\n- 성능이 부족하면 few-shot 프롬프팅을 고려",
+      "suggestion": "이 '핵심 요약' 섹션을 삭제하여 원문과 구조를 일치시켜야 합니다.",
+      "reason": "원문에는 존재하지 않는 요약 섹션이 임의로 추가되었습니다. 번역은 원문의 내용과 구조를 그대로 반영해야 하며, 내용을 추가하는 것은 원문의 의도를 왜곡할 수 있습니다."
+    }
+  ],
+  "summary": {
+    "total": 1,
+    "critical": 0,
+    "major": 1,
+    "minor": 0
+  },
+  "recommendation": "번역의 정확성과 자연스러움은 매우 높으나, 원문에 없는 '핵심 요약' 섹션이 추가되었습니다. 원문과의 일관성을 위해 해당 섹션을 삭제할 것을 권장합니다. 수정 후 승인 가능합니다."
+}

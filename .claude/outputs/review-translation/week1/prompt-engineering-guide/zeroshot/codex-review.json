@@ -1,0 +1,30 @@
+{
+  "reviewer": "codex",
+  "timestamp": "2026-01-12T00:00:00Z",
+  "document": "week1/prompt-engineering-guide/zeroshot",
+  "scores": {
+    "accuracy": 9,
+    "completeness": 9,
+    "naturalness": 9,
+    "terminology": 9,
+    "overall": 9
+  },
+  "issues": [
+    {
+      "type": "distortion",
+      "severity": "minor",
+      "location": "## 핵심 요약",
+      "original": "(no corresponding content in source)",
+      "translated": "## 핵심 요약\n- Zero-shot은 예시 없이 직접 지시만으로 작업을 수행하는 프롬프팅 기법\n- 최신 LLM은 광범위한 사전 학습으로 zero-shot 수행이 가능\n- Instruction Tuning과 RLHF가 zero-shot 성능 향상의 핵심\n- 성능이 부족하면 few-shot 프롬프팅을 고려",
+      "suggestion": "삭제하거나 소스에 해당 요약이 있을 때만 포함하세요.",
+      "reason": "원문에 없는 요약 섹션이 추가되어 내용이 확장되었습니다."
+    }
+  ],
+  "summary": {
+    "total": 1,
+    "critical": 0,
+    "major": 0,
+    "minor": 1
+  },
+  "recommendation": "accept with minor revisions"
+}

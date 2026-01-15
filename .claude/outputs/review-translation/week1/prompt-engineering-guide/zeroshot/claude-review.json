@@ -1,0 +1,57 @@
+{
+  "reviewer": "claude",
+  "timestamp": "2026-01-12T12:00:00Z",
+  "document": "week1/prompt-engineering-guide/zeroshot",
+  "scores": {
+    "accuracy": 9,
+    "completeness": 9,
+    "naturalness": 9,
+    "terminology": 9,
+    "overall": 9
+  },
+  "issues": [
+    {
+      "type": "terminology",
+      "severity": "minor",
+      "location": "정의 섹션",
+      "original": "examples or demonstrations",
+      "translated": "예시나 시연",
+      "suggestion": "'시연'보다는 '데모'나 '예시 데모'가 더 자연스러울 수 있음",
+      "reason": "'demonstrations'를 '시연'으로 번역했으나, ML 맥락에서 'demonstrations'는 주로 '예시' 또는 '데모'로 사용됨"
+    },
+    {
+      "type": "style",
+      "severity": "minor",
+      "location": "작동 원리 섹션",
+      "original": "the model understands the concept without needing labeled examples",
+      "translated": "모델은 레이블이 붙은 예시 없이도 개념을 이해합니다",
+      "suggestion": "'레이블링된 예시' 또는 '라벨이 달린 예시'",
+      "reason": "'레이블이 붙은'은 다소 직역체이나 의미 전달에는 문제없음"
+    },
+    {
+      "type": "terminology",
+      "severity": "minor",
+      "location": "핵심 기술 섹션",
+      "original": "instruction-described datasets",
+      "translated": "지시문 기반 데이터셋",
+      "suggestion": "현재 번역이 적절함",
+      "reason": "원문의 'instruction-described'를 '지시문 기반'으로 의역한 것은 좋은 선택"
+    },
+    {
+      "type": "style",
+      "severity": "minor",
+      "location": "대안 사용 시점 섹션",
+      "original": "When zero-shot approaches underperform",
+      "translated": "Zero-shot으로 원하는 결과를 얻지 못하면",
+      "suggestion": "현재 번역이 더 자연스러움",
+      "reason": "직역 대신 의역하여 가독성 향상"
+    }
+  ],
+  "summary": {
+    "total": 4,
+    "critical": 0,
+    "major": 0,
+    "minor": 4
+  },
+  "recommendation": "출판 수준의 고품질 번역입니다. 모든 핵심 개념이 정확하게 전달되었고, 한국어로 자연스럽게 읽힙니다. 기술 용어(LLM, RLHF, Instruction Tuning 등)도 일관되게 처리되었습니다. Minor 이슈들은 선택적 수정 사항으로, 현재 상태로도 게시 가능합니다."
+}

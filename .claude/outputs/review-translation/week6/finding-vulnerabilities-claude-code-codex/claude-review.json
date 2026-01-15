@@ -1,0 +1,51 @@
+{
+  "reviewer": "claude",
+  "timestamp": "2026-01-13T10:30:00Z",
+  "document": "week6/finding-vulnerabilities-claude-code-codex",
+  "scores": {
+    "accuracy": 9,
+    "completeness": 9,
+    "naturalness": 8,
+    "terminology": 9,
+    "overall": 8.75
+  },
+  "sentence_checks": {
+    "total_sentences": 92,
+    "checked_sentences": 92,
+    "issues_found": 6
+  },
+  "terminology_check": [
+    {
+      "term": "TPR/FPR",
+      "status": "correct"
+    },
+    {
+      "term": "educated decisions",
+      "status": "incorrect",
+      "note": "정보에 기반한 결정으로 번역해야 함"
+    }
+  ],
+  "issues": [
+    {
+      "type": "addition",
+      "severity": "minor",
+      "location": "문서 끝",
+      "problem": "핵심 요약 섹션 추가"
+    },
+    {
+      "type": "mistranslation",
+      "severity": "major",
+      "location": "스캐폴딩 섹션",
+      "original": "educated decisions",
+      "translated": "교육적 결정",
+      "suggestion": "정보에 기반한 결정"
+    }
+  ],
+  "summary": {
+    "total": 6,
+    "critical": 0,
+    "major": 1,
+    "minor": 5
+  },
+  "recommendation": "Major 이슈 1건(educated decisions 오역) 우선 수정"
+}

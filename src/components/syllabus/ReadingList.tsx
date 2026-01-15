@@ -24,34 +24,48 @@ export default function ReadingList({ readings, weekNumber }: ReadingListProps) 
       {readings.map((reading, i) => {
         const status = getTranslationStatus(reading)
         const hasKorean = reading.krSlug && status === 'complete'
+        const isGitHubReading = reading.url.includes('github.com')
 
         return (
           <li key={i} className="text-[20.8px] leading-[33.28px] text-text-body">
             <div>• {reading.title}</div>
             <div className="ml-4 text-[14px]">
               <span className="text-text-secondary">→ </span>
-              {hasKorean ? (
-                <Link
-                  to={`/readings/week${weekNumber}/${reading.krSlug}`}
-                  className="text-kr-accent hover:underline"
+              {isGitHubReading ? (
+                <a
+                  href={reading.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-stanford-red hover:underline"
                 >
-                  한국어
-                </Link>
+                  GitHub
+                </a>
               ) : (
-                <span className="text-text-secondary/60">
-                  한국어
-                  <span className="text-[12px] ml-1 opacity-70">({statusLabel[status as Exclude<TranslationStatus, 'complete'>]})</span>
-                </span>
+                <>
+                  {hasKorean ? (
+                    <Link
+                      to={`/readings/week${weekNumber}/${reading.krSlug}`}
+                      className="text-kr-accent hover:underline"
+                    >
+                      한국어
+                    </Link>
+                  ) : (
+                    <span className="text-text-secondary/60">
+                      한국어
+                      <span className="text-[12px] ml-1 opacity-70">({statusLabel[status as Exclude<TranslationStatus, 'complete'>]})</span>
+                    </span>
+                  )}
+                  <span className="text-text-secondary mx-2">|</span>
+                  <a
+                    href={reading.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-stanford-red hover:underline"
+                  >
+                    English
+                  </a>
+                </>
               )}
-              <span className="text-text-secondary mx-2">|</span>
-              <a
-                href={reading.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-stanford-red hover:underline"
-              >
-                English
-              </a>
             </div>
           </li>
         )
