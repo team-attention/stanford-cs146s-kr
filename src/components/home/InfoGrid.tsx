@@ -19,12 +19,6 @@ const infoItems = [
     labelKr: '목표',
     value: '현대 개발 도구 마스터, AI 기반 코딩 이해, 자동화 테스트 및 배포 학습, 새로운 소프트웨어 트렌드 파악.',
   },
-  {
-    label: 'Translation',
-    labelKr: '번역 정보',
-    value: '번역을 담당한 Claude Code workflow는 ',
-    url: 'https://github.com/team-attention/stanford-cs146s-kr/',
-  },
 ]
 
 export default function InfoGrid() {
@@ -36,21 +30,7 @@ export default function InfoGrid() {
             {item.label}
           </h3>
           <p className="text-[19.2px] leading-[28.8px] text-text-body">
-            {item.url ? (
-              <>
-                {item.value}
-                <a
-                  href={item.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-stanford-red hover:underline"
-                >
-                  번역 claude code skills에 기여해주세요
-                </a>
-              </>
-            ) : (
-              item.value
-            )}
+            {item.value}
           </p>
         </div>
       ))}
