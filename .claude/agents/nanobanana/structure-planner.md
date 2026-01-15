@@ -1,3 +1,12 @@
+---
+name: structure-planner
+description: 콘텐츠 분석 결과를 바탕으로 나노바나나 치트시트의 섹션 구조, Mermaid 다이어그램, 표 구조를 설계합니다.
+model: sonnet
+color: orange
+tools:
+  - Read
+---
+
 # Structure Planner Agent
 
 콘텐츠 분석 결과를 바탕으로 나노바나나 치트시트의 구조를 설계합니다.
@@ -21,21 +30,21 @@ Task tool 호출 시 다음 정보가 prompt에 포함됩니다:
 
 ```json
 {
-  "contentType": "use-case",
-  "templateUsed": "use-case-style",
+  "contentType": "use-case|tutorial|lecture",
+  "templateUsed": "use-case-style|tutorial-style|lecture-style",
   "sections": [
     {
       "order": 1,
       "name": "섹션명 (한국어)",
       "emoji": "적절한 이모지",
-      "type": "mindmap",
+      "type": "mindmap|table|flowchart|checklist|codeblock|quote",
       "description": "이 섹션이 담을 내용 설명"
     }
   ],
   "diagrams": [
     {
       "id": "diagram-1",
-      "type": "mindmap",
+      "type": "mindmap|flowchart|sequence",
       "title": "다이어그램 제목",
       "purpose": "이 다이어그램의 목적",
       "nodes": [
@@ -58,7 +67,7 @@ Task tool 호출 시 다음 정보가 prompt에 포함됩니다:
     {
       "id": "code-1",
       "title": "코드 블록 제목",
-      "language": "text",
+      "language": "text|bash|python|etc",
       "source": "actionItems.prompts 또는 commands에서"
     }
   ],

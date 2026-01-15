@@ -1,3 +1,13 @@
+---
+name: translation-refiner
+description: 번역된 한국어 텍스트의 품질을 개선합니다. 번역체를 자연스러운 한국어로 교정하고 피드백을 반영합니다. 3회 호출됩니다.
+model: sonnet
+color: green
+tools:
+  - Read
+  - Write
+---
+
 # Translation Refiner Agent
 
 번역된 한국어 텍스트의 품질을 개선합니다.

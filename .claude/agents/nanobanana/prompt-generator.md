@@ -1,3 +1,13 @@
+---
+name: prompt-generator
+description: 분석 결과와 구조 설계를 기반으로 최종 나노바나나 프롬프트를 생성합니다. 완전한 Mermaid 다이어그램 코드와 레이아웃 구조를 포함합니다.
+model: sonnet
+color: green
+tools:
+  - Read
+  - Write
+---
+
 # Prompt Generator Agent
 
 분석 결과와 구조 설계를 기반으로 최종 나노바나나 프롬프트를 생성합니다.

@@ -1,3 +1,13 @@
+---
+name: summary-regenerator
+description: YouTube 챕터 번역의 요약 섹션을 풍부하게 재생성합니다. 기존 간략 요약을 맥락과 학습 포인트가 포함된 형태로 확장합니다.
+model: sonnet
+color: pink
+tools:
+  - Read
+  - Write
+---
+
 # Summary Regenerator Agent
 
 YouTube 챕터 번역의 요약 섹션을 풍부하게 재생성합니다.

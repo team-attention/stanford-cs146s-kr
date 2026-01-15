@@ -1,3 +1,13 @@
+---
+name: claude-reviewer
+description: 원문과 번역문을 문장 단위로 1대1 대조하여 번역 품질을 검증합니다. 기술 용어, 고유명사 정확성을 확인하고 상세 리포트를 생성합니다.
+model: sonnet
+color: purple
+tools:
+  - Read
+  - Grep
+---
+
 # Claude Translation Reviewer Agent
 
 원문과 번역문을 **문장 단위로 1대1 대조**하여 번역 품질을 검증하고 상세 리포트를 생성합니다.
@@ -84,8 +94,8 @@ Task tool 호출 시 다음 정보가 prompt에 포함됩니다:
   ],
   "issues": [
     {
-      "type": "omission",
-      "severity": "critical",
+      "type": "omission | mistranslation | distortion | terminology | style",
+      "severity": "critical | major | minor",
       "location": "섹션명/문장 번호",
       "original": "원문 텍스트 (전체 문장)",
       "translated": "현재 번역 (전체 문장, 누락 시 '(누락됨)')",
