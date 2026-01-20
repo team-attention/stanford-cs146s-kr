@@ -1,0 +1,984 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.080 --> 00:00:01.750 align:start position:0%
+ 
+Today<00:00:00.320><c> I'm</c><00:00:00.560><c> going</c><00:00:00.640><c> to</c><00:00:00.719><c> teach</c><00:00:00.880><c> you</c><00:00:01.040><c> about</c><00:00:01.280><c> agent</c>
+
+00:00:01.750 --> 00:00:01.760 align:start position:0%
+Today I'm going to teach you about agent
+ 
+
+00:00:01.760 --> 00:00:03.990 align:start position:0%
+Today I'm going to teach you about agent
+profiles<00:00:02.159><c> in</c><00:00:02.399><c> Warp.</c><00:00:02.879><c> Agent</c><00:00:03.280><c> profiles</c><00:00:03.679><c> let</c><00:00:03.840><c> you</c>
+
+00:00:03.990 --> 00:00:04.000 align:start position:0%
+profiles in Warp. Agent profiles let you
+ 
+
+00:00:04.000 --> 00:00:05.910 align:start position:0%
+profiles in Warp. Agent profiles let you
+configure<00:00:04.319><c> how</c><00:00:04.560><c> your</c><00:00:04.720><c> coding</c><00:00:05.040><c> agents</c><00:00:05.520><c> behave</c>
+
+00:00:05.910 --> 00:00:05.920 align:start position:0%
+configure how your coding agents behave
+ 
+
+00:00:05.920 --> 00:00:07.829 align:start position:0%
+configure how your coding agents behave
+in<00:00:06.160><c> different</c><00:00:06.480><c> situations.</c><00:00:07.359><c> So</c><00:00:07.520><c> in</c><00:00:07.680><c> this</c>
+
+00:00:07.829 --> 00:00:07.839 align:start position:0%
+in different situations. So in this
+ 
+
+00:00:07.839 --> 00:00:09.430 align:start position:0%
+in different situations. So in this
+video<00:00:08.080><c> I'm</c><00:00:08.320><c> going</c><00:00:08.400><c> to</c><00:00:08.559><c> show</c><00:00:08.639><c> you</c><00:00:08.880><c> how</c><00:00:09.120><c> two</c>
+
+00:00:09.430 --> 00:00:09.440 align:start position:0%
+video I'm going to show you how two
+ 
+
+00:00:09.440 --> 00:00:11.509 align:start position:0%
+video I'm going to show you how two
+different<00:00:09.840><c> agent</c><00:00:10.240><c> profiles</c><00:00:10.719><c> will</c><00:00:10.960><c> handle</c><00:00:11.280><c> the</c>
+
+00:00:11.509 --> 00:00:11.519 align:start position:0%
+different agent profiles will handle the
+ 
+
+00:00:11.519 --> 00:00:13.749 align:start position:0%
+different agent profiles will handle the
+exact<00:00:11.920><c> same</c><00:00:12.240><c> coding</c><00:00:12.639><c> project,</c><00:00:13.360><c> which</c><00:00:13.599><c> is</c>
+
+00:00:13.749 --> 00:00:13.759 align:start position:0%
+exact same coding project, which is
+ 
+
+00:00:13.759 --> 00:00:15.669 align:start position:0%
+exact same coding project, which is
+going<00:00:13.840><c> to</c><00:00:13.920><c> be</c><00:00:14.080><c> building</c><00:00:14.400><c> an</c><00:00:14.639><c> NFL</c><00:00:15.200><c> predictor</c>
+
+00:00:15.669 --> 00:00:15.679 align:start position:0%
+going to be building an NFL predictor
+ 
+
+00:00:15.679 --> 00:00:18.550 align:start position:0%
+going to be building an NFL predictor
+app.<00:00:16.080><c> The</c><00:00:16.320><c> idea</c><00:00:16.560><c> is</c><00:00:16.800><c> simple.</c><00:00:17.440><c> Scrape</c><00:00:17.760><c> NFL</c><00:00:18.240><c> data</c>
+
+00:00:18.550 --> 00:00:18.560 align:start position:0%
+app. The idea is simple. Scrape NFL data
+ 
+
+00:00:18.560 --> 00:00:20.790 align:start position:0%
+app. The idea is simple. Scrape NFL data
+from<00:00:18.800><c> the</c><00:00:19.039><c> past</c><00:00:19.359><c> 10</c><00:00:19.680><c> years,</c><00:00:20.160><c> process</c><00:00:20.560><c> that</c>
+
+00:00:20.790 --> 00:00:20.800 align:start position:0%
+from the past 10 years, process that
+ 
+
+00:00:20.800 --> 00:00:22.870 align:start position:0%
+from the past 10 years, process that
+into<00:00:21.119><c> structured</c><00:00:21.680><c> stats</c><00:00:22.080><c> like</c><00:00:22.400><c> scores,</c>
+
+00:00:22.870 --> 00:00:22.880 align:start position:0%
+into structured stats like scores,
+ 
+
+00:00:22.880 --> 00:00:24.630 align:start position:0%
+into structured stats like scores,
+teams,<00:00:23.119><c> and</c><00:00:23.279><c> players,</c><00:00:23.920><c> and</c><00:00:24.080><c> then</c><00:00:24.240><c> use</c><00:00:24.400><c> that</c>
+
+00:00:24.630 --> 00:00:24.640 align:start position:0%
+teams, and players, and then use that
+ 
+
+00:00:24.640 --> 00:00:26.470 align:start position:0%
+teams, and players, and then use that
+data<00:00:24.880><c> to</c><00:00:25.119><c> predict</c><00:00:25.439><c> future</c><00:00:25.840><c> wins</c><00:00:26.160><c> for</c><00:00:26.320><c> the</c>
+
+00:00:26.470 --> 00:00:26.480 align:start position:0%
+data to predict future wins for the
+ 
+
+00:00:26.480 --> 00:00:28.390 align:start position:0%
+data to predict future wins for the
+upcoming<00:00:26.880><c> season.</c><00:00:27.359><c> The</c><00:00:27.599><c> prompt</c><00:00:27.920><c> included</c>
+
+00:00:28.390 --> 00:00:28.400 align:start position:0%
+upcoming season. The prompt included
+ 
+
+00:00:28.400 --> 00:00:30.470 align:start position:0%
+upcoming season. The prompt included
+instructions<00:00:28.960><c> on</c><00:00:29.119><c> the</c><00:00:29.359><c> data</c><00:00:29.599><c> sources,</c><00:00:30.240><c> tech</c>
+
+00:00:30.470 --> 00:00:30.480 align:start position:0%
+instructions on the data sources, tech
+ 
+
+00:00:30.480 --> 00:00:33.270 align:start position:0%
+instructions on the data sources, tech
+constraints,<00:00:31.199><c> dependencies,</c><00:00:32.160><c> the</c><00:00:32.399><c> exact</c><00:00:32.800><c> CLI</c>
+
+00:00:33.270 --> 00:00:33.280 align:start position:0%
+constraints, dependencies, the exact CLI
+ 
+
+00:00:33.280 --> 00:00:35.590 align:start position:0%
+constraints, dependencies, the exact CLI
+commands,<00:00:33.840><c> implementation</c><00:00:34.640><c> details,</c><00:00:35.280><c> and</c>
+
+00:00:35.590 --> 00:00:35.600 align:start position:0%
+commands, implementation details, and
+ 
+
+00:00:35.600 --> 00:00:37.910 align:start position:0%
+commands, implementation details, and
+final<00:00:36.079><c> deliverables.</c><00:00:36.880><c> First</c><00:00:37.120><c> up</c><00:00:37.280><c> is</c><00:00:37.520><c> the</c>
+
+00:00:37.910 --> 00:00:37.920 align:start position:0%
+final deliverables. First up is the
+ 
+
+00:00:37.920 --> 00:00:40.150 align:start position:0%
+final deliverables. First up is the
+strategic<00:00:38.480><c> agent.</c><00:00:39.040><c> For</c><00:00:39.200><c> the</c><00:00:39.360><c> base</c><00:00:39.680><c> model,</c><00:00:40.000><c> I</c>
+
+00:00:40.150 --> 00:00:40.160 align:start position:0%
+strategic agent. For the base model, I
+ 
+
+00:00:40.160 --> 00:00:42.950 align:start position:0%
+strategic agent. For the base model, I
+used<00:00:40.559><c> GPT5</c><00:00:41.600><c> because</c><00:00:41.920><c> it</c><00:00:42.160><c> provides</c><00:00:42.559><c> strong</c>
+
+00:00:42.950 --> 00:00:42.960 align:start position:0%
+used GPT5 because it provides strong
+ 
+
+00:00:42.960 --> 00:00:44.869 align:start position:0%
+used GPT5 because it provides strong
+reasoning<00:00:43.440><c> while</c><00:00:43.680><c> being</c><00:00:43.920><c> still</c><00:00:44.239><c> efficient</c><00:00:44.640><c> at</c>
+
+00:00:44.869 --> 00:00:44.879 align:start position:0%
+reasoning while being still efficient at
+ 
+
+00:00:44.879 --> 00:00:46.630 align:start position:0%
+reasoning while being still efficient at
+generating<00:00:45.360><c> code.</c><00:00:45.680><c> For</c><00:00:45.840><c> the</c><00:00:46.000><c> planning</c><00:00:46.320><c> model,</c>
+
+00:00:46.630 --> 00:00:46.640 align:start position:0%
+generating code. For the planning model,
+ 
+
+00:00:46.640 --> 00:00:49.029 align:start position:0%
+generating code. For the planning model,
+I<00:00:46.800><c> chose</c><00:00:47.039><c> Cloud</c><00:00:47.360><c> 4</c><00:00:47.600><c> Opus</c><00:00:48.079><c> because</c><00:00:48.399><c> Opus</c><00:00:48.879><c> is</c>
+
+00:00:49.029 --> 00:00:49.039 align:start position:0%
+I chose Cloud 4 Opus because Opus is
+ 
+
+00:00:49.039 --> 00:00:51.190 align:start position:0%
+I chose Cloud 4 Opus because Opus is
+great<00:00:49.200><c> at</c><00:00:49.440><c> breaking</c><00:00:49.840><c> down</c><00:00:50.239><c> complex</c><00:00:50.800><c> projects</c>
+
+00:00:51.190 --> 00:00:51.200 align:start position:0%
+great at breaking down complex projects
+ 
+
+00:00:51.200 --> 00:00:53.990 align:start position:0%
+great at breaking down complex projects
+into<00:00:51.520><c> long,</c><00:00:52.160><c> detailed</c><00:00:52.719><c> step-by-step</c><00:00:53.440><c> plans.</c>
+
+00:00:53.990 --> 00:00:54.000 align:start position:0%
+into long, detailed step-by-step plans.
+ 
+
+00:00:54.000 --> 00:00:55.830 align:start position:0%
+into long, detailed step-by-step plans.
+The<00:00:54.239><c> strategic</c><00:00:54.800><c> agent</c><00:00:55.120><c> is</c><00:00:55.280><c> set</c><00:00:55.440><c> so</c><00:00:55.600><c> that</c>
+
+00:00:55.830 --> 00:00:55.840 align:start position:0%
+The strategic agent is set so that
+ 
+
+00:00:55.840 --> 00:00:57.830 align:start position:0%
+The strategic agent is set so that
+applying<00:00:56.239><c> code</c><00:00:56.480><c> diffs</c><00:00:56.800><c> and</c><00:00:56.960><c> reading</c><00:00:57.280><c> files</c>
+
+00:00:57.830 --> 00:00:57.840 align:start position:0%
+applying code diffs and reading files
+ 
+
+00:00:57.840 --> 00:01:00.069 align:start position:0%
+applying code diffs and reading files
+are<00:00:58.000><c> agent</c><00:00:58.399><c> decides.</c><00:00:58.960><c> Creating</c><00:00:59.359><c> plans</c><00:00:59.840><c> is</c>
+
+00:01:00.069 --> 00:01:00.079 align:start position:0%
+are agent decides. Creating plans is
+ 
+
+00:01:00.079 --> 00:01:02.310 align:start position:0%
+are agent decides. Creating plans is
+always<00:01:00.399><c> allow</c><00:01:00.879><c> and</c><00:01:01.120><c> executing</c><00:01:01.680><c> commands</c><00:01:02.079><c> is</c>
+
+00:01:02.310 --> 00:01:02.320 align:start position:0%
+always allow and executing commands is
+ 
+
+00:01:02.320 --> 00:01:04.149 align:start position:0%
+always allow and executing commands is
+always<00:01:02.559><c> asked.</c><00:01:03.120><c> When</c><00:01:03.280><c> I</c><00:01:03.440><c> run</c><00:01:03.520><c> the</c><00:01:03.680><c> NFL</c>
+
+00:01:04.149 --> 00:01:04.159 align:start position:0%
+always asked. When I run the NFL
+ 
+
+00:01:04.159 --> 00:01:05.910 align:start position:0%
+always asked. When I run the NFL
+predictor<00:01:04.559><c> prompt</c><00:01:04.879><c> with</c><00:01:05.040><c> this</c><00:01:05.199><c> agent,</c><00:01:05.760><c> the</c>
+
+00:01:05.910 --> 00:01:05.920 align:start position:0%
+predictor prompt with this agent, the
+ 
+
+00:01:05.920 --> 00:01:07.910 align:start position:0%
+predictor prompt with this agent, the
+first<00:01:06.080><c> thing</c><00:01:06.240><c> it</c><00:01:06.400><c> does</c><00:01:06.560><c> is</c><00:01:06.880><c> ask</c><00:01:07.119><c> me</c><00:01:07.360><c> clarifying</c>
+
+00:01:07.910 --> 00:01:07.920 align:start position:0%
+first thing it does is ask me clarifying
+ 
+
+00:01:07.920 --> 00:01:09.670 align:start position:0%
+first thing it does is ask me clarifying
+questions.<00:01:08.400><c> Do</c><00:01:08.560><c> you</c><00:01:08.640><c> want</c><00:01:08.720><c> me</c><00:01:08.880><c> to</c><00:01:08.960><c> scrape</c><00:01:09.360><c> both</c>
+
+00:01:09.670 --> 00:01:09.680 align:start position:0%
+questions. Do you want me to scrape both
+ 
+
+00:01:09.680 --> 00:01:11.590 align:start position:0%
+questions. Do you want me to scrape both
+player<00:01:10.000><c> stats</c><00:01:10.320><c> and</c><00:01:10.560><c> schedules</c><00:01:10.880><c> or</c><00:01:11.119><c> focus</c><00:01:11.439><c> on</c>
+
+00:01:11.590 --> 00:01:11.600 align:start position:0%
+player stats and schedules or focus on
+ 
+
+00:01:11.600 --> 00:01:13.670 align:start position:0%
+player stats and schedules or focus on
+one<00:01:11.920><c> first?</c><00:01:12.400><c> Where</c><00:01:12.640><c> should</c><00:01:12.799><c> I</c><00:01:12.880><c> store</c><00:01:13.119><c> raw</c><00:01:13.439><c> data</c>
+
+00:01:13.670 --> 00:01:13.680 align:start position:0%
+one first? Where should I store raw data
+ 
+
+00:01:13.680 --> 00:01:15.350 align:start position:0%
+one first? Where should I store raw data
+files<00:01:14.000><c> in</c><00:01:14.159><c> a</c><00:01:14.320><c> local</c><00:01:14.560><c> folder</c><00:01:14.880><c> or</c><00:01:15.119><c> in</c><00:01:15.200><c> a</c>
+
+00:01:15.350 --> 00:01:15.360 align:start position:0%
+files in a local folder or in a
+ 
+
+00:01:15.360 --> 00:01:17.429 align:start position:0%
+files in a local folder or in a
+database?<00:01:16.000><c> And</c><00:01:16.159><c> it</c><00:01:16.320><c> asks</c><00:01:16.640><c> me</c><00:01:16.799><c> to</c><00:01:16.960><c> answer</c><00:01:17.200><c> these</c>
+
+00:01:17.429 --> 00:01:17.439 align:start position:0%
+database? And it asks me to answer these
+ 
+
+00:01:17.439 --> 00:01:19.350 align:start position:0%
+database? And it asks me to answer these
+questions<00:01:17.759><c> before</c><00:01:18.080><c> the</c><00:01:18.240><c> agent</c><00:01:18.560><c> continues</c><00:01:18.960><c> on.</c>
+
+00:01:19.350 --> 00:01:19.360 align:start position:0%
+questions before the agent continues on.
+ 
+
+00:01:19.360 --> 00:01:21.670 align:start position:0%
+questions before the agent continues on.
+Then<00:01:19.600><c> the</c><00:01:19.680><c> agent</c><00:01:20.080><c> generates</c><00:01:20.400><c> a</c><00:01:20.720><c> 14-step</c><00:01:21.280><c> plan.</c>
+
+00:01:21.670 --> 00:01:21.680 align:start position:0%
+Then the agent generates a 14-step plan.
+ 
+
+00:01:21.680 --> 00:01:23.270 align:start position:0%
+Then the agent generates a 14-step plan.
+is<00:01:21.840><c> super</c><00:01:22.080><c> thorough</c><00:01:22.479><c> setting</c><00:01:22.720><c> up</c><00:01:22.960><c> project</c>
+
+00:01:23.270 --> 00:01:23.280 align:start position:0%
+is super thorough setting up project
+ 
+
+00:01:23.280 --> 00:01:25.429 align:start position:0%
+is super thorough setting up project
+structure,<00:01:23.840><c> configuring</c><00:01:24.400><c> dependencies,</c>
+
+00:01:25.429 --> 00:01:25.439 align:start position:0%
+structure, configuring dependencies,
+ 
+
+00:01:25.439 --> 00:01:27.510 align:start position:0%
+structure, configuring dependencies,
+adding<00:01:25.759><c> type</c><00:01:26.080><c> safety</c><00:01:26.400><c> with</c><00:01:26.640><c> Pyantic,</c>
+
+00:01:27.510 --> 00:01:27.520 align:start position:0%
+adding type safety with Pyantic,
+ 
+
+00:01:27.520 --> 00:01:29.270 align:start position:0%
+adding type safety with Pyantic,
+building<00:01:27.920><c> ingestion</c><00:01:28.400><c> modules,</c><00:01:28.960><c> creating</c>
+
+00:01:29.270 --> 00:01:29.280 align:start position:0%
+building ingestion modules, creating
+ 
+
+00:01:29.280 --> 00:01:31.350 align:start position:0%
+building ingestion modules, creating
+validation<00:01:29.920><c> layers,</c><00:01:30.320><c> and</c><00:01:30.560><c> more.</c><00:01:30.960><c> Now,</c><00:01:31.119><c> about</c>
+
+00:01:31.350 --> 00:01:31.360 align:start position:0%
+validation layers, and more. Now, about
+ 
+
+00:01:31.360 --> 00:01:33.350 align:start position:0%
+validation layers, and more. Now, about
+halfway<00:01:31.759><c> through,</c><00:01:32.079><c> it</c><00:01:32.240><c> pauses</c><00:01:32.640><c> and</c><00:01:32.880><c> asks</c><00:01:33.200><c> me</c>
+
+00:01:33.350 --> 00:01:33.360 align:start position:0%
+halfway through, it pauses and asks me
+ 
+
+00:01:33.360 --> 00:01:35.590 align:start position:0%
+halfway through, it pauses and asks me
+to<00:01:33.520><c> configure</c><00:01:33.840><c> URLs</c><00:01:34.400><c> for</c><00:01:34.560><c> NFL</c><00:01:35.040><c> schedules.</c>
+
+00:01:35.590 --> 00:01:35.600 align:start position:0%
+to configure URLs for NFL schedules.
+ 
+
+00:01:35.600 --> 00:01:37.030 align:start position:0%
+to configure URLs for NFL schedules.
+Essentially,<00:01:35.920><c> the</c><00:01:36.079><c> agent</c><00:01:36.400><c> is</c><00:01:36.560><c> saying,</c><00:01:36.799><c> "Where</c>
+
+00:01:37.030 --> 00:01:37.040 align:start position:0%
+Essentially, the agent is saying, "Where
+ 
+
+00:01:37.040 --> 00:01:38.630 align:start position:0%
+Essentially, the agent is saying, "Where
+do<00:01:37.200><c> I</c><00:01:37.360><c> go</c><00:01:37.520><c> to</c><00:01:37.680><c> download</c><00:01:37.920><c> the</c><00:01:38.159><c> game</c><00:01:38.320><c> schedule?"</c>
+
+00:01:38.630 --> 00:01:38.640 align:start position:0%
+do I go to download the game schedule?"
+ 
+
+00:01:38.640 --> 00:01:40.230 align:start position:0%
+do I go to download the game schedule?"
+And<00:01:38.799><c> it</c><00:01:38.960><c> gave</c><00:01:39.119><c> me</c><00:01:39.200><c> three</c><00:01:39.439><c> supported</c><00:01:39.840><c> options.</c>
+
+00:01:40.230 --> 00:01:40.240 align:start position:0%
+And it gave me three supported options.
+ 
+
+00:01:40.240 --> 00:01:41.670 align:start position:0%
+And it gave me three supported options.
+It<00:01:40.479><c> wanted</c><00:01:40.640><c> me</c><00:01:40.799><c> to</c><00:01:40.960><c> set</c><00:01:41.200><c> environment</c>
+
+00:01:41.670 --> 00:01:41.680 align:start position:0%
+It wanted me to set environment
+ 
+
+00:01:41.680 --> 00:01:43.510 align:start position:0%
+It wanted me to set environment
+variables<00:01:42.479><c> so</c><00:01:42.640><c> that</c><00:01:42.799><c> that</c><00:01:43.040><c> way</c><00:01:43.200><c> it</c><00:01:43.360><c> could</c>
+
+00:01:43.510 --> 00:01:43.520 align:start position:0%
+variables so that that way it could
+ 
+
+00:01:43.520 --> 00:01:45.190 align:start position:0%
+variables so that that way it could
+dynamically<00:01:44.159><c> build</c><00:01:44.400><c> links</c><00:01:44.720><c> to</c><00:01:44.880><c> build</c>
+
+00:01:45.190 --> 00:01:45.200 align:start position:0%
+dynamically build links to build
+ 
+
+00:01:45.200 --> 00:01:47.270 align:start position:0%
+dynamically build links to build
+schedule<00:01:45.520><c> files</c><00:01:45.759><c> for</c><00:01:46.000><c> each</c><00:01:46.240><c> season.</c><00:01:46.720><c> I</c><00:01:47.040><c> wasn't</c>
+
+00:01:47.270 --> 00:01:47.280 align:start position:0%
+schedule files for each season. I wasn't
+ 
+
+00:01:47.280 --> 00:01:48.789 align:start position:0%
+schedule files for each season. I wasn't
+really<00:01:47.520><c> closely</c><00:01:47.920><c> following</c><00:01:48.240><c> what</c><00:01:48.479><c> was</c><00:01:48.640><c> going</c>
+
+00:01:48.789 --> 00:01:48.799 align:start position:0%
+really closely following what was going
+ 
+
+00:01:48.799 --> 00:01:51.109 align:start position:0%
+really closely following what was going
+on.<00:01:49.119><c> So</c><00:01:49.280><c> I</c><00:01:49.439><c> picked</c><00:01:49.680><c> option</c><00:01:50.079><c> B,</c><00:01:50.399><c> the</c><00:01:50.560><c> CSV</c>
+
+00:01:51.109 --> 00:01:51.119 align:start position:0%
+on. So I picked option B, the CSV
+ 
+
+00:01:51.119 --> 00:01:53.190 align:start position:0%
+on. So I picked option B, the CSV
+version.<00:01:51.600><c> But</c><00:01:51.680><c> the</c><00:01:51.840><c> URLs</c><00:01:52.320><c> it</c><00:01:52.479><c> generated</c><00:01:52.960><c> kept</c>
+
+00:01:53.190 --> 00:01:53.200 align:start position:0%
+version. But the URLs it generated kept
+ 
+
+00:01:53.200 --> 00:01:55.270 align:start position:0%
+version. But the URLs it generated kept
+returning<00:01:53.600><c> 404</c><00:01:54.240><c> errors</c><00:01:54.640><c> because</c><00:01:54.799><c> the</c><00:01:55.040><c> actual</c>
+
+00:01:55.270 --> 00:01:55.280 align:start position:0%
+returning 404 errors because the actual
+ 
+
+00:01:55.280 --> 00:01:57.429 align:start position:0%
+returning 404 errors because the actual
+NFL<00:01:55.759><c> verse</c><00:01:56.000><c> repository</c><00:01:56.640><c> had</c><00:01:56.880><c> changed</c><00:01:57.200><c> its</c>
+
+00:01:57.429 --> 00:01:57.439 align:start position:0%
+NFL verse repository had changed its
+ 
+
+00:01:57.439 --> 00:01:58.870 align:start position:0%
+NFL verse repository had changed its
+structure.<00:01:57.840><c> So</c><00:01:58.079><c> even</c><00:01:58.240><c> though</c><00:01:58.399><c> the</c><00:01:58.560><c> plan</c><00:01:58.719><c> was</c>
+
+00:01:58.870 --> 00:01:58.880 align:start position:0%
+structure. So even though the plan was
+ 
+
+00:01:58.880 --> 00:02:00.789 align:start position:0%
+structure. So even though the plan was
+solid,<00:01:59.360><c> the</c><00:01:59.600><c> execution</c><00:02:00.079><c> stalled</c><00:02:00.399><c> when</c><00:02:00.560><c> it</c>
+
+00:02:00.789 --> 00:02:00.799 align:start position:0%
+solid, the execution stalled when it
+ 
+
+00:02:00.799 --> 00:02:02.550 align:start position:0%
+solid, the execution stalled when it
+couldn't<00:02:00.960><c> fetch</c><00:02:01.280><c> the</c><00:02:01.520><c> scheduled</c><00:02:01.840><c> data.</c><00:02:02.240><c> Next,</c>
+
+00:02:02.550 --> 00:02:02.560 align:start position:0%
+couldn't fetch the scheduled data. Next,
+ 
+
+00:02:02.560 --> 00:02:04.789 align:start position:0%
+couldn't fetch the scheduled data. Next,
+I<00:02:02.799><c> switched</c><00:02:03.119><c> to</c><00:02:03.280><c> the</c><00:02:03.439><c> YOLO</c><00:02:03.920><c> agent.</c><00:02:04.320><c> The</c><00:02:04.399><c> YOLO</c>
+
+00:02:04.789 --> 00:02:04.799 align:start position:0%
+I switched to the YOLO agent. The YOLO
+ 
+
+00:02:04.799 --> 00:02:06.709 align:start position:0%
+I switched to the YOLO agent. The YOLO
+agent<00:02:05.040><c> is</c><00:02:05.200><c> set</c><00:02:05.360><c> so</c><00:02:05.520><c> that</c><00:02:05.759><c> applying</c><00:02:06.159><c> code</c><00:02:06.399><c> diffs</c>
+
+00:02:06.709 --> 00:02:06.719 align:start position:0%
+agent is set so that applying code diffs
+ 
+
+00:02:06.719 --> 00:02:08.389 align:start position:0%
+agent is set so that applying code diffs
+and<00:02:06.880><c> reading</c><00:02:07.119><c> files</c><00:02:07.439><c> are</c><00:02:07.680><c> always</c><00:02:07.920><c> allow.</c>
+
+00:02:08.389 --> 00:02:08.399 align:start position:0%
+and reading files are always allow.
+ 
+
+00:02:08.399 --> 00:02:10.630 align:start position:0%
+and reading files are always allow.
+Creating<00:02:08.800><c> plans</c><00:02:09.119><c> is</c><00:02:09.360><c> never,</c><00:02:09.759><c> and</c><00:02:10.000><c> executing</c>
+
+00:02:10.630 --> 00:02:10.640 align:start position:0%
+Creating plans is never, and executing
+ 
+
+00:02:10.640 --> 00:02:12.470 align:start position:0%
+Creating plans is never, and executing
+commands<00:02:11.039><c> is</c><00:02:11.280><c> always</c><00:02:11.520><c> allow.</c><00:02:12.080><c> As</c><00:02:12.239><c> you</c><00:02:12.400><c> can</c>
+
+00:02:12.470 --> 00:02:12.480 align:start position:0%
+commands is always allow. As you can
+ 
+
+00:02:12.480 --> 00:02:14.550 align:start position:0%
+commands is always allow. As you can
+see,<00:02:12.560><c> the</c><00:02:12.720><c> agent</c><00:02:13.120><c> profile</c><00:02:13.520><c> has</c><00:02:13.760><c> far</c><00:02:14.160><c> fewer</c>
+
+00:02:14.550 --> 00:02:14.560 align:start position:0%
+see, the agent profile has far fewer
+ 
+
+00:02:14.560 --> 00:02:16.470 align:start position:0%
+see, the agent profile has far fewer
+guard<00:02:14.879><c> rails.</c><00:02:15.440><c> It</c><00:02:15.680><c> doesn't</c><00:02:15.840><c> ask</c><00:02:16.080><c> me</c><00:02:16.239><c> for</c>
+
+00:02:16.470 --> 00:02:16.480 align:start position:0%
+guard rails. It doesn't ask me for
+ 
+
+00:02:16.480 --> 00:02:18.070 align:start position:0%
+guard rails. It doesn't ask me for
+permission<00:02:16.879><c> and</c><00:02:17.120><c> doesn't</c><00:02:17.440><c> bother</c><00:02:17.680><c> me</c><00:02:17.840><c> with</c>
+
+00:02:18.070 --> 00:02:18.080 align:start position:0%
+permission and doesn't bother me with
+ 
+
+00:02:18.080 --> 00:02:20.150 align:start position:0%
+permission and doesn't bother me with
+long<00:02:18.319><c> plans.</c><00:02:18.879><c> Instead</c><00:02:19.120><c> of</c><00:02:19.360><c> 13</c><00:02:19.680><c> steps,</c><00:02:20.000><c> it</c>
+
+00:02:20.150 --> 00:02:20.160 align:start position:0%
+long plans. Instead of 13 steps, it
+ 
+
+00:02:20.160 --> 00:02:22.070 align:start position:0%
+long plans. Instead of 13 steps, it
+created<00:02:20.480><c> a</c><00:02:20.720><c> shorter</c><00:02:21.040><c> 10-step</c><00:02:21.599><c> plan.</c><00:02:21.920><c> It</c>
+
+00:02:22.070 --> 00:02:22.080 align:start position:0%
+created a shorter 10-step plan. It
+ 
+
+00:02:22.080 --> 00:02:23.510 align:start position:0%
+created a shorter 10-step plan. It
+skipped<00:02:22.400><c> over</c><00:02:22.640><c> things</c><00:02:22.800><c> like</c><00:02:23.040><c> detailed</c>
+
+00:02:23.510 --> 00:02:23.520 align:start position:0%
+skipped over things like detailed
+ 
+
+00:02:23.520 --> 00:02:25.750 align:start position:0%
+skipped over things like detailed
+validation<00:02:24.160><c> modules,</c><00:02:24.640><c> orchestrators,</c><00:02:25.440><c> or</c>
+
+00:02:25.750 --> 00:02:25.760 align:start position:0%
+validation modules, orchestrators, or
+ 
+
+00:02:25.760 --> 00:02:27.990 align:start position:0%
+validation modules, orchestrators, or
+extensive<00:02:26.319><c> test</c><00:02:26.800><c> scaffolding.</c><00:02:27.520><c> Instead,</c><00:02:27.840><c> it</c>
+
+00:02:27.990 --> 00:02:28.000 align:start position:0%
+extensive test scaffolding. Instead, it
+ 
+
+00:02:28.000 --> 00:02:29.430 align:start position:0%
+extensive test scaffolding. Instead, it
+went<00:02:28.160><c> straight</c><00:02:28.400><c> for</c><00:02:28.560><c> the</c><00:02:28.800><c> essentials</c><00:02:29.200><c> like</c>
+
+00:02:29.430 --> 00:02:29.440 align:start position:0%
+went straight for the essentials like
+ 
+
+00:02:29.440 --> 00:02:31.510 align:start position:0%
+went straight for the essentials like
+initializing<00:02:30.000><c> the</c><00:02:30.239><c> project,</c><00:02:30.879><c> implementing</c><00:02:31.360><c> a</c>
+
+00:02:31.510 --> 00:02:31.520 align:start position:0%
+initializing the project, implementing a
+ 
+
+00:02:31.520 --> 00:02:33.830 align:start position:0%
+initializing the project, implementing a
+CLI,<00:02:32.319><c> ingesting</c><00:02:32.640><c> the</c><00:02:32.800><c> NFL</c><00:02:33.200><c> verse</c><00:02:33.599><c> player</c>
+
+00:02:33.830 --> 00:02:33.840 align:start position:0%
+CLI, ingesting the NFL verse player
+ 
+
+00:02:33.840 --> 00:02:36.070 align:start position:0%
+CLI, ingesting the NFL verse player
+data,<00:02:34.319><c> building</c><00:02:34.720><c> scoring</c><00:02:35.120><c> calculations,</c>
+
+00:02:36.070 --> 00:02:36.080 align:start position:0%
+data, building scoring calculations,
+ 
+
+00:02:36.080 --> 00:02:38.229 align:start position:0%
+data, building scoring calculations,
+transforming<00:02:36.640><c> the</c><00:02:36.800><c> data,</c><00:02:37.440><c> and</c><00:02:37.680><c> more.</c><00:02:38.000><c> And</c>
+
+00:02:38.229 --> 00:02:38.239 align:start position:0%
+transforming the data, and more. And
+ 
+
+00:02:38.239 --> 00:02:39.750 align:start position:0%
+transforming the data, and more. And
+importantly,<00:02:38.879><c> instead</c><00:02:39.120><c> of</c><00:02:39.280><c> starting</c><00:02:39.519><c> with</c>
+
+00:02:39.750 --> 00:02:39.760 align:start position:0%
+importantly, instead of starting with
+ 
+
+00:02:39.760 --> 00:02:41.430 align:start position:0%
+importantly, instead of starting with
+schedules,<00:02:40.239><c> it</c><00:02:40.480><c> went</c><00:02:40.640><c> directly</c><00:02:40.959><c> to</c><00:02:41.120><c> player</c>
+
+00:02:41.430 --> 00:02:41.440 align:start position:0%
+schedules, it went directly to player
+ 
+
+00:02:41.440 --> 00:02:43.990 align:start position:0%
+schedules, it went directly to player
+stats,<00:02:42.000><c> which</c><00:02:42.239><c> have</c><00:02:42.480><c> stable,</c><00:02:42.879><c> reliable</c><00:02:43.440><c> URLs.</c>
+
+00:02:43.990 --> 00:02:44.000 align:start position:0%
+stats, which have stable, reliable URLs.
+ 
+
+00:02:44.000 --> 00:02:45.830 align:start position:0%
+stats, which have stable, reliable URLs.
+Essentially,<00:02:44.480><c> the</c><00:02:44.640><c> YOLO</c><00:02:44.959><c> agent</c><00:02:45.280><c> decided</c><00:02:45.599><c> not</c>
+
+00:02:45.830 --> 00:02:45.840 align:start position:0%
+Essentially, the YOLO agent decided not
+ 
+
+00:02:45.840 --> 00:02:47.910 align:start position:0%
+Essentially, the YOLO agent decided not
+to<00:02:46.000><c> pull</c><00:02:46.239><c> schedule</c><00:02:46.640><c> data</c><00:02:47.040><c> at</c><00:02:47.280><c> all</c><00:02:47.440><c> in</c><00:02:47.760><c> its</c>
+
+00:02:47.910 --> 00:02:47.920 align:start position:0%
+to pull schedule data at all in its
+ 
+
+00:02:47.920 --> 00:02:49.990 align:start position:0%
+to pull schedule data at all in its
+first<00:02:48.160><c> pass.</c><00:02:48.720><c> Instead,</c><00:02:49.120><c> it</c><00:02:49.360><c> built</c><00:02:49.599><c> the</c><00:02:49.760><c> core</c>
+
+00:02:49.990 --> 00:02:50.000 align:start position:0%
+first pass. Instead, it built the core
+ 
+
+00:02:50.000 --> 00:02:51.830 align:start position:0%
+first pass. Instead, it built the core
+pipeline<00:02:50.400><c> around</c><00:02:50.720><c> weekly</c><00:02:51.200><c> player</c><00:02:51.599><c> level</c>
+
+00:02:51.830 --> 00:02:51.840 align:start position:0%
+pipeline around weekly player level
+ 
+
+00:02:51.840 --> 00:02:53.750 align:start position:0%
+pipeline around weekly player level
+stats,<00:02:52.400><c> things</c><00:02:52.560><c> like</c><00:02:52.720><c> passing,</c><00:02:53.200><c> rushing,</c><00:02:53.519><c> and</c>
+
+00:02:53.750 --> 00:02:53.760 align:start position:0%
+stats, things like passing, rushing, and
+ 
+
+00:02:53.760 --> 00:02:55.350 align:start position:0%
+stats, things like passing, rushing, and
+receiving<00:02:54.160><c> numbers</c><00:02:54.640><c> because</c><00:02:54.879><c> those</c><00:02:55.120><c> end</c>
+
+00:02:55.350 --> 00:02:55.360 align:start position:0%
+receiving numbers because those end
+ 
+
+00:02:55.360 --> 00:02:57.030 align:start position:0%
+receiving numbers because those end
+points<00:02:55.599><c> are</c><00:02:55.840><c> consistent</c><00:02:56.160><c> and</c><00:02:56.480><c> don't</c><00:02:56.640><c> change.</c>
+
+00:02:57.030 --> 00:02:57.040 align:start position:0%
+points are consistent and don't change.
+ 
+
+00:02:57.040 --> 00:02:58.869 align:start position:0%
+points are consistent and don't change.
+By<00:02:57.280><c> avoiding</c><00:02:57.680><c> schedules,</c><00:02:58.160><c> it</c><00:02:58.319><c> skipped</c><00:02:58.640><c> the</c>
+
+00:02:58.869 --> 00:02:58.879 align:start position:0%
+By avoiding schedules, it skipped the
+ 
+
+00:02:58.879 --> 00:03:00.390 align:start position:0%
+By avoiding schedules, it skipped the
+part<00:02:58.959><c> of</c><00:02:59.120><c> the</c><00:02:59.280><c> pipeline</c><00:02:59.599><c> that</c><00:02:59.840><c> was</c><00:03:00.000><c> brittle</c>
+
+00:03:00.390 --> 00:03:00.400 align:start position:0%
+part of the pipeline that was brittle
+ 
+
+00:03:00.400 --> 00:03:02.869 align:start position:0%
+part of the pipeline that was brittle
+and<00:03:00.720><c> causing</c><00:03:01.120><c> 404</c><00:03:01.760><c> errors</c><00:03:02.000><c> for</c><00:03:02.239><c> the</c><00:03:02.400><c> strategic</c>
+
+00:03:02.869 --> 00:03:02.879 align:start position:0%
+and causing 404 errors for the strategic
+ 
+
+00:03:02.879 --> 00:03:04.309 align:start position:0%
+and causing 404 errors for the strategic
+agent.<00:03:03.280><c> The</c><00:03:03.440><c> end</c><00:03:03.599><c> result</c><00:03:03.840><c> was</c><00:03:04.000><c> that</c><00:03:04.159><c> the</c>
+
+00:03:04.309 --> 00:03:04.319 align:start position:0%
+agent. The end result was that the
+ 
+
+00:03:04.319 --> 00:03:06.309 align:start position:0%
+agent. The end result was that the
+yellow<00:03:04.560><c> agent</c><00:03:04.959><c> produced</c><00:03:05.280><c> a</c><00:03:05.519><c> working</c><00:03:05.840><c> data</c><00:03:06.159><c> set</c>
+
+00:03:06.309 --> 00:03:06.319 align:start position:0%
+yellow agent produced a working data set
+ 
+
+00:03:06.319 --> 00:03:08.309 align:start position:0%
+yellow agent produced a working data set
+of<00:03:06.480><c> player</c><00:03:06.879><c> performance</c><00:03:07.360><c> and</c><00:03:07.599><c> even</c><00:03:07.840><c> generated</c>
+
+00:03:08.309 --> 00:03:08.319 align:start position:0%
+of player performance and even generated
+ 
+
+00:03:08.319 --> 00:03:10.470 align:start position:0%
+of player performance and even generated
+a<00:03:08.560><c> final</c><00:03:08.879><c> summary</c><00:03:09.280><c> table.</c><00:03:09.760><c> So,</c><00:03:10.000><c> here</c><00:03:10.159><c> you</c><00:03:10.400><c> can</c>
+
+00:03:10.470 --> 00:03:10.480 align:start position:0%
+a final summary table. So, here you can
+ 
+
+00:03:10.480 --> 00:03:12.470 align:start position:0%
+a final summary table. So, here you can
+see<00:03:10.640><c> the</c><00:03:10.800><c> trade-off</c><00:03:11.280><c> clearly.</c><00:03:11.760><c> The</c><00:03:12.000><c> strategic</c>
+
+00:03:12.470 --> 00:03:12.480 align:start position:0%
+see the trade-off clearly. The strategic
+ 
+
+00:03:12.480 --> 00:03:14.470 align:start position:0%
+see the trade-off clearly. The strategic
+agent<00:03:12.800><c> is</c><00:03:13.040><c> methodical,</c><00:03:13.680><c> transparent,</c><00:03:14.239><c> and</c>
+
+00:03:14.470 --> 00:03:14.480 align:start position:0%
+agent is methodical, transparent, and
+ 
+
+00:03:14.480 --> 00:03:16.630 align:start position:0%
+agent is methodical, transparent, and
+configurable.<00:03:15.200><c> It</c><00:03:15.360><c> asks</c><00:03:15.680><c> for</c><00:03:15.920><c> input,</c><00:03:16.400><c> builds</c>
+
+00:03:16.630 --> 00:03:16.640 align:start position:0%
+configurable. It asks for input, builds
+ 
+
+00:03:16.640 --> 00:03:18.229 align:start position:0%
+configurable. It asks for input, builds
+safety<00:03:16.959><c> nets,</c><00:03:17.360><c> and</c><00:03:17.519><c> makes</c><00:03:17.760><c> sure</c><00:03:17.840><c> you</c><00:03:18.159><c> know</c>
+
+00:03:18.229 --> 00:03:18.239 align:start position:0%
+safety nets, and makes sure you know
+ 
+
+00:03:18.239 --> 00:03:19.830 align:start position:0%
+safety nets, and makes sure you know
+what's<00:03:18.560><c> happening,</c><00:03:18.959><c> but</c><00:03:19.120><c> it</c><00:03:19.280><c> also</c><00:03:19.519><c> requires</c>
+
+00:03:19.830 --> 00:03:19.840 align:start position:0%
+what's happening, but it also requires
+ 
+
+00:03:19.840 --> 00:03:21.509 align:start position:0%
+what's happening, but it also requires
+you<00:03:20.080><c> to</c><00:03:20.239><c> stay</c><00:03:20.400><c> engaged.</c><00:03:21.040><c> If</c><00:03:21.200><c> you</c><00:03:21.280><c> don't</c><00:03:21.440><c> give</c>
+
+00:03:21.509 --> 00:03:21.519 align:start position:0%
+you to stay engaged. If you don't give
+ 
+
+00:03:21.519 --> 00:03:23.190 align:start position:0%
+you to stay engaged. If you don't give
+it<00:03:21.680><c> the</c><00:03:21.840><c> right</c><00:03:22.080><c> environment</c><00:03:22.560><c> variables</c><00:03:22.959><c> or</c>
+
+00:03:23.190 --> 00:03:23.200 align:start position:0%
+it the right environment variables or
+ 
+
+00:03:23.200 --> 00:03:25.509 align:start position:0%
+it the right environment variables or
+valid<00:03:23.599><c> data</c><00:03:23.840><c> sources,</c><00:03:24.640><c> it</c><00:03:24.800><c> could</c><00:03:24.959><c> stall.</c><00:03:25.360><c> The</c>
+
+00:03:25.509 --> 00:03:25.519 align:start position:0%
+valid data sources, it could stall. The
+ 
+
+00:03:25.519 --> 00:03:27.750 align:start position:0%
+valid data sources, it could stall. The
+YOLO<00:03:25.920><c> agent</c><00:03:26.319><c> skips</c><00:03:26.720><c> the</c><00:03:27.040><c> extra</c><00:03:27.280><c> steps</c><00:03:27.519><c> and</c>
+
+00:03:27.750 --> 00:03:27.760 align:start position:0%
+YOLO agent skips the extra steps and
+ 
+
+00:03:27.760 --> 00:03:29.270 align:start position:0%
+YOLO agent skips the extra steps and
+charges<00:03:28.080><c> ahead.</c><00:03:28.560><c> This</c><00:03:28.720><c> makes</c><00:03:28.800><c> it</c><00:03:28.959><c> great</c><00:03:29.120><c> for</c>
+
+00:03:29.270 --> 00:03:29.280 align:start position:0%
+charges ahead. This makes it great for
+ 
+
+00:03:29.280 --> 00:03:31.110 align:start position:0%
+charges ahead. This makes it great for
+vibe<00:03:29.680><c> coding</c><00:03:30.000><c> projects</c><00:03:30.400><c> where</c><00:03:30.640><c> you</c><00:03:30.720><c> just</c><00:03:30.879><c> want</c>
+
+00:03:31.110 --> 00:03:31.120 align:start position:0%
+vibe coding projects where you just want
+ 
+
+00:03:31.120 --> 00:03:33.270 align:start position:0%
+vibe coding projects where you just want
+results<00:03:31.599><c> fast.</c><00:03:32.080><c> But</c><00:03:32.159><c> then</c><00:03:32.400><c> you</c><00:03:32.560><c> do</c><00:03:32.799><c> sacrifice</c>
+
+00:03:33.270 --> 00:03:33.280 align:start position:0%
+results fast. But then you do sacrifice
+ 
+
+00:03:33.280 --> 00:03:35.030 align:start position:0%
+results fast. But then you do sacrifice
+some<00:03:33.599><c> structure,</c><00:03:34.319><c> testing,</c><00:03:34.799><c> and</c>
+
+00:03:35.030 --> 00:03:35.040 align:start position:0%
+some structure, testing, and
+ 
+
+00:03:35.040 --> 00:03:36.710 align:start position:0%
+some structure, testing, and
+checkpoints.<00:03:35.680><c> And</c><00:03:35.920><c> I</c><00:03:36.080><c> do</c><00:03:36.239><c> want</c><00:03:36.319><c> to</c><00:03:36.480><c> stress</c>
+
+00:03:36.710 --> 00:03:36.720 align:start position:0%
+checkpoints. And I do want to stress
+ 
+
+00:03:36.720 --> 00:03:38.550 align:start position:0%
+checkpoints. And I do want to stress
+something,<00:03:37.280><c> which</c><00:03:37.440><c> is</c><00:03:37.599><c> the</c><00:03:37.840><c> fact</c><00:03:38.000><c> that</c><00:03:38.239><c> the</c>
+
+00:03:38.550 --> 00:03:38.560 align:start position:0%
+something, which is the fact that the
+ 
+
+00:03:38.560 --> 00:03:40.470 align:start position:0%
+something, which is the fact that the
+strategic<00:03:39.040><c> agent</c><00:03:39.440><c> didn't</c><00:03:39.760><c> finish</c><00:03:40.159><c> doesn't</c>
+
+00:03:40.470 --> 00:03:40.480 align:start position:0%
+strategic agent didn't finish doesn't
+ 
+
+00:03:40.480 --> 00:03:42.390 align:start position:0%
+strategic agent didn't finish doesn't
+mean<00:03:40.640><c> it</c><00:03:40.879><c> was</c><00:03:41.040><c> worse.</c><00:03:41.519><c> It</c><00:03:41.680><c> just</c><00:03:41.840><c> meant</c><00:03:42.080><c> it</c>
+
+00:03:42.390 --> 00:03:42.400 align:start position:0%
+mean it was worse. It just meant it
+ 
+
+00:03:42.400 --> 00:03:44.710 align:start position:0%
+mean it was worse. It just meant it
+wasn't<00:03:42.640><c> the</c><00:03:42.799><c> right</c><00:03:43.040><c> tool</c><00:03:43.440><c> for</c><00:03:43.840><c> this</c><00:03:44.159><c> specific</c>
+
+00:03:44.710 --> 00:03:44.720 align:start position:0%
+wasn't the right tool for this specific
+ 
+
+00:03:44.720 --> 00:03:46.630 align:start position:0%
+wasn't the right tool for this specific
+scenario.<00:03:45.519><c> If</c><00:03:45.680><c> I</c><00:03:45.840><c> was</c><00:03:46.000><c> working</c><00:03:46.159><c> on</c><00:03:46.400><c> a</c>
+
+00:03:46.630 --> 00:03:46.640 align:start position:0%
+scenario. If I was working on a
+ 
+
+00:03:46.640 --> 00:03:48.630 align:start position:0%
+scenario. If I was working on a
+production<00:03:47.040><c> code</c><00:03:47.360><c> base</c><00:03:47.760><c> where</c><00:03:48.080><c> correctness</c>
+
+00:03:48.630 --> 00:03:48.640 align:start position:0%
+production code base where correctness
+ 
+
+00:03:48.640 --> 00:03:50.789 align:start position:0%
+production code base where correctness
+and<00:03:48.879><c> clarity</c><00:03:49.360><c> mattered</c><00:03:49.760><c> more</c><00:03:49.920><c> than</c><00:03:50.159><c> speed,</c>
+
+00:03:50.789 --> 00:03:50.799 align:start position:0%
+and clarity mattered more than speed,
+ 
+
+00:03:50.799 --> 00:03:52.470 align:start position:0%
+and clarity mattered more than speed,
+then<00:03:51.040><c> I</c><00:03:51.200><c> would</c><00:03:51.360><c> absolutely</c><00:03:51.840><c> prefer</c><00:03:52.159><c> the</c>
+
+00:03:52.470 --> 00:03:52.480 align:start position:0%
+then I would absolutely prefer the
+ 
+
+00:03:52.480 --> 00:03:54.390 align:start position:0%
+then I would absolutely prefer the
+strategic<00:03:52.959><c> agent.</c><00:03:53.519><c> But</c><00:03:53.680><c> either</c><00:03:53.840><c> way,</c><00:03:54.080><c> that</c><00:03:54.239><c> is</c>
+
+00:03:54.390 --> 00:03:54.400 align:start position:0%
+strategic agent. But either way, that is
+ 
+
+00:03:54.400 --> 00:03:56.309 align:start position:0%
+strategic agent. But either way, that is
+a<00:03:54.640><c> quick</c><00:03:54.879><c> look</c><00:03:55.040><c> at</c><00:03:55.280><c> how</c><00:03:55.599><c> different</c><00:03:55.920><c> agent</c>
+
+00:03:56.309 --> 00:03:56.319 align:start position:0%
+a quick look at how different agent
+ 
+
+00:03:56.319 --> 00:03:58.149 align:start position:0%
+a quick look at how different agent
+profiles<00:03:56.879><c> can</c><00:03:57.120><c> change</c><00:03:57.360><c> your</c><00:03:57.599><c> experience</c><00:03:57.920><c> in</c>
+
+00:03:58.149 --> 00:03:58.159 align:start position:0%
+profiles can change your experience in
+ 
+
+00:03:58.159 --> 00:04:00.229 align:start position:0%
+profiles can change your experience in
+warp.<00:03:58.879><c> And</c><00:03:59.040><c> I</c><00:03:59.280><c> hope</c><00:03:59.360><c> that</c><00:03:59.519><c> this</c><00:03:59.760><c> video</c><00:04:00.000><c> was</c>
+
+00:04:00.229 --> 00:04:00.239 align:start position:0%
+warp. And I hope that this video was
+ 
+
+00:04:00.239 --> 00:04:03.239 align:start position:0%
+warp. And I hope that this video was
+helpful.
+

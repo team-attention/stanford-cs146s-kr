@@ -1,0 +1,200 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.160 --> 00:00:03.110 align:start position:0%
+ 
+Hi,<00:00:00.560><c> I'm</c><00:00:00.800><c> Zach,</c><00:00:01.439><c> Warp's</c><00:00:02.000><c> founder</c><00:00:02.320><c> and</c><00:00:02.480><c> CEO.</c>
+
+00:00:03.110 --> 00:00:03.120 align:start position:0%
+Hi, I'm Zach, Warp's founder and CEO.
+ 
+
+00:00:03.120 --> 00:00:05.590 align:start position:0%
+Hi, I'm Zach, Warp's founder and CEO.
+Excited<00:00:03.520><c> to</c><00:00:03.760><c> show</c><00:00:03.840><c> you</c><00:00:04.080><c> Warp</c><00:00:04.480><c> today.</c><00:00:05.040><c> So,</c><00:00:05.359><c> when</c>
+
+00:00:05.590 --> 00:00:05.600 align:start position:0%
+Excited to show you Warp today. So, when
+ 
+
+00:00:05.600 --> 00:00:07.670 align:start position:0%
+Excited to show you Warp today. So, when
+you<00:00:05.759><c> open</c><00:00:06.080><c> Warp,</c><00:00:06.720><c> what</c><00:00:06.879><c> you're</c><00:00:07.120><c> going</c><00:00:07.200><c> to</c><00:00:07.359><c> see</c>
+
+00:00:07.670 --> 00:00:07.680 align:start position:0%
+you open Warp, what you're going to see
+ 
+
+00:00:07.680 --> 00:00:10.790 align:start position:0%
+you open Warp, what you're going to see
+is<00:00:08.000><c> a</c><00:00:08.480><c> command</c><00:00:08.800><c> line</c><00:00:09.040><c> interface.</c><00:00:09.760><c> It</c><00:00:10.000><c> is</c><00:00:10.160><c> a</c>
+
+00:00:10.790 --> 00:00:10.800 align:start position:0%
+is a command line interface. It is a
+ 
+
+00:00:10.800 --> 00:00:12.790 align:start position:0%
+is a command line interface. It is a
+aentic<00:00:11.519><c> development</c><00:00:11.920><c> environment,</c><00:00:12.559><c> which</c>
+
+00:00:12.790 --> 00:00:12.800 align:start position:0%
+aentic development environment, which
+ 
+
+00:00:12.800 --> 00:00:15.430 align:start position:0%
+aentic development environment, which
+means<00:00:13.040><c> it's</c><00:00:13.280><c> a</c><00:00:13.519><c> place</c><00:00:13.759><c> where</c><00:00:14.559><c> the</c><00:00:14.880><c> primary</c><00:00:15.280><c> way</c>
+
+00:00:15.430 --> 00:00:15.440 align:start position:0%
+means it's a place where the primary way
+ 
+
+00:00:15.440 --> 00:00:17.109 align:start position:0%
+means it's a place where the primary way
+of<00:00:15.599><c> interacting</c><00:00:16.000><c> with</c><00:00:16.160><c> it</c><00:00:16.320><c> is</c><00:00:16.560><c> prompting</c><00:00:16.960><c> an</c>
+
+00:00:17.109 --> 00:00:17.119 align:start position:0%
+of interacting with it is prompting an
+ 
+
+00:00:17.119 --> 00:00:19.670 align:start position:0%
+of interacting with it is prompting an
+agent<00:00:17.440><c> to</c><00:00:17.600><c> do</c><00:00:17.760><c> something.</c><00:00:18.320><c> But</c><00:00:18.960><c> in</c><00:00:19.199><c> Warp,</c><00:00:19.520><c> you</c>
+
+00:00:19.670 --> 00:00:19.680 align:start position:0%
+agent to do something. But in Warp, you
+ 
+
+00:00:19.680 --> 00:00:21.349 align:start position:0%
+agent to do something. But in Warp, you
+can<00:00:19.760><c> also</c><00:00:20.000><c> just</c><00:00:20.240><c> run</c><00:00:20.400><c> terminal</c><00:00:20.800><c> commands</c><00:00:21.119><c> and</c>
+
+00:00:21.349 --> 00:00:21.359 align:start position:0%
+can also just run terminal commands and
+ 
+
+00:00:21.359 --> 00:00:23.349 align:start position:0%
+can also just run terminal commands and
+use<00:00:21.439><c> it</c><00:00:21.600><c> like</c><00:00:21.760><c> a</c><00:00:21.920><c> regular</c><00:00:22.160><c> command</c><00:00:22.480><c> line.</c><00:00:22.960><c> If</c><00:00:23.199><c> I</c>
+
+00:00:23.349 --> 00:00:23.359 align:start position:0%
+use it like a regular command line. If I
+ 
+
+00:00:23.359 --> 00:00:26.870 align:start position:0%
+use it like a regular command line. If I
+go<00:00:23.439><c> ahead</c><00:00:23.680><c> in</c><00:00:23.920><c> here</c><00:00:24.080><c> and</c><00:00:24.400><c> run</c><00:00:25.039><c> ls</c><00:00:25.600><c> or</c><00:00:25.840><c> pwd,</c><00:00:26.640><c> you</c>
+
+00:00:26.870 --> 00:00:26.880 align:start position:0%
+go ahead in here and run ls or pwd, you
+ 
+
+00:00:26.880 --> 00:00:29.269 align:start position:0%
+go ahead in here and run ls or pwd, you
+see<00:00:26.960><c> that</c><00:00:27.119><c> we</c><00:00:27.359><c> run</c><00:00:27.519><c> terminal</c><00:00:27.840><c> commands.</c><00:00:28.960><c> If</c><00:00:29.119><c> I</c>
+
+00:00:29.269 --> 00:00:29.279 align:start position:0%
+see that we run terminal commands. If I
+ 
+
+00:00:29.279 --> 00:00:31.109 align:start position:0%
+see that we run terminal commands. If I
+type<00:00:29.599><c> in</c><00:00:29.840><c> English</c><00:00:30.160><c> in</c><00:00:30.400><c> warp,</c><00:00:30.800><c> it</c><00:00:30.960><c> will</c>
+
+00:00:31.109 --> 00:00:31.119 align:start position:0%
+type in English in warp, it will
+ 
+
+00:00:31.119 --> 00:00:33.590 align:start position:0%
+type in English in warp, it will
+interpret<00:00:31.519><c> it</c><00:00:31.760><c> as</c><00:00:32.640><c> uh</c><00:00:32.800><c> launching</c><00:00:33.120><c> an</c><00:00:33.360><c> agent</c>
+
+00:00:33.590 --> 00:00:33.600 align:start position:0%
+interpret it as uh launching an agent
+ 
+
+00:00:33.600 --> 00:00:35.430 align:start position:0%
+interpret it as uh launching an agent
+and<00:00:33.760><c> the</c><00:00:33.920><c> agent</c><00:00:34.160><c> will</c><00:00:34.320><c> do</c><00:00:34.480><c> something</c><00:00:34.719><c> for</c><00:00:34.880><c> you.</c>
+
+00:00:35.430 --> 00:00:35.440 align:start position:0%
+and the agent will do something for you.
+ 
+
+00:00:35.440 --> 00:00:37.430 align:start position:0%
+and the agent will do something for you.
+So<00:00:35.680><c> for</c><00:00:35.840><c> instance,</c><00:00:36.079><c> I</c><00:00:36.320><c> could</c><00:00:36.399><c> be</c><00:00:36.559><c> like</c>
+
+00:00:37.430 --> 00:00:37.440 align:start position:0%
+So for instance, I could be like
+ 
+
+00:00:37.440 --> 00:00:39.030 align:start position:0%
+So for instance, I could be like
+describe
+
+00:00:39.030 --> 00:00:39.040 align:start position:0%
+describe
+ 
+
+00:00:39.040 --> 00:00:42.630 align:start position:0%
+describe
+my<00:00:39.440><c> open</c><00:00:40.559><c> git</c><00:00:40.879><c> changes</c><00:00:41.840><c> and</c><00:00:42.079><c> this</c><00:00:42.320><c> will</c><00:00:42.480><c> kick</c>
+
+00:00:42.630 --> 00:00:42.640 align:start position:0%
+my open git changes and this will kick
+ 
+
+00:00:42.640 --> 00:00:45.590 align:start position:0%
+my open git changes and this will kick
+off<00:00:42.800><c> an</c><00:00:42.960><c> agent</c><00:00:43.280><c> flow</c><00:00:43.520><c> where</c><00:00:43.760><c> the</c><00:00:43.920><c> agent</c><00:00:44.320><c> will</c>
+
+00:00:45.590 --> 00:00:45.600 align:start position:0%
+off an agent flow where the agent will
+ 
+
+00:00:45.600 --> 00:00:48.389 align:start position:0%
+off an agent flow where the agent will
+um<00:00:46.320><c> basically</c><00:00:46.879><c> run</c><00:00:47.120><c> any</c><00:00:47.440><c> commands</c><00:00:47.760><c> or</c><00:00:48.000><c> do</c><00:00:48.160><c> any</c>
+
+00:00:48.389 --> 00:00:48.399 align:start position:0%
+um basically run any commands or do any
+ 
+
+00:00:48.399 --> 00:00:51.110 align:start position:0%
+um basically run any commands or do any
+context<00:00:48.800><c> gathering</c><00:00:49.200><c> it</c><00:00:49.440><c> needs</c><00:00:49.760><c> in</c><00:00:50.000><c> order</c><00:00:50.160><c> to</c>
+
+00:00:51.110 --> 00:00:51.120 align:start position:0%
+context gathering it needs in order to
+ 
+
+00:00:51.120 --> 00:00:52.709 align:start position:0%
+context gathering it needs in order to
+answer<00:00:51.440><c> the</c><00:00:51.680><c> query</c><00:00:51.920><c> or</c><00:00:52.160><c> do</c><00:00:52.239><c> the</c><00:00:52.399><c> thing</c><00:00:52.559><c> that</c>
+
+00:00:52.709 --> 00:00:52.719 align:start position:0%
+answer the query or do the thing that
+ 
+
+00:00:52.719 --> 00:00:54.790 align:start position:0%
+answer the query or do the thing that
+you<00:00:52.879><c> asked</c><00:00:53.039><c> it</c><00:00:53.199><c> to</c><00:00:53.360><c> do.</c><00:00:53.920><c> So</c><00:00:54.160><c> this</c><00:00:54.399><c> was</c><00:00:54.559><c> really</c>
+
+00:00:54.790 --> 00:00:54.800 align:start position:0%
+you asked it to do. So this was really
+ 
+
+00:00:54.800 --> 00:00:56.470 align:start position:0%
+you asked it to do. So this was really
+simple.<00:00:55.199><c> It's</c><00:00:55.360><c> just</c><00:00:55.520><c> telling</c><00:00:55.680><c> me</c><00:00:55.840><c> about</c><00:00:56.320><c> my</c>
+
+00:00:56.470 --> 00:00:56.480 align:start position:0%
+simple. It's just telling me about my
+ 
+
+00:00:56.480 --> 00:00:59.199 align:start position:0%
+simple. It's just telling me about my
+current<00:00:56.800><c> git</c><00:00:57.039><c> branch.</c>
+

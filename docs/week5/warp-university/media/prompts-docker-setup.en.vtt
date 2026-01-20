@@ -1,0 +1,144 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.160 --> 00:00:02.230 align:start position:0%
+ 
+We've<00:00:00.480><c> all</c><00:00:00.640><c> been</c><00:00:00.800><c> there.</c><00:00:01.520><c> You</c><00:00:01.680><c> realize</c><00:00:02.080><c> that</c>
+
+00:00:02.230 --> 00:00:02.240 align:start position:0%
+We've all been there. You realize that
+ 
+
+00:00:02.240 --> 00:00:03.510 align:start position:0%
+We've all been there. You realize that
+this<00:00:02.480><c> should</c><00:00:02.639><c> have</c><00:00:02.720><c> been</c><00:00:02.879><c> in</c><00:00:03.040><c> a</c><00:00:03.200><c> Docker</c>
+
+00:00:03.510 --> 00:00:03.520 align:start position:0%
+this should have been in a Docker
+ 
+
+00:00:03.520 --> 00:00:05.990 align:start position:0%
+this should have been in a Docker
+container<00:00:04.000><c> from</c><00:00:04.240><c> the</c><00:00:04.480><c> start.</c><00:00:05.120><c> So,</c><00:00:05.440><c> you</c><00:00:05.680><c> do</c>
+
+00:00:05.990 --> 00:00:06.000 align:start position:0%
+container from the start. So, you do
+ 
+
+00:00:06.000 --> 00:00:08.230 align:start position:0%
+container from the start. So, you do
+create<00:00:06.319><c> a</c><00:00:06.560><c> Docker</c><00:00:06.960><c> file.</c><00:00:07.600><c> And</c><00:00:07.759><c> although</c><00:00:08.080><c> you</c>
+
+00:00:08.230 --> 00:00:08.240 align:start position:0%
+create a Docker file. And although you
+ 
+
+00:00:08.240 --> 00:00:10.230 align:start position:0%
+create a Docker file. And although you
+save<00:00:08.559><c> time</c><00:00:08.720><c> writing</c><00:00:09.040><c> this,</c><00:00:09.599><c> now</c><00:00:09.840><c> you</c><00:00:10.000><c> have</c><00:00:10.080><c> to</c>
+
+00:00:10.230 --> 00:00:10.240 align:start position:0%
+save time writing this, now you have to
+ 
+
+00:00:10.240 --> 00:00:12.629 align:start position:0%
+save time writing this, now you have to
+waste<00:00:10.480><c> time</c><00:00:10.800><c> configuring</c><00:00:11.360><c> it.</c><00:00:12.080><c> But</c><00:00:12.400><c> good</c>
+
+00:00:12.629 --> 00:00:12.639 align:start position:0%
+waste time configuring it. But good
+ 
+
+00:00:12.639 --> 00:00:14.150 align:start position:0%
+waste time configuring it. But good
+news,<00:00:13.120><c> here's</c><00:00:13.360><c> a</c><00:00:13.519><c> prompt</c><00:00:13.759><c> that</c><00:00:13.920><c> will</c>
+
+00:00:14.150 --> 00:00:14.160 align:start position:0%
+news, here's a prompt that will
+ 
+
+00:00:14.160 --> 00:00:16.870 align:start position:0%
+news, here's a prompt that will
+immediately<00:00:14.719><c> help.</c><00:00:15.759><c> Since</c><00:00:16.080><c> projects</c><00:00:16.560><c> inside</c>
+
+00:00:16.870 --> 00:00:16.880 align:start position:0%
+immediately help. Since projects inside
+ 
+
+00:00:16.880 --> 00:00:19.189 align:start position:0%
+immediately help. Since projects inside
+of<00:00:17.039><c> Docker</c><00:00:17.520><c> often</c><00:00:17.920><c> include</c><00:00:18.400><c> multiple</c><00:00:18.880><c> needed</c>
+
+00:00:19.189 --> 00:00:19.199 align:start position:0%
+of Docker often include multiple needed
+ 
+
+00:00:19.199 --> 00:00:21.510 align:start position:0%
+of Docker often include multiple needed
+items,<00:00:19.760><c> Warp</c><00:00:20.160><c> can</c><00:00:20.400><c> analyze</c><00:00:20.880><c> the</c><00:00:21.119><c> entire</c>
+
+00:00:21.510 --> 00:00:21.520 align:start position:0%
+items, Warp can analyze the entire
+ 
+
+00:00:21.520 --> 00:00:23.429 align:start position:0%
+items, Warp can analyze the entire
+project<00:00:21.840><c> and</c><00:00:22.160><c> build</c><00:00:22.320><c> the</c><00:00:22.560><c> Docker</c><00:00:22.880><c> files</c><00:00:23.199><c> with</c>
+
+00:00:23.429 --> 00:00:23.439 align:start position:0%
+project and build the Docker files with
+ 
+
+00:00:23.439 --> 00:00:26.070 align:start position:0%
+project and build the Docker files with
+multi-stage<00:00:24.240><c> configuration</c><00:00:25.439><c> and</c><00:00:25.760><c> small</c>
+
+00:00:26.070 --> 00:00:26.080 align:start position:0%
+multi-stage configuration and small
+ 
+
+00:00:26.080 --> 00:00:28.470 align:start position:0%
+multi-stage configuration and small
+image<00:00:26.400><c> size,</c><00:00:27.039><c> a</c><00:00:27.359><c> Docker</c><00:00:27.760><c> ignore</c><00:00:28.080><c> file</c><00:00:28.240><c> to</c>
+
+00:00:28.470 --> 00:00:28.480 align:start position:0%
+image size, a Docker ignore file to
+ 
+
+00:00:28.480 --> 00:00:30.550 align:start position:0%
+image size, a Docker ignore file to
+ignore<00:00:28.720><c> large</c><00:00:29.039><c> files,</c><00:00:29.359><c> and</c><00:00:29.599><c> a</c><00:00:29.760><c> Docker</c><00:00:30.160><c> compose</c>
+
+00:00:30.550 --> 00:00:30.560 align:start position:0%
+ignore large files, and a Docker compose
+ 
+
+00:00:30.560 --> 00:00:33.270 align:start position:0%
+ignore large files, and a Docker compose
+file<00:00:30.960><c> to</c><00:00:31.199><c> orchestrate</c><00:00:31.920><c> needed</c><00:00:32.320><c> containers</c><00:00:33.040><c> in</c>
+
+00:00:33.270 --> 00:00:33.280 align:start position:0%
+file to orchestrate needed containers in
+ 
+
+00:00:33.280 --> 00:00:34.870 align:start position:0%
+file to orchestrate needed containers in
+a<00:00:33.520><c> development</c><00:00:33.920><c> environment</c><00:00:34.320><c> as</c><00:00:34.559><c> well</c><00:00:34.640><c> as</c>
+
+00:00:34.870 --> 00:00:34.880 align:start position:0%
+a development environment as well as
+ 
+
+00:00:34.880 --> 00:00:37.590 align:start position:0%
+a development environment as well as
+production.<00:00:35.760><c> Your</c><00:00:36.079><c> afternoon</c><00:00:36.559><c> is</c><00:00:36.800><c> saved.</c>
+
+00:00:37.590 --> 00:00:37.600 align:start position:0%
+production. Your afternoon is saved.
+ 
+
+00:00:37.600 --> 00:00:40.160 align:start position:0%
+production. Your afternoon is saved.
+Back<00:00:37.760><c> to</c><00:00:37.920><c> work.</c>
+

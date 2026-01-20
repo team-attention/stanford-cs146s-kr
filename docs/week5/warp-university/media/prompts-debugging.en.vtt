@@ -1,0 +1,144 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.080 --> 00:00:01.910 align:start position:0%
+ 
+Building<00:00:00.400><c> REST</c><00:00:00.640><c> APIs</c><00:00:01.120><c> for</c><00:00:01.280><c> your</c><00:00:01.520><c> projects</c>
+
+00:00:01.910 --> 00:00:01.920 align:start position:0%
+Building REST APIs for your projects
+ 
+
+00:00:01.920 --> 00:00:04.470 align:start position:0%
+Building REST APIs for your projects
+come<00:00:02.080><c> with</c><00:00:02.399><c> a</c><00:00:02.800><c> lot</c><00:00:02.960><c> of</c><00:00:03.120><c> overhead.</c><00:00:03.840><c> Test</c><00:00:04.080><c> suites</c>
+
+00:00:04.470 --> 00:00:04.480 align:start position:0%
+come with a lot of overhead. Test suites
+ 
+
+00:00:04.480 --> 00:00:06.630 align:start position:0%
+come with a lot of overhead. Test suites
+are<00:00:04.720><c> great</c><00:00:04.960><c> for</c><00:00:05.200><c> alleviating</c><00:00:05.759><c> these</c><00:00:06.000><c> pains,</c>
+
+00:00:06.630 --> 00:00:06.640 align:start position:0%
+are great for alleviating these pains,
+ 
+
+00:00:06.640 --> 00:00:08.870 align:start position:0%
+are great for alleviating these pains,
+but<00:00:06.960><c> by</c><00:00:07.200><c> doing</c><00:00:07.440><c> this,</c><00:00:08.000><c> you'll</c><00:00:08.400><c> just</c><00:00:08.639><c> get</c>
+
+00:00:08.870 --> 00:00:08.880 align:start position:0%
+but by doing this, you'll just get
+ 
+
+00:00:08.880 --> 00:00:10.709 align:start position:0%
+but by doing this, you'll just get
+subpar<00:00:09.519><c> results.</c><00:00:10.000><c> So,</c><00:00:10.160><c> here's</c><00:00:10.400><c> a</c><00:00:10.559><c> better</c>
+
+00:00:10.709 --> 00:00:10.719 align:start position:0%
+subpar results. So, here's a better
+ 
+
+00:00:10.719 --> 00:00:12.070 align:start position:0%
+subpar results. So, here's a better
+prompt<00:00:10.960><c> that</c><00:00:11.120><c> you</c><00:00:11.280><c> can</c><00:00:11.360><c> use</c><00:00:11.519><c> that</c><00:00:11.679><c> will</c><00:00:11.840><c> make</c>
+
+00:00:12.070 --> 00:00:12.080 align:start position:0%
+prompt that you can use that will make
+ 
+
+00:00:12.080 --> 00:00:14.390 align:start position:0%
+prompt that you can use that will make
+developing<00:00:12.480><c> your</c><00:00:12.719><c> app</c><00:00:13.120><c> much</c><00:00:13.440><c> faster</c><00:00:14.080><c> by</c>
+
+00:00:14.390 --> 00:00:14.400 align:start position:0%
+developing your app much faster by
+ 
+
+00:00:14.400 --> 00:00:16.630 align:start position:0%
+developing your app much faster by
+yourself<00:00:15.280><c> and</c><00:00:15.519><c> with</c><00:00:15.679><c> the</c><00:00:15.839><c> AI.</c><00:00:16.320><c> In</c><00:00:16.480><c> this</c>
+
+00:00:16.630 --> 00:00:16.640 align:start position:0%
+yourself and with the AI. In this
+ 
+
+00:00:16.640 --> 00:00:18.390 align:start position:0%
+yourself and with the AI. In this
+prompt,<00:00:16.960><c> we</c><00:00:17.119><c> get</c><00:00:17.359><c> specific</c><00:00:17.840><c> what</c><00:00:18.080><c> we</c><00:00:18.240><c> are</c>
+
+00:00:18.390 --> 00:00:18.400 align:start position:0%
+prompt, we get specific what we are
+ 
+
+00:00:18.400 --> 00:00:20.710 align:start position:0%
+prompt, we get specific what we are
+looking<00:00:18.560><c> for.</c><00:00:19.279><c> Unit</c><00:00:19.680><c> test</c><00:00:20.000><c> and</c><00:00:20.320><c> security</c>
+
+00:00:20.710 --> 00:00:20.720 align:start position:0%
+looking for. Unit test and security
+ 
+
+00:00:20.720 --> 00:00:22.870 align:start position:0%
+looking for. Unit test and security
+tests.<00:00:21.600><c> This</c><00:00:21.760><c> will</c><00:00:22.000><c> generate</c><00:00:22.320><c> tests</c><00:00:22.560><c> that</c><00:00:22.720><c> you</c>
+
+00:00:22.870 --> 00:00:22.880 align:start position:0%
+tests. This will generate tests that you
+ 
+
+00:00:22.880 --> 00:00:24.470 align:start position:0%
+tests. This will generate tests that you
+can<00:00:23.039><c> run</c><00:00:23.199><c> with</c><00:00:23.359><c> a</c><00:00:23.600><c> simple</c><00:00:23.840><c> command</c><00:00:24.160><c> after</c>
+
+00:00:24.470 --> 00:00:24.480 align:start position:0%
+can run with a simple command after
+ 
+
+00:00:24.480 --> 00:00:25.990 align:start position:0%
+can run with a simple command after
+you're<00:00:24.720><c> ready</c><00:00:24.880><c> to</c><00:00:25.039><c> commit</c><00:00:25.359><c> changes</c><00:00:25.680><c> or</c>
+
+00:00:25.990 --> 00:00:26.000 align:start position:0%
+you're ready to commit changes or
+ 
+
+00:00:26.000 --> 00:00:28.390 align:start position:0%
+you're ready to commit changes or
+deploy.<00:00:27.039><c> But</c><00:00:27.279><c> more</c><00:00:27.519><c> importantly,</c><00:00:28.080><c> you</c><00:00:28.240><c> can</c>
+
+00:00:28.390 --> 00:00:28.400 align:start position:0%
+deploy. But more importantly, you can
+ 
+
+00:00:28.400 --> 00:00:31.589 align:start position:0%
+deploy. But more importantly, you can
+add<00:00:28.560><c> this</c><00:00:28.960><c> command</c><00:00:29.359><c> to</c><00:00:29.519><c> your</c><00:00:29.679><c> rules</c><00:00:30.080><c> file.</c><00:00:31.199><c> So,</c>
+
+00:00:31.589 --> 00:00:31.599 align:start position:0%
+add this command to your rules file. So,
+ 
+
+00:00:31.599 --> 00:00:33.910 align:start position:0%
+add this command to your rules file. So,
+Warp<00:00:32.079><c> will</c><00:00:32.320><c> use</c><00:00:32.559><c> these</c><00:00:32.880><c> tests</c><00:00:33.120><c> as</c><00:00:33.360><c> a</c><00:00:33.520><c> source</c><00:00:33.760><c> of</c>
+
+00:00:33.910 --> 00:00:33.920 align:start position:0%
+Warp will use these tests as a source of
+ 
+
+00:00:33.920 --> 00:00:35.590 align:start position:0%
+Warp will use these tests as a source of
+truth<00:00:34.239><c> to</c><00:00:34.399><c> determine</c><00:00:34.719><c> if</c><00:00:34.960><c> the</c><00:00:35.120><c> code</c><00:00:35.360><c> written</c>
+
+00:00:35.590 --> 00:00:35.600 align:start position:0%
+truth to determine if the code written
+ 
+
+00:00:35.600 --> 00:00:39.200 align:start position:0%
+truth to determine if the code written
+by<00:00:35.840><c> it</c><00:00:36.160><c> is</c><00:00:36.480><c> worth</c><00:00:36.800><c> implementing.</c>
+

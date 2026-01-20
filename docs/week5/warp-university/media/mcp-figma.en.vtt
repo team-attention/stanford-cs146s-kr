@@ -1,0 +1,320 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.389 align:start position:0%
+ 
+The<00:00:00.240><c> Figma</c><00:00:00.640><c> MCP</c><00:00:01.120><c> server</c><00:00:01.360><c> lets</c><00:00:01.600><c> Warp</c><00:00:01.920><c> agents</c>
+
+00:00:02.389 --> 00:00:02.399 align:start position:0%
+The Figma MCP server lets Warp agents
+ 
+
+00:00:02.399 --> 00:00:04.710 align:start position:0%
+The Figma MCP server lets Warp agents
+pull<00:00:02.720><c> design</c><00:00:03.040><c> data</c><00:00:03.280><c> from</c><00:00:03.439><c> Figma</c><00:00:04.080><c> and</c><00:00:04.240><c> turns</c><00:00:04.560><c> it</c>
+
+00:00:04.710 --> 00:00:04.720 align:start position:0%
+pull design data from Figma and turns it
+ 
+
+00:00:04.720 --> 00:00:06.869 align:start position:0%
+pull design data from Figma and turns it
+into<00:00:05.040><c> code</c><00:00:05.359><c> scaffolding.</c><00:00:06.080><c> To</c><00:00:06.240><c> set</c><00:00:06.400><c> it</c><00:00:06.480><c> up,</c><00:00:06.720><c> go</c>
+
+00:00:06.869 --> 00:00:06.879 align:start position:0%
+into code scaffolding. To set it up, go
+ 
+
+00:00:06.879 --> 00:00:08.549 align:start position:0%
+into code scaffolding. To set it up, go
+into<00:00:07.040><c> your</c><00:00:07.200><c> Figma</c><00:00:07.680><c> account,</c><00:00:08.080><c> click</c><00:00:08.320><c> your</c>
+
+00:00:08.549 --> 00:00:08.559 align:start position:0%
+into your Figma account, click your
+ 
+
+00:00:08.559 --> 00:00:10.230 align:start position:0%
+into your Figma account, click your
+profile<00:00:08.960><c> picture,</c><00:00:09.360><c> go</c><00:00:09.519><c> to</c><00:00:09.679><c> settings,</c>
+
+00:00:10.230 --> 00:00:10.240 align:start position:0%
+profile picture, go to settings,
+ 
+
+00:00:10.240 --> 00:00:12.310 align:start position:0%
+profile picture, go to settings,
+security,<00:00:10.960><c> and</c><00:00:11.200><c> generate</c><00:00:11.519><c> a</c><00:00:11.759><c> new</c><00:00:11.920><c> personal</c>
+
+00:00:12.310 --> 00:00:12.320 align:start position:0%
+security, and generate a new personal
+ 
+
+00:00:12.320 --> 00:00:14.870 align:start position:0%
+security, and generate a new personal
+access<00:00:12.639><c> token.</c><00:00:13.200><c> Give</c><00:00:13.360><c> it</c><00:00:13.519><c> full</c><00:00:14.000><c> read</c><00:00:14.320><c> access</c>
+
+00:00:14.870 --> 00:00:14.880 align:start position:0%
+access token. Give it full read access
+ 
+
+00:00:14.880 --> 00:00:17.590 align:start position:0%
+access token. Give it full read access
+in<00:00:15.120><c> Warp.</c><00:00:15.519><c> Open</c><00:00:15.679><c> up</c><00:00:15.839><c> the</c><00:00:16.000><c> MCP</c><00:00:16.560><c> panel,</c><00:00:17.039><c> paste</c><00:00:17.359><c> in</c>
+
+00:00:17.590 --> 00:00:17.600 align:start position:0%
+in Warp. Open up the MCP panel, paste in
+ 
+
+00:00:17.600 --> 00:00:19.910 align:start position:0%
+in Warp. Open up the MCP panel, paste in
+the<00:00:17.760><c> Figma</c><00:00:18.240><c> JSON</c><00:00:18.640><c> config,</c><00:00:19.199><c> drop</c><00:00:19.520><c> in</c><00:00:19.680><c> that</c>
+
+00:00:19.910 --> 00:00:19.920 align:start position:0%
+the Figma JSON config, drop in that
+ 
+
+00:00:19.920 --> 00:00:22.390 align:start position:0%
+the Figma JSON config, drop in that
+access<00:00:20.240><c> token</c><00:00:20.640><c> you</c><00:00:20.880><c> got,</c><00:00:21.119><c> and</c><00:00:21.359><c> hit</c><00:00:21.680><c> save.</c><00:00:22.240><c> For</c>
+
+00:00:22.390 --> 00:00:22.400 align:start position:0%
+access token you got, and hit save. For
+ 
+
+00:00:22.400 --> 00:00:24.390 align:start position:0%
+access token you got, and hit save. For
+this<00:00:22.560><c> demo,</c><00:00:22.880><c> I'm</c><00:00:23.119><c> going</c><00:00:23.279><c> to</c><00:00:23.439><c> use</c><00:00:23.680><c> the</c><00:00:24.000><c> design</c>
+
+00:00:24.390 --> 00:00:24.400 align:start position:0%
+this demo, I'm going to use the design
+ 
+
+00:00:24.400 --> 00:00:26.710 align:start position:0%
+this demo, I'm going to use the design
+for<00:00:24.720><c> Warp's</c><00:00:25.199><c> redesigned</c><00:00:25.760><c> homepage.</c><00:00:26.400><c> And</c><00:00:26.560><c> in</c>
+
+00:00:26.710 --> 00:00:26.720 align:start position:0%
+for Warp's redesigned homepage. And in
+ 
+
+00:00:26.720 --> 00:00:28.630 align:start position:0%
+for Warp's redesigned homepage. And in
+Figma,<00:00:27.279><c> I'm</c><00:00:27.519><c> going</c><00:00:27.599><c> to</c><00:00:27.680><c> go</c><00:00:27.840><c> ahead</c><00:00:28.160><c> and</c><00:00:28.400><c> select</c>
+
+00:00:28.630 --> 00:00:28.640 align:start position:0%
+Figma, I'm going to go ahead and select
+ 
+
+00:00:28.640 --> 00:00:30.710 align:start position:0%
+Figma, I'm going to go ahead and select
+the<00:00:28.880><c> group</c><00:00:29.119><c> I</c><00:00:29.359><c> want,</c><00:00:29.760><c> rightclick,</c><00:00:30.320><c> and</c><00:00:30.480><c> then</c>
+
+00:00:30.710 --> 00:00:30.720 align:start position:0%
+the group I want, rightclick, and then
+ 
+
+00:00:30.720 --> 00:00:32.870 align:start position:0%
+the group I want, rightclick, and then
+choose<00:00:31.119><c> copy</c><00:00:31.519><c> link</c><00:00:31.840><c> to</c><00:00:32.079><c> selection.</c><00:00:32.719><c> Now,</c>
+
+00:00:32.870 --> 00:00:32.880 align:start position:0%
+choose copy link to selection. Now,
+ 
+
+00:00:32.880 --> 00:00:34.870 align:start position:0%
+choose copy link to selection. Now,
+going<00:00:33.120><c> into</c><00:00:33.360><c> Warp,</c><00:00:33.760><c> I've</c><00:00:33.920><c> stored</c><00:00:34.239><c> a</c><00:00:34.399><c> prompt</c><00:00:34.719><c> in</c>
+
+00:00:34.870 --> 00:00:34.880 align:start position:0%
+going into Warp, I've stored a prompt in
+ 
+
+00:00:34.880 --> 00:00:37.030 align:start position:0%
+going into Warp, I've stored a prompt in
+Warp<00:00:35.200><c> Drive</c><00:00:35.440><c> called</c><00:00:35.680><c> Figma</c><00:00:36.160><c> mockup.</c><00:00:36.719><c> It</c><00:00:36.880><c> tells</c>
+
+00:00:37.030 --> 00:00:37.040 align:start position:0%
+Warp Drive called Figma mockup. It tells
+ 
+
+00:00:37.040 --> 00:00:39.670 align:start position:0%
+Warp Drive called Figma mockup. It tells
+the<00:00:37.200><c> agent</c><00:00:37.600><c> to</c><00:00:37.840><c> recreate</c><00:00:38.399><c> the</c><00:00:38.640><c> design</c><00:00:38.960><c> in</c><00:00:39.280><c> code</c>
+
+00:00:39.670 --> 00:00:39.680 align:start position:0%
+the agent to recreate the design in code
+ 
+
+00:00:39.680 --> 00:00:41.750 align:start position:0%
+the agent to recreate the design in code
+and<00:00:39.920><c> stipulates</c><00:00:40.480><c> things</c><00:00:40.800><c> like</c><00:00:41.120><c> keeping</c><00:00:41.520><c> the</c>
+
+00:00:41.750 --> 00:00:41.760 align:start position:0%
+and stipulates things like keeping the
+ 
+
+00:00:41.760 --> 00:00:44.470 align:start position:0%
+and stipulates things like keeping the
+original<00:00:42.160><c> sections,</c><00:00:42.879><c> spacing,</c><00:00:43.520><c> font</c><00:00:43.840><c> sizes,</c>
+
+00:00:44.470 --> 00:00:44.480 align:start position:0%
+original sections, spacing, font sizes,
+ 
+
+00:00:44.480 --> 00:00:47.029 align:start position:0%
+original sections, spacing, font sizes,
+colors,<00:00:45.040><c> and</c><00:00:45.280><c> general</c><00:00:45.680><c> best</c><00:00:46.000><c> practices.</c><00:00:46.800><c> When</c>
+
+00:00:47.029 --> 00:00:47.039 align:start position:0%
+colors, and general best practices. When
+ 
+
+00:00:47.039 --> 00:00:49.350 align:start position:0%
+colors, and general best practices. When
+I<00:00:47.200><c> run</c><00:00:47.280><c> it,</c><00:00:47.520><c> the</c><00:00:47.680><c> MCP</c><00:00:48.160><c> server</c><00:00:48.559><c> will</c><00:00:48.800><c> call</c><00:00:49.120><c> get</c>
+
+00:00:49.350 --> 00:00:49.360 align:start position:0%
+I run it, the MCP server will call get
+ 
+
+00:00:49.360 --> 00:00:52.069 align:start position:0%
+I run it, the MCP server will call get
+Figma<00:00:49.840><c> data</c><00:00:50.239><c> and</c><00:00:50.719><c> download</c><00:00:51.120><c> Figma</c><00:00:51.600><c> images.</c>
+
+00:00:52.069 --> 00:00:52.079 align:start position:0%
+Figma data and download Figma images.
+ 
+
+00:00:52.079 --> 00:00:54.069 align:start position:0%
+Figma data and download Figma images.
+And<00:00:52.239><c> then</c><00:00:52.399><c> it</c><00:00:52.559><c> starts</c><00:00:52.800><c> to</c><00:00:52.960><c> generate</c><00:00:53.280><c> the</c><00:00:53.520><c> HTML</c>
+
+00:00:54.069 --> 00:00:54.079 align:start position:0%
+And then it starts to generate the HTML
+ 
+
+00:00:54.079 --> 00:00:56.790 align:start position:0%
+And then it starts to generate the HTML
+and<00:00:54.399><c> CSS</c><00:00:54.960><c> for</c><00:00:55.199><c> the</c><00:00:55.440><c> entire</c><00:00:56.000><c> layout.</c><00:00:56.559><c> On</c>
+
+00:00:56.790 --> 00:00:56.800 align:start position:0%
+and CSS for the entire layout. On
+ 
+
+00:00:56.800 --> 00:00:58.069 align:start position:0%
+and CSS for the entire layout. On
+screen,<00:00:57.039><c> you're</c><00:00:57.280><c> going</c><00:00:57.280><c> to</c><00:00:57.360><c> see</c><00:00:57.520><c> it</c><00:00:57.680><c> fetching</c>
+
+00:00:58.069 --> 00:00:58.079 align:start position:0%
+screen, you're going to see it fetching
+ 
+
+00:00:58.079 --> 00:00:59.990 align:start position:0%
+screen, you're going to see it fetching
+the<00:00:58.239><c> design</c><00:00:58.480><c> data,</c><00:00:58.960><c> generating</c><00:00:59.440><c> code</c><00:00:59.760><c> files</c>
+
+00:00:59.990 --> 00:01:00.000 align:start position:0%
+the design data, generating code files
+ 
+
+00:01:00.000 --> 00:01:01.990 align:start position:0%
+the design data, generating code files
+one<00:01:00.160><c> by</c><00:01:00.399><c> one,</c><00:01:00.800><c> and</c><00:01:01.039><c> then</c><00:01:01.280><c> previewing</c><00:01:01.840><c> the</c>
+
+00:01:01.990 --> 00:01:02.000 align:start position:0%
+one by one, and then previewing the
+ 
+
+00:01:02.000 --> 00:01:03.910 align:start position:0%
+one by one, and then previewing the
+final<00:01:02.320><c> result</c><00:01:02.559><c> in</c><00:01:02.719><c> the</c><00:01:02.879><c> browser.</c><00:01:03.359><c> If</c><00:01:03.520><c> I</c><00:01:03.680><c> switch</c>
+
+00:01:03.910 --> 00:01:03.920 align:start position:0%
+final result in the browser. If I switch
+ 
+
+00:01:03.920 --> 00:01:05.509 align:start position:0%
+final result in the browser. If I switch
+back<00:01:04.159><c> and</c><00:01:04.320><c> forth</c><00:01:04.640><c> between</c><00:01:04.879><c> the</c><00:01:05.119><c> design</c><00:01:05.360><c> and</c>
+
+00:01:05.509 --> 00:01:05.519 align:start position:0%
+back and forth between the design and
+ 
+
+00:01:05.519 --> 00:01:07.270 align:start position:0%
+back and forth between the design and
+the<00:01:05.680><c> generated</c><00:01:06.080><c> file</c><00:01:06.479><c> is</c><00:01:06.720><c> surprisingly</c>
+
+00:01:07.270 --> 00:01:07.280 align:start position:0%
+the generated file is surprisingly
+ 
+
+00:01:07.280 --> 00:01:09.109 align:start position:0%
+the generated file is surprisingly
+close.<00:01:07.760><c> The</c><00:01:07.920><c> header,</c><00:01:08.320><c> the</c><00:01:08.479><c> feature</c><00:01:08.799><c> cards,</c>
+
+00:01:09.109 --> 00:01:09.119 align:start position:0%
+close. The header, the feature cards,
+ 
+
+00:01:09.119 --> 00:01:10.950 align:start position:0%
+close. The header, the feature cards,
+and<00:01:09.280><c> the</c><00:01:09.439><c> code</c><00:01:09.760><c> generation</c><00:01:10.240><c> section</c><00:01:10.560><c> are</c><00:01:10.799><c> all</c>
+
+00:01:10.950 --> 00:01:10.960 align:start position:0%
+and the code generation section are all
+ 
+
+00:01:10.960 --> 00:01:12.950 align:start position:0%
+and the code generation section are all
+there.<00:01:11.280><c> It</c><00:01:11.520><c> is</c><00:01:11.680><c> missing</c><00:01:11.920><c> a</c><00:01:12.159><c> few</c><00:01:12.320><c> details</c><00:01:12.799><c> like</c>
+
+00:01:12.950 --> 00:01:12.960 align:start position:0%
+there. It is missing a few details like
+ 
+
+00:01:12.960 --> 00:01:14.950 align:start position:0%
+there. It is missing a few details like
+the<00:01:13.200><c> gradients</c><00:01:13.760><c> and</c><00:01:14.000><c> the</c><00:01:14.159><c> footer,</c><00:01:14.560><c> but</c><00:01:14.880><c> this</c>
+
+00:01:14.950 --> 00:01:14.960 align:start position:0%
+the gradients and the footer, but this
+ 
+
+00:01:14.960 --> 00:01:16.630 align:start position:0%
+the gradients and the footer, but this
+is<00:01:15.119><c> an</c><00:01:15.280><c> excellent</c><00:01:15.680><c> starting</c><00:01:16.000><c> point.</c><00:01:16.240><c> I</c><00:01:16.479><c> find</c>
+
+00:01:16.630 --> 00:01:16.640 align:start position:0%
+is an excellent starting point. I find
+ 
+
+00:01:16.640 --> 00:01:19.510 align:start position:0%
+is an excellent starting point. I find
+this<00:01:16.880><c> to</c><00:01:17.040><c> be</c><00:01:17.119><c> a</c><00:01:17.360><c> huge</c><00:01:17.680><c> timesaver</c><00:01:18.320><c> for</c><00:01:18.720><c> PMs,</c>
+
+00:01:19.510 --> 00:01:19.520 align:start position:0%
+this to be a huge timesaver for PMs,
+ 
+
+00:01:19.520 --> 00:01:21.910 align:start position:0%
+this to be a huge timesaver for PMs,
+designers,<00:01:20.159><c> or</c><00:01:20.400><c> devs</c><00:01:20.799><c> who</c><00:01:21.040><c> just</c><00:01:21.200><c> want</c><00:01:21.439><c> to</c><00:01:21.680><c> skip</c>
+
+00:01:21.910 --> 00:01:21.920 align:start position:0%
+designers, or devs who just want to skip
+ 
+
+00:01:21.920 --> 00:01:23.830 align:start position:0%
+designers, or devs who just want to skip
+the<00:01:22.080><c> boilerplate</c><00:01:22.720><c> and</c><00:01:22.960><c> get</c><00:01:23.119><c> to</c><00:01:23.280><c> iteration</c>
+
+00:01:23.830 --> 00:01:23.840 align:start position:0%
+the boilerplate and get to iteration
+ 
+
+00:01:23.840 --> 00:01:26.080 align:start position:0%
+the boilerplate and get to iteration
+faster.
+

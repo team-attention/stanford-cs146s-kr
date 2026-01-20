@@ -1,0 +1,144 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.080 --> 00:00:02.149 align:start position:0%
+ 
+describe<00:00:00.560><c> any</c><00:00:00.880><c> interrelated</c><00:00:01.520><c> projects</c><00:00:01.920><c> you</c>
+
+00:00:02.149 --> 00:00:02.159 align:start position:0%
+describe any interrelated projects you
+ 
+
+00:00:02.159 --> 00:00:04.470 align:start position:0%
+describe any interrelated projects you
+have<00:00:02.320><c> and</c><00:00:02.720><c> where</c><00:00:02.960><c> they</c><00:00:03.120><c> live.</c><00:00:03.760><c> At</c><00:00:03.919><c> Warp,</c><00:00:04.319><c> we</c>
+
+00:00:04.470 --> 00:00:04.480 align:start position:0%
+have and where they live. At Warp, we
+ 
+
+00:00:04.480 --> 00:00:06.309 align:start position:0%
+have and where they live. At Warp, we
+have<00:00:04.640><c> three</c><00:00:04.880><c> repositories</c><00:00:05.600><c> that</c><00:00:05.839><c> relate</c><00:00:06.160><c> to</c>
+
+00:00:06.309 --> 00:00:06.319 align:start position:0%
+have three repositories that relate to
+ 
+
+00:00:06.319 --> 00:00:08.470 align:start position:0%
+have three repositories that relate to
+each<00:00:06.480><c> other.</c><00:00:07.040><c> There's</c><00:00:07.359><c> Warp</c><00:00:07.759><c> Server</c><00:00:08.080><c> with</c><00:00:08.320><c> our</c>
+
+00:00:08.470 --> 00:00:08.480 align:start position:0%
+each other. There's Warp Server with our
+ 
+
+00:00:08.480 --> 00:00:10.629 align:start position:0%
+each other. There's Warp Server with our
+server<00:00:08.800><c> side</c><00:00:09.120><c> code,</c><00:00:09.679><c> Warp</c><00:00:10.000><c> Internal,</c><00:00:10.400><c> which</c>
+
+00:00:10.629 --> 00:00:10.639 align:start position:0%
+server side code, Warp Internal, which
+ 
+
+00:00:10.639 --> 00:00:14.150 align:start position:0%
+server side code, Warp Internal, which
+is<00:00:10.800><c> our</c><00:00:10.960><c> client</c><00:00:11.280><c> app,</c><00:00:11.840><c> and</c><00:00:12.320><c> Warp</c><00:00:12.800><c> Proto</c><00:00:13.280><c> APIs,</c>
+
+00:00:14.150 --> 00:00:14.160 align:start position:0%
+is our client app, and Warp Proto APIs,
+ 
+
+00:00:14.160 --> 00:00:16.310 align:start position:0%
+is our client app, and Warp Proto APIs,
+which<00:00:14.400><c> stores</c><00:00:14.719><c> the</c><00:00:14.880><c> API</c><00:00:15.360><c> schema</c><00:00:15.679><c> they</c><00:00:15.920><c> use</c><00:00:16.080><c> to</c>
+
+00:00:16.310 --> 00:00:16.320 align:start position:0%
+which stores the API schema they use to
+ 
+
+00:00:16.320 --> 00:00:18.390 align:start position:0%
+which stores the API schema they use to
+talk<00:00:16.480><c> to</c><00:00:16.640><c> each</c><00:00:16.880><c> other.</c><00:00:17.440><c> This</c><00:00:17.600><c> is</c><00:00:17.760><c> best</c><00:00:18.080><c> set</c><00:00:18.240><c> up</c>
+
+00:00:18.390 --> 00:00:18.400 align:start position:0%
+talk to each other. This is best set up
+ 
+
+00:00:18.400 --> 00:00:20.630 align:start position:0%
+talk to each other. This is best set up
+as<00:00:18.560><c> a</c><00:00:18.800><c> global</c><00:00:19.279><c> rule</c><00:00:19.600><c> for</c><00:00:19.840><c> your</c><00:00:20.000><c> agent,</c><00:00:20.400><c> and</c>
+
+00:00:20.630 --> 00:00:20.640 align:start position:0%
+as a global rule for your agent, and
+ 
+
+00:00:20.640 --> 00:00:22.630 align:start position:0%
+as a global rule for your agent, and
+I've<00:00:20.800><c> done</c><00:00:20.960><c> that</c><00:00:21.119><c> here</c><00:00:21.279><c> in</c><00:00:21.520><c> Warp.</c><00:00:22.080><c> Here</c><00:00:22.320><c> I've</c>
+
+00:00:22.630 --> 00:00:22.640 align:start position:0%
+I've done that here in Warp. Here I've
+ 
+
+00:00:22.640 --> 00:00:24.870 align:start position:0%
+I've done that here in Warp. Here I've
+described<00:00:23.039><c> the</c><00:00:23.279><c> three</c><00:00:23.600><c> repositories</c><00:00:24.240><c> we</c><00:00:24.560><c> have</c>
+
+00:00:24.870 --> 00:00:24.880 align:start position:0%
+described the three repositories we have
+ 
+
+00:00:24.880 --> 00:00:27.429 align:start position:0%
+described the three repositories we have
+and<00:00:25.119><c> some</c><00:00:25.359><c> practices</c><00:00:26.000><c> to</c><00:00:26.480><c> update</c><00:00:26.800><c> the</c><00:00:26.960><c> schema</c>
+
+00:00:27.429 --> 00:00:27.439 align:start position:0%
+and some practices to update the schema
+ 
+
+00:00:27.439 --> 00:00:29.830 align:start position:0%
+and some practices to update the schema
+and<00:00:27.680><c> update</c><00:00:28.080><c> types</c><00:00:28.400><c> across</c><00:00:28.800><c> repositories.</c>
+
+00:00:29.830 --> 00:00:29.840 align:start position:0%
+and update types across repositories.
+ 
+
+00:00:29.840 --> 00:00:31.669 align:start position:0%
+and update types across repositories.
+This<00:00:30.080><c> is</c><00:00:30.240><c> great</c><00:00:30.480><c> when</c><00:00:30.640><c> I</c><00:00:30.800><c> make</c><00:00:30.960><c> changes</c><00:00:31.279><c> in</c><00:00:31.519><c> the</c>
+
+00:00:31.669 --> 00:00:31.679 align:start position:0%
+This is great when I make changes in the
+ 
+
+00:00:31.679 --> 00:00:33.270 align:start position:0%
+This is great when I make changes in the
+future<00:00:32.079><c> because</c><00:00:32.320><c> as</c><00:00:32.559><c> soon</c><00:00:32.719><c> as</c><00:00:32.800><c> the</c><00:00:32.960><c> coding</c>
+
+00:00:33.270 --> 00:00:33.280 align:start position:0%
+future because as soon as the coding
+ 
+
+00:00:33.280 --> 00:00:36.150 align:start position:0%
+future because as soon as the coding
+agent<00:00:33.600><c> updates</c><00:00:34.000><c> the</c><00:00:34.239><c> schema,</c><00:00:34.880><c> it</c><00:00:35.120><c> knows</c><00:00:35.360><c> to</c><00:00:35.760><c> CD</c>
+
+00:00:36.150 --> 00:00:36.160 align:start position:0%
+agent updates the schema, it knows to CD
+ 
+
+00:00:36.160 --> 00:00:37.990 align:start position:0%
+agent updates the schema, it knows to CD
+into<00:00:36.480><c> warp</c><00:00:36.800><c> server</c><00:00:37.040><c> and</c><00:00:37.200><c> update</c><00:00:37.520><c> the</c><00:00:37.680><c> types</c>
+
+00:00:37.990 --> 00:00:38.000 align:start position:0%
+into warp server and update the types
+ 
+
+00:00:38.000 --> 00:00:42.079 align:start position:0%
+into warp server and update the types
+there.<00:00:38.559><c> Then</c><00:00:38.879><c> do</c><00:00:39.040><c> the</c><00:00:39.280><c> same</c><00:00:39.440><c> on</c><00:00:39.760><c> the</c><00:00:39.920><c> client.</c>
+

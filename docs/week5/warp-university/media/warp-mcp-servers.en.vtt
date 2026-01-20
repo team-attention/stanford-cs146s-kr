@@ -1,0 +1,496 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.160 --> 00:00:02.070 align:start position:0%
+ 
+more<00:00:00.480><c> important</c><00:00:00.880><c> company</c><00:00:01.280><c> data</c><00:00:01.680><c> you</c><00:00:01.839><c> need</c><00:00:01.920><c> to</c>
+
+00:00:02.070 --> 00:00:02.080 align:start position:0%
+more important company data you need to
+ 
+
+00:00:02.080 --> 00:00:05.990 align:start position:0%
+more important company data you need to
+give<00:00:02.240><c> access</c><00:00:02.800><c> to</c><00:00:03.040><c> your</c><00:00:04.000><c> where</c><00:00:04.160><c> you</c><00:00:05.520><c> or</c><00:00:05.759><c> any</c>
+
+00:00:05.990 --> 00:00:06.000 align:start position:0%
+give access to your where you or any
+ 
+
+00:00:06.000 --> 00:00:08.629 align:start position:0%
+give access to your where you or any
+number<00:00:06.160><c> of</c><00:00:06.319><c> sources</c><00:00:06.640><c> that</c><00:00:06.799><c> might</c><00:00:06.960><c> be</c><00:00:07.839><c> that</c><00:00:08.400><c> I</c>
+
+00:00:08.629 --> 00:00:08.639 align:start position:0%
+number of sources that might be that I
+ 
+
+00:00:08.639 --> 00:00:10.629 align:start position:0%
+number of sources that might be that I
+try<00:00:08.720><c> to</c><00:00:08.800><c> get</c><00:00:08.960><c> just</c><00:00:09.120><c> one</c><00:00:09.280><c> sentence</c><00:00:09.599><c> out.</c>
+
+00:00:10.629 --> 00:00:10.639 align:start position:0%
+try to get just one sentence out.
+ 
+
+00:00:10.639 --> 00:00:12.549 align:start position:0%
+try to get just one sentence out.
+&gt;&gt; Hi,<00:00:10.960><c> I'm</c><00:00:11.120><c> Andrew.</c><00:00:11.840><c> I'm</c><00:00:12.000><c> one</c><00:00:12.160><c> of</c><00:00:12.240><c> the</c><00:00:12.320><c> software</c>
+
+00:00:12.549 --> 00:00:12.559 align:start position:0%
+&gt;&gt; Hi, I'm Andrew. I'm one of the software
+ 
+
+00:00:12.559 --> 00:00:14.150 align:start position:0%
+&gt;&gt; Hi, I'm Andrew. I'm one of the software
+engineers<00:00:12.880><c> here</c><00:00:12.960><c> at</c><00:00:13.120><c> warp</c><00:00:13.599><c> and</c><00:00:13.759><c> today</c><00:00:13.920><c> I'm</c>
+
+00:00:14.150 --> 00:00:14.160 align:start position:0%
+engineers here at warp and today I'm
+ 
+
+00:00:14.160 --> 00:00:16.230 align:start position:0%
+engineers here at warp and today I'm
+going<00:00:14.240><c> to</c><00:00:14.320><c> talk</c><00:00:14.480><c> about</c><00:00:14.719><c> MCP</c><00:00:15.280><c> server</c><00:00:15.599><c> support.</c>
+
+00:00:16.230 --> 00:00:16.240 align:start position:0%
+going to talk about MCP server support.
+ 
+
+00:00:16.240 --> 00:00:19.029 align:start position:0%
+going to talk about MCP server support.
+This<00:00:16.480><c> is</c><00:00:16.560><c> our</c><00:00:16.800><c> old</c><00:00:17.119><c> input</c><00:00:17.600><c> format</c><00:00:18.560><c> and</c><00:00:18.800><c> we</c><00:00:18.960><c> have</c>
+
+00:00:19.029 --> 00:00:19.039 align:start position:0%
+This is our old input format and we have
+ 
+
+00:00:19.039 --> 00:00:21.269 align:start position:0%
+This is our old input format and we have
+a<00:00:19.199><c> new</c><00:00:19.359><c> format</c><00:00:19.760><c> that</c><00:00:20.000><c> we</c><00:00:20.160><c> call</c><00:00:20.400><c> the</c><00:00:20.720><c> universal</c>
+
+00:00:21.269 --> 00:00:21.279 align:start position:0%
+a new format that we call the universal
+ 
+
+00:00:21.279 --> 00:00:23.830 align:start position:0%
+a new format that we call the universal
+input.<00:00:21.840><c> In</c><00:00:22.000><c> the</c><00:00:22.160><c> old</c><00:00:22.320><c> mode,</c><00:00:22.640><c> we</c><00:00:22.880><c> support</c><00:00:23.199><c> a</c>
+
+00:00:23.830 --> 00:00:23.840 align:start position:0%
+input. In the old mode, we support a
+ 
+
+00:00:23.840 --> 00:00:25.109 align:start position:0%
+input. In the old mode, we support a
+chip<00:00:24.000><c> here,</c><00:00:24.160><c> which</c><00:00:24.400><c> tells</c><00:00:24.560><c> you</c><00:00:24.720><c> when</c><00:00:24.880><c> you've</c>
+
+00:00:25.109 --> 00:00:25.119 align:start position:0%
+chip here, which tells you when you've
+ 
+
+00:00:25.119 --> 00:00:27.750 align:start position:0%
+chip here, which tells you when you've
+activated<00:00:25.840><c> a</c><00:00:26.560><c> virtual</c><00:00:26.960><c> environment,</c><00:00:27.519><c> which</c>
+
+00:00:27.750 --> 00:00:27.760 align:start position:0%
+activated a virtual environment, which
+ 
+
+00:00:27.760 --> 00:00:30.390 align:start position:0%
+activated a virtual environment, which
+is<00:00:27.920><c> listed</c><00:00:28.240><c> here.</c><00:00:28.640><c> And</c><00:00:28.800><c> you</c><00:00:28.960><c> can</c><00:00:29.119><c> see</c><00:00:30.000><c> if</c><00:00:30.240><c> I</c>
+
+00:00:30.390 --> 00:00:30.400 align:start position:0%
+is listed here. And you can see if I
+ 
+
+00:00:30.400 --> 00:00:32.790 align:start position:0%
+is listed here. And you can see if I
+switch<00:00:30.640><c> to</c><00:00:30.800><c> universal,</c><00:00:31.519><c> that</c><00:00:31.760><c> chip</c><00:00:32.000><c> is</c><00:00:32.239><c> not</c>
+
+00:00:32.790 --> 00:00:32.800 align:start position:0%
+switch to universal, that chip is not
+ 
+
+00:00:32.800 --> 00:00:37.110 align:start position:0%
+switch to universal, that chip is not
+available.<00:00:33.600><c> Help</c><00:00:33.920><c> me</c><00:00:34.399><c> solve</c><00:00:34.800><c> this</c><00:00:35.280><c> ticket.</c>
+
+00:00:37.110 --> 00:00:37.120 align:start position:0%
+available. Help me solve this ticket.
+ 
+
+00:00:37.120 --> 00:00:39.190 align:start position:0%
+available. Help me solve this ticket.
+At<00:00:37.280><c> this</c><00:00:37.440><c> point,</c><00:00:37.680><c> Warp</c><00:00:38.079><c> has</c><00:00:38.239><c> no</c><00:00:38.399><c> idea</c><00:00:38.800><c> what</c><00:00:38.960><c> a</c>
+
+00:00:39.190 --> 00:00:39.200 align:start position:0%
+At this point, Warp has no idea what a
+ 
+
+00:00:39.200 --> 00:00:41.030 align:start position:0%
+At this point, Warp has no idea what a
+ticket<00:00:39.440><c> is,</c><00:00:39.680><c> where</c><00:00:39.840><c> to</c><00:00:40.000><c> find</c><00:00:40.239><c> the</c><00:00:40.480><c> ticket.</c><00:00:40.800><c> We</c>
+
+00:00:41.030 --> 00:00:41.040 align:start position:0%
+ticket is, where to find the ticket. We
+ 
+
+00:00:41.040 --> 00:00:42.389 align:start position:0%
+ticket is, where to find the ticket. We
+do<00:00:41.120><c> our</c><00:00:41.280><c> ticketing</c><00:00:41.680><c> through</c><00:00:41.840><c> Linear,</c><00:00:42.239><c> and</c>
+
+00:00:42.389 --> 00:00:42.399 align:start position:0%
+do our ticketing through Linear, and
+ 
+
+00:00:42.399 --> 00:00:44.150 align:start position:0%
+do our ticketing through Linear, and
+Linear<00:00:42.800><c> has</c><00:00:42.879><c> an</c><00:00:43.040><c> MCP</c><00:00:43.440><c> server</c><00:00:43.680><c> we</c><00:00:43.840><c> can</c><00:00:43.920><c> add</c>
+
+00:00:44.150 --> 00:00:44.160 align:start position:0%
+Linear has an MCP server we can add
+ 
+
+00:00:44.160 --> 00:00:45.590 align:start position:0%
+Linear has an MCP server we can add
+support<00:00:44.399><c> for.</c><00:00:44.640><c> So,</c><00:00:44.800><c> you</c><00:00:44.960><c> can</c><00:00:45.120><c> hear</c><00:00:45.280><c> it,</c><00:00:45.440><c> see,</c>
+
+00:00:45.590 --> 00:00:45.600 align:start position:0%
+support for. So, you can hear it, see,
+ 
+
+00:00:45.600 --> 00:00:46.950 align:start position:0%
+support for. So, you can hear it, see,
+it's<00:00:45.760><c> trying</c><00:00:45.920><c> to</c><00:00:46.000><c> check</c><00:00:46.160><c> GitHub,</c><00:00:46.559><c> and</c><00:00:46.719><c> it's</c>
+
+00:00:46.950 --> 00:00:46.960 align:start position:0%
+it's trying to check GitHub, and it's
+ 
+
+00:00:46.960 --> 00:00:48.069 align:start position:0%
+it's trying to check GitHub, and it's
+not<00:00:47.039><c> able</c><00:00:47.200><c> to</c><00:00:47.360><c> do</c><00:00:47.520><c> anything.</c><00:00:47.760><c> So,</c><00:00:47.920><c> I'm</c><00:00:48.079><c> going</c>
+
+00:00:48.069 --> 00:00:48.079 align:start position:0%
+not able to do anything. So, I'm going
+ 
+
+00:00:48.079 --> 00:00:49.430 align:start position:0%
+not able to do anything. So, I'm going
+to<00:00:48.160><c> go</c><00:00:48.239><c> ahead</c><00:00:48.399><c> and</c><00:00:48.559><c> cancel</c><00:00:48.800><c> this</c><00:00:49.039><c> and</c><00:00:49.280><c> I'm</c>
+
+00:00:49.430 --> 00:00:49.440 align:start position:0%
+to go ahead and cancel this and I'm
+ 
+
+00:00:49.440 --> 00:00:52.630 align:start position:0%
+to go ahead and cancel this and I'm
+going to<00:00:49.600><c> add</c><00:00:49.760><c> in</c><00:00:49.840><c> the</c><00:00:50.000><c> linear</c><00:00:50.320><c> MCP</c><00:00:50.879><c> server.</c>
+
+00:00:52.630 --> 00:00:52.640 align:start position:0%
+going to add in the linear MCP server.
+ 
+
+00:00:52.640 --> 00:00:54.790 align:start position:0%
+going to add in the linear MCP server.
+Right<00:00:52.879><c> here,</c><00:00:53.039><c> I</c><00:00:53.280><c> can</c><00:00:53.360><c> just</c><00:00:53.520><c> click</c><00:00:53.760><c> add</c><00:00:54.559><c> and</c>
+
+00:00:54.790 --> 00:00:54.800 align:start position:0%
+Right here, I can just click add and
+ 
+
+00:00:54.800 --> 00:00:57.350 align:start position:0%
+Right here, I can just click add and
+then<00:00:55.039><c> paste</c><00:00:55.280><c> in</c><00:00:55.440><c> the</c><00:00:55.600><c> JSON.</c><00:00:56.800><c> And</c><00:00:57.039><c> right</c><00:00:57.199><c> here,</c>
+
+00:00:57.350 --> 00:00:57.360 align:start position:0%
+then paste in the JSON. And right here,
+ 
+
+00:00:57.360 --> 00:00:58.950 align:start position:0%
+then paste in the JSON. And right here,
+you<00:00:57.600><c> can</c><00:00:57.680><c> see</c><00:00:57.760><c> the</c><00:00:57.920><c> MCP</c><00:00:58.320><c> server</c><00:00:58.559><c> starting</c><00:00:58.800><c> up</c>
+
+00:00:58.950 --> 00:00:58.960 align:start position:0%
+you can see the MCP server starting up
+ 
+
+00:00:58.960 --> 00:01:00.709 align:start position:0%
+you can see the MCP server starting up
+and<00:00:59.120><c> it's</c><00:00:59.280><c> got</c><00:00:59.359><c> a</c><00:00:59.520><c> list</c><00:00:59.680><c> of</c><00:00:59.840><c> tools</c><00:01:00.079><c> it</c><00:01:00.399><c> can</c><00:01:00.480><c> use</c>
+
+00:01:00.709 --> 00:01:00.719 align:start position:0%
+and it's got a list of tools it can use
+ 
+
+00:01:00.719 --> 00:01:02.630 align:start position:0%
+and it's got a list of tools it can use
+for<00:01:01.039><c> reading</c><00:01:01.280><c> and</c><00:01:01.440><c> writing</c><00:01:01.680><c> to</c><00:01:01.920><c> tickets.</c><00:01:02.480><c> One</c>
+
+00:01:02.630 --> 00:01:02.640 align:start position:0%
+for reading and writing to tickets. One
+ 
+
+00:01:02.640 --> 00:01:04.229 align:start position:0%
+for reading and writing to tickets. One
+more<00:01:02.800><c> nice</c><00:01:03.039><c> thing</c><00:01:03.199><c> we</c><00:01:03.359><c> can</c><00:01:03.440><c> do</c><00:01:03.600><c> is</c><00:01:03.760><c> add</c><00:01:03.840><c> a</c><00:01:04.000><c> rule</c>
+
+00:01:04.229 --> 00:01:04.239 align:start position:0%
+more nice thing we can do is add a rule
+ 
+
+00:01:04.239 --> 00:01:05.189 align:start position:0%
+more nice thing we can do is add a rule
+here<00:01:04.400><c> that</c><00:01:04.559><c> I'm</c><00:01:04.720><c> going</c><00:01:04.720><c> to</c><00:01:04.799><c> call</c><00:01:04.960><c> check</c>
+
+00:01:05.189 --> 00:01:05.199 align:start position:0%
+here that I'm going to call check
+ 
+
+00:01:05.199 --> 00:01:07.270 align:start position:0%
+here that I'm going to call check
+linear,<00:01:05.680><c> which</c><00:01:05.920><c> allows</c><00:01:06.240><c> me</c><00:01:06.400><c> to</c><00:01:06.799><c> sort</c><00:01:06.960><c> of</c>
+
+00:01:07.270 --> 00:01:07.280 align:start position:0%
+linear, which allows me to sort of
+ 
+
+00:01:07.280 --> 00:01:09.030 align:start position:0%
+linear, which allows me to sort of
+communicate<00:01:07.760><c> just</c><00:01:07.920><c> say</c><00:01:08.080><c> here's</c><00:01:08.240><c> a</c><00:01:08.320><c> ticket</c><00:01:08.640><c> and</c>
+
+00:01:09.030 --> 00:01:09.040 align:start position:0%
+communicate just say here's a ticket and
+ 
+
+00:01:09.040 --> 00:01:10.870 align:start position:0%
+communicate just say here's a ticket and
+inform<00:01:09.280><c> it</c><00:01:09.439><c> that</c><00:01:09.600><c> it</c><00:01:09.840><c> should</c><00:01:10.159><c> check</c><00:01:10.400><c> linear</c>
+
+00:01:10.870 --> 00:01:10.880 align:start position:0%
+inform it that it should check linear
+ 
+
+00:01:10.880 --> 00:01:12.950 align:start position:0%
+inform it that it should check linear
+for<00:01:11.119><c> tickets.</c><00:01:11.760><c> So</c><00:01:12.000><c> now</c><00:01:12.159><c> if</c><00:01:12.320><c> I</c><00:01:12.479><c> start</c><00:01:12.640><c> a</c><00:01:12.799><c> new</c>
+
+00:01:12.950 --> 00:01:12.960 align:start position:0%
+for tickets. So now if I start a new
+ 
+
+00:01:12.960 --> 00:01:14.950 align:start position:0%
+for tickets. So now if I start a new
+conversation<00:01:13.439><c> again</c><00:01:13.680><c> and</c><00:01:13.920><c> I</c><00:01:14.080><c> say</c><00:01:14.320><c> help</c><00:01:14.640><c> me</c>
+
+00:01:14.950 --> 00:01:14.960 align:start position:0%
+conversation again and I say help me
+ 
+
+00:01:14.960 --> 00:01:18.390 align:start position:0%
+conversation again and I say help me
+solve<00:01:15.760><c> this</c><00:01:16.159><c> ticket.</c>
+
+00:01:18.390 --> 00:01:18.400 align:start position:0%
+solve this ticket.
+ 
+
+00:01:18.400 --> 00:01:24.230 align:start position:0%
+solve this ticket.
+[Music]
+
+00:01:24.230 --> 00:01:24.240 align:start position:0%
+ 
+ 
+
+00:01:24.240 --> 00:01:25.590 align:start position:0%
+ 
+One<00:01:24.400><c> of</c><00:01:24.479><c> the</c><00:01:24.640><c> cool</c><00:01:24.799><c> ways</c><00:01:24.960><c> about</c><00:01:25.200><c> how</c><00:01:25.360><c> we</c>
+
+00:01:25.590 --> 00:01:25.600 align:start position:0%
+One of the cool ways about how we
+ 
+
+00:01:25.600 --> 00:01:27.670 align:start position:0%
+One of the cool ways about how we
+implemented<00:01:26.080><c> MCP</c><00:01:26.640><c> support</c><00:01:26.960><c> is</c><00:01:27.119><c> we</c><00:01:27.280><c> allowed</c><00:01:27.520><c> it</c>
+
+00:01:27.670 --> 00:01:27.680 align:start position:0%
+implemented MCP support is we allowed it
+ 
+
+00:01:27.680 --> 00:01:29.670 align:start position:0%
+implemented MCP support is we allowed it
+to<00:01:27.759><c> be</c><00:01:27.840><c> highly</c><00:01:28.159><c> dynamic.</c><00:01:28.799><c> So</c><00:01:28.960><c> if</c><00:01:29.119><c> you</c><00:01:29.280><c> start</c><00:01:29.439><c> a</c>
+
+00:01:29.670 --> 00:01:29.680 align:start position:0%
+to be highly dynamic. So if you start a
+ 
+
+00:01:29.680 --> 00:01:31.590 align:start position:0%
+to be highly dynamic. So if you start a
+conversation<00:01:30.080><c> without</c><00:01:30.400><c> an</c><00:01:30.560><c> MCP</c><00:01:31.040><c> server</c><00:01:31.360><c> and</c>
+
+00:01:31.590 --> 00:01:31.600 align:start position:0%
+conversation without an MCP server and
+ 
+
+00:01:31.600 --> 00:01:32.950 align:start position:0%
+conversation without an MCP server and
+you<00:01:31.759><c> start</c><00:01:31.920><c> a</c><00:01:32.079><c> server</c><00:01:32.320><c> in</c><00:01:32.479><c> the</c><00:01:32.560><c> middle</c><00:01:32.640><c> of</c><00:01:32.799><c> your</c>
+
+00:01:32.950 --> 00:01:32.960 align:start position:0%
+you start a server in the middle of your
+ 
+
+00:01:32.960 --> 00:01:34.870 align:start position:0%
+you start a server in the middle of your
+conversation,<00:01:33.759><c> your</c><00:01:34.000><c> next</c><00:01:34.240><c> message</c><00:01:34.560><c> is</c><00:01:34.799><c> going</c>
+
+00:01:34.870 --> 00:01:34.880 align:start position:0%
+conversation, your next message is going
+ 
+
+00:01:34.880 --> 00:01:37.350 align:start position:0%
+conversation, your next message is going
+to<00:01:35.040><c> have</c><00:01:35.200><c> that</c><00:01:35.439><c> as</c><00:01:35.680><c> context.</c><00:01:36.560><c> Now</c><00:01:36.720><c> you</c><00:01:36.880><c> can</c><00:01:37.040><c> see</c>
+
+00:01:37.350 --> 00:01:37.360 align:start position:0%
+to have that as context. Now you can see
+ 
+
+00:01:37.360 --> 00:01:38.950 align:start position:0%
+to have that as context. Now you can see
+uh<00:01:37.439><c> it's</c><00:01:37.759><c> identified</c><00:01:38.079><c> the</c><00:01:38.240><c> MCP</c><00:01:38.640><c> server</c>
+
+00:01:38.950 --> 00:01:38.960 align:start position:0%
+uh it's identified the MCP server
+ 
+
+00:01:38.960 --> 00:01:40.550 align:start position:0%
+uh it's identified the MCP server
+successfully.<00:01:39.520><c> I</c><00:01:39.759><c> can</c><00:01:39.840><c> go</c><00:01:40.000><c> ahead</c><00:01:40.159><c> and</c><00:01:40.240><c> hit</c>
+
+00:01:40.550 --> 00:01:40.560 align:start position:0%
+successfully. I can go ahead and hit
+ 
+
+00:01:40.560 --> 00:01:43.450 align:start position:0%
+successfully. I can go ahead and hit
+run.
+
+00:01:43.450 --> 00:01:43.460 align:start position:0%
+run.
+ 
+
+00:01:43.460 --> 00:01:45.910 align:start position:0%
+run.
+[Music]
+
+00:01:45.910 --> 00:01:45.920 align:start position:0%
+[Music]
+ 
+
+00:01:45.920 --> 00:01:47.429 align:start position:0%
+[Music]
+And<00:01:46.079><c> you</c><00:01:46.240><c> can</c><00:01:46.320><c> see</c><00:01:46.479><c> here</c><00:01:46.640><c> it</c><00:01:46.799><c> was</c><00:01:46.880><c> able</c><00:01:47.119><c> to</c><00:01:47.200><c> grab</c>
+
+00:01:47.429 --> 00:01:47.439 align:start position:0%
+And you can see here it was able to grab
+ 
+
+00:01:47.439 --> 00:01:49.990 align:start position:0%
+And you can see here it was able to grab
+context<00:01:47.920><c> from</c><00:01:48.240><c> linear</c><00:01:48.720><c> directly.</c><00:01:49.759><c> I'm</c><00:01:49.920><c> going</c>
+
+00:01:49.990 --> 00:01:50.000 align:start position:0%
+context from linear directly. I'm going
+ 
+
+00:01:50.000 --> 00:01:51.429 align:start position:0%
+context from linear directly. I'm going
+to<00:01:50.079><c> go</c><00:01:50.159><c> ahead</c><00:01:50.320><c> and</c><00:01:50.399><c> run</c><00:01:50.560><c> cargo</c><00:01:50.960><c> run</c><00:01:51.119><c> and</c><00:01:51.280><c> see</c><00:01:51.360><c> if</c>
+
+00:01:51.429 --> 00:01:51.439 align:start position:0%
+to go ahead and run cargo run and see if
+ 
+
+00:01:51.439 --> 00:01:53.030 align:start position:0%
+to go ahead and run cargo run and see if
+the<00:01:51.600><c> features</c><00:01:51.920><c> working.</c><00:01:52.399><c> And</c><00:01:52.560><c> look</c><00:01:52.720><c> at</c><00:01:52.799><c> that.</c>
+
+00:01:53.030 --> 00:01:53.040 align:start position:0%
+the features working. And look at that.
+ 
+
+00:01:53.040 --> 00:01:54.149 align:start position:0%
+the features working. And look at that.
+That's<00:01:53.200><c> pretty</c><00:01:53.439><c> straightforward.</c><00:01:53.920><c> Worked</c>
+
+00:01:54.149 --> 00:01:54.159 align:start position:0%
+That's pretty straightforward. Worked
+ 
+
+00:01:54.159 --> 00:01:55.749 align:start position:0%
+That's pretty straightforward. Worked
+right<00:01:54.320><c> away.</c><00:01:54.560><c> It</c><00:01:54.799><c> was</c><00:01:54.880><c> able</c><00:01:55.040><c> to</c><00:01:55.119><c> go</c><00:01:55.200><c> to</c><00:01:55.360><c> linear,</c>
+
+00:01:55.749 --> 00:01:55.759 align:start position:0%
+right away. It was able to go to linear,
+ 
+
+00:01:55.759 --> 00:01:57.270 align:start position:0%
+right away. It was able to go to linear,
+grab<00:01:56.000><c> all</c><00:01:56.159><c> the</c><00:01:56.240><c> context</c><00:01:56.640><c> it</c><00:01:56.799><c> needed</c><00:01:56.960><c> to</c><00:01:57.119><c> figure</c>
+
+00:01:57.270 --> 00:01:57.280 align:start position:0%
+grab all the context it needed to figure
+ 
+
+00:01:57.280 --> 00:01:58.550 align:start position:0%
+grab all the context it needed to figure
+out<00:01:57.360><c> which</c><00:01:57.600><c> problem</c><00:01:57.759><c> it</c><00:01:58.000><c> needed</c><00:01:58.079><c> to</c><00:01:58.240><c> solve,</c>
+
+00:01:58.550 --> 00:01:58.560 align:start position:0%
+out which problem it needed to solve,
+ 
+
+00:01:58.560 --> 00:02:00.230 align:start position:0%
+out which problem it needed to solve,
+look<00:01:58.799><c> through</c><00:01:58.960><c> the</c><00:01:59.200><c> code</c><00:01:59.360><c> to</c><00:01:59.680><c> identify</c><00:02:00.000><c> how</c>
+
+00:02:00.230 --> 00:02:00.240 align:start position:0%
+look through the code to identify how
+ 
+
+00:02:00.240 --> 00:02:01.749 align:start position:0%
+look through the code to identify how
+other<00:02:00.479><c> chips</c><00:02:00.719><c> were</c><00:02:00.960><c> implemented,</c><00:02:01.520><c> and</c>
+
+00:02:01.749 --> 00:02:01.759 align:start position:0%
+other chips were implemented, and
+ 
+
+00:02:01.759 --> 00:02:03.190 align:start position:0%
+other chips were implemented, and
+ultimately<00:02:02.240><c> build</c><00:02:02.479><c> this</c><00:02:02.719><c> with</c><00:02:02.880><c> very</c><00:02:03.040><c> little</c>
+
+00:02:03.190 --> 00:02:03.200 align:start position:0%
+ultimately build this with very little
+ 
+
+00:02:03.200 --> 00:02:04.709 align:start position:0%
+ultimately build this with very little
+input<00:02:03.439><c> on</c><00:02:03.600><c> my</c><00:02:03.759><c> part.</c><00:02:04.159><c> It</c><00:02:04.320><c> just</c><00:02:04.479><c> kind</c><00:02:04.640><c> of</c>
+
+00:02:04.709 --> 00:02:04.719 align:start position:0%
+input on my part. It just kind of
+ 
+
+00:02:04.719 --> 00:02:07.719 align:start position:0%
+input on my part. It just kind of
+worked.
+

@@ -1,0 +1,120 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.080 --> 00:00:03.030 align:start position:0%
+ 
+You'll<00:00:00.400><c> want</c><00:00:00.560><c> rules</c><00:00:01.040><c> to</c><00:00:01.600><c> author</c><00:00:02.000><c> your</c><00:00:02.320><c> code.</c>
+
+00:00:03.030 --> 00:00:03.040 align:start position:0%
+You'll want rules to author your code.
+ 
+
+00:00:03.040 --> 00:00:04.630 align:start position:0%
+You'll want rules to author your code.
+This<00:00:03.200><c> can</c><00:00:03.439><c> get</c><00:00:03.600><c> pretty</c><00:00:03.919><c> detailed</c><00:00:04.400><c> and</c>
+
+00:00:04.630 --> 00:00:04.640 align:start position:0%
+This can get pretty detailed and
+ 
+
+00:00:04.640 --> 00:00:06.710 align:start position:0%
+This can get pretty detailed and
+personal,<00:00:05.040><c> but</c><00:00:05.200><c> it's</c><00:00:05.359><c> best</c><00:00:05.520><c> to</c><00:00:05.839><c> start</c><00:00:06.240><c> by</c><00:00:06.480><c> just</c>
+
+00:00:06.710 --> 00:00:06.720 align:start position:0%
+personal, but it's best to start by just
+ 
+
+00:00:06.720 --> 00:00:08.790 align:start position:0%
+personal, but it's best to start by just
+telling<00:00:06.960><c> the</c><00:00:07.120><c> agent</c><00:00:07.440><c> to</c><00:00:07.839><c> format</c><00:00:08.320><c> and</c><00:00:08.639><c> check</c>
+
+00:00:08.790 --> 00:00:08.800 align:start position:0%
+telling the agent to format and check
+ 
+
+00:00:08.800 --> 00:00:10.629 align:start position:0%
+telling the agent to format and check
+its<00:00:09.120><c> work</c><00:00:09.519><c> and</c><00:00:09.760><c> also</c><00:00:10.000><c> describe</c><00:00:10.400><c> your</c>
+
+00:00:10.629 --> 00:00:10.639 align:start position:0%
+its work and also describe your
+ 
+
+00:00:10.639 --> 00:00:12.310 align:start position:0%
+its work and also describe your
+preferences,<00:00:11.200><c> like</c><00:00:11.360><c> using</c><00:00:11.679><c> types</c><00:00:12.080><c> over</c>
+
+00:00:12.310 --> 00:00:12.320 align:start position:0%
+preferences, like using types over
+ 
+
+00:00:12.320 --> 00:00:14.629 align:start position:0%
+preferences, like using types over
+interfaces<00:00:12.800><c> in</c><00:00:13.040><c> Typescript.</c><00:00:14.080><c> This</c><00:00:14.240><c> helps</c><00:00:14.480><c> an</c>
+
+00:00:14.629 --> 00:00:14.639 align:start position:0%
+interfaces in Typescript. This helps an
+ 
+
+00:00:14.639 --> 00:00:16.470 align:start position:0%
+interfaces in Typescript. This helps an
+agent<00:00:15.040><c> write</c><00:00:15.360><c> code</c><00:00:15.599><c> correctly</c><00:00:15.920><c> the</c><00:00:16.240><c> first</c>
+
+00:00:16.470 --> 00:00:16.480 align:start position:0%
+agent write code correctly the first
+ 
+
+00:00:16.480 --> 00:00:18.630 align:start position:0%
+agent write code correctly the first
+time<00:00:16.960><c> and</c><00:00:17.279><c> catch</c><00:00:17.680><c> errors</c><00:00:18.000><c> before</c><00:00:18.240><c> returning</c>
+
+00:00:18.630 --> 00:00:18.640 align:start position:0%
+time and catch errors before returning
+ 
+
+00:00:18.640 --> 00:00:20.870 align:start position:0%
+time and catch errors before returning
+with<00:00:18.800><c> the</c><00:00:19.039><c> solution.</c><00:00:20.000><c> I</c><00:00:20.240><c> also</c><00:00:20.480><c> like</c><00:00:20.640><c> to</c>
+
+00:00:20.870 --> 00:00:20.880 align:start position:0%
+with the solution. I also like to
+ 
+
+00:00:20.880 --> 00:00:23.429 align:start position:0%
+with the solution. I also like to
+improve<00:00:21.520><c> code</c><00:00:21.920><c> comment</c><00:00:22.320><c> quality</c><00:00:22.800><c> by</c><00:00:23.199><c> using</c>
+
+00:00:23.429 --> 00:00:23.439 align:start position:0%
+improve code comment quality by using
+ 
+
+00:00:23.439 --> 00:00:25.910 align:start position:0%
+improve code comment quality by using
+the<00:00:23.600><c> Hemingway</c><00:00:24.320><c> test,</c><00:00:24.720><c> which</c><00:00:24.960><c> is</c><00:00:25.119><c> inspired</c><00:00:25.519><c> by</c>
+
+00:00:25.910 --> 00:00:25.920 align:start position:0%
+the Hemingway test, which is inspired by
+ 
+
+00:00:25.920 --> 00:00:28.230 align:start position:0%
+the Hemingway test, which is inspired by
+Ernest<00:00:26.320><c> Hemingway,</c><00:00:27.039><c> who</c><00:00:27.439><c> had</c><00:00:27.680><c> a</c><00:00:27.840><c> way</c><00:00:28.000><c> with</c>
+
+00:00:28.230 --> 00:00:28.240 align:start position:0%
+Ernest Hemingway, who had a way with
+ 
+
+00:00:28.240 --> 00:00:30.230 align:start position:0%
+Ernest Hemingway, who had a way with
+keeping<00:00:28.560><c> things</c><00:00:28.880><c> simple.</c><00:00:29.519><c> This</c><00:00:29.760><c> keeps</c><00:00:30.000><c> your</c>
+
+00:00:30.230 --> 00:00:30.240 align:start position:0%
+keeping things simple. This keeps your
+ 
+
+00:00:30.240 --> 00:00:33.599 align:start position:0%
+keeping things simple. This keeps your
+JS<00:00:30.560><c> docs</c><00:00:30.960><c> nice</c><00:00:31.199><c> and</c><00:00:31.439><c> readable.</c>
+

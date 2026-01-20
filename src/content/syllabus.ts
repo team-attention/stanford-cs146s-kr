@@ -293,7 +293,9 @@ export const syllabus: Week[] = [
     readings: [
       {
         title: 'Warp University',
-        url: 'https://www.warp.dev/university?slug=university',
+        url: 'https://www.warp.dev/university',
+        krSlug: 'warp-university',
+        translationStatus: 'complete',
       },
       {
         title: 'Warp vs Claude Code',

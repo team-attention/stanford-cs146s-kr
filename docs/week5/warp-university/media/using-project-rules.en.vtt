@@ -1,0 +1,752 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.160 --> 00:00:02.070 align:start position:0%
+ 
+Warp's<00:00:00.719><c> project</c><00:00:01.040><c> rule</c><00:00:01.360><c> files</c><00:00:01.760><c> are</c><00:00:01.920><c> going</c><00:00:02.000><c> to</c>
+
+00:00:02.070 --> 00:00:02.080 align:start position:0%
+Warp's project rule files are going to
+ 
+
+00:00:02.080 --> 00:00:03.909 align:start position:0%
+Warp's project rule files are going to
+make<00:00:02.240><c> it</c><00:00:02.399><c> so</c><00:00:02.560><c> much</c><00:00:02.800><c> easier</c><00:00:03.120><c> for</c><00:00:03.280><c> you</c><00:00:03.439><c> to</c><00:00:03.600><c> build</c>
+
+00:00:03.909 --> 00:00:03.919 align:start position:0%
+make it so much easier for you to build
+ 
+
+00:00:03.919 --> 00:00:06.309 align:start position:0%
+make it so much easier for you to build
+big<00:00:04.240><c> projects</c><00:00:04.640><c> without</c><00:00:05.040><c> hallucinations</c><00:00:06.160><c> and</c>
+
+00:00:06.309 --> 00:00:06.319 align:start position:0%
+big projects without hallucinations and
+ 
+
+00:00:06.319 --> 00:00:08.549 align:start position:0%
+big projects without hallucinations and
+to<00:00:06.560><c> keep</c><00:00:06.640><c> your</c><00:00:06.879><c> LLM</c><00:00:07.359><c> laser</c><00:00:07.759><c> focused</c><00:00:08.080><c> on</c><00:00:08.320><c> your</c>
+
+00:00:08.549 --> 00:00:08.559 align:start position:0%
+to keep your LLM laser focused on your
+ 
+
+00:00:08.559 --> 00:00:10.709 align:start position:0%
+to keep your LLM laser focused on your
+project.<00:00:09.120><c> Instead</c><00:00:09.440><c> of</c><00:00:09.599><c> having</c><00:00:09.840><c> to</c><00:00:10.080><c> reexplain</c>
+
+00:00:10.709 --> 00:00:10.719 align:start position:0%
+project. Instead of having to reexplain
+ 
+
+00:00:10.719 --> 00:00:12.709 align:start position:0%
+project. Instead of having to reexplain
+your<00:00:10.880><c> setup</c><00:00:11.280><c> each</c><00:00:11.519><c> time,</c><00:00:11.920><c> you</c><00:00:12.160><c> can</c><00:00:12.320><c> document</c>
+
+00:00:12.709 --> 00:00:12.719 align:start position:0%
+your setup each time, you can document
+ 
+
+00:00:12.719 --> 00:00:15.030 align:start position:0%
+your setup each time, you can document
+it<00:00:12.880><c> once</c><00:00:13.440><c> and</c><00:00:13.840><c> warp</c><00:00:14.160><c> will</c><00:00:14.320><c> always</c><00:00:14.559><c> have</c><00:00:14.799><c> that</c>
+
+00:00:15.030 --> 00:00:15.040 align:start position:0%
+it once and warp will always have that
+ 
+
+00:00:15.040 --> 00:00:16.710 align:start position:0%
+it once and warp will always have that
+context.<00:00:15.759><c> In</c><00:00:16.000><c> this</c><00:00:16.160><c> video,</c><00:00:16.400><c> I'm</c><00:00:16.560><c> going</c><00:00:16.640><c> to</c>
+
+00:00:16.710 --> 00:00:16.720 align:start position:0%
+context. In this video, I'm going to
+ 
+
+00:00:16.720 --> 00:00:19.189 align:start position:0%
+context. In this video, I'm going to
+show<00:00:16.880><c> you</c><00:00:17.039><c> what</c><00:00:17.199><c> a</c><00:00:17.359><c> warp</c><00:00:17.760><c> markdown</c><00:00:18.240><c> file</c><00:00:18.560><c> is,</c>
+
+00:00:19.189 --> 00:00:19.199 align:start position:0%
+show you what a warp markdown file is,
+ 
+
+00:00:19.199 --> 00:00:21.109 align:start position:0%
+show you what a warp markdown file is,
+walk<00:00:19.520><c> through</c><00:00:19.760><c> an</c><00:00:20.000><c> example,</c><00:00:20.480><c> and</c><00:00:20.640><c> then</c><00:00:20.880><c> share</c>
+
+00:00:21.109 --> 00:00:21.119 align:start position:0%
+walk through an example, and then share
+ 
+
+00:00:21.119 --> 00:00:23.029 align:start position:0%
+walk through an example, and then share
+some<00:00:21.359><c> best</c><00:00:21.680><c> practices</c><00:00:22.160><c> for</c><00:00:22.400><c> getting</c><00:00:22.640><c> the</c><00:00:22.880><c> most</c>
+
+00:00:23.029 --> 00:00:23.039 align:start position:0%
+some best practices for getting the most
+ 
+
+00:00:23.039 --> 00:00:24.950 align:start position:0%
+some best practices for getting the most
+out<00:00:23.199><c> of</c><00:00:23.359><c> it.</c><00:00:23.760><c> So,</c><00:00:24.080><c> getting</c><00:00:24.400><c> started</c><00:00:24.720><c> is</c>
+
+00:00:24.950 --> 00:00:24.960 align:start position:0%
+out of it. So, getting started is
+ 
+
+00:00:24.960 --> 00:00:27.990 align:start position:0%
+out of it. So, getting started is
+simple.<00:00:25.519><c> First,</c><00:00:25.840><c> you</c><00:00:26.080><c> want</c><00:00:26.160><c> to</c><00:00:26.320><c> run</c><00:00:26.800><c> /init</c><00:00:27.760><c> and</c>
+
+00:00:27.990 --> 00:00:28.000 align:start position:0%
+simple. First, you want to run /init and
+ 
+
+00:00:28.000 --> 00:00:30.230 align:start position:0%
+simple. First, you want to run /init and
+warp<00:00:28.400><c> will</c><00:00:28.560><c> generate</c><00:00:28.800><c> a</c><00:00:29.039><c> starter</c><00:00:29.439><c> file</c><00:00:29.920><c> called</c>
+
+00:00:30.230 --> 00:00:30.240 align:start position:0%
+warp will generate a starter file called
+ 
+
+00:00:30.240 --> 00:00:32.709 align:start position:0%
+warp will generate a starter file called
+warp.md<00:00:31.199><c> in</c><00:00:31.359><c> your</c><00:00:31.599><c> project</c><00:00:31.920><c> route.</c><00:00:32.559><c> Now,</c>
+
+00:00:32.709 --> 00:00:32.719 align:start position:0%
+warp.md in your project route. Now,
+ 
+
+00:00:32.719 --> 00:00:34.870 align:start position:0%
+warp.md in your project route. Now,
+let's<00:00:33.040><c> walk</c><00:00:33.280><c> through</c><00:00:33.520><c> a</c><00:00:33.840><c> real</c><00:00:34.079><c> example.</c><00:00:34.640><c> I've</c>
+
+00:00:34.870 --> 00:00:34.880 align:start position:0%
+let's walk through a real example. I've
+ 
+
+00:00:34.880 --> 00:00:36.950 align:start position:0%
+let's walk through a real example. I've
+created<00:00:35.200><c> one</c><00:00:35.440><c> for</c><00:00:35.600><c> my</c><00:00:35.760><c> Astro</c><00:00:36.320><c> and</c><00:00:36.559><c> React</c>
+
+00:00:36.950 --> 00:00:36.960 align:start position:0%
+created one for my Astro and React
+ 
+
+00:00:36.960 --> 00:00:39.590 align:start position:0%
+created one for my Astro and React
+project<00:00:37.360><c> that</c><00:00:37.680><c> uses</c><00:00:38.000><c> Firebase</c><00:00:38.719><c> and</c><00:00:38.879><c> Versel.</c>
+
+00:00:39.590 --> 00:00:39.600 align:start position:0%
+project that uses Firebase and Versel.
+ 
+
+00:00:39.600 --> 00:00:41.830 align:start position:0%
+project that uses Firebase and Versel.
+If<00:00:39.760><c> I</c><00:00:39.920><c> type</c><00:00:40.239><c> ls</c><00:00:40.719><c> in</c><00:00:40.879><c> my</c><00:00:41.040><c> project</c><00:00:41.360><c> route,</c><00:00:41.680><c> you</c>
+
+00:00:41.830 --> 00:00:41.840 align:start position:0%
+If I type ls in my project route, you
+ 
+
+00:00:41.840 --> 00:00:44.229 align:start position:0%
+If I type ls in my project route, you
+can<00:00:42.000><c> actually</c><00:00:42.239><c> see</c><00:00:42.480><c> I</c><00:00:42.719><c> have</c><00:00:42.879><c> the</c><00:00:43.120><c> warp.md</c><00:00:44.000><c> file</c>
+
+00:00:44.229 --> 00:00:44.239 align:start position:0%
+can actually see I have the warp.md file
+ 
+
+00:00:44.239 --> 00:00:45.750 align:start position:0%
+can actually see I have the warp.md file
+right<00:00:44.399><c> there.</c><00:00:44.800><c> And</c><00:00:44.879><c> I</c><00:00:45.120><c> can</c><00:00:45.200><c> open</c><00:00:45.360><c> it</c><00:00:45.600><c> by</c>
+
+00:00:45.750 --> 00:00:45.760 align:start position:0%
+right there. And I can open it by
+ 
+
+00:00:45.760 --> 00:00:48.790 align:start position:0%
+right there. And I can open it by
+running<00:00:46.239><c> /open</c><00:00:47.120><c> project</c><00:00:47.600><c> rules</c><00:00:48.239><c> and</c><00:00:48.399><c> warp</c>
+
+00:00:48.790 --> 00:00:48.800 align:start position:0%
+running /open project rules and warp
+ 
+
+00:00:48.800 --> 00:00:50.630 align:start position:0%
+running /open project rules and warp
+will<00:00:48.879><c> pull</c><00:00:49.039><c> it</c><00:00:49.200><c> up</c><00:00:49.360><c> in</c><00:00:49.520><c> a</c><00:00:49.680><c> side</c><00:00:50.000><c> file</c><00:00:50.320><c> editor</c>
+
+00:00:50.630 --> 00:00:50.640 align:start position:0%
+will pull it up in a side file editor
+ 
+
+00:00:50.640 --> 00:00:52.389 align:start position:0%
+will pull it up in a side file editor
+where<00:00:50.879><c> I</c><00:00:51.039><c> can</c><00:00:51.200><c> scroll</c><00:00:51.520><c> and</c><00:00:51.760><c> see</c><00:00:52.000><c> everything</c>
+
+00:00:52.389 --> 00:00:52.399 align:start position:0%
+where I can scroll and see everything
+ 
+
+00:00:52.399 --> 00:00:54.150 align:start position:0%
+where I can scroll and see everything
+inside.<00:00:52.960><c> You</c><00:00:53.199><c> can</c><00:00:53.280><c> see</c><00:00:53.360><c> that</c><00:00:53.520><c> the</c><00:00:53.680><c> markdown</c>
+
+00:00:54.150 --> 00:00:54.160 align:start position:0%
+inside. You can see that the markdown
+ 
+
+00:00:54.160 --> 00:00:56.630 align:start position:0%
+inside. You can see that the markdown
+file<00:00:54.399><c> aderes</c><00:00:54.879><c> by</c><00:00:55.120><c> best</c><00:00:55.440><c> practices</c><00:00:56.000><c> like</c><00:00:56.239><c> using</c>
+
+00:00:56.630 --> 00:00:56.640 align:start position:0%
+file aderes by best practices like using
+ 
+
+00:00:56.640 --> 00:00:58.470 align:start position:0%
+file aderes by best practices like using
+standard<00:00:57.039><c> markdown</c><00:00:57.520><c> headings</c><00:00:57.920><c> to</c><00:00:58.079><c> organize</c>
+
+00:00:58.470 --> 00:00:58.480 align:start position:0%
+standard markdown headings to organize
+ 
+
+00:00:58.480 --> 00:01:00.389 align:start position:0%
+standard markdown headings to organize
+the<00:00:58.640><c> file</c><00:00:58.879><c> into</c><00:00:59.120><c> logical</c><00:00:59.600><c> sections.</c><00:01:00.239><c> The</c>
+
+00:01:00.389 --> 00:01:00.399 align:start position:0%
+the file into logical sections. The
+ 
+
+00:01:00.399 --> 00:01:02.389 align:start position:0%
+the file into logical sections. The
+first<00:01:00.559><c> section</c><00:01:00.960><c> covers</c><00:01:01.440><c> common</c><00:01:01.760><c> commands</c>
+
+00:01:02.389 --> 00:01:02.399 align:start position:0%
+first section covers common commands
+ 
+
+00:01:02.399 --> 00:01:04.549 align:start position:0%
+first section covers common commands
+things<00:01:02.559><c> like</c><00:01:02.800><c> npm</c><00:01:03.280><c> rundev</c><00:01:03.840><c> to</c><00:01:04.000><c> start</c><00:01:04.159><c> the</c><00:01:04.320><c> dev</c>
+
+00:01:04.549 --> 00:01:04.559 align:start position:0%
+things like npm rundev to start the dev
+ 
+
+00:01:04.559 --> 00:01:06.789 align:start position:0%
+things like npm rundev to start the dev
+server,<00:01:05.040><c> npm</c><00:01:05.519><c> run</c><00:01:05.760><c> build</c><00:01:06.000><c> for</c><00:01:06.240><c> production</c><00:01:06.640><c> and</c>
+
+00:01:06.789 --> 00:01:06.799 align:start position:0%
+server, npm run build for production and
+ 
+
+00:01:06.799 --> 00:01:09.109 align:start position:0%
+server, npm run build for production and
+npm<00:01:07.280><c> install</c><00:01:07.680><c> for</c><00:01:07.840><c> dependencies.</c><00:01:08.640><c> This</c><00:01:08.799><c> gives</c>
+
+00:01:09.109 --> 00:01:09.119 align:start position:0%
+npm install for dependencies. This gives
+ 
+
+00:01:09.119 --> 00:01:11.350 align:start position:0%
+npm install for dependencies. This gives
+warp<00:01:09.520><c> reproducible</c><00:01:10.159><c> ways</c><00:01:10.479><c> to</c><00:01:10.640><c> run</c><00:01:10.880><c> and</c><00:01:11.119><c> build</c>
+
+00:01:11.350 --> 00:01:11.360 align:start position:0%
+warp reproducible ways to run and build
+ 
+
+00:01:11.360 --> 00:01:13.190 align:start position:0%
+warp reproducible ways to run and build
+your<00:01:11.600><c> project.</c><00:01:12.159><c> Next</c><00:01:12.320><c> is</c><00:01:12.479><c> the</c><00:01:12.720><c> architecture</c>
+
+00:01:13.190 --> 00:01:13.200 align:start position:0%
+your project. Next is the architecture
+ 
+
+00:01:13.200 --> 00:01:15.350 align:start position:0%
+your project. Next is the architecture
+overview.<00:01:13.760><c> At</c><00:01:14.000><c> a</c><00:01:14.159><c> high</c><00:01:14.320><c> level,</c><00:01:14.640><c> this</c><00:01:14.799><c> app</c><00:01:15.040><c> lets</c>
+
+00:01:15.350 --> 00:01:15.360 align:start position:0%
+overview. At a high level, this app lets
+ 
+
+00:01:15.360 --> 00:01:17.510 align:start position:0%
+overview. At a high level, this app lets
+developers<00:01:15.920><c> upload</c><00:01:16.320><c> brew</c><00:01:16.640><c> files,</c><00:01:17.200><c> stores</c>
+
+00:01:17.510 --> 00:01:17.520 align:start position:0%
+developers upload brew files, stores
+ 
+
+00:01:17.520 --> 00:01:19.749 align:start position:0%
+developers upload brew files, stores
+them<00:01:17.680><c> in</c><00:01:17.840><c> Firebase,</c><00:01:18.720><c> runs</c><00:01:19.040><c> personality</c>
+
+00:01:19.749 --> 00:01:19.759 align:start position:0%
+them in Firebase, runs personality
+ 
+
+00:01:19.759 --> 00:01:21.749 align:start position:0%
+them in Firebase, runs personality
+analysis,<00:01:20.479><c> and</c><00:01:20.640><c> displays</c><00:01:21.040><c> the</c><00:01:21.200><c> results</c><00:01:21.439><c> in</c><00:01:21.600><c> a</c>
+
+00:01:21.749 --> 00:01:21.759 align:start position:0%
+analysis, and displays the results in a
+ 
+
+00:01:21.759 --> 00:01:23.749 align:start position:0%
+analysis, and displays the results in a
+web<00:01:21.920><c> UI.</c><00:01:22.320><c> The</c><00:01:22.560><c> file</c><00:01:22.799><c> even</c><00:01:23.040><c> includes</c><00:01:23.439><c> flow</c>
+
+00:01:23.749 --> 00:01:23.759 align:start position:0%
+web UI. The file even includes flow
+ 
+
+00:01:23.759 --> 00:01:25.429 align:start position:0%
+web UI. The file even includes flow
+diagrams<00:01:24.159><c> and</c><00:01:24.479><c> component</c><00:01:24.880><c> interaction</c>
+
+00:01:25.429 --> 00:01:25.439 align:start position:0%
+diagrams and component interaction
+ 
+
+00:01:25.439 --> 00:01:27.109 align:start position:0%
+diagrams and component interaction
+diagrams<00:01:25.920><c> to</c><00:01:26.080><c> make</c><00:01:26.240><c> the</c><00:01:26.400><c> system</c><00:01:26.640><c> easy</c><00:01:26.960><c> to</c>
+
+00:01:27.109 --> 00:01:27.119 align:start position:0%
+diagrams to make the system easy to
+ 
+
+00:01:27.119 --> 00:01:29.030 align:start position:0%
+diagrams to make the system easy to
+understand.<00:01:27.680><c> From</c><00:01:27.840><c> there</c><00:01:28.080><c> it</c><00:01:28.240><c> goes</c><00:01:28.400><c> into</c><00:01:28.799><c> key</c>
+
+00:01:29.030 --> 00:01:29.040 align:start position:0%
+understand. From there it goes into key
+ 
+
+00:01:29.040 --> 00:01:31.270 align:start position:0%
+understand. From there it goes into key
+architecture<00:01:29.680><c> details</c><00:01:30.479><c> like</c><00:01:30.720><c> the</c><00:01:30.880><c> front</c><00:01:31.040><c> end</c>
+
+00:01:31.270 --> 00:01:31.280 align:start position:0%
+architecture details like the front end
+ 
+
+00:01:31.280 --> 00:01:34.069 align:start position:0%
+architecture details like the front end
+uses<00:01:31.680><c> Astro.</c><00:01:32.479><c> The</c><00:01:32.640><c> back</c><00:01:32.880><c> end</c><00:01:33.200><c> uses</c><00:01:33.520><c> serverless</c>
+
+00:01:34.069 --> 00:01:34.079 align:start position:0%
+uses Astro. The back end uses serverless
+ 
+
+00:01:34.079 --> 00:01:36.950 align:start position:0%
+uses Astro. The back end uses serverless
+API<00:01:34.479><c> routes.</c><00:01:35.119><c> The</c><00:01:35.360><c> database</c><00:01:35.759><c> is</c><00:01:36.000><c> Firebase</c><00:01:36.720><c> and</c>
+
+00:01:36.950 --> 00:01:36.960 align:start position:0%
+API routes. The database is Firebase and
+ 
+
+00:01:36.960 --> 00:01:39.030 align:start position:0%
+API routes. The database is Firebase and
+for<00:01:37.200><c> deployment</c><00:01:37.680><c> is</c><00:01:37.920><c> Versel.</c><00:01:38.640><c> It</c><00:01:38.799><c> also</c>
+
+00:01:39.030 --> 00:01:39.040 align:start position:0%
+for deployment is Versel. It also
+ 
+
+00:01:39.040 --> 00:01:40.630 align:start position:0%
+for deployment is Versel. It also
+documents<00:01:39.439><c> the</c><00:01:39.600><c> project</c><00:01:39.920><c> structure</c><00:01:40.400><c> like</c>
+
+00:01:40.630 --> 00:01:40.640 align:start position:0%
+documents the project structure like
+ 
+
+00:01:40.640 --> 00:01:42.950 align:start position:0%
+documents the project structure like
+where<00:01:40.880><c> to</c><00:01:41.040><c> find</c><00:01:41.280><c> components</c><00:01:42.000><c> types</c><00:01:42.479><c> utilities</c>
+
+00:01:42.950 --> 00:01:42.960 align:start position:0%
+where to find components types utilities
+ 
+
+00:01:42.960 --> 00:01:44.870 align:start position:0%
+where to find components types utilities
+and<00:01:43.200><c> the</c><00:01:43.360><c> Firebase</c><00:01:43.840><c> config.</c><00:01:44.320><c> Now</c><00:01:44.560><c> there</c><00:01:44.640><c> are</c><00:01:44.720><c> a</c>
+
+00:01:44.870 --> 00:01:44.880 align:start position:0%
+and the Firebase config. Now there are a
+ 
+
+00:01:44.880 --> 00:01:46.710 align:start position:0%
+and the Firebase config. Now there are a
+couple<00:01:45.119><c> tips</c><00:01:45.439><c> I'd</c><00:01:45.680><c> like</c><00:01:45.840><c> to</c><00:01:46.000><c> share</c><00:01:46.320><c> to</c><00:01:46.560><c> make</c>
+
+00:01:46.710 --> 00:01:46.720 align:start position:0%
+couple tips I'd like to share to make
+ 
+
+00:01:46.720 --> 00:01:48.710 align:start position:0%
+couple tips I'd like to share to make
+the<00:01:46.880><c> most</c><00:01:47.119><c> out</c><00:01:47.280><c> of</c><00:01:47.439><c> your</c><00:01:47.680><c> project</c><00:01:48.000><c> rules.</c><00:01:48.479><c> The</c>
+
+00:01:48.710 --> 00:01:48.720 align:start position:0%
+the most out of your project rules. The
+ 
+
+00:01:48.720 --> 00:01:50.389 align:start position:0%
+the most out of your project rules. The
+first<00:01:48.960><c> is</c><00:01:49.200><c> to</c><00:01:49.439><c> be</c><00:01:49.600><c> very</c><00:01:49.920><c> lean</c><00:01:50.240><c> and</c>
+
+00:01:50.389 --> 00:01:50.399 align:start position:0%
+first is to be very lean and
+ 
+
+00:01:50.399 --> 00:01:52.069 align:start position:0%
+first is to be very lean and
+intentional.<00:01:51.119><c> So</c><00:01:51.360><c> everything</c><00:01:51.680><c> in</c><00:01:51.840><c> your</c>
+
+00:01:52.069 --> 00:01:52.079 align:start position:0%
+intentional. So everything in your
+ 
+
+00:01:52.079 --> 00:01:54.630 align:start position:0%
+intentional. So everything in your
+warp.mmd<00:01:52.880><c> file</c><00:01:53.200><c> gets</c><00:01:53.520><c> prepended</c><00:01:54.240><c> to</c><00:01:54.479><c> your</c>
+
+00:01:54.630 --> 00:01:54.640 align:start position:0%
+warp.mmd file gets prepended to your
+ 
+
+00:01:54.640 --> 00:01:56.789 align:start position:0%
+warp.mmd file gets prepended to your
+prompt.<00:01:55.119><c> That</c><00:01:55.360><c> means</c><00:01:55.520><c> a</c><00:01:55.759><c> longer</c><00:01:56.159><c> file</c><00:01:56.479><c> eats</c>
+
+00:01:56.789 --> 00:01:56.799 align:start position:0%
+prompt. That means a longer file eats
+ 
+
+00:01:56.799 --> 00:01:58.469 align:start position:0%
+prompt. That means a longer file eats
+into<00:01:57.040><c> your</c><00:01:57.200><c> token</c><00:01:57.600><c> budget.</c><00:01:58.000><c> So</c><00:01:58.159><c> the</c><00:01:58.320><c> more</c>
+
+00:01:58.469 --> 00:01:58.479 align:start position:0%
+into your token budget. So the more
+ 
+
+00:01:58.479 --> 00:02:00.469 align:start position:0%
+into your token budget. So the more
+tokens<00:01:58.960><c> used,</c><00:01:59.360><c> the</c><00:01:59.600><c> more</c><00:01:59.759><c> computationally</c>
+
+00:02:00.469 --> 00:02:00.479 align:start position:0%
+tokens used, the more computationally
+ 
+
+00:02:00.479 --> 00:02:02.709 align:start position:0%
+tokens used, the more computationally
+expensive<00:02:00.960><c> each</c><00:02:01.280><c> request</c><00:02:01.680><c> becomes.</c><00:02:02.320><c> So</c><00:02:02.479><c> my</c>
+
+00:02:02.709 --> 00:02:02.719 align:start position:0%
+expensive each request becomes. So my
+ 
+
+00:02:02.719 --> 00:02:04.310 align:start position:0%
+expensive each request becomes. So my
+advice<00:02:02.960><c> is</c><00:02:03.119><c> to</c><00:02:03.280><c> keep</c><00:02:03.439><c> it</c><00:02:03.600><c> sharp</c><00:02:03.840><c> and</c><00:02:04.079><c> only</c>
+
+00:02:04.310 --> 00:02:04.320 align:start position:0%
+advice is to keep it sharp and only
+ 
+
+00:02:04.320 --> 00:02:06.310 align:start position:0%
+advice is to keep it sharp and only
+include<00:02:04.719><c> what</c><00:02:05.040><c> truly</c><00:02:05.360><c> matters.</c><00:02:05.920><c> The</c><00:02:06.079><c> second</c>
+
+00:02:06.310 --> 00:02:06.320 align:start position:0%
+include what truly matters. The second
+ 
+
+00:02:06.320 --> 00:02:08.229 align:start position:0%
+include what truly matters. The second
+is<00:02:06.799><c> you're</c><00:02:07.119><c> starting</c><00:02:07.360><c> with</c><00:02:07.439><c> a</c><00:02:07.680><c> boilerplate,</c>
+
+00:02:08.229 --> 00:02:08.239 align:start position:0%
+is you're starting with a boilerplate,
+ 
+
+00:02:08.239 --> 00:02:09.749 align:start position:0%
+is you're starting with a boilerplate,
+but<00:02:08.479><c> treat</c><00:02:08.720><c> this</c><00:02:08.959><c> file</c><00:02:09.119><c> as</c><00:02:09.280><c> a</c><00:02:09.520><c> living</c>
+
+00:02:09.749 --> 00:02:09.759 align:start position:0%
+but treat this file as a living
+ 
+
+00:02:09.759 --> 00:02:12.470 align:start position:0%
+but treat this file as a living
+document.<00:02:10.239><c> Warps/init</c><00:02:11.440><c> command</c><00:02:11.840><c> gives</c><00:02:12.080><c> you</c><00:02:12.160><c> a</c>
+
+00:02:12.470 --> 00:02:12.480 align:start position:0%
+document. Warps/init command gives you a
+ 
+
+00:02:12.480 --> 00:02:14.550 align:start position:0%
+document. Warps/init command gives you a
+solid<00:02:12.800><c> baseline,</c><00:02:13.360><c> but</c><00:02:13.599><c> the</c><00:02:13.760><c> real</c><00:02:14.000><c> value</c><00:02:14.319><c> comes</c>
+
+00:02:14.550 --> 00:02:14.560 align:start position:0%
+solid baseline, but the real value comes
+ 
+
+00:02:14.560 --> 00:02:16.550 align:start position:0%
+solid baseline, but the real value comes
+from<00:02:14.800><c> iterating.</c><00:02:15.440><c> For</c><00:02:15.599><c> example,</c><00:02:16.000><c> you</c><00:02:16.239><c> can</c><00:02:16.319><c> add</c>
+
+00:02:16.550 --> 00:02:16.560 align:start position:0%
+from iterating. For example, you can add
+ 
+
+00:02:16.560 --> 00:02:19.510 align:start position:0%
+from iterating. For example, you can add
+in<00:02:16.800><c> your</c><00:02:17.280><c> team's</c><00:02:17.680><c> git</c><00:02:18.000><c> workflow</c><00:02:18.879><c> like</c><00:02:19.120><c> always</c>
+
+00:02:19.510 --> 00:02:19.520 align:start position:0%
+in your team's git workflow like always
+ 
+
+00:02:19.520 --> 00:02:21.350 align:start position:0%
+in your team's git workflow like always
+branching<00:02:19.920><c> off</c><00:02:20.080><c> main,</c><00:02:20.560><c> using</c><00:02:20.800><c> descriptive</c>
+
+00:02:21.350 --> 00:02:21.360 align:start position:0%
+branching off main, using descriptive
+ 
+
+00:02:21.360 --> 00:02:23.589 align:start position:0%
+branching off main, using descriptive
+names,<00:02:21.840><c> opening</c><00:02:22.160><c> draft</c><00:02:22.480><c> PRs</c><00:02:22.959><c> early,</c><00:02:23.360><c> and</c>
+
+00:02:23.589 --> 00:02:23.599 align:start position:0%
+names, opening draft PRs early, and
+ 
+
+00:02:23.599 --> 00:02:25.430 align:start position:0%
+names, opening draft PRs early, and
+squash<00:02:24.000><c> only</c><00:02:24.239><c> when</c><00:02:24.480><c> merging.</c><00:02:25.040><c> As</c><00:02:25.280><c> your</c>
+
+00:02:25.430 --> 00:02:25.440 align:start position:0%
+squash only when merging. As your
+ 
+
+00:02:25.440 --> 00:02:27.190 align:start position:0%
+squash only when merging. As your
+project<00:02:25.840><c> grows,</c><00:02:26.239><c> you</c><00:02:26.400><c> want</c><00:02:26.480><c> to</c><00:02:26.640><c> keep</c><00:02:26.800><c> feeding</c>
+
+00:02:27.190 --> 00:02:27.200 align:start position:0%
+project grows, you want to keep feeding
+ 
+
+00:02:27.200 --> 00:02:29.510 align:start position:0%
+project grows, you want to keep feeding
+in<00:02:27.440><c> preferences</c><00:02:28.000><c> that</c><00:02:28.239><c> makes</c><00:02:28.560><c> warp</c><00:02:28.959><c> code</c><00:02:29.280><c> just</c>
+
+00:02:29.510 --> 00:02:29.520 align:start position:0%
+in preferences that makes warp code just
+ 
+
+00:02:29.520 --> 00:02:31.750 align:start position:0%
+in preferences that makes warp code just
+like<00:02:29.680><c> you</c><00:02:29.840><c> would.</c><00:02:30.239><c> Third</c><00:02:30.560><c> is</c><00:02:30.959><c> generating</c><00:02:31.440><c> rule</c>
+
+00:02:31.750 --> 00:02:31.760 align:start position:0%
+like you would. Third is generating rule
+ 
+
+00:02:31.760 --> 00:02:33.990 align:start position:0%
+like you would. Third is generating rule
+files<00:02:32.080><c> in</c><00:02:32.480><c> subdirectories.</c><00:02:33.519><c> So,</c><00:02:33.680><c> if</c><00:02:33.840><c> you're</c>
+
+00:02:33.990 --> 00:02:34.000 align:start position:0%
+files in subdirectories. So, if you're
+ 
+
+00:02:34.000 --> 00:02:36.150 align:start position:0%
+files in subdirectories. So, if you're
+working<00:02:34.239><c> in</c><00:02:34.480><c> a</c><00:02:34.720><c> large</c><00:02:35.040><c> monor</c><00:02:35.440><c> repo,</c><00:02:35.920><c> you</c><00:02:36.080><c> don't</c>
+
+00:02:36.150 --> 00:02:36.160 align:start position:0%
+working in a large monor repo, you don't
+ 
+
+00:02:36.160 --> 00:02:37.990 align:start position:0%
+working in a large monor repo, you don't
+have<00:02:36.319><c> to</c><00:02:36.400><c> cram</c><00:02:36.720><c> everything</c><00:02:37.040><c> into</c><00:02:37.360><c> one</c><00:02:37.599><c> doc.</c>
+
+00:02:37.990 --> 00:02:38.000 align:start position:0%
+have to cram everything into one doc.
+ 
+
+00:02:38.000 --> 00:02:40.229 align:start position:0%
+have to cram everything into one doc.
+For<00:02:38.160><c> example,</c><00:02:38.560><c> I</c><00:02:38.800><c> can</c><00:02:38.879><c> navigate</c><00:02:39.360><c> into</c><00:02:39.840><c> source</c>
+
+00:02:40.229 --> 00:02:40.239 align:start position:0%
+For example, I can navigate into source
+ 
+
+00:02:40.239 --> 00:02:43.030 align:start position:0%
+For example, I can navigate into source
+and<00:02:40.480><c> then</c><00:02:40.720><c> run</c><00:02:41.040><c> /init</c><00:02:41.840><c> again</c><00:02:42.160><c> to</c><00:02:42.480><c> generate</c><00:02:42.800><c> a</c>
+
+00:02:43.030 --> 00:02:43.040 align:start position:0%
+and then run /init again to generate a
+ 
+
+00:02:43.040 --> 00:02:45.030 align:start position:0%
+and then run /init again to generate a
+warp.mmd<00:02:44.080><c> tailored</c><00:02:44.480><c> just</c><00:02:44.720><c> to</c><00:02:44.800><c> that</c>
+
+00:02:45.030 --> 00:02:45.040 align:start position:0%
+warp.mmd tailored just to that
+ 
+
+00:02:45.040 --> 00:02:46.630 align:start position:0%
+warp.mmd tailored just to that
+directory.<00:02:45.760><c> Obviously,</c><00:02:46.160><c> it's</c><00:02:46.319><c> a</c><00:02:46.480><c> bit</c>
+
+00:02:46.630 --> 00:02:46.640 align:start position:0%
+directory. Obviously, it's a bit
+ 
+
+00:02:46.640 --> 00:02:48.710 align:start position:0%
+directory. Obviously, it's a bit
+redundant<00:02:47.120><c> here</c><00:02:47.360><c> since</c><00:02:47.680><c> this</c><00:02:47.920><c> project</c><00:02:48.239><c> is</c><00:02:48.480><c> so</c>
+
+00:02:48.710 --> 00:02:48.720 align:start position:0%
+redundant here since this project is so
+ 
+
+00:02:48.720 --> 00:02:50.229 align:start position:0%
+redundant here since this project is so
+small,<00:02:49.040><c> but</c><00:02:49.200><c> you</c><00:02:49.360><c> get</c><00:02:49.519><c> the</c><00:02:49.680><c> point.</c><00:02:50.080><c> And</c>
+
+00:02:50.229 --> 00:02:50.239 align:start position:0%
+small, but you get the point. And
+ 
+
+00:02:50.239 --> 00:02:52.150 align:start position:0%
+small, but you get the point. And
+finally,<00:02:50.640><c> you</c><00:02:50.879><c> want</c><00:02:50.959><c> to</c><00:02:51.120><c> optimize</c><00:02:51.599><c> your</c><00:02:51.760><c> rules</c>
+
+00:02:52.150 --> 00:02:52.160 align:start position:0%
+finally, you want to optimize your rules
+ 
+
+00:02:52.160 --> 00:02:54.630 align:start position:0%
+finally, you want to optimize your rules
+file<00:02:52.480><c> over</c><00:02:52.720><c> time.</c><00:02:53.120><c> You</c><00:02:53.280><c> can</c><00:02:53.360><c> run</c><00:02:53.599><c> your</c><00:02:53.760><c> warp.md</c>
+
+00:02:54.630 --> 00:02:54.640 align:start position:0%
+file over time. You can run your warp.md
+ 
+
+00:02:54.640 --> 00:02:56.630 align:start position:0%
+file over time. You can run your warp.md
+file<00:02:54.959><c> through</c><00:02:55.200><c> a</c><00:02:55.440><c> prompt</c><00:02:55.760><c> optimizer,</c>
+
+00:02:56.630 --> 00:02:56.640 align:start position:0%
+file through a prompt optimizer,
+ 
+
+00:02:56.640 --> 00:02:58.070 align:start position:0%
+file through a prompt optimizer,
+especially<00:02:57.040><c> when</c><00:02:57.200><c> your</c><00:02:57.440><c> file</c><00:02:57.680><c> becomes</c>
+
+00:02:58.070 --> 00:02:58.080 align:start position:0%
+especially when your file becomes
+ 
+
+00:02:58.080 --> 00:03:00.630 align:start position:0%
+especially when your file becomes
+massive,<00:02:58.640><c> like</c><00:02:58.879><c> over</c><00:02:59.200><c> 500</c><00:02:59.680><c> lines.</c><00:03:00.160><c> Doing</c><00:03:00.400><c> this</c>
+
+00:03:00.630 --> 00:03:00.640 align:start position:0%
+massive, like over 500 lines. Doing this
+ 
+
+00:03:00.640 --> 00:03:03.030 align:start position:0%
+massive, like over 500 lines. Doing this
+will<00:03:00.800><c> help</c><00:03:00.959><c> you</c><00:03:01.200><c> catch</c><00:03:01.519><c> duplication,</c><00:03:02.640><c> remove</c>
+
+00:03:03.030 --> 00:03:03.040 align:start position:0%
+will help you catch duplication, remove
+ 
+
+00:03:03.040 --> 00:03:05.190 align:start position:0%
+will help you catch duplication, remove
+overlaps,<00:03:03.680><c> and</c><00:03:03.840><c> slim</c><00:03:04.159><c> down</c><00:03:04.319><c> the</c><00:03:04.480><c> file</c><00:03:04.800><c> so</c><00:03:04.959><c> it</c>
+
+00:03:05.190 --> 00:03:05.200 align:start position:0%
+overlaps, and slim down the file so it
+ 
+
+00:03:05.200 --> 00:03:07.190 align:start position:0%
+overlaps, and slim down the file so it
+stays<00:03:05.440><c> effective</c><00:03:05.920><c> without</c><00:03:06.319><c> burning</c><00:03:06.800><c> extra</c>
+
+00:03:07.190 --> 00:03:07.200 align:start position:0%
+stays effective without burning extra
+ 
+
+00:03:07.200 --> 00:03:09.910 align:start position:0%
+stays effective without burning extra
+tokens.<00:03:07.840><c> So,</c><00:03:08.000><c> to</c><00:03:08.239><c> recap,</c><00:03:08.560><c> your</c><00:03:08.720><c> warp.md</c><00:03:09.599><c> file</c>
+
+00:03:09.910 --> 00:03:09.920 align:start position:0%
+tokens. So, to recap, your warp.md file
+ 
+
+00:03:09.920 --> 00:03:12.229 align:start position:0%
+tokens. So, to recap, your warp.md file
+is<00:03:10.159><c> your</c><00:03:10.400><c> project's</c><00:03:10.800><c> AI</c><00:03:11.280><c> onboarding</c><00:03:11.760><c> guide.</c>
+
+00:03:12.229 --> 00:03:12.239 align:start position:0%
+is your project's AI onboarding guide.
+ 
+
+00:03:12.239 --> 00:03:14.149 align:start position:0%
+is your project's AI onboarding guide.
+You<00:03:12.400><c> want</c><00:03:12.480><c> to</c><00:03:12.640><c> keep</c><00:03:12.800><c> it</c><00:03:12.959><c> lean,</c><00:03:13.519><c> update</c><00:03:13.840><c> it</c><00:03:14.000><c> as</c>
+
+00:03:14.149 --> 00:03:14.159 align:start position:0%
+You want to keep it lean, update it as
+ 
+
+00:03:14.159 --> 00:03:16.550 align:start position:0%
+You want to keep it lean, update it as
+you<00:03:14.239><c> go,</c><00:03:14.720><c> and</c><00:03:14.959><c> optimize</c><00:03:15.440><c> it</c><00:03:15.599><c> over</c><00:03:15.920><c> time.</c><00:03:16.319><c> Hope</c>
+
+00:03:16.550 --> 00:03:16.560 align:start position:0%
+you go, and optimize it over time. Hope
+ 
+
+00:03:16.560 --> 00:03:19.800 align:start position:0%
+you go, and optimize it over time. Hope
+this<00:03:16.800><c> helps.</c>
+

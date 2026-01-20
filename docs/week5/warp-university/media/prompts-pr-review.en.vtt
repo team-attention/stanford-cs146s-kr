@@ -1,0 +1,176 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.080 --> 00:00:01.990 align:start position:0%
+ 
+Reviewing<00:00:00.560><c> large</c><00:00:00.880><c> pull</c><00:00:01.199><c> requests</c><00:00:01.600><c> can</c>
+
+00:00:01.990 --> 00:00:02.000 align:start position:0%
+Reviewing large pull requests can
+ 
+
+00:00:02.000 --> 00:00:04.550 align:start position:0%
+Reviewing large pull requests can
+sometimes<00:00:02.480><c> be</c><00:00:02.639><c> tricky.</c><00:00:03.520><c> It's</c><00:00:03.760><c> also</c><00:00:04.240><c> dense</c>
+
+00:00:04.550 --> 00:00:04.560 align:start position:0%
+sometimes be tricky. It's also dense
+ 
+
+00:00:04.560 --> 00:00:07.110 align:start position:0%
+sometimes be tricky. It's also dense
+with<00:00:04.880><c> large</c><00:00:05.200><c> walls</c><00:00:05.520><c> of</c><00:00:05.680><c> text.</c><00:00:06.560><c> You</c><00:00:06.720><c> could</c><00:00:06.879><c> ask</c>
+
+00:00:07.110 --> 00:00:07.120 align:start position:0%
+with large walls of text. You could ask
+ 
+
+00:00:07.120 --> 00:00:09.509 align:start position:0%
+with large walls of text. You could ask
+AI<00:00:07.520><c> to</c><00:00:07.680><c> summarize</c><00:00:08.160><c> like</c><00:00:08.400><c> this.</c><00:00:09.040><c> Summarize</c>
+
+00:00:09.509 --> 00:00:09.519 align:start position:0%
+AI to summarize like this. Summarize
+ 
+
+00:00:09.519 --> 00:00:11.749 align:start position:0%
+AI to summarize like this. Summarize
+this<00:00:09.760><c> pull</c><00:00:10.000><c> request,</c><00:00:10.719><c> but</c><00:00:10.960><c> the</c><00:00:11.120><c> issue</c><00:00:11.440><c> is</c><00:00:11.599><c> that</c>
+
+00:00:11.749 --> 00:00:11.759 align:start position:0%
+this pull request, but the issue is that
+ 
+
+00:00:11.759 --> 00:00:13.350 align:start position:0%
+this pull request, but the issue is that
+you're<00:00:12.000><c> not</c><00:00:12.080><c> getting</c><00:00:12.320><c> the</c><00:00:12.480><c> full</c><00:00:12.719><c> picture</c><00:00:13.040><c> and</c>
+
+00:00:13.350 --> 00:00:13.360 align:start position:0%
+you're not getting the full picture and
+ 
+
+00:00:13.360 --> 00:00:15.589 align:start position:0%
+you're not getting the full picture and
+are<00:00:13.599><c> relying</c><00:00:13.920><c> on</c><00:00:14.080><c> an</c><00:00:14.240><c> AI</c><00:00:14.719><c> to</c><00:00:14.960><c> do</c><00:00:15.120><c> the</c><00:00:15.280><c> checking</c>
+
+00:00:15.589 --> 00:00:15.599 align:start position:0%
+are relying on an AI to do the checking
+ 
+
+00:00:15.599 --> 00:00:18.230 align:start position:0%
+are relying on an AI to do the checking
+for<00:00:15.759><c> you,</c><00:00:16.000><c> which</c><00:00:16.640><c> can</c><00:00:16.800><c> be</c><00:00:16.960><c> very</c><00:00:17.199><c> risky.</c><00:00:18.000><c> Here's</c>
+
+00:00:18.230 --> 00:00:18.240 align:start position:0%
+for you, which can be very risky. Here's
+ 
+
+00:00:18.240 --> 00:00:20.070 align:start position:0%
+for you, which can be very risky. Here's
+a<00:00:18.400><c> prompt</c><00:00:18.640><c> to</c><00:00:18.800><c> make</c><00:00:18.960><c> reviewing</c><00:00:19.359><c> pull</c><00:00:19.600><c> requests</c>
+
+00:00:20.070 --> 00:00:20.080 align:start position:0%
+a prompt to make reviewing pull requests
+ 
+
+00:00:20.080 --> 00:00:22.230 align:start position:0%
+a prompt to make reviewing pull requests
+much<00:00:20.320><c> faster.</c><00:00:21.119><c> This</c><00:00:21.359><c> prompt</c><00:00:21.680><c> will</c><00:00:21.920><c> instead</c>
+
+00:00:22.230 --> 00:00:22.240 align:start position:0%
+much faster. This prompt will instead
+ 
+
+00:00:22.240 --> 00:00:24.070 align:start position:0%
+much faster. This prompt will instead
+create<00:00:22.480><c> an</c><00:00:22.640><c> index</c><00:00:23.039><c> and</c><00:00:23.279><c> priority</c><00:00:23.600><c> list,</c><00:00:23.920><c> which</c>
+
+00:00:24.070 --> 00:00:24.080 align:start position:0%
+create an index and priority list, which
+ 
+
+00:00:24.080 --> 00:00:26.230 align:start position:0%
+create an index and priority list, which
+will<00:00:24.240><c> give</c><00:00:24.400><c> you</c><00:00:24.560><c> a</c><00:00:24.960><c> route</c><00:00:25.600><c> in</c><00:00:25.840><c> order</c><00:00:26.000><c> to</c>
+
+00:00:26.230 --> 00:00:26.240 align:start position:0%
+will give you a route in order to
+ 
+
+00:00:26.240 --> 00:00:27.830 align:start position:0%
+will give you a route in order to
+effectively<00:00:26.800><c> navigate</c><00:00:27.119><c> the</c><00:00:27.359><c> large</c><00:00:27.519><c> pull</c>
+
+00:00:27.830 --> 00:00:27.840 align:start position:0%
+effectively navigate the large pull
+ 
+
+00:00:27.840 --> 00:00:30.230 align:start position:0%
+effectively navigate the large pull
+request.<00:00:28.720><c> It</c><00:00:28.960><c> will</c><00:00:29.039><c> also</c><00:00:29.439><c> identify</c><00:00:29.840><c> obvious</c>
+
+00:00:30.230 --> 00:00:30.240 align:start position:0%
+request. It will also identify obvious
+ 
+
+00:00:30.240 --> 00:00:32.389 align:start position:0%
+request. It will also identify obvious
+red<00:00:30.480><c> flags</c><00:00:30.800><c> that</c><00:00:30.960><c> we</c><00:00:31.199><c> can</c><00:00:31.359><c> rely</c><00:00:31.679><c> on</c><00:00:31.840><c> AI</c><00:00:32.239><c> to</c>
+
+00:00:32.389 --> 00:00:32.399 align:start position:0%
+red flags that we can rely on AI to
+ 
+
+00:00:32.399 --> 00:00:34.310 align:start position:0%
+red flags that we can rely on AI to
+catch.<00:00:32.880><c> Now,</c><00:00:33.120><c> if</c><00:00:33.280><c> you're</c><00:00:33.440><c> using</c><00:00:33.680><c> a</c><00:00:33.920><c> weaker</c>
+
+00:00:34.310 --> 00:00:34.320 align:start position:0%
+catch. Now, if you're using a weaker
+ 
+
+00:00:34.320 --> 00:00:35.830 align:start position:0%
+catch. Now, if you're using a weaker
+model,<00:00:34.800><c> you</c><00:00:34.960><c> can</c><00:00:35.040><c> take</c><00:00:35.200><c> advantage</c><00:00:35.520><c> of</c><00:00:35.600><c> the</c>
+
+00:00:35.830 --> 00:00:35.840 align:start position:0%
+model, you can take advantage of the
+ 
+
+00:00:35.840 --> 00:00:37.350 align:start position:0%
+model, you can take advantage of the
+structured<00:00:36.239><c> output</c><00:00:36.559><c> to</c><00:00:36.719><c> guarantee</c><00:00:37.120><c> the</c>
+
+00:00:37.350 --> 00:00:37.360 align:start position:0%
+structured output to guarantee the
+ 
+
+00:00:37.360 --> 00:00:40.150 align:start position:0%
+structured output to guarantee the
+provided<00:00:37.760><c> output.</c><00:00:38.719><c> AI</c><00:00:39.200><c> is</c><00:00:39.360><c> a</c><00:00:39.600><c> very</c><00:00:39.840><c> handy</c>
+
+00:00:40.150 --> 00:00:40.160 align:start position:0%
+provided output. AI is a very handy
+ 
+
+00:00:40.160 --> 00:00:41.670 align:start position:0%
+provided output. AI is a very handy
+tool,<00:00:40.640><c> but</c><00:00:40.879><c> always</c><00:00:41.200><c> make</c><00:00:41.360><c> sure</c><00:00:41.440><c> you're</c>
+
+00:00:41.670 --> 00:00:41.680 align:start position:0%
+tool, but always make sure you're
+ 
+
+00:00:41.680 --> 00:00:42.950 align:start position:0%
+tool, but always make sure you're
+checking<00:00:41.920><c> the</c><00:00:42.079><c> work</c><00:00:42.320><c> going</c><00:00:42.480><c> into</c><00:00:42.719><c> your</c>
+
+00:00:42.950 --> 00:00:42.960 align:start position:0%
+checking the work going into your
+ 
+
+00:00:42.960 --> 00:00:45.280 align:start position:0%
+checking the work going into your
+applications.
+

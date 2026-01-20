@@ -1,0 +1,920 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.240 --> 00:00:03.030 align:start position:0%
+ 
+Hi,<00:00:00.800><c> I'm</c><00:00:01.040><c> Zach.</c><00:00:01.600><c> Uh,</c><00:00:02.000><c> today</c><00:00:02.320><c> I'm</c><00:00:02.560><c> excited</c><00:00:02.879><c> to</c>
+
+00:00:03.030 --> 00:00:03.040 align:start position:0%
+Hi, I'm Zach. Uh, today I'm excited to
+ 
+
+00:00:03.040 --> 00:00:05.430 align:start position:0%
+Hi, I'm Zach. Uh, today I'm excited to
+show<00:00:03.200><c> you</c><00:00:03.840><c> how</c><00:00:04.080><c> I</c><00:00:04.240><c> use</c><00:00:04.400><c> a</c><00:00:04.560><c> feature</c><00:00:04.799><c> in</c><00:00:05.040><c> Warp</c>
+
+00:00:05.430 --> 00:00:05.440 align:start position:0%
+show you how I use a feature in Warp
+ 
+
+00:00:05.440 --> 00:00:08.470 align:start position:0%
+show you how I use a feature in Warp
+called<00:00:05.759><c> prompts</c><00:00:06.720><c> to</c><00:00:07.279><c> help</c><00:00:07.680><c> streamline</c><00:00:08.160><c> my</c>
+
+00:00:08.470 --> 00:00:08.480 align:start position:0%
+called prompts to help streamline my
+ 
+
+00:00:08.480 --> 00:00:11.669 align:start position:0%
+called prompts to help streamline my
+workflow<00:00:09.519><c> um</c><00:00:09.760><c> when</c><00:00:10.000><c> I'm</c><00:00:10.160><c> working</c><00:00:10.800><c> with</c><00:00:11.120><c> PRs</c>
+
+00:00:11.669 --> 00:00:11.679 align:start position:0%
+workflow um when I'm working with PRs
+ 
+
+00:00:11.679 --> 00:00:14.390 align:start position:0%
+workflow um when I'm working with PRs
+and<00:00:11.840><c> Git</c><00:00:12.160><c> commits.</c><00:00:13.280><c> And</c><00:00:13.679><c> what's</c><00:00:14.000><c> really</c><00:00:14.240><c> cool</c>
+
+00:00:14.390 --> 00:00:14.400 align:start position:0%
+and Git commits. And what's really cool
+ 
+
+00:00:14.400 --> 00:00:15.829 align:start position:0%
+and Git commits. And what's really cool
+about<00:00:14.480><c> it</c><00:00:14.719><c> is</c><00:00:14.880><c> it</c><00:00:15.040><c> saves</c><00:00:15.280><c> me</c><00:00:15.360><c> a</c><00:00:15.519><c> lot</c><00:00:15.599><c> of</c><00:00:15.679><c> time</c>
+
+00:00:15.829 --> 00:00:15.839 align:start position:0%
+about it is it saves me a lot of time
+ 
+
+00:00:15.839 --> 00:00:18.150 align:start position:0%
+about it is it saves me a lot of time
+and<00:00:16.080><c> a</c><00:00:16.240><c> lot</c><00:00:16.320><c> of</c><00:00:16.400><c> typing.</c><00:00:17.279><c> And</c><00:00:17.520><c> these</c><00:00:17.840><c> prompts</c>
+
+00:00:18.150 --> 00:00:18.160 align:start position:0%
+and a lot of typing. And these prompts
+ 
+
+00:00:18.160 --> 00:00:20.230 align:start position:0%
+and a lot of typing. And these prompts
+are<00:00:18.400><c> also</c><00:00:18.640><c> usable</c><00:00:18.960><c> not</c><00:00:19.199><c> just</c><00:00:19.359><c> by</c><00:00:19.520><c> me,</c><00:00:19.760><c> but</c><00:00:19.920><c> also</c>
+
+00:00:20.230 --> 00:00:20.240 align:start position:0%
+are also usable not just by me, but also
+ 
+
+00:00:20.240 --> 00:00:22.310 align:start position:0%
+are also usable not just by me, but also
+my<00:00:20.480><c> team.</c><00:00:20.960><c> So,</c><00:00:21.119><c> why</c><00:00:21.279><c> don't</c><00:00:21.359><c> I</c><00:00:21.520><c> just</c><00:00:21.760><c> show</c><00:00:21.920><c> you</c>
+
+00:00:22.310 --> 00:00:22.320 align:start position:0%
+my team. So, why don't I just show you
+ 
+
+00:00:22.320 --> 00:00:26.070 align:start position:0%
+my team. So, why don't I just show you
+what<00:00:22.560><c> I</c><00:00:22.800><c> mean?</c><00:00:23.279><c> So,</c><00:00:23.760><c> let's</c><00:00:24.000><c> say</c><00:00:24.160><c> I</c><00:00:24.400><c> have</c><00:00:24.800><c> a</c><00:00:25.760><c> PR</c>
+
+00:00:26.070 --> 00:00:26.080 align:start position:0%
+what I mean? So, let's say I have a PR
+ 
+
+00:00:26.080 --> 00:00:29.429 align:start position:0%
+what I mean? So, let's say I have a PR
+in<00:00:26.320><c> progress</c><00:00:26.800><c> here.</c><00:00:27.279><c> I</c><00:00:27.519><c> can</c><00:00:27.760><c> run</c><00:00:27.920><c> a</c><00:00:28.080><c> git</c><00:00:28.400><c> diff</c>
+
+00:00:29.429 --> 00:00:29.439 align:start position:0%
+in progress here. I can run a git diff
+ 
+
+00:00:29.439 --> 00:00:32.389 align:start position:0%
+in progress here. I can run a git diff
+uh<00:00:29.599><c> to</c><00:00:29.920><c> see</c><00:00:30.000><c> what's</c><00:00:30.400><c> going</c><00:00:30.560><c> on.</c><00:00:31.199><c> Um</c><00:00:32.000><c> sneak</c>
+
+00:00:32.389 --> 00:00:32.399 align:start position:0%
+uh to see what's going on. Um sneak
+ 
+
+00:00:32.399 --> 00:00:34.709 align:start position:0%
+uh to see what's going on. Um sneak
+peek.<00:00:33.120><c> You</c><00:00:33.280><c> can</c><00:00:33.360><c> also</c><00:00:33.600><c> see</c><00:00:33.760><c> this</c><00:00:33.920><c> diff</c><00:00:34.160><c> in</c><00:00:34.320><c> warp</c>
+
+00:00:34.709 --> 00:00:34.719 align:start position:0%
+peek. You can also see this diff in warp
+ 
+
+00:00:34.719 --> 00:00:37.350 align:start position:0%
+peek. You can also see this diff in warp
+that's<00:00:34.880><c> coming</c><00:00:35.120><c> soon.</c><00:00:36.000><c> Um</c><00:00:36.719><c> but</c><00:00:37.040><c> let's</c><00:00:37.200><c> say</c>
+
+00:00:37.350 --> 00:00:37.360 align:start position:0%
+that's coming soon. Um but let's say
+ 
+
+00:00:37.360 --> 00:00:38.790 align:start position:0%
+that's coming soon. Um but let's say
+that<00:00:37.600><c> I'm</c><00:00:37.840><c> at</c><00:00:37.920><c> a</c><00:00:38.079><c> good</c><00:00:38.239><c> spot</c><00:00:38.399><c> here</c><00:00:38.559><c> and</c><00:00:38.640><c> I</c>
+
+00:00:38.790 --> 00:00:38.800 align:start position:0%
+that I'm at a good spot here and I
+ 
+
+00:00:38.800 --> 00:00:40.389 align:start position:0%
+that I'm at a good spot here and I
+actually<00:00:39.040><c> want</c><00:00:39.120><c> to</c><00:00:39.200><c> make</c><00:00:39.360><c> a</c><00:00:39.520><c> commit</c><00:00:40.000><c> and</c><00:00:40.239><c> I</c>
+
+00:00:40.389 --> 00:00:40.399 align:start position:0%
+actually want to make a commit and I
+ 
+
+00:00:40.399 --> 00:00:41.750 align:start position:0%
+actually want to make a commit and I
+want<00:00:40.480><c> this</c><00:00:40.719><c> commit</c><00:00:40.960><c> to</c><00:00:41.120><c> have</c><00:00:41.200><c> a</c><00:00:41.360><c> sensible</c>
+
+00:00:41.750 --> 00:00:41.760 align:start position:0%
+want this commit to have a sensible
+ 
+
+00:00:41.760 --> 00:00:44.150 align:start position:0%
+want this commit to have a sensible
+commit<00:00:42.079><c> message.</c><00:00:42.480><c> So</c><00:00:42.640><c> I</c><00:00:42.879><c> could</c><00:00:43.360><c> start</c><00:00:43.680><c> typing</c>
+
+00:00:44.150 --> 00:00:44.160 align:start position:0%
+commit message. So I could start typing
+ 
+
+00:00:44.160 --> 00:00:47.110 align:start position:0%
+commit message. So I could start typing
+get<00:00:44.480><c> commit</c><00:00:45.280><c> and</c><00:00:45.520><c> like</c><00:00:46.000><c> this</c><00:00:46.239><c> is</c><00:00:46.719><c> you</c><00:00:46.879><c> know</c>
+
+00:00:47.110 --> 00:00:47.120 align:start position:0%
+get commit and like this is you know
+ 
+
+00:00:47.120 --> 00:00:48.869 align:start position:0%
+get commit and like this is you know
+type<00:00:47.360><c> a</c><00:00:47.520><c> huge</c><00:00:47.760><c> message.</c><00:00:48.320><c> I</c><00:00:48.480><c> don't</c><00:00:48.559><c> really</c><00:00:48.719><c> want</c>
+
+00:00:48.869 --> 00:00:48.879 align:start position:0%
+type a huge message. I don't really want
+ 
+
+00:00:48.879 --> 00:00:51.910 align:start position:0%
+type a huge message. I don't really want
+to<00:00:48.960><c> do</c><00:00:49.120><c> that.</c><00:00:49.360><c> I</c><00:00:49.600><c> want</c><00:00:50.079><c> um</c><00:00:50.239><c> Warp's</c><00:00:50.800><c> agent</c><00:00:51.200><c> mode</c>
+
+00:00:51.910 --> 00:00:51.920 align:start position:0%
+to do that. I want um Warp's agent mode
+ 
+
+00:00:51.920 --> 00:00:54.470 align:start position:0%
+to do that. I want um Warp's agent mode
+to<00:00:52.640><c> create</c><00:00:52.960><c> this</c><00:00:53.199><c> commit</c><00:00:53.520><c> for</c><00:00:53.680><c> me.</c><00:00:53.920><c> So</c><00:00:54.079><c> I</c><00:00:54.320><c> could</c>
+
+00:00:54.470 --> 00:00:54.480 align:start position:0%
+to create this commit for me. So I could
+ 
+
+00:00:54.480 --> 00:00:56.709 align:start position:0%
+to create this commit for me. So I could
+ask<00:00:54.879><c> warp</c><00:00:55.360><c> to</c><00:00:55.600><c> do</c><00:00:55.760><c> that</c><00:00:56.160><c> but</c><00:00:56.399><c> there's</c><00:00:56.559><c> a</c>
+
+00:00:56.709 --> 00:00:56.719 align:start position:0%
+ask warp to do that but there's a
+ 
+
+00:00:56.719 --> 00:01:01.590 align:start position:0%
+ask warp to do that but there's a
+quicker<00:00:57.120><c> way</c><00:00:57.760><c> which</c><00:00:58.079><c> is</c><00:00:58.640><c> I</c><00:00:59.039><c> have</c><00:00:59.920><c> um</c><00:01:01.039><c> over</c><00:01:01.280><c> here</c>
+
+00:01:01.590 --> 00:01:01.600 align:start position:0%
+quicker way which is I have um over here
+ 
+
+00:01:01.600 --> 00:01:06.469 align:start position:0%
+quicker way which is I have um over here
+in<00:01:01.840><c> warp</c><00:01:02.239><c> drive</c><00:01:02.480><c> in</c><00:01:02.719><c> this</c><00:01:02.960><c> panel</c><00:01:04.080><c> uh</c><00:01:04.320><c> created</c><00:01:05.040><c> a</c>
+
+00:01:06.469 --> 00:01:06.479 align:start position:0%
+in warp drive in this panel uh created a
+ 
+
+00:01:06.479 --> 00:01:11.030 align:start position:0%
+in warp drive in this panel uh created a
+uh<00:01:06.720><c> saved</c><00:01:07.119><c> prompt</c><00:01:08.159><c> which</c><00:01:09.119><c> um</c><00:01:09.439><c> says</c><00:01:10.000><c> create</c><00:01:10.400><c> com</c>
+
+00:01:11.030 --> 00:01:11.040 align:start position:0%
+uh saved prompt which um says create com
+ 
+
+00:01:11.040 --> 00:01:12.310 align:start position:0%
+uh saved prompt which um says create com
+here<00:01:11.280><c> I'll</c><00:01:11.439><c> open</c><00:01:11.600><c> up</c><00:01:11.680><c> for</c><00:01:11.840><c> you</c><00:01:11.920><c> so</c><00:01:12.080><c> you</c><00:01:12.159><c> can</c><00:01:12.240><c> see</c>
+
+00:01:12.310 --> 00:01:12.320 align:start position:0%
+here I'll open up for you so you can see
+ 
+
+00:01:12.320 --> 00:01:14.390 align:start position:0%
+here I'll open up for you so you can see
+it<00:01:12.560><c> actually.</c><00:01:12.880><c> So</c><00:01:13.280><c> it</c><00:01:13.520><c> creates</c><00:01:13.840><c> a</c><00:01:14.000><c> commit</c><00:01:14.240><c> with</c>
+
+00:01:14.390 --> 00:01:14.400 align:start position:0%
+it actually. So it creates a commit with
+ 
+
+00:01:14.400 --> 00:01:15.830 align:start position:0%
+it actually. So it creates a commit with
+a<00:01:14.640><c> description</c><00:01:14.960><c> and</c><00:01:15.119><c> it</c><00:01:15.280><c> pushes</c><00:01:15.520><c> it</c><00:01:15.680><c> to</c>
+
+00:01:15.830 --> 00:01:15.840 align:start position:0%
+a description and it pushes it to
+ 
+
+00:01:15.840 --> 00:01:17.830 align:start position:0%
+a description and it pushes it to
+origin.<00:01:16.479><c> It</c><00:01:16.720><c> gives</c><00:01:16.880><c> some</c><00:01:17.119><c> instructions</c><00:01:17.600><c> on</c>
+
+00:01:17.830 --> 00:01:17.840 align:start position:0%
+origin. It gives some instructions on
+ 
+
+00:01:17.840 --> 00:01:20.230 align:start position:0%
+origin. It gives some instructions on
+how<00:01:18.000><c> to</c><00:01:18.159><c> make</c><00:01:18.320><c> this</c><00:01:18.560><c> commit.</c><00:01:19.439><c> Um</c><00:01:20.000><c> it</c>
+
+00:01:20.230 --> 00:01:20.240 align:start position:0%
+how to make this commit. Um it
+ 
+
+00:01:20.240 --> 00:01:21.990 align:start position:0%
+how to make this commit. Um it
+optionally<00:01:20.640><c> takes</c><00:01:20.960><c> an</c><00:01:21.119><c> argument.</c><00:01:21.680><c> I'm</c><00:01:21.920><c> going</c>
+
+00:01:21.990 --> 00:01:22.000 align:start position:0%
+optionally takes an argument. I'm going
+ 
+
+00:01:22.000 --> 00:01:24.390 align:start position:0%
+optionally takes an argument. I'm going
+to<00:01:22.159><c> let</c><00:01:22.240><c> it</c><00:01:22.400><c> do</c><00:01:22.560><c> the</c><00:01:22.720><c> commit</c><00:01:22.960><c> message</c><00:01:23.360><c> for</c><00:01:23.600><c> me.</c>
+
+00:01:24.390 --> 00:01:24.400 align:start position:0%
+to let it do the commit message for me.
+ 
+
+00:01:24.400 --> 00:01:27.670 align:start position:0%
+to let it do the commit message for me.
+Um,<00:01:25.040><c> and</c><00:01:25.280><c> so</c><00:01:26.080><c> I</c><00:01:26.320><c> could</c><00:01:26.560><c> I</c><00:01:26.880><c> could</c><00:01:27.119><c> run</c><00:01:27.280><c> this</c><00:01:27.439><c> by</c>
+
+00:01:27.670 --> 00:01:27.680 align:start position:0%
+Um, and so I could I could run this by
+ 
+
+00:01:27.680 --> 00:01:29.350 align:start position:0%
+Um, and so I could I could run this by
+either<00:01:27.920><c> coming</c><00:01:28.159><c> over</c><00:01:28.400><c> here</c><00:01:28.720><c> and</c><00:01:28.960><c> clicking</c>
+
+00:01:29.350 --> 00:01:29.360 align:start position:0%
+either coming over here and clicking
+ 
+
+00:01:29.360 --> 00:01:31.670 align:start position:0%
+either coming over here and clicking
+this,<00:01:29.680><c> which</c><00:01:29.920><c> will</c><00:01:30.080><c> put</c><00:01:30.240><c> it</c><00:01:30.400><c> in.</c><00:01:31.040><c> Uh,</c><00:01:31.280><c> but</c><00:01:31.439><c> it's</c>
+
+00:01:31.670 --> 00:01:31.680 align:start position:0%
+this, which will put it in. Uh, but it's
+ 
+
+00:01:31.680 --> 00:01:33.270 align:start position:0%
+this, which will put it in. Uh, but it's
+actually<00:01:32.000><c> faster</c><00:01:32.400><c> for</c><00:01:32.560><c> me</c><00:01:32.720><c> to</c><00:01:32.880><c> just</c><00:01:33.040><c> hit</c>
+
+00:01:33.270 --> 00:01:33.280 align:start position:0%
+actually faster for me to just hit
+ 
+
+00:01:33.280 --> 00:01:35.510 align:start position:0%
+actually faster for me to just hit
+command<00:01:33.600><c> P,</c><00:01:33.840><c> bring</c><00:01:33.920><c> up</c><00:01:34.079><c> our</c><00:01:34.320><c> command</c><00:01:34.560><c> pallet,</c>
+
+00:01:35.510 --> 00:01:35.520 align:start position:0%
+command P, bring up our command pallet,
+ 
+
+00:01:35.520 --> 00:01:37.910 align:start position:0%
+command P, bring up our command pallet,
+and<00:01:35.840><c> go</c><00:01:36.000><c> ahead</c><00:01:36.159><c> and</c><00:01:36.400><c> search</c><00:01:36.640><c> for</c><00:01:36.960><c> this</c><00:01:37.520><c> save</c>
+
+00:01:37.910 --> 00:01:37.920 align:start position:0%
+and go ahead and search for this save
+ 
+
+00:01:37.920 --> 00:01:41.190 align:start position:0%
+and go ahead and search for this save
+prompt<00:01:38.880><c> and</c><00:01:39.439><c> run</c><00:01:39.600><c> it.</c><00:01:40.479><c> And</c><00:01:40.640><c> while</c><00:01:40.880><c> this</c><00:01:41.040><c> is</c>
+
+00:01:41.190 --> 00:01:41.200 align:start position:0%
+prompt and run it. And while this is
+ 
+
+00:01:41.200 --> 00:01:42.310 align:start position:0%
+prompt and run it. And while this is
+running,<00:01:41.439><c> I</c><00:01:41.600><c> want</c><00:01:41.680><c> to</c><00:01:41.759><c> show</c><00:01:41.840><c> you</c><00:01:42.000><c> some</c><00:01:42.159><c> other</c>
+
+00:01:42.310 --> 00:01:42.320 align:start position:0%
+running, I want to show you some other
+ 
+
+00:01:42.320 --> 00:01:44.069 align:start position:0%
+running, I want to show you some other
+cool<00:01:42.560><c> stuff.</c><00:01:42.799><c> So,</c><00:01:43.040><c> because</c><00:01:43.280><c> this</c><00:01:43.520><c> is</c><00:01:43.600><c> in</c><00:01:43.759><c> warp</c>
+
+00:01:44.069 --> 00:01:44.079 align:start position:0%
+cool stuff. So, because this is in warp
+ 
+
+00:01:44.079 --> 00:01:46.950 align:start position:0%
+cool stuff. So, because this is in warp
+drive,<00:01:44.560><c> this</c><00:01:44.799><c> is</c><00:01:45.439><c> uh</c><00:01:45.680><c> in</c><00:01:46.000><c> our</c><00:01:46.320><c> team's</c><00:01:46.640><c> warp</c>
+
+00:01:46.950 --> 00:01:46.960 align:start position:0%
+drive, this is uh in our team's warp
+ 
+
+00:01:46.960 --> 00:01:49.910 align:start position:0%
+drive, this is uh in our team's warp
+drive<00:01:47.200><c> section.</c><00:01:48.399><c> So</c><00:01:48.720><c> anyone</c><00:01:49.040><c> on</c><00:01:49.200><c> our</c><00:01:49.360><c> team</c><00:01:49.600><c> can</c>
+
+00:01:49.910 --> 00:01:49.920 align:start position:0%
+drive section. So anyone on our team can
+ 
+
+00:01:49.920 --> 00:01:52.870 align:start position:0%
+drive section. So anyone on our team can
+actually<00:01:50.880><c> use</c><00:01:51.119><c> this</c><00:01:51.439><c> prompt</c><00:01:52.240><c> and</c><00:01:52.479><c> you</c><00:01:52.640><c> can</c><00:01:52.799><c> see</c>
+
+00:01:52.870 --> 00:01:52.880 align:start position:0%
+actually use this prompt and you can see
+ 
+
+00:01:52.880 --> 00:01:54.630 align:start position:0%
+actually use this prompt and you can see
+who<00:01:53.119><c> created</c><00:01:53.439><c> it.</c><00:01:53.680><c> You</c><00:01:53.840><c> can</c><00:01:53.920><c> see</c><00:01:54.079><c> when</c><00:01:54.320><c> it</c><00:01:54.479><c> was</c>
+
+00:01:54.630 --> 00:01:54.640 align:start position:0%
+who created it. You can see when it was
+ 
+
+00:01:54.640 --> 00:01:57.510 align:start position:0%
+who created it. You can see when it was
+last<00:01:54.880><c> run.</c><00:01:55.200><c> It's</c><00:01:55.439><c> been</c><00:01:55.600><c> run</c><00:01:55.840><c> today.</c><00:01:56.799><c> Uh</c><00:01:57.280><c> and</c>
+
+00:01:57.510 --> 00:01:57.520 align:start position:0%
+last run. It's been run today. Uh and
+ 
+
+00:01:57.520 --> 00:01:58.870 align:start position:0%
+last run. It's been run today. Uh and
+then<00:01:57.680><c> when</c><00:01:57.920><c> I</c><00:01:58.079><c> run</c><00:01:58.159><c> this,</c><00:01:58.479><c> it's</c><00:01:58.560><c> going</c><00:01:58.640><c> to</c><00:01:58.719><c> run</c>
+
+00:01:58.870 --> 00:01:58.880 align:start position:0%
+then when I run this, it's going to run
+ 
+
+00:01:58.880 --> 00:02:02.310 align:start position:0%
+then when I run this, it's going to run
+it<00:01:58.960><c> as</c><00:01:59.119><c> a</c><00:01:59.280><c> normal</c><00:01:59.439><c> agent</c><00:01:59.840><c> mode</c><00:02:00.240><c> query.</c><00:02:01.520><c> Um</c><00:02:02.079><c> and</c>
+
+00:02:02.310 --> 00:02:02.320 align:start position:0%
+it as a normal agent mode query. Um and
+ 
+
+00:02:02.320 --> 00:02:04.469 align:start position:0%
+it as a normal agent mode query. Um and
+that<00:02:02.479><c> means</c><00:02:02.640><c> it's</c><00:02:02.880><c> going</c><00:02:02.960><c> to</c><00:02:03.119><c> do,</c><00:02:04.240><c> you</c><00:02:04.399><c> know,</c>
+
+00:02:04.469 --> 00:02:04.479 align:start position:0%
+that means it's going to do, you know,
+ 
+
+00:02:04.479 --> 00:02:05.510 align:start position:0%
+that means it's going to do, you know,
+it's<00:02:04.640><c> going</c><00:02:04.719><c> to</c><00:02:04.799><c> do</c><00:02:04.960><c> all</c><00:02:05.040><c> the</c><00:02:05.200><c> things</c><00:02:05.439><c> that</c>
+
+00:02:05.510 --> 00:02:05.520 align:start position:0%
+it's going to do all the things that
+ 
+
+00:02:05.520 --> 00:02:07.030 align:start position:0%
+it's going to do all the things that
+that<00:02:05.759><c> Warps</c><00:02:06.159><c> agent</c><00:02:06.399><c> does.</c><00:02:06.640><c> So</c><00:02:06.719><c> it</c><00:02:06.880><c> will</c><00:02:06.960><c> go</c>
+
+00:02:07.030 --> 00:02:07.040 align:start position:0%
+that Warps agent does. So it will go
+ 
+
+00:02:07.040 --> 00:02:08.710 align:start position:0%
+that Warps agent does. So it will go
+ahead<00:02:07.200><c> and</c><00:02:07.280><c> look</c><00:02:07.439><c> at</c><00:02:07.600><c> my</c><00:02:07.840><c> status.</c><00:02:08.319><c> It'll</c><00:02:08.560><c> look</c>
+
+00:02:08.710 --> 00:02:08.720 align:start position:0%
+ahead and look at my status. It'll look
+ 
+
+00:02:08.720 --> 00:02:12.309 align:start position:0%
+ahead and look at my status. It'll look
+at<00:02:08.800><c> the</c><00:02:08.959><c> diff.</c><00:02:09.840><c> It</c><00:02:10.160><c> will</c><00:02:11.039><c> uh</c><00:02:11.760><c> create</c><00:02:12.080><c> this</c>
+
+00:02:12.309 --> 00:02:12.319 align:start position:0%
+at the diff. It will uh create this
+ 
+
+00:02:12.319 --> 00:02:14.070 align:start position:0%
+at the diff. It will uh create this
+commit<00:02:12.640><c> for</c><00:02:12.800><c> me,</c><00:02:12.959><c> which</c><00:02:13.200><c> is</c><00:02:13.360><c> exactly</c><00:02:13.680><c> what</c><00:02:13.920><c> I</c>
+
+00:02:14.070 --> 00:02:14.080 align:start position:0%
+commit for me, which is exactly what I
+ 
+
+00:02:14.080 --> 00:02:16.229 align:start position:0%
+commit for me, which is exactly what I
+want.<00:02:14.800><c> This</c><00:02:15.040><c> does</c><00:02:15.280><c> describe</c><00:02:15.680><c> accurately</c>
+
+00:02:16.229 --> 00:02:16.239 align:start position:0%
+want. This does describe accurately
+ 
+
+00:02:16.239 --> 00:02:18.470 align:start position:0%
+want. This does describe accurately
+what's<00:02:16.480><c> going</c><00:02:16.640><c> on</c><00:02:16.879><c> here.</c><00:02:17.840><c> And</c><00:02:18.080><c> then</c><00:02:18.319><c> it's</c>
+
+00:02:18.470 --> 00:02:18.480 align:start position:0%
+what's going on here. And then it's
+ 
+
+00:02:18.480 --> 00:02:20.309 align:start position:0%
+what's going on here. And then it's
+going<00:02:18.560><c> to</c><00:02:18.640><c> push</c><00:02:18.800><c> it</c><00:02:18.879><c> up</c><00:02:19.040><c> to</c><00:02:19.120><c> origin,</c><00:02:19.920><c> which</c><00:02:20.160><c> is</c>
+
+00:02:20.309 --> 00:02:20.319 align:start position:0%
+going to push it up to origin, which is
+ 
+
+00:02:20.319 --> 00:02:22.869 align:start position:0%
+going to push it up to origin, which is
+cool.<00:02:21.120><c> This</c><00:02:21.280><c> is</c><00:02:21.360><c> what</c><00:02:21.520><c> I</c><00:02:21.680><c> will</c><00:02:21.840><c> typically</c><00:02:22.319><c> do.</c>
+
+00:02:22.869 --> 00:02:22.879 align:start position:0%
+cool. This is what I will typically do.
+ 
+
+00:02:22.879 --> 00:02:25.430 align:start position:0%
+cool. This is what I will typically do.
+Now,<00:02:23.280><c> I'm</c><00:02:23.520><c> going</c><00:02:23.599><c> to</c><00:02:23.760><c> go</c><00:02:23.920><c> ahead</c><00:02:24.319><c> and</c><00:02:24.959><c> show</c><00:02:25.200><c> some</c>
+
+00:02:25.430 --> 00:02:25.440 align:start position:0%
+Now, I'm going to go ahead and show some
+ 
+
+00:02:25.440 --> 00:02:26.630 align:start position:0%
+Now, I'm going to go ahead and show some
+other<00:02:25.599><c> save</c><00:02:25.840><c> prompts.</c><00:02:26.160><c> So,</c><00:02:26.319><c> I'm</c><00:02:26.400><c> going</c><00:02:26.400><c> to</c><00:02:26.560><c> go</c>
+
+00:02:26.630 --> 00:02:26.640 align:start position:0%
+other save prompts. So, I'm going to go
+ 
+
+00:02:26.640 --> 00:02:29.990 align:start position:0%
+other save prompts. So, I'm going to go
+ahead<00:02:26.720><c> and</c><00:02:27.120><c> run</c><00:02:27.360><c> one</c><00:02:28.160><c> uh</c><00:02:28.400><c> before</c><00:02:28.640><c> I</c><00:02:28.879><c> make</c><00:02:29.120><c> a</c><00:02:29.840><c> uh</c>
+
+00:02:29.990 --> 00:02:30.000 align:start position:0%
+ahead and run one uh before I make a uh
+ 
+
+00:02:30.000 --> 00:02:33.750 align:start position:0%
+ahead and run one uh before I make a uh
+pull<00:02:30.239><c> request.</c><00:02:30.879><c> I</c><00:02:31.120><c> have</c><00:02:31.200><c> a</c><00:02:31.440><c> prompt</c><00:02:32.319><c> that</c><00:02:33.280><c> um</c>
+
+00:02:33.750 --> 00:02:33.760 align:start position:0%
+pull request. I have a prompt that um
+ 
+
+00:02:33.760 --> 00:02:36.710 align:start position:0%
+pull request. I have a prompt that um
+will<00:02:34.239><c> ask</c><00:02:34.480><c> the</c><00:02:34.640><c> agent</c><00:02:34.879><c> to</c><00:02:35.040><c> review</c><00:02:35.360><c> my</c><00:02:35.599><c> code</c><00:02:36.400><c> and</c>
+
+00:02:36.710 --> 00:02:36.720 align:start position:0%
+will ask the agent to review my code and
+ 
+
+00:02:36.720 --> 00:02:38.150 align:start position:0%
+will ask the agent to review my code and
+look<00:02:36.879><c> and</c><00:02:37.120><c> see</c><00:02:37.280><c> if</c><00:02:37.440><c> it's</c><00:02:37.599><c> good</c><00:02:37.760><c> and</c><00:02:37.920><c> there's</c>
+
+00:02:38.150 --> 00:02:38.160 align:start position:0%
+look and see if it's good and there's
+ 
+
+00:02:38.160 --> 00:02:39.830 align:start position:0%
+look and see if it's good and there's
+anything<00:02:38.319><c> I</c><00:02:38.560><c> should</c><00:02:38.720><c> change.</c><00:02:39.360><c> So,</c><00:02:39.599><c> I'm</c><00:02:39.760><c> going</c>
+
+00:02:39.830 --> 00:02:39.840 align:start position:0%
+anything I should change. So, I'm going
+ 
+
+00:02:39.840 --> 00:02:41.509 align:start position:0%
+anything I should change. So, I'm going
+to<00:02:39.920><c> go</c><00:02:40.000><c> ahead</c><00:02:40.160><c> and</c><00:02:40.319><c> run</c><00:02:40.480><c> this</c><00:02:40.720><c> prompt,</c><00:02:41.360><c> which</c>
+
+00:02:41.509 --> 00:02:41.519 align:start position:0%
+to go ahead and run this prompt, which
+ 
+
+00:02:41.519 --> 00:02:42.790 align:start position:0%
+to go ahead and run this prompt, which
+says,<00:02:41.760><c> I</c><00:02:41.840><c> want</c><00:02:41.920><c> you</c><00:02:42.080><c> to</c><00:02:42.160><c> review</c><00:02:42.400><c> my</c><00:02:42.640><c> code</c>
+
+00:02:42.790 --> 00:02:42.800 align:start position:0%
+says, I want you to review my code
+ 
+
+00:02:42.800 --> 00:02:44.229 align:start position:0%
+says, I want you to review my code
+changes<00:02:43.120><c> in</c><00:02:43.280><c> the</c><00:02:43.440><c> current</c><00:02:43.599><c> branch.</c><00:02:43.920><c> See</c><00:02:44.000><c> if</c><00:02:44.080><c> I</c>
+
+00:02:44.229 --> 00:02:44.239 align:start position:0%
+changes in the current branch. See if I
+ 
+
+00:02:44.239 --> 00:02:45.830 align:start position:0%
+changes in the current branch. See if I
+have<00:02:44.319><c> logic</c><00:02:44.640><c> or</c><00:02:44.800><c> style</c><00:02:45.200><c> errors</c><00:02:45.440><c> or</c><00:02:45.680><c> other</c>
+
+00:02:45.830 --> 00:02:45.840 align:start position:0%
+have logic or style errors or other
+ 
+
+00:02:45.840 --> 00:02:48.710 align:start position:0%
+have logic or style errors or other
+improvements.<00:02:47.200><c> I</c><00:02:47.519><c> find</c><00:02:47.760><c> this</c><00:02:48.000><c> much</c><00:02:48.319><c> faster</c>
+
+00:02:48.710 --> 00:02:48.720 align:start position:0%
+improvements. I find this much faster
+ 
+
+00:02:48.720 --> 00:02:51.110 align:start position:0%
+improvements. I find this much faster
+than<00:02:49.120><c> pushing</c><00:02:49.440><c> this</c><00:02:50.080><c> uh</c><00:02:50.239><c> and</c><00:02:50.480><c> then</c><00:02:50.640><c> reviewing</c>
+
+00:02:51.110 --> 00:02:51.120 align:start position:0%
+than pushing this uh and then reviewing
+ 
+
+00:02:51.120 --> 00:02:54.309 align:start position:0%
+than pushing this uh and then reviewing
+it<00:02:51.360><c> in</c><00:02:51.680><c> GitHub.</c><00:02:52.640><c> Um</c><00:02:53.360><c> it's</c><00:02:53.599><c> a</c><00:02:53.760><c> cool</c><00:02:54.000><c> way</c><00:02:54.080><c> of</c>
+
+00:02:54.309 --> 00:02:54.319 align:start position:0%
+it in GitHub. Um it's a cool way of
+ 
+
+00:02:54.319 --> 00:02:56.309 align:start position:0%
+it in GitHub. Um it's a cool way of
+getting<00:02:54.480><c> some</c><00:02:54.720><c> quick</c><00:02:54.959><c> feedback.</c><00:02:55.840><c> We'll</c><00:02:56.160><c> see</c>
+
+00:02:56.309 --> 00:02:56.319 align:start position:0%
+getting some quick feedback. We'll see
+ 
+
+00:02:56.319 --> 00:02:58.390 align:start position:0%
+getting some quick feedback. We'll see
+if<00:02:56.480><c> there's</c><00:02:56.720><c> anything</c><00:02:56.959><c> wrong</c><00:02:57.120><c> in</c><00:02:57.360><c> this</c><00:02:57.519><c> PR.</c><00:02:58.160><c> I</c>
+
+00:02:58.390 --> 00:02:58.400 align:start position:0%
+if there's anything wrong in this PR. I
+ 
+
+00:02:58.400 --> 00:02:59.750 align:start position:0%
+if there's anything wrong in this PR. I
+actually<00:02:58.640><c> haven't</c><00:02:58.879><c> run</c><00:02:59.040><c> this</c><00:02:59.280><c> yet.</c><00:02:59.519><c> We'll</c>
+
+00:02:59.750 --> 00:02:59.760 align:start position:0%
+actually haven't run this yet. We'll
+ 
+
+00:02:59.760 --> 00:03:01.990 align:start position:0%
+actually haven't run this yet. We'll
+see.<00:03:00.000><c> I'm</c><00:03:00.160><c> not</c><00:03:00.319><c> sure.</c><00:03:00.800><c> Probably</c><00:03:01.120><c> is.</c><00:03:01.760><c> Let's</c>
+
+00:03:01.990 --> 00:03:02.000 align:start position:0%
+see. I'm not sure. Probably is. Let's
+ 
+
+00:03:02.000 --> 00:03:03.509 align:start position:0%
+see. I'm not sure. Probably is. Let's
+see<00:03:02.080><c> what</c><00:03:02.239><c> it</c><00:03:02.319><c> comes</c><00:03:02.480><c> up</c><00:03:02.640><c> with.</c><00:03:03.040><c> The</c><00:03:03.280><c> funny</c>
+
+00:03:03.509 --> 00:03:03.519 align:start position:0%
+see what it comes up with. The funny
+ 
+
+00:03:03.519 --> 00:03:05.350 align:start position:0%
+see what it comes up with. The funny
+thing<00:03:03.599><c> is</c><00:03:04.080><c> the</c><00:03:04.319><c> agent</c><00:03:04.640><c> actually</c><00:03:04.879><c> wrote</c><00:03:05.120><c> this</c>
+
+00:03:05.350 --> 00:03:05.360 align:start position:0%
+thing is the agent actually wrote this
+ 
+
+00:03:05.360 --> 00:03:08.390 align:start position:0%
+thing is the agent actually wrote this
+code.<00:03:06.400><c> So</c><00:03:06.800><c> if</c><00:03:06.959><c> it</c><00:03:07.200><c> does</c><00:03:07.599><c> uh</c><00:03:07.760><c> have</c><00:03:08.000><c> problems</c>
+
+00:03:08.390 --> 00:03:08.400 align:start position:0%
+code. So if it does uh have problems
+ 
+
+00:03:08.400 --> 00:03:11.990 align:start position:0%
+code. So if it does uh have problems
+with<00:03:08.560><c> it,</c><00:03:09.120><c> uh</c><00:03:09.280><c> it</c><00:03:09.599><c> can</c><00:03:10.879><c> uh</c><00:03:11.120><c> maybe</c><00:03:11.440><c> fix</c><00:03:11.680><c> them</c>
+
+00:03:11.990 --> 00:03:12.000 align:start position:0%
+with it, uh it can uh maybe fix them
+ 
+
+00:03:12.000 --> 00:03:14.229 align:start position:0%
+with it, uh it can uh maybe fix them
+itself.<00:03:12.959><c> So</c><00:03:13.120><c> this</c><00:03:13.360><c> says</c><00:03:13.519><c> there's</c><00:03:13.760><c> a</c><00:03:13.920><c> logic</c>
+
+00:03:14.229 --> 00:03:14.239 align:start position:0%
+itself. So this says there's a logic
+ 
+
+00:03:14.239 --> 00:03:16.949 align:start position:0%
+itself. So this says there's a logic
+bug,<00:03:14.800><c> which</c><00:03:15.040><c> is</c><00:03:15.200><c> interesting.</c><00:03:16.319><c> This</c><00:03:16.640><c> does</c>
+
+00:03:16.949 --> 00:03:16.959 align:start position:0%
+bug, which is interesting. This does
+ 
+
+00:03:16.959 --> 00:03:19.990 align:start position:0%
+bug, which is interesting. This does
+actually<00:03:17.280><c> look</c><00:03:17.440><c> like</c><00:03:17.599><c> a</c><00:03:17.840><c> bug.</c><00:03:18.640><c> Fascinating.</c>
+
+00:03:19.990 --> 00:03:20.000 align:start position:0%
+actually look like a bug. Fascinating.
+ 
+
+00:03:20.000 --> 00:03:21.670 align:start position:0%
+actually look like a bug. Fascinating.
+Um,
+
+00:03:21.670 --> 00:03:21.680 align:start position:0%
+Um,
+ 
+
+00:03:21.680 --> 00:03:23.509 align:start position:0%
+Um,
+very,<00:03:22.000><c> very,</c><00:03:22.400><c> very</c><00:03:22.800><c> smart.</c><00:03:23.120><c> It</c><00:03:23.360><c> actually</c>
+
+00:03:23.509 --> 00:03:23.519 align:start position:0%
+very, very, very smart. It actually
+ 
+
+00:03:23.519 --> 00:03:25.509 align:start position:0%
+very, very, very smart. It actually
+caught<00:03:23.680><c> a</c><00:03:23.840><c> bug.</c><00:03:24.319><c> Caught</c><00:03:24.640><c> a</c><00:03:24.800><c> potential</c><00:03:25.120><c> raise</c>
+
+00:03:25.509 --> 00:03:25.519 align:start position:0%
+caught a bug. Caught a potential raise
+ 
+
+00:03:25.519 --> 00:03:28.309 align:start position:0%
+caught a bug. Caught a potential raise
+condition.<00:03:26.640><c> Okay,</c><00:03:27.120><c> so</c><00:03:27.360><c> maybe</c><00:03:27.599><c> this</c><00:03:27.760><c> one</c><00:03:27.920><c> isn't</c>
+
+00:03:28.309 --> 00:03:28.319 align:start position:0%
+condition. Okay, so maybe this one isn't
+ 
+
+00:03:28.319 --> 00:03:30.390 align:start position:0%
+condition. Okay, so maybe this one isn't
+quite<00:03:28.560><c> ready</c><00:03:28.800><c> for</c><00:03:29.040><c> a</c><00:03:29.200><c> pull</c><00:03:29.440><c> request.</c><00:03:30.159><c> There</c>
+
+00:03:30.390 --> 00:03:30.400 align:start position:0%
+quite ready for a pull request. There
+ 
+
+00:03:30.400 --> 00:03:32.229 align:start position:0%
+quite ready for a pull request. There
+seemed<00:03:30.560><c> to</c><00:03:30.640><c> be</c><00:03:30.799><c> some</c><00:03:30.959><c> code</c><00:03:31.200><c> quality</c><00:03:31.519><c> issues.</c>
+
+00:03:32.229 --> 00:03:32.239 align:start position:0%
+seemed to be some code quality issues.
+ 
+
+00:03:32.239 --> 00:03:33.990 align:start position:0%
+seemed to be some code quality issues.
+Again,<00:03:32.879><c> the</c><00:03:33.040><c> agent</c><00:03:33.360><c> actually</c><00:03:33.599><c> wrote</c><00:03:33.840><c> this</c>
+
+00:03:33.990 --> 00:03:34.000 align:start position:0%
+Again, the agent actually wrote this
+ 
+
+00:03:34.000 --> 00:03:35.670 align:start position:0%
+Again, the agent actually wrote this
+code,<00:03:34.239><c> so</c><00:03:34.480><c> this</c><00:03:34.560><c> is</c><00:03:34.720><c> cool</c><00:03:34.879><c> to</c><00:03:35.040><c> see</c><00:03:35.120><c> it.</c><00:03:35.440><c> I'm</c>
+
+00:03:35.670 --> 00:03:35.680 align:start position:0%
+code, so this is cool to see it. I'm
+ 
+
+00:03:35.680 --> 00:03:37.190 align:start position:0%
+code, so this is cool to see it. I'm
+going<00:03:35.760><c> to</c><00:03:35.840><c> show</c><00:03:35.920><c> you</c><00:03:36.159><c> one</c><00:03:36.400><c> last</c><00:03:36.640><c> prompt,</c><00:03:37.040><c> which</c>
+
+00:03:37.190 --> 00:03:37.200 align:start position:0%
+going to show you one last prompt, which
+ 
+
+00:03:37.200 --> 00:03:38.630 align:start position:0%
+going to show you one last prompt, which
+is<00:03:37.360><c> how</c><00:03:37.440><c> I</c><00:03:37.599><c> would</c><00:03:37.680><c> do</c><00:03:37.920><c> sort</c><00:03:38.000><c> of</c><00:03:38.080><c> my</c><00:03:38.319><c> complete</c>
+
+00:03:38.630 --> 00:03:38.640 align:start position:0%
+is how I would do sort of my complete
+ 
+
+00:03:38.640 --> 00:03:39.910 align:start position:0%
+is how I would do sort of my complete
+workflow<00:03:38.959><c> here.</c><00:03:39.360><c> Let's</c><00:03:39.519><c> say</c><00:03:39.680><c> that</c><00:03:39.760><c> there</c>
+
+00:03:39.910 --> 00:03:39.920 align:start position:0%
+workflow here. Let's say that there
+ 
+
+00:03:39.920 --> 00:03:41.589 align:start position:0%
+workflow here. Let's say that there
+weren't<00:03:40.159><c> all</c><00:03:40.319><c> these</c><00:03:40.480><c> bugs.</c><00:03:41.040><c> Actually,</c><00:03:41.360><c> what</c><00:03:41.519><c> I</c>
+
+00:03:41.589 --> 00:03:41.599 align:start position:0%
+weren't all these bugs. Actually, what I
+ 
+
+00:03:41.599 --> 00:03:42.869 align:start position:0%
+weren't all these bugs. Actually, what I
+would<00:03:41.760><c> do</c><00:03:41.840><c> right</c><00:03:42.000><c> now</c><00:03:42.080><c> is</c><00:03:42.319><c> probably</c><00:03:42.480><c> ask</c><00:03:42.720><c> the</c>
+
+00:03:42.869 --> 00:03:42.879 align:start position:0%
+would do right now is probably ask the
+ 
+
+00:03:42.879 --> 00:03:44.550 align:start position:0%
+would do right now is probably ask the
+agent<00:03:43.120><c> to</c><00:03:43.280><c> fix</c><00:03:43.440><c> these</c><00:03:43.680><c> bugs.</c><00:03:44.080><c> But</c><00:03:44.239><c> let's</c><00:03:44.480><c> say</c>
+
+00:03:44.550 --> 00:03:44.560 align:start position:0%
+agent to fix these bugs. But let's say
+ 
+
+00:03:44.560 --> 00:03:46.309 align:start position:0%
+agent to fix these bugs. But let's say
+there<00:03:44.720><c> weren't</c><00:03:44.959><c> all</c><00:03:45.040><c> these</c><00:03:45.280><c> bugs.</c><00:03:45.840><c> One</c><00:03:46.080><c> other</c>
+
+00:03:46.309 --> 00:03:46.319 align:start position:0%
+there weren't all these bugs. One other
+ 
+
+00:03:46.319 --> 00:03:47.830 align:start position:0%
+there weren't all these bugs. One other
+really<00:03:46.640><c> cool</c><00:03:46.879><c> thing</c><00:03:47.040><c> that</c><00:03:47.200><c> I</c><00:03:47.360><c> would</c><00:03:47.519><c> use</c><00:03:47.680><c> a</c>
+
+00:03:47.830 --> 00:03:47.840 align:start position:0%
+really cool thing that I would use a
+ 
+
+00:03:47.840 --> 00:03:49.910 align:start position:0%
+really cool thing that I would use a
+prompt<00:03:48.080><c> for</c><00:03:48.319><c> is</c><00:03:48.560><c> actually</c><00:03:48.799><c> opening</c><00:03:49.040><c> a</c><00:03:49.280><c> PR.</c><00:03:49.760><c> And</c>
+
+00:03:49.910 --> 00:03:49.920 align:start position:0%
+prompt for is actually opening a PR. And
+ 
+
+00:03:49.920 --> 00:03:53.830 align:start position:0%
+prompt for is actually opening a PR. And
+so<00:03:51.040><c> um</c><00:03:51.360><c> I'm</c><00:03:51.680><c> going</c><00:03:51.760><c> to</c><00:03:51.840><c> go</c><00:03:52.000><c> ahead</c><00:03:52.159><c> and</c><00:03:52.720><c> um</c><00:03:53.599><c> look</c>
+
+00:03:53.830 --> 00:03:53.840 align:start position:0%
+so um I'm going to go ahead and um look
+ 
+
+00:03:53.840 --> 00:03:57.589 align:start position:0%
+so um I'm going to go ahead and um look
+for<00:03:54.000><c> that</c><00:03:54.640><c> uh</c><00:03:54.879><c> like</c><00:03:55.200><c> make</c><00:03:55.599><c> a</c><00:03:56.080><c> PR</c>
+
+00:03:57.589 --> 00:03:57.599 align:start position:0%
+for that uh like make a PR
+ 
+
+00:03:57.599 --> 00:03:59.750 align:start position:0%
+for that uh like make a PR
+from<00:03:57.840><c> my</c><00:03:58.080><c> open</c><00:03:58.319><c> changes.</c><00:03:58.959><c> And</c><00:03:59.120><c> again,</c><00:03:59.439><c> this</c><00:03:59.599><c> is</c>
+
+00:03:59.750 --> 00:03:59.760 align:start position:0%
+from my open changes. And again, this is
+ 
+
+00:03:59.760 --> 00:04:01.750 align:start position:0%
+from my open changes. And again, this is
+another<00:04:00.000><c> one</c><00:04:00.159><c> of</c><00:04:00.239><c> these</c><00:04:00.799><c> that</c><00:04:01.040><c> I</c><00:04:01.200><c> use</c><00:04:01.439><c> all</c><00:04:01.599><c> the</c>
+
+00:04:01.750 --> 00:04:01.760 align:start position:0%
+another one of these that I use all the
+ 
+
+00:04:01.760 --> 00:04:04.949 align:start position:0%
+another one of these that I use all the
+time.<00:04:02.640><c> Um</c><00:04:03.040><c> and</c><00:04:03.280><c> so</c><00:04:03.439><c> if</c><00:04:03.680><c> I</c><00:04:03.760><c> want</c><00:04:03.920><c> to</c><00:04:04.000><c> do</c><00:04:04.159><c> this,</c><00:04:04.720><c> I</c>
+
+00:04:04.949 --> 00:04:04.959 align:start position:0%
+time. Um and so if I want to do this, I
+ 
+
+00:04:04.959 --> 00:04:06.470 align:start position:0%
+time. Um and so if I want to do this, I
+could<00:04:05.120><c> just</c><00:04:05.280><c> run</c><00:04:05.439><c> this.</c><00:04:05.680><c> Bam.</c><00:04:06.080><c> You</c><00:04:06.159><c> get</c><00:04:06.239><c> the</c>
+
+00:04:06.470 --> 00:04:06.480 align:start position:0%
+could just run this. Bam. You get the
+ 
+
+00:04:06.480 --> 00:04:08.949 align:start position:0%
+could just run this. Bam. You get the
+idea.<00:04:07.120><c> Super</c><00:04:07.519><c> nice.</c><00:04:08.159><c> This</c><00:04:08.400><c> obviously</c><00:04:08.640><c> isn't</c>
+
+00:04:08.949 --> 00:04:08.959 align:start position:0%
+idea. Super nice. This obviously isn't
+ 
+
+00:04:08.959 --> 00:04:11.030 align:start position:0%
+idea. Super nice. This obviously isn't
+just<00:04:09.200><c> for</c><00:04:09.360><c> get</c><00:04:09.599><c> stuff.</c><00:04:10.000><c> You</c><00:04:10.239><c> can</c><00:04:10.400><c> make</c><00:04:10.720><c> save</c>
+
+00:04:11.030 --> 00:04:11.040 align:start position:0%
+just for get stuff. You can make save
+ 
+
+00:04:11.040 --> 00:04:12.789 align:start position:0%
+just for get stuff. You can make save
+prompts<00:04:11.439><c> and</c><00:04:11.680><c> share</c><00:04:11.920><c> them</c><00:04:12.080><c> and</c><00:04:12.239><c> use</c><00:04:12.400><c> them</c><00:04:12.560><c> for</c>
+
+00:04:12.789 --> 00:04:12.799 align:start position:0%
+prompts and share them and use them for
+ 
+
+00:04:12.799 --> 00:04:15.030 align:start position:0%
+prompts and share them and use them for
+any<00:04:13.040><c> repeatable</c><00:04:13.519><c> task</c><00:04:13.840><c> that</c><00:04:14.080><c> you</c><00:04:14.159><c> want</c><00:04:14.319><c> to</c><00:04:14.400><c> do.</c>
+
+00:04:15.030 --> 00:04:15.040 align:start position:0%
+any repeatable task that you want to do.
+ 
+
+00:04:15.040 --> 00:04:16.870 align:start position:0%
+any repeatable task that you want to do.
+Share<00:04:15.280><c> them</c><00:04:15.760><c> across</c><00:04:16.079><c> your</c><00:04:16.239><c> team.</c><00:04:16.560><c> See</c><00:04:16.720><c> when</c>
+
+00:04:16.870 --> 00:04:16.880 align:start position:0%
+Share them across your team. See when
+ 
+
+00:04:16.880 --> 00:04:19.430 align:start position:0%
+Share them across your team. See when
+they're<00:04:17.040><c> run,</c><00:04:17.440><c> edit</c><00:04:17.759><c> them,</c><00:04:18.560><c> u</c><00:04:18.799><c> parameterize</c>
+
+00:04:19.430 --> 00:04:19.440 align:start position:0%
+they're run, edit them, u parameterize
+ 
+
+00:04:19.440 --> 00:04:21.110 align:start position:0%
+they're run, edit them, u parameterize
+them.<00:04:19.680><c> So</c><00:04:19.919><c> very,</c><00:04:20.160><c> very</c><00:04:20.320><c> cool</c><00:04:20.560><c> feature.</c><00:04:20.880><c> Oh,</c>
+
+00:04:21.110 --> 00:04:21.120 align:start position:0%
+them. So very, very cool feature. Oh,
+ 
+
+00:04:21.120 --> 00:04:23.680 align:start position:0%
+them. So very, very cool feature. Oh,
+this<00:04:21.280><c> is</c><00:04:21.440><c> useful.</c>
+

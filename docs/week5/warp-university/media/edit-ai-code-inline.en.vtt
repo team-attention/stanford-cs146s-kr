@@ -1,0 +1,608 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.080 --> 00:00:02.149 align:start position:0%
+ 
+Now<00:00:00.320><c> I'm</c><00:00:00.560><c> starting</c><00:00:00.800><c> this</c><00:00:01.040><c> agent</c><00:00:01.680><c> and</c><00:00:02.000><c> having</c>
+
+00:00:02.149 --> 00:00:02.159 align:start position:0%
+Now I'm starting this agent and having
+ 
+
+00:00:02.159 --> 00:00:03.510 align:start position:0%
+Now I'm starting this agent and having
+it<00:00:02.399><c> run.</c><00:00:02.720><c> It's</c><00:00:02.960><c> going</c><00:00:03.040><c> to</c><00:00:03.120><c> use</c><00:00:03.280><c> the</c>
+
+00:00:03.510 --> 00:00:03.520 align:start position:0%
+it run. It's going to use the
+ 
+
+00:00:03.520 --> 00:00:05.430 align:start position:0%
+it run. It's going to use the
+information<00:00:03.840><c> that</c><00:00:04.080><c> I</c><00:00:04.240><c> provided</c><00:00:04.640><c> the</c><00:00:04.880><c> prompt.</c>
+
+00:00:05.430 --> 00:00:05.440 align:start position:0%
+information that I provided the prompt.
+ 
+
+00:00:05.440 --> 00:00:07.829 align:start position:0%
+information that I provided the prompt.
+It's<00:00:05.680><c> going</c><00:00:05.759><c> to</c><00:00:05.839><c> form</c><00:00:06.080><c> a</c><00:00:06.240><c> task</c><00:00:06.480><c> list</c><00:00:06.799><c> here</c><00:00:07.600><c> and</c>
+
+00:00:07.829 --> 00:00:07.839 align:start position:0%
+It's going to form a task list here and
+ 
+
+00:00:07.839 --> 00:00:09.830 align:start position:0%
+It's going to form a task list here and
+it's<00:00:08.080><c> going</c><00:00:08.240><c> to</c><00:00:08.400><c> look</c><00:00:08.720><c> across</c><00:00:09.120><c> all</c><00:00:09.280><c> my</c><00:00:09.519><c> files</c>
+
+00:00:09.830 --> 00:00:09.840 align:start position:0%
+it's going to look across all my files
+ 
+
+00:00:09.840 --> 00:00:11.830 align:start position:0%
+it's going to look across all my files
+and<00:00:10.160><c> try</c><00:00:10.320><c> and</c><00:00:10.559><c> figure</c><00:00:10.800><c> out</c><00:00:11.040><c> how</c><00:00:11.280><c> to</c><00:00:11.440><c> make</c><00:00:11.599><c> this</c>
+
+00:00:11.830 --> 00:00:11.840 align:start position:0%
+and try and figure out how to make this
+ 
+
+00:00:11.840 --> 00:00:14.950 align:start position:0%
+and try and figure out how to make this
+fix.<00:00:13.200><c> It's</c><00:00:13.519><c> telling</c><00:00:13.759><c> me</c><00:00:14.000><c> the</c><00:00:14.240><c> progress</c><00:00:14.559><c> as</c><00:00:14.799><c> it</c>
+
+00:00:14.950 --> 00:00:14.960 align:start position:0%
+fix. It's telling me the progress as it
+ 
+
+00:00:14.960 --> 00:00:17.590 align:start position:0%
+fix. It's telling me the progress as it
+goes,<00:00:15.280><c> showing</c><00:00:15.440><c> me</c><00:00:15.599><c> the</c><00:00:15.839><c> tasks</c><00:00:17.199><c> and</c><00:00:17.440><c> we'll</c>
+
+00:00:17.590 --> 00:00:17.600 align:start position:0%
+goes, showing me the tasks and we'll
+ 
+
+00:00:17.600 --> 00:00:19.590 align:start position:0%
+goes, showing me the tasks and we'll
+just<00:00:17.760><c> kind</c><00:00:17.920><c> of</c><00:00:18.000><c> watch</c><00:00:18.160><c> it</c><00:00:18.320><c> do</c><00:00:18.480><c> its</c><00:00:18.640><c> work</c><00:00:18.880><c> here.</c>
+
+00:00:19.590 --> 00:00:19.600 align:start position:0%
+just kind of watch it do its work here.
+ 
+
+00:00:19.600 --> 00:00:21.590 align:start position:0%
+just kind of watch it do its work here.
+So<00:00:20.160><c> as</c><00:00:20.400><c> I</c><00:00:20.560><c> mentioned,</c><00:00:20.800><c> it</c><00:00:20.960><c> uses</c><00:00:21.279><c> various</c>
+
+00:00:21.590 --> 00:00:21.600 align:start position:0%
+So as I mentioned, it uses various
+ 
+
+00:00:21.600 --> 00:00:24.710 align:start position:0%
+So as I mentioned, it uses various
+search<00:00:21.760><c> tools.</c><00:00:22.160><c> So</c><00:00:22.320><c> this</c><00:00:22.480><c> is</c><00:00:22.640><c> using</c><00:00:23.039><c> GP.</c><00:00:24.480><c> It's</c>
+
+00:00:24.710 --> 00:00:24.720 align:start position:0%
+search tools. So this is using GP. It's
+ 
+
+00:00:24.720 --> 00:00:25.990 align:start position:0%
+search tools. So this is using GP. It's
+also<00:00:24.960><c> here</c><00:00:25.199><c> when</c><00:00:25.359><c> it</c><00:00:25.519><c> says</c><00:00:25.680><c> searching</c>
+
+00:00:25.990 --> 00:00:26.000 align:start position:0%
+also here when it says searching
+ 
+
+00:00:26.000 --> 00:00:28.230 align:start position:0%
+also here when it says searching
+codebase<00:00:26.400><c> is</c><00:00:26.640><c> using</c><00:00:27.279><c> uh</c><00:00:27.439><c> codebase</c><00:00:27.840><c> embedding</c>
+
+00:00:28.230 --> 00:00:28.240 align:start position:0%
+codebase is using uh codebase embedding
+ 
+
+00:00:28.240 --> 00:00:31.029 align:start position:0%
+codebase is using uh codebase embedding
+to<00:00:28.400><c> do</c><00:00:28.560><c> it</c><00:00:28.720><c> search.</c><00:00:29.519><c> Okay,</c><00:00:29.920><c> it</c><00:00:30.160><c> has</c><00:00:30.400><c> understood</c>
+
+00:00:31.029 --> 00:00:31.039 align:start position:0%
+to do it search. Okay, it has understood
+ 
+
+00:00:31.039 --> 00:00:33.030 align:start position:0%
+to do it search. Okay, it has understood
+the<00:00:31.279><c> bug</c><00:00:31.439><c> and</c><00:00:31.599><c> it</c><00:00:31.760><c> tells</c><00:00:31.920><c> you</c><00:00:32.160><c> that</c><00:00:32.559><c> now</c><00:00:32.800><c> it's</c>
+
+00:00:33.030 --> 00:00:33.040 align:start position:0%
+the bug and it tells you that now it's
+ 
+
+00:00:33.040 --> 00:00:34.870 align:start position:0%
+the bug and it tells you that now it's
+going to<00:00:33.200><c> start</c><00:00:33.360><c> creating</c><00:00:33.600><c> diffs</c><00:00:34.000><c> for</c><00:00:34.160><c> you.</c>
+
+00:00:34.870 --> 00:00:34.880 align:start position:0%
+going to start creating diffs for you.
+ 
+
+00:00:34.880 --> 00:00:37.670 align:start position:0%
+going to start creating diffs for you.
+So,<00:00:35.280><c> one</c><00:00:35.440><c> of</c><00:00:35.520><c> the</c><00:00:35.680><c> things</c><00:00:35.760><c> that</c><00:00:36.079><c> makes</c><00:00:36.239><c> Warp</c><00:00:37.280><c> um</c>
+
+00:00:37.670 --> 00:00:37.680 align:start position:0%
+So, one of the things that makes Warp um
+ 
+
+00:00:37.680 --> 00:00:39.190 align:start position:0%
+So, one of the things that makes Warp um
+uniquely<00:00:38.160><c> powerful</c><00:00:38.480><c> compared</c><00:00:38.800><c> to</c><00:00:38.960><c> other</c>
+
+00:00:39.190 --> 00:00:39.200 align:start position:0%
+uniquely powerful compared to other
+ 
+
+00:00:39.200 --> 00:00:41.190 align:start position:0%
+uniquely powerful compared to other
+terminal<00:00:39.680><c> based</c><00:00:40.079><c> coding</c><00:00:40.480><c> solutions</c><00:00:40.800><c> is</c><00:00:41.040><c> that</c>
+
+00:00:41.190 --> 00:00:41.200 align:start position:0%
+terminal based coding solutions is that
+ 
+
+00:00:41.200 --> 00:00:43.270 align:start position:0%
+terminal based coding solutions is that
+this<00:00:41.520><c> diff</c><00:00:41.840><c> here,</c><00:00:42.239><c> it</c><00:00:42.480><c> shows</c><00:00:42.719><c> in</c><00:00:42.879><c> a</c><00:00:42.960><c> way</c><00:00:43.120><c> that</c>
+
+00:00:43.270 --> 00:00:43.280 align:start position:0%
+this diff here, it shows in a way that
+ 
+
+00:00:43.280 --> 00:00:45.110 align:start position:0%
+this diff here, it shows in a way that
+you<00:00:43.520><c> can</c><00:00:43.600><c> either</c><00:00:43.840><c> accept</c><00:00:44.160><c> it</c><00:00:44.320><c> if</c><00:00:44.480><c> you</c><00:00:44.640><c> want</c><00:00:44.800><c> or</c>
+
+00:00:45.110 --> 00:00:45.120 align:start position:0%
+you can either accept it if you want or
+ 
+
+00:00:45.120 --> 00:00:47.270 align:start position:0%
+you can either accept it if you want or
+you<00:00:45.360><c> can</c><00:00:45.440><c> do</c><00:00:45.600><c> a</c><00:00:45.760><c> couple</c><00:00:46.079><c> actions</c><00:00:46.559><c> to</c><00:00:46.960><c> improve</c>
+
+00:00:47.270 --> 00:00:47.280 align:start position:0%
+you can do a couple actions to improve
+ 
+
+00:00:47.280 --> 00:00:51.029 align:start position:0%
+you can do a couple actions to improve
+it.<00:00:48.079><c> One</c><00:00:48.399><c> is</c><00:00:48.640><c> you</c><00:00:48.879><c> could</c><00:00:49.039><c> reprompt</c><00:00:49.680><c> the</c><00:00:49.920><c> AI</c><00:00:50.800><c> by</c>
+
+00:00:51.029 --> 00:00:51.039 align:start position:0%
+it. One is you could reprompt the AI by
+ 
+
+00:00:51.039 --> 00:00:53.029 align:start position:0%
+it. One is you could reprompt the AI by
+clicking<00:00:51.360><c> refine</c><00:00:51.760><c> or</c><00:00:51.920><c> hitting</c><00:00:52.239><c> command</c><00:00:52.559><c> R.</c>
+
+00:00:53.029 --> 00:00:53.039 align:start position:0%
+clicking refine or hitting command R.
+ 
+
+00:00:53.039 --> 00:00:54.790 align:start position:0%
+clicking refine or hitting command R.
+That<00:00:53.280><c> would</c><00:00:53.520><c> ask</c><00:00:53.760><c> it</c><00:00:53.920><c> to</c><00:00:54.079><c> recreate</c><00:00:54.320><c> the</c><00:00:54.480><c> diff</c>
+
+00:00:54.790 --> 00:00:54.800 align:start position:0%
+That would ask it to recreate the diff
+ 
+
+00:00:54.800 --> 00:00:56.709 align:start position:0%
+That would ask it to recreate the diff
+using<00:00:55.039><c> a</c><00:00:55.199><c> prompt.</c><00:00:55.920><c> You</c><00:00:56.079><c> can</c><00:00:56.239><c> also</c><00:00:56.480><c> just</c>
+
+00:00:56.709 --> 00:00:56.719 align:start position:0%
+using a prompt. You can also just
+ 
+
+00:00:56.719 --> 00:00:58.630 align:start position:0%
+using a prompt. You can also just
+directly<00:00:57.120><c> edit</c><00:00:57.360><c> it.</c><00:00:57.680><c> And</c><00:00:57.840><c> so,</c><00:00:58.000><c> Warp</c><00:00:58.399><c> has</c><00:00:58.480><c> a</c>
+
+00:00:58.630 --> 00:00:58.640 align:start position:0%
+directly edit it. And so, Warp has a
+ 
+
+00:00:58.640 --> 00:01:00.950 align:start position:0%
+directly edit it. And so, Warp has a
+built-in<00:00:58.960><c> code</c><00:00:59.199><c> editor</c><00:00:59.520><c> here,</c><00:01:00.559><c> uh,</c><00:01:00.640><c> where</c><00:01:00.800><c> if</c>
+
+00:01:00.950 --> 00:01:00.960 align:start position:0%
+built-in code editor here, uh, where if
+ 
+
+00:01:00.960 --> 00:01:03.430 align:start position:0%
+built-in code editor here, uh, where if
+I<00:01:01.120><c> click</c><00:01:01.280><c> this</c><00:01:01.440><c> edit</c><00:01:01.680><c> thing,</c><00:01:01.920><c> I</c><00:01:02.079><c> get</c><00:01:02.239><c> into</c><00:01:03.199><c> an</c>
+
+00:01:03.430 --> 00:01:03.440 align:start position:0%
+I click this edit thing, I get into an
+ 
+
+00:01:03.440 --> 00:01:05.030 align:start position:0%
+I click this edit thing, I get into an
+actual<00:01:03.680><c> editor</c><00:01:04.000><c> view</c><00:01:04.239><c> here.</c><00:01:04.479><c> I</c><00:01:04.720><c> don't</c><00:01:04.799><c> need</c><00:01:04.879><c> to</c>
+
+00:01:05.030 --> 00:01:05.040 align:start position:0%
+actual editor view here. I don't need to
+ 
+
+00:01:05.040 --> 00:01:07.109 align:start position:0%
+actual editor view here. I don't need to
+edit<00:01:05.199><c> it.</c><00:01:05.439><c> This</c><00:01:05.600><c> is</c><00:01:05.680><c> a</c><00:01:05.840><c> correct,</c><00:01:06.640><c> uh,</c><00:01:06.799><c> this</c><00:01:07.040><c> is</c>
+
+00:01:07.109 --> 00:01:07.119 align:start position:0%
+edit it. This is a correct, uh, this is
+ 
+
+00:01:07.119 --> 00:01:09.030 align:start position:0%
+edit it. This is a correct, uh, this is
+a<00:01:07.280><c> correct</c><00:01:07.520><c> diff.</c><00:01:08.240><c> I'm</c><00:01:08.400><c> going</c><00:01:08.479><c> to</c><00:01:08.560><c> hit</c><00:01:08.720><c> apply</c>
+
+00:01:09.030 --> 00:01:09.040 align:start position:0%
+a correct diff. I'm going to hit apply
+ 
+
+00:01:09.040 --> 00:01:10.789 align:start position:0%
+a correct diff. I'm going to hit apply
+changes,<00:01:09.520><c> and</c><00:01:09.760><c> Warp</c><00:01:10.080><c> is</c><00:01:10.240><c> going</c><00:01:10.320><c> to</c><00:01:10.479><c> continue</c>
+
+00:01:10.789 --> 00:01:10.799 align:start position:0%
+changes, and Warp is going to continue
+ 
+
+00:01:10.799 --> 00:01:12.950 align:start position:0%
+changes, and Warp is going to continue
+to<00:01:11.119><c> create</c><00:01:11.680><c> the</c><00:01:12.000><c> rest</c><00:01:12.080><c> of</c><00:01:12.240><c> the</c><00:01:12.400><c> changes</c><00:01:12.720><c> needed</c>
+
+00:01:12.950 --> 00:01:12.960 align:start position:0%
+to create the rest of the changes needed
+ 
+
+00:01:12.960 --> 00:01:14.950 align:start position:0%
+to create the rest of the changes needed
+to<00:01:13.119><c> make</c><00:01:13.200><c> this</c><00:01:13.439><c> fix.</c>
+
+00:01:14.950 --> 00:01:14.960 align:start position:0%
+to make this fix.
+ 
+
+00:01:14.960 --> 00:01:16.870 align:start position:0%
+to make this fix.
+So,<00:01:15.200><c> this</c><00:01:15.360><c> one</c><00:01:15.600><c> also</c><00:01:15.840><c> looks</c><00:01:16.159><c> correct</c><00:01:16.400><c> to</c><00:01:16.560><c> me.</c>
+
+00:01:16.870 --> 00:01:16.880 align:start position:0%
+So, this one also looks correct to me.
+ 
+
+00:01:16.880 --> 00:01:19.030 align:start position:0%
+So, this one also looks correct to me.
+So,<00:01:17.040><c> I'm</c><00:01:17.200><c> going</c><00:01:17.280><c> to</c><00:01:17.439><c> apply</c><00:01:17.680><c> this</c><00:01:17.920><c> change.</c><00:01:18.799><c> Now,</c>
+
+00:01:19.030 --> 00:01:19.040 align:start position:0%
+So, I'm going to apply this change. Now,
+ 
+
+00:01:19.040 --> 00:01:20.630 align:start position:0%
+So, I'm going to apply this change. Now,
+I'm<00:01:19.200><c> going</c><00:01:19.200><c> to</c><00:01:19.280><c> let</c><00:01:19.439><c> Warp</c><00:01:19.840><c> just</c><00:01:20.000><c> run</c><00:01:20.400><c> by</c>
+
+00:01:20.630 --> 00:01:20.640 align:start position:0%
+I'm going to let Warp just run by
+ 
+
+00:01:20.640 --> 00:01:21.990 align:start position:0%
+I'm going to let Warp just run by
+clicking<00:01:20.880><c> the</c><00:01:21.119><c> fast</c><00:01:21.280><c> forward</c><00:01:21.600><c> here.</c><00:01:21.759><c> So,</c><00:01:21.920><c> I'm</c>
+
+00:01:21.990 --> 00:01:22.000 align:start position:0%
+clicking the fast forward here. So, I'm
+ 
+
+00:01:22.000 --> 00:01:23.590 align:start position:0%
+clicking the fast forward here. So, I'm
+not<00:01:22.159><c> going</c><00:01:22.240><c> to</c><00:01:22.320><c> manually</c><00:01:22.799><c> approve</c><00:01:23.280><c> every</c>
+
+00:01:23.590 --> 00:01:23.600 align:start position:0%
+not going to manually approve every
+ 
+
+00:01:23.600 --> 00:01:25.749 align:start position:0%
+not going to manually approve every
+diff.<00:01:24.320><c> So,</c><00:01:24.479><c> another</c><00:01:24.799><c> nice</c><00:01:25.040><c> thing</c><00:01:25.119><c> about</c><00:01:25.360><c> Warp</c>
+
+00:01:25.749 --> 00:01:25.759 align:start position:0%
+diff. So, another nice thing about Warp
+ 
+
+00:01:25.759 --> 00:01:28.149 align:start position:0%
+diff. So, another nice thing about Warp
+is<00:01:25.920><c> that</c><00:01:26.400><c> um</c><00:01:26.560><c> you</c><00:01:26.880><c> control</c><00:01:27.280><c> how</c><00:01:27.520><c> much</c><00:01:27.680><c> autonomy</c>
+
+00:01:28.149 --> 00:01:28.159 align:start position:0%
+is that um you control how much autonomy
+ 
+
+00:01:28.159 --> 00:01:30.390 align:start position:0%
+is that um you control how much autonomy
+it<00:01:28.400><c> has</c><00:01:28.960><c> when</c><00:01:29.280><c> you</c><00:01:29.439><c> need</c><00:01:29.520><c> to</c><00:01:29.680><c> check</c><00:01:29.840><c> in.</c><00:01:30.240><c> You</c>
+
+00:01:30.390 --> 00:01:30.400 align:start position:0%
+it has when you need to check in. You
+ 
+
+00:01:30.400 --> 00:01:33.030 align:start position:0%
+it has when you need to check in. You
+can<00:01:30.479><c> do</c><00:01:30.640><c> it</c><00:01:31.119><c> on</c><00:01:31.360><c> a</c><00:01:31.600><c> per</c><00:01:31.840><c> agent</c><00:01:32.240><c> basis</c><00:01:32.560><c> or</c><00:01:32.799><c> you</c>
+
+00:01:33.030 --> 00:01:33.040 align:start position:0%
+can do it on a per agent basis or you
+ 
+
+00:01:33.040 --> 00:01:35.429 align:start position:0%
+can do it on a per agent basis or you
+can<00:01:33.119><c> go</c><00:01:33.280><c> into</c><00:01:33.600><c> settings</c><00:01:34.479><c> and</c><00:01:34.799><c> configure</c><00:01:35.200><c> this</c>
+
+00:01:35.429 --> 00:01:35.439 align:start position:0%
+can go into settings and configure this
+ 
+
+00:01:35.439 --> 00:01:37.590 align:start position:0%
+can go into settings and configure this
+more<00:01:35.680><c> generally.</c><00:01:36.400><c> To</c><00:01:36.640><c> get</c><00:01:36.799><c> to</c><00:01:36.960><c> settings,</c><00:01:37.360><c> you</c>
+
+00:01:37.590 --> 00:01:37.600 align:start position:0%
+more generally. To get to settings, you
+ 
+
+00:01:37.600 --> 00:01:39.830 align:start position:0%
+more generally. To get to settings, you
+hit<00:01:37.840><c> command</c><00:01:38.240><c> P,</c>
+
+00:01:39.830 --> 00:01:39.840 align:start position:0%
+hit command P,
+ 
+
+00:01:39.840 --> 00:01:42.950 align:start position:0%
+hit command P,
+open<00:01:40.240><c> settings,</c><00:01:40.799><c> you</c><00:01:40.960><c> go</c><00:01:41.119><c> over</c><00:01:41.200><c> to</c><00:01:41.360><c> AI,</c>
+
+00:01:42.950 --> 00:01:42.960 align:start position:0%
+open settings, you go over to AI,
+ 
+
+00:01:42.960 --> 00:01:46.710 align:start position:0%
+open settings, you go over to AI,
+and<00:01:43.360><c> here</c><00:01:43.680><c> you</c><00:01:43.920><c> can</c><00:01:44.079><c> sort</c><00:01:44.320><c> of</c><00:01:44.720><c> choose</c><00:01:45.840><c> what</c><00:01:46.399><c> uh</c>
+
+00:01:46.710 --> 00:01:46.720 align:start position:0%
+and here you can sort of choose what uh
+ 
+
+00:01:46.720 --> 00:01:48.630 align:start position:0%
+and here you can sort of choose what uh
+autonomy<00:01:47.280><c> permissions</c><00:01:47.680><c> the</c><00:01:47.840><c> agent</c><00:01:48.159><c> has.</c><00:01:48.479><c> I'm</c>
+
+00:01:48.630 --> 00:01:48.640 align:start position:0%
+autonomy permissions the agent has. I'm
+ 
+
+00:01:48.640 --> 00:01:50.870 align:start position:0%
+autonomy permissions the agent has. I'm
+going<00:01:48.720><c> to</c><00:01:48.799><c> go</c><00:01:48.960><c> back</c><00:01:49.200><c> here.</c><00:01:50.159><c> Now</c><00:01:50.399><c> it's</c><00:01:50.640><c> fixed</c>
+
+00:01:50.870 --> 00:01:50.880 align:start position:0%
+going to go back here. Now it's fixed
+ 
+
+00:01:50.880 --> 00:01:53.030 align:start position:0%
+going to go back here. Now it's fixed
+the<00:01:51.119><c> bug</c><00:01:51.439><c> and</c><00:01:51.680><c> it's</c><00:01:51.920><c> automatically</c><00:01:52.640><c> running</c>
+
+00:01:53.030 --> 00:01:53.040 align:start position:0%
+the bug and it's automatically running
+ 
+
+00:01:53.040 --> 00:01:56.710 align:start position:0%
+the bug and it's automatically running
+the<00:01:53.680><c> uh</c><00:01:53.840><c> compile</c><00:01:54.320><c> command.</c><00:01:55.520><c> It</c><00:01:55.840><c> has</c><00:01:56.240><c> verified</c>
+
+00:01:56.710 --> 00:01:56.720 align:start position:0%
+the uh compile command. It has verified
+ 
+
+00:01:56.720 --> 00:01:58.550 align:start position:0%
+the uh compile command. It has verified
+that<00:01:56.960><c> it</c><00:01:57.119><c> compiles.</c><00:01:57.680><c> It</c><00:01:57.920><c> next</c><00:01:58.159><c> wants</c><00:01:58.399><c> to</c>
+
+00:01:58.550 --> 00:01:58.560 align:start position:0%
+that it compiles. It next wants to
+ 
+
+00:01:58.560 --> 00:02:00.389 align:start position:0%
+that it compiles. It next wants to
+format<00:01:58.880><c> it.</c><00:01:59.040><c> I'm</c><00:01:59.200><c> going</c><00:01:59.360><c> to</c><00:01:59.439><c> hit</c><00:01:59.680><c> control</c><00:02:00.079><c> C</c><00:02:00.240><c> to</c>
+
+00:02:00.389 --> 00:02:00.399 align:start position:0%
+format it. I'm going to hit control C to
+ 
+
+00:02:00.399 --> 00:02:03.030 align:start position:0%
+format it. I'm going to hit control C to
+stop<00:02:00.640><c> that</c><00:02:02.079><c> and</c><00:02:02.320><c> then</c><00:02:02.399><c> I'm</c><00:02:02.640><c> going</c><00:02:02.640><c> to</c><00:02:02.719><c> go</c><00:02:02.799><c> ahead</c>
+
+00:02:03.030 --> 00:02:03.040 align:start position:0%
+stop that and then I'm going to go ahead
+ 
+
+00:02:03.040 --> 00:02:04.950 align:start position:0%
+stop that and then I'm going to go ahead
+and<00:02:03.200><c> run</c><00:02:03.360><c> the</c><00:02:03.520><c> code</c><00:02:03.920><c> and</c><00:02:04.079><c> we</c><00:02:04.320><c> can</c><00:02:04.399><c> verify</c><00:02:04.719><c> that</c>
+
+00:02:04.950 --> 00:02:04.960 align:start position:0%
+and run the code and we can verify that
+ 
+
+00:02:04.960 --> 00:02:06.789 align:start position:0%
+and run the code and we can verify that
+it's<00:02:05.200><c> been</c><00:02:05.360><c> fixed.</c><00:02:06.079><c> This</c><00:02:06.240><c> is</c><00:02:06.399><c> one</c><00:02:06.560><c> of</c><00:02:06.640><c> the</c>
+
+00:02:06.789 --> 00:02:06.799 align:start position:0%
+it's been fixed. This is one of the
+ 
+
+00:02:06.799 --> 00:02:08.389 align:start position:0%
+it's been fixed. This is one of the
+things<00:02:06.960><c> about</c><00:02:07.200><c> Rust.</c><00:02:07.680><c> Takes</c><00:02:07.840><c> a</c><00:02:07.920><c> little</c><00:02:08.160><c> takes</c>
+
+00:02:08.389 --> 00:02:08.399 align:start position:0%
+things about Rust. Takes a little takes
+ 
+
+00:02:08.399 --> 00:02:10.630 align:start position:0%
+things about Rust. Takes a little takes
+a<00:02:08.640><c> minute</c><00:02:08.800><c> to</c><00:02:09.039><c> compile.</c><00:02:09.679><c> Okay,</c><00:02:10.160><c> now</c><00:02:10.319><c> it's</c>
+
+00:02:10.630 --> 00:02:10.640 align:start position:0%
+a minute to compile. Okay, now it's
+ 
+
+00:02:10.640 --> 00:02:13.030 align:start position:0%
+a minute to compile. Okay, now it's
+running.
+
+00:02:13.030 --> 00:02:13.040 align:start position:0%
+running.
+ 
+
+00:02:13.040 --> 00:02:14.470 align:start position:0%
+running.
+And<00:02:13.200><c> let's</c><00:02:13.440><c> go</c><00:02:13.520><c> ahead</c><00:02:13.760><c> and</c><00:02:13.840><c> verify</c><00:02:14.160><c> that</c><00:02:14.319><c> the</c>
+
+00:02:14.470 --> 00:02:14.480 align:start position:0%
+And let's go ahead and verify that the
+ 
+
+00:02:14.480 --> 00:02:17.190 align:start position:0%
+And let's go ahead and verify that the
+bug<00:02:14.640><c> has</c><00:02:14.800><c> been</c><00:02:14.959><c> fixed.</c><00:02:16.080><c> So</c><00:02:16.400><c> remember</c><00:02:16.720><c> this,</c>
+
+00:02:17.190 --> 00:02:17.200 align:start position:0%
+bug has been fixed. So remember this,
+ 
+
+00:02:17.200 --> 00:02:18.710 align:start position:0%
+bug has been fixed. So remember this,
+the<00:02:17.440><c> bug</c><00:02:17.680><c> here</c><00:02:17.760><c> was</c><00:02:17.920><c> that</c><00:02:18.160><c> this</c><00:02:18.319><c> checkbox</c>
+
+00:02:18.710 --> 00:02:18.720 align:start position:0%
+the bug here was that this checkbox
+ 
+
+00:02:18.720 --> 00:02:20.710 align:start position:0%
+the bug here was that this checkbox
+wasn't<00:02:19.040><c> being</c><00:02:19.200><c> honored.</c><00:02:20.000><c> Now</c><00:02:20.160><c> if</c><00:02:20.319><c> I</c><00:02:20.480><c> look</c>
+
+00:02:20.710 --> 00:02:20.720 align:start position:0%
+wasn't being honored. Now if I look
+ 
+
+00:02:20.720 --> 00:02:23.270 align:start position:0%
+wasn't being honored. Now if I look
+here,<00:02:21.760><c> the</c><00:02:21.920><c> model</c><00:02:22.239><c> picker</c><00:02:22.560><c> is</c><00:02:22.720><c> gone,</c><00:02:23.040><c> which</c><00:02:23.200><c> is</c>
+
+00:02:23.270 --> 00:02:23.280 align:start position:0%
+here, the model picker is gone, which is
+ 
+
+00:02:23.280 --> 00:02:26.150 align:start position:0%
+here, the model picker is gone, which is
+what<00:02:23.440><c> we</c><00:02:23.599><c> want.</c><00:02:23.920><c> If</c><00:02:24.080><c> I</c><00:02:24.239><c> click</c><00:02:24.480><c> this,</c>
+
+00:02:26.150 --> 00:02:26.160 align:start position:0%
+what we want. If I click this,
+ 
+
+00:02:26.160 --> 00:02:28.150 align:start position:0%
+what we want. If I click this,
+the<00:02:26.400><c> model</c><00:02:26.640><c> picker</c><00:02:26.959><c> comes</c><00:02:27.200><c> back.</c><00:02:27.599><c> So</c><00:02:27.840><c> Warp</c>
+
+00:02:28.150 --> 00:02:28.160 align:start position:0%
+the model picker comes back. So Warp
+ 
+
+00:02:28.160 --> 00:02:31.270 align:start position:0%
+the model picker comes back. So Warp
+just<00:02:28.319><c> fixed</c><00:02:28.560><c> a</c><00:02:28.720><c> bug</c><00:02:29.120><c> purely</c><00:02:29.599><c> by</c><00:02:29.840><c> prompt.</c><00:02:30.879><c> I</c><00:02:31.120><c> got</c>
+
+00:02:31.270 --> 00:02:31.280 align:start position:0%
+just fixed a bug purely by prompt. I got
+ 
+
+00:02:31.280 --> 00:02:33.110 align:start position:0%
+just fixed a bug purely by prompt. I got
+to<00:02:31.440><c> see</c><00:02:31.599><c> exactly</c><00:02:32.000><c> what</c><00:02:32.160><c> it</c><00:02:32.319><c> was</c><00:02:32.480><c> doing.</c><00:02:32.800><c> I</c><00:02:32.959><c> had</c>
+
+00:02:33.110 --> 00:02:33.120 align:start position:0%
+to see exactly what it was doing. I had
+ 
+
+00:02:33.120 --> 00:02:35.110 align:start position:0%
+to see exactly what it was doing. I had
+a<00:02:33.280><c> chance</c><00:02:33.440><c> to</c><00:02:33.599><c> edit</c><00:02:33.920><c> it</c><00:02:34.319><c> uh</c><00:02:34.400><c> because</c><00:02:34.640><c> Warp</c>
+
+00:02:35.110 --> 00:02:35.120 align:start position:0%
+a chance to edit it uh because Warp
+ 
+
+00:02:35.120 --> 00:02:37.589 align:start position:0%
+a chance to edit it uh because Warp
+supports<00:02:35.440><c> code</c><00:02:35.680><c> editing.</c><00:02:36.800><c> It</c><00:02:37.040><c> found</c><00:02:37.280><c> all</c><00:02:37.440><c> the</c>
+
+00:02:37.589 --> 00:02:37.599 align:start position:0%
+supports code editing. It found all the
+ 
+
+00:02:37.599 --> 00:02:39.750 align:start position:0%
+supports code editing. It found all the
+right<00:02:37.840><c> files.</c><00:02:38.560><c> It</c><00:02:38.800><c> built</c><00:02:39.040><c> it</c><00:02:39.200><c> for</c><00:02:39.360><c> me.</c><00:02:39.519><c> It</c>
+
+00:02:39.750 --> 00:02:39.760 align:start position:0%
+right files. It built it for me. It
+ 
+
+00:02:39.760 --> 00:02:42.070 align:start position:0%
+right files. It built it for me. It
+checked<00:02:39.920><c> my</c><00:02:40.080><c> git</c><00:02:40.400><c> status.</c><00:02:41.040><c> So</c><00:02:41.599><c> kind</c><00:02:41.760><c> of</c><00:02:41.920><c> made</c>
+
+00:02:42.070 --> 00:02:42.080 align:start position:0%
+checked my git status. So kind of made
+ 
+
+00:02:42.080 --> 00:02:44.550 align:start position:0%
+checked my git status. So kind of made
+it<00:02:42.239><c> much</c><00:02:42.480><c> easier</c><00:02:42.800><c> to</c><00:02:43.040><c> do</c><00:02:43.200><c> this</c><00:02:43.760><c> uh</c><00:02:44.000><c> to</c><00:02:44.160><c> do</c><00:02:44.319><c> this</c>
+
+00:02:44.550 --> 00:02:44.560 align:start position:0%
+it much easier to do this uh to do this
+ 
+
+00:02:44.560 --> 00:02:46.720 align:start position:0%
+it much easier to do this uh to do this
+task.
+

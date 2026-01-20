@@ -1,0 +1,1216 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.080 --> 00:00:01.590 align:start position:0%
+ 
+If<00:00:00.240><c> you</c><00:00:00.320><c> want</c><00:00:00.400><c> to</c><00:00:00.560><c> run</c><00:00:00.719><c> some</c><00:00:00.880><c> AI</c><00:00:01.280><c> models</c>
+
+00:00:01.590 --> 00:00:01.600 align:start position:0%
+If you want to run some AI models
+ 
+
+00:00:01.600 --> 00:00:03.750 align:start position:0%
+If you want to run some AI models
+locally,<00:00:02.399><c> Olama</c><00:00:02.879><c> is</c><00:00:03.040><c> one</c><00:00:03.200><c> of</c><00:00:03.280><c> the</c><00:00:03.439><c> fastest</c>
+
+00:00:03.750 --> 00:00:03.760 align:start position:0%
+locally, Olama is one of the fastest
+ 
+
+00:00:03.760 --> 00:00:05.430 align:start position:0%
+locally, Olama is one of the fastest
+ways<00:00:03.919><c> you</c><00:00:04.080><c> can</c><00:00:04.240><c> get</c><00:00:04.400><c> started.</c><00:00:04.799><c> In</c><00:00:05.040><c> this</c><00:00:05.200><c> video,</c>
+
+00:00:05.430 --> 00:00:05.440 align:start position:0%
+ways you can get started. In this video,
+ 
+
+00:00:05.440 --> 00:00:07.269 align:start position:0%
+ways you can get started. In this video,
+I'll<00:00:05.680><c> show</c><00:00:05.759><c> you</c><00:00:05.920><c> how</c><00:00:06.080><c> to</c><00:00:06.240><c> use</c><00:00:06.400><c> Warp</c><00:00:06.879><c> to</c><00:00:06.960><c> set</c><00:00:07.120><c> up</c>
+
+00:00:07.269 --> 00:00:07.279 align:start position:0%
+I'll show you how to use Warp to set up
+ 
+
+00:00:07.279 --> 00:00:09.750 align:start position:0%
+I'll show you how to use Warp to set up
+Olama<00:00:07.759><c> in</c><00:00:07.919><c> the</c><00:00:08.000><c> easiest</c><00:00:08.320><c> way.</c><00:00:08.960><c> You'll</c><00:00:09.280><c> profile</c>
+
+00:00:09.750 --> 00:00:09.760 align:start position:0%
+Olama in the easiest way. You'll profile
+ 
+
+00:00:09.760 --> 00:00:11.749 align:start position:0%
+Olama in the easiest way. You'll profile
+your<00:00:10.000><c> device</c><00:00:10.320><c> to</c><00:00:10.559><c> see</c><00:00:10.719><c> what</c><00:00:10.880><c> you</c><00:00:10.960><c> can</c><00:00:11.120><c> run,</c><00:00:11.519><c> see</c>
+
+00:00:11.749 --> 00:00:11.759 align:start position:0%
+your device to see what you can run, see
+ 
+
+00:00:11.759 --> 00:00:13.350 align:start position:0%
+your device to see what you can run, see
+the<00:00:11.920><c> difference</c><00:00:12.160><c> between</c><00:00:12.559><c> models,</c><00:00:12.960><c> and</c><00:00:13.200><c> run</c>
+
+00:00:13.350 --> 00:00:13.360 align:start position:0%
+the difference between models, and run
+ 
+
+00:00:13.360 --> 00:00:15.350 align:start position:0%
+the difference between models, and run
+it<00:00:13.519><c> on</c><00:00:13.759><c> your</c><00:00:13.920><c> device</c><00:00:14.160><c> and</c><00:00:14.400><c> integrate</c><00:00:14.880><c> Olama</c>
+
+00:00:15.350 --> 00:00:15.360 align:start position:0%
+it on your device and integrate Olama
+ 
+
+00:00:15.360 --> 00:00:18.070 align:start position:0%
+it on your device and integrate Olama
+into<00:00:15.679><c> your</c><00:00:15.839><c> application.</c><00:00:17.039><c> Running</c><00:00:17.440><c> LLMs</c>
+
+00:00:18.070 --> 00:00:18.080 align:start position:0%
+into your application. Running LLMs
+ 
+
+00:00:18.080 --> 00:00:20.550 align:start position:0%
+into your application. Running LLMs
+locally<00:00:18.480><c> is</c><00:00:18.880><c> heavy</c><00:00:19.199><c> on</c><00:00:19.359><c> any</c><00:00:19.680><c> system.</c><00:00:20.240><c> So,</c>
+
+00:00:20.550 --> 00:00:20.560 align:start position:0%
+locally is heavy on any system. So,
+ 
+
+00:00:20.560 --> 00:00:22.230 align:start position:0%
+locally is heavy on any system. So,
+before<00:00:20.800><c> we</c><00:00:20.960><c> start</c><00:00:21.119><c> with</c><00:00:21.359><c> Olama,</c><00:00:21.920><c> let's</c><00:00:22.160><c> see</c>
+
+00:00:22.230 --> 00:00:22.240 align:start position:0%
+before we start with Olama, let's see
+ 
+
+00:00:22.240 --> 00:00:24.070 align:start position:0%
+before we start with Olama, let's see
+what<00:00:22.400><c> we're</c><00:00:22.640><c> working</c><00:00:22.800><c> with.</c><00:00:23.119><c> To</c><00:00:23.359><c> run</c><00:00:23.519><c> LLMs</c>
+
+00:00:24.070 --> 00:00:24.080 align:start position:0%
+what we're working with. To run LLMs
+ 
+
+00:00:24.080 --> 00:00:26.710 align:start position:0%
+what we're working with. To run LLMs
+locally,<00:00:24.560><c> you</c><00:00:24.800><c> need</c><00:00:24.880><c> some</c><00:00:25.119><c> beefy</c><00:00:25.600><c> specs.</c><00:00:26.480><c> On</c>
+
+00:00:26.710 --> 00:00:26.720 align:start position:0%
+locally, you need some beefy specs. On
+ 
+
+00:00:26.720 --> 00:00:28.710 align:start position:0%
+locally, you need some beefy specs. On
+Mac,<00:00:27.039><c> you</c><00:00:27.199><c> have</c><00:00:27.359><c> the</c><00:00:27.519><c> unified</c><00:00:27.920><c> memory.</c><00:00:28.320><c> I</c><00:00:28.560><c> have</c>
+
+00:00:28.710 --> 00:00:28.720 align:start position:0%
+Mac, you have the unified memory. I have
+ 
+
+00:00:28.720 --> 00:00:30.950 align:start position:0%
+Mac, you have the unified memory. I have
+64<00:00:29.119><c> gigs</c><00:00:29.439><c> on</c><00:00:29.599><c> this</c><00:00:29.760><c> machine.</c><00:00:30.080><c> On</c><00:00:30.320><c> Windows,</c><00:00:30.720><c> I</c>
+
+00:00:30.950 --> 00:00:30.960 align:start position:0%
+64 gigs on this machine. On Windows, I
+ 
+
+00:00:30.960 --> 00:00:33.990 align:start position:0%
+64 gigs on this machine. On Windows, I
+have<00:00:31.039><c> an</c><00:00:31.199><c> Nvidia</c><00:00:31.679><c> RTX</c><00:00:32.320><c> 590</c><00:00:32.800><c> which</c><00:00:32.960><c> has</c><00:00:33.120><c> 32</c><00:00:33.520><c> GB</c>
+
+00:00:33.990 --> 00:00:34.000 align:start position:0%
+have an Nvidia RTX 590 which has 32 GB
+ 
+
+00:00:34.000 --> 00:00:36.069 align:start position:0%
+have an Nvidia RTX 590 which has 32 GB
+of<00:00:34.079><c> VRAM.</c><00:00:34.719><c> The</c><00:00:34.880><c> difference</c><00:00:35.120><c> here</c><00:00:35.280><c> is</c><00:00:35.440><c> that</c><00:00:35.680><c> Mac</c>
+
+00:00:36.069 --> 00:00:36.079 align:start position:0%
+of VRAM. The difference here is that Mac
+ 
+
+00:00:36.079 --> 00:00:37.990 align:start position:0%
+of VRAM. The difference here is that Mac
+can<00:00:36.239><c> hold</c><00:00:36.559><c> larger</c><00:00:37.040><c> models</c><00:00:37.360><c> with</c><00:00:37.600><c> weaker</c>
+
+00:00:37.990 --> 00:00:38.000 align:start position:0%
+can hold larger models with weaker
+ 
+
+00:00:38.000 --> 00:00:40.389 align:start position:0%
+can hold larger models with weaker
+performance<00:00:38.719><c> while</c><00:00:38.879><c> the</c><00:00:39.040><c> Nvidia</c><00:00:39.600><c> cards</c><00:00:40.000><c> can</c>
+
+00:00:40.389 --> 00:00:40.399 align:start position:0%
+performance while the Nvidia cards can
+ 
+
+00:00:40.399 --> 00:00:42.389 align:start position:0%
+performance while the Nvidia cards can
+have<00:00:40.559><c> extreme</c><00:00:41.040><c> performance,</c><00:00:41.680><c> but</c><00:00:42.000><c> at</c><00:00:42.239><c> the</c>
+
+00:00:42.389 --> 00:00:42.399 align:start position:0%
+have extreme performance, but at the
+ 
+
+00:00:42.399 --> 00:00:44.549 align:start position:0%
+have extreme performance, but at the
+cost<00:00:42.640><c> of</c><00:00:42.879><c> not</c><00:00:43.120><c> fitting</c><00:00:43.360><c> it</c><00:00:43.520><c> all</c><00:00:43.680><c> into</c><00:00:44.000><c> VRAM.</c>
+
+00:00:44.549 --> 00:00:44.559 align:start position:0%
+cost of not fitting it all into VRAM.
+ 
+
+00:00:44.559 --> 00:00:45.830 align:start position:0%
+cost of not fitting it all into VRAM.
+Once<00:00:44.719><c> you</c><00:00:44.800><c> have</c><00:00:44.879><c> an</c><00:00:45.120><c> understanding</c><00:00:45.520><c> of</c><00:00:45.680><c> your</c>
+
+00:00:45.830 --> 00:00:45.840 align:start position:0%
+Once you have an understanding of your
+ 
+
+00:00:45.840 --> 00:00:49.110 align:start position:0%
+Once you have an understanding of your
+specs,<00:00:46.320><c> let's</c><00:00:46.559><c> install</c><00:00:46.960><c> Olama.</c><00:00:48.320><c> Ola</c><00:00:48.879><c> is</c><00:00:48.960><c> one</c>
+
+00:00:49.110 --> 00:00:49.120 align:start position:0%
+specs, let's install Olama. Ola is one
+ 
+
+00:00:49.120 --> 00:00:50.950 align:start position:0%
+specs, let's install Olama. Ola is one
+of the<00:00:49.280><c> easiest</c><00:00:49.600><c> ways</c><00:00:49.840><c> we</c><00:00:50.000><c> can</c><00:00:50.160><c> run</c><00:00:50.320><c> AI</c><00:00:50.640><c> models</c>
+
+00:00:50.950 --> 00:00:50.960 align:start position:0%
+of the easiest ways we can run AI models
+ 
+
+00:00:50.960 --> 00:00:52.950 align:start position:0%
+of the easiest ways we can run AI models
+locally.<00:00:51.440><c> It's</c><00:00:51.760><c> free</c><00:00:52.000><c> and</c><00:00:52.239><c> can</c><00:00:52.399><c> run</c><00:00:52.559><c> entirely</c>
+
+00:00:52.950 --> 00:00:52.960 align:start position:0%
+locally. It's free and can run entirely
+ 
+
+00:00:52.960 --> 00:00:55.189 align:start position:0%
+locally. It's free and can run entirely
+on<00:00:53.120><c> your</c><00:00:53.280><c> command</c><00:00:53.520><c> line.</c><00:00:54.239><c> Once</c><00:00:54.559><c> we</c><00:00:54.719><c> download,</c>
+
+00:00:55.189 --> 00:00:55.199 align:start position:0%
+on your command line. Once we download,
+ 
+
+00:00:55.199 --> 00:00:56.549 align:start position:0%
+on your command line. Once we download,
+let's<00:00:55.440><c> open</c><00:00:55.600><c> up</c><00:00:55.760><c> Warp</c><00:00:56.079><c> and</c><00:00:56.160><c> see</c><00:00:56.320><c> if</c><00:00:56.480><c> it</c>
+
+00:00:56.549 --> 00:00:56.559 align:start position:0%
+let's open up Warp and see if it
+ 
+
+00:00:56.559 --> 00:00:58.389 align:start position:0%
+let's open up Warp and see if it
+installed<00:00:56.960><c> correctly.</c><00:00:57.680><c> If</c><00:00:57.920><c> you're</c><00:00:58.079><c> familiar</c>
+
+00:00:58.389 --> 00:00:58.399 align:start position:0%
+installed correctly. If you're familiar
+ 
+
+00:00:58.399 --> 00:01:00.310 align:start position:0%
+installed correctly. If you're familiar
+with<00:00:58.640><c> other</c><00:00:58.960><c> registrybased</c><00:00:59.840><c> command</c><00:01:00.079><c> line</c>
+
+00:01:00.310 --> 00:01:00.320 align:start position:0%
+with other registrybased command line
+ 
+
+00:01:00.320 --> 00:01:02.869 align:start position:0%
+with other registrybased command line
+tools<00:01:00.640><c> like</c><00:01:00.960><c> Docker</c><00:01:01.359><c> or</c><00:01:01.680><c> MPM,</c><00:01:02.239><c> then</c><00:01:02.480><c> this</c><00:01:02.640><c> will</c>
+
+00:01:02.869 --> 00:01:02.879 align:start position:0%
+tools like Docker or MPM, then this will
+ 
+
+00:01:02.879 --> 00:01:05.429 align:start position:0%
+tools like Docker or MPM, then this will
+feel<00:01:03.199><c> very</c><00:01:03.520><c> familiar.</c><00:01:04.400><c> We</c><00:01:04.640><c> can</c><00:01:04.720><c> easily</c><00:01:05.040><c> run</c><00:01:05.199><c> an</c>
+
+00:01:05.429 --> 00:01:05.439 align:start position:0%
+feel very familiar. We can easily run an
+ 
+
+00:01:05.439 --> 00:01:10.070 align:start position:0%
+feel very familiar. We can easily run an
+AI<00:01:05.760><c> model</c><00:01:06.000><c> by</c><00:01:06.240><c> doing</c><00:01:06.880><c> Olama</c><00:01:07.760><c> run</c><00:01:08.479><c> model.</c><00:01:09.520><c> But</c>
+
+00:01:10.070 --> 00:01:10.080 align:start position:0%
+AI model by doing Olama run model. But
+ 
+
+00:01:10.080 --> 00:01:12.710 align:start position:0%
+AI model by doing Olama run model. But
+what<00:01:10.479><c> AI</c><00:01:10.880><c> model</c><00:01:11.200><c> should</c><00:01:11.360><c> we</c><00:01:11.600><c> use</c><00:01:12.320><c> refer</c><00:01:12.560><c> to</c>
+
+00:01:12.710 --> 00:01:12.720 align:start position:0%
+what AI model should we use refer to
+ 
+
+00:01:12.720 --> 00:01:14.630 align:start position:0%
+what AI model should we use refer to
+your<00:01:12.960><c> system</c><00:01:13.200><c> specs</c><00:01:13.600><c> to</c><00:01:13.760><c> see</c><00:01:13.840><c> what</c><00:01:14.080><c> is</c><00:01:14.240><c> doable</c>
+
+00:01:14.630 --> 00:01:14.640 align:start position:0%
+your system specs to see what is doable
+ 
+
+00:01:14.640 --> 00:01:16.630 align:start position:0%
+your system specs to see what is doable
+for<00:01:14.799><c> you.</c><00:01:15.360><c> But</c><00:01:15.520><c> if</c><00:01:15.680><c> you</c><00:01:15.760><c> look</c><00:01:15.840><c> on</c><00:01:16.080><c> Olama's</c>
+
+00:01:16.630 --> 00:01:16.640 align:start position:0%
+for you. But if you look on Olama's
+ 
+
+00:01:16.640 --> 00:01:18.310 align:start position:0%
+for you. But if you look on Olama's
+website,<00:01:17.040><c> you'll</c><00:01:17.280><c> be</c><00:01:17.360><c> able</c><00:01:17.520><c> to</c><00:01:17.759><c> see</c><00:01:17.920><c> the</c>
+
+00:01:18.310 --> 00:01:18.320 align:start position:0%
+website, you'll be able to see the
+ 
+
+00:01:18.320 --> 00:01:20.630 align:start position:0%
+website, you'll be able to see the
+parameters<00:01:18.799><c> that</c><00:01:18.960><c> the</c><00:01:19.119><c> model</c><00:01:19.360><c> size</c><00:01:19.680><c> is.</c><00:01:20.400><c> Let's</c>
+
+00:01:20.630 --> 00:01:20.640 align:start position:0%
+parameters that the model size is. Let's
+ 
+
+00:01:20.640 --> 00:01:23.109 align:start position:0%
+parameters that the model size is. Let's
+give<00:01:20.880><c> two</c><00:01:21.119><c> models</c><00:01:21.439><c> a</c><00:01:21.600><c> try.</c><00:01:22.320><c> First,</c><00:01:22.720><c> let's</c><00:01:22.960><c> give</c>
+
+00:01:23.109 --> 00:01:23.119 align:start position:0%
+give two models a try. First, let's give
+ 
+
+00:01:23.119 --> 00:01:26.789 align:start position:0%
+give two models a try. First, let's give
+the<00:01:23.360><c> Open</c><00:01:23.759><c> AI</c><00:01:24.240><c> GPT</c><00:01:24.960><c> OSS</c><00:01:25.840><c> 20</c><00:01:26.080><c> billion</c><00:01:26.400><c> parameter</c>
+
+00:01:26.789 --> 00:01:26.799 align:start position:0%
+the Open AI GPT OSS 20 billion parameter
+ 
+
+00:01:26.799 --> 00:01:29.190 align:start position:0%
+the Open AI GPT OSS 20 billion parameter
+model<00:01:27.040><c> a</c><00:01:27.280><c> try.</c><00:01:27.600><c> This</c><00:01:27.759><c> model</c><00:01:28.080><c> is</c><00:01:28.320><c> very</c><00:01:28.560><c> good</c><00:01:28.799><c> and</c>
+
+00:01:29.190 --> 00:01:29.200 align:start position:0%
+model a try. This model is very good and
+ 
+
+00:01:29.200 --> 00:01:32.550 align:start position:0%
+model a try. This model is very good and
+capable.<00:01:30.080><c> It</c><00:01:30.320><c> needs</c><00:01:30.560><c> at</c><00:01:30.640><c> least</c><00:01:31.040><c> 16</c><00:01:31.280><c> GB</c><00:01:31.759><c> of</c><00:01:31.920><c> VRAM</c>
+
+00:01:32.550 --> 00:01:32.560 align:start position:0%
+capable. It needs at least 16 GB of VRAM
+ 
+
+00:01:32.560 --> 00:01:34.710 align:start position:0%
+capable. It needs at least 16 GB of VRAM
+and<00:01:32.799><c> additional</c><00:01:33.360><c> for</c><00:01:33.680><c> the</c><00:01:33.920><c> context.</c><00:01:34.560><c> But</c>
+
+00:01:34.710 --> 00:01:34.720 align:start position:0%
+and additional for the context. But
+ 
+
+00:01:34.720 --> 00:01:36.710 align:start position:0%
+and additional for the context. But
+what's<00:01:34.960><c> so</c><00:01:35.119><c> cool</c><00:01:35.280><c> about</c><00:01:35.520><c> this</c><00:01:35.759><c> model</c><00:01:36.079><c> is</c><00:01:36.400><c> its</c>
+
+00:01:36.710 --> 00:01:36.720 align:start position:0%
+what's so cool about this model is its
+ 
+
+00:01:36.720 --> 00:01:38.870 align:start position:0%
+what's so cool about this model is its
+ability<00:01:37.040><c> for</c><00:01:37.200><c> tool</c><00:01:37.600><c> calls.</c><00:01:38.240><c> To</c><00:01:38.479><c> show</c><00:01:38.640><c> this</c>
+
+00:01:38.870 --> 00:01:38.880 align:start position:0%
+ability for tool calls. To show this
+ 
+
+00:01:38.880 --> 00:01:41.429 align:start position:0%
+ability for tool calls. To show this
+feature,<00:01:39.600><c> Olama</c><00:01:40.159><c> has</c><00:01:40.320><c> a</c><00:01:40.479><c> built-in</c><00:01:40.960><c> web</c><00:01:41.200><c> search</c>
+
+00:01:41.429 --> 00:01:41.439 align:start position:0%
+feature, Olama has a built-in web search
+ 
+
+00:01:41.439 --> 00:01:43.749 align:start position:0%
+feature, Olama has a built-in web search
+feature<00:01:42.000><c> in</c><00:01:42.240><c> the</c><00:01:42.400><c> desktop</c><00:01:42.799><c> app.</c><00:01:43.200><c> Do</c><00:01:43.439><c> know</c><00:01:43.600><c> that</c>
+
+00:01:43.749 --> 00:01:43.759 align:start position:0%
+feature in the desktop app. Do know that
+ 
+
+00:01:43.759 --> 00:01:46.069 align:start position:0%
+feature in the desktop app. Do know that
+this<00:01:44.079><c> does</c><00:01:44.320><c> require</c><00:01:44.640><c> an</c><00:01:44.880><c> Olama</c><00:01:45.439><c> login</c><00:01:45.840><c> to</c>
+
+00:01:46.069 --> 00:01:46.079 align:start position:0%
+this does require an Olama login to
+ 
+
+00:01:46.079 --> 00:01:47.910 align:start position:0%
+this does require an Olama login to
+prevent<00:01:46.320><c> abuse</c><00:01:46.880><c> unless</c><00:01:47.200><c> turbo</c><00:01:47.600><c> mode</c><00:01:47.759><c> is</c>
+
+00:01:47.910 --> 00:01:47.920 align:start position:0%
+prevent abuse unless turbo mode is
+ 
+
+00:01:47.920 --> 00:01:49.670 align:start position:0%
+prevent abuse unless turbo mode is
+enabled.<00:01:48.560><c> The</c><00:01:48.720><c> model</c><00:01:48.960><c> itself</c><00:01:49.280><c> is</c><00:01:49.520><c> still</c>
+
+00:01:49.670 --> 00:01:49.680 align:start position:0%
+enabled. The model itself is still
+ 
+
+00:01:49.680 --> 00:01:51.590 align:start position:0%
+enabled. The model itself is still
+running<00:01:49.920><c> locally.</c>
+
+00:01:51.590 --> 00:01:51.600 align:start position:0%
+running locally.
+ 
+
+00:01:51.600 --> 00:01:53.910 align:start position:0%
+running locally.
+Now<00:01:51.920><c> let's</c><00:01:52.159><c> give</c><00:01:52.320><c> another</c><00:01:52.640><c> model</c><00:01:52.960><c> a</c><00:01:53.119><c> try.</c><00:01:53.520><c> Quen</c>
+
+00:01:53.910 --> 00:01:53.920 align:start position:0%
+Now let's give another model a try. Quen
+ 
+
+00:01:53.920 --> 00:01:57.270 align:start position:0%
+Now let's give another model a try. Quen
+3<00:01:54.159><c> 8</c><00:01:54.399><c> billion</c><00:01:54.720><c> parameters.</c>
+
+00:01:57.270 --> 00:01:57.280 align:start position:0%
+3 8 billion parameters.
+ 
+
+00:01:57.280 --> 00:02:00.069 align:start position:0%
+3 8 billion parameters.
+This<00:01:57.600><c> is</c><00:01:58.159><c> way</c><00:01:58.479><c> faster.</c><00:01:59.360><c> However,</c><00:01:59.680><c> you</c><00:01:59.840><c> can</c><00:02:00.000><c> see</c>
+
+00:02:00.069 --> 00:02:00.079 align:start position:0%
+This is way faster. However, you can see
+ 
+
+00:02:00.079 --> 00:02:02.230 align:start position:0%
+This is way faster. However, you can see
+that<00:02:00.240><c> the</c><00:02:00.479><c> quality</c><00:02:00.719><c> of</c><00:02:00.880><c> output</c><00:02:01.360><c> just</c><00:02:01.759><c> isn't</c>
+
+00:02:02.230 --> 00:02:02.240 align:start position:0%
+that the quality of output just isn't
+ 
+
+00:02:02.240 --> 00:02:04.870 align:start position:0%
+that the quality of output just isn't
+quite<00:02:02.399><c> the</c><00:02:02.640><c> same.</c><00:02:04.000><c> This</c><00:02:04.159><c> is</c><00:02:04.240><c> where</c><00:02:04.479><c> it</c><00:02:04.640><c> becomes</c>
+
+00:02:04.870 --> 00:02:04.880 align:start position:0%
+quite the same. This is where it becomes
+ 
+
+00:02:04.880 --> 00:02:06.550 align:start position:0%
+quite the same. This is where it becomes
+super<00:02:05.200><c> important</c><00:02:05.439><c> to</c><00:02:05.680><c> test</c><00:02:05.920><c> what</c><00:02:06.159><c> works</c><00:02:06.399><c> for</c>
+
+00:02:06.550 --> 00:02:06.560 align:start position:0%
+super important to test what works for
+ 
+
+00:02:06.560 --> 00:02:08.630 align:start position:0%
+super important to test what works for
+you<00:02:06.719><c> and</c><00:02:06.960><c> what</c><00:02:07.200><c> doesn't.</c><00:02:08.080><c> Some</c><00:02:08.319><c> large</c>
+
+00:02:08.630 --> 00:02:08.640 align:start position:0%
+you and what doesn't. Some large
+ 
+
+00:02:08.640 --> 00:02:10.309 align:start position:0%
+you and what doesn't. Some large
+language<00:02:09.039><c> models</c><00:02:09.440><c> don't</c><00:02:09.679><c> have</c><00:02:09.840><c> to</c><00:02:10.000><c> be</c><00:02:10.080><c> that</c>
+
+00:02:10.309 --> 00:02:10.319 align:start position:0%
+language models don't have to be that
+ 
+
+00:02:10.319 --> 00:02:12.790 align:start position:0%
+language models don't have to be that
+smart.<00:02:10.800><c> They</c><00:02:11.039><c> just</c><00:02:11.120><c> have</c><00:02:11.280><c> to</c><00:02:11.440><c> be</c><00:02:11.599><c> fast</c><00:02:12.000><c> and</c>
+
+00:02:12.790 --> 00:02:12.800 align:start position:0%
+smart. They just have to be fast and
+ 
+
+00:02:12.800 --> 00:02:14.550 align:start position:0%
+smart. They just have to be fast and
+sort<00:02:13.040><c> of</c><00:02:13.200><c> accurate.</c><00:02:13.520><c> Other</c><00:02:13.920><c> large</c><00:02:14.239><c> language</c>
+
+00:02:14.550 --> 00:02:14.560 align:start position:0%
+sort of accurate. Other large language
+ 
+
+00:02:14.560 --> 00:02:16.869 align:start position:0%
+sort of accurate. Other large language
+models<00:02:14.959><c> have</c><00:02:15.200><c> more</c><00:02:15.440><c> defining</c><00:02:15.840><c> features,</c><00:02:16.560><c> like</c>
+
+00:02:16.869 --> 00:02:16.879 align:start position:0%
+models have more defining features, like
+ 
+
+00:02:16.879 --> 00:02:19.190 align:start position:0%
+models have more defining features, like
+some<00:02:17.200><c> are</c><00:02:17.520><c> better</c><00:02:17.760><c> at</c><00:02:18.080><c> code</c><00:02:18.400><c> while</c><00:02:18.640><c> others</c><00:02:18.959><c> are</c>
+
+00:02:19.190 --> 00:02:19.200 align:start position:0%
+some are better at code while others are
+ 
+
+00:02:19.200 --> 00:02:21.510 align:start position:0%
+some are better at code while others are
+better<00:02:19.360><c> at</c><00:02:19.599><c> creative</c><00:02:19.920><c> writing.</c><00:02:21.200><c> There</c><00:02:21.440><c> are</c>
+
+00:02:21.510 --> 00:02:21.520 align:start position:0%
+better at creative writing. There are
+ 
+
+00:02:21.520 --> 00:02:23.430 align:start position:0%
+better at creative writing. There are
+benchmarks<00:02:22.160><c> online,</c><00:02:22.560><c> but</c><00:02:22.879><c> of</c><00:02:23.040><c> course,</c><00:02:23.280><c> be</c>
+
+00:02:23.430 --> 00:02:23.440 align:start position:0%
+benchmarks online, but of course, be
+ 
+
+00:02:23.440 --> 00:02:25.589 align:start position:0%
+benchmarks online, but of course, be
+skeptical.<00:02:24.319><c> The</c><00:02:24.640><c> real</c><00:02:24.879><c> way</c><00:02:25.040><c> to</c><00:02:25.200><c> determine</c>
+
+00:02:25.589 --> 00:02:25.599 align:start position:0%
+skeptical. The real way to determine
+ 
+
+00:02:25.599 --> 00:02:30.150 align:start position:0%
+skeptical. The real way to determine
+what's<00:02:25.920><c> best</c><00:02:26.080><c> for</c><00:02:26.239><c> you</c><00:02:26.640><c> is</c><00:02:27.120><c> just</c><00:02:27.360><c> to</c><00:02:27.599><c> try</c><00:02:27.840><c> them.</c>
+
+00:02:30.150 --> 00:02:30.160 align:start position:0%
+what's best for you is just to try them.
+ 
+
+00:02:30.160 --> 00:02:31.670 align:start position:0%
+what's best for you is just to try them.
+Large<00:02:30.480><c> language</c><00:02:30.800><c> models</c><00:02:31.120><c> come</c><00:02:31.280><c> in</c><00:02:31.440><c> all</c>
+
+00:02:31.670 --> 00:02:31.680 align:start position:0%
+Large language models come in all
+ 
+
+00:02:31.680 --> 00:02:33.509 align:start position:0%
+Large language models come in all
+different<00:02:31.840><c> types</c><00:02:32.080><c> of</c><00:02:32.239><c> flavors.</c><00:02:33.120><c> Here</c><00:02:33.360><c> are</c>
+
+00:02:33.509 --> 00:02:33.519 align:start position:0%
+different types of flavors. Here are
+ 
+
+00:02:33.519 --> 00:02:35.270 align:start position:0%
+different types of flavors. Here are
+some<00:02:33.680><c> different</c><00:02:33.920><c> terms</c><00:02:34.400><c> simplified</c><00:02:34.959><c> so</c><00:02:35.120><c> that</c>
+
+00:02:35.270 --> 00:02:35.280 align:start position:0%
+some different terms simplified so that
+ 
+
+00:02:35.280 --> 00:02:37.350 align:start position:0%
+some different terms simplified so that
+we're<00:02:35.519><c> choosing</c><00:02:35.840><c> a</c><00:02:36.000><c> local</c><00:02:36.319><c> model,</c><00:02:36.879><c> it's</c><00:02:37.040><c> a</c><00:02:37.200><c> lot</c>
+
+00:02:37.350 --> 00:02:37.360 align:start position:0%
+we're choosing a local model, it's a lot
+ 
+
+00:02:37.360 --> 00:02:39.270 align:start position:0%
+we're choosing a local model, it's a lot
+easier<00:02:37.599><c> to</c><00:02:37.760><c> pick.</c><00:02:38.239><c> Thinking</c><00:02:38.640><c> is</c><00:02:38.879><c> when</c><00:02:39.040><c> the</c>
+
+00:02:39.270 --> 00:02:39.280 align:start position:0%
+easier to pick. Thinking is when the
+ 
+
+00:02:39.280 --> 00:02:41.110 align:start position:0%
+easier to pick. Thinking is when the
+model<00:02:39.599><c> thinks</c><00:02:39.920><c> to</c><00:02:40.080><c> itself</c><00:02:40.400><c> in</c><00:02:40.640><c> large</c><00:02:40.879><c> blocks</c>
+
+00:02:41.110 --> 00:02:41.120 align:start position:0%
+model thinks to itself in large blocks
+ 
+
+00:02:41.120 --> 00:02:42.869 align:start position:0%
+model thinks to itself in large blocks
+of<00:02:41.280><c> text</c><00:02:41.680><c> before</c><00:02:42.000><c> giving</c><00:02:42.160><c> you</c><00:02:42.319><c> an</c><00:02:42.560><c> answer.</c>
+
+00:02:42.869 --> 00:02:42.879 align:start position:0%
+of text before giving you an answer.
+ 
+
+00:02:42.879 --> 00:02:44.229 align:start position:0%
+of text before giving you an answer.
+This<00:02:43.040><c> is</c><00:02:43.200><c> usually</c><00:02:43.440><c> best</c><00:02:43.680><c> when</c><00:02:43.920><c> you're</c><00:02:44.080><c> trying</c>
+
+00:02:44.229 --> 00:02:44.239 align:start position:0%
+This is usually best when you're trying
+ 
+
+00:02:44.239 --> 00:02:46.229 align:start position:0%
+This is usually best when you're trying
+to<00:02:44.400><c> figure</c><00:02:44.560><c> out</c><00:02:44.800><c> some</c><00:02:45.200><c> complex</c><00:02:45.680><c> problem</c><00:02:46.000><c> and</c>
+
+00:02:46.229 --> 00:02:46.239 align:start position:0%
+to figure out some complex problem and
+ 
+
+00:02:46.239 --> 00:02:47.750 align:start position:0%
+to figure out some complex problem and
+need<00:02:46.400><c> a</c><00:02:46.640><c> little</c><00:02:46.720><c> bit</c><00:02:46.879><c> more</c><00:02:47.040><c> time</c><00:02:47.200><c> to</c><00:02:47.360><c> think.</c>
+
+00:02:47.750 --> 00:02:47.760 align:start position:0%
+need a little bit more time to think.
+ 
+
+00:02:47.760 --> 00:02:49.589 align:start position:0%
+need a little bit more time to think.
+Tools<00:02:48.160><c> are</c><00:02:48.400><c> things</c><00:02:48.560><c> you</c><00:02:48.800><c> can</c><00:02:48.959><c> give</c><00:02:49.120><c> a</c><00:02:49.280><c> large</c>
+
+00:02:49.589 --> 00:02:49.599 align:start position:0%
+Tools are things you can give a large
+ 
+
+00:02:49.599 --> 00:02:51.750 align:start position:0%
+Tools are things you can give a large
+language<00:02:49.920><c> model</c><00:02:50.239><c> to</c><00:02:50.480><c> use</c><00:02:50.879><c> when</c><00:02:51.120><c> it's</c><00:02:51.440><c> figuring</c>
+
+00:02:51.750 --> 00:02:51.760 align:start position:0%
+language model to use when it's figuring
+ 
+
+00:02:51.760 --> 00:02:54.070 align:start position:0%
+language model to use when it's figuring
+out<00:02:52.319><c> an</c><00:02:52.560><c> answer.</c><00:02:53.040><c> For</c><00:02:53.200><c> example,</c><00:02:53.599><c> I</c><00:02:53.760><c> could</c><00:02:53.920><c> give</c>
+
+00:02:54.070 --> 00:02:54.080 align:start position:0%
+out an answer. For example, I could give
+ 
+
+00:02:54.080 --> 00:02:56.070 align:start position:0%
+out an answer. For example, I could give
+it<00:02:54.239><c> a</c><00:02:54.400><c> web</c><00:02:54.640><c> search</c><00:02:54.959><c> tool</c><00:02:55.280><c> and</c><00:02:55.519><c> rather</c><00:02:55.920><c> than</c>
+
+00:02:56.070 --> 00:02:56.080 align:start position:0%
+it a web search tool and rather than
+ 
+
+00:02:56.080 --> 00:02:58.070 align:start position:0%
+it a web search tool and rather than
+just<00:02:56.319><c> guess</c><00:02:56.560><c> what</c><00:02:56.800><c> my</c><00:02:56.959><c> query</c><00:02:57.360><c> is,</c><00:02:57.760><c> it</c><00:02:58.000><c> can</c>
+
+00:02:58.070 --> 00:02:58.080 align:start position:0%
+just guess what my query is, it can
+ 
+
+00:02:58.080 --> 00:03:00.309 align:start position:0%
+just guess what my query is, it can
+decide<00:02:58.400><c> to</c><00:02:58.640><c> use</c><00:02:58.800><c> that</c><00:02:58.959><c> tool</c><00:02:59.280><c> instead.</c><00:02:59.920><c> Vision</c>
+
+00:03:00.309 --> 00:03:00.319 align:start position:0%
+decide to use that tool instead. Vision
+ 
+
+00:03:00.319 --> 00:03:02.309 align:start position:0%
+decide to use that tool instead. Vision
+has<00:03:00.480><c> the</c><00:03:00.640><c> ability</c><00:03:00.959><c> to</c><00:03:01.120><c> look</c><00:03:01.280><c> at</c><00:03:01.519><c> images</c><00:03:02.080><c> and</c>
+
+00:03:02.309 --> 00:03:02.319 align:start position:0%
+has the ability to look at images and
+ 
+
+00:03:02.319 --> 00:03:04.390 align:start position:0%
+has the ability to look at images and
+include<00:03:02.640><c> it</c><00:03:02.800><c> within</c><00:03:03.120><c> its</c><00:03:03.360><c> responses.</c>
+
+00:03:04.390 --> 00:03:04.400 align:start position:0%
+include it within its responses.
+ 
+
+00:03:04.400 --> 00:03:06.550 align:start position:0%
+include it within its responses.
+Embedding<00:03:05.040><c> is</c><00:03:05.360><c> outside</c><00:03:05.680><c> the</c><00:03:05.920><c> large</c><00:03:06.239><c> language</c>
+
+00:03:06.550 --> 00:03:06.560 align:start position:0%
+Embedding is outside the large language
+ 
+
+00:03:06.560 --> 00:03:08.869 align:start position:0%
+Embedding is outside the large language
+models<00:03:07.040><c> specifically.</c><00:03:08.000><c> It</c><00:03:08.239><c> turns</c><00:03:08.480><c> your</c><00:03:08.640><c> text</c>
+
+00:03:08.869 --> 00:03:08.879 align:start position:0%
+models specifically. It turns your text
+ 
+
+00:03:08.879 --> 00:03:10.869 align:start position:0%
+models specifically. It turns your text
+into<00:03:09.120><c> a</c><00:03:09.360><c> mathematical</c><00:03:09.920><c> format</c><00:03:10.239><c> that</c><00:03:10.480><c> can</c><00:03:10.640><c> make</c>
+
+00:03:10.869 --> 00:03:10.879 align:start position:0%
+into a mathematical format that can make
+ 
+
+00:03:10.879 --> 00:03:13.110 align:start position:0%
+into a mathematical format that can make
+applications<00:03:11.840><c> using</c><00:03:12.319><c> natural</c><00:03:12.720><c> language</c>
+
+00:03:13.110 --> 00:03:13.120 align:start position:0%
+applications using natural language
+ 
+
+00:03:13.120 --> 00:03:15.910 align:start position:0%
+applications using natural language
+search<00:03:13.519><c> much</c><00:03:13.760><c> easier.</c><00:03:14.239><c> The</c><00:03:14.560><c> number</c><00:03:15.040><c> B</c><00:03:15.599><c> part</c>
+
+00:03:15.910 --> 00:03:15.920 align:start position:0%
+search much easier. The number B part
+ 
+
+00:03:15.920 --> 00:03:17.910 align:start position:0%
+search much easier. The number B part
+represents<00:03:16.400><c> the</c><00:03:16.640><c> amount</c><00:03:16.879><c> of</c><00:03:17.200><c> billions</c><00:03:17.680><c> of</c>
+
+00:03:17.910 --> 00:03:17.920 align:start position:0%
+represents the amount of billions of
+ 
+
+00:03:17.920 --> 00:03:19.830 align:start position:0%
+represents the amount of billions of
+parameters.<00:03:18.800><c> The</c><00:03:18.959><c> higher</c><00:03:19.280><c> the</c><00:03:19.440><c> number,</c><00:03:19.680><c> the</c>
+
+00:03:19.830 --> 00:03:19.840 align:start position:0%
+parameters. The higher the number, the
+ 
+
+00:03:19.840 --> 00:03:21.750 align:start position:0%
+parameters. The higher the number, the
+more<00:03:20.000><c> intelligent</c><00:03:20.480><c> the</c><00:03:20.640><c> model</c><00:03:20.879><c> is,</c><00:03:21.120><c> but</c><00:03:21.440><c> also</c>
+
+00:03:21.750 --> 00:03:21.760 align:start position:0%
+more intelligent the model is, but also
+ 
+
+00:03:21.760 --> 00:03:24.149 align:start position:0%
+more intelligent the model is, but also
+requires<00:03:22.400><c> much</c><00:03:22.640><c> more</c><00:03:22.879><c> processing</c><00:03:23.360><c> power.</c>
+
+00:03:24.149 --> 00:03:24.159 align:start position:0%
+requires much more processing power.
+ 
+
+00:03:24.159 --> 00:03:26.390 align:start position:0%
+requires much more processing power.
+It's<00:03:24.400><c> safe</c><00:03:24.640><c> to</c><00:03:24.800><c> say</c><00:03:24.959><c> that</c><00:03:25.120><c> the</c><00:03:25.360><c> amount</c><00:03:25.519><c> of</c><00:03:25.760><c> VRAM</c>
+
+00:03:26.390 --> 00:03:26.400 align:start position:0%
+It's safe to say that the amount of VRAM
+ 
+
+00:03:26.400 --> 00:03:27.910 align:start position:0%
+It's safe to say that the amount of VRAM
+should<00:03:26.640><c> be</c><00:03:26.879><c> equal</c><00:03:27.200><c> to</c><00:03:27.360><c> the</c><00:03:27.599><c> amount</c><00:03:27.760><c> of</c>
+
+00:03:27.910 --> 00:03:27.920 align:start position:0%
+should be equal to the amount of
+ 
+
+00:03:27.920 --> 00:03:30.550 align:start position:0%
+should be equal to the amount of
+parameters<00:03:28.480><c> in</c><00:03:28.720><c> billions.</c><00:03:29.680><c> For</c><00:03:29.760><c> example,</c><00:03:30.319><c> 1</c>
+
+00:03:30.550 --> 00:03:30.560 align:start position:0%
+parameters in billions. For example, 1
+ 
+
+00:03:30.560 --> 00:03:34.149 align:start position:0%
+parameters in billions. For example, 1
+billion<00:03:30.879><c> parameters</c><00:03:31.440><c> is</c><00:03:31.680><c> 1</c><00:03:31.920><c> GB</c><00:03:32.480><c> of</c><00:03:32.799><c> VRAM,</c><00:03:33.920><c> give</c>
+
+00:03:34.149 --> 00:03:34.159 align:start position:0%
+billion parameters is 1 GB of VRAM, give
+ 
+
+00:03:34.159 --> 00:03:36.949 align:start position:0%
+billion parameters is 1 GB of VRAM, give
+or<00:03:34.400><c> take.</c><00:03:35.280><c> The</c><00:03:35.519><c> quantization</c><00:03:36.239><c> is</c><00:03:36.400><c> a</c><00:03:36.560><c> form</c><00:03:36.799><c> of</c>
+
+00:03:36.949 --> 00:03:36.959 align:start position:0%
+or take. The quantization is a form of
+ 
+
+00:03:36.959 --> 00:03:38.710 align:start position:0%
+or take. The quantization is a form of
+reducing<00:03:37.280><c> the</c><00:03:37.519><c> memory</c><00:03:37.760><c> of</c><00:03:37.920><c> a</c><00:03:38.080><c> large</c><00:03:38.319><c> language</c>
+
+00:03:38.710 --> 00:03:38.720 align:start position:0%
+reducing the memory of a large language
+ 
+
+00:03:38.720 --> 00:03:40.949 align:start position:0%
+reducing the memory of a large language
+model<00:03:39.120><c> while</c><00:03:39.519><c> sacrificing</c><00:03:40.159><c> quality.</c><00:03:40.720><c> By</c>
+
+00:03:40.949 --> 00:03:40.959 align:start position:0%
+model while sacrificing quality. By
+ 
+
+00:03:40.959 --> 00:03:42.869 align:start position:0%
+model while sacrificing quality. By
+default,<00:03:41.440><c> Olama</c><00:03:42.000><c> will</c><00:03:42.159><c> download</c><00:03:42.480><c> all</c><00:03:42.640><c> your</c>
+
+00:03:42.869 --> 00:03:42.879 align:start position:0%
+default, Olama will download all your
+ 
+
+00:03:42.879 --> 00:03:45.270 align:start position:0%
+default, Olama will download all your
+models<00:03:43.280><c> using</c><00:03:43.680><c> 4-bit</c><00:03:44.159><c> quantization,</c><00:03:45.120><c> which</c>
+
+00:03:45.270 --> 00:03:45.280 align:start position:0%
+models using 4-bit quantization, which
+ 
+
+00:03:45.280 --> 00:03:46.550 align:start position:0%
+models using 4-bit quantization, which
+is<00:03:45.440><c> a</c><00:03:45.599><c> good</c><00:03:45.760><c> middle</c><00:03:46.000><c> ground</c><00:03:46.239><c> between</c>
+
+00:03:46.550 --> 00:03:46.560 align:start position:0%
+is a good middle ground between
+ 
+
+00:03:46.560 --> 00:03:48.710 align:start position:0%
+is a good middle ground between
+optimization<00:03:47.200><c> and</c><00:03:47.519><c> not</c><00:03:47.680><c> having</c><00:03:48.159><c> too</c><00:03:48.480><c> much</c>
+
+00:03:48.710 --> 00:03:48.720 align:start position:0%
+optimization and not having too much
+ 
+
+00:03:48.720 --> 00:03:50.710 align:start position:0%
+optimization and not having too much
+performance<00:03:49.200><c> hit.</c><00:03:49.680><c> In</c><00:03:50.000><c> general,</c><00:03:50.319><c> just</c><00:03:50.560><c> use</c>
+
+00:03:50.710 --> 00:03:50.720 align:start position:0%
+performance hit. In general, just use
+ 
+
+00:03:50.720 --> 00:03:52.229 align:start position:0%
+performance hit. In general, just use
+the<00:03:50.959><c> large</c><00:03:51.200><c> language</c><00:03:51.519><c> model</c><00:03:51.760><c> that</c><00:03:52.000><c> gives</c><00:03:52.159><c> you</c>
+
+00:03:52.229 --> 00:03:52.239 align:start position:0%
+the large language model that gives you
+ 
+
+00:03:52.239 --> 00:03:53.830 align:start position:0%
+the large language model that gives you
+the<00:03:52.400><c> features</c><00:03:52.640><c> that</c><00:03:52.879><c> you</c><00:03:53.040><c> want</c><00:03:53.280><c> and</c><00:03:53.519><c> nothing</c>
+
+00:03:53.830 --> 00:03:53.840 align:start position:0%
+the features that you want and nothing
+ 
+
+00:03:53.840 --> 00:03:57.030 align:start position:0%
+the features that you want and nothing
+more.<00:03:54.959><c> Now,</c><00:03:55.360><c> it's</c><00:03:55.680><c> one</c><00:03:55.840><c> thing</c><00:03:56.080><c> to</c><00:03:56.319><c> run</c><00:03:56.560><c> this</c><00:03:56.799><c> on</c>
+
+00:03:57.030 --> 00:03:57.040 align:start position:0%
+more. Now, it's one thing to run this on
+ 
+
+00:03:57.040 --> 00:03:59.030 align:start position:0%
+more. Now, it's one thing to run this on
+the<00:03:57.200><c> command</c><00:03:57.439><c> line,</c><00:03:57.920><c> but</c><00:03:58.159><c> you</c><00:03:58.400><c> realistically</c>
+
+00:03:59.030 --> 00:03:59.040 align:start position:0%
+the command line, but you realistically
+ 
+
+00:03:59.040 --> 00:04:01.030 align:start position:0%
+the command line, but you realistically
+want<00:03:59.280><c> to</c><00:03:59.439><c> integrate</c><00:03:59.920><c> this</c><00:04:00.159><c> into</c><00:04:00.640><c> something</c>
+
+00:04:01.030 --> 00:04:01.040 align:start position:0%
+want to integrate this into something
+ 
+
+00:04:01.040 --> 00:04:02.869 align:start position:0%
+want to integrate this into something
+different.<00:04:01.599><c> Good</c><00:04:01.840><c> news.</c><00:04:02.400><c> It's</c><00:04:02.640><c> actually</c>
+
+00:04:02.869 --> 00:04:02.879 align:start position:0%
+different. Good news. It's actually
+ 
+
+00:04:02.879 --> 00:04:04.710 align:start position:0%
+different. Good news. It's actually
+really<00:04:03.120><c> simple</c><00:04:03.439><c> and</c><00:04:03.680><c> most</c><00:04:03.920><c> likely</c><00:04:04.319><c> doesn't</c>
+
+00:04:04.710 --> 00:04:04.720 align:start position:0%
+really simple and most likely doesn't
+ 
+
+00:04:04.720 --> 00:04:06.789 align:start position:0%
+really simple and most likely doesn't
+really<00:04:05.040><c> need</c><00:04:05.280><c> any</c><00:04:05.519><c> refactoring.</c><00:04:06.239><c> Most</c><00:04:06.480><c> large</c>
+
+00:04:06.789 --> 00:04:06.799 align:start position:0%
+really need any refactoring. Most large
+ 
+
+00:04:06.799 --> 00:04:08.550 align:start position:0%
+really need any refactoring. Most large
+language<00:04:07.120><c> models</c><00:04:07.439><c> use</c><00:04:07.680><c> the</c><00:04:07.840><c> OpenAI</c>
+
+00:04:08.550 --> 00:04:08.560 align:start position:0%
+language models use the OpenAI
+ 
+
+00:04:08.560 --> 00:04:10.789 align:start position:0%
+language models use the OpenAI
+compatible<00:04:09.040><c> endpoints.</c><00:04:09.760><c> Most</c><00:04:10.000><c> likely</c><00:04:10.400><c> your</c>
+
+00:04:10.789 --> 00:04:10.799 align:start position:0%
+compatible endpoints. Most likely your
+ 
+
+00:04:10.799 --> 00:04:12.390 align:start position:0%
+compatible endpoints. Most likely your
+application<00:04:11.280><c> does</c><00:04:11.519><c> as</c><00:04:11.680><c> well.</c><00:04:12.000><c> So</c><00:04:12.159><c> I'm</c><00:04:12.319><c> going</c>
+
+00:04:12.390 --> 00:04:12.400 align:start position:0%
+application does as well. So I'm going
+ 
+
+00:04:12.400 --> 00:04:14.550 align:start position:0%
+application does as well. So I'm going
+to<00:04:12.480><c> ask</c><00:04:12.720><c> Warpier</c><00:04:13.280><c> to</c><00:04:13.439><c> go</c><00:04:13.519><c> to</c><00:04:13.680><c> my</c><00:04:13.840><c> code</c><00:04:14.080><c> file</c><00:04:14.319><c> and</c>
+
+00:04:14.550 --> 00:04:14.560 align:start position:0%
+to ask Warpier to go to my code file and
+ 
+
+00:04:14.560 --> 00:04:16.150 align:start position:0%
+to ask Warpier to go to my code file and
+search<00:04:14.799><c> for</c><00:04:15.040><c> where</c><00:04:15.200><c> I</c><00:04:15.439><c> initialized</c><00:04:16.000><c> the</c>
+
+00:04:16.150 --> 00:04:16.160 align:start position:0%
+search for where I initialized the
+ 
+
+00:04:16.160 --> 00:04:17.990 align:start position:0%
+search for where I initialized the
+OpenAI<00:04:16.799><c> client.</c><00:04:17.280><c> Then</c><00:04:17.519><c> I'm</c><00:04:17.680><c> just</c><00:04:17.840><c> going</c><00:04:17.919><c> to</c>
+
+00:04:17.990 --> 00:04:18.000 align:start position:0%
+OpenAI client. Then I'm just going to
+ 
+
+00:04:18.000 --> 00:04:21.030 align:start position:0%
+OpenAI client. Then I'm just going to
+switch<00:04:18.160><c> out</c><00:04:18.320><c> the</c><00:04:18.479><c> base</c><00:04:18.720><c> URL</c><00:04:19.199><c> with</c><00:04:20.560><c> this</c><00:04:20.720><c> is</c><00:04:20.880><c> the</c>
+
+00:04:21.030 --> 00:04:21.040 align:start position:0%
+switch out the base URL with this is the
+ 
+
+00:04:21.040 --> 00:04:23.670 align:start position:0%
+switch out the base URL with this is the
+default.<00:04:21.600><c> And</c><00:04:21.680><c> insert</c><00:04:22.479><c> as</c><00:04:22.639><c> the</c><00:04:22.720><c> API</c><00:04:23.040><c> key.</c><00:04:23.440><c> Then</c>
+
+00:04:23.670 --> 00:04:23.680 align:start position:0%
+default. And insert as the API key. Then
+ 
+
+00:04:23.680 --> 00:04:24.950 align:start position:0%
+default. And insert as the API key. Then
+where<00:04:23.840><c> you</c><00:04:23.919><c> get</c><00:04:24.080><c> your</c><00:04:24.240><c> chat</c><00:04:24.560><c> completion</c>
+
+00:04:24.950 --> 00:04:24.960 align:start position:0%
+where you get your chat completion
+ 
+
+00:04:24.960 --> 00:04:27.189 align:start position:0%
+where you get your chat completion
+endpoint,<00:04:25.840><c> just</c><00:04:26.080><c> insert</c><00:04:26.400><c> the</c><00:04:26.639><c> model</c><00:04:26.800><c> that</c><00:04:27.040><c> you</c>
+
+00:04:27.189 --> 00:04:27.199 align:start position:0%
+endpoint, just insert the model that you
+ 
+
+00:04:27.199 --> 00:04:29.670 align:start position:0%
+endpoint, just insert the model that you
+want<00:04:27.280><c> to</c><00:04:27.520><c> use.</c><00:04:28.160><c> The</c><00:04:28.400><c> great</c><00:04:28.639><c> part</c><00:04:28.800><c> about</c><00:04:29.040><c> Olama</c>
+
+00:04:29.670 --> 00:04:29.680 align:start position:0%
+want to use. The great part about Olama
+ 
+
+00:04:29.680 --> 00:04:31.430 align:start position:0%
+want to use. The great part about Olama
+is<00:04:29.840><c> that</c><00:04:30.080><c> it</c><00:04:30.320><c> will</c><00:04:30.479><c> automatically</c><00:04:31.040><c> spin</c><00:04:31.280><c> up</c>
+
+00:04:31.430 --> 00:04:31.440 align:start position:0%
+is that it will automatically spin up
+ 
+
+00:04:31.440 --> 00:04:32.870 align:start position:0%
+is that it will automatically spin up
+the<00:04:31.600><c> large</c><00:04:31.840><c> language</c><00:04:32.160><c> model</c><00:04:32.479><c> once</c><00:04:32.639><c> it's</c>
+
+00:04:32.870 --> 00:04:32.880 align:start position:0%
+the large language model once it's
+ 
+
+00:04:32.880 --> 00:04:35.110 align:start position:0%
+the large language model once it's
+initialized<00:04:33.759><c> and</c><00:04:34.160><c> background</c><00:04:34.639><c> it</c><00:04:34.800><c> when</c><00:04:34.960><c> it's</c>
+
+00:04:35.110 --> 00:04:35.120 align:start position:0%
+initialized and background it when it's
+ 
+
+00:04:35.120 --> 00:04:37.830 align:start position:0%
+initialized and background it when it's
+inactive.<00:04:36.240><c> If</c><00:04:36.400><c> your</c><00:04:36.639><c> app</c><00:04:36.800><c> is</c><00:04:37.040><c> local</c><00:04:37.280><c> first</c><00:04:37.680><c> and</c>
+
+00:04:37.830 --> 00:04:37.840 align:start position:0%
+inactive. If your app is local first and
+ 
+
+00:04:37.840 --> 00:04:39.110 align:start position:0%
+inactive. If your app is local first and
+this<00:04:37.919><c> is</c><00:04:38.080><c> a</c><00:04:38.240><c> great</c><00:04:38.400><c> way</c><00:04:38.560><c> to</c><00:04:38.720><c> save</c><00:04:38.880><c> on</c>
+
+00:04:39.110 --> 00:04:39.120 align:start position:0%
+this is a great way to save on
+ 
+
+00:04:39.120 --> 00:04:41.030 align:start position:0%
+this is a great way to save on
+resources.<00:04:40.080><c> Of</c><00:04:40.320><c> course</c><00:04:40.479><c> though</c><00:04:40.720><c> you</c><00:04:40.960><c> can</c>
+
+00:04:41.030 --> 00:04:41.040 align:start position:0%
+resources. Of course though you can
+ 
+
+00:04:41.040 --> 00:04:43.030 align:start position:0%
+resources. Of course though you can
+bypass<00:04:41.520><c> this</c><00:04:41.840><c> completely</c><00:04:42.240><c> by</c><00:04:42.560><c> integrating</c>
+
+00:04:43.030 --> 00:04:43.040 align:start position:0%
+bypass this completely by integrating
+ 
+
+00:04:43.040 --> 00:04:45.189 align:start position:0%
+bypass this completely by integrating
+some<00:04:43.280><c> sort</c><00:04:43.440><c> of</c><00:04:43.759><c> polling</c><00:04:44.160><c> feature</c><00:04:44.720><c> or</c><00:04:44.960><c> just</c>
+
+00:04:45.189 --> 00:04:45.199 align:start position:0%
+some sort of polling feature or just
+ 
+
+00:04:45.199 --> 00:04:46.950 align:start position:0%
+some sort of polling feature or just
+completely<00:04:45.680><c> disabling</c><00:04:46.080><c> the</c><00:04:46.320><c> time</c><00:04:46.560><c> to</c><00:04:46.720><c> live</c>
+
+00:04:46.950 --> 00:04:46.960 align:start position:0%
+completely disabling the time to live
+ 
+
+00:04:46.960 --> 00:04:49.110 align:start position:0%
+completely disabling the time to live
+altogether.<00:04:47.919><c> Now,</c><00:04:48.240><c> every</c><00:04:48.479><c> single</c><00:04:48.800><c> chat</c>
+
+00:04:49.110 --> 00:04:49.120 align:start position:0%
+altogether. Now, every single chat
+ 
+
+00:04:49.120 --> 00:04:51.270 align:start position:0%
+altogether. Now, every single chat
+application<00:04:49.680><c> you</c><00:04:50.000><c> use</c><00:04:50.240><c> has</c><00:04:50.560><c> customizable</c>
+
+00:04:51.270 --> 00:04:51.280 align:start position:0%
+application you use has customizable
+ 
+
+00:04:51.280 --> 00:04:53.350 align:start position:0%
+application you use has customizable
+features<00:04:51.600><c> that</c><00:04:51.840><c> you</c><00:04:52.000><c> can</c><00:04:52.160><c> play</c><00:04:52.320><c> with</c><00:04:52.800><c> like</c><00:04:53.040><c> the</c>
+
+00:04:53.350 --> 00:04:53.360 align:start position:0%
+features that you can play with like the
+ 
+
+00:04:53.360 --> 00:04:56.150 align:start position:0%
+features that you can play with like the
+temperature,<00:04:54.080><c> system</c><00:04:54.479><c> prompt,</c><00:04:55.120><c> top</c><00:04:55.440><c> P,</c><00:04:55.919><c> and</c>
+
+00:04:56.150 --> 00:04:56.160 align:start position:0%
+temperature, system prompt, top P, and
+ 
+
+00:04:56.160 --> 00:04:58.230 align:start position:0%
+temperature, system prompt, top P, and
+this<00:04:56.320><c> is</c><00:04:56.479><c> also</c><00:04:56.800><c> possible</c><00:04:57.120><c> in</c><00:04:57.280><c> O</c><00:04:57.520><c> Lama.</c><00:04:57.919><c> First,</c>
+
+00:04:58.230 --> 00:04:58.240 align:start position:0%
+this is also possible in O Lama. First,
+ 
+
+00:04:58.240 --> 00:04:59.670 align:start position:0%
+this is also possible in O Lama. First,
+let's<00:04:58.400><c> pull</c><00:04:58.639><c> the</c><00:04:58.800><c> model</c><00:04:59.040><c> that</c><00:04:59.199><c> we</c><00:04:59.440><c> want</c><00:04:59.520><c> to</c>
+
+00:04:59.670 --> 00:04:59.680 align:start position:0%
+let's pull the model that we want to
+ 
+
+00:04:59.680 --> 00:05:02.150 align:start position:0%
+let's pull the model that we want to
+edit<00:05:00.479><c> to</c><00:05:00.720><c> make</c><00:05:00.880><c> sure</c><00:05:01.120><c> it's</c><00:05:01.360><c> on</c><00:05:01.520><c> our</c><00:05:01.759><c> computer.</c>
+
+00:05:02.150 --> 00:05:02.160 align:start position:0%
+edit to make sure it's on our computer.
+ 
+
+00:05:02.160 --> 00:05:04.790 align:start position:0%
+edit to make sure it's on our computer.
+We<00:05:02.320><c> can</c><00:05:02.479><c> then</c><00:05:02.639><c> save</c><00:05:02.880><c> this</c><00:05:03.120><c> as</c><00:05:03.360><c> a</c><00:05:03.520><c> new</c><00:05:03.680><c> model</c><00:05:04.639><c> so</c>
+
+00:05:04.790 --> 00:05:04.800 align:start position:0%
+We can then save this as a new model so
+ 
+
+00:05:04.800 --> 00:05:06.790 align:start position:0%
+We can then save this as a new model so
+we<00:05:05.040><c> can</c><00:05:05.120><c> use</c><00:05:05.280><c> it</c><00:05:05.440><c> at</c><00:05:05.680><c> another</c><00:05:06.000><c> time.</c><00:05:06.400><c> Here's</c><00:05:06.639><c> a</c>
+
+00:05:06.790 --> 00:05:06.800 align:start position:0%
+we can use it at another time. Here's a
+ 
+
+00:05:06.800 --> 00:05:08.710 align:start position:0%
+we can use it at another time. Here's a
+great<00:05:06.960><c> tip.</c><00:05:07.360><c> Use</c><00:05:07.600><c> Warp</c><00:05:08.000><c> to</c><00:05:08.160><c> build</c><00:05:08.240><c> a</c><00:05:08.479><c> model</c>
+
+00:05:08.710 --> 00:05:08.720 align:start position:0%
+great tip. Use Warp to build a model
+ 
+
+00:05:08.720 --> 00:05:10.469 align:start position:0%
+great tip. Use Warp to build a model
+file<00:05:08.960><c> for</c><00:05:09.120><c> you</c><00:05:09.280><c> so</c><00:05:09.440><c> that</c><00:05:09.600><c> you</c><00:05:09.759><c> get</c><00:05:09.840><c> a</c><00:05:10.000><c> much</c><00:05:10.240><c> more</c>
+
+00:05:10.469 --> 00:05:10.479 align:start position:0%
+file for you so that you get a much more
+ 
+
+00:05:10.479 --> 00:05:12.390 align:start position:0%
+file for you so that you get a much more
+detailed<00:05:10.880><c> prompt</c><00:05:11.280><c> and</c><00:05:11.520><c> system</c><00:05:11.840><c> message</c><00:05:12.160><c> for</c>
+
+00:05:12.390 --> 00:05:12.400 align:start position:0%
+detailed prompt and system message for
+ 
+
+00:05:12.400 --> 00:05:14.950 align:start position:0%
+detailed prompt and system message for
+what<00:05:12.560><c> you</c><00:05:12.720><c> need.</c><00:05:13.600><c> So,</c><00:05:14.000><c> for</c><00:05:14.080><c> example,</c><00:05:14.639><c> I'm</c>
+
+00:05:14.950 --> 00:05:14.960 align:start position:0%
+what you need. So, for example, I'm
+ 
+
+00:05:14.960 --> 00:05:17.670 align:start position:0%
+what you need. So, for example, I'm
+going<00:05:15.120><c> to</c><00:05:15.440><c> ask</c><00:05:15.840><c> Warp</c><00:05:16.400><c> to</c><00:05:16.560><c> create</c><00:05:16.720><c> a</c><00:05:16.960><c> model</c><00:05:17.280><c> file</c>
+
+00:05:17.670 --> 00:05:17.680 align:start position:0%
+going to ask Warp to create a model file
+ 
+
+00:05:17.680 --> 00:05:20.870 align:start position:0%
+going to ask Warp to create a model file
+for<00:05:18.000><c> a</c><00:05:18.560><c> YouTube</c><00:05:19.120><c> title</c><00:05:19.759><c> generator.</c><00:05:20.560><c> And</c><00:05:20.720><c> then</c>
+
+00:05:20.870 --> 00:05:20.880 align:start position:0%
+for a YouTube title generator. And then
+ 
+
+00:05:20.880 --> 00:05:22.469 align:start position:0%
+for a YouTube title generator. And then
+it's<00:05:21.039><c> going</c><00:05:21.120><c> to</c><00:05:21.280><c> be</c><00:05:21.440><c> a</c><00:05:21.600><c> much</c><00:05:21.840><c> more</c><00:05:22.080><c> detailed</c>
+
+00:05:22.469 --> 00:05:22.479 align:start position:0%
+it's going to be a much more detailed
+ 
+
+00:05:22.479 --> 00:05:25.510 align:start position:0%
+it's going to be a much more detailed
+system<00:05:22.800><c> prompt</c><00:05:23.199><c> that</c><00:05:23.280><c> you</c><00:05:23.440><c> can</c><00:05:23.600><c> use.</c>
+
+00:05:25.510 --> 00:05:25.520 align:start position:0%
+system prompt that you can use.
+ 
+
+00:05:25.520 --> 00:05:28.550 align:start position:0%
+system prompt that you can use.
+And<00:05:25.680><c> there</c><00:05:25.840><c> you</c><00:05:26.080><c> go.</c><00:05:26.720><c> Olama</c><00:05:27.759><c> running</c><00:05:28.240><c> large</c>
+
+00:05:28.550 --> 00:05:28.560 align:start position:0%
+And there you go. Olama running large
+ 
+
+00:05:28.560 --> 00:05:32.280 align:start position:0%
+And there you go. Olama running large
+language<00:05:28.880><c> models</c><00:05:29.280><c> locally.</c>
+

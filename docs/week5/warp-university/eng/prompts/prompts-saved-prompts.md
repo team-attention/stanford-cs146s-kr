@@ -1,0 +1,23 @@
+---
+title: "Trigger Reusable Actions with Saved Prompts"
+titleKr: "저장된 프롬프트로 재사용 가능한 액션 실행하기"
+category: "prompts"
+sourceUrl: "https://youtu.be/pE15zjJmB4E"
+---
+# Trigger Reusable Actions with Saved Prompts
+
+[영상 바로가기](https://youtu.be/pE15zjJmB4E)
+
+## 전체 자막
+
+Hi, I'm Zach. Uh, today I'm excited to show you how I use a feature in Warp called prompts to help streamline my workflow um when I'm working with PRs and Git commits. And what's really cool about it is it saves me a lot of time and a lot of typing. And these prompts are also usable not just by me, but also my team. So, why don't I just show you what I mean? So, let's say I have a PR in progress here. I can run a git diff uh to see what's going on. Um sneak peek. You can also see this diff in warp that's coming soon. Um but let's say that I'm at a good spot here and I actually want to make a commit and I want this commit to have a sensible commit message. So I could start typing get commit and like this is you know type a huge message. I don't really want to do that. I want um Warp's agent mode to create this commit for me. So I could ask warp to do that but there's a quicker way which is I have um over here in warp drive in this panel uh created a uh saved prompt which um says create com here I'll open up for you so you can see it actually. So it creates a commit with a description and it pushes it to origin. It gives some instructions on how to make this commit. Um it optionally takes an argument. I'm going to let it do the commit message for me.
+
+Um, and so I could I could run this by either coming over here and clicking this, which will put it in. Uh, but it's actually faster for me to just hit command P, bring up our command pallet, and go ahead and search for this save prompt and run it. And while this is running, I want to show you some other cool stuff. So, because this is in warp drive, this is uh in our team's warp drive section. So anyone on our team can actually use this prompt and you can see who created it. You can see when it was last run. It's been run today. Uh and then when I run this, it's going to run it as a normal agent mode query. Um and that means it's going to do, you know, it's going to do all the things that that Warps agent does. So it will go ahead and look at my status. It'll look at the diff. It will uh create this commit for me, which is exactly what I want. This does describe accurately what's going on here. And then it's going to push it up to origin, which is cool. This is what I will typically do.
+
+Now, I'm going to go ahead and show some other save prompts. So, I'm going to go ahead and run one uh before I make a uh pull request. I have a prompt that um will ask the agent to review my code and look and see if it's good and there's anything I should change. So, I'm going to go ahead and run this prompt, which says, I want you to review my code changes in the current branch. See if I have logic or style errors or other improvements. I find this much faster than pushing this uh and then reviewing it in GitHub. Um it's a cool way of getting some quick feedback. We'll see if there's anything wrong in this PR. I actually haven't run this yet. We'll see. I'm not sure. Probably is. Let's see what it comes up with. The funny thing is the agent actually wrote this code. So if it does uh have problems with it, uh it can uh maybe fix them itself. So this says there's a logic bug, which is interesting. This does actually look like a bug. Fascinating.
+
+Um, very, very, very smart. It actually caught a bug. Caught a potential raise condition. Okay, so maybe this one isn't quite ready for a pull request. There seemed to be some code quality issues.
+
+Again, the agent actually wrote this code, so this is cool to see it. I'm going to show you one last prompt, which is how I would do sort of my complete workflow here. Let's say that there weren't all these bugs. Actually, what I would do right now is probably ask the agent to fix these bugs. But let's say there weren't all these bugs. One other really cool thing that I would use a prompt for is actually opening a PR. And so um I'm going to go ahead and um look for that uh like make a PR from my open changes. And again, this is another one of these that I use all the time. Um and so if I want to do this, I could just run this. Bam. You get the idea. Super nice. This obviously isn't just for get stuff. You can make save prompts and share them and use them for any repeatable task that you want to do.
+
+Share them across your team. See when they're run, edit them, u parameterize them. So very, very cool feature. Oh, this is useful.

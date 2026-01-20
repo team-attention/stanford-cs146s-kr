@@ -1,0 +1,568 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.080 --> 00:00:01.750 align:start position:0%
+ 
+So,<00:00:00.240><c> we</c><00:00:00.400><c> just</c><00:00:00.560><c> rolled</c><00:00:00.800><c> out</c><00:00:01.040><c> support</c><00:00:01.360><c> for</c><00:00:01.600><c> the</c>
+
+00:00:01.750 --> 00:00:01.760 align:start position:0%
+So, we just rolled out support for the
+ 
+
+00:00:01.760 --> 00:00:04.309 align:start position:0%
+So, we just rolled out support for the
+remote<00:00:02.080><c> Figma</c><00:00:02.480><c> MCP</c><00:00:03.040><c> server</c><00:00:03.360><c> running</c><00:00:03.600><c> in</c><00:00:03.840><c> Warp.</c>
+
+00:00:04.309 --> 00:00:04.319 align:start position:0%
+remote Figma MCP server running in Warp.
+ 
+
+00:00:04.319 --> 00:00:07.110 align:start position:0%
+remote Figma MCP server running in Warp.
+Now,<00:00:04.560><c> a</c><00:00:04.799><c> remote</c><00:00:05.120><c> MCP</c><00:00:05.680><c> server</c><00:00:06.160><c> lives</c><00:00:06.480><c> elsewhere</c>
+
+00:00:07.110 --> 00:00:07.120 align:start position:0%
+Now, a remote MCP server lives elsewhere
+ 
+
+00:00:07.120 --> 00:00:09.030 align:start position:0%
+Now, a remote MCP server lives elsewhere
+and<00:00:07.359><c> you</c><00:00:07.520><c> can</c><00:00:07.680><c> connect</c><00:00:07.919><c> to</c><00:00:08.080><c> it</c><00:00:08.240><c> through</c><00:00:08.480><c> warp.</c>
+
+00:00:09.030 --> 00:00:09.040 align:start position:0%
+and you can connect to it through warp.
+ 
+
+00:00:09.040 --> 00:00:10.629 align:start position:0%
+and you can connect to it through warp.
+This<00:00:09.280><c> means</c><00:00:09.440><c> you</c><00:00:09.679><c> don't</c><00:00:09.760><c> have</c><00:00:09.920><c> to</c><00:00:10.080><c> manage</c><00:00:10.400><c> all</c>
+
+00:00:10.629 --> 00:00:10.639 align:start position:0%
+This means you don't have to manage all
+ 
+
+00:00:10.639 --> 00:00:12.709 align:start position:0%
+This means you don't have to manage all
+the<00:00:10.800><c> processes</c><00:00:11.280><c> yourself.</c><00:00:12.000><c> All</c><00:00:12.160><c> I</c><00:00:12.320><c> have</c><00:00:12.480><c> to</c><00:00:12.559><c> do</c>
+
+00:00:12.709 --> 00:00:12.719 align:start position:0%
+the processes yourself. All I have to do
+ 
+
+00:00:12.719 --> 00:00:15.110 align:start position:0%
+the processes yourself. All I have to do
+is<00:00:12.880><c> paste</c><00:00:13.280><c> in</c><00:00:13.440><c> this</c><00:00:13.679><c> simple</c><00:00:14.000><c> JSON</c><00:00:14.480><c> and</c><00:00:14.719><c> Warp</c>
+
+00:00:15.110 --> 00:00:15.120 align:start position:0%
+is paste in this simple JSON and Warp
+ 
+
+00:00:15.120 --> 00:00:17.349 align:start position:0%
+is paste in this simple JSON and Warp
+will<00:00:15.280><c> open</c><00:00:15.519><c> an</c><00:00:15.759><c> OOTH</c><00:00:16.240><c> login</c><00:00:16.560><c> flow.</c><00:00:16.960><c> So,</c><00:00:17.119><c> just</c>
+
+00:00:17.349 --> 00:00:17.359 align:start position:0%
+will open an OOTH login flow. So, just
+ 
+
+00:00:17.359 --> 00:00:19.029 align:start position:0%
+will open an OOTH login flow. So, just
+loging<00:00:17.520><c> in</c><00:00:17.680><c> once</c><00:00:18.000><c> with</c><00:00:18.080><c> your</c><00:00:18.240><c> Figma</c><00:00:18.720><c> account</c>
+
+00:00:19.029 --> 00:00:19.039 align:start position:0%
+loging in once with your Figma account
+ 
+
+00:00:19.039 --> 00:00:20.790 align:start position:0%
+loging in once with your Figma account
+and<00:00:19.279><c> that's</c><00:00:19.520><c> it.</c><00:00:19.760><c> This</c><00:00:20.000><c> saves</c><00:00:20.240><c> you</c><00:00:20.400><c> setup</c>
+
+00:00:20.790 --> 00:00:20.800 align:start position:0%
+and that's it. This saves you setup
+ 
+
+00:00:20.800 --> 00:00:22.630 align:start position:0%
+and that's it. This saves you setup
+time,<00:00:21.119><c> removes</c><00:00:21.520><c> the</c><00:00:21.680><c> hassle</c><00:00:22.000><c> of</c><00:00:22.240><c> managing</c>
+
+00:00:22.630 --> 00:00:22.640 align:start position:0%
+time, removes the hassle of managing
+ 
+
+00:00:22.640 --> 00:00:24.710 align:start position:0%
+time, removes the hassle of managing
+tokens,<00:00:23.439><c> and</c><00:00:23.600><c> makes</c><00:00:23.760><c> it</c><00:00:23.920><c> way</c><00:00:24.160><c> easier</c><00:00:24.400><c> for</c><00:00:24.560><c> you</c>
+
+00:00:24.710 --> 00:00:24.720 align:start position:0%
+tokens, and makes it way easier for you
+ 
+
+00:00:24.720 --> 00:00:26.870 align:start position:0%
+tokens, and makes it way easier for you
+to<00:00:24.880><c> get</c><00:00:24.960><c> started.</c><00:00:25.439><c> Now,</c><00:00:25.680><c> the</c><00:00:25.840><c> Figma</c><00:00:26.160><c> and</c><00:00:26.320><c> MCP</c>
+
+00:00:26.870 --> 00:00:26.880 align:start position:0%
+to get started. Now, the Figma and MCP
+ 
+
+00:00:26.880 --> 00:00:29.509 align:start position:0%
+to get started. Now, the Figma and MCP
+server<00:00:27.199><c> lets</c><00:00:27.519><c> AI</c><00:00:27.920><c> coding</c><00:00:28.240><c> tools</c><00:00:28.640><c> pull</c><00:00:29.039><c> context</c>
+
+00:00:29.509 --> 00:00:29.519 align:start position:0%
+server lets AI coding tools pull context
+ 
+
+00:00:29.519 --> 00:00:31.750 align:start position:0%
+server lets AI coding tools pull context
+directly<00:00:30.000><c> from</c><00:00:30.160><c> your</c><00:00:30.400><c> Figma</c><00:00:30.880><c> files</c><00:00:31.519><c> so</c><00:00:31.679><c> that</c>
+
+00:00:31.750 --> 00:00:31.760 align:start position:0%
+directly from your Figma files so that
+ 
+
+00:00:31.760 --> 00:00:34.229 align:start position:0%
+directly from your Figma files so that
+the<00:00:31.920><c> LLM</c><00:00:32.480><c> is</c><00:00:32.640><c> less</c><00:00:32.880><c> likely</c><00:00:33.200><c> to</c><00:00:33.440><c> hallucinate</c><00:00:34.000><c> on</c>
+
+00:00:34.229 --> 00:00:34.239 align:start position:0%
+the LLM is less likely to hallucinate on
+ 
+
+00:00:34.239 --> 00:00:36.630 align:start position:0%
+the LLM is less likely to hallucinate on
+your<00:00:34.399><c> project.</c><00:00:35.120><c> So,</c><00:00:35.280><c> it</c><00:00:35.440><c> can</c><00:00:35.600><c> get</c><00:00:36.000><c> screenshots</c>
+
+00:00:36.630 --> 00:00:36.640 align:start position:0%
+your project. So, it can get screenshots
+ 
+
+00:00:36.640 --> 00:00:39.190 align:start position:0%
+your project. So, it can get screenshots
+for<00:00:36.960><c> higher</c><00:00:37.280><c> level</c><00:00:37.600><c> context</c><00:00:38.079><c> so</c><00:00:38.239><c> the</c><00:00:38.399><c> AI</c><00:00:38.719><c> sees</c>
+
+00:00:39.190 --> 00:00:39.200 align:start position:0%
+for higher level context so the AI sees
+ 
+
+00:00:39.200 --> 00:00:41.670 align:start position:0%
+for higher level context so the AI sees
+relationships.<00:00:40.079><c> Design</c><00:00:40.480><c> system</c><00:00:40.800><c> rules</c><00:00:41.280><c> like</c>
+
+00:00:41.670 --> 00:00:41.680 align:start position:0%
+relationships. Design system rules like
+ 
+
+00:00:41.680 --> 00:00:43.990 align:start position:0%
+relationships. Design system rules like
+components,<00:00:42.320><c> variables,</c><00:00:42.800><c> and</c><00:00:43.040><c> styles</c><00:00:43.760><c> so</c>
+
+00:00:43.990 --> 00:00:44.000 align:start position:0%
+components, variables, and styles so
+ 
+
+00:00:44.000 --> 00:00:46.069 align:start position:0%
+components, variables, and styles so
+that<00:00:44.239><c> generated</c><00:00:44.800><c> code</c><00:00:45.120><c> matches</c><00:00:45.520><c> your</c><00:00:45.760><c> design</c>
+
+00:00:46.069 --> 00:00:46.079 align:start position:0%
+that generated code matches your design
+ 
+
+00:00:46.079 --> 00:00:47.670 align:start position:0%
+that generated code matches your design
+system.<00:00:46.559><c> getting</c><00:00:46.800><c> encode,</c><00:00:47.280><c> which</c><00:00:47.440><c> will</c>
+
+00:00:47.670 --> 00:00:47.680 align:start position:0%
+system. getting encode, which will
+ 
+
+00:00:47.680 --> 00:00:49.430 align:start position:0%
+system. getting encode, which will
+return<00:00:48.000><c> back</c><00:00:48.160><c> the</c><00:00:48.480><c> code</c><00:00:48.640><c> from</c><00:00:48.800><c> the</c><00:00:48.960><c> Figma</c>
+
+00:00:49.430 --> 00:00:49.440 align:start position:0%
+return back the code from the Figma
+ 
+
+00:00:49.440 --> 00:00:51.510 align:start position:0%
+return back the code from the Figma
+file,<00:00:49.840><c> and</c><00:00:50.079><c> content</c><00:00:50.480><c> metadata,</c><00:00:51.200><c> which</c>
+
+00:00:51.510 --> 00:00:51.520 align:start position:0%
+file, and content metadata, which
+ 
+
+00:00:51.520 --> 00:00:53.990 align:start position:0%
+file, and content metadata, which
+includes<00:00:52.000><c> text,</c><00:00:52.719><c> images,</c><00:00:53.120><c> and</c><00:00:53.520><c> layer</c><00:00:53.760><c> names</c>
+
+00:00:53.990 --> 00:00:54.000 align:start position:0%
+includes text, images, and layer names
+ 
+
+00:00:54.000 --> 00:00:56.229 align:start position:0%
+includes text, images, and layer names
+that<00:00:54.160><c> help</c><00:00:54.320><c> the</c><00:00:54.559><c> AI</c><00:00:54.879><c> fill</c><00:00:55.120><c> in</c><00:00:55.360><c> realistic</c><00:00:55.920><c> data</c>
+
+00:00:56.229 --> 00:00:56.239 align:start position:0%
+that help the AI fill in realistic data
+ 
+
+00:00:56.239 --> 00:00:58.389 align:start position:0%
+that help the AI fill in realistic data
+models.<00:00:56.879><c> Here,</c><00:00:57.039><c> I'm</c><00:00:57.280><c> pasting</c><00:00:57.600><c> a</c><00:00:57.840><c> prompt</c><00:00:58.079><c> into</c>
+
+00:00:58.389 --> 00:00:58.399 align:start position:0%
+models. Here, I'm pasting a prompt into
+ 
+
+00:00:58.399 --> 00:01:00.869 align:start position:0%
+models. Here, I'm pasting a prompt into
+warp<00:00:58.800><c> to</c><00:00:58.960><c> create</c><00:00:59.120><c> a</c><00:00:59.359><c> website</c><00:00:59.840><c> from</c><00:01:00.160><c> this</c><00:01:00.399><c> Figma</c>
+
+00:01:00.869 --> 00:01:00.879 align:start position:0%
+warp to create a website from this Figma
+ 
+
+00:01:00.879 --> 00:01:02.709 align:start position:0%
+warp to create a website from this Figma
+file.<00:01:01.199><c> I'm</c><00:01:01.359><c> adding</c><00:01:01.680><c> basic</c><00:01:02.000><c> guidelines</c><00:01:02.480><c> around</c>
+
+00:01:02.709 --> 00:01:02.719 align:start position:0%
+file. I'm adding basic guidelines around
+ 
+
+00:01:02.719 --> 00:01:04.630 align:start position:0%
+file. I'm adding basic guidelines around
+what<00:01:02.879><c> I</c><00:01:03.039><c> want</c><00:01:03.120><c> it</c><00:01:03.280><c> to</c><00:01:03.440><c> look</c><00:01:03.600><c> like,</c><00:01:03.920><c> like</c><00:01:04.239><c> design</c>
+
+00:01:04.630 --> 00:01:04.640 align:start position:0%
+what I want it to look like, like design
+ 
+
+00:01:04.640 --> 00:01:06.630 align:start position:0%
+what I want it to look like, like design
+details,<00:01:05.199><c> technical</c><00:01:05.760><c> requirements,</c><00:01:06.320><c> and</c>
+
+00:01:06.630 --> 00:01:06.640 align:start position:0%
+details, technical requirements, and
+ 
+
+00:01:06.640 --> 00:01:08.469 align:start position:0%
+details, technical requirements, and
+specific<00:01:07.119><c> instructions.</c><00:01:07.920><c> And</c><00:01:08.080><c> to</c><00:01:08.240><c> reference</c>
+
+00:01:08.469 --> 00:01:08.479 align:start position:0%
+specific instructions. And to reference
+ 
+
+00:01:08.479 --> 00:01:09.990 align:start position:0%
+specific instructions. And to reference
+the<00:01:08.640><c> Figma</c><00:01:09.040><c> file,</c><00:01:09.280><c> I</c><00:01:09.520><c> just</c><00:01:09.680><c> have</c><00:01:09.840><c> to</c>
+
+00:01:09.990 --> 00:01:10.000 align:start position:0%
+the Figma file, I just have to
+ 
+
+00:01:10.000 --> 00:01:12.070 align:start position:0%
+the Figma file, I just have to
+rightclick,<00:01:10.640><c> copy,</c><00:01:11.040><c> paste</c><00:01:11.360><c> as,</c><00:01:11.600><c> and</c><00:01:11.920><c> then</c>
+
+00:01:12.070 --> 00:01:12.080 align:start position:0%
+rightclick, copy, paste as, and then
+ 
+
+00:01:12.080 --> 00:01:14.310 align:start position:0%
+rightclick, copy, paste as, and then
+click<00:01:12.320><c> copy</c><00:01:12.720><c> link</c><00:01:12.960><c> to</c><00:01:13.119><c> selection.</c><00:01:13.760><c> and</c><00:01:14.000><c> Warp</c>
+
+00:01:14.310 --> 00:01:14.320 align:start position:0%
+click copy link to selection. and Warp
+ 
+
+00:01:14.320 --> 00:01:17.350 align:start position:0%
+click copy link to selection. and Warp
+is<00:01:14.560><c> able</c><00:01:14.799><c> to</c><00:01:15.200><c> call</c><00:01:15.439><c> the</c><00:01:15.680><c> Figma</c><00:01:16.080><c> MCP</c><00:01:16.720><c> server</c><00:01:17.119><c> to</c>
+
+00:01:17.350 --> 00:01:17.360 align:start position:0%
+is able to call the Figma MCP server to
+ 
+
+00:01:17.360 --> 00:01:19.350 align:start position:0%
+is able to call the Figma MCP server to
+get<00:01:17.600><c> things</c><00:01:17.840><c> like</c><00:01:18.080><c> metadata,</c><00:01:18.960><c> take</c><00:01:19.119><c> a</c>
+
+00:01:19.350 --> 00:01:19.360 align:start position:0%
+get things like metadata, take a
+ 
+
+00:01:19.360 --> 00:01:21.429 align:start position:0%
+get things like metadata, take a
+screenshot<00:01:20.000><c> and</c><00:01:20.159><c> pull</c><00:01:20.479><c> code.</c><00:01:20.799><c> It</c><00:01:21.040><c> then</c><00:01:21.200><c> starts</c>
+
+00:01:21.429 --> 00:01:21.439 align:start position:0%
+screenshot and pull code. It then starts
+ 
+
+00:01:21.439 --> 00:01:23.830 align:start position:0%
+screenshot and pull code. It then starts
+to<00:01:21.680><c> generate</c><00:01:22.080><c> a</c><00:01:22.320><c> bunch</c><00:01:22.479><c> of</c><00:01:22.640><c> code</c><00:01:22.880><c> diffs</c><00:01:23.439><c> and</c><00:01:23.600><c> in</c>
+
+00:01:23.830 --> 00:01:23.840 align:start position:0%
+to generate a bunch of code diffs and in
+ 
+
+00:01:23.840 --> 00:01:25.670 align:start position:0%
+to generate a bunch of code diffs and in
+under<00:01:24.159><c> 5</c><00:01:24.320><c> minutes</c><00:01:24.640><c> I</c><00:01:24.880><c> can</c><00:01:24.960><c> get</c><00:01:25.119><c> this</c><00:01:25.360><c> website</c>
+
+00:01:25.670 --> 00:01:25.680 align:start position:0%
+under 5 minutes I can get this website
+ 
+
+00:01:25.680 --> 00:01:27.590 align:start position:0%
+under 5 minutes I can get this website
+running<00:01:26.000><c> locally.</c><00:01:26.640><c> Obviously,</c><00:01:27.119><c> it's</c><00:01:27.439><c> not</c>
+
+00:01:27.590 --> 00:01:27.600 align:start position:0%
+running locally. Obviously, it's not
+ 
+
+00:01:27.600 --> 00:01:29.590 align:start position:0%
+running locally. Obviously, it's not
+perfect,<00:01:28.080><c> but</c><00:01:28.320><c> it</c><00:01:28.560><c> does</c><00:01:28.720><c> mimic</c><00:01:29.040><c> the</c><00:01:29.280><c> structure</c>
+
+00:01:29.590 --> 00:01:29.600 align:start position:0%
+perfect, but it does mimic the structure
+ 
+
+00:01:29.600 --> 00:01:31.670 align:start position:0%
+perfect, but it does mimic the structure
+of<00:01:29.759><c> the</c><00:01:29.920><c> Figma</c><00:01:30.400><c> design</c><00:01:30.799><c> quite</c><00:01:31.040><c> well.</c><00:01:31.439><c> It's</c>
+
+00:01:31.670 --> 00:01:31.680 align:start position:0%
+of the Figma design quite well. It's
+ 
+
+00:01:31.680 --> 00:01:33.910 align:start position:0%
+of the Figma design quite well. It's
+missing<00:01:32.000><c> a</c><00:01:32.159><c> lot</c><00:01:32.320><c> of</c><00:01:32.479><c> logos</c><00:01:32.880><c> and</c><00:01:33.119><c> images.</c><00:01:33.759><c> So,</c>
+
+00:01:33.910 --> 00:01:33.920 align:start position:0%
+missing a lot of logos and images. So,
+ 
+
+00:01:33.920 --> 00:01:36.069 align:start position:0%
+missing a lot of logos and images. So,
+Warp<00:01:34.320><c> has</c><00:01:34.479><c> instructed</c><00:01:34.960><c> me</c><00:01:35.200><c> to</c><00:01:35.439><c> download</c><00:01:35.840><c> them</c>
+
+00:01:36.069 --> 00:01:36.079 align:start position:0%
+Warp has instructed me to download them
+ 
+
+00:01:36.079 --> 00:01:38.149 align:start position:0%
+Warp has instructed me to download them
+into<00:01:36.400><c> the</c><00:01:36.560><c> assets</c><00:01:36.960><c> folder</c><00:01:37.360><c> it's</c><00:01:37.680><c> created</c><00:01:37.920><c> for</c>
+
+00:01:38.149 --> 00:01:38.159 align:start position:0%
+into the assets folder it's created for
+ 
+
+00:01:38.159 --> 00:01:40.069 align:start position:0%
+into the assets folder it's created for
+me.<00:01:38.560><c> So,</c><00:01:38.799><c> I'll</c><00:01:38.960><c> go</c><00:01:39.200><c> do</c><00:01:39.360><c> that</c><00:01:39.520><c> and</c><00:01:39.759><c> then</c><00:01:39.840><c> I'll</c>
+
+00:01:40.069 --> 00:01:40.079 align:start position:0%
+me. So, I'll go do that and then I'll
+ 
+
+00:01:40.079 --> 00:01:42.550 align:start position:0%
+me. So, I'll go do that and then I'll
+start<00:01:40.320><c> a</c><00:01:40.560><c> second</c><00:01:40.880><c> iteration</c><00:01:41.759><c> telling</c><00:01:42.079><c> it</c><00:01:42.320><c> to</c>
+
+00:01:42.550 --> 00:01:42.560 align:start position:0%
+start a second iteration telling it to
+ 
+
+00:01:42.560 --> 00:01:44.630 align:start position:0%
+start a second iteration telling it to
+fill<00:01:42.720><c> in</c><00:01:42.880><c> the</c><00:01:43.119><c> website</c><00:01:43.439><c> with</c><00:01:43.680><c> those</c><00:01:43.920><c> images.</c>
+
+00:01:44.630 --> 00:01:44.640 align:start position:0%
+fill in the website with those images.
+ 
+
+00:01:44.640 --> 00:01:46.389 align:start position:0%
+fill in the website with those images.
+As<00:01:44.799><c> this</c><00:01:45.040><c> was</c><00:01:45.200><c> running,</c><00:01:45.600><c> I</c><00:01:45.759><c> did</c><00:01:45.920><c> want</c><00:01:46.079><c> to</c><00:01:46.240><c> call</c>
+
+00:01:46.389 --> 00:01:46.399 align:start position:0%
+As this was running, I did want to call
+ 
+
+00:01:46.399 --> 00:01:48.630 align:start position:0%
+As this was running, I did want to call
+out<00:01:46.640><c> how</c><00:01:46.960><c> cool</c><00:01:47.280><c> Warp's</c><00:01:47.680><c> persistent</c><00:01:48.240><c> input</c>
+
+00:01:48.630 --> 00:01:48.640 align:start position:0%
+out how cool Warp's persistent input
+ 
+
+00:01:48.640 --> 00:01:50.870 align:start position:0%
+out how cool Warp's persistent input
+feature<00:01:49.040><c> was.</c><00:01:49.439><c> I</c><00:01:49.680><c> forgot</c><00:01:50.000><c> to</c><00:01:50.159><c> upload</c><00:01:50.560><c> the</c>
+
+00:01:50.870 --> 00:01:50.880 align:start position:0%
+feature was. I forgot to upload the
+ 
+
+00:01:50.880 --> 00:01:53.190 align:start position:0%
+feature was. I forgot to upload the
+Misho<00:01:51.439><c> logo</c><00:01:51.920><c> and</c><00:01:52.159><c> noticed</c><00:01:52.399><c> that</c><00:01:52.640><c> Warp</c><00:01:53.040><c> was</c>
+
+00:01:53.190 --> 00:01:53.200 align:start position:0%
+Misho logo and noticed that Warp was
+ 
+
+00:01:53.200 --> 00:01:54.710 align:start position:0%
+Misho logo and noticed that Warp was
+trying<00:01:53.360><c> to</c><00:01:53.520><c> create</c><00:01:53.759><c> its</c><00:01:54.000><c> own</c><00:01:54.320><c> as</c><00:01:54.560><c> a</c>
+
+00:01:54.710 --> 00:01:54.720 align:start position:0%
+trying to create its own as a
+ 
+
+00:01:54.720 --> 00:01:56.630 align:start position:0%
+trying to create its own as a
+placeholder.<00:01:55.439><c> I</c><00:01:55.680><c> quickly</c><00:01:56.000><c> uploaded</c><00:01:56.479><c> the</c>
+
+00:01:56.630 --> 00:01:56.640 align:start position:0%
+placeholder. I quickly uploaded the
+ 
+
+00:01:56.640 --> 00:01:58.870 align:start position:0%
+placeholder. I quickly uploaded the
+image<00:01:56.880><c> to</c><00:01:57.040><c> the</c><00:01:57.200><c> asset</c><00:01:57.520><c> folder</c><00:01:58.079><c> and</c><00:01:58.320><c> let</c><00:01:58.479><c> Warp</c>
+
+00:01:58.870 --> 00:01:58.880 align:start position:0%
+image to the asset folder and let Warp
+ 
+
+00:01:58.880 --> 00:02:01.350 align:start position:0%
+image to the asset folder and let Warp
+know<00:01:59.040><c> that</c><00:01:59.280><c> and</c><00:01:59.520><c> Warp</c><00:01:59.920><c> was</c><00:02:00.079><c> able</c><00:02:00.320><c> to</c><00:02:00.479><c> adjust</c><00:02:01.040><c> to</c>
+
+00:02:01.350 --> 00:02:01.360 align:start position:0%
+know that and Warp was able to adjust to
+ 
+
+00:02:01.360 --> 00:02:03.670 align:start position:0%
+know that and Warp was able to adjust to
+find<00:02:01.680><c> and</c><00:02:01.920><c> use</c><00:02:02.159><c> the</c><00:02:02.399><c> uploaded</c><00:02:02.880><c> logo</c><00:02:03.280><c> in</c><00:02:03.520><c> the</c>
+
+00:02:03.670 --> 00:02:03.680 align:start position:0%
+find and use the uploaded logo in the
+ 
+
+00:02:03.680 --> 00:02:05.510 align:start position:0%
+find and use the uploaded logo in the
+middle<00:02:03.840><c> of</c><00:02:04.000><c> its</c><00:02:04.240><c> process.</c><00:02:04.880><c> And</c><00:02:05.040><c> here's</c><00:02:05.280><c> the</c>
+
+00:02:05.510 --> 00:02:05.520 align:start position:0%
+middle of its process. And here's the
+ 
+
+00:02:05.520 --> 00:02:07.510 align:start position:0%
+middle of its process. And here's the
+finished<00:02:05.759><c> result.</c><00:02:06.399><c> Again,</c><00:02:06.960><c> there's</c><00:02:07.200><c> still</c><00:02:07.360><c> a</c>
+
+00:02:07.510 --> 00:02:07.520 align:start position:0%
+finished result. Again, there's still a
+ 
+
+00:02:07.520 --> 00:02:09.190 align:start position:0%
+finished result. Again, there's still a
+lot<00:02:07.600><c> of</c><00:02:07.680><c> kinks</c><00:02:08.000><c> that</c><00:02:08.239><c> need</c><00:02:08.319><c> to</c><00:02:08.399><c> be</c><00:02:08.479><c> ironed</c><00:02:08.879><c> out,</c>
+
+00:02:09.190 --> 00:02:09.200 align:start position:0%
+lot of kinks that need to be ironed out,
+ 
+
+00:02:09.200 --> 00:02:11.110 align:start position:0%
+lot of kinks that need to be ironed out,
+but<00:02:09.440><c> this</c><00:02:09.599><c> is</c><00:02:09.759><c> pretty</c><00:02:10.000><c> good</c><00:02:10.239><c> for</c><00:02:10.479><c> under</c><00:02:10.879><c> 20</c>
+
+00:02:11.110 --> 00:02:11.120 align:start position:0%
+but this is pretty good for under 20
+ 
+
+00:02:11.120 --> 00:02:12.869 align:start position:0%
+but this is pretty good for under 20
+minutes<00:02:11.360><c> of</c><00:02:11.599><c> work</c><00:02:11.920><c> thanks</c><00:02:12.160><c> to</c><00:02:12.239><c> the</c><00:02:12.400><c> Figma</c>
+
+00:02:12.869 --> 00:02:12.879 align:start position:0%
+minutes of work thanks to the Figma
+ 
+
+00:02:12.879 --> 00:02:15.430 align:start position:0%
+minutes of work thanks to the Figma
+remote<00:02:13.280><c> MCP</c><00:02:13.840><c> server.</c><00:02:14.239><c> So,</c><00:02:14.480><c> to</c><00:02:14.720><c> recap,</c><00:02:15.040><c> Warp</c>
+
+00:02:15.430 --> 00:02:15.440 align:start position:0%
+remote MCP server. So, to recap, Warp
+ 
+
+00:02:15.440 --> 00:02:17.350 align:start position:0%
+remote MCP server. So, to recap, Warp
+Now<00:02:15.599><c> supports</c><00:02:16.000><c> running</c><00:02:16.160><c> the</c><00:02:16.400><c> Figma</c><00:02:16.800><c> MCP</c>
+
+00:02:17.350 --> 00:02:17.360 align:start position:0%
+Now supports running the Figma MCP
+ 
+
+00:02:17.360 --> 00:02:19.589 align:start position:0%
+Now supports running the Figma MCP
+server<00:02:17.680><c> remotely,</c><00:02:18.319><c> and</c><00:02:18.560><c> we've</c><00:02:18.800><c> added</c><00:02:19.120><c> OOTH</c>
+
+00:02:19.589 --> 00:02:19.599 align:start position:0%
+server remotely, and we've added OOTH
+ 
+
+00:02:19.599 --> 00:02:21.270 align:start position:0%
+server remotely, and we've added OOTH
+support,<00:02:20.000><c> which</c><00:02:20.239><c> simplifies</c><00:02:20.720><c> the</c><00:02:20.959><c> setup</c>
+
+00:02:21.270 --> 00:02:21.280 align:start position:0%
+support, which simplifies the setup
+ 
+
+00:02:21.280 --> 00:02:23.190 align:start position:0%
+support, which simplifies the setup
+dramatically,<00:02:22.160><c> meaning</c><00:02:22.400><c> it's</c><00:02:22.640><c> easier</c><00:02:22.879><c> to</c><00:02:23.040><c> set</c>
+
+00:02:23.190 --> 00:02:23.200 align:start position:0%
+dramatically, meaning it's easier to set
+ 
+
+00:02:23.200 --> 00:02:25.430 align:start position:0%
+dramatically, meaning it's easier to set
+up<00:02:23.360><c> all</c><00:02:23.520><c> of</c><00:02:23.599><c> your</c><00:02:23.840><c> favorite</c><00:02:24.080><c> MCP</c><00:02:24.640><c> servers</c><00:02:25.120><c> like</c>
+
+00:02:25.430 --> 00:02:25.440 align:start position:0%
+up all of your favorite MCP servers like
+ 
+
+00:02:25.440 --> 00:02:27.910 align:start position:0%
+up all of your favorite MCP servers like
+Sentry,<00:02:26.080><c> GitHub,</c><00:02:26.480><c> and</c><00:02:26.720><c> Linear,</c><00:02:27.599><c> not</c><00:02:27.680><c> just</c>
+
+00:02:27.910 --> 00:02:27.920 align:start position:0%
+Sentry, GitHub, and Linear, not just
+ 
+
+00:02:27.920 --> 00:02:31.879 align:start position:0%
+Sentry, GitHub, and Linear, not just
+Figma.<00:02:28.560><c> Hope</c><00:02:28.720><c> this</c><00:02:28.879><c> helps.</c>
+

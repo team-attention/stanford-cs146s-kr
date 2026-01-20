@@ -1,0 +1,616 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.080 --> 00:00:02.070 align:start position:0%
+ 
+Hey<00:00:00.240><c> everyone.</c><00:00:00.719><c> So</c><00:00:00.880><c> we</c><00:00:01.040><c> are</c><00:00:01.199><c> announcing</c><00:00:01.760><c> the</c>
+
+00:00:02.070 --> 00:00:02.080 align:start position:0%
+Hey everyone. So we are announcing the
+ 
+
+00:00:02.080 --> 00:00:05.030 align:start position:0%
+Hey everyone. So we are announcing the
+soft<00:00:02.480><c> launch</c><00:00:02.800><c> of</c><00:00:03.040><c> Warp</c><00:00:03.439><c> CLI.</c><00:00:04.000><c> The</c><00:00:04.160><c> Warp</c><00:00:04.480><c> CLI</c>
+
+00:00:05.030 --> 00:00:05.040 align:start position:0%
+soft launch of Warp CLI. The Warp CLI
+ 
+
+00:00:05.040 --> 00:00:07.829 align:start position:0%
+soft launch of Warp CLI. The Warp CLI
+brings<00:00:05.279><c> Warps</c><00:00:05.759><c> agent</c><00:00:06.240><c> into</c><00:00:06.720><c> any</c><00:00:07.120><c> environment.</c>
+
+00:00:07.829 --> 00:00:07.839 align:start position:0%
+brings Warps agent into any environment.
+ 
+
+00:00:07.839 --> 00:00:10.390 align:start position:0%
+brings Warps agent into any environment.
+So<00:00:08.000><c> it</c><00:00:08.160><c> lets</c><00:00:08.400><c> you</c><00:00:08.559><c> take</c><00:00:08.960><c> saved</c><00:00:09.440><c> prompts,</c><00:00:10.000><c> Warp</c>
+
+00:00:10.390 --> 00:00:10.400 align:start position:0%
+So it lets you take saved prompts, Warp
+ 
+
+00:00:10.400 --> 00:00:13.509 align:start position:0%
+So it lets you take saved prompts, Warp
+Drive<00:00:10.719><c> objects,</c><00:00:11.440><c> agent</c><00:00:11.920><c> profiles,</c><00:00:12.559><c> and</c><00:00:12.880><c> MCP</c>
+
+00:00:13.509 --> 00:00:13.519 align:start position:0%
+Drive objects, agent profiles, and MCP
+ 
+
+00:00:13.519 --> 00:00:16.070 align:start position:0%
+Drive objects, agent profiles, and MCP
+servers<00:00:13.920><c> that</c><00:00:14.160><c> you</c><00:00:14.400><c> use</c><00:00:14.639><c> inside</c><00:00:15.120><c> Warp</c><00:00:15.839><c> and</c>
+
+00:00:16.070 --> 00:00:16.080 align:start position:0%
+servers that you use inside Warp and
+ 
+
+00:00:16.080 --> 00:00:17.910 align:start position:0%
+servers that you use inside Warp and
+apply<00:00:16.320><c> them</c><00:00:16.560><c> anywhere.</c><00:00:17.279><c> Let</c><00:00:17.440><c> me</c><00:00:17.600><c> show</c><00:00:17.680><c> you</c>
+
+00:00:17.910 --> 00:00:17.920 align:start position:0%
+apply them anywhere. Let me show you
+ 
+
+00:00:17.920 --> 00:00:20.070 align:start position:0%
+apply them anywhere. Let me show you
+three<00:00:18.240><c> examples</c><00:00:18.720><c> of</c><00:00:18.960><c> how</c><00:00:19.199><c> you</c><00:00:19.359><c> might</c><00:00:19.600><c> use</c><00:00:19.760><c> it.</c>
+
+00:00:20.070 --> 00:00:20.080 align:start position:0%
+three examples of how you might use it.
+ 
+
+00:00:20.080 --> 00:00:22.070 align:start position:0%
+three examples of how you might use it.
+So<00:00:20.240><c> here</c><00:00:20.400><c> I'm</c><00:00:20.640><c> in</c><00:00:20.800><c> Cursor's</c><00:00:21.279><c> terminal,</c><00:00:21.680><c> and</c><00:00:21.920><c> I</c>
+
+00:00:22.070 --> 00:00:22.080 align:start position:0%
+So here I'm in Cursor's terminal, and I
+ 
+
+00:00:22.080 --> 00:00:24.150 align:start position:0%
+So here I'm in Cursor's terminal, and I
+want<00:00:22.160><c> to</c><00:00:22.320><c> use</c><00:00:22.480><c> Warps</c><00:00:22.960><c> agent</c><00:00:23.279><c> to</c><00:00:23.439><c> summarize</c><00:00:23.920><c> my</c>
+
+00:00:24.150 --> 00:00:24.160 align:start position:0%
+want to use Warps agent to summarize my
+ 
+
+00:00:24.160 --> 00:00:26.790 align:start position:0%
+want to use Warps agent to summarize my
+codebase<00:00:24.560><c> for</c><00:00:24.800><c> me.</c><00:00:25.039><c> I</c><00:00:25.279><c> can</c><00:00:25.439><c> set</c><00:00:25.519><c> up</c><00:00:25.760><c> Warp's</c><00:00:26.160><c> CLI</c>
+
+00:00:26.790 --> 00:00:26.800 align:start position:0%
+codebase for me. I can set up Warp's CLI
+ 
+
+00:00:26.800 --> 00:00:29.269 align:start position:0%
+codebase for me. I can set up Warp's CLI
+and<00:00:26.960><c> now</c><00:00:27.199><c> I</c><00:00:27.359><c> can</c><00:00:27.519><c> run</c><00:00:27.760><c> Warp</c><00:00:28.160><c> CLI</c><00:00:28.560><c> to</c><00:00:28.720><c> give</c><00:00:28.880><c> me</c><00:00:29.039><c> a</c>
+
+00:00:29.269 --> 00:00:29.279 align:start position:0%
+and now I can run Warp CLI to give me a
+ 
+
+00:00:29.279 --> 00:00:31.589 align:start position:0%
+and now I can run Warp CLI to give me a
+full<00:00:29.599><c> summary</c><00:00:30.000><c> with</c><00:00:30.240><c> a</c><00:00:30.480><c> diagram</c><00:00:31.199><c> as</c><00:00:31.359><c> well</c><00:00:31.439><c> as</c>
+
+00:00:31.589 --> 00:00:31.599 align:start position:0%
+full summary with a diagram as well as
+ 
+
+00:00:31.599 --> 00:00:33.750 align:start position:0%
+full summary with a diagram as well as
+an<00:00:31.840><c> overview</c><00:00:32.239><c> of</c><00:00:32.399><c> the</c><00:00:32.559><c> codebase</c><00:00:33.120><c> with</c><00:00:33.440><c> things</c>
+
+00:00:33.750 --> 00:00:33.760 align:start position:0%
+an overview of the codebase with things
+ 
+
+00:00:33.760 --> 00:00:36.229 align:start position:0%
+an overview of the codebase with things
+like<00:00:34.079><c> component</c><00:00:34.640><c> interactions,</c><00:00:35.760><c> deployment</c>
+
+00:00:36.229 --> 00:00:36.239 align:start position:0%
+like component interactions, deployment
+ 
+
+00:00:36.239 --> 00:00:38.549 align:start position:0%
+like component interactions, deployment
+architecture,<00:00:36.960><c> and</c><00:00:37.200><c> runtime</c><00:00:37.760><c> behavior.</c><00:00:38.399><c> The</c>
+
+00:00:38.549 --> 00:00:38.559 align:start position:0%
+architecture, and runtime behavior. The
+ 
+
+00:00:38.559 --> 00:00:40.790 align:start position:0%
+architecture, and runtime behavior. The
+key<00:00:38.800><c> value</c><00:00:39.200><c> here</c><00:00:39.440><c> is</c><00:00:39.680><c> that</c><00:00:40.000><c> even</c><00:00:40.320><c> though</c><00:00:40.559><c> I'm</c>
+
+00:00:40.790 --> 00:00:40.800 align:start position:0%
+key value here is that even though I'm
+ 
+
+00:00:40.800 --> 00:00:42.950 align:start position:0%
+key value here is that even though I'm
+not<00:00:41.040><c> inside</c><00:00:41.440><c> Warp,</c><00:00:41.920><c> I</c><00:00:42.079><c> still</c><00:00:42.239><c> have</c><00:00:42.399><c> access</c><00:00:42.719><c> to</c>
+
+00:00:42.950 --> 00:00:42.960 align:start position:0%
+not inside Warp, I still have access to
+ 
+
+00:00:42.960 --> 00:00:45.110 align:start position:0%
+not inside Warp, I still have access to
+all<00:00:43.120><c> of</c><00:00:43.280><c> my</c><00:00:43.440><c> saved</c><00:00:43.760><c> prompts,</c><00:00:44.559><c> my</c><00:00:44.800><c> drive</c>
+
+00:00:45.110 --> 00:00:45.120 align:start position:0%
+all of my saved prompts, my drive
+ 
+
+00:00:45.120 --> 00:00:47.430 align:start position:0%
+all of my saved prompts, my drive
+context,<00:00:45.680><c> and</c><00:00:45.920><c> my</c><00:00:46.160><c> agent</c><00:00:46.559><c> profiles.</c><00:00:47.360><c> For</c>
+
+00:00:47.430 --> 00:00:47.440 align:start position:0%
+context, and my agent profiles. For
+ 
+
+00:00:47.440 --> 00:00:49.430 align:start position:0%
+context, and my agent profiles. For
+example,<00:00:47.840><c> I</c><00:00:48.079><c> already</c><00:00:48.320><c> have</c><00:00:48.480><c> an</c><00:00:48.640><c> agent</c><00:00:49.039><c> profile</c>
+
+00:00:49.430 --> 00:00:49.440 align:start position:0%
+example, I already have an agent profile
+ 
+
+00:00:49.440 --> 00:00:51.990 align:start position:0%
+example, I already have an agent profile
+set<00:00:49.680><c> up</c><00:00:49.840><c> called</c><00:00:50.239><c> YOLO</c><00:00:50.719><c> agent</c><00:00:51.039><c> in</c><00:00:51.280><c> Warp.</c><00:00:51.840><c> This</c>
+
+00:00:51.990 --> 00:00:52.000 align:start position:0%
+set up called YOLO agent in Warp. This
+ 
+
+00:00:52.000 --> 00:00:54.310 align:start position:0%
+set up called YOLO agent in Warp. This
+profile<00:00:52.399><c> is</c><00:00:52.640><c> tuned</c><00:00:52.960><c> for</c><00:00:53.120><c> autonomy.</c><00:00:53.760><c> It</c><00:00:54.000><c> always</c>
+
+00:00:54.310 --> 00:00:54.320 align:start position:0%
+profile is tuned for autonomy. It always
+ 
+
+00:00:54.320 --> 00:00:56.790 align:start position:0%
+profile is tuned for autonomy. It always
+executes<00:00:54.879><c> commands,</c><00:00:55.520><c> always</c><00:00:55.840><c> reads</c><00:00:56.160><c> files,</c>
+
+00:00:56.790 --> 00:00:56.800 align:start position:0%
+executes commands, always reads files,
+ 
+
+00:00:56.800 --> 00:00:59.110 align:start position:0%
+executes commands, always reads files,
+and<00:00:56.960><c> has</c><00:00:57.120><c> a</c><00:00:57.360><c> command</c><00:00:57.680><c> deny</c><00:00:58.000><c> list</c><00:00:58.320><c> for</c><00:00:58.559><c> safety.</c>
+
+00:00:59.110 --> 00:00:59.120 align:start position:0%
+and has a command deny list for safety.
+ 
+
+00:00:59.120 --> 00:01:01.349 align:start position:0%
+and has a command deny list for safety.
+I<00:00:59.359><c> know</c><00:00:59.520><c> the</c><00:00:59.680><c> ID</c><00:01:00.000><c> of</c><00:01:00.160><c> this</c><00:01:00.399><c> profile</c><00:01:00.800><c> by</c><00:01:01.120><c> running</c>
+
+00:01:01.349 --> 00:01:01.359 align:start position:0%
+I know the ID of this profile by running
+ 
+
+00:01:01.359 --> 00:01:03.990 align:start position:0%
+I know the ID of this profile by running
+warp<00:01:01.760><c> agent</c><00:01:02.239><c> profile</c><00:01:02.719><c> list,</c><00:01:03.280><c> which</c><00:01:03.520><c> shows</c><00:01:03.840><c> all</c>
+
+00:01:03.990 --> 00:01:04.000 align:start position:0%
+warp agent profile list, which shows all
+ 
+
+00:01:04.000 --> 00:01:06.550 align:start position:0%
+warp agent profile list, which shows all
+of<00:01:04.159><c> my</c><00:01:04.400><c> profiles</c><00:01:04.879><c> and</c><00:01:05.119><c> their</c><00:01:05.360><c> IDs.</c><00:01:06.000><c> I</c><00:01:06.240><c> also</c>
+
+00:01:06.550 --> 00:01:06.560 align:start position:0%
+of my profiles and their IDs. I also
+ 
+
+00:01:06.560 --> 00:01:08.789 align:start position:0%
+of my profiles and their IDs. I also
+already<00:01:06.880><c> had</c><00:01:07.119><c> a</c><00:01:07.360><c> saved</c><00:01:07.840><c> prompt</c><00:01:08.159><c> to</c><00:01:08.400><c> summarize</c>
+
+00:01:08.789 --> 00:01:08.799 align:start position:0%
+already had a saved prompt to summarize
+ 
+
+00:01:08.799 --> 00:01:10.710 align:start position:0%
+already had a saved prompt to summarize
+a<00:01:09.040><c> codebase</c><00:01:09.439><c> for</c><00:01:09.600><c> me.</c><00:01:09.920><c> It's</c><00:01:10.159><c> already</c><00:01:10.400><c> set</c><00:01:10.560><c> up</c>
+
+00:01:10.710 --> 00:01:10.720 align:start position:0%
+a codebase for me. It's already set up
+ 
+
+00:01:10.720 --> 00:01:12.310 align:start position:0%
+a codebase for me. It's already set up
+with<00:01:10.960><c> instructions</c><00:01:11.520><c> to</c><00:01:11.840><c> explain</c><00:01:12.159><c> the</c>
+
+00:01:12.310 --> 00:01:12.320 align:start position:0%
+with instructions to explain the
+ 
+
+00:01:12.320 --> 00:01:14.149 align:start position:0%
+with instructions to explain the
+deployment<00:01:12.799><c> architecture.</c><00:01:13.600><c> And</c><00:01:13.760><c> thanks</c><00:01:14.000><c> to</c>
+
+00:01:14.149 --> 00:01:14.159 align:start position:0%
+deployment architecture. And thanks to
+ 
+
+00:01:14.159 --> 00:01:15.910 align:start position:0%
+deployment architecture. And thanks to
+an<00:01:14.320><c> attached</c><00:01:14.720><c> rule,</c><00:01:15.119><c> it</c><00:01:15.360><c> automatically</c>
+
+00:01:15.910 --> 00:01:15.920 align:start position:0%
+an attached rule, it automatically
+ 
+
+00:01:15.920 --> 00:01:17.990 align:start position:0%
+an attached rule, it automatically
+generates<00:01:16.400><c> a</c><00:01:16.560><c> diagram</c><00:01:16.960><c> whenever</c><00:01:17.280><c> I</c><00:01:17.520><c> ask</c><00:01:17.680><c> for</c><00:01:17.840><c> a</c>
+
+00:01:17.990 --> 00:01:18.000 align:start position:0%
+generates a diagram whenever I ask for a
+ 
+
+00:01:18.000 --> 00:01:19.910 align:start position:0%
+generates a diagram whenever I ask for a
+summary.<00:01:18.400><c> I</c><00:01:18.640><c> can</c><00:01:18.720><c> look</c><00:01:18.880><c> up</c><00:01:19.040><c> the</c><00:01:19.200><c> ID</c><00:01:19.520><c> for</c><00:01:19.680><c> this</c>
+
+00:01:19.910 --> 00:01:19.920 align:start position:0%
+summary. I can look up the ID for this
+ 
+
+00:01:19.920 --> 00:01:22.230 align:start position:0%
+summary. I can look up the ID for this
+prompt<00:01:20.320><c> by</c><00:01:20.560><c> using</c><00:01:20.720><c> the</c><00:01:21.040><c> at</c><00:01:21.360><c> menu</c><00:01:21.680><c> inside</c><00:01:22.080><c> of</c>
+
+00:01:22.230 --> 00:01:22.240 align:start position:0%
+prompt by using the at menu inside of
+ 
+
+00:01:22.240 --> 00:01:24.550 align:start position:0%
+prompt by using the at menu inside of
+warp.<00:01:22.640><c> The</c><00:01:22.880><c> second</c><00:01:23.119><c> example</c><00:01:23.520><c> is</c><00:01:23.840><c> running</c><00:01:24.080><c> Warp</c>
+
+00:01:24.550 --> 00:01:24.560 align:start position:0%
+warp. The second example is running Warp
+ 
+
+00:01:24.560 --> 00:01:27.510 align:start position:0%
+warp. The second example is running Warp
+CLI<00:01:25.040><c> in</c><00:01:25.360><c> GitHub</c><00:01:25.840><c> actions.</c><00:01:26.640><c> Here</c><00:01:26.880><c> I've</c><00:01:27.200><c> set</c><00:01:27.360><c> up</c>
+
+00:01:27.510 --> 00:01:27.520 align:start position:0%
+CLI in GitHub actions. Here I've set up
+ 
+
+00:01:27.520 --> 00:01:30.950 align:start position:0%
+CLI in GitHub actions. Here I've set up
+a<00:01:27.680><c> YAML</c><00:01:28.159><c> file</c><00:01:28.479><c> undergithub/workflows.</c>
+
+00:01:30.950 --> 00:01:30.960 align:start position:0%
+a YAML file undergithub/workflows.
+ 
+
+00:01:30.960 --> 00:01:33.190 align:start position:0%
+a YAML file undergithub/workflows.
+This<00:01:31.119><c> workflow</c><00:01:31.680><c> installs</c><00:01:32.079><c> Warp</c><00:01:32.479><c> CLI,</c>
+
+00:01:33.190 --> 00:01:33.200 align:start position:0%
+This workflow installs Warp CLI,
+ 
+
+00:01:33.200 --> 00:01:35.510 align:start position:0%
+This workflow installs Warp CLI,
+authenticates<00:01:33.920><c> it,</c><00:01:34.240><c> generates</c><00:01:34.720><c> a</c><00:01:34.880><c> patch</c><00:01:35.280><c> file</c>
+
+00:01:35.510 --> 00:01:35.520 align:start position:0%
+authenticates it, generates a patch file
+ 
+
+00:01:35.520 --> 00:01:37.670 align:start position:0%
+authenticates it, generates a patch file
+for<00:01:35.680><c> the</c><00:01:35.840><c> PR,</c><00:01:36.320><c> and</c><00:01:36.479><c> then</c><00:01:36.720><c> runs</c><00:01:37.040><c> my</c><00:01:37.200><c> reviewer</c>
+
+00:01:37.670 --> 00:01:37.680 align:start position:0%
+for the PR, and then runs my reviewer
+ 
+
+00:01:37.680 --> 00:01:40.230 align:start position:0%
+for the PR, and then runs my reviewer
+agent<00:01:38.000><c> with</c><00:01:38.240><c> the</c><00:01:38.400><c> saved</c><00:01:38.799><c> prompt</c><00:01:39.200><c> and</c><00:01:39.439><c> profile.</c>
+
+00:01:40.230 --> 00:01:40.240 align:start position:0%
+agent with the saved prompt and profile.
+ 
+
+00:01:40.240 --> 00:01:42.310 align:start position:0%
+agent with the saved prompt and profile.
+For<00:01:40.320><c> example,</c><00:01:40.720><c> it</c><00:01:40.960><c> warns</c><00:01:41.280><c> me</c><00:01:41.520><c> about</c><00:01:41.840><c> exposed</c>
+
+00:01:42.310 --> 00:01:42.320 align:start position:0%
+For example, it warns me about exposed
+ 
+
+00:01:42.320 --> 00:01:44.789 align:start position:0%
+For example, it warns me about exposed
+API<00:01:42.799><c> keys,</c><00:01:43.280><c> missing</c><00:01:43.840><c> error</c><00:01:44.079><c> handling,</c><00:01:44.560><c> and</c>
+
+00:01:44.789 --> 00:01:44.799 align:start position:0%
+API keys, missing error handling, and
+ 
+
+00:01:44.799 --> 00:01:46.230 align:start position:0%
+API keys, missing error handling, and
+also<00:01:45.040><c> highlights</c><00:01:45.520><c> the</c><00:01:45.840><c> positive</c>
+
+00:01:46.230 --> 00:01:46.240 align:start position:0%
+also highlights the positive
+ 
+
+00:01:46.240 --> 00:01:48.310 align:start position:0%
+also highlights the positive
+improvements<00:01:46.880><c> like</c><00:01:47.119><c> better</c><00:01:47.520><c> logging.</c><00:01:48.159><c> This</c>
+
+00:01:48.310 --> 00:01:48.320 align:start position:0%
+improvements like better logging. This
+ 
+
+00:01:48.320 --> 00:01:50.069 align:start position:0%
+improvements like better logging. This
+all<00:01:48.560><c> happens</c><00:01:48.880><c> automatically</c><00:01:49.520><c> whenever</c><00:01:49.840><c> I</c>
+
+00:01:50.069 --> 00:01:50.079 align:start position:0%
+all happens automatically whenever I
+ 
+
+00:01:50.079 --> 00:01:52.310 align:start position:0%
+all happens automatically whenever I
+push<00:01:50.320><c> new</c><00:01:50.560><c> commits</c><00:01:50.880><c> to</c><00:01:51.040><c> the</c><00:01:51.200><c> PR.</c><00:01:51.680><c> The</c><00:01:51.920><c> value</c><00:01:52.159><c> is</c>
+
+00:01:52.310 --> 00:01:52.320 align:start position:0%
+push new commits to the PR. The value is
+ 
+
+00:01:52.320 --> 00:01:54.230 align:start position:0%
+push new commits to the PR. The value is
+that<00:01:52.560><c> I'm</c><00:01:52.799><c> reusing</c><00:01:53.280><c> the</c><00:01:53.520><c> same</c><00:01:53.759><c> reviewer</c>
+
+00:01:54.230 --> 00:01:54.240 align:start position:0%
+that I'm reusing the same reviewer
+ 
+
+00:01:54.240 --> 00:01:56.230 align:start position:0%
+that I'm reusing the same reviewer
+workflow<00:01:54.640><c> that</c><00:01:54.880><c> I</c><00:01:55.040><c> trust</c><00:01:55.360><c> locally</c><00:01:55.680><c> in</c><00:01:55.840><c> Warp,</c>
+
+00:01:56.230 --> 00:01:56.240 align:start position:0%
+workflow that I trust locally in Warp,
+ 
+
+00:01:56.240 --> 00:01:58.230 align:start position:0%
+workflow that I trust locally in Warp,
+but<00:01:56.479><c> now</c><00:01:56.720><c> it's</c><00:01:56.960><c> running</c><00:01:57.200><c> headlessly</c><00:01:57.840><c> in</c><00:01:58.079><c> a</c>
+
+00:01:58.230 --> 00:01:58.240 align:start position:0%
+but now it's running headlessly in a
+ 
+
+00:01:58.240 --> 00:02:00.149 align:start position:0%
+but now it's running headlessly in a
+continuous<00:01:58.799><c> integration</c><00:01:59.439><c> with</c><00:01:59.680><c> the</c><00:01:59.920><c> same</c>
+
+00:02:00.149 --> 00:02:00.159 align:start position:0%
+continuous integration with the same
+ 
+
+00:02:00.159 --> 00:02:02.230 align:start position:0%
+continuous integration with the same
+context.<00:02:00.880><c> The</c><00:02:01.040><c> third</c><00:02:01.280><c> example</c><00:02:01.680><c> is</c><00:02:02.000><c> running</c>
+
+00:02:02.230 --> 00:02:02.240 align:start position:0%
+context. The third example is running
+ 
+
+00:02:02.240 --> 00:02:04.550 align:start position:0%
+context. The third example is running
+Warp<00:02:02.640><c> CLI</c><00:02:03.200><c> on</c><00:02:03.439><c> a</c><00:02:03.680><c> remote</c><00:02:04.000><c> machine</c><00:02:04.399><c> to</c>
+
+00:02:04.550 --> 00:02:04.560 align:start position:0%
+Warp CLI on a remote machine to
+ 
+
+00:02:04.560 --> 00:02:07.109 align:start position:0%
+Warp CLI on a remote machine to
+summarize<00:02:05.119><c> server</c><00:02:05.520><c> logs.</c><00:02:06.399><c> Imagine</c><00:02:06.640><c> I've</c><00:02:06.960><c> got</c>
+
+00:02:07.109 --> 00:02:07.119 align:start position:0%
+summarize server logs. Imagine I've got
+ 
+
+00:02:07.119 --> 00:02:09.430 align:start position:0%
+summarize server logs. Imagine I've got
+a<00:02:07.360><c> Docker</c><00:02:07.759><c> container</c><00:02:08.319><c> streaming</c><00:02:08.720><c> logs</c><00:02:09.119><c> to</c><00:02:09.280><c> a</c>
+
+00:02:09.430 --> 00:02:09.440 align:start position:0%
+a Docker container streaming logs to a
+ 
+
+00:02:09.440 --> 00:02:12.070 align:start position:0%
+a Docker container streaming logs to a
+server.<00:02:10.000><c> I</c><00:02:10.239><c> can</c><00:02:10.399><c> run</c><00:02:10.640><c> warp</c><00:02:11.039><c> CLI</c><00:02:11.520><c> and</c><00:02:11.680><c> get</c><00:02:11.840><c> a</c>
+
+00:02:12.070 --> 00:02:12.080 align:start position:0%
+server. I can run warp CLI and get a
+ 
+
+00:02:12.080 --> 00:02:13.910 align:start position:0%
+server. I can run warp CLI and get a
+clear<00:02:12.319><c> summary</c><00:02:12.640><c> of</c><00:02:12.879><c> what's</c><00:02:13.120><c> happening</c><00:02:13.680><c> like</c>
+
+00:02:13.910 --> 00:02:13.920 align:start position:0%
+clear summary of what's happening like
+ 
+
+00:02:13.920 --> 00:02:15.990 align:start position:0%
+clear summary of what's happening like
+memory<00:02:14.239><c> exhaustion,</c><00:02:14.959><c> database</c><00:02:15.520><c> connection</c>
+
+00:02:15.990 --> 00:02:16.000 align:start position:0%
+memory exhaustion, database connection
+ 
+
+00:02:16.000 --> 00:02:18.550 align:start position:0%
+memory exhaustion, database connection
+failures,<00:02:16.640><c> external</c><00:02:17.120><c> API</c><00:02:17.599><c> timeouts,</c><00:02:18.319><c> high</c>
+
+00:02:18.550 --> 00:02:18.560 align:start position:0%
+failures, external API timeouts, high
+ 
+
+00:02:18.560 --> 00:02:20.869 align:start position:0%
+failures, external API timeouts, high
+disk<00:02:18.879><c> usage,</c><00:02:19.440><c> authentication</c><00:02:20.319><c> errors,</c><00:02:20.640><c> and</c>
+
+00:02:20.869 --> 00:02:20.879 align:start position:0%
+disk usage, authentication errors, and
+ 
+
+00:02:20.879 --> 00:02:22.550 align:start position:0%
+disk usage, authentication errors, and
+so<00:02:21.040><c> on.</c><00:02:21.440><c> Instead</c><00:02:21.760><c> of</c><00:02:21.920><c> combing</c><00:02:22.319><c> through</c>
+
+00:02:22.550 --> 00:02:22.560 align:start position:0%
+so on. Instead of combing through
+ 
+
+00:02:22.560 --> 00:02:24.550 align:start position:0%
+so on. Instead of combing through
+endless<00:02:22.959><c> log</c><00:02:23.280><c> lines,</c><00:02:23.680><c> I</c><00:02:23.840><c> get</c><00:02:24.000><c> the</c><00:02:24.239><c> important</c>
+
+00:02:24.550 --> 00:02:24.560 align:start position:0%
+endless log lines, I get the important
+ 
+
+00:02:24.560 --> 00:02:26.790 align:start position:0%
+endless log lines, I get the important
+issues<00:02:24.959><c> in</c><00:02:25.200><c> one</c><00:02:25.440><c> place.</c><00:02:26.000><c> So</c><00:02:26.160><c> whether</c><00:02:26.400><c> I'm</c><00:02:26.640><c> in</c>
+
+00:02:26.790 --> 00:02:26.800 align:start position:0%
+issues in one place. So whether I'm in
+ 
+
+00:02:26.800 --> 00:02:29.270 align:start position:0%
+issues in one place. So whether I'm in
+cursor<00:02:27.520><c> or</c><00:02:27.680><c> reviewing</c><00:02:28.080><c> PRs</c><00:02:28.560><c> through</c><00:02:28.879><c> GitHub</c>
+
+00:02:29.270 --> 00:02:29.280 align:start position:0%
+cursor or reviewing PRs through GitHub
+ 
+
+00:02:29.280 --> 00:02:31.670 align:start position:0%
+cursor or reviewing PRs through GitHub
+actions<00:02:30.000><c> or</c><00:02:30.319><c> reviewing</c><00:02:30.720><c> logs</c><00:02:31.040><c> on</c><00:02:31.200><c> a</c><00:02:31.440><c> remote</c>
+
+00:02:31.670 --> 00:02:31.680 align:start position:0%
+actions or reviewing logs on a remote
+ 
+
+00:02:31.680 --> 00:02:33.910 align:start position:0%
+actions or reviewing logs on a remote
+server,<00:02:32.160><c> the</c><00:02:32.400><c> Warp</c><00:02:32.720><c> CLI</c><00:02:33.200><c> gives</c><00:02:33.440><c> me</c><00:02:33.599><c> a</c>
+
+00:02:33.910 --> 00:02:33.920 align:start position:0%
+server, the Warp CLI gives me a
+ 
+
+00:02:33.920 --> 00:02:36.229 align:start position:0%
+server, the Warp CLI gives me a
+consistent<00:02:34.480><c> access</c><00:02:34.959><c> to</c><00:02:35.200><c> my</c><00:02:35.440><c> agents.</c><00:02:36.000><c> Now,</c>
+
+00:02:36.229 --> 00:02:36.239 align:start position:0%
+consistent access to my agents. Now,
+ 
+
+00:02:36.239 --> 00:02:38.630 align:start position:0%
+consistent access to my agents. Now,
+quick<00:02:36.480><c> PSA</c><00:02:36.879><c> that</c><00:02:37.120><c> this</c><00:02:37.280><c> is</c><00:02:37.440><c> a</c><00:02:37.680><c> beta</c><00:02:38.080><c> launch.</c><00:02:38.400><c> So</c>
+
+00:02:38.630 --> 00:02:38.640 align:start position:0%
+quick PSA that this is a beta launch. So
+ 
+
+00:02:38.640 --> 00:02:40.550 align:start position:0%
+quick PSA that this is a beta launch. So
+right<00:02:38.879><c> now</c><00:02:39.040><c> we</c><00:02:39.200><c> are</c><00:02:39.360><c> focused</c><00:02:39.760><c> on</c><00:02:40.000><c> getting</c><00:02:40.239><c> a</c>
+
+00:02:40.550 --> 00:02:40.560 align:start position:0%
+right now we are focused on getting a
+ 
+
+00:02:40.560 --> 00:02:42.630 align:start position:0%
+right now we are focused on getting a
+small<00:02:40.879><c> group</c><00:02:41.120><c> of</c><00:02:41.280><c> testers</c><00:02:42.000><c> and</c><00:02:42.160><c> the</c><00:02:42.319><c> goal</c><00:02:42.560><c> is</c>
+
+00:02:42.630 --> 00:02:42.640 align:start position:0%
+small group of testers and the goal is
+ 
+
+00:02:42.640 --> 00:02:44.710 align:start position:0%
+small group of testers and the goal is
+to<00:02:42.879><c> get</c><00:02:43.040><c> feedback</c><00:02:43.440><c> on</c><00:02:43.680><c> you</c><00:02:43.920><c> all</c><00:02:44.160><c> for</c><00:02:44.400><c> what's</c>
+
+00:02:44.710 --> 00:02:44.720 align:start position:0%
+to get feedback on you all for what's
+ 
+
+00:02:44.720 --> 00:02:46.390 align:start position:0%
+to get feedback on you all for what's
+working<00:02:44.959><c> and</c><00:02:45.200><c> what's</c><00:02:45.519><c> missing.</c><00:02:45.920><c> So</c><00:02:46.080><c> we</c><00:02:46.319><c> hope</c>
+
+00:02:46.390 --> 00:02:46.400 align:start position:0%
+working and what's missing. So we hope
+ 
+
+00:02:46.400 --> 00:02:48.390 align:start position:0%
+working and what's missing. So we hope
+that<00:02:46.560><c> you</c><00:02:46.800><c> are</c><00:02:46.959><c> all</c><00:02:47.200><c> excited</c><00:02:47.680><c> about</c><00:02:47.920><c> this</c><00:02:48.160><c> and</c>
+
+00:02:48.390 --> 00:02:48.400 align:start position:0%
+that you are all excited about this and
+ 
+
+00:02:48.400 --> 00:02:49.830 align:start position:0%
+that you are all excited about this and
+we're<00:02:48.640><c> excited</c><00:02:48.959><c> to</c><00:02:49.200><c> see</c><00:02:49.360><c> what</c><00:02:49.519><c> you're</c><00:02:49.760><c> going</c>
+
+00:02:49.830 --> 00:02:49.840 align:start position:0%
+we're excited to see what you're going
+ 
+
+00:02:49.840 --> 00:02:53.879 align:start position:0%
+we're excited to see what you're going
+to<00:02:49.920><c> build</c><00:02:50.239><c> with</c><00:02:50.560><c> Warp</c><00:02:50.879><c> CLI.</c>
+

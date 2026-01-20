@@ -1,0 +1,424 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.389 align:start position:0%
+ 
+The<00:00:00.160><c> GitHub</c><00:00:00.560><c> MCP</c><00:00:01.040><c> server</c><00:00:01.439><c> lets</c><00:00:01.680><c> Warp</c><00:00:02.000><c> agents</c>
+
+00:00:02.389 --> 00:00:02.399 align:start position:0%
+The GitHub MCP server lets Warp agents
+ 
+
+00:00:02.399 --> 00:00:04.550 align:start position:0%
+The GitHub MCP server lets Warp agents
+directly<00:00:02.879><c> read</c><00:00:03.120><c> from</c><00:00:03.520><c> and</c><00:00:03.840><c> write</c><00:00:04.080><c> to</c><00:00:04.319><c> your</c>
+
+00:00:04.550 --> 00:00:04.560 align:start position:0%
+directly read from and write to your
+ 
+
+00:00:04.560 --> 00:00:06.630 align:start position:0%
+directly read from and write to your
+GitHub<00:00:04.960><c> repos.</c><00:00:05.520><c> To</c><00:00:05.680><c> set</c><00:00:05.839><c> it</c><00:00:05.920><c> up,</c><00:00:06.160><c> you'll</c><00:00:06.400><c> first</c>
+
+00:00:06.630 --> 00:00:06.640 align:start position:0%
+GitHub repos. To set it up, you'll first
+ 
+
+00:00:06.640 --> 00:00:08.870 align:start position:0%
+GitHub repos. To set it up, you'll first
+need<00:00:06.799><c> a</c><00:00:07.040><c> GitHub</c><00:00:07.520><c> personal</c><00:00:08.000><c> access</c><00:00:08.320><c> token.</c>
+
+00:00:08.870 --> 00:00:08.880 align:start position:0%
+need a GitHub personal access token.
+ 
+
+00:00:08.880 --> 00:00:10.390 align:start position:0%
+need a GitHub personal access token.
+Here's<00:00:09.120><c> how</c><00:00:09.280><c> you</c><00:00:09.440><c> get</c><00:00:09.519><c> one.</c><00:00:09.920><c> Go</c><00:00:10.080><c> into</c><00:00:10.240><c> your</c>
+
+00:00:10.390 --> 00:00:10.400 align:start position:0%
+Here's how you get one. Go into your
+ 
+
+00:00:10.400 --> 00:00:12.310 align:start position:0%
+Here's how you get one. Go into your
+GitHub<00:00:10.800><c> account,</c><00:00:11.200><c> head</c><00:00:11.360><c> into</c><00:00:11.599><c> settings,</c><00:00:12.080><c> then</c>
+
+00:00:12.310 --> 00:00:12.320 align:start position:0%
+GitHub account, head into settings, then
+ 
+
+00:00:12.320 --> 00:00:13.830 align:start position:0%
+GitHub account, head into settings, then
+developer<00:00:12.800><c> settings,</c><00:00:13.200><c> and</c><00:00:13.440><c> click</c><00:00:13.679><c> on</c>
+
+00:00:13.830 --> 00:00:13.840 align:start position:0%
+developer settings, and click on
+ 
+
+00:00:13.840 --> 00:00:15.589 align:start position:0%
+developer settings, and click on
+personal<00:00:14.240><c> access</c><00:00:14.559><c> tokens.</c><00:00:15.120><c> When</c><00:00:15.280><c> you</c><00:00:15.440><c> create</c>
+
+00:00:15.589 --> 00:00:15.599 align:start position:0%
+personal access tokens. When you create
+ 
+
+00:00:15.599 --> 00:00:17.830 align:start position:0%
+personal access tokens. When you create
+the<00:00:15.839><c> token,</c><00:00:16.240><c> enable</c><00:00:16.640><c> everything</c><00:00:16.960><c> under</c><00:00:17.279><c> repo,</c>
+
+00:00:17.830 --> 00:00:17.840 align:start position:0%
+the token, enable everything under repo,
+ 
+
+00:00:17.840 --> 00:00:20.070 align:start position:0%
+the token, enable everything under repo,
+and<00:00:18.000><c> also</c><00:00:18.320><c> enable</c><00:00:18.720><c> read</c><00:00:19.199><c> user.</c><00:00:19.600><c> I</c><00:00:19.840><c> like</c><00:00:19.920><c> to</c>
+
+00:00:20.070 --> 00:00:20.080 align:start position:0%
+and also enable read user. I like to
+ 
+
+00:00:20.080 --> 00:00:22.070 align:start position:0%
+and also enable read user. I like to
+keep<00:00:20.160><c> the</c><00:00:20.400><c> scopes</c><00:00:20.800><c> minimal</c><00:00:21.279><c> so</c><00:00:21.520><c> the</c><00:00:21.680><c> AI</c>
+
+00:00:22.070 --> 00:00:22.080 align:start position:0%
+keep the scopes minimal so the AI
+ 
+
+00:00:22.080 --> 00:00:23.990 align:start position:0%
+keep the scopes minimal so the AI
+doesn't<00:00:22.320><c> have</c><00:00:22.480><c> too</c><00:00:22.640><c> much</c><00:00:22.880><c> write</c><00:00:23.199><c> access.</c><00:00:23.840><c> That</c>
+
+00:00:23.990 --> 00:00:24.000 align:start position:0%
+doesn't have too much write access. That
+ 
+
+00:00:24.000 --> 00:00:25.349 align:start position:0%
+doesn't have too much write access. That
+way,<00:00:24.160><c> there's</c><00:00:24.400><c> less</c><00:00:24.720><c> risk</c><00:00:24.960><c> of</c><00:00:25.119><c> it</c>
+
+00:00:25.349 --> 00:00:25.359 align:start position:0%
+way, there's less risk of it
+ 
+
+00:00:25.359 --> 00:00:26.790 align:start position:0%
+way, there's less risk of it
+accidentally<00:00:25.760><c> committing</c><00:00:26.160><c> changes</c><00:00:26.560><c> or</c>
+
+00:00:26.790 --> 00:00:26.800 align:start position:0%
+accidentally committing changes or
+ 
+
+00:00:26.800 --> 00:00:28.550 align:start position:0%
+accidentally committing changes or
+overwriting<00:00:27.359><c> something</c><00:00:27.760><c> important.</c><00:00:28.320><c> Once</c>
+
+00:00:28.550 --> 00:00:28.560 align:start position:0%
+overwriting something important. Once
+ 
+
+00:00:28.560 --> 00:00:30.150 align:start position:0%
+overwriting something important. Once
+you've<00:00:28.720><c> got</c><00:00:28.880><c> your</c><00:00:29.039><c> token,</c><00:00:29.439><c> head</c><00:00:29.599><c> into</c><00:00:29.840><c> warp.</c>
+
+00:00:30.150 --> 00:00:30.160 align:start position:0%
+you've got your token, head into warp.
+ 
+
+00:00:30.160 --> 00:00:31.990 align:start position:0%
+you've got your token, head into warp.
+Open<00:00:30.320><c> up</c><00:00:30.480><c> the</c><00:00:30.560><c> MCP</c><00:00:31.039><c> panel</c><00:00:31.359><c> from</c><00:00:31.599><c> the</c><00:00:31.760><c> command</c>
+
+00:00:31.990 --> 00:00:32.000 align:start position:0%
+Open up the MCP panel from the command
+ 
+
+00:00:32.000 --> 00:00:34.389 align:start position:0%
+Open up the MCP panel from the command
+pallet<00:00:32.399><c> and</c><00:00:32.640><c> click</c><00:00:32.960><c> add.</c><00:00:33.360><c> Paste</c><00:00:33.600><c> in</c><00:00:33.760><c> the</c><00:00:33.920><c> JSON</c>
+
+00:00:34.389 --> 00:00:34.399 align:start position:0%
+pallet and click add. Paste in the JSON
+ 
+
+00:00:34.399 --> 00:00:36.870 align:start position:0%
+pallet and click add. Paste in the JSON
+config<00:00:34.800><c> for</c><00:00:34.960><c> the</c><00:00:35.120><c> GitHub</c><00:00:35.520><c> MCP</c><00:00:36.079><c> server.</c><00:00:36.559><c> Drop</c>
+
+00:00:36.870 --> 00:00:36.880 align:start position:0%
+config for the GitHub MCP server. Drop
+ 
+
+00:00:36.880 --> 00:00:38.549 align:start position:0%
+config for the GitHub MCP server. Drop
+in<00:00:37.040><c> your</c><00:00:37.280><c> access</c><00:00:37.600><c> token</c><00:00:37.920><c> that</c><00:00:38.079><c> you</c><00:00:38.239><c> just</c><00:00:38.320><c> got</c>
+
+00:00:38.549 --> 00:00:38.559 align:start position:0%
+in your access token that you just got
+ 
+
+00:00:38.559 --> 00:00:40.630 align:start position:0%
+in your access token that you just got
+and<00:00:38.719><c> then</c><00:00:38.879><c> hit</c><00:00:39.120><c> save.</c><00:00:39.680><c> And</c><00:00:39.920><c> now</c><00:00:40.160><c> you'll</c><00:00:40.480><c> see</c>
+
+00:00:40.630 --> 00:00:40.640 align:start position:0%
+and then hit save. And now you'll see
+ 
+
+00:00:40.640 --> 00:00:42.310 align:start position:0%
+and then hit save. And now you'll see
+all<00:00:40.879><c> the</c><00:00:41.040><c> available</c><00:00:41.520><c> endpoints.</c><00:00:42.079><c> And</c><00:00:42.239><c> now</c>
+
+00:00:42.310 --> 00:00:42.320 align:start position:0%
+all the available endpoints. And now
+ 
+
+00:00:42.320 --> 00:00:43.590 align:start position:0%
+all the available endpoints. And now
+that<00:00:42.480><c> it's</c><00:00:42.640><c> set</c><00:00:42.719><c> up,</c><00:00:42.960><c> I'm</c><00:00:43.120><c> going</c><00:00:43.200><c> to</c><00:00:43.280><c> show</c><00:00:43.360><c> you</c>
+
+00:00:43.590 --> 00:00:43.600 align:start position:0%
+that it's set up, I'm going to show you
+ 
+
+00:00:43.600 --> 00:00:45.590 align:start position:0%
+that it's set up, I'm going to show you
+two<00:00:43.920><c> real</c><00:00:44.239><c> workflows</c><00:00:44.719><c> that</c><00:00:44.879><c> I</c><00:00:45.040><c> use</c><00:00:45.280><c> all</c><00:00:45.440><c> the</c>
+
+00:00:45.590 --> 00:00:45.600 align:start position:0%
+two real workflows that I use all the
+ 
+
+00:00:45.600 --> 00:00:47.350 align:start position:0%
+two real workflows that I use all the
+time.<00:00:45.920><c> The</c><00:00:46.079><c> first</c><00:00:46.239><c> one</c><00:00:46.320><c> is</c><00:00:46.559><c> summarizing</c><00:00:47.039><c> all</c>
+
+00:00:47.350 --> 00:00:47.360 align:start position:0%
+time. The first one is summarizing all
+ 
+
+00:00:47.360 --> 00:00:49.830 align:start position:0%
+time. The first one is summarizing all
+open<00:00:47.680><c> PRs.</c><00:00:48.160><c> So</c><00:00:48.320><c> here</c><00:00:48.559><c> I'm</c><00:00:48.800><c> inside</c><00:00:49.120><c> Warp's</c><00:00:49.600><c> own</c>
+
+00:00:49.830 --> 00:00:49.840 align:start position:0%
+open PRs. So here I'm inside Warp's own
+ 
+
+00:00:49.840 --> 00:00:52.150 align:start position:0%
+open PRs. So here I'm inside Warp's own
+internal<00:00:50.320><c> GitHub</c><00:00:50.719><c> repo.</c><00:00:51.120><c> I</c><00:00:51.360><c> can</c><00:00:51.520><c> run</c><00:00:51.680><c> a</c><00:00:51.840><c> prompt</c>
+
+00:00:52.150 --> 00:00:52.160 align:start position:0%
+internal GitHub repo. I can run a prompt
+ 
+
+00:00:52.160 --> 00:00:54.150 align:start position:0%
+internal GitHub repo. I can run a prompt
+that<00:00:52.399><c> asks</c><00:00:52.800><c> the</c><00:00:52.960><c> agent</c><00:00:53.280><c> to</c><00:00:53.520><c> summarize</c><00:00:53.920><c> the</c>
+
+00:00:54.150 --> 00:00:54.160 align:start position:0%
+that asks the agent to summarize the
+ 
+
+00:00:54.160 --> 00:00:56.229 align:start position:0%
+that asks the agent to summarize the
+discussion<00:00:54.640><c> and</c><00:00:54.879><c> key</c><00:00:55.199><c> unresolved</c><00:00:55.840><c> questions</c>
+
+00:00:56.229 --> 00:00:56.239 align:start position:0%
+discussion and key unresolved questions
+ 
+
+00:00:56.239 --> 00:00:58.150 align:start position:0%
+discussion and key unresolved questions
+in<00:00:56.480><c> all</c><00:00:56.640><c> the</c><00:00:56.800><c> open</c><00:00:57.120><c> poll</c><00:00:57.440><c> requests.</c><00:00:57.920><c> Behind</c>
+
+00:00:58.150 --> 00:00:58.160 align:start position:0%
+in all the open poll requests. Behind
+ 
+
+00:00:58.160 --> 00:01:00.389 align:start position:0%
+in all the open poll requests. Behind
+the<00:00:58.320><c> scenes,</c><00:00:58.559><c> MCP</c><00:00:59.039><c> server</c><00:00:59.440><c> calls</c><00:00:59.840><c> list</c><00:01:00.160><c> pull</c>
+
+00:01:00.389 --> 00:01:00.399 align:start position:0%
+the scenes, MCP server calls list pull
+ 
+
+00:01:00.399 --> 00:01:02.630 align:start position:0%
+the scenes, MCP server calls list pull
+request<00:01:00.800><c> to</c><00:01:01.039><c> get</c><00:01:01.120><c> the</c><00:01:01.280><c> PRs,</c><00:01:01.840><c> then</c><00:01:02.079><c> get</c><00:01:02.320><c> pull</c>
+
+00:01:02.630 --> 00:01:02.640 align:start position:0%
+request to get the PRs, then get pull
+ 
+
+00:01:02.640 --> 00:01:04.310 align:start position:0%
+request to get the PRs, then get pull
+request<00:01:02.960><c> comments</c><00:01:03.359><c> and</c><00:01:03.520><c> get</c><00:01:03.760><c> pull</c><00:01:04.000><c> request</c>
+
+00:01:04.310 --> 00:01:04.320 align:start position:0%
+request comments and get pull request
+ 
+
+00:01:04.320 --> 00:01:06.149 align:start position:0%
+request comments and get pull request
+reviews<00:01:04.640><c> to</c><00:01:04.879><c> pull</c><00:01:05.040><c> all</c><00:01:05.199><c> the</c><00:01:05.360><c> details.</c><00:01:05.920><c> It</c>
+
+00:01:06.149 --> 00:01:06.159 align:start position:0%
+reviews to pull all the details. It
+ 
+
+00:01:06.159 --> 00:01:07.750 align:start position:0%
+reviews to pull all the details. It
+compiles<00:01:06.640><c> everything</c><00:01:07.040><c> into</c><00:01:07.280><c> a</c><00:01:07.520><c> clean</c>
+
+00:01:07.750 --> 00:01:07.760 align:start position:0%
+compiles everything into a clean
+ 
+
+00:01:07.760 --> 00:01:09.429 align:start position:0%
+compiles everything into a clean
+summary.<00:01:08.159><c> And</c><00:01:08.320><c> best</c><00:01:08.560><c> of</c><00:01:08.640><c> all,</c><00:01:08.880><c> it</c><00:01:09.119><c> gives</c><00:01:09.280><c> me</c>
+
+00:01:09.429 --> 00:01:09.439 align:start position:0%
+summary. And best of all, it gives me
+ 
+
+00:01:09.439 --> 00:01:11.910 align:start position:0%
+summary. And best of all, it gives me
+clickable<00:01:09.920><c> links</c><00:01:10.320><c> to</c><00:01:10.479><c> each</c><00:01:10.799><c> PR</c><00:01:11.200><c> so</c><00:01:11.360><c> I</c><00:01:11.520><c> can</c><00:01:11.680><c> jump</c>
+
+00:01:11.910 --> 00:01:11.920 align:start position:0%
+clickable links to each PR so I can jump
+ 
+
+00:01:11.920 --> 00:01:13.910 align:start position:0%
+clickable links to each PR so I can jump
+right<00:01:12.080><c> in</c><00:01:12.320><c> and</c><00:01:12.560><c> review.</c><00:01:13.040><c> The</c><00:01:13.200><c> second</c><00:01:13.439><c> workflow</c>
+
+00:01:13.910 --> 00:01:13.920 align:start position:0%
+right in and review. The second workflow
+ 
+
+00:01:13.920 --> 00:01:16.149 align:start position:0%
+right in and review. The second workflow
+is<00:01:14.159><c> creating</c><00:01:14.560><c> issues</c><00:01:14.960><c> from</c><00:01:15.200><c> to-dos.</c><00:01:15.840><c> So,</c><00:01:16.000><c> for</c>
+
+00:01:16.149 --> 00:01:16.159 align:start position:0%
+is creating issues from to-dos. So, for
+ 
+
+00:01:16.159 --> 00:01:18.390 align:start position:0%
+is creating issues from to-dos. So, for
+this<00:01:16.320><c> one,</c><00:01:16.560><c> I'm</c><00:01:16.720><c> using</c><00:01:16.960><c> a</c><00:01:17.200><c> saved</c><00:01:17.680><c> prompt</c><00:01:18.080><c> in</c><00:01:18.240><c> my</c>
+
+00:01:18.390 --> 00:01:18.400 align:start position:0%
+this one, I'm using a saved prompt in my
+ 
+
+00:01:18.400 --> 00:01:20.469 align:start position:0%
+this one, I'm using a saved prompt in my
+warp<00:01:18.799><c> drive,</c><00:01:19.200><c> and</c><00:01:19.360><c> it</c><00:01:19.520><c> tells</c><00:01:19.680><c> the</c><00:01:19.840><c> agent</c><00:01:20.159><c> to</c>
+
+00:01:20.469 --> 00:01:20.479 align:start position:0%
+warp drive, and it tells the agent to
+ 
+
+00:01:20.479 --> 00:01:22.710 align:start position:0%
+warp drive, and it tells the agent to
+find<00:01:20.799><c> every</c><00:01:21.040><c> to-do</c><00:01:21.520><c> comment</c><00:01:21.759><c> in</c><00:01:21.920><c> the</c><00:01:22.080><c> repo</c><00:01:22.479><c> and</c>
+
+00:01:22.710 --> 00:01:22.720 align:start position:0%
+find every to-do comment in the repo and
+ 
+
+00:01:22.720 --> 00:01:24.710 align:start position:0%
+find every to-do comment in the repo and
+create<00:01:22.880><c> a</c><00:01:23.119><c> GitHub</c><00:01:23.520><c> issue</c><00:01:23.840><c> for</c><00:01:24.000><c> it.</c><00:01:24.240><c> The</c><00:01:24.400><c> Warp</c>
+
+00:01:24.710 --> 00:01:24.720 align:start position:0%
+create a GitHub issue for it. The Warp
+ 
+
+00:01:24.720 --> 00:01:26.550 align:start position:0%
+create a GitHub issue for it. The Warp
+agent<00:01:25.040><c> is</c><00:01:25.200><c> going</c><00:01:25.280><c> to</c><00:01:25.439><c> scan</c><00:01:25.680><c> the</c><00:01:25.840><c> codebase,</c>
+
+00:01:26.550 --> 00:01:26.560 align:start position:0%
+agent is going to scan the codebase,
+ 
+
+00:01:26.560 --> 00:01:28.630 align:start position:0%
+agent is going to scan the codebase,
+find<00:01:26.799><c> all</c><00:01:26.960><c> my</c><00:01:27.119><c> to-dos</c><00:01:27.520><c> in</c><00:01:27.759><c> my</c><00:01:27.920><c> code,</c><00:01:28.240><c> and</c><00:01:28.400><c> then</c>
+
+00:01:28.630 --> 00:01:28.640 align:start position:0%
+find all my to-dos in my code, and then
+ 
+
+00:01:28.640 --> 00:01:30.550 align:start position:0%
+find all my to-dos in my code, and then
+automatically<00:01:29.200><c> call</c><00:01:29.600><c> create</c><00:01:29.920><c> issue</c><00:01:30.240><c> from</c><00:01:30.400><c> the</c>
+
+00:01:30.550 --> 00:01:30.560 align:start position:0%
+automatically call create issue from the
+ 
+
+00:01:30.560 --> 00:01:32.710 align:start position:0%
+automatically call create issue from the
+GitHub<00:01:30.960><c> MCP</c><00:01:31.520><c> server</c><00:01:31.840><c> for</c><00:01:32.000><c> each</c><00:01:32.159><c> one.</c><00:01:32.560><c> When</c>
+
+00:01:32.710 --> 00:01:32.720 align:start position:0%
+GitHub MCP server for each one. When
+ 
+
+00:01:32.720 --> 00:01:34.870 align:start position:0%
+GitHub MCP server for each one. When
+it's<00:01:32.960><c> done,</c><00:01:33.200><c> I'll</c><00:01:33.520><c> have</c><00:01:33.680><c> a</c><00:01:33.920><c> clickable</c><00:01:34.400><c> list</c><00:01:34.640><c> of</c>
+
+00:01:34.870 --> 00:01:34.880 align:start position:0%
+it's done, I'll have a clickable list of
+ 
+
+00:01:34.880 --> 00:01:37.030 align:start position:0%
+it's done, I'll have a clickable list of
+all<00:01:35.040><c> my</c><00:01:35.200><c> new</c><00:01:35.439><c> issues,</c><00:01:36.159><c> all</c><00:01:36.320><c> with</c><00:01:36.479><c> the</c><00:01:36.720><c> original</c>
+
+00:01:37.030 --> 00:01:37.040 align:start position:0%
+all my new issues, all with the original
+ 
+
+00:01:37.040 --> 00:01:39.109 align:start position:0%
+all my new issues, all with the original
+to-do<00:01:37.439><c> text</c><00:01:37.759><c> and</c><00:01:38.000><c> a</c><00:01:38.159><c> link</c><00:01:38.400><c> back</c><00:01:38.560><c> to</c><00:01:38.720><c> the</c><00:01:38.880><c> code.</c>
+
+00:01:39.109 --> 00:01:39.119 align:start position:0%
+to-do text and a link back to the code.
+ 
+
+00:01:39.119 --> 00:01:40.870 align:start position:0%
+to-do text and a link back to the code.
+And<00:01:39.280><c> both</c><00:01:39.520><c> of</c><00:01:39.600><c> these</c><00:01:39.840><c> workflows</c><00:01:40.400><c> saved</c><00:01:40.720><c> me</c>
+
+00:01:40.870 --> 00:01:40.880 align:start position:0%
+And both of these workflows saved me
+ 
+
+00:01:40.880 --> 00:01:43.190 align:start position:0%
+And both of these workflows saved me
+about<00:01:41.280><c> 20</c><00:01:41.520><c> to</c><00:01:41.759><c> 30</c><00:01:42.000><c> minutes</c><00:01:42.320><c> each</c><00:01:42.720><c> compared</c><00:01:43.040><c> to</c>
+
+00:01:43.190 --> 00:01:43.200 align:start position:0%
+about 20 to 30 minutes each compared to
+ 
+
+00:01:43.200 --> 00:01:45.840 align:start position:0%
+about 20 to 30 minutes each compared to
+doing<00:01:43.439><c> them</c><00:01:43.600><c> manually.</c>
+

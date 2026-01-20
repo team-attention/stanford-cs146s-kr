@@ -1,0 +1,712 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.080 --> 00:00:01.829 align:start position:0%
+ 
+Hey,<00:00:00.400><c> I'm</c><00:00:00.640><c> Jess.</c><00:00:00.960><c> I'm</c><00:00:01.120><c> Warp's</c><00:00:01.520><c> developer</c>
+
+00:00:01.829 --> 00:00:01.839 align:start position:0%
+Hey, I'm Jess. I'm Warp's developer
+ 
+
+00:00:01.839 --> 00:00:03.350 align:start position:0%
+Hey, I'm Jess. I'm Warp's developer
+advocate,<00:00:02.320><c> and</c><00:00:02.560><c> today</c><00:00:02.800><c> I'm</c><00:00:03.040><c> going</c><00:00:03.120><c> to</c><00:00:03.200><c> teach</c>
+
+00:00:03.350 --> 00:00:03.360 align:start position:0%
+advocate, and today I'm going to teach
+ 
+
+00:00:03.360 --> 00:00:05.269 align:start position:0%
+advocate, and today I'm going to teach
+you<00:00:03.520><c> how</c><00:00:03.679><c> to</c><00:00:03.760><c> master</c><00:00:04.080><c> the</c><00:00:04.240><c> code</c><00:00:04.560><c> review</c><00:00:04.799><c> panel</c>
+
+00:00:05.269 --> 00:00:05.279 align:start position:0%
+you how to master the code review panel
+ 
+
+00:00:05.279 --> 00:00:06.869 align:start position:0%
+you how to master the code review panel
+so<00:00:05.440><c> you</c><00:00:05.600><c> can</c><00:00:05.759><c> stay</c><00:00:05.839><c> in</c><00:00:06.000><c> the</c><00:00:06.160><c> flow</c><00:00:06.400><c> better</c><00:00:06.640><c> while</c>
+
+00:00:06.869 --> 00:00:06.879 align:start position:0%
+so you can stay in the flow better while
+ 
+
+00:00:06.879 --> 00:00:09.270 align:start position:0%
+so you can stay in the flow better while
+coding.<00:00:07.440><c> I'm</c><00:00:07.680><c> working</c><00:00:07.839><c> on</c><00:00:08.000><c> a</c><00:00:08.160><c> repo</c><00:00:08.480><c> called</c><00:00:08.800><c> AI</c>
+
+00:00:09.270 --> 00:00:09.280 align:start position:0%
+coding. I'm working on a repo called AI
+ 
+
+00:00:09.280 --> 00:00:11.350 align:start position:0%
+coding. I'm working on a repo called AI
+Observe,<00:00:09.920><c> which</c><00:00:10.160><c> is</c><00:00:10.240><c> just</c><00:00:10.400><c> a</c><00:00:10.639><c> small</c><00:00:10.800><c> project</c><00:00:11.120><c> I</c>
+
+00:00:11.350 --> 00:00:11.360 align:start position:0%
+Observe, which is just a small project I
+ 
+
+00:00:11.360 --> 00:00:12.950 align:start position:0%
+Observe, which is just a small project I
+built<00:00:11.519><c> to</c><00:00:11.679><c> visualize</c><00:00:12.080><c> how</c><00:00:12.320><c> tokens</c><00:00:12.719><c> are</c>
+
+00:00:12.950 --> 00:00:12.960 align:start position:0%
+built to visualize how tokens are
+ 
+
+00:00:12.960 --> 00:00:15.509 align:start position:0%
+built to visualize how tokens are
+calculated<00:00:13.679><c> in</c><00:00:14.000><c> AI</c><00:00:14.400><c> models.</c><00:00:14.960><c> It</c><00:00:15.120><c> shows</c><00:00:15.360><c> you</c>
+
+00:00:15.509 --> 00:00:15.519 align:start position:0%
+calculated in AI models. It shows you
+ 
+
+00:00:15.519 --> 00:00:17.430 align:start position:0%
+calculated in AI models. It shows you
+how<00:00:15.679><c> your</c><00:00:15.920><c> text</c><00:00:16.240><c> input</c><00:00:16.640><c> gets</c><00:00:16.960><c> broken</c><00:00:17.279><c> down</c>
+
+00:00:17.430 --> 00:00:17.440 align:start position:0%
+how your text input gets broken down
+ 
+
+00:00:17.440 --> 00:00:19.429 align:start position:0%
+how your text input gets broken down
+into<00:00:17.680><c> tokens,</c><00:00:18.240><c> how</c><00:00:18.400><c> many</c><00:00:18.640><c> are</c><00:00:18.880><c> used</c><00:00:19.039><c> in</c><00:00:19.279><c> a</c>
+
+00:00:19.429 --> 00:00:19.439 align:start position:0%
+into tokens, how many are used in a
+ 
+
+00:00:19.439 --> 00:00:21.349 align:start position:0%
+into tokens, how many are used in a
+request,<00:00:19.840><c> and</c><00:00:20.080><c> helps</c><00:00:20.320><c> developers</c><00:00:20.880><c> understand</c>
+
+00:00:21.349 --> 00:00:21.359 align:start position:0%
+request, and helps developers understand
+ 
+
+00:00:21.359 --> 00:00:23.349 align:start position:0%
+request, and helps developers understand
+what<00:00:21.600><c> that</c><00:00:21.840><c> means</c><00:00:22.080><c> in</c><00:00:22.320><c> terms</c><00:00:22.480><c> of</c><00:00:22.560><c> the</c><00:00:22.800><c> cost</c><00:00:23.039><c> and</c>
+
+00:00:23.349 --> 00:00:23.359 align:start position:0%
+what that means in terms of the cost and
+ 
+
+00:00:23.359 --> 00:00:25.189 align:start position:0%
+what that means in terms of the cost and
+model<00:00:23.600><c> usage.</c><00:00:24.160><c> I</c><00:00:24.240><c> hacked</c><00:00:24.560><c> this</c><00:00:24.720><c> together</c><00:00:24.960><c> in</c>
+
+00:00:25.189 --> 00:00:25.199 align:start position:0%
+model usage. I hacked this together in
+ 
+
+00:00:25.199 --> 00:00:27.029 align:start position:0%
+model usage. I hacked this together in
+about<00:00:25.439><c> 1</c><00:00:25.680><c> hour</c><00:00:26.000><c> over</c><00:00:26.160><c> the</c><00:00:26.400><c> weekend.</c><00:00:26.800><c> So,</c><00:00:26.880><c> you</c>
+
+00:00:27.029 --> 00:00:27.039 align:start position:0%
+about 1 hour over the weekend. So, you
+ 
+
+00:00:27.039 --> 00:00:28.470 align:start position:0%
+about 1 hour over the weekend. So, you
+can<00:00:27.119><c> see</c><00:00:27.199><c> the</c><00:00:27.439><c> web</c><00:00:27.599><c> app</c><00:00:27.840><c> is</c><00:00:28.000><c> still</c><00:00:28.240><c> pretty</c>
+
+00:00:28.470 --> 00:00:28.480 align:start position:0%
+can see the web app is still pretty
+ 
+
+00:00:28.480 --> 00:00:30.470 align:start position:0%
+can see the web app is still pretty
+rough.<00:00:28.880><c> Like</c><00:00:29.119><c> here,</c><00:00:29.519><c> the</c><00:00:29.679><c> hover</c><00:00:30.000><c> text</c><00:00:30.240><c> is</c>
+
+00:00:30.470 --> 00:00:30.480 align:start position:0%
+rough. Like here, the hover text is
+ 
+
+00:00:30.480 --> 00:00:32.790 align:start position:0%
+rough. Like here, the hover text is
+black<00:00:30.800><c> on</c><00:00:31.039><c> a</c><00:00:31.199><c> dark</c><00:00:31.439><c> gray</c><00:00:31.760><c> background,</c><00:00:32.559><c> making</c>
+
+00:00:32.790 --> 00:00:32.800 align:start position:0%
+black on a dark gray background, making
+ 
+
+00:00:32.800 --> 00:00:34.709 align:start position:0%
+black on a dark gray background, making
+it<00:00:33.040><c> hard</c><00:00:33.200><c> to</c><00:00:33.360><c> read.</c><00:00:33.760><c> Let's</c><00:00:34.079><c> walk</c><00:00:34.320><c> through</c><00:00:34.559><c> how</c>
+
+00:00:34.709 --> 00:00:34.719 align:start position:0%
+it hard to read. Let's walk through how
+ 
+
+00:00:34.719 --> 00:00:36.709 align:start position:0%
+it hard to read. Let's walk through how
+I'd<00:00:34.960><c> fix</c><00:00:35.120><c> that</c><00:00:35.360><c> using</c><00:00:35.680><c> Warp.</c><00:00:36.160><c> I'll</c><00:00:36.399><c> start</c><00:00:36.480><c> by</c>
+
+00:00:36.709 --> 00:00:36.719 align:start position:0%
+I'd fix that using Warp. I'll start by
+ 
+
+00:00:36.719 --> 00:00:38.389 align:start position:0%
+I'd fix that using Warp. I'll start by
+asking<00:00:36.960><c> Warp</c><00:00:37.360><c> directly,</c><00:00:37.840><c> can</c><00:00:38.000><c> you</c><00:00:38.160><c> update</c>
+
+00:00:38.389 --> 00:00:38.399 align:start position:0%
+asking Warp directly, can you update
+ 
+
+00:00:38.399 --> 00:00:40.310 align:start position:0%
+asking Warp directly, can you update
+this<00:00:38.640><c> hover</c><00:00:38.960><c> text</c><00:00:39.280><c> so</c><00:00:39.440><c> it's</c><00:00:39.680><c> easier</c><00:00:39.920><c> for</c><00:00:40.000><c> me</c><00:00:40.160><c> to</c>
+
+00:00:40.310 --> 00:00:40.320 align:start position:0%
+this hover text so it's easier for me to
+ 
+
+00:00:40.320 --> 00:00:41.990 align:start position:0%
+this hover text so it's easier for me to
+read<00:00:40.559><c> against</c><00:00:40.879><c> the</c><00:00:41.040><c> background.</c><00:00:41.520><c> I'll</c><00:00:41.760><c> even</c>
+
+00:00:41.990 --> 00:00:42.000 align:start position:0%
+read against the background. I'll even
+ 
+
+00:00:42.000 --> 00:00:43.830 align:start position:0%
+read against the background. I'll even
+attach<00:00:42.239><c> an</c><00:00:42.480><c> image</c><00:00:42.719><c> to</c><00:00:42.879><c> make</c><00:00:42.960><c> it</c><00:00:43.120><c> clearer.</c><00:00:43.600><c> Then</c>
+
+00:00:43.830 --> 00:00:43.840 align:start position:0%
+attach an image to make it clearer. Then
+ 
+
+00:00:43.840 --> 00:00:46.069 align:start position:0%
+attach an image to make it clearer. Then
+I'll<00:00:44.000><c> kick</c><00:00:44.160><c> off</c><00:00:44.320><c> the</c><00:00:44.480><c> agent</c><00:00:44.879><c> process</c><00:00:45.360><c> and</c><00:00:45.680><c> Warp</c>
+
+00:00:46.069 --> 00:00:46.079 align:start position:0%
+I'll kick off the agent process and Warp
+ 
+
+00:00:46.079 --> 00:00:47.670 align:start position:0%
+I'll kick off the agent process and Warp
+will<00:00:46.239><c> start</c><00:00:46.399><c> to</c><00:00:46.559><c> generate</c><00:00:46.879><c> code</c><00:00:47.120><c> diffs</c><00:00:47.520><c> with</c>
+
+00:00:47.670 --> 00:00:47.680 align:start position:0%
+will start to generate code diffs with
+ 
+
+00:00:47.680 --> 00:00:49.670 align:start position:0%
+will start to generate code diffs with
+all<00:00:47.840><c> the</c><00:00:48.000><c> proposed</c><00:00:48.399><c> changes.</c><00:00:49.120><c> Now,</c><00:00:49.360><c> this</c><00:00:49.520><c> is</c>
+
+00:00:49.670 --> 00:00:49.680 align:start position:0%
+all the proposed changes. Now, this is
+ 
+
+00:00:49.680 --> 00:00:51.830 align:start position:0%
+all the proposed changes. Now, this is
+great,<00:00:50.000><c> but</c><00:00:50.239><c> for</c><00:00:50.480><c> larger</c><00:00:50.960><c> changes,</c><00:00:51.360><c> it</c><00:00:51.520><c> can</c><00:00:51.680><c> be</c>
+
+00:00:51.830 --> 00:00:51.840 align:start position:0%
+great, but for larger changes, it can be
+ 
+
+00:00:51.840 --> 00:00:53.670 align:start position:0%
+great, but for larger changes, it can be
+hard<00:00:52.079><c> to</c><00:00:52.320><c> see</c><00:00:52.480><c> all</c><00:00:52.719><c> the</c><00:00:52.879><c> files</c><00:00:53.199><c> that</c><00:00:53.360><c> have</c><00:00:53.520><c> been</c>
+
+00:00:53.670 --> 00:00:53.680 align:start position:0%
+hard to see all the files that have been
+ 
+
+00:00:53.680 --> 00:00:55.350 align:start position:0%
+hard to see all the files that have been
+touched,<00:00:54.000><c> and</c><00:00:54.160><c> I</c><00:00:54.399><c> don't</c><00:00:54.480><c> want</c><00:00:54.640><c> to</c><00:00:54.879><c> constantly</c>
+
+00:00:55.350 --> 00:00:55.360 align:start position:0%
+touched, and I don't want to constantly
+ 
+
+00:00:55.360 --> 00:00:57.350 align:start position:0%
+touched, and I don't want to constantly
+have<00:00:55.520><c> to</c><00:00:55.760><c> scroll</c><00:00:56.000><c> back</c><00:00:56.239><c> up</c><00:00:56.480><c> through</c><00:00:56.719><c> the</c><00:00:56.879><c> UI</c><00:00:57.199><c> to</c>
+
+00:00:57.350 --> 00:00:57.360 align:start position:0%
+have to scroll back up through the UI to
+ 
+
+00:00:57.360 --> 00:00:58.950 align:start position:0%
+have to scroll back up through the UI to
+find<00:00:57.520><c> them.</c><00:00:57.840><c> So</c><00:00:58.000><c> that's</c><00:00:58.239><c> where</c><00:00:58.399><c> the</c><00:00:58.559><c> new</c><00:00:58.719><c> code</c>
+
+00:00:58.950 --> 00:00:58.960 align:start position:0%
+find them. So that's where the new code
+ 
+
+00:00:58.960 --> 00:01:01.110 align:start position:0%
+find them. So that's where the new code
+review<00:00:59.280><c> panel</c><00:00:59.680><c> comes</c><00:00:59.920><c> in.</c><00:01:00.239><c> I</c><00:01:00.399><c> can</c><00:01:00.559><c> click</c><00:01:00.800><c> this</c>
+
+00:01:01.110 --> 00:01:01.120 align:start position:0%
+review panel comes in. I can click this
+ 
+
+00:01:01.120 --> 00:01:03.430 align:start position:0%
+review panel comes in. I can click this
+view<00:01:01.440><c> changes</c><00:01:01.920><c> button</c><00:01:02.239><c> at</c><00:01:02.399><c> the</c><00:01:02.559><c> top</c><00:01:02.800><c> left</c><00:01:03.199><c> or</c>
+
+00:01:03.430 --> 00:01:03.440 align:start position:0%
+view changes button at the top left or
+ 
+
+00:01:03.440 --> 00:01:05.670 align:start position:0%
+view changes button at the top left or
+the<00:01:03.600><c> get</c><00:01:03.840><c> dirty</c><00:01:04.159><c> chip</c><00:01:04.479><c> in</c><00:01:04.640><c> my</c><00:01:04.799><c> input</c><00:01:05.280><c> to</c><00:01:05.519><c> open</c>
+
+00:01:05.670 --> 00:01:05.680 align:start position:0%
+the get dirty chip in my input to open
+ 
+
+00:01:05.680 --> 00:01:07.429 align:start position:0%
+the get dirty chip in my input to open
+up<00:01:05.840><c> my</c><00:01:06.000><c> code</c><00:01:06.240><c> review</c><00:01:06.479><c> panel.</c><00:01:06.960><c> Now</c><00:01:07.119><c> know</c><00:01:07.280><c> that</c>
+
+00:01:07.429 --> 00:01:07.439 align:start position:0%
+up my code review panel. Now know that
+ 
+
+00:01:07.439 --> 00:01:09.270 align:start position:0%
+up my code review panel. Now know that
+these<00:01:07.680><c> only</c><00:01:07.920><c> work</c><00:01:08.080><c> if</c><00:01:08.240><c> you're</c><00:01:08.400><c> within</c><00:01:08.640><c> a</c><00:01:08.799><c> repo.</c>
+
+00:01:09.270 --> 00:01:09.280 align:start position:0%
+these only work if you're within a repo.
+ 
+
+00:01:09.280 --> 00:01:11.429 align:start position:0%
+these only work if you're within a repo.
+In<00:01:09.439><c> my</c><00:01:09.600><c> code</c><00:01:09.840><c> review</c><00:01:10.159><c> panel,</c><00:01:10.479><c> I</c><00:01:10.720><c> can</c><00:01:10.880><c> see</c><00:01:11.200><c> how</c>
+
+00:01:11.429 --> 00:01:11.439 align:start position:0%
+In my code review panel, I can see how
+ 
+
+00:01:11.439 --> 00:01:13.270 align:start position:0%
+In my code review panel, I can see how
+many<00:01:11.600><c> files</c><00:01:11.920><c> are</c><00:01:12.080><c> in</c><00:01:12.240><c> the</c><00:01:12.400><c> open</c><00:01:12.720><c> change,</c><00:01:13.119><c> how</c>
+
+00:01:13.270 --> 00:01:13.280 align:start position:0%
+many files are in the open change, how
+ 
+
+00:01:13.280 --> 00:01:14.870 align:start position:0%
+many files are in the open change, how
+many<00:01:13.439><c> lines</c><00:01:13.680><c> of</c><00:01:13.840><c> code</c><00:01:14.000><c> have</c><00:01:14.240><c> been</c><00:01:14.320><c> added</c><00:01:14.640><c> or</c>
+
+00:01:14.870 --> 00:01:14.880 align:start position:0%
+many lines of code have been added or
+ 
+
+00:01:14.880 --> 00:01:16.630 align:start position:0%
+many lines of code have been added or
+deleted,<00:01:15.439><c> all</c><00:01:15.600><c> the</c><00:01:15.840><c> different</c><00:01:16.080><c> code</c><00:01:16.320><c> diffs</c>
+
+00:01:16.630 --> 00:01:16.640 align:start position:0%
+deleted, all the different code diffs
+ 
+
+00:01:16.640 --> 00:01:18.070 align:start position:0%
+deleted, all the different code diffs
+that<00:01:16.720><c> have</c><00:01:16.880><c> been</c><00:01:17.040><c> made,</c><00:01:17.280><c> and</c><00:01:17.439><c> I</c><00:01:17.680><c> can</c><00:01:17.759><c> open</c><00:01:17.920><c> up</c>
+
+00:01:18.070 --> 00:01:18.080 align:start position:0%
+that have been made, and I can open up
+ 
+
+00:01:18.080 --> 00:01:19.749 align:start position:0%
+that have been made, and I can open up
+this<00:01:18.240><c> panel,</c><00:01:18.720><c> which</c><00:01:18.960><c> gives</c><00:01:19.200><c> me</c><00:01:19.280><c> a</c><00:01:19.520><c> more</c>
+
+00:01:19.749 --> 00:01:19.759 align:start position:0%
+this panel, which gives me a more
+ 
+
+00:01:19.759 --> 00:01:21.590 align:start position:0%
+this panel, which gives me a more
+structured<00:01:20.320><c> breakdown</c><00:01:20.799><c> of</c><00:01:21.040><c> all</c><00:01:21.200><c> the</c><00:01:21.360><c> files</c>
+
+00:01:21.590 --> 00:01:21.600 align:start position:0%
+structured breakdown of all the files
+ 
+
+00:01:21.600 --> 00:01:23.109 align:start position:0%
+structured breakdown of all the files
+that<00:01:21.759><c> have</c><00:01:21.920><c> been</c><00:01:22.080><c> touched</c><00:01:22.320><c> with</c><00:01:22.560><c> their</c><00:01:22.720><c> edited</c>
+
+00:01:23.109 --> 00:01:23.119 align:start position:0%
+that have been touched with their edited
+ 
+
+00:01:23.119 --> 00:01:25.030 align:start position:0%
+that have been touched with their edited
+line<00:01:23.439><c> count.</c><00:01:23.920><c> Now,</c><00:01:24.159><c> if</c><00:01:24.320><c> I</c><00:01:24.479><c> want</c><00:01:24.560><c> to</c><00:01:24.720><c> dive</c>
+
+00:01:25.030 --> 00:01:25.040 align:start position:0%
+line count. Now, if I want to dive
+ 
+
+00:01:25.040 --> 00:01:27.510 align:start position:0%
+line count. Now, if I want to dive
+deeper,<00:01:25.520><c> I</c><00:01:25.759><c> can</c><00:01:25.920><c> open</c><00:01:26.159><c> a</c><00:01:26.479><c> file</c><00:01:26.799><c> directly</c><00:01:27.280><c> in</c>
+
+00:01:27.510 --> 00:01:27.520 align:start position:0%
+deeper, I can open a file directly in
+ 
+
+00:01:27.520 --> 00:01:29.190 align:start position:0%
+deeper, I can open a file directly in
+Warp's<00:01:28.000><c> built-in</c><00:01:28.400><c> editor.</c><00:01:28.880><c> It's</c><00:01:29.040><c> a</c>
+
+00:01:29.190 --> 00:01:29.200 align:start position:0%
+Warp's built-in editor. It's a
+ 
+
+00:01:29.200 --> 00:01:30.550 align:start position:0%
+Warp's built-in editor. It's a
+lightweight<00:01:29.520><c> editor</c><00:01:29.840><c> with</c><00:01:30.080><c> syntax</c>
+
+00:01:30.550 --> 00:01:30.560 align:start position:0%
+lightweight editor with syntax
+ 
+
+00:01:30.560 --> 00:01:32.149 align:start position:0%
+lightweight editor with syntax
+highlighting,<00:01:31.119><c> search</c><00:01:31.360><c> and</c><00:01:31.600><c> replace,</c><00:01:31.920><c> and</c>
+
+00:01:32.149 --> 00:01:32.159 align:start position:0%
+highlighting, search and replace, and
+ 
+
+00:01:32.159 --> 00:01:34.069 align:start position:0%
+highlighting, search and replace, and
+basic<00:01:32.479><c> editing</c><00:01:32.880><c> tools.</c><00:01:33.439><c> For</c><00:01:33.520><c> example,</c><00:01:33.840><c> I'll</c>
+
+00:01:34.069 --> 00:01:34.079 align:start position:0%
+basic editing tools. For example, I'll
+ 
+
+00:01:34.079 --> 00:01:37.030 align:start position:0%
+basic editing tools. For example, I'll
+tweak<00:01:34.320><c> the</c><00:01:34.560><c> color</c><00:01:34.799><c> schema</c><00:01:35.280><c> here</c>
+
+00:01:37.030 --> 00:01:37.040 align:start position:0%
+tweak the color schema here
+ 
+
+00:01:37.040 --> 00:01:38.789 align:start position:0%
+tweak the color schema here
+and<00:01:37.280><c> then</c><00:01:37.520><c> save.</c><00:01:37.920><c> When</c><00:01:38.079><c> I</c><00:01:38.240><c> go</c><00:01:38.320><c> back,</c><00:01:38.640><c> the</c>
+
+00:01:38.789 --> 00:01:38.799 align:start position:0%
+and then save. When I go back, the
+ 
+
+00:01:38.799 --> 00:01:41.030 align:start position:0%
+and then save. When I go back, the
+change<00:01:39.040><c> is</c><00:01:39.200><c> already</c><00:01:39.600><c> reflected</c><00:01:40.240><c> in</c><00:01:40.560><c> my</c><00:01:40.720><c> code</c>
+
+00:01:41.030 --> 00:01:41.040 align:start position:0%
+change is already reflected in my code
+ 
+
+00:01:41.040 --> 00:01:43.510 align:start position:0%
+change is already reflected in my code
+diff<00:01:41.360><c> panel.</c><00:01:41.920><c> And</c><00:01:42.159><c> I</c><00:01:42.400><c> can</c><00:01:42.479><c> verify</c><00:01:42.880><c> that</c><00:01:43.119><c> I</c><00:01:43.360><c> do</c>
+
+00:01:43.510 --> 00:01:43.520 align:start position:0%
+diff panel. And I can verify that I do
+ 
+
+00:01:43.520 --> 00:01:45.749 align:start position:0%
+diff panel. And I can verify that I do
+see<00:01:43.680><c> that</c><00:01:43.920><c> change</c><00:01:44.320><c> reflected</c><00:01:44.799><c> in</c><00:01:45.040><c> my</c><00:01:45.200><c> app</c><00:01:45.520><c> as</c>
+
+00:01:45.749 --> 00:01:45.759 align:start position:0%
+see that change reflected in my app as
+ 
+
+00:01:45.759 --> 00:01:47.510 align:start position:0%
+see that change reflected in my app as
+well.<00:01:46.159><c> Now,</c><00:01:46.399><c> let's</c><00:01:46.560><c> say</c><00:01:46.640><c> I</c><00:01:46.880><c> want</c><00:01:46.960><c> this</c><00:01:47.200><c> hover</c>
+
+00:01:47.510 --> 00:01:47.520 align:start position:0%
+well. Now, let's say I want this hover
+ 
+
+00:01:47.520 --> 00:01:49.590 align:start position:0%
+well. Now, let's say I want this hover
+style<00:01:47.920><c> applied</c><00:01:48.399><c> consistently</c><00:01:49.040><c> across</c><00:01:49.439><c> the</c>
+
+00:01:49.590 --> 00:01:49.600 align:start position:0%
+style applied consistently across the
+ 
+
+00:01:49.600 --> 00:01:51.670 align:start position:0%
+style applied consistently across the
+app,<00:01:50.000><c> not</c><00:01:50.240><c> just</c><00:01:50.399><c> this</c><00:01:50.560><c> one</c><00:01:50.799><c> file.</c><00:01:51.360><c> I</c><00:01:51.600><c> can</c>
+
+00:01:51.670 --> 00:01:51.680 align:start position:0%
+app, not just this one file. I can
+ 
+
+00:01:51.680 --> 00:01:53.830 align:start position:0%
+app, not just this one file. I can
+prompt<00:01:52.079><c> Warp</c><00:01:52.479><c> to</c><00:01:52.640><c> componentize</c><00:01:53.280><c> the</c><00:01:53.439><c> hover</c>
+
+00:01:53.830 --> 00:01:53.840 align:start position:0%
+prompt Warp to componentize the hover
+ 
+
+00:01:53.840 --> 00:01:55.749 align:start position:0%
+prompt Warp to componentize the hover
+effect<00:01:54.159><c> so</c><00:01:54.320><c> that</c><00:01:54.479><c> the</c><00:01:54.640><c> new</c><00:01:54.880><c> color</c><00:01:55.200><c> schema</c><00:01:55.600><c> is</c>
+
+00:01:55.749 --> 00:01:55.759 align:start position:0%
+effect so that the new color schema is
+ 
+
+00:01:55.759 --> 00:01:58.630 align:start position:0%
+effect so that the new color schema is
+applied<00:01:56.320><c> anywhere</c><00:01:56.720><c> a</c><00:01:56.960><c> hover</c><00:01:57.280><c> UI</c><00:01:57.680><c> appears.</c><00:01:58.399><c> And</c>
+
+00:01:58.630 --> 00:01:58.640 align:start position:0%
+applied anywhere a hover UI appears. And
+ 
+
+00:01:58.640 --> 00:02:00.630 align:start position:0%
+applied anywhere a hover UI appears. And
+I<00:01:58.880><c> can</c><00:01:58.960><c> add</c><00:01:59.200><c> the</c><00:01:59.360><c> diff</c><00:01:59.680><c> that</c><00:01:59.840><c> I</c><00:02:00.079><c> just</c><00:02:00.240><c> created</c>
+
+00:02:00.630 --> 00:02:00.640 align:start position:0%
+I can add the diff that I just created
+ 
+
+00:02:00.640 --> 00:02:02.630 align:start position:0%
+I can add the diff that I just created
+as<00:02:00.880><c> context</c><00:02:01.360><c> to</c><00:02:01.520><c> my</c><00:02:01.680><c> prompt.</c><00:02:02.159><c> And</c><00:02:02.320><c> you'll</c><00:02:02.560><c> see</c>
+
+00:02:02.630 --> 00:02:02.640 align:start position:0%
+as context to my prompt. And you'll see
+ 
+
+00:02:02.640 --> 00:02:04.469 align:start position:0%
+as context to my prompt. And you'll see
+that<00:02:02.799><c> it</c><00:02:02.960><c> sites</c><00:02:03.200><c> the</c><00:02:03.360><c> diff</c><00:02:03.680><c> like</c><00:02:03.840><c> this.</c><00:02:04.320><c> Now</c>
+
+00:02:04.469 --> 00:02:04.479 align:start position:0%
+that it sites the diff like this. Now
+ 
+
+00:02:04.479 --> 00:02:06.310 align:start position:0%
+that it sites the diff like this. Now
+once<00:02:04.719><c> the</c><00:02:04.880><c> agent</c><00:02:05.280><c> finishes,</c><00:02:05.680><c> I</c><00:02:05.840><c> can</c><00:02:05.920><c> go</c><00:02:06.079><c> into</c>
+
+00:02:06.310 --> 00:02:06.320 align:start position:0%
+once the agent finishes, I can go into
+ 
+
+00:02:06.320 --> 00:02:08.150 align:start position:0%
+once the agent finishes, I can go into
+the<00:02:06.399><c> file</c><00:02:06.719><c> tree,</c><00:02:07.200><c> see</c><00:02:07.360><c> the</c><00:02:07.600><c> new</c><00:02:07.759><c> component</c>
+
+00:02:08.150 --> 00:02:08.160 align:start position:0%
+the file tree, see the new component
+ 
+
+00:02:08.160 --> 00:02:10.150 align:start position:0%
+the file tree, see the new component
+that's<00:02:08.399><c> been</c><00:02:08.640><c> generated,</c><00:02:09.280><c> and</c><00:02:09.520><c> click</c><00:02:09.759><c> into</c><00:02:10.000><c> it</c>
+
+00:02:10.150 --> 00:02:10.160 align:start position:0%
+that's been generated, and click into it
+ 
+
+00:02:10.160 --> 00:02:12.150 align:start position:0%
+that's been generated, and click into it
+to<00:02:10.319><c> do</c><00:02:10.479><c> a</c><00:02:10.640><c> quick</c><00:02:10.879><c> gut</c><00:02:11.200><c> check.</c><00:02:11.520><c> The</c><00:02:11.680><c> agent</c><00:02:11.920><c> named</c>
+
+00:02:12.150 --> 00:02:12.160 align:start position:0%
+to do a quick gut check. The agent named
+ 
+
+00:02:12.160 --> 00:02:14.070 align:start position:0%
+to do a quick gut check. The agent named
+it<00:02:12.319><c> the</c><00:02:12.480><c> tool</c><00:02:12.800><c> tip</c><00:02:13.040><c> component.</c><00:02:13.599><c> It</c><00:02:13.760><c> handles</c>
+
+00:02:14.070 --> 00:02:14.080 align:start position:0%
+it the tool tip component. It handles
+ 
+
+00:02:14.080 --> 00:02:15.990 align:start position:0%
+it the tool tip component. It handles
+the<00:02:14.239><c> mouse</c><00:02:14.480><c> event</c><00:02:14.879><c> correctly,</c><00:02:15.360><c> and</c><00:02:15.599><c> it</c><00:02:15.760><c> seems</c>
+
+00:02:15.990 --> 00:02:16.000 align:start position:0%
+the mouse event correctly, and it seems
+ 
+
+00:02:16.000 --> 00:02:18.470 align:start position:0%
+the mouse event correctly, and it seems
+to<00:02:16.160><c> persist</c><00:02:16.720><c> the</c><00:02:16.959><c> UI</c><00:02:17.360><c> and</c><00:02:17.599><c> color</c><00:02:17.840><c> schema</c><00:02:18.319><c> that</c>
+
+00:02:18.470 --> 00:02:18.480 align:start position:0%
+to persist the UI and color schema that
+ 
+
+00:02:18.480 --> 00:02:20.550 align:start position:0%
+to persist the UI and color schema that
+I<00:02:18.720><c> created.</c>
+
+00:02:20.550 --> 00:02:20.560 align:start position:0%
+I created.
+ 
+
+00:02:20.560 --> 00:02:22.070 align:start position:0%
+I created.
+Looks<00:02:20.800><c> good</c><00:02:20.959><c> to</c><00:02:21.120><c> me.</c><00:02:21.360><c> And</c><00:02:21.440><c> once</c><00:02:21.680><c> I'm</c><00:02:21.840><c> happy</c>
+
+00:02:22.070 --> 00:02:22.080 align:start position:0%
+Looks good to me. And once I'm happy
+ 
+
+00:02:22.080 --> 00:02:23.750 align:start position:0%
+Looks good to me. And once I'm happy
+with<00:02:22.239><c> the</c><00:02:22.400><c> changes,</c><00:02:22.800><c> I</c><00:02:23.040><c> can</c><00:02:23.120><c> go</c><00:02:23.280><c> ahead</c><00:02:23.520><c> and</c>
+
+00:02:23.750 --> 00:02:23.760 align:start position:0%
+with the changes, I can go ahead and
+ 
+
+00:02:23.760 --> 00:02:25.589 align:start position:0%
+with the changes, I can go ahead and
+commit<00:02:24.080><c> and</c><00:02:24.319><c> push</c><00:02:24.640><c> directly</c><00:02:24.959><c> from</c><00:02:25.120><c> the</c><00:02:25.280><c> panel.</c>
+
+00:02:25.589 --> 00:02:25.599 align:start position:0%
+commit and push directly from the panel.
+ 
+
+00:02:25.599 --> 00:02:27.589 align:start position:0%
+commit and push directly from the panel.
+The<00:02:25.760><c> panel</c><00:02:26.080><c> then</c><00:02:26.239><c> resets</c><00:02:26.720><c> into</c><00:02:26.959><c> its</c><00:02:27.280><c> zero</c>
+
+00:02:27.589 --> 00:02:27.599 align:start position:0%
+The panel then resets into its zero
+ 
+
+00:02:27.599 --> 00:02:29.030 align:start position:0%
+The panel then resets into its zero
+state,<00:02:27.920><c> letting</c><00:02:28.160><c> me</c><00:02:28.319><c> know</c><00:02:28.400><c> that</c><00:02:28.640><c> there's</c><00:02:28.879><c> no</c>
+
+00:02:29.030 --> 00:02:29.040 align:start position:0%
+state, letting me know that there's no
+ 
+
+00:02:29.040 --> 00:02:31.110 align:start position:0%
+state, letting me know that there's no
+open<00:02:29.360><c> changes.</c><00:02:30.000><c> And</c><00:02:30.160><c> you</c><00:02:30.400><c> can</c><00:02:30.480><c> click</c><00:02:30.720><c> here</c><00:02:30.959><c> to</c>
+
+00:02:31.110 --> 00:02:31.120 align:start position:0%
+open changes. And you can click here to
+ 
+
+00:02:31.120 --> 00:02:32.710 align:start position:0%
+open changes. And you can click here to
+quickly<00:02:31.440><c> see</c><00:02:31.599><c> the</c><00:02:31.840><c> diffs</c><00:02:32.239><c> between</c><00:02:32.480><c> your</c>
+
+00:02:32.710 --> 00:02:32.720 align:start position:0%
+quickly see the diffs between your
+ 
+
+00:02:32.720 --> 00:02:35.110 align:start position:0%
+quickly see the diffs between your
+current<00:02:33.040><c> branch</c><00:02:33.360><c> and</c><00:02:33.599><c> main.</c><00:02:34.319><c> The</c><00:02:34.560><c> warp</c><00:02:34.879><c> code</c>
+
+00:02:35.110 --> 00:02:35.120 align:start position:0%
+current branch and main. The warp code
+ 
+
+00:02:35.120 --> 00:02:36.790 align:start position:0%
+current branch and main. The warp code
+review<00:02:35.360><c> panel</c><00:02:35.680><c> makes</c><00:02:35.920><c> reviewing,</c><00:02:36.400><c> editing,</c>
+
+00:02:36.790 --> 00:02:36.800 align:start position:0%
+review panel makes reviewing, editing,
+ 
+
+00:02:36.800 --> 00:02:38.869 align:start position:0%
+review panel makes reviewing, editing,
+and<00:02:37.040><c> committing</c><00:02:37.519><c> changes</c><00:02:38.000><c> faster</c><00:02:38.480><c> and</c><00:02:38.720><c> more</c>
+
+00:02:38.869 --> 00:02:38.879 align:start position:0%
+and committing changes faster and more
+ 
+
+00:02:38.879 --> 00:02:40.790 align:start position:0%
+and committing changes faster and more
+intuitive.<00:02:39.519><c> I</c><00:02:39.680><c> do</c><00:02:39.840><c> like</c><00:02:39.920><c> to</c><00:02:40.080><c> keep</c><00:02:40.319><c> this</c><00:02:40.480><c> panel</c>
+
+00:02:40.790 --> 00:02:40.800 align:start position:0%
+intuitive. I do like to keep this panel
+ 
+
+00:02:40.800 --> 00:02:42.869 align:start position:0%
+intuitive. I do like to keep this panel
+open<00:02:41.040><c> while</c><00:02:41.360><c> coding</c><00:02:41.920><c> because</c><00:02:42.160><c> it</c><00:02:42.319><c> gives</c><00:02:42.480><c> me</c><00:02:42.640><c> a</c>
+
+00:02:42.869 --> 00:02:42.879 align:start position:0%
+open while coding because it gives me a
+ 
+
+00:02:42.879 --> 00:02:44.309 align:start position:0%
+open while coding because it gives me a
+live<00:02:43.120><c> overview</c><00:02:43.519><c> of</c><00:02:43.760><c> everything</c><00:02:44.000><c> that's</c>
+
+00:02:44.309 --> 00:02:44.319 align:start position:0%
+live overview of everything that's
+ 
+
+00:02:44.319 --> 00:02:45.990 align:start position:0%
+live overview of everything that's
+happening<00:02:44.560><c> in</c><00:02:44.800><c> my</c><00:02:44.959><c> repo</c><00:02:45.360><c> without</c><00:02:45.760><c> really</c>
+
+00:02:45.990 --> 00:02:46.000 align:start position:0%
+happening in my repo without really
+ 
+
+00:02:46.000 --> 00:02:48.150 align:start position:0%
+happening in my repo without really
+having<00:02:46.160><c> to</c><00:02:46.400><c> switch</c><00:02:46.720><c> tools</c><00:02:47.040><c> or</c><00:02:47.280><c> lose</c><00:02:47.599><c> focus.</c>
+
+00:02:48.150 --> 00:02:48.160 align:start position:0%
+having to switch tools or lose focus.
+ 
+
+00:02:48.160 --> 00:02:50.150 align:start position:0%
+having to switch tools or lose focus.
+Give<00:02:48.319><c> it</c><00:02:48.400><c> a</c><00:02:48.640><c> try</c><00:02:48.800><c> and</c><00:02:49.200><c> see</c><00:02:49.360><c> how</c><00:02:49.519><c> it</c><00:02:49.680><c> changes</c><00:02:50.000><c> the</c>
+
+00:02:50.150 --> 00:02:50.160 align:start position:0%
+Give it a try and see how it changes the
+ 
+
+00:02:50.160 --> 00:02:53.480 align:start position:0%
+Give it a try and see how it changes the
+way<00:02:50.239><c> you</c><00:02:50.480><c> code.</c>
+

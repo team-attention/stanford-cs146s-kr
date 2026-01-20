@@ -1,0 +1,192 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.080 --> 00:00:01.590 align:start position:0%
+ 
+One<00:00:00.320><c> of</c><00:00:00.400><c> the</c><00:00:00.560><c> biggest</c><00:00:00.800><c> bottlenecks</c><00:00:01.280><c> in</c><00:00:01.439><c> your</c>
+
+00:00:01.590 --> 00:00:01.600 align:start position:0%
+One of the biggest bottlenecks in your
+ 
+
+00:00:01.600 --> 00:00:04.070 align:start position:0%
+One of the biggest bottlenecks in your
+app's<00:00:01.839><c> performance</c><00:00:02.320><c> is</c><00:00:02.639><c> your</c><00:00:02.879><c> database.</c><00:00:03.760><c> And</c>
+
+00:00:04.070 --> 00:00:04.080 align:start position:0%
+app's performance is your database. And
+ 
+
+00:00:04.080 --> 00:00:06.550 align:start position:0%
+app's performance is your database. And
+there<00:00:04.319><c> is</c><00:00:04.560><c> a</c><00:00:04.880><c> lot</c><00:00:05.120><c> of</c><00:00:05.279><c> ways</c><00:00:05.520><c> it</c><00:00:05.759><c> can</c><00:00:05.920><c> slow</c><00:00:06.160><c> down.</c>
+
+00:00:06.550 --> 00:00:06.560 align:start position:0%
+there is a lot of ways it can slow down.
+ 
+
+00:00:06.560 --> 00:00:09.110 align:start position:0%
+there is a lot of ways it can slow down.
+So<00:00:06.720><c> when</c><00:00:06.879><c> you</c><00:00:07.120><c> ask</c><00:00:07.440><c> AI,</c><00:00:08.320><c> optimize</c><00:00:08.880><c> this</c>
+
+00:00:09.110 --> 00:00:09.120 align:start position:0%
+So when you ask AI, optimize this
+ 
+
+00:00:09.120 --> 00:00:11.350 align:start position:0%
+So when you ask AI, optimize this
+database<00:00:09.599><c> query,</c><00:00:10.240><c> it</c><00:00:10.480><c> could</c><00:00:10.800><c> literally</c><00:00:11.200><c> mean</c>
+
+00:00:11.350 --> 00:00:11.360 align:start position:0%
+database query, it could literally mean
+ 
+
+00:00:11.360 --> 00:00:14.709 align:start position:0%
+database query, it could literally mean
+a<00:00:11.599><c> million</c><00:00:11.920><c> things.</c><00:00:12.559><c> More</c><00:00:12.880><c> secure,</c><00:00:13.759><c> faster,</c>
+
+00:00:14.709 --> 00:00:14.719 align:start position:0%
+a million things. More secure, faster,
+ 
+
+00:00:14.719 --> 00:00:16.710 align:start position:0%
+a million things. More secure, faster,
+easier<00:00:15.040><c> to</c><00:00:15.280><c> read.</c><00:00:15.759><c> So</c><00:00:15.920><c> here's</c><00:00:16.160><c> a</c><00:00:16.320><c> prompt</c><00:00:16.560><c> you</c>
+
+00:00:16.710 --> 00:00:16.720 align:start position:0%
+easier to read. So here's a prompt you
+ 
+
+00:00:16.720 --> 00:00:18.390 align:start position:0%
+easier to read. So here's a prompt you
+can<00:00:16.800><c> use</c><00:00:16.960><c> in</c><00:00:17.119><c> Warp</c><00:00:17.520><c> that</c><00:00:17.680><c> will</c><00:00:17.760><c> analyze</c><00:00:18.160><c> your</c>
+
+00:00:18.390 --> 00:00:18.400 align:start position:0%
+can use in Warp that will analyze your
+ 
+
+00:00:18.400 --> 00:00:21.109 align:start position:0%
+can use in Warp that will analyze your
+query<00:00:18.800><c> in</c><00:00:19.279><c> every</c><00:00:19.680><c> regard.</c><00:00:20.240><c> Now,</c><00:00:20.480><c> this</c><00:00:20.720><c> is</c><00:00:20.800><c> a</c>
+
+00:00:21.109 --> 00:00:21.119 align:start position:0%
+query in every regard. Now, this is a
+ 
+
+00:00:21.119 --> 00:00:23.429 align:start position:0%
+query in every regard. Now, this is a
+very<00:00:21.439><c> long</c><00:00:21.840><c> prompt,</c><00:00:22.320><c> but</c><00:00:22.560><c> we</c><00:00:22.720><c> will</c><00:00:22.880><c> save</c><00:00:23.119><c> you</c><00:00:23.199><c> a</c>
+
+00:00:23.429 --> 00:00:23.439 align:start position:0%
+very long prompt, but we will save you a
+ 
+
+00:00:23.439 --> 00:00:24.950 align:start position:0%
+very long prompt, but we will save you a
+ton<00:00:23.600><c> of</c><00:00:23.760><c> time.</c><00:00:24.080><c> It</c><00:00:24.240><c> will</c><00:00:24.400><c> go</c><00:00:24.560><c> through</c><00:00:24.720><c> your</c>
+
+00:00:24.950 --> 00:00:24.960 align:start position:0%
+ton of time. It will go through your
+ 
+
+00:00:24.960 --> 00:00:27.029 align:start position:0%
+ton of time. It will go through your
+entire<00:00:25.279><c> codebase</c><00:00:25.760><c> and</c><00:00:26.000><c> find</c><00:00:26.160><c> all</c><00:00:26.400><c> areas</c><00:00:26.720><c> where</c>
+
+00:00:27.029 --> 00:00:27.039 align:start position:0%
+entire codebase and find all areas where
+ 
+
+00:00:27.039 --> 00:00:29.750 align:start position:0%
+entire codebase and find all areas where
+SQL<00:00:27.439><c> is</c><00:00:27.680><c> being</c><00:00:27.920><c> used.</c><00:00:28.640><c> We</c><00:00:28.880><c> ask</c><00:00:29.119><c> Warp</c><00:00:29.519><c> to</c><00:00:29.599><c> use</c>
+
+00:00:29.750 --> 00:00:29.760 align:start position:0%
+SQL is being used. We ask Warp to use
+ 
+
+00:00:29.760 --> 00:00:31.830 align:start position:0%
+SQL is being used. We ask Warp to use
+SQL's<00:00:30.240><c> built-in</c><00:00:30.640><c> explain</c><00:00:31.119><c> methods</c><00:00:31.519><c> to</c><00:00:31.679><c> get</c>
+
+00:00:31.830 --> 00:00:31.840 align:start position:0%
+SQL's built-in explain methods to get
+ 
+
+00:00:31.840 --> 00:00:33.910 align:start position:0%
+SQL's built-in explain methods to get
+performance<00:00:32.320><c> from</c><00:00:32.480><c> the</c><00:00:32.640><c> source.</c><00:00:33.120><c> We</c><00:00:33.280><c> then</c><00:00:33.760><c> go</c>
+
+00:00:33.910 --> 00:00:33.920 align:start position:0%
+performance from the source. We then go
+ 
+
+00:00:33.920 --> 00:00:35.430 align:start position:0%
+performance from the source. We then go
+through<00:00:34.239><c> common</c><00:00:34.559><c> scenarios</c><00:00:35.040><c> that</c><00:00:35.200><c> cause</c>
+
+00:00:35.430 --> 00:00:35.440 align:start position:0%
+through common scenarios that cause
+ 
+
+00:00:35.440 --> 00:00:37.990 align:start position:0%
+through common scenarios that cause
+slowdowns<00:00:36.079><c> like</c><00:00:36.559><c> N</c><00:00:36.800><c> plus1's,</c><00:00:37.680><c> missing</c>
+
+00:00:37.990 --> 00:00:38.000 align:start position:0%
+slowdowns like N plus1's, missing
+ 
+
+00:00:38.000 --> 00:00:41.430 align:start position:0%
+slowdowns like N plus1's, missing
+indexes,<00:00:38.879><c> etc.</c><00:00:39.680><c> Now,</c><00:00:40.000><c> I</c><00:00:40.239><c> added</c><00:00:40.480><c> a</c><00:00:40.879><c> priority</c>
+
+00:00:41.430 --> 00:00:41.440 align:start position:0%
+indexes, etc. Now, I added a priority
+ 
+
+00:00:41.440 --> 00:00:43.030 align:start position:0%
+indexes, etc. Now, I added a priority
+matrix<00:00:41.840><c> that</c><00:00:42.079><c> will</c><00:00:42.320><c> showcase</c><00:00:42.640><c> all</c><00:00:42.800><c> of</c><00:00:42.879><c> the</c>
+
+00:00:43.030 --> 00:00:43.040 align:start position:0%
+matrix that will showcase all of the
+ 
+
+00:00:43.040 --> 00:00:45.030 align:start position:0%
+matrix that will showcase all of the
+optimizations<00:00:43.760><c> Wart</c><00:00:44.079><c> found</c><00:00:44.320><c> and</c><00:00:44.559><c> graph</c><00:00:44.879><c> it</c>
+
+00:00:45.030 --> 00:00:45.040 align:start position:0%
+optimizations Wart found and graph it
+ 
+
+00:00:45.040 --> 00:00:48.150 align:start position:0%
+optimizations Wart found and graph it
+based<00:00:45.200><c> on</c><00:00:45.440><c> impact,</c><00:00:45.920><c> risk,</c><00:00:46.239><c> and</c><00:00:46.480><c> effort.</c><00:00:47.920><c> A</c>
+
+00:00:48.150 --> 00:00:48.160 align:start position:0%
+based on impact, risk, and effort. A
+ 
+
+00:00:48.160 --> 00:00:50.310 align:start position:0%
+based on impact, risk, and effort. A
+database<00:00:48.640><c> is</c><00:00:48.879><c> the</c><00:00:49.120><c> heart</c><00:00:49.360><c> of</c><00:00:49.520><c> your</c><00:00:49.760><c> entire</c><00:00:50.079><c> web</c>
+
+00:00:50.310 --> 00:00:50.320 align:start position:0%
+database is the heart of your entire web
+ 
+
+00:00:50.320 --> 00:00:52.229 align:start position:0%
+database is the heart of your entire web
+stack.<00:00:50.879><c> So,</c><00:00:51.200><c> don't</c><00:00:51.440><c> skip</c><00:00:51.680><c> out</c><00:00:51.840><c> on</c><00:00:52.000><c> this</c>
+
+00:00:52.229 --> 00:00:52.239 align:start position:0%
+stack. So, don't skip out on this
+ 
+
+00:00:52.239 --> 00:00:55.480 align:start position:0%
+stack. So, don't skip out on this
+helpful<00:00:52.480><c> prompt.</c>
+

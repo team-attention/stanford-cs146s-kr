@@ -1,0 +1,544 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.240 --> 00:00:02.629 align:start position:0%
+ 
+Hi,<00:00:00.960><c> I'm</c><00:00:01.199><c> going</c><00:00:01.280><c> to</c><00:00:01.439><c> show</c><00:00:01.600><c> you</c><00:00:01.760><c> today</c><00:00:02.080><c> how</c><00:00:02.399><c> to</c>
+
+00:00:02.629 --> 00:00:02.639 align:start position:0%
+Hi, I'm going to show you today how to
+ 
+
+00:00:02.639 --> 00:00:06.710 align:start position:0%
+Hi, I'm going to show you today how to
+set<00:00:02.800><c> up</c><00:00:03.120><c> MCP</c><00:00:03.919><c> in</c><00:00:04.240><c> Warp</c><00:00:05.120><c> uh</c><00:00:05.279><c> so</c><00:00:05.440><c> that</c><00:00:05.759><c> Warp's</c><00:00:06.640><c> uh</c>
+
+00:00:06.710 --> 00:00:06.720 align:start position:0%
+set up MCP in Warp uh so that Warp's uh
+ 
+
+00:00:06.720 --> 00:00:09.509 align:start position:0%
+set up MCP in Warp uh so that Warp's uh
+agent<00:00:07.120><c> can</c><00:00:07.359><c> access</c><00:00:08.000><c> external</c><00:00:08.559><c> data</c><00:00:08.880><c> sources.</c>
+
+00:00:09.509 --> 00:00:09.519 align:start position:0%
+agent can access external data sources.
+ 
+
+00:00:09.519 --> 00:00:11.509 align:start position:0%
+agent can access external data sources.
+MCP<00:00:10.080><c> is</c><00:00:10.240><c> model</c><00:00:10.559><c> context</c><00:00:10.960><c> protocol</c><00:00:11.360><c> from</c>
+
+00:00:11.509 --> 00:00:11.519 align:start position:0%
+MCP is model context protocol from
+ 
+
+00:00:11.519 --> 00:00:13.990 align:start position:0%
+MCP is model context protocol from
+Anthropic.<00:00:12.559><c> It's</c><00:00:12.800><c> a</c><00:00:13.280><c> pretty</c><00:00:13.519><c> easy</c><00:00:13.759><c> thing</c><00:00:13.840><c> to</c>
+
+00:00:13.990 --> 00:00:14.000 align:start position:0%
+Anthropic. It's a pretty easy thing to
+ 
+
+00:00:14.000 --> 00:00:15.910 align:start position:0%
+Anthropic. It's a pretty easy thing to
+set<00:00:14.160><c> up</c><00:00:14.240><c> in</c><00:00:14.400><c> Warp.</c><00:00:14.960><c> Let</c><00:00:15.200><c> me</c><00:00:15.280><c> first</c><00:00:15.519><c> show</c><00:00:15.679><c> you</c><00:00:15.759><c> a</c>
+
+00:00:15.910 --> 00:00:15.920 align:start position:0%
+set up in Warp. Let me first show you a
+ 
+
+00:00:15.920 --> 00:00:18.470 align:start position:0%
+set up in Warp. Let me first show you a
+use<00:00:16.160><c> case</c><00:00:16.320><c> where</c><00:00:16.560><c> it's</c><00:00:16.800><c> not</c><00:00:16.960><c> set</c><00:00:17.199><c> up.</c><00:00:18.000><c> So,</c>
+
+00:00:18.470 --> 00:00:18.480 align:start position:0%
+use case where it's not set up. So,
+ 
+
+00:00:18.480 --> 00:00:21.189 align:start position:0%
+use case where it's not set up. So,
+let's<00:00:18.720><c> say</c><00:00:18.960><c> I</c><00:00:19.199><c> wanted</c><00:00:19.920><c> to</c><00:00:20.160><c> ask</c><00:00:20.480><c> our</c><00:00:20.720><c> agent</c><00:00:21.039><c> to</c>
+
+00:00:21.189 --> 00:00:21.199 align:start position:0%
+let's say I wanted to ask our agent to
+ 
+
+00:00:21.199 --> 00:00:22.950 align:start position:0%
+let's say I wanted to ask our agent to
+tell<00:00:21.359><c> me</c><00:00:21.520><c> all</c><00:00:21.680><c> the</c><00:00:21.840><c> linear</c><00:00:22.240><c> tasks</c><00:00:22.560><c> that</c><00:00:22.800><c> are</c>
+
+00:00:22.950 --> 00:00:22.960 align:start position:0%
+tell me all the linear tasks that are
+ 
+
+00:00:22.960 --> 00:00:25.509 align:start position:0%
+tell me all the linear tasks that are
+assigned<00:00:23.519><c> to</c><00:00:23.840><c> me.</c><00:00:24.720><c> Uh</c><00:00:24.960><c> you'll</c><00:00:25.119><c> see</c><00:00:25.279><c> right</c><00:00:25.439><c> now</c>
+
+00:00:25.509 --> 00:00:25.519 align:start position:0%
+assigned to me. Uh you'll see right now
+ 
+
+00:00:25.519 --> 00:00:28.630 align:start position:0%
+assigned to me. Uh you'll see right now
+I<00:00:25.680><c> don't</c><00:00:25.760><c> have</c><00:00:25.840><c> it</c><00:00:26.080><c> set</c><00:00:26.160><c> up</c><00:00:26.320><c> and</c><00:00:26.640><c> so</c><00:00:27.760><c> uh</c><00:00:28.320><c> there's</c>
+
+00:00:28.630 --> 00:00:28.640 align:start position:0%
+I don't have it set up and so uh there's
+ 
+
+00:00:28.640 --> 00:00:31.189 align:start position:0%
+I don't have it set up and so uh there's
+no<00:00:29.119><c> it</c><00:00:29.359><c> just</c><00:00:29.519><c> can't</c><00:00:29.760><c> answer</c><00:00:30.000><c> the</c><00:00:30.240><c> question.</c><00:00:30.960><c> To</c>
+
+00:00:31.189 --> 00:00:31.199 align:start position:0%
+no it just can't answer the question. To
+ 
+
+00:00:31.199 --> 00:00:33.910 align:start position:0%
+no it just can't answer the question. To
+set<00:00:31.359><c> up</c><00:00:31.519><c> MCP</c><00:00:32.320><c> what</c><00:00:32.480><c> you</c><00:00:32.880><c> you</c><00:00:33.120><c> do</c><00:00:33.280><c> in</c><00:00:33.440><c> warp</c><00:00:33.760><c> is</c>
+
+00:00:33.910 --> 00:00:33.920 align:start position:0%
+set up MCP what you you do in warp is
+ 
+
+00:00:33.920 --> 00:00:36.790 align:start position:0%
+set up MCP what you you do in warp is
+you<00:00:34.079><c> go</c><00:00:34.239><c> over</c><00:00:34.399><c> to</c><00:00:34.719><c> warp</c><00:00:35.120><c> drive.</c><00:00:36.239><c> You</c><00:00:36.399><c> go</c><00:00:36.559><c> and</c>
+
+00:00:36.790 --> 00:00:36.800 align:start position:0%
+you go over to warp drive. You go and
+ 
+
+00:00:36.800 --> 00:00:38.229 align:start position:0%
+you go over to warp drive. You go and
+scroll<00:00:37.040><c> down</c><00:00:37.200><c> to</c><00:00:37.360><c> your</c><00:00:37.520><c> personal</c><00:00:37.840><c> section</c><00:00:38.079><c> and</c>
+
+00:00:38.229 --> 00:00:38.239 align:start position:0%
+scroll down to your personal section and
+ 
+
+00:00:38.239 --> 00:00:40.950 align:start position:0%
+scroll down to your personal section and
+click<00:00:38.480><c> MCP</c><00:00:38.960><c> servers.</c><00:00:40.079><c> Uh</c><00:00:40.320><c> you</c><00:00:40.480><c> can</c><00:00:40.640><c> also</c><00:00:40.800><c> get</c>
+
+00:00:40.950 --> 00:00:40.960 align:start position:0%
+click MCP servers. Uh you can also get
+ 
+
+00:00:40.960 --> 00:00:44.229 align:start position:0%
+click MCP servers. Uh you can also get
+to<00:00:41.120><c> this</c><00:00:41.360><c> by</c><00:00:42.239><c> um</c><00:00:43.040><c> hitting</c><00:00:43.360><c> command</c><00:00:43.760><c> P</c><00:00:44.000><c> and</c>
+
+00:00:44.229 --> 00:00:44.239 align:start position:0%
+to this by um hitting command P and
+ 
+
+00:00:44.239 --> 00:00:46.150 align:start position:0%
+to this by um hitting command P and
+opening<00:00:44.480><c> the</c><00:00:44.559><c> MCP</c><00:00:45.120><c> servers</c><00:00:45.440><c> pallet.</c><00:00:45.840><c> Either</c>
+
+00:00:46.150 --> 00:00:46.160 align:start position:0%
+opening the MCP servers pallet. Either
+ 
+
+00:00:46.160 --> 00:00:48.310 align:start position:0%
+opening the MCP servers pallet. Either
+will<00:00:46.320><c> work.</c><00:00:47.280><c> You</c><00:00:47.440><c> can</c><00:00:47.520><c> see</c><00:00:47.680><c> I</c><00:00:47.840><c> have</c><00:00:47.920><c> a</c><00:00:48.079><c> bunch</c>
+
+00:00:48.310 --> 00:00:48.320 align:start position:0%
+will work. You can see I have a bunch
+ 
+
+00:00:48.320 --> 00:00:50.069 align:start position:0%
+will work. You can see I have a bunch
+already<00:00:48.719><c> configured</c><00:00:49.120><c> and</c><00:00:49.360><c> what</c><00:00:49.520><c> I</c><00:00:49.680><c> want</c><00:00:49.760><c> to</c><00:00:49.920><c> do</c>
+
+00:00:50.069 --> 00:00:50.079 align:start position:0%
+already configured and what I want to do
+ 
+
+00:00:50.079 --> 00:00:54.549 align:start position:0%
+already configured and what I want to do
+here<00:00:50.320><c> is</c><00:00:50.719><c> add</c><00:00:51.039><c> a</c><00:00:51.440><c> new</c><00:00:51.600><c> one.</c><00:00:52.719><c> So,</c><00:00:53.199><c> I'm</c><00:00:53.520><c> going</c><00:00:53.760><c> to</c>
+
+00:00:54.549 --> 00:00:54.559 align:start position:0%
+here is add a new one. So, I'm going to
+ 
+
+00:00:54.559 --> 00:00:56.389 align:start position:0%
+here is add a new one. So, I'm going to
+get<00:00:54.719><c> the</c><00:00:54.960><c> JSON</c><00:00:55.360><c> for</c><00:00:55.520><c> it,</c><00:00:55.680><c> which</c><00:00:55.840><c> I</c><00:00:56.000><c> have</c><00:00:56.160><c> saved</c>
+
+00:00:56.389 --> 00:00:56.399 align:start position:0%
+get the JSON for it, which I have saved
+ 
+
+00:00:56.399 --> 00:01:00.950 align:start position:0%
+get the JSON for it, which I have saved
+in<00:00:56.559><c> a</c><00:00:56.719><c> file</c><00:00:57.199><c> to</c><00:00:57.440><c> open</c><00:00:57.600><c> a</c><00:00:57.840><c> file</c><00:00:58.960><c> in</c><00:00:59.199><c> Warp.</c><00:00:59.840><c> Um,</c><00:01:00.800><c> I</c>
+
+00:01:00.950 --> 00:01:00.960 align:start position:0%
+in a file to open a file in Warp. Um, I
+ 
+
+00:01:00.960 --> 00:01:02.709 align:start position:0%
+in a file to open a file in Warp. Um, I
+have<00:01:01.120><c> this</c><00:01:01.280><c> linear</c><00:01:01.680><c> MCP</c><00:01:02.079><c> JSON</c><00:01:02.399><c> file.</c><00:01:02.640><c> I'm</c>
+
+00:01:02.709 --> 00:01:02.719 align:start position:0%
+have this linear MCP JSON file. I'm
+ 
+
+00:01:02.719 --> 00:01:04.149 align:start position:0%
+have this linear MCP JSON file. I'm
+going to<00:01:02.800><c> hit</c><00:01:03.039><c> command</c><00:01:03.359><c> O.</c><00:01:03.760><c> I'm</c><00:01:03.920><c> going</c><00:01:04.000><c> to</c><00:01:04.080><c> go</c>
+
+00:01:04.149 --> 00:01:04.159 align:start position:0%
+going to hit command O. I'm going to go
+ 
+
+00:01:04.159 --> 00:01:05.830 align:start position:0%
+going to hit command O. I'm going to go
+ahead<00:01:04.320><c> and</c><00:01:04.479><c> open</c><00:01:04.640><c> it</c><00:01:04.879><c> up.</c><00:01:05.280><c> Here's</c><00:01:05.519><c> what</c><00:01:05.680><c> the</c>
+
+00:01:05.830 --> 00:01:05.840 align:start position:0%
+ahead and open it up. Here's what the
+ 
+
+00:01:05.840 --> 00:01:07.830 align:start position:0%
+ahead and open it up. Here's what the
+JSON<00:01:06.400><c> looks</c><00:01:06.560><c> like</c><00:01:06.720><c> for</c><00:01:06.960><c> it.</c><00:01:07.439><c> I'm</c><00:01:07.680><c> going</c><00:01:07.760><c> to</c>
+
+00:01:07.830 --> 00:01:07.840 align:start position:0%
+JSON looks like for it. I'm going to
+ 
+
+00:01:07.840 --> 00:01:11.030 align:start position:0%
+JSON looks like for it. I'm going to
+click<00:01:08.080><c> add</c><00:01:08.400><c> over</c><00:01:08.720><c> here</c><00:01:09.280><c> and</c><00:01:09.520><c> just</c><00:01:09.840><c> copy</c><00:01:10.400><c> paste</c>
+
+00:01:11.030 --> 00:01:11.040 align:start position:0%
+click add over here and just copy paste
+ 
+
+00:01:11.040 --> 00:01:13.910 align:start position:0%
+click add over here and just copy paste
+this<00:01:11.439><c> in.</c>
+
+00:01:13.910 --> 00:01:13.920 align:start position:0%
+this in.
+ 
+
+00:01:13.920 --> 00:01:17.429 align:start position:0%
+this in.
+Click<00:01:14.320><c> save.</c><00:01:15.600><c> This</c><00:01:15.920><c> will</c><00:01:16.479><c> save</c><00:01:16.799><c> the</c><00:01:17.040><c> server</c>
+
+00:01:17.429 --> 00:01:17.439 align:start position:0%
+Click save. This will save the server
+ 
+
+00:01:17.439 --> 00:01:19.590 align:start position:0%
+Click save. This will save the server
+and<00:01:17.680><c> it</c><00:01:17.920><c> will</c><00:01:18.080><c> also</c><00:01:18.400><c> start</c><00:01:18.640><c> it.</c><00:01:19.119><c> You</c><00:01:19.360><c> can</c><00:01:19.439><c> see</c>
+
+00:01:19.590 --> 00:01:19.600 align:start position:0%
+and it will also start it. You can see
+ 
+
+00:01:19.600 --> 00:01:21.590 align:start position:0%
+and it will also start it. You can see
+now<00:01:19.759><c> I</c><00:01:20.000><c> have</c><00:01:20.080><c> the</c><00:01:20.240><c> linear</c><00:01:20.640><c> MCP</c><00:01:21.200><c> server</c>
+
+00:01:21.590 --> 00:01:21.600 align:start position:0%
+now I have the linear MCP server
+ 
+
+00:01:21.600 --> 00:01:23.990 align:start position:0%
+now I have the linear MCP server
+running.<00:01:22.159><c> So</c><00:01:22.320><c> let</c><00:01:22.479><c> me</c><00:01:22.640><c> go</c><00:01:22.799><c> ahead</c><00:01:22.960><c> and</c><00:01:23.680><c> close</c>
+
+00:01:23.990 --> 00:01:24.000 align:start position:0%
+running. So let me go ahead and close
+ 
+
+00:01:24.000 --> 00:01:26.149 align:start position:0%
+running. So let me go ahead and close
+this<00:01:24.479><c> and</c><00:01:24.799><c> go</c><00:01:24.960><c> ahead</c><00:01:25.119><c> and</c><00:01:25.360><c> try</c><00:01:25.600><c> that</c><00:01:25.920><c> same</c>
+
+00:01:26.149 --> 00:01:26.159 align:start position:0%
+this and go ahead and try that same
+ 
+
+00:01:26.159 --> 00:01:29.350 align:start position:0%
+this and go ahead and try that same
+query<00:01:26.880><c> and</c><00:01:27.119><c> it</c><00:01:27.360><c> should</c><00:01:27.520><c> be</c><00:01:27.680><c> able</c><00:01:27.920><c> now</c><00:01:28.479><c> to</c><00:01:29.119><c> use</c>
+
+00:01:29.350 --> 00:01:29.360 align:start position:0%
+query and it should be able now to use
+ 
+
+00:01:29.360 --> 00:01:31.749 align:start position:0%
+query and it should be able now to use
+MCP<00:01:30.000><c> to</c><00:01:30.159><c> answer</c><00:01:30.400><c> it</c><00:01:30.560><c> for</c><00:01:30.799><c> me.</c><00:01:31.040><c> So</c><00:01:31.280><c> let</c><00:01:31.439><c> me</c><00:01:31.600><c> move</c>
+
+00:01:31.749 --> 00:01:31.759 align:start position:0%
+MCP to answer it for me. So let me move
+ 
+
+00:01:31.759 --> 00:01:35.590 align:start position:0%
+MCP to answer it for me. So let me move
+my<00:01:32.000><c> face.</c>
+
+00:01:35.590 --> 00:01:35.600 align:start position:0%
+ 
+ 
+
+00:01:35.600 --> 00:01:38.390 align:start position:0%
+ 
+So<00:01:36.320><c> you</c><00:01:36.479><c> can</c><00:01:36.640><c> see</c><00:01:36.799><c> then</c><00:01:37.119><c> it's</c><00:01:37.439><c> calling</c><00:01:38.159><c> uh</c><00:01:38.240><c> the</c>
+
+00:01:38.390 --> 00:01:38.400 align:start position:0%
+So you can see then it's calling uh the
+ 
+
+00:01:38.400 --> 00:01:41.429 align:start position:0%
+So you can see then it's calling uh the
+MCP<00:01:38.960><c> tool.</c><00:01:40.400><c> If</c><00:01:40.640><c> you</c><00:01:40.720><c> want</c><00:01:40.799><c> to</c><00:01:40.960><c> see</c><00:01:41.040><c> the</c><00:01:41.200><c> actual</c>
+
+00:01:41.429 --> 00:01:41.439 align:start position:0%
+MCP tool. If you want to see the actual
+ 
+
+00:01:41.439 --> 00:01:43.270 align:start position:0%
+MCP tool. If you want to see the actual
+raw<00:01:41.759><c> response</c><00:01:42.159><c> as</c><00:01:42.400><c> always</c><00:01:42.560><c> in</c><00:01:42.720><c> warp</c><00:01:43.040><c> you</c><00:01:43.200><c> can</c>
+
+00:01:43.270 --> 00:01:43.280 align:start position:0%
+raw response as always in warp you can
+ 
+
+00:01:43.280 --> 00:01:45.590 align:start position:0%
+raw response as always in warp you can
+click<00:01:43.439><c> in</c><00:01:44.159><c> see</c><00:01:44.400><c> it.</c><00:01:44.640><c> This</c><00:01:44.880><c> didn't</c><00:01:45.119><c> work.</c>
+
+00:01:45.590 --> 00:01:45.600 align:start position:0%
+click in see it. This didn't work.
+ 
+
+00:01:45.600 --> 00:01:49.030 align:start position:0%
+click in see it. This didn't work.
+Didn't<00:01:45.840><c> find</c><00:01:46.079><c> me.</c><00:01:46.479><c> So,</c><00:01:46.640><c> let's</c><00:01:46.880><c> see</c><00:01:47.040><c> if</c><00:01:47.280><c> it</c><00:01:47.439><c> can</c>
+
+00:01:49.030 --> 00:01:49.040 align:start position:0%
+Didn't find me. So, let's see if it can
+ 
+
+00:01:49.040 --> 00:01:51.749 align:start position:0%
+Didn't find me. So, let's see if it can
+Oh,<00:01:49.439><c> found</c><00:01:50.479><c> another</c><00:01:50.799><c> person</c><00:01:51.119><c> on</c><00:01:51.280><c> my</c><00:01:51.520><c> team,</c>
+
+00:01:51.749 --> 00:01:51.759 align:start position:0%
+Oh, found another person on my team,
+ 
+
+00:01:51.759 --> 00:01:56.710 align:start position:0%
+Oh, found another person on my team,
+which<00:01:52.000><c> is</c><00:01:52.159><c> fine.</c>
+
+00:01:56.710 --> 00:01:56.720 align:start position:0%
+ 
+ 
+
+00:01:56.720 --> 00:01:58.149 align:start position:0%
+ 
+I<00:01:56.960><c> wonder</c><00:01:57.119><c> why</c><00:01:57.280><c> it</c><00:01:57.520><c> didn't</c><00:01:57.680><c> find</c><00:01:57.759><c> that.</c><00:01:58.000><c> Maybe</c>
+
+00:01:58.149 --> 00:01:58.159 align:start position:0%
+I wonder why it didn't find that. Maybe
+ 
+
+00:01:58.159 --> 00:02:00.069 align:start position:0%
+I wonder why it didn't find that. Maybe
+because<00:01:58.320><c> I</c><00:01:58.479><c> signed</c><00:01:58.719><c> up</c><00:01:59.439><c> with</c><00:01:59.680><c> a</c><00:01:59.840><c> different</c>
+
+00:02:00.069 --> 00:02:00.079 align:start position:0%
+because I signed up with a different
+ 
+
+00:02:00.079 --> 00:02:06.389 align:start position:0%
+because I signed up with a different
+address.
+
+00:02:06.389 --> 00:02:06.399 align:start position:0%
+ 
+ 
+
+00:02:06.399 --> 00:02:10.309 align:start position:0%
+ 
+Ah,<00:02:06.640><c> there</c><00:02:06.799><c> we</c><00:02:07.040><c> go.</c><00:02:08.160><c> Found</c><00:02:08.399><c> the</c><00:02:08.640><c> correct</c><00:02:08.879><c> user.</c>
+
+00:02:10.309 --> 00:02:10.319 align:start position:0%
+Ah, there we go. Found the correct user.
+ 
+
+00:02:10.319 --> 00:02:11.670 align:start position:0%
+Ah, there we go. Found the correct user.
+One<00:02:10.479><c> of</c><00:02:10.560><c> the</c><00:02:10.720><c> cool</c><00:02:10.879><c> things</c><00:02:11.039><c> about</c><00:02:11.200><c> our</c><00:02:11.440><c> agent</c>
+
+00:02:11.670 --> 00:02:11.680 align:start position:0%
+One of the cool things about our agent
+ 
+
+00:02:11.680 --> 00:02:13.190 align:start position:0%
+One of the cool things about our agent
+is<00:02:11.840><c> it's</c><00:02:12.080><c> very</c><00:02:12.239><c> good</c><00:02:12.319><c> at</c><00:02:12.480><c> selfcorrecting.</c>
+
+00:02:13.190 --> 00:02:13.200 align:start position:0%
+is it's very good at selfcorrecting.
+ 
+
+00:02:13.200 --> 00:02:15.030 align:start position:0%
+is it's very good at selfcorrecting.
+here.<00:02:14.000><c> It's</c><00:02:14.160><c> going</c><00:02:14.319><c> to</c><00:02:14.400><c> grab</c><00:02:14.640><c> all</c><00:02:14.800><c> of</c><00:02:14.879><c> my</c>
+
+00:02:15.030 --> 00:02:15.040 align:start position:0%
+here. It's going to grab all of my
+ 
+
+00:02:15.040 --> 00:02:19.110 align:start position:0%
+here. It's going to grab all of my
+issues.<00:02:16.239><c> There</c><00:02:16.480><c> might</c><00:02:16.640><c> be</c><00:02:16.800><c> quite</c><00:02:16.959><c> a</c><00:02:17.200><c> few.</c>
+
+00:02:19.110 --> 00:02:19.120 align:start position:0%
+issues. There might be quite a few.
+ 
+
+00:02:19.120 --> 00:02:23.110 align:start position:0%
+issues. There might be quite a few.
+I<00:02:19.440><c> can</c><00:02:19.520><c> look</c><00:02:19.680><c> in.</c><00:02:20.480><c> Oh</c><00:02:20.720><c> boy,</c><00:02:21.440><c> there's</c><00:02:21.680><c> a</c><00:02:21.840><c> lot.</c>
+
+00:02:23.110 --> 00:02:23.120 align:start position:0%
+I can look in. Oh boy, there's a lot.
+ 
+
+00:02:23.120 --> 00:02:25.190 align:start position:0%
+I can look in. Oh boy, there's a lot.
+Okay,<00:02:23.520><c> so</c><00:02:23.760><c> here</c><00:02:23.920><c> it</c><00:02:24.080><c> is.</c><00:02:24.319><c> So,</c><00:02:24.480><c> very</c><00:02:24.800><c> easy</c><00:02:24.959><c> to</c>
+
+00:02:25.190 --> 00:02:25.200 align:start position:0%
+Okay, so here it is. So, very easy to
+ 
+
+00:02:25.200 --> 00:02:26.790 align:start position:0%
+Okay, so here it is. So, very easy to
+do.<00:02:25.520><c> Uh,</c><00:02:25.840><c> a</c><00:02:26.080><c> couple</c><00:02:26.160><c> other</c><00:02:26.400><c> things</c><00:02:26.480><c> to</c><00:02:26.640><c> call</c>
+
+00:02:26.790 --> 00:02:26.800 align:start position:0%
+do. Uh, a couple other things to call
+ 
+
+00:02:26.800 --> 00:02:28.550 align:start position:0%
+do. Uh, a couple other things to call
+out.<00:02:27.040><c> You</c><00:02:27.200><c> can</c><00:02:27.280><c> always</c><00:02:27.440><c> stop</c><00:02:27.680><c> the</c><00:02:27.840><c> MCP</c><00:02:28.319><c> server</c>
+
+00:02:28.550 --> 00:02:28.560 align:start position:0%
+out. You can always stop the MCP server
+ 
+
+00:02:28.560 --> 00:02:30.229 align:start position:0%
+out. You can always stop the MCP server
+by<00:02:28.720><c> hitting</c><00:02:28.959><c> stop.</c><00:02:29.360><c> You</c><00:02:29.520><c> can</c><00:02:29.599><c> edit</c><00:02:29.920><c> it</c><00:02:30.080><c> by</c>
+
+00:02:30.229 --> 00:02:30.239 align:start position:0%
+by hitting stop. You can edit it by
+ 
+
+00:02:30.239 --> 00:02:32.390 align:start position:0%
+by hitting stop. You can edit it by
+clicking<00:02:30.879><c> edit.</c><00:02:31.440><c> If</c><00:02:31.599><c> you</c><00:02:31.760><c> have</c><00:02:31.840><c> some</c><00:02:32.160><c> error</c>
+
+00:02:32.390 --> 00:02:32.400 align:start position:0%
+clicking edit. If you have some error
+ 
+
+00:02:32.400 --> 00:02:34.229 align:start position:0%
+clicking edit. If you have some error
+with<00:02:32.560><c> it</c><00:02:32.720><c> starting,</c><00:02:33.360><c> one</c><00:02:33.599><c> thing</c><00:02:33.680><c> that's</c><00:02:34.000><c> very</c>
+
+00:02:34.229 --> 00:02:34.239 align:start position:0%
+with it starting, one thing that's very
+ 
+
+00:02:34.239 --> 00:02:36.070 align:start position:0%
+with it starting, one thing that's very
+cool<00:02:34.400><c> and</c><00:02:34.560><c> useful</c><00:02:34.800><c> to</c><00:02:35.040><c> do</c><00:02:35.200><c> in</c><00:02:35.360><c> Warp</c><00:02:35.680><c> is</c><00:02:35.840><c> you</c><00:02:36.000><c> can</c>
+
+00:02:36.070 --> 00:02:36.080 align:start position:0%
+cool and useful to do in Warp is you can
+ 
+
+00:02:36.080 --> 00:02:38.309 align:start position:0%
+cool and useful to do in Warp is you can
+view<00:02:36.239><c> the</c><00:02:36.400><c> raw</c><00:02:36.640><c> logs.</c><00:02:37.440><c> So,</c><00:02:37.680><c> this</c><00:02:37.920><c> just</c><00:02:38.080><c> starts</c>
+
+00:02:38.309 --> 00:02:38.319 align:start position:0%
+view the raw logs. So, this just starts
+ 
+
+00:02:38.319 --> 00:02:39.830 align:start position:0%
+view the raw logs. So, this just starts
+up<00:02:38.480><c> a</c><00:02:38.640><c> terminal</c><00:02:38.959><c> session</c><00:02:39.280><c> that</c><00:02:39.440><c> tails</c><00:02:39.760><c> the</c>
+
+00:02:39.830 --> 00:02:39.840 align:start position:0%
+up a terminal session that tails the
+ 
+
+00:02:39.840 --> 00:02:43.110 align:start position:0%
+up a terminal session that tails the
+logs<00:02:40.080><c> of</c><00:02:40.239><c> the</c><00:02:40.319><c> MCP</c><00:02:40.879><c> server.</c><00:02:41.840><c> Uh</c><00:02:42.640><c> in</c><00:02:42.800><c> general,</c>
+
+00:02:43.110 --> 00:02:43.120 align:start position:0%
+logs of the MCP server. Uh in general,
+ 
+
+00:02:43.120 --> 00:02:45.509 align:start position:0%
+logs of the MCP server. Uh in general,
+these<00:02:43.360><c> MCP</c><00:02:43.920><c> servers</c><00:02:44.319><c> will</c><00:02:44.560><c> run</c><00:02:44.879><c> until</c><00:02:45.280><c> you</c>
+
+00:02:45.509 --> 00:02:45.519 align:start position:0%
+these MCP servers will run until you
+ 
+
+00:02:45.519 --> 00:02:47.830 align:start position:0%
+these MCP servers will run until you
+stop<00:02:45.840><c> them.</c><00:02:46.560><c> Uh</c><00:02:46.879><c> including</c><00:02:47.440><c> they</c><00:02:47.680><c> will</c>
+
+00:02:47.830 --> 00:02:47.840 align:start position:0%
+stop them. Uh including they will
+ 
+
+00:02:47.840 --> 00:02:49.910 align:start position:0%
+stop them. Uh including they will
+maintain<00:02:48.239><c> their</c><00:02:48.480><c> running</c><00:02:48.800><c> state</c><00:02:49.440><c> uh</c><00:02:49.519><c> when</c><00:02:49.760><c> you</c>
+
+00:02:49.910 --> 00:02:49.920 align:start position:0%
+maintain their running state uh when you
+ 
+
+00:02:49.920 --> 00:02:52.550 align:start position:0%
+maintain their running state uh when you
+close<00:02:50.239><c> Warp</c><00:02:50.560><c> and</c><00:02:50.800><c> reopen</c><00:02:51.120><c> it.</c><00:02:51.680><c> So</c><00:02:52.160><c> have</c><00:02:52.319><c> a</c><00:02:52.400><c> good</c>
+
+00:02:52.550 --> 00:02:52.560 align:start position:0%
+close Warp and reopen it. So have a good
+ 
+
+00:02:52.560 --> 00:02:56.080 align:start position:0%
+close Warp and reopen it. So have a good
+time<00:02:52.720><c> setting</c><00:02:52.959><c> up</c><00:02:53.120><c> MCP.</c>
+

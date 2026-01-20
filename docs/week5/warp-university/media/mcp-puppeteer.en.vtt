@@ -1,0 +1,336 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.149 align:start position:0%
+ 
+The<00:00:00.240><c> Puppet</c><00:00:00.560><c> 2</c><00:00:00.800><c> MCP</c><00:00:01.199><c> server</c><00:00:01.520><c> is</c><00:00:01.760><c> great</c><00:00:01.920><c> for</c>
+
+00:00:02.149 --> 00:00:02.159 align:start position:0%
+The Puppet 2 MCP server is great for
+ 
+
+00:00:02.159 --> 00:00:04.470 align:start position:0%
+The Puppet 2 MCP server is great for
+automating<00:00:02.720><c> anything</c><00:00:03.280><c> in</c><00:00:03.520><c> the</c><00:00:03.760><c> browser.</c><00:00:04.319><c> So</c>
+
+00:00:04.470 --> 00:00:04.480 align:start position:0%
+automating anything in the browser. So
+ 
+
+00:00:04.480 --> 00:00:06.309 align:start position:0%
+automating anything in the browser. So
+to<00:00:04.640><c> set</c><00:00:04.720><c> it</c><00:00:04.880><c> up,</c><00:00:05.120><c> open</c><00:00:05.279><c> up</c><00:00:05.520><c> Warps</c><00:00:06.000><c> command</c>
+
+00:00:06.309 --> 00:00:06.319 align:start position:0%
+to set it up, open up Warps command
+ 
+
+00:00:06.319 --> 00:00:08.950 align:start position:0%
+to set it up, open up Warps command
+pallet,<00:00:06.799><c> type</c><00:00:06.960><c> in</c><00:00:07.120><c> MCP,</c><00:00:07.759><c> and</c><00:00:07.919><c> open</c><00:00:08.160><c> up</c><00:00:08.240><c> the</c><00:00:08.400><c> MCP</c>
+
+00:00:08.950 --> 00:00:08.960 align:start position:0%
+pallet, type in MCP, and open up the MCP
+ 
+
+00:00:08.960 --> 00:00:11.190 align:start position:0%
+pallet, type in MCP, and open up the MCP
+panel.<00:00:09.360><c> Click</c><00:00:09.599><c> add</c><00:00:09.840><c> and</c><00:00:10.080><c> paste</c><00:00:10.320><c> in</c><00:00:10.559><c> the</c><00:00:10.719><c> JSON</c>
+
+00:00:11.190 --> 00:00:11.200 align:start position:0%
+panel. Click add and paste in the JSON
+ 
+
+00:00:11.200 --> 00:00:13.190 align:start position:0%
+panel. Click add and paste in the JSON
+config<00:00:11.599><c> for</c><00:00:11.840><c> Puppeteer.</c><00:00:12.480><c> Hit</c><00:00:12.719><c> save,</c><00:00:13.040><c> and</c>
+
+00:00:13.190 --> 00:00:13.200 align:start position:0%
+config for Puppeteer. Hit save, and
+ 
+
+00:00:13.200 --> 00:00:14.950 align:start position:0%
+config for Puppeteer. Hit save, and
+you'll<00:00:13.440><c> see</c><00:00:13.599><c> endpoints</c><00:00:14.080><c> like</c><00:00:14.320><c> Puppeteer</c>
+
+00:00:14.950 --> 00:00:14.960 align:start position:0%
+you'll see endpoints like Puppeteer
+ 
+
+00:00:14.960 --> 00:00:16.790 align:start position:0%
+you'll see endpoints like Puppeteer
+navigate,<00:00:15.519><c> fill,</c><00:00:16.000><c> screenshot,</c><00:00:16.560><c> and</c>
+
+00:00:16.790 --> 00:00:16.800 align:start position:0%
+navigate, fill, screenshot, and
+ 
+
+00:00:16.800 --> 00:00:18.390 align:start position:0%
+navigate, fill, screenshot, and
+evaluate.<00:00:17.440><c> For</c><00:00:17.600><c> this</c><00:00:17.760><c> demo,</c><00:00:18.000><c> I'm</c><00:00:18.160><c> also</c><00:00:18.320><c> going</c>
+
+00:00:18.390 --> 00:00:18.400 align:start position:0%
+evaluate. For this demo, I'm also going
+ 
+
+00:00:18.400 --> 00:00:20.070 align:start position:0%
+evaluate. For this demo, I'm also going
+to<00:00:18.480><c> be</c><00:00:18.640><c> showing</c><00:00:18.800><c> off</c><00:00:18.960><c> Warp's</c><00:00:19.439><c> voice</c><00:00:19.680><c> input</c>
+
+00:00:20.070 --> 00:00:20.080 align:start position:0%
+to be showing off Warp's voice input
+ 
+
+00:00:20.080 --> 00:00:22.470 align:start position:0%
+to be showing off Warp's voice input
+feature.<00:00:20.560><c> So</c><00:00:20.800><c> I</c><00:00:20.960><c> can</c><00:00:21.119><c> hit</c><00:00:21.279><c> the</c><00:00:21.439><c> mic</c><00:00:21.920><c> icon</c><00:00:22.240><c> and</c>
+
+00:00:22.470 --> 00:00:22.480 align:start position:0%
+feature. So I can hit the mic icon and
+ 
+
+00:00:22.480 --> 00:00:25.109 align:start position:0%
+feature. So I can hit the mic icon and
+speak<00:00:22.720><c> my</c><00:00:22.960><c> prompt.</c><00:00:23.600><c> Can</c><00:00:23.840><c> you</c><00:00:24.160><c> go</c><00:00:24.320><c> to</c><00:00:24.480><c> Amazon,</c>
+
+00:00:25.109 --> 00:00:25.119 align:start position:0%
+speak my prompt. Can you go to Amazon,
+ 
+
+00:00:25.119 --> 00:00:27.269 align:start position:0%
+speak my prompt. Can you go to Amazon,
+search<00:00:25.359><c> for</c><00:00:25.760><c> white</c><00:00:26.080><c> t-shirt</c><00:00:26.560><c> woman,</c><00:00:26.960><c> scrape</c>
+
+00:00:27.269 --> 00:00:27.279 align:start position:0%
+search for white t-shirt woman, scrape
+ 
+
+00:00:27.279 --> 00:00:28.710 align:start position:0%
+search for white t-shirt woman, scrape
+the<00:00:27.439><c> results,</c><00:00:27.680><c> so</c><00:00:27.840><c> the</c><00:00:28.000><c> titles,</c><00:00:28.400><c> the</c><00:00:28.480><c> prices,</c>
+
+00:00:28.710 --> 00:00:28.720 align:start position:0%
+the results, so the titles, the prices,
+ 
+
+00:00:28.720 --> 00:00:30.070 align:start position:0%
+the results, so the titles, the prices,
+and<00:00:28.880><c> the</c><00:00:29.039><c> links,</c><00:00:29.279><c> and</c><00:00:29.439><c> then</c><00:00:29.599><c> open</c><00:00:29.840><c> each</c>
+
+00:00:30.070 --> 00:00:30.080 align:start position:0%
+and the links, and then open each
+ 
+
+00:00:30.080 --> 00:00:31.429 align:start position:0%
+and the links, and then open each
+product<00:00:30.320><c> link,</c><00:00:30.560><c> and</c><00:00:30.720><c> summarize</c><00:00:31.119><c> the</c><00:00:31.279><c> product</c>
+
+00:00:31.429 --> 00:00:31.439 align:start position:0%
+product link, and summarize the product
+ 
+
+00:00:31.439 --> 00:00:32.790 align:start position:0%
+product link, and summarize the product
+reviews,<00:00:31.760><c> and</c><00:00:31.920><c> then</c><00:00:32.079><c> I</c><00:00:32.239><c> want</c><00:00:32.320><c> you</c><00:00:32.399><c> to</c><00:00:32.559><c> give</c><00:00:32.640><c> me</c>
+
+00:00:32.790 --> 00:00:32.800 align:start position:0%
+reviews, and then I want you to give me
+ 
+
+00:00:32.800 --> 00:00:35.350 align:start position:0%
+reviews, and then I want you to give me
+a<00:00:33.040><c> recommendation</c><00:00:33.680><c> for</c><00:00:34.160><c> which</c><00:00:34.399><c> shirt</c><00:00:34.719><c> to</c><00:00:35.040><c> buy</c>
+
+00:00:35.350 --> 00:00:35.360 align:start position:0%
+a recommendation for which shirt to buy
+ 
+
+00:00:35.360 --> 00:00:37.510 align:start position:0%
+a recommendation for which shirt to buy
+based<00:00:35.680><c> on</c><00:00:35.920><c> the</c><00:00:36.239><c> combination</c><00:00:36.640><c> of</c><00:00:36.880><c> the</c><00:00:37.200><c> pricing</c>
+
+00:00:37.510 --> 00:00:37.520 align:start position:0%
+based on the combination of the pricing
+ 
+
+00:00:37.520 --> 00:00:39.510 align:start position:0%
+based on the combination of the pricing
+and<00:00:37.760><c> the</c><00:00:37.920><c> review</c><00:00:38.239><c> quality.</c><00:00:38.719><c> Warp</c><00:00:39.120><c> is</c><00:00:39.280><c> going</c><00:00:39.360><c> to</c>
+
+00:00:39.510 --> 00:00:39.520 align:start position:0%
+and the review quality. Warp is going to
+ 
+
+00:00:39.520 --> 00:00:41.110 align:start position:0%
+and the review quality. Warp is going to
+transcribe<00:00:40.000><c> what</c><00:00:40.239><c> I</c><00:00:40.399><c> just</c><00:00:40.559><c> said</c><00:00:40.800><c> using</c>
+
+00:00:41.110 --> 00:00:41.120 align:start position:0%
+transcribe what I just said using
+ 
+
+00:00:41.120 --> 00:00:43.350 align:start position:0%
+transcribe what I just said using
+Whisper.<00:00:41.680><c> Once</c><00:00:41.920><c> I</c><00:00:42.079><c> run</c><00:00:42.239><c> my</c><00:00:42.399><c> prompt,</c><00:00:42.800><c> Puppeteer</c>
+
+00:00:43.350 --> 00:00:43.360 align:start position:0%
+Whisper. Once I run my prompt, Puppeteer
+ 
+
+00:00:43.360 --> 00:00:45.030 align:start position:0%
+Whisper. Once I run my prompt, Puppeteer
+takes<00:00:43.600><c> over.</c><00:00:44.079><c> So,</c><00:00:44.239><c> it's</c><00:00:44.480><c> going</c><00:00:44.559><c> to</c><00:00:44.640><c> navigate</c>
+
+00:00:45.030 --> 00:00:45.040 align:start position:0%
+takes over. So, it's going to navigate
+ 
+
+00:00:45.040 --> 00:00:46.950 align:start position:0%
+takes over. So, it's going to navigate
+to<00:00:45.200><c> Amazon.</c><00:00:45.840><c> It's</c><00:00:46.079><c> going</c><00:00:46.160><c> to</c><00:00:46.320><c> find</c><00:00:46.480><c> and</c><00:00:46.719><c> fill</c>
+
+00:00:46.950 --> 00:00:46.960 align:start position:0%
+to Amazon. It's going to find and fill
+ 
+
+00:00:46.960 --> 00:00:48.950 align:start position:0%
+to Amazon. It's going to find and fill
+the<00:00:47.120><c> search</c><00:00:47.360><c> bar,</c><00:00:47.840><c> capture</c><00:00:48.239><c> product</c><00:00:48.640><c> data</c>
+
+00:00:48.950 --> 00:00:48.960 align:start position:0%
+the search bar, capture product data
+ 
+
+00:00:48.960 --> 00:00:50.790 align:start position:0%
+the search bar, capture product data
+using<00:00:49.360><c> screenshots</c><00:00:49.920><c> and</c><00:00:50.239><c> JavaScript</c>
+
+00:00:50.790 --> 00:00:50.800 align:start position:0%
+using screenshots and JavaScript
+ 
+
+00:00:50.800 --> 00:00:52.310 align:start position:0%
+using screenshots and JavaScript
+selectors.<00:00:51.520><c> And</c><00:00:51.600><c> then</c><00:00:51.760><c> it's</c><00:00:51.920><c> going</c><00:00:52.000><c> to</c><00:00:52.079><c> click</c>
+
+00:00:52.310 --> 00:00:52.320 align:start position:0%
+selectors. And then it's going to click
+ 
+
+00:00:52.320 --> 00:00:54.389 align:start position:0%
+selectors. And then it's going to click
+into<00:00:52.559><c> each</c><00:00:52.879><c> product</c><00:00:53.280><c> and</c><00:00:53.520><c> scrape</c><00:00:54.000><c> review</c>
+
+00:00:54.389 --> 00:00:54.399 align:start position:0%
+into each product and scrape review
+ 
+
+00:00:54.399 --> 00:00:56.150 align:start position:0%
+into each product and scrape review
+content.<00:00:55.039><c> You'll</c><00:00:55.199><c> see</c><00:00:55.360><c> I</c><00:00:55.520><c> have</c><00:00:55.600><c> Amazon</c><00:00:55.920><c> and</c>
+
+00:00:56.150 --> 00:00:56.160 align:start position:0%
+content. You'll see I have Amazon and
+ 
+
+00:00:56.160 --> 00:00:58.150 align:start position:0%
+content. You'll see I have Amazon and
+Warp<00:00:56.480><c> open</c><00:00:56.719><c> side</c><00:00:56.960><c> by</c><00:00:57.120><c> side</c><00:00:57.360><c> here.</c><00:00:57.680><c> I'm</c><00:00:57.920><c> not</c>
+
+00:00:58.150 --> 00:00:58.160 align:start position:0%
+Warp open side by side here. I'm not
+ 
+
+00:00:58.160 --> 00:01:00.069 align:start position:0%
+Warp open side by side here. I'm not
+touching<00:00:58.640><c> anything.</c><00:00:59.039><c> So,</c><00:00:59.280><c> Puppeteer</c><00:00:59.840><c> is</c>
+
+00:01:00.069 --> 00:01:00.079 align:start position:0%
+touching anything. So, Puppeteer is
+ 
+
+00:01:00.079 --> 00:01:02.389 align:start position:0%
+touching anything. So, Puppeteer is
+doing<00:01:00.320><c> this</c><00:01:00.559><c> entire</c><00:01:00.960><c> workflow</c><00:01:01.600><c> autonomously.</c>
+
+00:01:02.389 --> 00:01:02.399 align:start position:0%
+doing this entire workflow autonomously.
+ 
+
+00:01:02.399 --> 00:01:03.830 align:start position:0%
+doing this entire workflow autonomously.
+And<00:01:02.559><c> at</c><00:01:02.719><c> the</c><00:01:02.800><c> end,</c><00:01:02.960><c> it's</c><00:01:03.199><c> going</c><00:01:03.280><c> to</c><00:01:03.359><c> give</c><00:01:03.520><c> me</c><00:01:03.680><c> a</c>
+
+00:01:03.830 --> 00:01:03.840 align:start position:0%
+And at the end, it's going to give me a
+ 
+
+00:01:03.840 --> 00:01:05.509 align:start position:0%
+And at the end, it's going to give me a
+ranked<00:01:04.239><c> list</c><00:01:04.479><c> of</c><00:01:04.640><c> white</c><00:01:04.960><c> shirts</c><00:01:05.280><c> and</c>
+
+00:01:05.509 --> 00:01:05.519 align:start position:0%
+ranked list of white shirts and
+ 
+
+00:01:05.519 --> 00:01:07.510 align:start position:0%
+ranked list of white shirts and
+recommends<00:01:05.920><c> me</c><00:01:06.080><c> the</c><00:01:06.240><c> cozy</c><00:01:06.640><c> t-shirt,</c><00:01:07.119><c> which</c><00:01:07.360><c> is</c>
+
+00:01:07.510 --> 00:01:07.520 align:start position:0%
+recommends me the cozy t-shirt, which is
+ 
+
+00:01:07.520 --> 00:01:10.149 align:start position:0%
+recommends me the cozy t-shirt, which is
+eight<00:01:07.760><c> bucks,</c><00:01:08.159><c> 4.5</c><00:01:08.799><c> stars,</c><00:01:09.280><c> and</c><00:01:09.680><c> seems</c><00:01:10.000><c> to</c>
+
+00:01:10.149 --> 00:01:10.159 align:start position:0%
+eight bucks, 4.5 stars, and seems to
+ 
+
+00:01:10.159 --> 00:01:12.630 align:start position:0%
+eight bucks, 4.5 stars, and seems to
+have<00:01:10.400><c> good</c><00:01:10.640><c> fit</c><00:01:10.880><c> and</c><00:01:11.200><c> soft</c><00:01:11.520><c> fabric</c><00:01:12.000><c> from</c>
+
+00:01:12.630 --> 00:01:12.640 align:start position:0%
+have good fit and soft fabric from
+ 
+
+00:01:12.640 --> 00:01:14.630 align:start position:0%
+have good fit and soft fabric from
+customer<00:01:13.040><c> reviews.</c><00:01:13.360><c> So,</c><00:01:13.520><c> the</c><00:01:13.680><c> Puppeteer</c><00:01:14.159><c> MCP</c>
+
+00:01:14.630 --> 00:01:14.640 align:start position:0%
+customer reviews. So, the Puppeteer MCP
+ 
+
+00:01:14.640 --> 00:01:16.070 align:start position:0%
+customer reviews. So, the Puppeteer MCP
+is<00:01:14.799><c> perfect</c><00:01:14.960><c> for</c><00:01:15.200><c> any</c><00:01:15.439><c> kind</c><00:01:15.600><c> of</c><00:01:15.760><c> product</c>
+
+00:01:16.070 --> 00:01:16.080 align:start position:0%
+is perfect for any kind of product
+ 
+
+00:01:16.080 --> 00:01:17.910 align:start position:0%
+is perfect for any kind of product
+research,<00:01:16.560><c> competitive</c><00:01:17.119><c> analysis,</c><00:01:17.680><c> or</c>
+
+00:01:17.910 --> 00:01:17.920 align:start position:0%
+research, competitive analysis, or
+ 
+
+00:01:17.920 --> 00:01:19.830 align:start position:0%
+research, competitive analysis, or
+repetitive<00:01:18.560><c> web</c><00:01:18.799><c> scraping</c><00:01:19.200><c> that</c><00:01:19.439><c> you</c><00:01:19.680><c> don't</c>
+
+00:01:19.830 --> 00:01:19.840 align:start position:0%
+repetitive web scraping that you don't
+ 
+
+00:01:19.840 --> 00:01:22.799 align:start position:0%
+repetitive web scraping that you don't
+want<00:01:19.920><c> to</c><00:01:20.080><c> do</c><00:01:20.560><c> manually.</c>
+

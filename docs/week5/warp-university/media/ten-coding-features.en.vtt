@@ -1,0 +1,704 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.080 --> 00:00:02.070 align:start position:0%
+ 
+If<00:00:00.320><c> you</c><00:00:00.480><c> didn't</c><00:00:00.800><c> already</c><00:00:01.120><c> know,</c><00:00:01.439><c> you</c><00:00:01.680><c> can</c><00:00:01.760><c> code</c>
+
+00:00:02.070 --> 00:00:02.080 align:start position:0%
+If you didn't already know, you can code
+ 
+
+00:00:02.080 --> 00:00:03.990 align:start position:0%
+If you didn't already know, you can code
+directly<00:00:02.399><c> in</c><00:00:02.560><c> Warp.</c><00:00:03.040><c> We've</c><00:00:03.280><c> built</c><00:00:03.439><c> a</c><00:00:03.600><c> full</c><00:00:03.840><c> set</c>
+
+00:00:03.990 --> 00:00:04.000 align:start position:0%
+directly in Warp. We've built a full set
+ 
+
+00:00:04.000 --> 00:00:05.349 align:start position:0%
+directly in Warp. We've built a full set
+of<00:00:04.160><c> features</c><00:00:04.480><c> that</c><00:00:04.720><c> make</c><00:00:04.880><c> editing,</c>
+
+00:00:05.349 --> 00:00:05.359 align:start position:0%
+of features that make editing,
+ 
+
+00:00:05.359 --> 00:00:07.349 align:start position:0%
+of features that make editing,
+reviewing,<00:00:05.839><c> and</c><00:00:06.000><c> navigating</c><00:00:06.560><c> your</c><00:00:06.720><c> codebase</c>
+
+00:00:07.349 --> 00:00:07.359 align:start position:0%
+reviewing, and navigating your codebase
+ 
+
+00:00:07.359 --> 00:00:09.350 align:start position:0%
+reviewing, and navigating your codebase
+way<00:00:07.680><c> easier</c><00:00:08.000><c> than</c><00:00:08.160><c> in</c><00:00:08.400><c> a</c><00:00:08.559><c> traditional</c><00:00:08.960><c> dev</c>
+
+00:00:09.350 --> 00:00:09.360 align:start position:0%
+way easier than in a traditional dev
+ 
+
+00:00:09.360 --> 00:00:11.110 align:start position:0%
+way easier than in a traditional dev
+tool.<00:00:09.840><c> Let</c><00:00:10.000><c> me</c><00:00:10.160><c> show</c><00:00:10.240><c> you</c><00:00:10.400><c> the</c><00:00:10.639><c> 10</c><00:00:10.880><c> main</c>
+
+00:00:11.110 --> 00:00:11.120 align:start position:0%
+tool. Let me show you the 10 main
+ 
+
+00:00:11.120 --> 00:00:12.470 align:start position:0%
+tool. Let me show you the 10 main
+features<00:00:11.440><c> you'll</c><00:00:11.759><c> need</c><00:00:11.840><c> to</c><00:00:12.000><c> know</c><00:00:12.160><c> to</c><00:00:12.320><c> get</c>
+
+00:00:12.470 --> 00:00:12.480 align:start position:0%
+features you'll need to know to get
+ 
+
+00:00:12.480 --> 00:00:14.789 align:start position:0%
+features you'll need to know to get
+started.<00:00:13.120><c> One,</c><00:00:13.440><c> you</c><00:00:13.679><c> can</c><00:00:13.840><c> search</c><00:00:14.000><c> for</c><00:00:14.240><c> files.</c>
+
+00:00:14.789 --> 00:00:14.799 align:start position:0%
+started. One, you can search for files.
+ 
+
+00:00:14.799 --> 00:00:16.390 align:start position:0%
+started. One, you can search for files.
+So,<00:00:14.960><c> you</c><00:00:15.120><c> can</c><00:00:15.280><c> open</c><00:00:15.440><c> up</c><00:00:15.599><c> the</c><00:00:15.759><c> command</c><00:00:16.080><c> pallet</c>
+
+00:00:16.390 --> 00:00:16.400 align:start position:0%
+So, you can open up the command pallet
+ 
+
+00:00:16.400 --> 00:00:18.950 align:start position:0%
+So, you can open up the command pallet
+with<00:00:16.640><c> command</c><00:00:17.039><c> P</c><00:00:17.279><c> on</c><00:00:17.440><c> Mac</c><00:00:17.760><c> or</c><00:00:18.080><c> control</c><00:00:18.400><c> shiftP</c>
+
+00:00:18.950 --> 00:00:18.960 align:start position:0%
+with command P on Mac or control shiftP
+ 
+
+00:00:18.960 --> 00:00:21.029 align:start position:0%
+with command P on Mac or control shiftP
+on<00:00:19.119><c> Windows</c><00:00:19.439><c> or</c><00:00:19.680><c> Linux.</c><00:00:20.160><c> From</c><00:00:20.400><c> there,</c><00:00:20.720><c> press</c>
+
+00:00:21.029 --> 00:00:21.039 align:start position:0%
+on Windows or Linux. From there, press
+ 
+
+00:00:21.039 --> 00:00:23.990 align:start position:0%
+on Windows or Linux. From there, press
+command<00:00:21.439><c> O</c><00:00:21.680><c> for</c><00:00:21.920><c> Mac</c><00:00:22.320><c> or</c><00:00:22.720><c> control</c><00:00:23.119><c> O</c><00:00:23.359><c> for</c><00:00:23.680><c> Linux</c>
+
+00:00:23.990 --> 00:00:24.000 align:start position:0%
+command O for Mac or control O for Linux
+ 
+
+00:00:24.000 --> 00:00:25.750 align:start position:0%
+command O for Mac or control O for Linux
+and<00:00:24.160><c> Windows</c><00:00:24.560><c> to</c><00:00:24.800><c> activate</c><00:00:25.119><c> the</c><00:00:25.279><c> file</c><00:00:25.519><c> search</c>
+
+00:00:25.750 --> 00:00:25.760 align:start position:0%
+and Windows to activate the file search
+ 
+
+00:00:25.760 --> 00:00:28.070 align:start position:0%
+and Windows to activate the file search
+mode.<00:00:26.320><c> Now,</c><00:00:26.560><c> I</c><00:00:26.800><c> can</c><00:00:26.960><c> search</c><00:00:27.199><c> and</c><00:00:27.439><c> pull</c><00:00:27.599><c> up</c><00:00:27.760><c> any</c>
+
+00:00:28.070 --> 00:00:28.080 align:start position:0%
+mode. Now, I can search and pull up any
+ 
+
+00:00:28.080 --> 00:00:30.150 align:start position:0%
+mode. Now, I can search and pull up any
+file<00:00:28.400><c> from</c><00:00:28.720><c> this</c><00:00:28.960><c> interface.</c><00:00:29.599><c> This</c><00:00:29.840><c> makes</c><00:00:30.000><c> it</c>
+
+00:00:30.150 --> 00:00:30.160 align:start position:0%
+file from this interface. This makes it
+ 
+
+00:00:30.160 --> 00:00:32.470 align:start position:0%
+file from this interface. This makes it
+super<00:00:30.480><c> simple</c><00:00:30.800><c> to</c><00:00:31.119><c> jump</c><00:00:31.439><c> between</c><00:00:31.760><c> files</c><00:00:32.079><c> in</c><00:00:32.239><c> my</c>
+
+00:00:32.470 --> 00:00:32.480 align:start position:0%
+super simple to jump between files in my
+ 
+
+00:00:32.480 --> 00:00:34.470 align:start position:0%
+super simple to jump between files in my
+project<00:00:32.960><c> without</c><00:00:33.360><c> having</c><00:00:33.600><c> to</c><00:00:33.760><c> cd</c><00:00:34.239><c> into</c>
+
+00:00:34.470 --> 00:00:34.480 align:start position:0%
+project without having to cd into
+ 
+
+00:00:34.480 --> 00:00:36.630 align:start position:0%
+project without having to cd into
+directories<00:00:35.040><c> or</c><00:00:35.280><c> remember</c><00:00:35.600><c> full</c><00:00:35.920><c> paths.</c><00:00:36.480><c> Two</c>
+
+00:00:36.630 --> 00:00:36.640 align:start position:0%
+directories or remember full paths. Two
+ 
+
+00:00:36.640 --> 00:00:38.709 align:start position:0%
+directories or remember full paths. Two
+is<00:00:36.880><c> that</c><00:00:36.960><c> we</c><00:00:37.120><c> have</c><00:00:37.200><c> a</c><00:00:37.360><c> tabbed</c><00:00:37.840><c> file</c><00:00:38.079><c> viewer.</c>
+
+00:00:38.709 --> 00:00:38.719 align:start position:0%
+is that we have a tabbed file viewer.
+ 
+
+00:00:38.719 --> 00:00:40.709 align:start position:0%
+is that we have a tabbed file viewer.
+When<00:00:38.960><c> you</c><00:00:39.120><c> open</c><00:00:39.360><c> files,</c><00:00:39.840><c> Warp</c><00:00:40.239><c> shows</c><00:00:40.480><c> them</c><00:00:40.559><c> in</c>
+
+00:00:40.709 --> 00:00:40.719 align:start position:0%
+When you open files, Warp shows them in
+ 
+
+00:00:40.719 --> 00:00:42.950 align:start position:0%
+When you open files, Warp shows them in
+a<00:00:40.879><c> tabbed</c><00:00:41.280><c> view.</c><00:00:41.760><c> This</c><00:00:42.000><c> avoids</c><00:00:42.399><c> the</c><00:00:42.640><c> clutter</c>
+
+00:00:42.950 --> 00:00:42.960 align:start position:0%
+a tabbed view. This avoids the clutter
+ 
+
+00:00:42.960 --> 00:00:45.350 align:start position:0%
+a tabbed view. This avoids the clutter
+of<00:00:43.200><c> split</c><00:00:43.520><c> panes</c><00:00:43.840><c> that</c><00:00:44.000><c> eat</c><00:00:44.239><c> up</c><00:00:44.480><c> screen</c><00:00:44.719><c> space</c>
+
+00:00:45.350 --> 00:00:45.360 align:start position:0%
+of split panes that eat up screen space
+ 
+
+00:00:45.360 --> 00:00:47.029 align:start position:0%
+of split panes that eat up screen space
+while<00:00:45.600><c> still</c><00:00:45.840><c> letting</c><00:00:46.079><c> you</c><00:00:46.239><c> quickly</c><00:00:46.640><c> swap</c>
+
+00:00:47.029 --> 00:00:47.039 align:start position:0%
+while still letting you quickly swap
+ 
+
+00:00:47.039 --> 00:00:49.190 align:start position:0%
+while still letting you quickly swap
+between<00:00:47.360><c> multiple</c><00:00:47.840><c> open</c><00:00:48.160><c> files.</c><00:00:48.719><c> Third</c><00:00:49.039><c> is</c>
+
+00:00:49.190 --> 00:00:49.200 align:start position:0%
+between multiple open files. Third is
+ 
+
+00:00:49.200 --> 00:00:51.350 align:start position:0%
+between multiple open files. Third is
+that<00:00:49.360><c> we</c><00:00:49.520><c> have</c><00:00:49.680><c> full</c><00:00:50.000><c> editor</c><00:00:50.480><c> support,</c><00:00:51.039><c> so</c><00:00:51.200><c> you</c>
+
+00:00:51.350 --> 00:00:51.360 align:start position:0%
+that we have full editor support, so you
+ 
+
+00:00:51.360 --> 00:00:53.189 align:start position:0%
+that we have full editor support, so you
+can<00:00:51.520><c> literally</c><00:00:51.920><c> type</c><00:00:52.160><c> and</c><00:00:52.320><c> edit</c><00:00:52.640><c> code</c><00:00:52.879><c> inside</c>
+
+00:00:53.189 --> 00:00:53.199 align:start position:0%
+can literally type and edit code inside
+ 
+
+00:00:53.199 --> 00:00:55.350 align:start position:0%
+can literally type and edit code inside
+of<00:00:53.360><c> Warp</c><00:00:53.760><c> like</c><00:00:53.920><c> you</c><00:00:54.079><c> would</c><00:00:54.399><c> any</c><00:00:54.719><c> other</c><00:00:54.960><c> modern</c>
+
+00:00:55.350 --> 00:00:55.360 align:start position:0%
+of Warp like you would any other modern
+ 
+
+00:00:55.360 --> 00:00:57.270 align:start position:0%
+of Warp like you would any other modern
+editor.<00:00:55.920><c> You</c><00:00:56.079><c> don't</c><00:00:56.239><c> need</c><00:00:56.320><c> to</c><00:00:56.480><c> memorize</c><00:00:56.960><c> Vim</c>
+
+00:00:57.270 --> 00:00:57.280 align:start position:0%
+editor. You don't need to memorize Vim
+ 
+
+00:00:57.280 --> 00:00:59.430 align:start position:0%
+editor. You don't need to memorize Vim
+shortcuts<00:00:57.760><c> to</c><00:00:57.920><c> do</c><00:00:58.079><c> this.</c><00:00:58.320><c> just</c><00:00:58.640><c> click</c><00:00:58.879><c> around,</c>
+
+00:00:59.430 --> 00:00:59.440 align:start position:0%
+shortcuts to do this. just click around,
+ 
+
+00:00:59.440 --> 00:01:01.750 align:start position:0%
+shortcuts to do this. just click around,
+highlight<00:00:59.920><c> text,</c><00:01:00.480><c> use,</c><00:01:00.719><c> copy,</c><00:01:01.120><c> paste,</c><00:01:01.359><c> or</c><00:01:01.600><c> any</c>
+
+00:01:01.750 --> 00:01:01.760 align:start position:0%
+highlight text, use, copy, paste, or any
+ 
+
+00:01:01.760 --> 00:01:03.349 align:start position:0%
+highlight text, use, copy, paste, or any
+of<00:01:01.840><c> the</c><00:01:02.000><c> normal</c><00:01:02.320><c> keyboard</c><00:01:02.719><c> shortcuts</c><00:01:03.199><c> that</c>
+
+00:01:03.349 --> 00:01:03.359 align:start position:0%
+of the normal keyboard shortcuts that
+ 
+
+00:01:03.359 --> 00:01:05.270 align:start position:0%
+of the normal keyboard shortcuts that
+you're<00:01:03.520><c> used</c><00:01:03.680><c> to.</c><00:01:04.080><c> Fourth</c><00:01:04.400><c> is</c><00:01:04.559><c> that</c><00:01:04.720><c> we</c><00:01:04.960><c> also</c>
+
+00:01:05.270 --> 00:01:05.280 align:start position:0%
+you're used to. Fourth is that we also
+ 
+
+00:01:05.280 --> 00:01:06.950 align:start position:0%
+you're used to. Fourth is that we also
+support<00:01:05.600><c> find</c><00:01:05.840><c> and</c><00:01:06.080><c> replace</c><00:01:06.320><c> in</c><00:01:06.560><c> Warp's</c>
+
+00:01:06.950 --> 00:01:06.960 align:start position:0%
+support find and replace in Warp's
+ 
+
+00:01:06.960 --> 00:01:09.030 align:start position:0%
+support find and replace in Warp's
+editor<00:01:07.280><c> experience.</c><00:01:07.840><c> It</c><00:01:08.080><c> supports</c><00:01:08.479><c> reax,</c>
+
+00:01:09.030 --> 00:01:09.040 align:start position:0%
+editor experience. It supports reax,
+ 
+
+00:01:09.040 --> 00:01:11.429 align:start position:0%
+editor experience. It supports reax,
+multicursor<00:01:09.760><c> editing,</c><00:01:10.320><c> replace</c><00:01:10.720><c> all,</c><00:01:11.200><c> and</c>
+
+00:01:11.429 --> 00:01:11.439 align:start position:0%
+multicursor editing, replace all, and
+ 
+
+00:01:11.439 --> 00:01:13.429 align:start position:0%
+multicursor editing, replace all, and
+even<00:01:11.760><c> preserve</c><00:01:12.240><c> case</c><00:01:12.479><c> rules</c><00:01:13.040><c> so</c><00:01:13.200><c> that</c>
+
+00:01:13.429 --> 00:01:13.439 align:start position:0%
+even preserve case rules so that
+ 
+
+00:01:13.439 --> 00:01:15.590 align:start position:0%
+even preserve case rules so that
+renaming<00:01:13.920><c> functions</c><00:01:14.320><c> and</c><00:01:14.560><c> variables</c><00:01:15.040><c> is</c><00:01:15.360><c> fast</c>
+
+00:01:15.590 --> 00:01:15.600 align:start position:0%
+renaming functions and variables is fast
+ 
+
+00:01:15.600 --> 00:01:17.749 align:start position:0%
+renaming functions and variables is fast
+and<00:01:15.920><c> consistent.</c><00:01:16.560><c> Fifth</c><00:01:16.799><c> is</c><00:01:16.960><c> that</c><00:01:17.119><c> Warp</c><00:01:17.520><c> also</c>
+
+00:01:17.749 --> 00:01:17.759 align:start position:0%
+and consistent. Fifth is that Warp also
+ 
+
+00:01:17.759 --> 00:01:19.910 align:start position:0%
+and consistent. Fifth is that Warp also
+has<00:01:17.920><c> syntax</c><00:01:18.400><c> highlighting</c><00:01:18.880><c> for</c><00:01:19.200><c> an</c><00:01:19.439><c> extensive</c>
+
+00:01:19.910 --> 00:01:19.920 align:start position:0%
+has syntax highlighting for an extensive
+ 
+
+00:01:19.920 --> 00:01:21.350 align:start position:0%
+has syntax highlighting for an extensive
+number<00:01:20.159><c> of</c><00:01:20.320><c> different</c><00:01:20.640><c> languages</c><00:01:21.040><c> and</c>
+
+00:01:21.350 --> 00:01:21.360 align:start position:0%
+number of different languages and
+ 
+
+00:01:21.360 --> 00:01:23.109 align:start position:0%
+number of different languages and
+frameworks.<00:01:22.080><c> It'll</c><00:01:22.400><c> appear</c><00:01:22.640><c> in</c><00:01:22.799><c> both</c><00:01:22.960><c> the</c>
+
+00:01:23.109 --> 00:01:23.119 align:start position:0%
+frameworks. It'll appear in both the
+ 
+
+00:01:23.119 --> 00:01:25.510 align:start position:0%
+frameworks. It'll appear in both the
+agent<00:01:23.520><c> generated</c><00:01:24.000><c> code</c><00:01:24.240><c> diffs</c><00:01:24.799><c> and</c><00:01:25.040><c> also</c><00:01:25.280><c> when</c>
+
+00:01:25.510 --> 00:01:25.520 align:start position:0%
+agent generated code diffs and also when
+ 
+
+00:01:25.520 --> 00:01:27.590 align:start position:0%
+agent generated code diffs and also when
+you<00:01:25.680><c> open</c><00:01:25.840><c> up</c><00:01:26.000><c> a</c><00:01:26.240><c> file</c><00:01:26.400><c> in</c><00:01:26.640><c> the</c><00:01:26.720><c> editor</c><00:01:27.119><c> view,</c>
+
+00:01:27.590 --> 00:01:27.600 align:start position:0%
+you open up a file in the editor view,
+ 
+
+00:01:27.600 --> 00:01:29.350 align:start position:0%
+you open up a file in the editor view,
+making<00:01:27.920><c> files</c><00:01:28.240><c> way</c><00:01:28.479><c> easier</c><00:01:28.799><c> to</c><00:01:28.960><c> scan</c>
+
+00:01:29.350 --> 00:01:29.360 align:start position:0%
+making files way easier to scan
+ 
+
+00:01:29.360 --> 00:01:31.510 align:start position:0%
+making files way easier to scan
+visually.<00:01:30.000><c> Six</c><00:01:30.240><c> is</c><00:01:30.479><c> that</c><00:01:30.640><c> we</c><00:01:30.799><c> have</c><00:01:30.960><c> one-click</c>
+
+00:01:31.510 --> 00:01:31.520 align:start position:0%
+visually. Six is that we have one-click
+ 
+
+00:01:31.520 --> 00:01:33.910 align:start position:0%
+visually. Six is that we have one-click
+links<00:01:31.840><c> to</c><00:01:32.079><c> referenced</c><00:01:32.640><c> files.</c><00:01:33.439><c> So</c><00:01:33.680><c> when</c>
+
+00:01:33.910 --> 00:01:33.920 align:start position:0%
+links to referenced files. So when
+ 
+
+00:01:33.920 --> 00:01:36.310 align:start position:0%
+links to referenced files. So when
+Warp's<00:01:34.320><c> agent</c><00:01:34.640><c> mode</c><00:01:35.040><c> references</c><00:01:35.520><c> a</c><00:01:35.759><c> file,</c><00:01:36.079><c> it</c>
+
+00:01:36.310 --> 00:01:36.320 align:start position:0%
+Warp's agent mode references a file, it
+ 
+
+00:01:36.320 --> 00:01:38.469 align:start position:0%
+Warp's agent mode references a file, it
+links<00:01:36.640><c> directly</c><00:01:37.040><c> to</c><00:01:37.280><c> that</c><00:01:37.600><c> exact</c><00:01:38.079><c> line</c><00:01:38.240><c> of</c>
+
+00:01:38.469 --> 00:01:38.479 align:start position:0%
+links directly to that exact line of
+ 
+
+00:01:38.479 --> 00:01:40.230 align:start position:0%
+links directly to that exact line of
+code.<00:01:38.880><c> And</c><00:01:39.119><c> by</c><00:01:39.360><c> clicking</c><00:01:39.520><c> on</c><00:01:39.680><c> it,</c><00:01:39.920><c> you</c><00:01:40.079><c> can</c>
+
+00:01:40.230 --> 00:01:40.240 align:start position:0%
+code. And by clicking on it, you can
+ 
+
+00:01:40.240 --> 00:01:42.469 align:start position:0%
+code. And by clicking on it, you can
+open<00:01:40.479><c> up</c><00:01:40.640><c> that</c><00:01:40.960><c> file</c><00:01:41.360><c> to</c><00:01:41.600><c> that</c><00:01:41.840><c> exact</c><00:01:42.159><c> line</c><00:01:42.320><c> of</c>
+
+00:01:42.469 --> 00:01:42.479 align:start position:0%
+open up that file to that exact line of
+ 
+
+00:01:42.479 --> 00:01:44.550 align:start position:0%
+open up that file to that exact line of
+code<00:01:42.640><c> in</c><00:01:42.799><c> Warp.</c><00:01:43.360><c> This</c><00:01:43.520><c> transparency</c><00:01:44.240><c> makes</c><00:01:44.400><c> it</c>
+
+00:01:44.550 --> 00:01:44.560 align:start position:0%
+code in Warp. This transparency makes it
+ 
+
+00:01:44.560 --> 00:01:46.789 align:start position:0%
+code in Warp. This transparency makes it
+easy<00:01:44.799><c> to</c><00:01:45.040><c> follow</c><00:01:45.280><c> what</c><00:01:45.520><c> the</c><00:01:45.600><c> agent</c><00:01:46.000><c> is</c><00:01:46.159><c> doing,</c>
+
+00:01:46.789 --> 00:01:46.799 align:start position:0%
+easy to follow what the agent is doing,
+ 
+
+00:01:46.799 --> 00:01:48.789 align:start position:0%
+easy to follow what the agent is doing,
+whether<00:01:47.119><c> it's</c><00:01:47.360><c> reading</c><00:01:47.759><c> files,</c><00:01:48.320><c> tracing</c>
+
+00:01:48.789 --> 00:01:48.799 align:start position:0%
+whether it's reading files, tracing
+ 
+
+00:01:48.799 --> 00:01:51.510 align:start position:0%
+whether it's reading files, tracing
+logic,<00:01:49.280><c> or</c><00:01:49.600><c> making</c><00:01:49.920><c> a</c><00:01:50.240><c> fix.</c><00:01:50.799><c> And</c><00:01:51.040><c> just</c><00:01:51.280><c> note</c>
+
+00:01:51.510 --> 00:01:51.520 align:start position:0%
+logic, or making a fix. And just note
+ 
+
+00:01:51.520 --> 00:01:53.910 align:start position:0%
+logic, or making a fix. And just note
+that<00:01:51.759><c> in</c><00:01:52.079><c> settings</c><00:01:52.560><c> under</c><00:01:52.880><c> features,</c><00:01:53.680><c> you'll</c>
+
+00:01:53.910 --> 00:01:53.920 align:start position:0%
+that in settings under features, you'll
+ 
+
+00:01:53.920 --> 00:01:55.590 align:start position:0%
+that in settings under features, you'll
+want<00:01:54.000><c> to</c><00:01:54.159><c> set</c><00:01:54.399><c> warp</c><00:01:54.720><c> as</c><00:01:54.880><c> your</c><00:01:55.040><c> editor</c><00:01:55.360><c> for</c>
+
+00:01:55.590 --> 00:01:55.600 align:start position:0%
+want to set warp as your editor for
+ 
+
+00:01:55.600 --> 00:01:57.109 align:start position:0%
+want to set warp as your editor for
+these<00:01:55.840><c> file</c><00:01:56.079><c> links</c><00:01:56.399><c> so</c><00:01:56.560><c> that</c><00:01:56.720><c> they</c><00:01:56.880><c> open</c>
+
+00:01:57.109 --> 00:01:57.119 align:start position:0%
+these file links so that they open
+ 
+
+00:01:57.119 --> 00:01:59.510 align:start position:0%
+these file links so that they open
+directly<00:01:57.520><c> inside</c><00:01:58.000><c> your</c><00:01:58.320><c> Warp</c><00:01:58.719><c> coding</c><00:01:59.040><c> view.</c>
+
+00:01:59.510 --> 00:01:59.520 align:start position:0%
+directly inside your Warp coding view.
+ 
+
+00:01:59.520 --> 00:02:01.429 align:start position:0%
+directly inside your Warp coding view.
+Seventh<00:01:59.840><c> is</c><00:02:00.000><c> that</c><00:02:00.159><c> we</c><00:02:00.399><c> have</c><00:02:00.560><c> a</c><00:02:00.799><c> code</c><00:02:01.119><c> review</c>
+
+00:02:01.429 --> 00:02:01.439 align:start position:0%
+Seventh is that we have a code review
+ 
+
+00:02:01.439 --> 00:02:03.749 align:start position:0%
+Seventh is that we have a code review
+panel<00:02:01.759><c> now.</c><00:02:02.000><c> So</c><00:02:02.240><c> Warp</c><00:02:02.640><c> also</c><00:02:02.880><c> gives</c><00:02:03.040><c> you</c><00:02:03.520><c> a</c>
+
+00:02:03.749 --> 00:02:03.759 align:start position:0%
+panel now. So Warp also gives you a
+ 
+
+00:02:03.759 --> 00:02:05.910 align:start position:0%
+panel now. So Warp also gives you a
+dedicated<00:02:04.320><c> panel</c><00:02:04.640><c> that</c><00:02:04.880><c> summarizes</c><00:02:05.520><c> all</c><00:02:05.759><c> of</c>
+
+00:02:05.910 --> 00:02:05.920 align:start position:0%
+dedicated panel that summarizes all of
+ 
+
+00:02:05.920 --> 00:02:07.910 align:start position:0%
+dedicated panel that summarizes all of
+your<00:02:06.079><c> files</c><00:02:06.399><c> and</c><00:02:06.640><c> diffs</c><00:02:07.119><c> that</c><00:02:07.360><c> were</c><00:02:07.520><c> touched</c>
+
+00:02:07.910 --> 00:02:07.920 align:start position:0%
+your files and diffs that were touched
+ 
+
+00:02:07.920 --> 00:02:09.830 align:start position:0%
+your files and diffs that were touched
+by<00:02:08.000><c> an</c><00:02:08.239><c> agent.</c><00:02:08.720><c> You</c><00:02:08.959><c> can</c><00:02:09.039><c> review</c><00:02:09.360><c> them</c><00:02:09.520><c> at</c><00:02:09.679><c> a</c>
+
+00:02:09.830 --> 00:02:09.840 align:start position:0%
+by an agent. You can review them at a
+ 
+
+00:02:09.840 --> 00:02:12.150 align:start position:0%
+by an agent. You can review them at a
+glance,<00:02:10.319><c> approve</c><00:02:10.720><c> or</c><00:02:10.959><c> edit</c><00:02:11.280><c> changes,</c><00:02:11.920><c> and</c>
+
+00:02:12.150 --> 00:02:12.160 align:start position:0%
+glance, approve or edit changes, and
+ 
+
+00:02:12.160 --> 00:02:14.229 align:start position:0%
+glance, approve or edit changes, and
+even<00:02:12.400><c> reference</c><00:02:12.879><c> those</c><00:02:13.120><c> diffs</c><00:02:13.520><c> directly</c><00:02:14.000><c> in</c>
+
+00:02:14.229 --> 00:02:14.239 align:start position:0%
+even reference those diffs directly in
+ 
+
+00:02:14.239 --> 00:02:16.470 align:start position:0%
+even reference those diffs directly in
+your<00:02:14.400><c> next</c><00:02:14.720><c> prompt.</c><00:02:15.280><c> This</c><00:02:15.520><c> not</c><00:02:15.680><c> only</c><00:02:15.920><c> reduces</c>
+
+00:02:16.470 --> 00:02:16.480 align:start position:0%
+your next prompt. This not only reduces
+ 
+
+00:02:16.480 --> 00:02:18.390 align:start position:0%
+your next prompt. This not only reduces
+hallucinations,<00:02:17.360><c> but</c><00:02:17.520><c> it</c><00:02:17.760><c> also</c><00:02:18.000><c> keeps</c><00:02:18.239><c> the</c>
+
+00:02:18.390 --> 00:02:18.400 align:start position:0%
+hallucinations, but it also keeps the
+ 
+
+00:02:18.400 --> 00:02:20.309 align:start position:0%
+hallucinations, but it also keeps the
+agent<00:02:18.720><c> grounded</c><00:02:19.040><c> in</c><00:02:19.280><c> your</c><00:02:19.520><c> actual</c><00:02:19.840><c> code.</c>
+
+00:02:20.309 --> 00:02:20.319 align:start position:0%
+agent grounded in your actual code.
+ 
+
+00:02:20.319 --> 00:02:21.910 align:start position:0%
+agent grounded in your actual code.
+Eight<00:02:20.560><c> is</c><00:02:20.720><c> that</c><00:02:20.879><c> we</c><00:02:21.040><c> have</c><00:02:21.200><c> code</c><00:02:21.520><c> snippet</c>
+
+00:02:21.910 --> 00:02:21.920 align:start position:0%
+Eight is that we have code snippet
+ 
+
+00:02:21.920 --> 00:02:23.990 align:start position:0%
+Eight is that we have code snippet
+references.<00:02:22.640><c> So,</c><00:02:22.879><c> Warp</c><00:02:23.280><c> surfaces</c><00:02:23.760><c> code</c>
+
+00:02:23.990 --> 00:02:24.000 align:start position:0%
+references. So, Warp surfaces code
+ 
+
+00:02:24.000 --> 00:02:25.510 align:start position:0%
+references. So, Warp surfaces code
+blocks<00:02:24.319><c> when</c><00:02:24.560><c> explaining</c><00:02:25.040><c> something</c><00:02:25.280><c> about</c>
+
+00:02:25.510 --> 00:02:25.520 align:start position:0%
+blocks when explaining something about
+ 
+
+00:02:25.520 --> 00:02:27.910 align:start position:0%
+blocks when explaining something about
+your<00:02:25.760><c> codebase.</c><00:02:26.640><c> And</c><00:02:26.879><c> I</c><00:02:27.120><c> like</c><00:02:27.360><c> this</c><00:02:27.520><c> feature</c>
+
+00:02:27.910 --> 00:02:27.920 align:start position:0%
+your codebase. And I like this feature
+ 
+
+00:02:27.920 --> 00:02:29.910 align:start position:0%
+your codebase. And I like this feature
+because<00:02:28.239><c> you</c><00:02:28.400><c> can</c><00:02:28.560><c> attach</c><00:02:28.959><c> that</c><00:02:29.200><c> snippet</c><00:02:29.599><c> as</c>
+
+00:02:29.910 --> 00:02:29.920 align:start position:0%
+because you can attach that snippet as
+ 
+
+00:02:29.920 --> 00:02:31.990 align:start position:0%
+because you can attach that snippet as
+fresh<00:02:30.319><c> context</c><00:02:30.720><c> for</c><00:02:30.959><c> your</c><00:02:31.120><c> next</c><00:02:31.360><c> request.</c>
+
+00:02:31.990 --> 00:02:32.000 align:start position:0%
+fresh context for your next request.
+ 
+
+00:02:32.000 --> 00:02:33.430 align:start position:0%
+fresh context for your next request.
+That<00:02:32.239><c> way,</c><00:02:32.400><c> you</c><00:02:32.560><c> don't</c><00:02:32.720><c> have</c><00:02:32.800><c> to</c><00:02:32.959><c> keep</c><00:02:33.200><c> the</c>
+
+00:02:33.430 --> 00:02:33.440 align:start position:0%
+That way, you don't have to keep the
+ 
+
+00:02:33.440 --> 00:02:35.430 align:start position:0%
+That way, you don't have to keep the
+entire<00:02:33.760><c> history</c><00:02:34.080><c> in</c><00:02:34.400><c> memory.</c><00:02:34.879><c> You</c><00:02:35.040><c> can</c><00:02:35.200><c> pass</c>
+
+00:02:35.430 --> 00:02:35.440 align:start position:0%
+entire history in memory. You can pass
+ 
+
+00:02:35.440 --> 00:02:37.430 align:start position:0%
+entire history in memory. You can pass
+only<00:02:35.680><c> the</c><00:02:35.920><c> code</c><00:02:36.080><c> that</c><00:02:36.319><c> matters,</c><00:02:36.879><c> which</c><00:02:37.200><c> keeps</c>
+
+00:02:37.430 --> 00:02:37.440 align:start position:0%
+only the code that matters, which keeps
+ 
+
+00:02:37.440 --> 00:02:39.670 align:start position:0%
+only the code that matters, which keeps
+token<00:02:37.840><c> usage</c><00:02:38.239><c> lean</c><00:02:38.560><c> and</c><00:02:38.720><c> the</c><00:02:38.879><c> agents</c><00:02:39.280><c> focus</c>
+
+00:02:39.670 --> 00:02:39.680 align:start position:0%
+token usage lean and the agents focus
+ 
+
+00:02:39.680 --> 00:02:42.309 align:start position:0%
+token usage lean and the agents focus
+sharp.<00:02:40.239><c> Ninth,</c><00:02:40.640><c> we</c><00:02:40.879><c> have</c><00:02:41.040><c> codebase</c><00:02:41.519><c> indexing.</c>
+
+00:02:42.309 --> 00:02:42.319 align:start position:0%
+sharp. Ninth, we have codebase indexing.
+ 
+
+00:02:42.319 --> 00:02:44.229 align:start position:0%
+sharp. Ninth, we have codebase indexing.
+So,<00:02:42.720><c> Warp</c><00:02:43.120><c> can</c><00:02:43.280><c> automatically</c><00:02:43.760><c> index</c><00:02:44.080><c> your</c>
+
+00:02:44.229 --> 00:02:44.239 align:start position:0%
+So, Warp can automatically index your
+ 
+
+00:02:44.239 --> 00:02:45.509 align:start position:0%
+So, Warp can automatically index your
+repositories,<00:02:44.959><c> and</c><00:02:45.120><c> it</c><00:02:45.280><c> makes</c><00:02:45.360><c> it</c>
+
+00:02:45.509 --> 00:02:45.519 align:start position:0%
+repositories, and it makes it
+ 
+
+00:02:45.519 --> 00:02:47.190 align:start position:0%
+repositories, and it makes it
+dramatically<00:02:46.080><c> faster</c><00:02:46.480><c> for</c><00:02:46.640><c> agents</c><00:02:47.040><c> to</c>
+
+00:02:47.190 --> 00:02:47.200 align:start position:0%
+dramatically faster for agents to
+ 
+
+00:02:47.200 --> 00:02:49.670 align:start position:0%
+dramatically faster for agents to
+summarize<00:02:47.680><c> large</c><00:02:47.920><c> code</c><00:02:48.160><c> bases,</c><00:02:48.879><c> fix</c><00:02:49.120><c> bugs,</c><00:02:49.440><c> or</c>
+
+00:02:49.670 --> 00:02:49.680 align:start position:0%
+summarize large code bases, fix bugs, or
+ 
+
+00:02:49.680 --> 00:02:51.830 align:start position:0%
+summarize large code bases, fix bugs, or
+handle<00:02:50.000><c> refactors</c><00:02:50.879><c> because</c><00:02:51.120><c> Warp</c><00:02:51.599><c> already</c>
+
+00:02:51.830 --> 00:02:51.840 align:start position:0%
+handle refactors because Warp already
+ 
+
+00:02:51.840 --> 00:02:53.750 align:start position:0%
+handle refactors because Warp already
+understands<00:02:52.400><c> your</c><00:02:52.640><c> project's</c><00:02:53.120><c> structure.</c>
+
+00:02:53.750 --> 00:02:53.760 align:start position:0%
+understands your project's structure.
+ 
+
+00:02:53.760 --> 00:02:56.070 align:start position:0%
+understands your project's structure.
+And<00:02:54.000><c> we've</c><00:02:54.319><c> added</c><00:02:54.560><c> a</c><00:02:54.800><c> file</c><00:02:55.120><c> tree</c><00:02:55.360><c> view.</c><00:02:55.920><c> Just</c>
+
+00:02:56.070 --> 00:02:56.080 align:start position:0%
+And we've added a file tree view. Just
+ 
+
+00:02:56.080 --> 00:02:57.910 align:start position:0%
+And we've added a file tree view. Just
+click<00:02:56.239><c> on</c><00:02:56.400><c> this</c><00:02:56.720><c> icon</c><00:02:56.959><c> to</c><00:02:57.120><c> browse</c><00:02:57.440><c> your</c><00:02:57.599><c> entire</c>
+
+00:02:57.910 --> 00:02:57.920 align:start position:0%
+click on this icon to browse your entire
+ 
+
+00:02:57.920 --> 00:03:02.680 align:start position:0%
+click on this icon to browse your entire
+repo<00:02:58.319><c> and</c><00:02:58.560><c> open</c><00:02:58.800><c> any</c><00:02:59.120><c> file</c><00:02:59.360><c> that</c><00:02:59.519><c> you</c><00:02:59.680><c> need.</c>
+

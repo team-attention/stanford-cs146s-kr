@@ -1,0 +1,208 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.080 --> 00:00:02.710 align:start position:0%
+ 
+The<00:00:00.240><c> context</c><00:00:00.719><c> 7</c><00:00:01.040><c> MCP</c><00:00:01.600><c> server</c><00:00:02.000><c> gives</c><00:00:02.320><c> warp</c>
+
+00:00:02.710 --> 00:00:02.720 align:start position:0%
+The context 7 MCP server gives warp
+ 
+
+00:00:02.720 --> 00:00:05.030 align:start position:0%
+The context 7 MCP server gives warp
+agents<00:00:03.280><c> realtime</c><00:00:03.840><c> access</c><00:00:04.160><c> to</c><00:00:04.319><c> documentation</c>
+
+00:00:05.030 --> 00:00:05.040 align:start position:0%
+agents realtime access to documentation
+ 
+
+00:00:05.040 --> 00:00:06.950 align:start position:0%
+agents realtime access to documentation
+from<00:00:05.279><c> across</c><00:00:05.600><c> the</c><00:00:05.839><c> web.</c><00:00:06.160><c> Here</c><00:00:06.400><c> I'm</c><00:00:06.560><c> using</c><00:00:06.799><c> it</c>
+
+00:00:06.950 --> 00:00:06.960 align:start position:0%
+from across the web. Here I'm using it
+ 
+
+00:00:06.960 --> 00:00:09.669 align:start position:0%
+from across the web. Here I'm using it
+to<00:00:07.279><c> update</c><00:00:07.759><c> my</c><00:00:08.240><c> share</c><00:00:08.559><c> brew</c><00:00:08.800><c> files</c><00:00:09.120><c> project</c>
+
+00:00:09.669 --> 00:00:09.679 align:start position:0%
+to update my share brew files project
+ 
+
+00:00:09.679 --> 00:00:11.910 align:start position:0%
+to update my share brew files project
+which<00:00:09.920><c> is</c><00:00:10.000><c> an</c><00:00:10.240><c> older</c><00:00:10.559><c> Astro</c><00:00:11.040><c> site</c><00:00:11.280><c> I</c><00:00:11.519><c> built</c><00:00:11.679><c> a</c>
+
+00:00:11.910 --> 00:00:11.920 align:start position:0%
+which is an older Astro site I built a
+ 
+
+00:00:11.920 --> 00:00:13.270 align:start position:0%
+which is an older Astro site I built a
+couple<00:00:12.080><c> of</c><00:00:12.240><c> years</c><00:00:12.320><c> ago.</c><00:00:12.639><c> The</c><00:00:12.800><c> prompt</c><00:00:13.120><c> is</c>
+
+00:00:13.270 --> 00:00:13.280 align:start position:0%
+couple of years ago. The prompt is
+ 
+
+00:00:13.280 --> 00:00:14.789 align:start position:0%
+couple of years ago. The prompt is
+pretty<00:00:13.440><c> simple</c><00:00:13.840><c> which</c><00:00:14.000><c> is</c><00:00:14.160><c> just</c><00:00:14.320><c> to</c><00:00:14.559><c> update</c>
+
+00:00:14.789 --> 00:00:14.799 align:start position:0%
+pretty simple which is just to update
+ 
+
+00:00:14.799 --> 00:00:16.630 align:start position:0%
+pretty simple which is just to update
+the<00:00:14.960><c> Astro</c><00:00:15.360><c> project</c><00:00:15.679><c> to</c><00:00:15.920><c> follow</c><00:00:16.080><c> the</c><00:00:16.320><c> latest</c>
+
+00:00:16.630 --> 00:00:16.640 align:start position:0%
+the Astro project to follow the latest
+ 
+
+00:00:16.640 --> 00:00:19.269 align:start position:0%
+the Astro project to follow the latest
+best<00:00:16.960><c> practices.</c><00:00:17.520><c> The</c><00:00:17.680><c> MCP</c><00:00:18.160><c> server</c><00:00:18.560><c> calls</c><00:00:18.960><c> get</c>
+
+00:00:19.269 --> 00:00:19.279 align:start position:0%
+best practices. The MCP server calls get
+ 
+
+00:00:19.279 --> 00:00:21.750 align:start position:0%
+best practices. The MCP server calls get
+library<00:00:19.680><c> docs</c><00:00:20.080><c> to</c><00:00:20.240><c> pull</c><00:00:20.480><c> the</c><00:00:20.640><c> latest</c><00:00:21.039><c> Astro</c><00:00:21.600><c> 5</c>
+
+00:00:21.750 --> 00:00:21.760 align:start position:0%
+library docs to pull the latest Astro 5
+ 
+
+00:00:21.760 --> 00:00:23.990 align:start position:0%
+library docs to pull the latest Astro 5
+docs.<00:00:22.320><c> Warp</c><00:00:22.640><c> then</c><00:00:22.880><c> applies</c><00:00:23.199><c> updates</c><00:00:23.680><c> across</c>
+
+00:00:23.990 --> 00:00:24.000 align:start position:0%
+docs. Warp then applies updates across
+ 
+
+00:00:24.000 --> 00:00:26.230 align:start position:0%
+docs. Warp then applies updates across
+the<00:00:24.240><c> project</c><00:00:24.720><c> like</c><00:00:25.039><c> updating</c><00:00:25.439><c> my</c><00:00:25.680><c> Tailwind</c>
+
+00:00:26.230 --> 00:00:26.240 align:start position:0%
+the project like updating my Tailwind
+ 
+
+00:00:26.240 --> 00:00:28.630 align:start position:0%
+the project like updating my Tailwind
+import<00:00:26.640><c> syntax,</c><00:00:27.359><c> improving</c><00:00:27.760><c> my</c><00:00:28.000><c> TypeScript</c>
+
+00:00:28.630 --> 00:00:28.640 align:start position:0%
+import syntax, improving my TypeScript
+ 
+
+00:00:28.640 --> 00:00:30.550 align:start position:0%
+import syntax, improving my TypeScript
+configuration,<00:00:29.519><c> optimizing</c><00:00:30.080><c> my</c><00:00:30.320><c> build</c>
+
+00:00:30.550 --> 00:00:30.560 align:start position:0%
+configuration, optimizing my build
+ 
+
+00:00:30.560 --> 00:00:31.990 align:start position:0%
+configuration, optimizing my build
+settings,<00:00:31.039><c> and</c><00:00:31.279><c> adding</c><00:00:31.679><c> better</c>
+
+00:00:31.990 --> 00:00:32.000 align:start position:0%
+settings, and adding better
+ 
+
+00:00:32.000 --> 00:00:33.590 align:start position:0%
+settings, and adding better
+accessibility<00:00:32.640><c> rules.</c><00:00:33.120><c> You'll</c><00:00:33.280><c> see</c><00:00:33.440><c> it</c>
+
+00:00:33.590 --> 00:00:33.600 align:start position:0%
+accessibility rules. You'll see it
+ 
+
+00:00:33.600 --> 00:00:35.430 align:start position:0%
+accessibility rules. You'll see it
+pulling<00:00:33.920><c> in</c><00:00:34.079><c> the</c><00:00:34.160><c> Astrodocs</c><00:00:34.880><c> and</c><00:00:35.040><c> making</c><00:00:35.200><c> the</c>
+
+00:00:35.430 --> 00:00:35.440 align:start position:0%
+pulling in the Astrodocs and making the
+ 
+
+00:00:35.440 --> 00:00:37.510 align:start position:0%
+pulling in the Astrodocs and making the
+code<00:00:35.680><c> changes</c><00:00:36.000><c> across</c><00:00:36.399><c> multiple</c><00:00:36.800><c> files.</c><00:00:37.360><c> This</c>
+
+00:00:37.510 --> 00:00:37.520 align:start position:0%
+code changes across multiple files. This
+ 
+
+00:00:37.520 --> 00:00:39.990 align:start position:0%
+code changes across multiple files. This
+saves<00:00:37.840><c> me</c><00:00:38.000><c> hours</c><00:00:38.480><c> of</c><00:00:38.960><c> reading</c><00:00:39.280><c> change</c><00:00:39.600><c> logs</c>
+
+00:00:39.990 --> 00:00:40.000 align:start position:0%
+saves me hours of reading change logs
+ 
+
+00:00:40.000 --> 00:00:42.069 align:start position:0%
+saves me hours of reading change logs
+and<00:00:40.160><c> blog</c><00:00:40.399><c> posts</c><00:00:40.879><c> just</c><00:00:41.040><c> to</c><00:00:41.280><c> find</c><00:00:41.440><c> out</c><00:00:41.600><c> what</c><00:00:41.840><c> has</c>
+
+00:00:42.069 --> 00:00:42.079 align:start position:0%
+and blog posts just to find out what has
+ 
+
+00:00:42.079 --> 00:00:44.069 align:start position:0%
+and blog posts just to find out what has
+changed<00:00:42.480><c> in</c><00:00:42.719><c> the</c><00:00:42.960><c> last</c><00:00:43.200><c> couple</c><00:00:43.360><c> of</c><00:00:43.520><c> years.</c><00:00:43.840><c> I</c>
+
+00:00:44.069 --> 00:00:44.079 align:start position:0%
+changed in the last couple of years. I
+ 
+
+00:00:44.079 --> 00:00:45.510 align:start position:0%
+changed in the last couple of years. I
+find<00:00:44.239><c> this</c><00:00:44.480><c> especially</c><00:00:44.879><c> useful</c><00:00:45.200><c> when</c>
+
+00:00:45.510 --> 00:00:45.520 align:start position:0%
+find this especially useful when
+ 
+
+00:00:45.520 --> 00:00:47.670 align:start position:0%
+find this especially useful when
+reviving<00:00:46.000><c> old</c><00:00:46.320><c> projects</c><00:00:46.640><c> or</c><00:00:46.960><c> migrating</c><00:00:47.360><c> to</c><00:00:47.520><c> a</c>
+
+00:00:47.670 --> 00:00:47.680 align:start position:0%
+reviving old projects or migrating to a
+ 
+
+00:00:47.680 --> 00:00:49.350 align:start position:0%
+reviving old projects or migrating to a
+new<00:00:47.840><c> framework</c><00:00:48.320><c> version</c><00:00:48.719><c> and</c><00:00:48.960><c> wanting</c><00:00:49.200><c> to</c>
+
+00:00:49.350 --> 00:00:49.360 align:start position:0%
+new framework version and wanting to
+ 
+
+00:00:49.360 --> 00:00:51.110 align:start position:0%
+new framework version and wanting to
+make<00:00:49.520><c> sure</c><00:00:49.600><c> I'm</c><00:00:49.920><c> still</c><00:00:50.079><c> following</c><00:00:50.480><c> the</c><00:00:50.640><c> latest</c>
+
+00:00:51.110 --> 00:00:51.120 align:start position:0%
+make sure I'm still following the latest
+ 
+
+00:00:51.120 --> 00:00:53.360 align:start position:0%
+make sure I'm still following the latest
+standards.
+

@@ -1,0 +1,512 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.880 --> 00:00:02.550 align:start position:0%
+ 
+Hi,<00:00:01.360><c> I'm</c><00:00:01.520><c> going</c><00:00:01.600><c> to</c><00:00:01.760><c> show</c><00:00:01.839><c> you</c><00:00:02.000><c> today</c><00:00:02.240><c> how</c><00:00:02.399><c> to</c>
+
+00:00:02.550 --> 00:00:02.560 align:start position:0%
+Hi, I'm going to show you today how to
+ 
+
+00:00:02.560 --> 00:00:04.630 align:start position:0%
+Hi, I'm going to show you today how to
+use<00:00:02.720><c> Warp</c><00:00:03.120><c> to</c><00:00:03.360><c> do</c><00:00:03.520><c> backend</c><00:00:04.080><c> and</c><00:00:04.240><c> production</c>
+
+00:00:04.630 --> 00:00:04.640 align:start position:0%
+use Warp to do backend and production
+ 
+
+00:00:04.640 --> 00:00:06.309 align:start position:0%
+use Warp to do backend and production
+work.<00:00:05.359><c> One</c><00:00:05.520><c> of</c><00:00:05.600><c> the</c><00:00:05.680><c> coolest</c><00:00:06.000><c> things</c><00:00:06.160><c> about</c>
+
+00:00:06.309 --> 00:00:06.319 align:start position:0%
+work. One of the coolest things about
+ 
+
+00:00:06.319 --> 00:00:08.150 align:start position:0%
+work. One of the coolest things about
+Warp<00:00:06.720><c> is</c><00:00:06.799><c> that</c><00:00:06.960><c> you</c><00:00:07.040><c> can</c><00:00:07.120><c> prompt</c><00:00:07.440><c> it</c><00:00:07.600><c> to</c><00:00:07.759><c> do</c><00:00:07.919><c> any</c>
+
+00:00:08.150 --> 00:00:08.160 align:start position:0%
+Warp is that you can prompt it to do any
+ 
+
+00:00:08.160 --> 00:00:11.669 align:start position:0%
+Warp is that you can prompt it to do any
+kind<00:00:08.320><c> of</c><00:00:08.639><c> development</c><00:00:09.120><c> task</c><00:00:09.599><c> from</c><00:00:09.840><c> coding</c><00:00:10.400><c> to</c>
+
+00:00:11.669 --> 00:00:11.679 align:start position:0%
+kind of development task from coding to
+ 
+
+00:00:11.679 --> 00:00:13.430 align:start position:0%
+kind of development task from coding to
+uh<00:00:11.920><c> working</c><00:00:12.160><c> with</c><00:00:12.400><c> your</c><00:00:12.639><c> cloud</c><00:00:12.960><c> servers</c><00:00:13.280><c> to</c>
+
+00:00:13.430 --> 00:00:13.440 align:start position:0%
+uh working with your cloud servers to
+ 
+
+00:00:13.440 --> 00:00:15.350 align:start position:0%
+uh working with your cloud servers to
+doing<00:00:13.599><c> Docker</c><00:00:13.920><c> and</c><00:00:14.080><c> Kubernetes.</c><00:00:14.880><c> Today,</c><00:00:15.200><c> I'm</c>
+
+00:00:15.350 --> 00:00:15.360 align:start position:0%
+doing Docker and Kubernetes. Today, I'm
+ 
+
+00:00:15.360 --> 00:00:17.349 align:start position:0%
+doing Docker and Kubernetes. Today, I'm
+going to<00:00:15.519><c> have</c><00:00:15.599><c> Warp</c><00:00:16.000><c> pull</c><00:00:16.320><c> some</c><00:00:16.560><c> logs</c><00:00:16.960><c> for</c><00:00:17.119><c> me</c>
+
+00:00:17.349 --> 00:00:17.359 align:start position:0%
+going to have Warp pull some logs for me
+ 
+
+00:00:17.359 --> 00:00:19.109 align:start position:0%
+going to have Warp pull some logs for me
+from<00:00:17.520><c> one</c><00:00:17.680><c> of</c><00:00:17.760><c> our</c><00:00:18.000><c> cloud</c><00:00:18.240><c> servers</c><00:00:18.560><c> and</c><00:00:18.800><c> do</c><00:00:18.960><c> a</c>
+
+00:00:19.109 --> 00:00:19.119 align:start position:0%
+from one of our cloud servers and do a
+ 
+
+00:00:19.119 --> 00:00:21.510 align:start position:0%
+from one of our cloud servers and do a
+little<00:00:19.199><c> bit</c><00:00:19.279><c> of</c><00:00:19.439><c> analysis</c><00:00:19.920><c> on</c><00:00:20.160><c> it.</c><00:00:20.880><c> Uh,</c><00:00:21.119><c> as</c><00:00:21.359><c> in</c>
+
+00:00:21.510 --> 00:00:21.520 align:start position:0%
+little bit of analysis on it. Uh, as in
+ 
+
+00:00:21.520 --> 00:00:22.790 align:start position:0%
+little bit of analysis on it. Uh, as in
+previous<00:00:21.840><c> demos,</c><00:00:22.240><c> I'm</c><00:00:22.400><c> going</c><00:00:22.400><c> to</c><00:00:22.480><c> talk</c><00:00:22.640><c> to</c>
+
+00:00:22.790 --> 00:00:22.800 align:start position:0%
+previous demos, I'm going to talk to
+ 
+
+00:00:22.800 --> 00:00:25.029 align:start position:0%
+previous demos, I'm going to talk to
+Warp.<00:00:23.119><c> You</c><00:00:23.359><c> can</c><00:00:23.439><c> always</c><00:00:23.600><c> enable</c><00:00:24.000><c> voice</c><00:00:24.400><c> mode</c>
+
+00:00:25.029 --> 00:00:25.039 align:start position:0%
+Warp. You can always enable voice mode
+ 
+
+00:00:25.039 --> 00:00:27.990 align:start position:0%
+Warp. You can always enable voice mode
+by<00:00:25.359><c> clicking</c><00:00:25.600><c> this</c><00:00:25.840><c> voice</c><00:00:26.160><c> input</c><00:00:26.560><c> button</c><00:00:27.199><c> and</c>
+
+00:00:27.990 --> 00:00:28.000 align:start position:0%
+by clicking this voice input button and
+ 
+
+00:00:28.000 --> 00:00:31.830 align:start position:0%
+by clicking this voice input button and
+um<00:00:28.160><c> then</c><00:00:28.400><c> configure</c><00:00:28.720><c> a</c><00:00:28.880><c> hotkey</c><00:00:29.199><c> to</c><00:00:29.359><c> do</c><00:00:29.519><c> it.</c>
+
+00:00:31.830 --> 00:00:31.840 align:start position:0%
+um then configure a hotkey to do it.
+ 
+
+00:00:31.840 --> 00:00:34.069 align:start position:0%
+um then configure a hotkey to do it.
+I<00:00:32.079><c> would</c><00:00:32.239><c> like</c><00:00:32.480><c> to</c><00:00:33.280><c> use</c><00:00:33.520><c> the</c>
+
+00:00:34.069 --> 00:00:34.079 align:start position:0%
+I would like to use the
+ 
+
+00:00:34.079 --> 00:00:36.549 align:start position:0%
+I would like to use the
+warp-server-staging
+
+00:00:36.549 --> 00:00:36.559 align:start position:0%
+warp-server-staging
+ 
+
+00:00:36.559 --> 00:00:39.350 align:start position:0%
+warp-server-staging
+g-cloud<00:00:37.120><c> project</c><00:00:37.760><c> and</c><00:00:38.160><c> pull</c><00:00:38.480><c> logs</c><00:00:38.960><c> for</c><00:00:39.120><c> the</c>
+
+00:00:39.350 --> 00:00:39.360 align:start position:0%
+g-cloud project and pull logs for the
+ 
+
+00:00:39.360 --> 00:00:42.389 align:start position:0%
+g-cloud project and pull logs for the
+last<00:00:39.600><c> 10</c><00:00:39.840><c> minutes</c><00:00:40.160><c> from</c><00:00:40.480><c> the</c><00:00:41.120><c> warp-server</c>
+
+00:00:42.389 --> 00:00:42.399 align:start position:0%
+last 10 minutes from the warp-server
+ 
+
+00:00:42.399 --> 00:00:44.709 align:start position:0%
+last 10 minutes from the warp-server
+cloud<00:00:42.719><c> run</c><00:00:42.960><c> instance.</c><00:00:43.920><c> Please</c><00:00:44.239><c> organize</c>
+
+00:00:44.709 --> 00:00:44.719 align:start position:0%
+cloud run instance. Please organize
+ 
+
+00:00:44.719 --> 00:00:47.029 align:start position:0%
+cloud run instance. Please organize
+those<00:00:44.960><c> logs</c><00:00:45.280><c> for</c><00:00:45.520><c> me</c><00:00:45.680><c> into</c><00:00:46.239><c> info,</c><00:00:46.719><c> warning,</c>
+
+00:00:47.029 --> 00:00:47.039 align:start position:0%
+those logs for me into info, warning,
+ 
+
+00:00:47.039 --> 00:00:49.910 align:start position:0%
+those logs for me into info, warning,
+and<00:00:47.360><c> error</c><00:00:47.600><c> levels</c><00:00:48.480><c> and</c><00:00:48.800><c> produce</c><00:00:49.120><c> a</c><00:00:49.360><c> histogram</c>
+
+00:00:49.910 --> 00:00:49.920 align:start position:0%
+and error levels and produce a histogram
+ 
+
+00:00:49.920 --> 00:00:52.790 align:start position:0%
+and error levels and produce a histogram
+and<00:00:50.160><c> report</c><00:00:50.719><c> across</c><00:00:51.200><c> those</c><00:00:51.520><c> log</c><00:00:52.160><c> uh</c><00:00:52.399><c> message</c>
+
+00:00:52.790 --> 00:00:52.800 align:start position:0%
+and report across those log uh message
+ 
+
+00:00:52.800 --> 00:00:54.869 align:start position:0%
+and report across those log uh message
+types<00:00:53.520><c> and</c><00:00:53.760><c> specifically</c><00:00:54.239><c> call</c><00:00:54.399><c> out</c><00:00:54.559><c> what</c><00:00:54.719><c> are</c>
+
+00:00:54.869 --> 00:00:54.879 align:start position:0%
+types and specifically call out what are
+ 
+
+00:00:54.879 --> 00:00:57.029 align:start position:0%
+types and specifically call out what are
+the<00:00:55.039><c> most</c><00:00:55.520><c> uh</c><00:00:55.680><c> concerning</c><00:00:56.399><c> errors</c><00:00:56.640><c> that</c><00:00:56.800><c> I</c>
+
+00:00:57.029 --> 00:00:57.039 align:start position:0%
+the most uh concerning errors that I
+ 
+
+00:00:57.039 --> 00:01:00.229 align:start position:0%
+the most uh concerning errors that I
+might<00:00:57.199><c> want</c><00:00:57.360><c> to</c><00:00:57.600><c> investigate.</c>
+
+00:01:00.229 --> 00:01:00.239 align:start position:0%
+might want to investigate.
+ 
+
+00:01:00.239 --> 00:01:02.069 align:start position:0%
+might want to investigate.
+So<00:01:00.480><c> I</c><00:01:00.719><c> talk</c><00:01:00.879><c> to</c><00:01:01.039><c> her</c><00:01:01.280><c> here.</c><00:01:01.440><c> It</c><00:01:01.600><c> takes</c><00:01:01.760><c> a</c><00:01:01.920><c> second</c>
+
+00:01:02.069 --> 00:01:02.079 align:start position:0%
+So I talk to her here. It takes a second
+ 
+
+00:01:02.079 --> 00:01:03.990 align:start position:0%
+So I talk to her here. It takes a second
+to<00:01:02.320><c> translate</c><00:01:02.800><c> it</c><00:01:03.280><c> and</c><00:01:03.440><c> then</c><00:01:03.600><c> I'm</c><00:01:03.760><c> going</c><00:01:03.840><c> to</c><00:01:03.920><c> go</c>
+
+00:01:03.990 --> 00:01:04.000 align:start position:0%
+to translate it and then I'm going to go
+ 
+
+00:01:04.000 --> 00:01:06.950 align:start position:0%
+to translate it and then I'm going to go
+ahead<00:01:04.320><c> and</c><00:01:04.559><c> hit</c><00:01:04.799><c> enter.</c><00:01:06.080><c> And</c><00:01:06.320><c> at</c><00:01:06.560><c> that</c><00:01:06.720><c> point,</c>
+
+00:01:06.950 --> 00:01:06.960 align:start position:0%
+ahead and hit enter. And at that point,
+ 
+
+00:01:06.960 --> 00:01:08.870 align:start position:0%
+ahead and hit enter. And at that point,
+this<00:01:07.200><c> has</c><00:01:07.360><c> been</c><00:01:07.520><c> detected</c><00:01:08.080><c> as</c><00:01:08.400><c> an</c><00:01:08.560><c> agent</c>
+
+00:01:08.870 --> 00:01:08.880 align:start position:0%
+this has been detected as an agent
+ 
+
+00:01:08.880 --> 00:01:12.870 align:start position:0%
+this has been detected as an agent
+prompt<00:01:10.000><c> and</c><00:01:10.479><c> the</c><00:01:11.119><c> um</c><00:01:11.840><c> agent</c><00:01:12.159><c> mode</c><00:01:12.479><c> will</c><00:01:12.720><c> take</c>
+
+00:01:12.870 --> 00:01:12.880 align:start position:0%
+prompt and the um agent mode will take
+ 
+
+00:01:12.880 --> 00:01:15.350 align:start position:0%
+prompt and the um agent mode will take
+over,<00:01:13.360><c> start</c><00:01:13.680><c> thinking</c><00:01:14.320><c> and</c><00:01:14.720><c> executing</c><00:01:15.200><c> what</c>
+
+00:01:15.350 --> 00:01:15.360 align:start position:0%
+over, start thinking and executing what
+ 
+
+00:01:15.360 --> 00:01:18.469 align:start position:0%
+over, start thinking and executing what
+I<00:01:15.439><c> asked</c><00:01:15.680><c> it</c><00:01:15.840><c> to</c><00:01:16.000><c> do.</c><00:01:17.360><c> So,</c><00:01:17.759><c> as</c><00:01:18.000><c> we're</c><00:01:18.159><c> doing</c><00:01:18.320><c> a</c>
+
+00:01:18.469 --> 00:01:18.479 align:start position:0%
+I asked it to do. So, as we're doing a
+ 
+
+00:01:18.479 --> 00:01:19.749 align:start position:0%
+I asked it to do. So, as we're doing a
+coding<00:01:18.720><c> task,</c><00:01:18.960><c> you'll</c><00:01:19.200><c> see</c><00:01:19.280><c> it</c><00:01:19.439><c> start</c><00:01:19.600><c> to</c>
+
+00:01:19.749 --> 00:01:19.759 align:start position:0%
+coding task, you'll see it start to
+ 
+
+00:01:19.759 --> 00:01:21.670 align:start position:0%
+coding task, you'll see it start to
+gather<00:01:20.080><c> context,</c><00:01:20.640><c> or</c><00:01:20.880><c> in</c><00:01:21.040><c> this</c><00:01:21.200><c> case,</c><00:01:21.439><c> it</c>
+
+00:01:21.670 --> 00:01:21.680 align:start position:0%
+gather context, or in this case, it
+ 
+
+00:01:21.680 --> 00:01:24.310 align:start position:0%
+gather context, or in this case, it
+knows<00:01:22.000><c> I</c><00:01:22.159><c> want</c><00:01:22.240><c> to</c><00:01:22.320><c> use</c><00:01:22.479><c> warp</c><00:01:22.720><c> server</c><00:01:23.040><c> staging.</c>
+
+00:01:24.310 --> 00:01:24.320 align:start position:0%
+knows I want to use warp server staging.
+ 
+
+00:01:24.320 --> 00:01:27.109 align:start position:0%
+knows I want to use warp server staging.
+It's<00:01:24.560><c> going</c><00:01:24.640><c> to</c><00:01:24.799><c> go</c><00:01:24.880><c> ahead</c><00:01:25.200><c> and</c><00:01:25.759><c> pull</c><00:01:26.080><c> logs.</c>
+
+00:01:27.109 --> 00:01:27.119 align:start position:0%
+It's going to go ahead and pull logs.
+ 
+
+00:01:27.119 --> 00:01:28.870 align:start position:0%
+It's going to go ahead and pull logs.
+Uh,<00:01:27.600><c> one</c><00:01:27.759><c> of</c><00:01:27.840><c> the</c><00:01:27.920><c> coolest</c><00:01:28.159><c> things</c><00:01:28.320><c> about</c><00:01:28.560><c> warp</c>
+
+00:01:28.870 --> 00:01:28.880 align:start position:0%
+Uh, one of the coolest things about warp
+ 
+
+00:01:28.880 --> 00:01:30.230 align:start position:0%
+Uh, one of the coolest things about warp
+is<00:01:28.960><c> you</c><00:01:29.119><c> can</c><00:01:29.200><c> always</c><00:01:29.439><c> just</c><00:01:29.600><c> kind</c><00:01:29.759><c> of</c><00:01:29.840><c> click</c><00:01:30.000><c> in</c>
+
+00:01:30.230 --> 00:01:30.240 align:start position:0%
+is you can always just kind of click in
+ 
+
+00:01:30.240 --> 00:01:32.950 align:start position:0%
+is you can always just kind of click in
+and<00:01:30.400><c> see</c><00:01:30.640><c> exactly</c><00:01:30.960><c> what</c><00:01:31.200><c> the</c><00:01:31.360><c> output</c><00:01:31.759><c> is.</c><00:01:32.640><c> Uh,</c>
+
+00:01:32.950 --> 00:01:32.960 align:start position:0%
+and see exactly what the output is. Uh,
+ 
+
+00:01:32.960 --> 00:01:34.469 align:start position:0%
+and see exactly what the output is. Uh,
+I<00:01:33.119><c> would</c><00:01:33.200><c> not</c><00:01:33.360><c> have</c><00:01:33.520><c> wanted</c><00:01:33.759><c> to</c><00:01:34.000><c> write</c><00:01:34.240><c> this</c>
+
+00:01:34.469 --> 00:01:34.479 align:start position:0%
+I would not have wanted to write this
+ 
+
+00:01:34.479 --> 00:01:36.310 align:start position:0%
+I would not have wanted to write this
+command<00:01:34.799><c> myself.</c><00:01:35.360><c> I'll</c><00:01:35.600><c> go</c><00:01:35.759><c> back</c><00:01:35.920><c> up</c><00:01:36.079><c> here.</c>
+
+00:01:36.310 --> 00:01:36.320 align:start position:0%
+command myself. I'll go back up here.
+ 
+
+00:01:36.320 --> 00:01:38.789 align:start position:0%
+command myself. I'll go back up here.
+I'm<00:01:36.479><c> going</c><00:01:36.640><c> to</c><00:01:36.720><c> collapse</c><00:01:37.119><c> this.</c><00:01:38.400><c> Now,</c><00:01:38.640><c> it's</c>
+
+00:01:38.789 --> 00:01:38.799 align:start position:0%
+I'm going to collapse this. Now, it's
+ 
+
+00:01:38.799 --> 00:01:41.830 align:start position:0%
+I'm going to collapse this. Now, it's
+going<00:01:38.880><c> to</c><00:01:39.040><c> process</c><00:01:39.439><c> this</c><00:01:39.680><c> data</c><00:01:39.920><c> for</c><00:01:40.159><c> me</c>
+
+00:01:41.830 --> 00:01:41.840 align:start position:0%
+going to process this data for me
+ 
+
+00:01:41.840 --> 00:01:43.510 align:start position:0%
+going to process this data for me
+here.<00:01:42.159><c> I</c><00:01:42.320><c> think</c><00:01:42.400><c> it's</c><00:01:42.720><c> going</c><00:01:42.880><c> to</c><00:01:43.119><c> write</c><00:01:43.360><c> a</c>
+
+00:01:43.510 --> 00:01:43.520 align:start position:0%
+here. I think it's going to write a
+ 
+
+00:01:43.520 --> 00:01:45.350 align:start position:0%
+here. I think it's going to write a
+small<00:01:43.759><c> Python</c><00:01:44.159><c> program</c><00:01:44.479><c> to</c><00:01:44.720><c> do</c><00:01:44.799><c> it,</c><00:01:44.960><c> which</c><00:01:45.200><c> is</c>
+
+00:01:45.350 --> 00:01:45.360 align:start position:0%
+small Python program to do it, which is
+ 
+
+00:01:45.360 --> 00:01:47.749 align:start position:0%
+small Python program to do it, which is
+cool.<00:01:46.560><c> It's</c><00:01:46.799><c> going</c><00:01:46.880><c> to</c><00:01:47.040><c> debug</c><00:01:47.360><c> its</c><00:01:47.600><c> own</c>
+
+00:01:47.749 --> 00:01:47.759 align:start position:0%
+cool. It's going to debug its own
+ 
+
+00:01:47.759 --> 00:01:49.429 align:start position:0%
+cool. It's going to debug its own
+issues.<00:01:48.159><c> So,</c><00:01:48.320><c> first</c><00:01:48.560><c> it</c><00:01:48.720><c> wants</c><00:01:48.880><c> to</c><00:01:49.040><c> save</c><00:01:49.280><c> the</c>
+
+00:01:49.429 --> 00:01:49.439 align:start position:0%
+issues. So, first it wants to save the
+ 
+
+00:01:49.439 --> 00:01:52.069 align:start position:0%
+issues. So, first it wants to save the
+log<00:01:49.680><c> file</c><00:01:50.000><c> to</c><00:01:50.159><c> a</c><00:01:50.399><c> file.</c><00:01:51.280><c> Again,</c><00:01:51.520><c> it</c><00:01:51.759><c> tells</c><00:01:51.920><c> you</c>
+
+00:01:52.069 --> 00:01:52.079 align:start position:0%
+log file to a file. Again, it tells you
+ 
+
+00:01:52.079 --> 00:01:54.389 align:start position:0%
+log file to a file. Again, it tells you
+exactly<00:01:52.399><c> what</c><00:01:52.560><c> it's</c><00:01:52.799><c> doing.</c><00:01:53.840><c> If</c><00:01:54.079><c> you</c><00:01:54.159><c> wanted</c>
+
+00:01:54.389 --> 00:01:54.399 align:start position:0%
+exactly what it's doing. If you wanted
+ 
+
+00:01:54.399 --> 00:01:55.990 align:start position:0%
+exactly what it's doing. If you wanted
+to<00:01:54.560><c> let</c><00:01:54.720><c> this</c><00:01:54.880><c> run</c><00:01:55.119><c> to</c><00:01:55.280><c> completion,</c><00:01:55.759><c> you</c><00:01:55.920><c> could</c>
+
+00:01:55.990 --> 00:01:56.000 align:start position:0%
+to let this run to completion, you could
+ 
+
+00:01:56.000 --> 00:01:57.350 align:start position:0%
+to let this run to completion, you could
+click<00:01:56.159><c> the</c><00:01:56.320><c> fast</c><00:01:56.560><c> forward</c><00:01:56.799><c> button.</c><00:01:57.119><c> You</c><00:01:57.200><c> could</c>
+
+00:01:57.350 --> 00:01:57.360 align:start position:0%
+click the fast forward button. You could
+ 
+
+00:01:57.360 --> 00:02:06.550 align:start position:0%
+click the fast forward button. You could
+also<00:01:57.600><c> stop</c><00:01:57.840><c> it</c><00:01:58.000><c> at</c><00:01:58.159><c> any</c><00:01:58.399><c> time.</c>
+
+00:02:06.550 --> 00:02:06.560 align:start position:0%
+ 
+ 
+
+00:02:06.560 --> 00:02:08.389 align:start position:0%
+ 
+Okay,<00:02:07.040><c> looks</c><00:02:07.280><c> like</c><00:02:07.439><c> we</c><00:02:07.600><c> got</c><00:02:07.759><c> to</c><00:02:07.920><c> a</c><00:02:08.080><c> working</c>
+
+00:02:08.389 --> 00:02:08.399 align:start position:0%
+Okay, looks like we got to a working
+ 
+
+00:02:08.399 --> 00:02:10.710 align:start position:0%
+Okay, looks like we got to a working
+version<00:02:08.640><c> of</c><00:02:08.959><c> Python</c><00:02:09.440><c> program.</c><00:02:10.399><c> We're</c><00:02:10.640><c> going</c>
+
+00:02:10.710 --> 00:02:10.720 align:start position:0%
+version of Python program. We're going
+ 
+
+00:02:10.720 --> 00:02:14.550 align:start position:0%
+version of Python program. We're going
+to<00:02:10.800><c> clean</c><00:02:10.959><c> up</c><00:02:11.120><c> this</c><00:02:11.360><c> temp</c><00:02:11.680><c> log</c><00:02:12.000><c> file.</c>
+
+00:02:14.550 --> 00:02:14.560 align:start position:0%
+to clean up this temp log file.
+ 
+
+00:02:14.560 --> 00:02:16.710 align:start position:0%
+to clean up this temp log file.
+And<00:02:14.800><c> here</c><00:02:14.959><c> we</c><00:02:15.200><c> go.</c><00:02:15.680><c> It</c><00:02:15.840><c> got</c><00:02:16.080><c> a,000</c><00:02:16.480><c> log</c>
+
+00:02:16.710 --> 00:02:16.720 align:start position:0%
+And here we go. It got a,000 log
+ 
+
+00:02:16.720 --> 00:02:18.309 align:start position:0%
+And here we go. It got a,000 log
+entries,
+
+00:02:18.309 --> 00:02:18.319 align:start position:0%
+entries,
+ 
+
+00:02:18.319 --> 00:02:24.229 align:start position:0%
+entries,
+980<00:02:19.040><c> were</c><00:02:19.280><c> info,</c><00:02:20.400><c> 11</c><00:02:20.800><c> warning,</c><00:02:21.599><c> nine</c><00:02:22.000><c> errors,</c>
+
+00:02:24.229 --> 00:02:24.239 align:start position:0%
+980 were info, 11 warning, nine errors,
+ 
+
+00:02:24.239 --> 00:02:27.830 align:start position:0%
+980 were info, 11 warning, nine errors,
+and<00:02:24.720><c> this</c><00:02:26.000><c> makes</c><00:02:26.239><c> sense.</c><00:02:26.480><c> Most</c><00:02:26.800><c> cons.</c><00:02:27.120><c> Yeah.</c>
+
+00:02:27.830 --> 00:02:27.840 align:start position:0%
+and this makes sense. Most cons. Yeah.
+ 
+
+00:02:27.840 --> 00:02:29.990 align:start position:0%
+and this makes sense. Most cons. Yeah.
+Gemini<00:02:28.400><c> AI.</c>
+
+00:02:29.990 --> 00:02:30.000 align:start position:0%
+Gemini AI.
+ 
+
+00:02:30.000 --> 00:02:31.830 align:start position:0%
+Gemini AI.
+Okay.
+
+00:02:31.830 --> 00:02:31.840 align:start position:0%
+Okay.
+ 
+
+00:02:31.840 --> 00:02:34.309 align:start position:0%
+Okay.
+Cool.<00:02:32.319><c> So,</c><00:02:32.800><c> uh,</c><00:02:32.879><c> you</c><00:02:33.120><c> can</c><00:02:33.280><c> basically</c><00:02:33.680><c> ask</c><00:02:33.920><c> Warp</c>
+
+00:02:34.309 --> 00:02:34.319 align:start position:0%
+Cool. So, uh, you can basically ask Warp
+ 
+
+00:02:34.319 --> 00:02:35.589 align:start position:0%
+Cool. So, uh, you can basically ask Warp
+to<00:02:34.400><c> do</c><00:02:34.560><c> anything.</c><00:02:34.879><c> That's</c><00:02:35.040><c> the</c><00:02:35.200><c> coolest</c><00:02:35.519><c> part</c>
+
+00:02:35.589 --> 00:02:35.599 align:start position:0%
+to do anything. That's the coolest part
+ 
+
+00:02:35.599 --> 00:02:37.920 align:start position:0%
+to do anything. That's the coolest part
+about<00:02:35.760><c> it.</c>
+

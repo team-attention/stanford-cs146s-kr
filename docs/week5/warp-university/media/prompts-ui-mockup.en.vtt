@@ -1,0 +1,168 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.070 align:start position:0%
+ 
+Here's<00:00:00.320><c> a</c><00:00:00.480><c> common</c><00:00:00.640><c> issue</c><00:00:00.880><c> with</c><00:00:01.040><c> AI</c><00:00:01.760><c> with</c>
+
+00:00:02.070 --> 00:00:02.080 align:start position:0%
+Here's a common issue with AI with
+ 
+
+00:00:02.080 --> 00:00:04.710 align:start position:0%
+Here's a common issue with AI with
+design.<00:00:02.800><c> Usually</c><00:00:03.120><c> we</c><00:00:03.439><c> have</c><00:00:03.679><c> a</c><00:00:03.919><c> very</c><00:00:04.319><c> specific</c>
+
+00:00:04.710 --> 00:00:04.720 align:start position:0%
+design. Usually we have a very specific
+ 
+
+00:00:04.720 --> 00:00:07.030 align:start position:0%
+design. Usually we have a very specific
+vision<00:00:05.040><c> in</c><00:00:05.279><c> mind.</c><00:00:05.920><c> So</c><00:00:06.080><c> when</c><00:00:06.319><c> we</c><00:00:06.480><c> try</c><00:00:06.560><c> to</c><00:00:06.720><c> go</c><00:00:06.799><c> in</c>
+
+00:00:07.030 --> 00:00:07.040 align:start position:0%
+vision in mind. So when we try to go in
+ 
+
+00:00:07.040 --> 00:00:09.990 align:start position:0%
+vision in mind. So when we try to go in
+detail,<00:00:08.000><c> it</c><00:00:08.240><c> will</c><00:00:08.559><c> just</c><00:00:08.800><c> not</c><00:00:08.960><c> come</c><00:00:09.120><c> out</c><00:00:09.360><c> right.</c>
+
+00:00:09.990 --> 00:00:10.000 align:start position:0%
+detail, it will just not come out right.
+ 
+
+00:00:10.000 --> 00:00:12.629 align:start position:0%
+detail, it will just not come out right.
+Just<00:00:10.240><c> like</c><00:00:10.400><c> us,</c><00:00:11.040><c> design</c><00:00:11.440><c> requires</c><00:00:12.080><c> visual</c>
+
+00:00:12.629 --> 00:00:12.639 align:start position:0%
+Just like us, design requires visual
+ 
+
+00:00:12.639 --> 00:00:14.390 align:start position:0%
+Just like us, design requires visual
+understanding.<00:00:13.519><c> So</c><00:00:13.759><c> here's</c><00:00:14.000><c> how</c><00:00:14.160><c> you</c><00:00:14.320><c> can</c>
+
+00:00:14.390 --> 00:00:14.400 align:start position:0%
+understanding. So here's how you can
+ 
+
+00:00:14.400 --> 00:00:16.470 align:start position:0%
+understanding. So here's how you can
+prompt<00:00:14.719><c> better</c><00:00:14.960><c> for</c><00:00:15.120><c> this.</c><00:00:16.000><c> This</c><00:00:16.240><c> will</c>
+
+00:00:16.470 --> 00:00:16.480 align:start position:0%
+prompt better for this. This will
+ 
+
+00:00:16.480 --> 00:00:18.710 align:start position:0%
+prompt better for this. This will
+provide<00:00:16.800><c> a</c><00:00:17.039><c> structured</c><00:00:17.520><c> markdown</c><00:00:18.000><c> file</c><00:00:18.480><c> of</c>
+
+00:00:18.710 --> 00:00:18.720 align:start position:0%
+provide a structured markdown file of
+ 
+
+00:00:18.720 --> 00:00:21.109 align:start position:0%
+provide a structured markdown file of
+the<00:00:18.960><c> full</c><00:00:19.199><c> specifications.</c><00:00:20.480><c> Notice</c><00:00:20.800><c> how</c><00:00:20.960><c> we</c>
+
+00:00:21.109 --> 00:00:21.119 align:start position:0%
+the full specifications. Notice how we
+ 
+
+00:00:21.119 --> 00:00:23.750 align:start position:0%
+the full specifications. Notice how we
+gave<00:00:21.279><c> the</c><00:00:21.520><c> AI</c><00:00:21.920><c> an</c><00:00:22.320><c> identity</c><00:00:22.640><c> of</c><00:00:22.960><c> being</c><00:00:23.119><c> a</c><00:00:23.359><c> UI</c>
+
+00:00:23.750 --> 00:00:23.760 align:start position:0%
+gave the AI an identity of being a UI
+ 
+
+00:00:23.760 --> 00:00:25.670 align:start position:0%
+gave the AI an identity of being a UI
+engineer.
+
+00:00:25.670 --> 00:00:25.680 align:start position:0%
+engineer.
+ 
+
+00:00:25.680 --> 00:00:27.349 align:start position:0%
+engineer.
+Once<00:00:25.920><c> we</c><00:00:26.080><c> get</c><00:00:26.240><c> that</c><00:00:26.400><c> response</c><00:00:26.800><c> back,</c><00:00:27.119><c> we</c><00:00:27.279><c> can</c>
+
+00:00:27.349 --> 00:00:27.359 align:start position:0%
+Once we get that response back, we can
+ 
+
+00:00:27.359 --> 00:00:30.070 align:start position:0%
+Once we get that response back, we can
+use<00:00:27.599><c> another</c><00:00:27.920><c> prompt.</c><00:00:29.279><c> I'm</c><00:00:29.599><c> wanting</c><00:00:29.760><c> to</c><00:00:29.920><c> use</c>
+
+00:00:30.070 --> 00:00:30.080 align:start position:0%
+use another prompt. I'm wanting to use
+ 
+
+00:00:30.080 --> 00:00:33.910 align:start position:0%
+use another prompt. I'm wanting to use
+React<00:00:30.480><c> and</c><00:00:30.640><c> Tailwind.</c>
+
+00:00:33.910 --> 00:00:33.920 align:start position:0%
+ 
+ 
+
+00:00:33.920 --> 00:00:36.069 align:start position:0%
+ 
+Then<00:00:34.239><c> we</c><00:00:34.480><c> get</c><00:00:34.640><c> something</c><00:00:35.280><c> closer</c><00:00:35.680><c> to</c><00:00:35.920><c> our</c>
+
+00:00:36.069 --> 00:00:36.079 align:start position:0%
+Then we get something closer to our
+ 
+
+00:00:36.079 --> 00:00:38.229 align:start position:0%
+Then we get something closer to our
+final<00:00:36.399><c> implementation.</c><00:00:37.600><c> The</c><00:00:37.840><c> important</c><00:00:38.079><c> part</c>
+
+00:00:38.229 --> 00:00:38.239 align:start position:0%
+final implementation. The important part
+ 
+
+00:00:38.239 --> 00:00:39.670 align:start position:0%
+final implementation. The important part
+is<00:00:38.399><c> to</c><00:00:38.559><c> include</c><00:00:38.800><c> the</c><00:00:38.960><c> text</c><00:00:39.200><c> stack</c><00:00:39.440><c> you're</c>
+
+00:00:39.670 --> 00:00:39.680 align:start position:0%
+is to include the text stack you're
+ 
+
+00:00:39.680 --> 00:00:41.270 align:start position:0%
+is to include the text stack you're
+comfortable<00:00:40.000><c> with</c><00:00:40.239><c> and</c><00:00:40.480><c> to</c><00:00:40.640><c> check</c><00:00:40.800><c> its</c><00:00:41.040><c> work</c>
+
+00:00:41.270 --> 00:00:41.280 align:start position:0%
+comfortable with and to check its work
+ 
+
+00:00:41.280 --> 00:00:43.350 align:start position:0%
+comfortable with and to check its work
+once<00:00:41.440><c> it's</c><00:00:41.680><c> finished.</c><00:00:42.320><c> It</c><00:00:42.559><c> won't</c><00:00:42.719><c> always</c><00:00:43.120><c> be</c>
+
+00:00:43.350 --> 00:00:43.360 align:start position:0%
+once it's finished. It won't always be
+ 
+
+00:00:43.360 --> 00:00:45.510 align:start position:0%
+once it's finished. It won't always be
+perfect,<00:00:44.000><c> but</c><00:00:44.239><c> you'll</c><00:00:44.480><c> be</c><00:00:44.640><c> much</c><00:00:44.960><c> closer</c><00:00:45.360><c> than</c>
+
+00:00:45.510 --> 00:00:45.520 align:start position:0%
+perfect, but you'll be much closer than
+ 
+
+00:00:45.520 --> 00:00:48.079 align:start position:0%
+perfect, but you'll be much closer than
+before.
+

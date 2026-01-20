@@ -1,0 +1,384 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.080 --> 00:00:02.230 align:start position:0%
+ 
+I'm<00:00:00.400><c> going</c><00:00:00.480><c> to</c><00:00:00.640><c> show</c><00:00:00.719><c> you</c><00:00:00.960><c> how</c><00:00:01.120><c> I</c><00:00:01.360><c> use</c><00:00:01.600><c> Warp</c><00:00:02.000><c> to</c>
+
+00:00:02.230 --> 00:00:02.240 align:start position:0%
+I'm going to show you how I use Warp to
+ 
+
+00:00:02.240 --> 00:00:05.430 align:start position:0%
+I'm going to show you how I use Warp to
+code<00:00:03.120><c> and</c><00:00:03.520><c> specifically</c><00:00:04.080><c> I'm</c><00:00:04.319><c> gonna</c><00:00:04.880><c> fix</c><00:00:05.200><c> a</c>
+
+00:00:05.430 --> 00:00:05.440 align:start position:0%
+code and specifically I'm gonna fix a
+ 
+
+00:00:05.440 --> 00:00:08.629 align:start position:0%
+code and specifically I'm gonna fix a
+bug<00:00:05.839><c> in</c><00:00:06.160><c> Warp</c><00:00:07.040><c> using</c><00:00:07.359><c> Warp.</c><00:00:07.919><c> So,</c><00:00:08.240><c> a</c><00:00:08.400><c> little</c><00:00:08.480><c> bit</c>
+
+00:00:08.629 --> 00:00:08.639 align:start position:0%
+bug in Warp using Warp. So, a little bit
+ 
+
+00:00:08.639 --> 00:00:11.589 align:start position:0%
+bug in Warp using Warp. So, a little bit
+meta.<00:00:09.200><c> This</c><00:00:09.519><c> here</c><00:00:09.679><c> is</c><00:00:09.920><c> a</c><00:00:10.800><c> developer</c><00:00:11.280><c> build</c><00:00:11.519><c> of</c>
+
+00:00:11.589 --> 00:00:11.599 align:start position:0%
+meta. This here is a developer build of
+ 
+
+00:00:11.599 --> 00:00:13.509 align:start position:0%
+meta. This here is a developer build of
+Warp<00:00:12.000><c> that</c><00:00:12.160><c> has</c><00:00:12.320><c> this</c><00:00:12.480><c> bug.</c><00:00:12.960><c> You</c><00:00:13.120><c> can</c><00:00:13.200><c> see</c><00:00:13.280><c> that</c>
+
+00:00:13.509 --> 00:00:13.519 align:start position:0%
+Warp that has this bug. You can see that
+ 
+
+00:00:13.519 --> 00:00:17.029 align:start position:0%
+Warp that has this bug. You can see that
+Warp<00:00:13.840><c> has</c><00:00:14.000><c> a</c><00:00:14.160><c> model</c><00:00:14.480><c> picker</c><00:00:14.880><c> here.</c><00:00:15.839><c> And</c><00:00:16.800><c> we</c>
+
+00:00:17.029 --> 00:00:17.039 align:start position:0%
+Warp has a model picker here. And we
+ 
+
+00:00:17.039 --> 00:00:19.109 align:start position:0%
+Warp has a model picker here. And we
+have<00:00:17.119><c> a</c><00:00:17.359><c> setting</c><00:00:17.840><c> which</c><00:00:18.480><c> is</c><00:00:18.720><c> not</c><00:00:18.880><c> being</c>
+
+00:00:19.109 --> 00:00:19.119 align:start position:0%
+have a setting which is not being
+ 
+
+00:00:19.119 --> 00:00:20.950 align:start position:0%
+have a setting which is not being
+honored<00:00:19.520><c> in</c><00:00:19.840><c> this</c><00:00:20.000><c> version</c><00:00:20.160><c> of</c><00:00:20.320><c> Warp,</c><00:00:20.800><c> which</c>
+
+00:00:20.950 --> 00:00:20.960 align:start position:0%
+honored in this version of Warp, which
+ 
+
+00:00:20.960 --> 00:00:23.189 align:start position:0%
+honored in this version of Warp, which
+is<00:00:21.039><c> this</c><00:00:21.279><c> show</c><00:00:21.520><c> model</c><00:00:21.840><c> picker</c><00:00:22.240><c> in</c><00:00:22.400><c> prompt.</c><00:00:23.039><c> I'm</c>
+
+00:00:23.189 --> 00:00:23.199 align:start position:0%
+is this show model picker in prompt. I'm
+ 
+
+00:00:23.199 --> 00:00:24.310 align:start position:0%
+is this show model picker in prompt. I'm
+going<00:00:23.279><c> to</c><00:00:23.359><c> go</c><00:00:23.439><c> ahead</c><00:00:23.600><c> and</c><00:00:23.760><c> take</c><00:00:23.840><c> a</c><00:00:24.000><c> screenshot</c>
+
+00:00:24.310 --> 00:00:24.320 align:start position:0%
+going to go ahead and take a screenshot
+ 
+
+00:00:24.320 --> 00:00:26.790 align:start position:0%
+going to go ahead and take a screenshot
+of<00:00:24.480><c> it</c><00:00:24.640><c> so</c><00:00:24.800><c> I</c><00:00:24.960><c> can</c><00:00:25.119><c> remember</c><00:00:25.359><c> it.</c><00:00:26.320><c> And</c><00:00:26.480><c> then</c><00:00:26.640><c> I'm</c>
+
+00:00:26.790 --> 00:00:26.800 align:start position:0%
+of it so I can remember it. And then I'm
+ 
+
+00:00:26.800 --> 00:00:28.150 align:start position:0%
+of it so I can remember it. And then I'm
+going<00:00:26.880><c> to</c><00:00:26.960><c> show</c><00:00:27.039><c> you</c><00:00:27.199><c> how</c><00:00:27.359><c> I</c><00:00:27.519><c> would</c><00:00:27.680><c> fix</c><00:00:27.920><c> this</c>
+
+00:00:28.150 --> 00:00:28.160 align:start position:0%
+going to show you how I would fix this
+ 
+
+00:00:28.160 --> 00:00:29.669 align:start position:0%
+going to show you how I would fix this
+bug<00:00:28.560><c> using</c><00:00:28.880><c> Warp.</c><00:00:29.279><c> So,</c><00:00:29.359><c> I'm</c><00:00:29.519><c> going</c><00:00:29.519><c> to</c><00:00:29.599><c> go</c>
+
+00:00:29.669 --> 00:00:29.679 align:start position:0%
+bug using Warp. So, I'm going to go
+ 
+
+00:00:29.679 --> 00:00:32.389 align:start position:0%
+bug using Warp. So, I'm going to go
+ahead<00:00:29.840><c> and</c><00:00:29.920><c> quit</c><00:00:30.160><c> this</c><00:00:30.400><c> developer</c><00:00:30.800><c> build,</c><00:00:31.439><c> and</c>
+
+00:00:32.389 --> 00:00:32.399 align:start position:0%
+ahead and quit this developer build, and
+ 
+
+00:00:32.399 --> 00:00:34.870 align:start position:0%
+ahead and quit this developer build, and
+I<00:00:32.719><c> am</c><00:00:32.960><c> going</c><00:00:33.200><c> to</c><00:00:33.680><c> prompt</c><00:00:34.000><c> Warp</c><00:00:34.399><c> to</c><00:00:34.559><c> fix</c><00:00:34.719><c> the</c>
+
+00:00:34.870 --> 00:00:34.880 align:start position:0%
+I am going to prompt Warp to fix the
+ 
+
+00:00:34.880 --> 00:00:37.110 align:start position:0%
+I am going to prompt Warp to fix the
+bug.<00:00:35.520><c> I'm</c><00:00:35.760><c> going</c><00:00:35.840><c> to</c><00:00:35.920><c> do</c><00:00:36.000><c> it</c><00:00:36.160><c> using</c><00:00:36.399><c> my</c><00:00:36.640><c> voice</c>
+
+00:00:37.110 --> 00:00:37.120 align:start position:0%
+bug. I'm going to do it using my voice
+ 
+
+00:00:37.120 --> 00:00:39.750 align:start position:0%
+bug. I'm going to do it using my voice
+because<00:00:37.440><c> I</c><00:00:37.680><c> find</c><00:00:37.840><c> that</c><00:00:38.399><c> uh</c><00:00:38.960><c> just</c><00:00:39.200><c> faster</c><00:00:39.600><c> than</c>
+
+00:00:39.750 --> 00:00:39.760 align:start position:0%
+because I find that uh just faster than
+ 
+
+00:00:39.760 --> 00:00:41.670 align:start position:0%
+because I find that uh just faster than
+typing<00:00:40.079><c> a</c><00:00:40.239><c> long</c><00:00:40.399><c> prompt.</c><00:00:40.960><c> If</c><00:00:41.120><c> you</c><00:00:41.280><c> want</c><00:00:41.360><c> to</c><00:00:41.520><c> use</c>
+
+00:00:41.670 --> 00:00:41.680 align:start position:0%
+typing a long prompt. If you want to use
+ 
+
+00:00:41.680 --> 00:00:43.990 align:start position:0%
+typing a long prompt. If you want to use
+voice<00:00:42.079><c> to</c><00:00:42.320><c> talk</c><00:00:42.480><c> to</c><00:00:42.640><c> Warp,</c><00:00:43.040><c> you</c><00:00:43.200><c> hit</c><00:00:43.600><c> uh</c><00:00:43.760><c> click</c>
+
+00:00:43.990 --> 00:00:44.000 align:start position:0%
+voice to talk to Warp, you hit uh click
+ 
+
+00:00:44.000 --> 00:00:46.150 align:start position:0%
+voice to talk to Warp, you hit uh click
+this<00:00:44.160><c> microphone</c><00:00:44.800><c> icon</c><00:00:45.040><c> here.</c><00:00:45.680><c> Once</c><00:00:45.920><c> you've</c>
+
+00:00:46.150 --> 00:00:46.160 align:start position:0%
+this microphone icon here. Once you've
+ 
+
+00:00:46.160 --> 00:00:47.190 align:start position:0%
+this microphone icon here. Once you've
+clicked<00:00:46.480><c> the</c><00:00:46.640><c> first</c><00:00:46.800><c> time,</c><00:00:46.960><c> you</c><00:00:47.120><c> can</c>
+
+00:00:47.190 --> 00:00:47.200 align:start position:0%
+clicked the first time, you can
+ 
+
+00:00:47.200 --> 00:00:48.869 align:start position:0%
+clicked the first time, you can
+configure<00:00:47.520><c> a</c><00:00:47.760><c> hotkey,</c><00:00:48.160><c> which</c><00:00:48.320><c> is</c><00:00:48.480><c> how</c><00:00:48.640><c> I'm</c>
+
+00:00:48.869 --> 00:00:48.879 align:start position:0%
+configure a hotkey, which is how I'm
+ 
+
+00:00:48.879 --> 00:00:52.389 align:start position:0%
+configure a hotkey, which is how I'm
+doing<00:00:49.039><c> it.</c><00:00:49.680><c> There</c><00:00:49.920><c> is</c><00:00:50.000><c> a</c><00:00:50.320><c> bug</c><00:00:51.520><c> where</c><00:00:52.079><c> the</c>
+
+00:00:52.389 --> 00:00:52.399 align:start position:0%
+doing it. There is a bug where the
+ 
+
+00:00:52.399 --> 00:00:54.630 align:start position:0%
+doing it. There is a bug where the
+universal<00:00:52.960><c> developer</c><00:00:53.440><c> input</c><00:00:54.000><c> is</c><00:00:54.320><c> not</c>
+
+00:00:54.630 --> 00:00:54.640 align:start position:0%
+universal developer input is not
+ 
+
+00:00:54.640 --> 00:00:58.229 align:start position:0%
+universal developer input is not
+honoring<00:00:55.360><c> the</c><00:00:55.920><c> show</c><00:00:56.239><c> model</c><00:00:56.640><c> picker</c><00:00:57.120><c> in</c><00:00:57.280><c> prompt</c>
+
+00:00:58.229 --> 00:00:58.239 align:start position:0%
+honoring the show model picker in prompt
+ 
+
+00:00:58.239 --> 00:01:00.869 align:start position:0%
+honoring the show model picker in prompt
+setting.<00:00:59.280><c> I'd</c><00:00:59.520><c> like</c><00:00:59.600><c> you</c><00:00:59.760><c> to</c><00:00:59.920><c> fix</c><00:01:00.160><c> that</c><00:01:00.399><c> bug</c>
+
+00:01:00.869 --> 00:01:00.879 align:start position:0%
+setting. I'd like you to fix that bug
+ 
+
+00:01:00.879 --> 00:01:02.630 align:start position:0%
+setting. I'd like you to fix that bug
+and<00:01:01.120><c> also</c><00:01:01.680><c> make</c><00:01:01.920><c> sure</c><00:01:02.079><c> that</c><00:01:02.320><c> you</c><00:01:02.480><c> are</c>
+
+00:01:02.630 --> 00:01:02.640 align:start position:0%
+and also make sure that you are
+ 
+
+00:01:02.640 --> 00:01:04.310 align:start position:0%
+and also make sure that you are
+listening<00:01:02.960><c> for</c><00:01:03.199><c> changes</c><00:01:03.440><c> to</c><00:01:03.600><c> the</c><00:01:03.840><c> setting</c><00:01:04.159><c> so</c>
+
+00:01:04.310 --> 00:01:04.320 align:start position:0%
+listening for changes to the setting so
+ 
+
+00:01:04.320 --> 00:01:06.070 align:start position:0%
+listening for changes to the setting so
+that<00:01:04.479><c> when</c><00:01:04.720><c> someone</c><00:01:05.040><c> clicks</c><00:01:05.360><c> or</c><00:01:05.600><c> uncclicks</c>
+
+00:01:06.070 --> 00:01:06.080 align:start position:0%
+that when someone clicks or uncclicks
+ 
+
+00:01:06.080 --> 00:01:10.710 align:start position:0%
+that when someone clicks or uncclicks
+the<00:01:06.479><c> checkbox,</c><00:01:07.680><c> the</c><00:01:08.640><c> uh</c><00:01:09.280><c> developer</c><00:01:09.680><c> input</c><00:01:10.159><c> is</c>
+
+00:01:10.710 --> 00:01:10.720 align:start position:0%
+the checkbox, the uh developer input is
+ 
+
+00:01:10.720 --> 00:01:12.870 align:start position:0%
+the checkbox, the uh developer input is
+updated<00:01:11.360><c> appropriately.</c><00:01:12.400><c> Please</c><00:01:12.640><c> take</c><00:01:12.799><c> a</c>
+
+00:01:12.870 --> 00:01:12.880 align:start position:0%
+updated appropriately. Please take a
+ 
+
+00:01:12.880 --> 00:01:14.469 align:start position:0%
+updated appropriately. Please take a
+look<00:01:12.960><c> at</c><00:01:13.119><c> the</c><00:01:13.280><c> attached</c><00:01:13.600><c> screenshot</c><00:01:14.159><c> and</c><00:01:14.320><c> the</c>
+
+00:01:14.469 --> 00:01:14.479 align:start position:0%
+look at the attached screenshot and the
+ 
+
+00:01:14.479 --> 00:01:17.190 align:start position:0%
+look at the attached screenshot and the
+reference<00:01:14.880><c> file</c><00:01:15.280><c> when</c><00:01:15.520><c> making</c><00:01:15.760><c> this</c><00:01:16.000><c> fix.</c><00:01:17.040><c> So</c>
+
+00:01:17.190 --> 00:01:17.200 align:start position:0%
+reference file when making this fix. So
+ 
+
+00:01:17.200 --> 00:01:18.950 align:start position:0%
+reference file when making this fix. So
+I<00:01:17.439><c> speak</c><00:01:17.600><c> to</c><00:01:17.759><c> warp</c><00:01:18.080><c> and</c><00:01:18.240><c> then</c><00:01:18.400><c> there's</c><00:01:18.640><c> various</c>
+
+00:01:18.950 --> 00:01:18.960 align:start position:0%
+I speak to warp and then there's various
+ 
+
+00:01:18.960 --> 00:01:22.469 align:start position:0%
+I speak to warp and then there's various
+ways<00:01:19.439><c> of</c><00:01:19.920><c> providing</c><00:01:20.640><c> warp</c><00:01:21.119><c> context</c><00:01:22.080><c> to</c><00:01:22.400><c> make</c>
+
+00:01:22.469 --> 00:01:22.479 align:start position:0%
+ways of providing warp context to make
+ 
+
+00:01:22.479 --> 00:01:24.390 align:start position:0%
+ways of providing warp context to make
+it<00:01:22.640><c> work</c><00:01:22.880><c> better.</c><00:01:23.200><c> So</c><00:01:23.439><c> one</c><00:01:23.600><c> is</c><00:01:23.840><c> attaching</c><00:01:24.159><c> an</c>
+
+00:01:24.390 --> 00:01:24.400 align:start position:0%
+it work better. So one is attaching an
+ 
+
+00:01:24.400 --> 00:01:25.510 align:start position:0%
+it work better. So one is attaching an
+image.<00:01:24.799><c> So</c><00:01:24.880><c> I'm</c><00:01:25.040><c> going</c><00:01:25.119><c> to</c><00:01:25.200><c> go</c><00:01:25.280><c> ahead</c><00:01:25.439><c> and</c>
+
+00:01:25.510 --> 00:01:25.520 align:start position:0%
+image. So I'm going to go ahead and
+ 
+
+00:01:25.520 --> 00:01:27.749 align:start position:0%
+image. So I'm going to go ahead and
+attach<00:01:25.840><c> that</c><00:01:26.000><c> screenshot</c><00:01:26.400><c> that</c><00:01:26.640><c> I</c><00:01:26.799><c> just</c><00:01:26.880><c> took.</c>
+
+00:01:27.749 --> 00:01:27.759 align:start position:0%
+attach that screenshot that I just took.
+ 
+
+00:01:27.759 --> 00:01:30.310 align:start position:0%
+attach that screenshot that I just took.
+A<00:01:28.000><c> second</c><00:01:28.400><c> is</c><00:01:29.119><c> referencing</c><00:01:29.680><c> files</c><00:01:30.080><c> or</c>
+
+00:01:30.310 --> 00:01:30.320 align:start position:0%
+A second is referencing files or
+ 
+
+00:01:30.320 --> 00:01:32.149 align:start position:0%
+A second is referencing files or
+symbols.<00:01:31.200><c> So</c><00:01:31.360><c> here</c><00:01:31.520><c> I'm</c><00:01:31.680><c> going</c><00:01:31.759><c> to</c><00:01:31.840><c> reference</c>
+
+00:01:32.149 --> 00:01:32.159 align:start position:0%
+symbols. So here I'm going to reference
+ 
+
+00:01:32.159 --> 00:01:33.749 align:start position:0%
+symbols. So here I'm going to reference
+a<00:01:32.320><c> file</c><00:01:32.560><c> where</c><00:01:32.799><c> I</c><00:01:32.880><c> I</c><00:01:33.119><c> think</c><00:01:33.280><c> is</c><00:01:33.439><c> relevant</c>
+
+00:01:33.749 --> 00:01:33.759 align:start position:0%
+a file where I I think is relevant
+ 
+
+00:01:33.759 --> 00:01:35.670 align:start position:0%
+a file where I I think is relevant
+called<00:01:33.920><c> the</c><00:01:34.079><c> universal</c><00:01:34.479><c> developer</c><00:01:34.880><c> input.</c>
+
+00:01:35.670 --> 00:01:35.680 align:start position:0%
+called the universal developer input.
+ 
+
+00:01:35.680 --> 00:01:37.510 align:start position:0%
+called the universal developer input.
+You<00:01:35.840><c> can</c><00:01:36.000><c> also,</c><00:01:36.240><c> by</c><00:01:36.400><c> the</c><00:01:36.560><c> way,</c><00:01:36.720><c> just</c><00:01:36.960><c> put</c><00:01:37.200><c> raw</c>
+
+00:01:37.510 --> 00:01:37.520 align:start position:0%
+You can also, by the way, just put raw
+ 
+
+00:01:37.520 --> 00:01:40.630 align:start position:0%
+You can also, by the way, just put raw
+URLs<00:01:38.159><c> in</c><00:01:38.400><c> here.</c><00:01:38.960><c> You</c><00:01:39.200><c> generally</c><00:01:39.920><c> um</c><00:01:40.159><c> you</c><00:01:40.400><c> don't</c>
+
+00:01:40.630 --> 00:01:40.640 align:start position:0%
+URLs in here. You generally um you don't
+ 
+
+00:01:40.640 --> 00:01:42.310 align:start position:0%
+URLs in here. You generally um you don't
+have<00:01:40.799><c> to</c><00:01:40.960><c> reference</c><00:01:41.360><c> files</c><00:01:41.600><c> because</c><00:01:41.920><c> Warp</c>
+
+00:01:42.310 --> 00:01:42.320 align:start position:0%
+have to reference files because Warp
+ 
+
+00:01:42.320 --> 00:01:44.310 align:start position:0%
+have to reference files because Warp
+will<00:01:42.720><c> index</c><00:01:43.119><c> your</c><00:01:43.280><c> codebase</c><00:01:43.680><c> and</c><00:01:43.840><c> has</c><00:01:44.079><c> various</c>
+
+00:01:44.310 --> 00:01:44.320 align:start position:0%
+will index your codebase and has various
+ 
+
+00:01:44.320 --> 00:01:45.510 align:start position:0%
+will index your codebase and has various
+search<00:01:44.560><c> tools</c><00:01:44.880><c> for</c><00:01:45.040><c> finding</c><00:01:45.280><c> the</c><00:01:45.439><c> right</c>
+
+00:01:45.510 --> 00:01:45.520 align:start position:0%
+search tools for finding the right
+ 
+
+00:01:45.520 --> 00:01:48.159 align:start position:0%
+search tools for finding the right
+files.
+

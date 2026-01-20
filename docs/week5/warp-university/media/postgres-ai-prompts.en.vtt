@@ -1,0 +1,376 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.240 --> 00:00:02.149 align:start position:0%
+ 
+Hey,<00:00:00.800><c> so</c><00:00:01.040><c> today</c><00:00:01.280><c> I'm</c><00:00:01.439><c> going</c><00:00:01.520><c> to</c><00:00:01.600><c> show</c><00:00:01.760><c> you</c><00:00:01.920><c> one</c>
+
+00:00:02.149 --> 00:00:02.159 align:start position:0%
+Hey, so today I'm going to show you one
+ 
+
+00:00:02.159 --> 00:00:04.470 align:start position:0%
+Hey, so today I'm going to show you one
+of<00:00:02.240><c> the</c><00:00:02.720><c> cooler</c><00:00:03.120><c> but</c><00:00:03.520><c> more</c><00:00:03.840><c> hidden</c><00:00:04.160><c> features</c>
+
+00:00:04.470 --> 00:00:04.480 align:start position:0%
+of the cooler but more hidden features
+ 
+
+00:00:04.480 --> 00:00:07.030 align:start position:0%
+of the cooler but more hidden features
+in<00:00:04.720><c> Warp,</c><00:00:05.600><c> which</c><00:00:05.759><c> is</c><00:00:05.920><c> that</c><00:00:06.319><c> you</c><00:00:06.560><c> can</c><00:00:06.720><c> use</c>
+
+00:00:07.030 --> 00:00:07.040 align:start position:0%
+in Warp, which is that you can use
+ 
+
+00:00:07.040 --> 00:00:10.549 align:start position:0%
+in Warp, which is that you can use
+Warp's<00:00:07.680><c> AI</c><00:00:08.080><c> functionality</c><00:00:08.880><c> within</c><00:00:09.840><c> um</c><00:00:10.240><c> long</c>
+
+00:00:10.549 --> 00:00:10.559 align:start position:0%
+Warp's AI functionality within um long
+ 
+
+00:00:10.559 --> 00:00:13.270 align:start position:0%
+Warp's AI functionality within um long
+running<00:00:10.800><c> terminal</c><00:00:11.200><c> apps</c><00:00:11.599><c> in</c><00:00:11.840><c> ripples</c><00:00:12.800><c> to</c><00:00:13.120><c> help</c>
+
+00:00:13.270 --> 00:00:13.280 align:start position:0%
+running terminal apps in ripples to help
+ 
+
+00:00:13.280 --> 00:00:16.390 align:start position:0%
+running terminal apps in ripples to help
+you<00:00:14.320><c> sort</c><00:00:14.639><c> of</c><00:00:14.960><c> figure</c><00:00:15.200><c> out</c><00:00:15.360><c> how</c><00:00:15.519><c> to</c><00:00:15.679><c> do</c><00:00:15.920><c> any</c><00:00:16.160><c> any</c>
+
+00:00:16.390 --> 00:00:16.400 align:start position:0%
+you sort of figure out how to do any any
+ 
+
+00:00:16.400 --> 00:00:17.830 align:start position:0%
+you sort of figure out how to do any any
+kind<00:00:16.560><c> of</c><00:00:16.640><c> interactive</c><00:00:17.119><c> work</c><00:00:17.279><c> you</c><00:00:17.440><c> might</c><00:00:17.600><c> do</c><00:00:17.680><c> in</c>
+
+00:00:17.830 --> 00:00:17.840 align:start position:0%
+kind of interactive work you might do in
+ 
+
+00:00:17.840 --> 00:00:19.189 align:start position:0%
+kind of interactive work you might do in
+one<00:00:18.000><c> of</c><00:00:18.080><c> those</c><00:00:18.160><c> tools.</c><00:00:18.640><c> I'm</c><00:00:18.880><c> going</c><00:00:18.960><c> to</c><00:00:19.039><c> show</c>
+
+00:00:19.189 --> 00:00:19.199 align:start position:0%
+one of those tools. I'm going to show
+ 
+
+00:00:19.199 --> 00:00:22.630 align:start position:0%
+one of those tools. I'm going to show
+you<00:00:19.439><c> this</c><00:00:19.840><c> using</c><00:00:21.119><c> uh</c><00:00:21.199><c> the</c><00:00:21.439><c> Postgres</c><00:00:22.240><c> ripple,</c>
+
+00:00:22.630 --> 00:00:22.640 align:start position:0%
+you this using uh the Postgres ripple,
+ 
+
+00:00:22.640 --> 00:00:25.109 align:start position:0%
+you this using uh the Postgres ripple,
+but<00:00:22.800><c> this</c><00:00:23.039><c> would</c><00:00:23.199><c> work</c><00:00:23.519><c> in</c><00:00:24.400><c> Node,</c><00:00:24.800><c> it</c><00:00:24.960><c> would</c>
+
+00:00:25.109 --> 00:00:25.119 align:start position:0%
+but this would work in Node, it would
+ 
+
+00:00:25.119 --> 00:00:27.349 align:start position:0%
+but this would work in Node, it would
+work<00:00:25.199><c> in</c><00:00:25.439><c> Python,</c><00:00:26.000><c> it</c><00:00:26.160><c> would</c><00:00:26.240><c> work</c><00:00:26.400><c> in</c><00:00:26.560><c> GDB,</c><00:00:27.199><c> it</c>
+
+00:00:27.349 --> 00:00:27.359 align:start position:0%
+work in Python, it would work in GDB, it
+ 
+
+00:00:27.359 --> 00:00:29.189 align:start position:0%
+work in Python, it would work in GDB, it
+would<00:00:27.439><c> work</c><00:00:27.519><c> in</c><00:00:27.760><c> my</c><00:00:28.000><c> SQL.</c><00:00:28.480><c> So</c><00:00:28.720><c> feel</c><00:00:28.880><c> free</c><00:00:29.039><c> to</c>
+
+00:00:29.189 --> 00:00:29.199 align:start position:0%
+would work in my SQL. So feel free to
+ 
+
+00:00:29.199 --> 00:00:30.310 align:start position:0%
+would work in my SQL. So feel free to
+play<00:00:29.359><c> around</c><00:00:29.519><c> with</c><00:00:29.599><c> it.</c><00:00:29.840><c> So</c><00:00:29.920><c> I'm</c><00:00:30.080><c> going</c><00:00:30.080><c> to</c><00:00:30.160><c> go</c>
+
+00:00:30.310 --> 00:00:30.320 align:start position:0%
+play around with it. So I'm going to go
+ 
+
+00:00:30.320 --> 00:00:32.630 align:start position:0%
+play around with it. So I'm going to go
+into<00:00:30.480><c> this</c><00:00:30.720><c> ripple</c><00:00:31.599><c> and</c><00:00:31.920><c> let's</c><00:00:32.160><c> say</c><00:00:32.239><c> I</c><00:00:32.480><c> don't</c>
+
+00:00:32.630 --> 00:00:32.640 align:start position:0%
+into this ripple and let's say I don't
+ 
+
+00:00:32.640 --> 00:00:35.350 align:start position:0%
+into this ripple and let's say I don't
+know<00:00:32.719><c> how</c><00:00:32.880><c> to</c><00:00:33.040><c> use</c><00:00:33.280><c> Postgres,</c><00:00:34.000><c> which</c><00:00:34.880><c> honestly</c>
+
+00:00:35.350 --> 00:00:35.360 align:start position:0%
+know how to use Postgres, which honestly
+ 
+
+00:00:35.360 --> 00:00:36.950 align:start position:0%
+know how to use Postgres, which honestly
+I<00:00:35.520><c> don't</c><00:00:35.600><c> really</c><00:00:35.760><c> know</c><00:00:35.840><c> how</c><00:00:36.000><c> to</c><00:00:36.079><c> use</c><00:00:36.160><c> Postgres.</c>
+
+00:00:36.950 --> 00:00:36.960 align:start position:0%
+I don't really know how to use Postgres.
+ 
+
+00:00:36.960 --> 00:00:40.150 align:start position:0%
+I don't really know how to use Postgres.
+I'm<00:00:37.120><c> going</c><00:00:37.200><c> to</c><00:00:37.360><c> hit</c><00:00:37.600><c> command</c><00:00:38.079><c> I</c><00:00:39.360><c> and</c><00:00:39.680><c> command</c><00:00:40.000><c> I</c>
+
+00:00:40.150 --> 00:00:40.160 align:start position:0%
+I'm going to hit command I and command I
+ 
+
+00:00:40.160 --> 00:00:41.910 align:start position:0%
+I'm going to hit command I and command I
+is<00:00:40.399><c> going</c><00:00:40.480><c> to</c><00:00:40.559><c> bring</c><00:00:40.719><c> up</c><00:00:40.879><c> our</c><00:00:41.120><c> generate</c><00:00:41.520><c> input</c>
+
+00:00:41.910 --> 00:00:41.920 align:start position:0%
+is going to bring up our generate input
+ 
+
+00:00:41.920 --> 00:00:44.470 align:start position:0%
+is going to bring up our generate input
+and<00:00:42.160><c> in</c><00:00:42.399><c> here</c><00:00:42.879><c> you</c><00:00:43.200><c> can</c><00:00:43.360><c> type</c><00:00:43.840><c> or</c><00:00:44.160><c> speak</c>
+
+00:00:44.470 --> 00:00:44.480 align:start position:0%
+and in here you can type or speak
+ 
+
+00:00:44.480 --> 00:00:46.709 align:start position:0%
+and in here you can type or speak
+English<00:00:45.280><c> and</c><00:00:45.840><c> your</c><00:00:46.160><c> English</c><00:00:46.399><c> will</c><00:00:46.640><c> be</c>
+
+00:00:46.709 --> 00:00:46.719 align:start position:0%
+English and your English will be
+ 
+
+00:00:46.719 --> 00:00:48.790 align:start position:0%
+English and your English will be
+translated<00:00:47.280><c> into</c><00:00:47.760><c> the</c><00:00:48.000><c> language</c><00:00:48.320><c> of</c><00:00:48.480><c> whatever</c>
+
+00:00:48.790 --> 00:00:48.800 align:start position:0%
+translated into the language of whatever
+ 
+
+00:00:48.800 --> 00:00:50.869 align:start position:0%
+translated into the language of whatever
+ripple<00:00:49.200><c> you're</c><00:00:49.360><c> in.</c><00:00:49.840><c> So</c><00:00:50.160><c> here</c><00:00:50.320><c> I'm</c><00:00:50.640><c> going</c><00:00:50.719><c> to</c>
+
+00:00:50.869 --> 00:00:50.879 align:start position:0%
+ripple you're in. So here I'm going to
+ 
+
+00:00:50.879 --> 00:00:55.029 align:start position:0%
+ripple you're in. So here I'm going to
+be<00:00:51.120><c> like</c><00:00:52.160><c> uh</c><00:00:52.399><c> show</c><00:00:52.719><c> me</c><00:00:53.039><c> all</c><00:00:53.520><c> tables</c>
+
+00:00:55.029 --> 00:00:55.039 align:start position:0%
+be like uh show me all tables
+ 
+
+00:00:55.039 --> 00:00:57.910 align:start position:0%
+be like uh show me all tables
+and<00:00:55.199><c> you'll</c><00:00:55.520><c> see</c><00:00:55.680><c> this</c><00:00:55.920><c> translates</c><00:00:56.559><c> to</c><00:00:57.680><c> this</c>
+
+00:00:57.910 --> 00:00:57.920 align:start position:0%
+and you'll see this translates to this
+ 
+
+00:00:57.920 --> 00:01:01.510 align:start position:0%
+and you'll see this translates to this
+TT<00:00:58.320><c> command.</c><00:00:58.879><c> I'm</c><00:00:59.120><c> going</c><00:00:59.199><c> to</c><00:00:59.440><c> do</c><00:01:00.320><c> show</c><00:01:00.640><c> me</c><00:01:01.120><c> our</c>
+
+00:01:01.510 --> 00:01:01.520 align:start position:0%
+TT command. I'm going to do show me our
+ 
+
+00:01:01.520 --> 00:01:07.030 align:start position:0%
+TT command. I'm going to do show me our
+users<00:01:02.160><c> table</c><00:01:03.120><c> and</c><00:01:04.559><c> our</c><00:01:05.040><c> teams</c><00:01:05.439><c> table.</c><00:01:06.799><c> I'll</c>
+
+00:01:07.030 --> 00:01:07.040 align:start position:0%
+users table and our teams table. I'll
+ 
+
+00:01:07.040 --> 00:01:08.550 align:start position:0%
+users table and our teams table. I'll
+have<00:01:07.119><c> it</c><00:01:07.280><c> do</c><00:01:07.439><c> two</c><00:01:07.600><c> things</c><00:01:07.760><c> at</c><00:01:08.000><c> once.</c><00:01:08.400><c> And</c>
+
+00:01:08.550 --> 00:01:08.560 align:start position:0%
+have it do two things at once. And
+ 
+
+00:01:08.560 --> 00:01:11.270 align:start position:0%
+have it do two things at once. And
+what's<00:01:08.880><c> cool</c><00:01:09.040><c> is</c><00:01:09.280><c> as</c><00:01:09.520><c> I'm</c><00:01:09.840><c> doing</c><00:01:10.000><c> this,</c><00:01:10.960><c> it's</c>
+
+00:01:11.270 --> 00:01:11.280 align:start position:0%
+what's cool is as I'm doing this, it's
+ 
+
+00:01:11.280 --> 00:01:13.270 align:start position:0%
+what's cool is as I'm doing this, it's
+learning<00:01:11.760><c> the</c><00:01:12.320><c> uh</c><00:01:12.560><c> structure</c><00:01:12.960><c> and</c><00:01:13.119><c> it's</c>
+
+00:01:13.270 --> 00:01:13.280 align:start position:0%
+learning the uh structure and it's
+ 
+
+00:01:13.280 --> 00:01:15.109 align:start position:0%
+learning the uh structure and it's
+learning<00:01:13.600><c> whatever</c><00:01:13.920><c> data</c><00:01:14.240><c> is</c><00:01:14.479><c> being</c><00:01:14.720><c> printed</c>
+
+00:01:15.109 --> 00:01:15.119 align:start position:0%
+learning whatever data is being printed
+ 
+
+00:01:15.119 --> 00:01:18.789 align:start position:0%
+learning whatever data is being printed
+out<00:01:15.680><c> uh</c><00:01:15.840><c> within</c><00:01:16.240><c> this</c><00:01:17.520><c> uh</c><00:01:17.759><c> within</c><00:01:18.080><c> the</c><00:01:18.240><c> ripple.</c>
+
+00:01:18.789 --> 00:01:18.799 align:start position:0%
+out uh within this uh within the ripple.
+ 
+
+00:01:18.799 --> 00:01:20.070 align:start position:0%
+out uh within this uh within the ripple.
+and<00:01:18.960><c> so</c><00:01:19.119><c> that</c><00:01:19.280><c> I</c><00:01:19.360><c> can</c><00:01:19.520><c> do</c><00:01:19.680><c> something</c><00:01:19.840><c> really</c>
+
+00:01:20.070 --> 00:01:20.080 align:start position:0%
+and so that I can do something really
+ 
+
+00:01:20.080 --> 00:01:23.350 align:start position:0%
+and so that I can do something really
+cool.<00:01:20.560><c> Show</c><00:01:20.799><c> me</c><00:01:21.040><c> all</c><00:01:21.280><c> of</c><00:01:21.439><c> the</c><00:01:21.759><c> users</c><00:01:22.320><c> who</c><00:01:22.640><c> have</c>
+
+00:01:23.350 --> 00:01:23.360 align:start position:0%
+cool. Show me all of the users who have
+ 
+
+00:01:23.360 --> 00:01:26.310 align:start position:0%
+cool. Show me all of the users who have
+joined<00:01:23.759><c> Warp</c><00:01:24.240><c> in</c><00:01:24.479><c> the</c><00:01:24.640><c> last</c><00:01:25.119><c> 90</c><00:01:25.520><c> days</c><00:01:25.920><c> from</c>
+
+00:01:26.310 --> 00:01:26.320 align:start position:0%
+joined Warp in the last 90 days from
+ 
+
+00:01:26.320 --> 00:01:30.230 align:start position:0%
+joined Warp in the last 90 days from
+public<00:01:26.799><c> email</c><00:01:27.200><c> accounts</c><00:01:28.240><c> like</c><00:01:28.720><c> Gmail,</c><00:01:29.439><c> Yahoo,</c>
+
+00:01:30.230 --> 00:01:30.240 align:start position:0%
+public email accounts like Gmail, Yahoo,
+ 
+
+00:01:30.240 --> 00:01:31.830 align:start position:0%
+public email accounts like Gmail, Yahoo,
+Hotmail
+
+00:01:31.830 --> 00:01:31.840 align:start position:0%
+Hotmail
+ 
+
+00:01:31.840 --> 00:01:34.870 align:start position:0%
+Hotmail
+and<00:01:32.400><c> are</c><00:01:32.720><c> on</c><00:01:33.280><c> teams</c><00:01:33.759><c> of</c><00:01:34.159><c> more</c><00:01:34.400><c> than</c><00:01:34.640><c> two</c>
+
+00:01:34.870 --> 00:01:34.880 align:start position:0%
+and are on teams of more than two
+ 
+
+00:01:34.880 --> 00:01:36.469 align:start position:0%
+and are on teams of more than two
+people.
+
+00:01:36.469 --> 00:01:36.479 align:start position:0%
+people.
+ 
+
+00:01:36.479 --> 00:01:39.190 align:start position:0%
+people.
+So<00:01:36.640><c> I</c><00:01:36.880><c> hit</c><00:01:37.280><c> my</c><00:01:37.759><c> voice</c><00:01:38.159><c> hotkey</c><00:01:38.640><c> here</c><00:01:38.799><c> to</c><00:01:39.040><c> speak</c>
+
+00:01:39.190 --> 00:01:39.200 align:start position:0%
+So I hit my voice hotkey here to speak
+ 
+
+00:01:39.200 --> 00:01:42.390 align:start position:0%
+So I hit my voice hotkey here to speak
+to<00:01:39.439><c> Warp.</c><00:01:40.479><c> You'll</c><00:01:40.720><c> see</c><00:01:40.880><c> I</c><00:01:41.119><c> could</c><00:01:41.280><c> do</c><00:01:41.439><c> that.</c><00:01:42.079><c> I</c>
+
+00:01:42.390 --> 00:01:42.400 align:start position:0%
+to Warp. You'll see I could do that. I
+ 
+
+00:01:42.400 --> 00:01:45.270 align:start position:0%
+to Warp. You'll see I could do that. I
+get<00:01:42.560><c> a</c><00:01:42.799><c> really</c><00:01:43.119><c> cool</c><00:01:44.000><c> somewhat</c><00:01:44.479><c> complicated</c>
+
+00:01:45.270 --> 00:01:45.280 align:start position:0%
+get a really cool somewhat complicated
+ 
+
+00:01:45.280 --> 00:01:47.670 align:start position:0%
+get a really cool somewhat complicated
+query<00:01:45.680><c> that</c><00:01:45.920><c> I</c><00:01:46.079><c> can</c><00:01:46.240><c> then</c><00:01:46.479><c> run</c><00:01:47.119><c> just</c><00:01:47.439><c> one</c>
+
+00:01:47.670 --> 00:01:47.680 align:start position:0%
+query that I can then run just one
+ 
+
+00:01:47.680 --> 00:01:49.830 align:start position:0%
+query that I can then run just one
+person<00:01:48.000><c> meeting</c><00:01:48.320><c> that</c><00:01:48.560><c> that</c><00:01:48.880><c> criteria.</c><00:01:49.680><c> This</c>
+
+00:01:49.830 --> 00:01:49.840 align:start position:0%
+person meeting that that criteria. This
+ 
+
+00:01:49.840 --> 00:01:51.749 align:start position:0%
+person meeting that that criteria. This
+is<00:01:50.000><c> all</c><00:01:50.159><c> fake</c><00:01:50.479><c> data</c><00:01:50.799><c> anyway,</c><00:01:51.119><c> so</c><00:01:51.280><c> I'm</c><00:01:51.439><c> not</c><00:01:51.600><c> too</c>
+
+00:01:51.749 --> 00:01:51.759 align:start position:0%
+is all fake data anyway, so I'm not too
+ 
+
+00:01:51.759 --> 00:01:53.350 align:start position:0%
+is all fake data anyway, so I'm not too
+concerned<00:01:52.079><c> about</c><00:01:52.320><c> you</c><00:01:52.479><c> all</c><00:01:52.720><c> seeing</c><00:01:52.960><c> it.</c>
+
+00:01:53.350 --> 00:01:53.360 align:start position:0%
+concerned about you all seeing it.
+ 
+
+00:01:53.360 --> 00:01:55.270 align:start position:0%
+concerned about you all seeing it.
+Anyhow,<00:01:53.920><c> super</c><00:01:54.320><c> cool</c><00:01:54.479><c> feature.</c><00:01:55.040><c> Have</c><00:01:55.119><c> fun</c>
+
+00:01:55.270 --> 00:01:55.280 align:start position:0%
+Anyhow, super cool feature. Have fun
+ 
+
+00:01:55.280 --> 00:01:57.840 align:start position:0%
+Anyhow, super cool feature. Have fun
+playing<00:01:55.520><c> with</c><00:01:55.600><c> it</c>
+

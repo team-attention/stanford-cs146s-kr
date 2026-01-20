@@ -1,0 +1,120 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.240 --> 00:00:02.149 align:start position:0%
+ 
+Add<00:00:00.480><c> a</c><00:00:00.640><c> rule</c><00:00:00.960><c> with</c><00:00:01.280><c> your</c><00:00:01.600><c> environment</c>
+
+00:00:02.149 --> 00:00:02.159 align:start position:0%
+Add a rule with your environment
+ 
+
+00:00:02.159 --> 00:00:04.710 align:start position:0%
+Add a rule with your environment
+preferences.<00:00:03.280><c> For</c><00:00:03.439><c> example,</c><00:00:03.919><c> when</c><00:00:04.160><c> I'm</c><00:00:04.400><c> using</c>
+
+00:00:04.710 --> 00:00:04.720 align:start position:0%
+preferences. For example, when I'm using
+ 
+
+00:00:04.720 --> 00:00:07.670 align:start position:0%
+preferences. For example, when I'm using
+an<00:00:04.960><c> agent</c><00:00:05.440><c> like</c><00:00:05.839><c> Claude,</c><00:00:06.640><c> it</c><00:00:06.879><c> tends</c><00:00:07.120><c> to</c><00:00:07.359><c> use</c>
+
+00:00:07.670 --> 00:00:07.680 align:start position:0%
+an agent like Claude, it tends to use
+ 
+
+00:00:07.680 --> 00:00:11.110 align:start position:0%
+an agent like Claude, it tends to use
+npm<00:00:08.240><c> by</c><00:00:08.400><c> default,</c><00:00:09.120><c> but</c><00:00:09.360><c> I</c><00:00:09.599><c> prefer</c><00:00:09.840><c> to</c><00:00:10.000><c> use</c><00:00:10.240><c> PNPM</c>
+
+00:00:11.110 --> 00:00:11.120 align:start position:0%
+npm by default, but I prefer to use PNPM
+ 
+
+00:00:11.120 --> 00:00:13.430 align:start position:0%
+npm by default, but I prefer to use PNPM
+for<00:00:11.440><c> managing</c><00:00:11.920><c> larger</c><00:00:12.400><c> web</c><00:00:12.800><c> projects</c><00:00:13.200><c> with</c>
+
+00:00:13.430 --> 00:00:13.440 align:start position:0%
+for managing larger web projects with
+ 
+
+00:00:13.440 --> 00:00:16.230 align:start position:0%
+for managing larger web projects with
+workspaces.<00:00:14.400><c> So,</c><00:00:14.639><c> I</c><00:00:14.799><c> set</c><00:00:14.960><c> up</c><00:00:15.120><c> a</c><00:00:15.280><c> rule</c><00:00:15.920><c> and</c>
+
+00:00:16.230 --> 00:00:16.240 align:start position:0%
+workspaces. So, I set up a rule and
+ 
+
+00:00:16.240 --> 00:00:18.950 align:start position:0%
+workspaces. So, I set up a rule and
+described<00:00:16.800><c> my</c><00:00:16.960><c> preference</c><00:00:17.359><c> to</c><00:00:17.600><c> use</c><00:00:17.840><c> PNPM</c><00:00:18.720><c> or</c>
+
+00:00:18.950 --> 00:00:18.960 align:start position:0%
+described my preference to use PNPM or
+ 
+
+00:00:18.960 --> 00:00:20.790 align:start position:0%
+described my preference to use PNPM or
+default<00:00:19.359><c> to</c><00:00:19.520><c> whatever</c><00:00:19.840><c> is</c><00:00:20.000><c> currently</c><00:00:20.320><c> in</c><00:00:20.560><c> the</c>
+
+00:00:20.790 --> 00:00:20.800 align:start position:0%
+default to whatever is currently in the
+ 
+
+00:00:20.800 --> 00:00:23.429 align:start position:0%
+default to whatever is currently in the
+project.<00:00:21.600><c> That</c><00:00:21.760><c> way,</c><00:00:21.920><c> it</c><00:00:22.160><c> knows</c><00:00:22.400><c> to</c><00:00:22.640><c> use</c><00:00:22.800><c> pmpp</c>
+
+00:00:23.429 --> 00:00:23.439 align:start position:0%
+project. That way, it knows to use pmpp
+ 
+
+00:00:23.439 --> 00:00:25.750 align:start position:0%
+project. That way, it knows to use pmpp
+first<00:00:23.680><c> when</c><00:00:23.920><c> it's</c><00:00:24.080><c> updating</c><00:00:24.480><c> dependencies.</c>
+
+00:00:25.750 --> 00:00:25.760 align:start position:0%
+first when it's updating dependencies.
+ 
+
+00:00:25.760 --> 00:00:27.990 align:start position:0%
+first when it's updating dependencies.
+And<00:00:26.000><c> you</c><00:00:26.240><c> can</c><00:00:26.400><c> also</c><00:00:26.720><c> update</c><00:00:27.119><c> your</c><00:00:27.439><c> Python</c>
+
+00:00:27.990 --> 00:00:28.000 align:start position:0%
+And you can also update your Python
+ 
+
+00:00:28.000 --> 00:00:29.750 align:start position:0%
+And you can also update your Python
+environment,<00:00:28.560><c> for</c><00:00:28.640><c> example,</c><00:00:29.039><c> to</c><00:00:29.279><c> always</c><00:00:29.519><c> use</c>
+
+00:00:29.750 --> 00:00:29.760 align:start position:0%
+environment, for example, to always use
+ 
+
+00:00:29.760 --> 00:00:32.470 align:start position:0%
+environment, for example, to always use
+Minionda.<00:00:31.039><c> Or</c><00:00:31.359><c> if</c><00:00:31.519><c> you're</c><00:00:31.760><c> building</c><00:00:32.000><c> desktop</c>
+
+00:00:32.470 --> 00:00:32.480 align:start position:0%
+Minionda. Or if you're building desktop
+ 
+
+00:00:32.480 --> 00:00:35.190 align:start position:0%
+Minionda. Or if you're building desktop
+apps<00:00:32.880><c> with</c><00:00:33.040><c> the</c><00:00:33.200><c> Tori</c><00:00:33.600><c> CLI,</c><00:00:34.239><c> you</c><00:00:34.480><c> can</c><00:00:34.880><c> default</c>
+
+00:00:35.190 --> 00:00:35.200 align:start position:0%
+apps with the Tori CLI, you can default
+ 
+
+00:00:35.200 --> 00:00:38.320 align:start position:0%
+apps with the Tori CLI, you can default
+to<00:00:35.360><c> that</c><00:00:35.680><c> manager</c><00:00:36.079><c> instead.</c>
+

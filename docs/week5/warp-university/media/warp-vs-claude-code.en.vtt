@@ -1,0 +1,1968 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.080 --> 00:00:02.149 align:start position:0%
+ 
+Hey<00:00:00.400><c> there,</c><00:00:00.880><c> I'm</c><00:00:01.120><c> Ben</c><00:00:01.360><c> Holmes,</c><00:00:01.839><c> product</c>
+
+00:00:02.149 --> 00:00:02.159 align:start position:0%
+Hey there, I'm Ben Holmes, product
+ 
+
+00:00:02.159 --> 00:00:04.070 align:start position:0%
+Hey there, I'm Ben Holmes, product
+engineer<00:00:02.480><c> at</c><00:00:02.639><c> Warp,</c><00:00:03.200><c> and</c><00:00:03.360><c> I</c><00:00:03.520><c> want</c><00:00:03.600><c> to</c><00:00:03.760><c> do</c><00:00:03.840><c> a</c>
+
+00:00:04.070 --> 00:00:04.080 align:start position:0%
+engineer at Warp, and I want to do a
+ 
+
+00:00:04.080 --> 00:00:06.230 align:start position:0%
+engineer at Warp, and I want to do a
+quick<00:00:04.240><c> comparison</c><00:00:04.799><c> video</c><00:00:05.200><c> between</c><00:00:05.839><c> Claude</c>
+
+00:00:06.230 --> 00:00:06.240 align:start position:0%
+quick comparison video between Claude
+ 
+
+00:00:06.240 --> 00:00:08.870 align:start position:0%
+quick comparison video between Claude
+Code<00:00:06.560><c> and</c><00:00:06.799><c> Warp's</c><00:00:07.359><c> built-in</c><00:00:07.919><c> coding</c><00:00:08.240><c> agent.</c>
+
+00:00:08.870 --> 00:00:08.880 align:start position:0%
+Code and Warp's built-in coding agent.
+ 
+
+00:00:08.880 --> 00:00:10.629 align:start position:0%
+Code and Warp's built-in coding agent.
+Let's<00:00:09.120><c> talk</c><00:00:09.280><c> about</c><00:00:09.440><c> Claude</c><00:00:09.840><c> Code</c><00:00:10.160><c> first.</c>
+
+00:00:10.629 --> 00:00:10.639 align:start position:0%
+Let's talk about Claude Code first.
+ 
+
+00:00:10.639 --> 00:00:12.950 align:start position:0%
+Let's talk about Claude Code first.
+Claude<00:00:11.120><c> is</c><00:00:11.280><c> a</c><00:00:11.519><c> CLI</c><00:00:12.000><c> tool,</c><00:00:12.240><c> so</c><00:00:12.400><c> you'll</c><00:00:12.639><c> need</c><00:00:12.800><c> a</c>
+
+00:00:12.950 --> 00:00:12.960 align:start position:0%
+Claude is a CLI tool, so you'll need a
+ 
+
+00:00:12.960 --> 00:00:15.190 align:start position:0%
+Claude is a CLI tool, so you'll need a
+terminal<00:00:13.360><c> to</c><00:00:13.599><c> start</c><00:00:13.920><c> like</c><00:00:14.240><c> warp,</c><00:00:14.799><c> and</c><00:00:14.960><c> you'll</c>
+
+00:00:15.190 --> 00:00:15.200 align:start position:0%
+terminal to start like warp, and you'll
+ 
+
+00:00:15.200 --> 00:00:17.830 align:start position:0%
+terminal to start like warp, and you'll
+need<00:00:15.360><c> to</c><00:00:15.519><c> install</c><00:00:15.839><c> the</c><00:00:16.080><c> Claude</c><00:00:16.640><c> CLI.</c><00:00:17.440><c> Then</c><00:00:17.680><c> you</c>
+
+00:00:17.830 --> 00:00:17.840 align:start position:0%
+need to install the Claude CLI. Then you
+ 
+
+00:00:17.840 --> 00:00:19.750 align:start position:0%
+need to install the Claude CLI. Then you
+can<00:00:17.920><c> run</c><00:00:18.160><c> Claude</c><00:00:18.720><c> to</c><00:00:18.960><c> start</c><00:00:19.199><c> prompting</c><00:00:19.600><c> the</c>
+
+00:00:19.750 --> 00:00:19.760 align:start position:0%
+can run Claude to start prompting the
+ 
+
+00:00:19.760 --> 00:00:21.670 align:start position:0%
+can run Claude to start prompting the
+coding<00:00:20.080><c> agent.</c><00:00:20.720><c> You</c><00:00:20.880><c> can</c><00:00:20.960><c> type</c><00:00:21.199><c> your</c><00:00:21.359><c> prompt</c>
+
+00:00:21.670 --> 00:00:21.680 align:start position:0%
+coding agent. You can type your prompt
+ 
+
+00:00:21.680 --> 00:00:24.310 align:start position:0%
+coding agent. You can type your prompt
+in<00:00:21.840><c> this</c><00:00:22.080><c> box</c><00:00:22.640><c> and</c><00:00:22.960><c> let</c><00:00:23.279><c> Claude</c><00:00:23.600><c> code</c><00:00:23.920><c> do</c><00:00:24.080><c> its</c>
+
+00:00:24.310 --> 00:00:24.320 align:start position:0%
+in this box and let Claude code do its
+ 
+
+00:00:24.320 --> 00:00:26.950 align:start position:0%
+in this box and let Claude code do its
+thing.<00:00:24.800><c> It's</c><00:00:25.039><c> able</c><00:00:25.279><c> to</c><00:00:25.600><c> read</c><00:00:25.920><c> files,</c><00:00:26.720><c> search</c>
+
+00:00:26.950 --> 00:00:26.960 align:start position:0%
+thing. It's able to read files, search
+ 
+
+00:00:26.960 --> 00:00:29.830 align:start position:0%
+thing. It's able to read files, search
+your<00:00:27.199><c> codebase</c><00:00:27.680><c> for</c><00:00:28.000><c> key</c><00:00:28.240><c> terms,</c><00:00:29.119><c> and</c><00:00:29.359><c> once</c><00:00:29.599><c> it</c>
+
+00:00:29.830 --> 00:00:29.840 align:start position:0%
+your codebase for key terms, and once it
+ 
+
+00:00:29.840 --> 00:00:31.669 align:start position:0%
+your codebase for key terms, and once it
+has<00:00:30.000><c> enough</c><00:00:30.320><c> context,</c><00:00:30.960><c> it's</c><00:00:31.199><c> able</c><00:00:31.359><c> to</c><00:00:31.519><c> make</c>
+
+00:00:31.669 --> 00:00:31.679 align:start position:0%
+has enough context, it's able to make
+ 
+
+00:00:31.679 --> 00:00:33.590 align:start position:0%
+has enough context, it's able to make
+diffs<00:00:32.160><c> on</c><00:00:32.320><c> your</c><00:00:32.480><c> behalf.</c><00:00:33.120><c> Here,</c><00:00:33.360><c> we're</c>
+
+00:00:33.590 --> 00:00:33.600 align:start position:0%
+diffs on your behalf. Here, we're
+ 
+
+00:00:33.600 --> 00:00:35.430 align:start position:0%
+diffs on your behalf. Here, we're
+editing<00:00:33.920><c> the</c><00:00:34.079><c> readme</c><00:00:34.559><c> file.</c><00:00:34.880><c> It</c><00:00:35.040><c> presents</c><00:00:35.360><c> a</c>
+
+00:00:35.430 --> 00:00:35.440 align:start position:0%
+editing the readme file. It presents a
+ 
+
+00:00:35.440 --> 00:00:37.510 align:start position:0%
+editing the readme file. It presents a
+diff<00:00:35.680><c> that</c><00:00:35.840><c> I'm</c><00:00:36.079><c> able</c><00:00:36.239><c> to</c><00:00:36.399><c> manually</c><00:00:36.880><c> review,</c>
+
+00:00:37.510 --> 00:00:37.520 align:start position:0%
+diff that I'm able to manually review,
+ 
+
+00:00:37.520 --> 00:00:39.990 align:start position:0%
+diff that I'm able to manually review,
+or<00:00:37.760><c> I</c><00:00:37.920><c> can</c><00:00:38.079><c> hit</c><00:00:38.239><c> shift</c><00:00:38.559><c> tab</c><00:00:38.960><c> to</c><00:00:39.280><c> auto</c><00:00:39.600><c> accept</c>
+
+00:00:39.990 --> 00:00:40.000 align:start position:0%
+or I can hit shift tab to auto accept
+ 
+
+00:00:40.000 --> 00:00:41.910 align:start position:0%
+or I can hit shift tab to auto accept
+edits<00:00:40.320><c> for</c><00:00:40.480><c> the</c><00:00:40.640><c> rest</c><00:00:40.800><c> of</c><00:00:40.879><c> the</c><00:00:41.040><c> session.</c><00:00:41.760><c> You</c>
+
+00:00:41.910 --> 00:00:41.920 align:start position:0%
+edits for the rest of the session. You
+ 
+
+00:00:41.920 --> 00:00:44.069 align:start position:0%
+edits for the rest of the session. You
+can<00:00:42.000><c> also</c><00:00:42.239><c> enter</c><00:00:42.719><c> planning</c><00:00:43.120><c> mode</c><00:00:43.520><c> to</c><00:00:43.760><c> have</c><00:00:43.920><c> the</c>
+
+00:00:44.069 --> 00:00:44.079 align:start position:0%
+can also enter planning mode to have the
+ 
+
+00:00:44.079 --> 00:00:45.910 align:start position:0%
+can also enter planning mode to have the
+agent<00:00:44.480><c> do</c><00:00:44.640><c> some</c><00:00:44.879><c> research</c><00:00:45.280><c> and</c><00:00:45.520><c> present</c><00:00:45.760><c> a</c>
+
+00:00:45.910 --> 00:00:45.920 align:start position:0%
+agent do some research and present a
+ 
+
+00:00:45.920 --> 00:00:48.069 align:start position:0%
+agent do some research and present a
+markdownbased<00:00:46.719><c> plan</c><00:00:47.200><c> before</c><00:00:47.520><c> it</c><00:00:47.760><c> starts</c>
+
+00:00:48.069 --> 00:00:48.079 align:start position:0%
+markdownbased plan before it starts
+ 
+
+00:00:48.079 --> 00:00:50.229 align:start position:0%
+markdownbased plan before it starts
+working.<00:00:48.640><c> Warp's</c><00:00:49.039><c> coding</c><00:00:49.360><c> agent</c><00:00:49.680><c> is</c><00:00:49.920><c> built</c>
+
+00:00:50.229 --> 00:00:50.239 align:start position:0%
+working. Warp's coding agent is built
+ 
+
+00:00:50.239 --> 00:00:51.750 align:start position:0%
+working. Warp's coding agent is built
+into<00:00:50.480><c> Warp</c><00:00:50.800><c> directly.</c><00:00:51.120><c> So,</c><00:00:51.280><c> if</c><00:00:51.440><c> you</c><00:00:51.520><c> already</c>
+
+00:00:51.750 --> 00:00:51.760 align:start position:0%
+into Warp directly. So, if you already
+ 
+
+00:00:51.760 --> 00:00:54.069 align:start position:0%
+into Warp directly. So, if you already
+use<00:00:51.920><c> Warp</c><00:00:52.239><c> Day</c><00:00:52.399><c> today</c><00:00:52.719><c> as</c><00:00:52.879><c> a</c><00:00:53.039><c> terminal,</c><00:00:53.760><c> you</c>
+
+00:00:54.069 --> 00:00:54.079 align:start position:0%
+use Warp Day today as a terminal, you
+ 
+
+00:00:54.079 --> 00:00:56.709 align:start position:0%
+use Warp Day today as a terminal, you
+can<00:00:54.399><c> submit</c><00:00:54.800><c> an</c><00:00:55.039><c> AI</c><00:00:55.440><c> query</c><00:00:55.840><c> instead.</c><00:00:56.399><c> And</c><00:00:56.559><c> if</c>
+
+00:00:56.709 --> 00:00:56.719 align:start position:0%
+can submit an AI query instead. And if
+ 
+
+00:00:56.719 --> 00:00:58.869 align:start position:0%
+can submit an AI query instead. And if
+it<00:00:56.879><c> looks</c><00:00:57.120><c> like</c><00:00:57.199><c> an</c><00:00:57.440><c> AI</c><00:00:57.760><c> query,</c><00:00:58.239><c> we'll</c><00:00:58.559><c> smartly</c>
+
+00:00:58.869 --> 00:00:58.879 align:start position:0%
+it looks like an AI query, we'll smartly
+ 
+
+00:00:58.879 --> 00:01:00.549 align:start position:0%
+it looks like an AI query, we'll smartly
+kick<00:00:59.120><c> you</c><00:00:59.280><c> over</c><00:00:59.359><c> to</c><00:00:59.520><c> agent</c><00:00:59.920><c> mode,</c><00:01:00.160><c> which</c><00:01:00.399><c> you</c>
+
+00:01:00.549 --> 00:01:00.559 align:start position:0%
+kick you over to agent mode, which you
+ 
+
+00:01:00.559 --> 00:01:02.389 align:start position:0%
+kick you over to agent mode, which you
+can<00:01:00.640><c> enter</c><00:01:00.879><c> manually</c><00:01:01.280><c> at</c><00:01:01.520><c> any</c><00:01:01.760><c> time</c><00:01:02.000><c> with</c><00:01:02.239><c> the</c>
+
+00:01:02.389 --> 00:01:02.399 align:start position:0%
+can enter manually at any time with the
+ 
+
+00:01:02.399 --> 00:01:04.070 align:start position:0%
+can enter manually at any time with the
+keyboard<00:01:02.800><c> shortcut</c><00:01:03.199><c> or</c><00:01:03.359><c> this</c><00:01:03.520><c> little</c><00:01:03.680><c> agent</c>
+
+00:01:04.070 --> 00:01:04.080 align:start position:0%
+keyboard shortcut or this little agent
+ 
+
+00:01:04.080 --> 00:01:06.149 align:start position:0%
+keyboard shortcut or this little agent
+button<00:01:04.400><c> right</c><00:01:04.640><c> here.</c><00:01:05.280><c> Once</c><00:01:05.519><c> you</c><00:01:05.680><c> submit</c><00:01:05.920><c> a</c>
+
+00:01:06.149 --> 00:01:06.159 align:start position:0%
+button right here. Once you submit a
+ 
+
+00:01:06.159 --> 00:01:08.469 align:start position:0%
+button right here. Once you submit a
+query,<00:01:06.560><c> it</c><00:01:06.799><c> will</c><00:01:07.040><c> kick</c><00:01:07.280><c> off</c><00:01:07.520><c> a</c><00:01:07.760><c> warp</c><00:01:08.159><c> coding</c>
+
+00:01:08.469 --> 00:01:08.479 align:start position:0%
+query, it will kick off a warp coding
+ 
+
+00:01:08.479 --> 00:01:11.030 align:start position:0%
+query, it will kick off a warp coding
+task.<00:01:09.119><c> So,</c><00:01:09.280><c> it's</c><00:01:09.520><c> able</c><00:01:09.760><c> to</c><00:01:10.080><c> read</c><00:01:10.400><c> files,</c>
+
+00:01:11.030 --> 00:01:11.040 align:start position:0%
+task. So, it's able to read files,
+ 
+
+00:01:11.040 --> 00:01:13.109 align:start position:0%
+task. So, it's able to read files,
+search<00:01:11.280><c> your</c><00:01:11.520><c> codebase,</c><00:01:12.320><c> and</c><00:01:12.560><c> create</c><00:01:12.880><c> code</c>
+
+00:01:13.109 --> 00:01:13.119 align:start position:0%
+search your codebase, and create code
+ 
+
+00:01:13.119 --> 00:01:15.830 align:start position:0%
+search your codebase, and create code
+diffs<00:01:13.760><c> similar</c><00:01:14.080><c> to</c><00:01:14.320><c> claw</c><00:01:14.720><c> code.</c><00:01:15.200><c> Now,</c><00:01:15.439><c> one</c><00:01:15.680><c> key</c>
+
+00:01:15.830 --> 00:01:15.840 align:start position:0%
+diffs similar to claw code. Now, one key
+ 
+
+00:01:15.840 --> 00:01:17.270 align:start position:0%
+diffs similar to claw code. Now, one key
+difference<00:01:16.159><c> is</c><00:01:16.400><c> what</c><00:01:16.560><c> you</c><00:01:16.720><c> can</c><00:01:16.880><c> do</c><00:01:16.960><c> with</c><00:01:17.119><c> these</c>
+
+00:01:17.270 --> 00:01:17.280 align:start position:0%
+difference is what you can do with these
+ 
+
+00:01:17.280 --> 00:01:19.510 align:start position:0%
+difference is what you can do with these
+diffs.<00:01:17.840><c> You're</c><00:01:18.080><c> able</c><00:01:18.240><c> to</c><00:01:18.479><c> accept</c><00:01:18.880><c> or</c><00:01:19.280><c> auto</c>
+
+00:01:19.510 --> 00:01:19.520 align:start position:0%
+diffs. You're able to accept or auto
+ 
+
+00:01:19.520 --> 00:01:21.270 align:start position:0%
+diffs. You're able to accept or auto
+approve<00:01:19.840><c> for</c><00:01:20.000><c> the</c><00:01:20.159><c> rest</c><00:01:20.240><c> of</c><00:01:20.320><c> the</c><00:01:20.560><c> session,</c><00:01:21.040><c> but</c>
+
+00:01:21.270 --> 00:01:21.280 align:start position:0%
+approve for the rest of the session, but
+ 
+
+00:01:21.280 --> 00:01:23.749 align:start position:0%
+approve for the rest of the session, but
+you<00:01:21.439><c> can</c><00:01:21.600><c> also</c><00:01:22.000><c> edit</c><00:01:22.320><c> that</c><00:01:22.560><c> diff</c><00:01:22.960><c> directly.</c><00:01:23.520><c> We</c>
+
+00:01:23.749 --> 00:01:23.759 align:start position:0%
+you can also edit that diff directly. We
+ 
+
+00:01:23.759 --> 00:01:25.670 align:start position:0%
+you can also edit that diff directly. We
+can<00:01:23.840><c> give</c><00:01:24.000><c> you</c><00:01:24.240><c> nice</c><00:01:24.479><c> affordances</c><00:01:25.200><c> like</c><00:01:25.439><c> a</c>
+
+00:01:25.670 --> 00:01:25.680 align:start position:0%
+can give you nice affordances like a
+ 
+
+00:01:25.680 --> 00:01:27.590 align:start position:0%
+can give you nice affordances like a
+built-in<00:01:26.080><c> editor</c><00:01:26.640><c> if</c><00:01:26.880><c> you</c><00:01:27.040><c> want</c><00:01:27.119><c> to</c><00:01:27.200><c> edit</c><00:01:27.439><c> the</c>
+
+00:01:27.590 --> 00:01:27.600 align:start position:0%
+built-in editor if you want to edit the
+ 
+
+00:01:27.600 --> 00:01:29.429 align:start position:0%
+built-in editor if you want to edit the
+diff<00:01:27.920><c> manually,</c><00:01:28.479><c> remove</c><00:01:28.799><c> comments</c><00:01:29.119><c> that</c><00:01:29.280><c> an</c>
+
+00:01:29.429 --> 00:01:29.439 align:start position:0%
+diff manually, remove comments that an
+ 
+
+00:01:29.439 --> 00:01:31.350 align:start position:0%
+diff manually, remove comments that an
+agent<00:01:29.680><c> might</c><00:01:29.920><c> have</c><00:01:30.000><c> added,</c><00:01:30.640><c> etc.</c><00:01:31.040><c> And</c><00:01:31.200><c> when</c>
+
+00:01:31.350 --> 00:01:31.360 align:start position:0%
+agent might have added, etc. And when
+ 
+
+00:01:31.360 --> 00:01:33.510 align:start position:0%
+agent might have added, etc. And when
+you<00:01:31.439><c> hit</c><00:01:31.680><c> accept,</c><00:01:32.159><c> it</c><00:01:32.320><c> will</c><00:01:32.640><c> notify</c><00:01:33.040><c> the</c><00:01:33.200><c> agent</c>
+
+00:01:33.510 --> 00:01:33.520 align:start position:0%
+you hit accept, it will notify the agent
+ 
+
+00:01:33.520 --> 00:01:35.109 align:start position:0%
+you hit accept, it will notify the agent
+about<00:01:33.680><c> those</c><00:01:33.920><c> diffs</c><00:01:34.320><c> so</c><00:01:34.479><c> it</c><00:01:34.640><c> doesn't</c><00:01:34.799><c> try</c><00:01:34.960><c> to</c>
+
+00:01:35.109 --> 00:01:35.119 align:start position:0%
+about those diffs so it doesn't try to
+ 
+
+00:01:35.119 --> 00:01:37.109 align:start position:0%
+about those diffs so it doesn't try to
+overwrite<00:01:35.520><c> them</c><00:01:35.920><c> later</c><00:01:36.240><c> in</c><00:01:36.400><c> the</c><00:01:36.560><c> session.</c>
+
+00:01:37.109 --> 00:01:37.119 align:start position:0%
+overwrite them later in the session.
+ 
+
+00:01:37.119 --> 00:01:38.870 align:start position:0%
+overwrite them later in the session.
+Another<00:01:37.439><c> key</c><00:01:37.680><c> difference</c><00:01:37.920><c> is</c><00:01:38.240><c> reviewing</c><00:01:38.640><c> your</c>
+
+00:01:38.870 --> 00:01:38.880 align:start position:0%
+Another key difference is reviewing your
+ 
+
+00:01:38.880 --> 00:01:40.950 align:start position:0%
+Another key difference is reviewing your
+changes.<00:01:39.360><c> Cloud</c><00:01:39.759><c> code</c><00:01:40.000><c> requires</c><00:01:40.320><c> you</c><00:01:40.479><c> to</c><00:01:40.640><c> use</c>
+
+00:01:40.950 --> 00:01:40.960 align:start position:0%
+changes. Cloud code requires you to use
+ 
+
+00:01:40.960 --> 00:01:43.830 align:start position:0%
+changes. Cloud code requires you to use
+git<00:01:41.280><c> cli</c><00:01:41.840><c> or</c><00:01:42.079><c> a</c><00:01:42.240><c> tool</c><00:01:42.400><c> like</c><00:01:42.640><c> VS</c><00:01:43.040><c> Code</c><00:01:43.360><c> to</c><00:01:43.600><c> review</c>
+
+00:01:43.830 --> 00:01:43.840 align:start position:0%
+git cli or a tool like VS Code to review
+ 
+
+00:01:43.840 --> 00:01:45.510 align:start position:0%
+git cli or a tool like VS Code to review
+your<00:01:44.000><c> diffs,</c><00:01:44.400><c> but</c><00:01:44.640><c> Warp</c><00:01:44.960><c> has</c><00:01:45.040><c> a</c><00:01:45.200><c> built-in</c>
+
+00:01:45.510 --> 00:01:45.520 align:start position:0%
+your diffs, but Warp has a built-in
+ 
+
+00:01:45.520 --> 00:01:47.190 align:start position:0%
+your diffs, but Warp has a built-in
+button<00:01:45.759><c> for</c><00:01:45.920><c> this.</c><00:01:46.320><c> You</c><00:01:46.560><c> can</c><00:01:46.640><c> hit</c><00:01:46.799><c> review</c>
+
+00:01:47.190 --> 00:01:47.200 align:start position:0%
+button for this. You can hit review
+ 
+
+00:01:47.200 --> 00:01:48.870 align:start position:0%
+button for this. You can hit review
+changes<00:01:47.439><c> at</c><00:01:47.680><c> the</c><00:01:47.759><c> end</c><00:01:47.840><c> of</c><00:01:47.920><c> a</c><00:01:48.079><c> session</c><00:01:48.399><c> or</c><00:01:48.720><c> hit</c>
+
+00:01:48.870 --> 00:01:48.880 align:start position:0%
+changes at the end of a session or hit
+ 
+
+00:01:48.880 --> 00:01:50.789 align:start position:0%
+changes at the end of a session or hit
+this<00:01:49.119><c> charm</c><00:01:49.439><c> right</c><00:01:49.600><c> here</c><00:01:50.079><c> and</c><00:01:50.320><c> you'll</c><00:01:50.479><c> get</c><00:01:50.640><c> a</c>
+
+00:01:50.789 --> 00:01:50.799 align:start position:0%
+this charm right here and you'll get a
+ 
+
+00:01:50.799 --> 00:01:52.710 align:start position:0%
+this charm right here and you'll get a
+code<00:01:51.040><c> diff</c><00:01:51.280><c> view</c><00:01:51.520><c> to</c><00:01:51.759><c> see</c><00:01:51.920><c> all</c><00:01:52.159><c> of</c><00:01:52.320><c> the</c><00:01:52.479><c> changes</c>
+
+00:01:52.710 --> 00:01:52.720 align:start position:0%
+code diff view to see all of the changes
+ 
+
+00:01:52.720 --> 00:01:54.710 align:start position:0%
+code diff view to see all of the changes
+the<00:01:52.960><c> agent</c><00:01:53.200><c> has</c><00:01:53.439><c> worked</c><00:01:53.600><c> on.</c><00:01:54.159><c> You</c><00:01:54.320><c> can</c><00:01:54.479><c> also</c>
+
+00:01:54.710 --> 00:01:54.720 align:start position:0%
+the agent has worked on. You can also
+ 
+
+00:01:54.720 --> 00:01:56.710 align:start position:0%
+the agent has worked on. You can also
+diff<00:01:55.119><c> against</c><00:01:55.439><c> the</c><00:01:55.600><c> main</c><00:01:55.920><c> line</c><00:01:56.320><c> if</c><00:01:56.560><c> you're</c>
+
+00:01:56.710 --> 00:01:56.720 align:start position:0%
+diff against the main line if you're
+ 
+
+00:01:56.720 --> 00:01:58.709 align:start position:0%
+diff against the main line if you're
+working<00:01:56.880><c> on</c><00:01:57.040><c> a</c><00:01:57.200><c> multi-step</c><00:01:57.759><c> PR</c><00:01:58.240><c> and</c><00:01:58.479><c> you</c><00:01:58.640><c> want</c>
+
+00:01:58.709 --> 00:01:58.719 align:start position:0%
+working on a multi-step PR and you want
+ 
+
+00:01:58.719 --> 00:02:00.149 align:start position:0%
+working on a multi-step PR and you want
+to<00:01:58.799><c> look</c><00:01:58.960><c> at</c><00:01:59.119><c> all</c><00:01:59.280><c> the</c><00:01:59.520><c> changes</c><00:01:59.759><c> that</c><00:02:00.000><c> you've</c>
+
+00:02:00.149 --> 00:02:00.159 align:start position:0%
+to look at all the changes that you've
+ 
+
+00:02:00.159 --> 00:02:02.230 align:start position:0%
+to look at all the changes that you've
+worked<00:02:00.399><c> on</c><00:02:00.560><c> in</c><00:02:00.880><c> that</c><00:02:01.040><c> session.</c><00:02:01.759><c> As</c><00:02:02.000><c> for</c>
+
+00:02:02.230 --> 00:02:02.240 align:start position:0%
+worked on in that session. As for
+ 
+
+00:02:02.240 --> 00:02:04.149 align:start position:0%
+worked on in that session. As for
+planning,<00:02:02.719><c> Warp</c><00:02:03.119><c> has</c><00:02:03.280><c> an</c><00:02:03.439><c> option</c><00:02:03.680><c> to</c><00:02:03.840><c> allow</c>
+
+00:02:04.149 --> 00:02:04.159 align:start position:0%
+planning, Warp has an option to allow
+ 
+
+00:02:04.159 --> 00:02:06.630 align:start position:0%
+planning, Warp has an option to allow
+the<00:02:04.320><c> agent</c><00:02:04.719><c> to</c><00:02:05.040><c> prompt</c><00:02:05.360><c> you</c><00:02:05.520><c> for</c><00:02:05.680><c> a</c><00:02:05.840><c> plan</c><00:02:06.240><c> if</c><00:02:06.479><c> a</c>
+
+00:02:06.630 --> 00:02:06.640 align:start position:0%
+the agent to prompt you for a plan if a
+ 
+
+00:02:06.640 --> 00:02:08.710 align:start position:0%
+the agent to prompt you for a plan if a
+query<00:02:07.040><c> sounds</c><00:02:07.360><c> intensive</c><00:02:07.840><c> enough.</c><00:02:08.319><c> For</c><00:02:08.560><c> this</c>
+
+00:02:08.710 --> 00:02:08.720 align:start position:0%
+query sounds intensive enough. For this
+ 
+
+00:02:08.720 --> 00:02:10.869 align:start position:0%
+query sounds intensive enough. For this
+query<00:02:09.039><c> here,</c><00:02:09.360><c> we</c><00:02:09.520><c> decided</c><00:02:09.920><c> to</c><00:02:10.239><c> prompt</c><00:02:10.560><c> for</c><00:02:10.720><c> a</c>
+
+00:02:10.869 --> 00:02:10.879 align:start position:0%
+query here, we decided to prompt for a
+ 
+
+00:02:10.879 --> 00:02:12.949 align:start position:0%
+query here, we decided to prompt for a
+plan.<00:02:11.280><c> You</c><00:02:11.520><c> can</c><00:02:11.599><c> proceed</c><00:02:11.920><c> without</c><00:02:12.239><c> one</c><00:02:12.640><c> or</c>
+
+00:02:12.949 --> 00:02:12.959 align:start position:0%
+plan. You can proceed without one or
+ 
+
+00:02:12.959 --> 00:02:14.949 align:start position:0%
+plan. You can proceed without one or
+we'll<00:02:13.200><c> use</c><00:02:13.360><c> cloud</c><00:02:13.760><c> for</c><00:02:13.920><c> opus</c><00:02:14.400><c> to</c><00:02:14.640><c> do</c><00:02:14.800><c> some</c>
+
+00:02:14.949 --> 00:02:14.959 align:start position:0%
+we'll use cloud for opus to do some
+ 
+
+00:02:14.959 --> 00:02:16.949 align:start position:0%
+we'll use cloud for opus to do some
+research<00:02:15.360><c> and</c><00:02:15.680><c> present</c><00:02:15.920><c> a</c><00:02:16.160><c> similar</c><00:02:16.480><c> markdown</c>
+
+00:02:16.949 --> 00:02:16.959 align:start position:0%
+research and present a similar markdown
+ 
+
+00:02:16.959 --> 00:02:18.869 align:start position:0%
+research and present a similar markdown
+plan<00:02:17.280><c> to</c><00:02:17.440><c> claude</c><00:02:17.840><c> code.</c><00:02:18.319><c> Now</c><00:02:18.480><c> let's</c><00:02:18.720><c> talk</c>
+
+00:02:18.869 --> 00:02:18.879 align:start position:0%
+plan to claude code. Now let's talk
+ 
+
+00:02:18.879 --> 00:02:21.110 align:start position:0%
+plan to claude code. Now let's talk
+about<00:02:19.120><c> context</c><00:02:19.760><c> gathering.</c><00:02:20.319><c> In</c><00:02:20.560><c> cloud</c><00:02:20.879><c> code,</c>
+
+00:02:21.110 --> 00:02:21.120 align:start position:0%
+about context gathering. In cloud code,
+ 
+
+00:02:21.120 --> 00:02:22.710 align:start position:0%
+about context gathering. In cloud code,
+it's<00:02:21.360><c> able</c><00:02:21.520><c> to</c><00:02:21.680><c> crawl</c><00:02:22.000><c> your</c><00:02:22.160><c> codebase</c><00:02:22.560><c> and</c>
+
+00:02:22.710 --> 00:02:22.720 align:start position:0%
+it's able to crawl your codebase and
+ 
+
+00:02:22.720 --> 00:02:24.710 align:start position:0%
+it's able to crawl your codebase and
+figure<00:02:22.959><c> out</c><00:02:23.040><c> what</c><00:02:23.280><c> context</c><00:02:23.760><c> may</c><00:02:24.000><c> be</c><00:02:24.160><c> relevant,</c>
+
+00:02:24.710 --> 00:02:24.720 align:start position:0%
+figure out what context may be relevant,
+ 
+
+00:02:24.720 --> 00:02:26.390 align:start position:0%
+figure out what context may be relevant,
+but<00:02:24.879><c> you</c><00:02:25.040><c> can</c><00:02:25.120><c> add</c><00:02:25.280><c> explicit</c><00:02:25.760><c> context</c><00:02:26.160><c> by</c>
+
+00:02:26.390 --> 00:02:26.400 align:start position:0%
+but you can add explicit context by
+ 
+
+00:02:26.400 --> 00:02:28.309 align:start position:0%
+but you can add explicit context by
+using<00:02:26.480><c> the</c><00:02:26.720><c> at</c><00:02:26.959><c> symbol.</c><00:02:27.520><c> This</c><00:02:27.760><c> gives</c><00:02:27.920><c> you</c><00:02:28.080><c> a</c>
+
+00:02:28.309 --> 00:02:28.319 align:start position:0%
+using the at symbol. This gives you a
+ 
+
+00:02:28.319 --> 00:02:30.390 align:start position:0%
+using the at symbol. This gives you a
+file<00:02:28.560><c> picker</c><00:02:29.040><c> across</c><00:02:29.440><c> all</c><00:02:29.599><c> the</c><00:02:29.840><c> files</c><00:02:30.080><c> in</c><00:02:30.239><c> your</c>
+
+00:02:30.390 --> 00:02:30.400 align:start position:0%
+file picker across all the files in your
+ 
+
+00:02:30.400 --> 00:02:32.150 align:start position:0%
+file picker across all the files in your
+current<00:02:30.640><c> directory.</c><00:02:31.360><c> So</c><00:02:31.520><c> you</c><00:02:31.680><c> can</c><00:02:31.840><c> reference</c>
+
+00:02:32.150 --> 00:02:32.160 align:start position:0%
+current directory. So you can reference
+ 
+
+00:02:32.160 --> 00:02:34.390 align:start position:0%
+current directory. So you can reference
+those<00:02:32.400><c> and</c><00:02:32.640><c> directly</c><00:02:33.040><c> ask</c><00:02:33.280><c> questions.</c><00:02:34.000><c> Warp's</c>
+
+00:02:34.390 --> 00:02:34.400 align:start position:0%
+those and directly ask questions. Warp's
+ 
+
+00:02:34.400 --> 00:02:36.070 align:start position:0%
+those and directly ask questions. Warp's
+coding<00:02:34.720><c> agent</c><00:02:35.040><c> also</c><00:02:35.360><c> lets</c><00:02:35.519><c> you</c><00:02:35.680><c> reference</c>
+
+00:02:36.070 --> 00:02:36.080 align:start position:0%
+coding agent also lets you reference
+ 
+
+00:02:36.080 --> 00:02:38.390 align:start position:0%
+coding agent also lets you reference
+context<00:02:36.640><c> explicitly.</c><00:02:37.519><c> Hit</c><00:02:37.680><c> the</c><00:02:37.840><c> at</c><00:02:38.080><c> symbol</c>
+
+00:02:38.390 --> 00:02:38.400 align:start position:0%
+context explicitly. Hit the at symbol
+ 
+
+00:02:38.400 --> 00:02:39.990 align:start position:0%
+context explicitly. Hit the at symbol
+and<00:02:38.640><c> you</c><00:02:38.800><c> can</c><00:02:38.879><c> reference</c><00:02:39.280><c> files</c><00:02:39.599><c> in</c><00:02:39.840><c> your</c>
+
+00:02:39.990 --> 00:02:40.000 align:start position:0%
+and you can reference files in your
+ 
+
+00:02:40.000 --> 00:02:41.670 align:start position:0%
+and you can reference files in your
+current<00:02:40.319><c> project.</c><00:02:40.959><c> But</c><00:02:41.040><c> you</c><00:02:41.200><c> can</c><00:02:41.360><c> also</c>
+
+00:02:41.670 --> 00:02:41.680 align:start position:0%
+current project. But you can also
+ 
+
+00:02:41.680 --> 00:02:43.509 align:start position:0%
+current project. But you can also
+reference<00:02:42.160><c> symbols.</c><00:02:42.879><c> This</c><00:02:43.120><c> is</c><00:02:43.280><c> very</c>
+
+00:02:43.509 --> 00:02:43.519 align:start position:0%
+reference symbols. This is very
+ 
+
+00:02:43.519 --> 00:02:45.190 align:start position:0%
+reference symbols. This is very
+powerful.<00:02:43.920><c> If</c><00:02:44.080><c> there's</c><00:02:44.239><c> a</c><00:02:44.480><c> specific</c><00:02:44.879><c> function</c>
+
+00:02:45.190 --> 00:02:45.200 align:start position:0%
+powerful. If there's a specific function
+ 
+
+00:02:45.200 --> 00:02:47.270 align:start position:0%
+powerful. If there's a specific function
+or<00:02:45.519><c> object</c><00:02:45.920><c> that</c><00:02:46.080><c> you</c><00:02:46.239><c> want</c><00:02:46.319><c> to</c><00:02:46.480><c> reference,</c>
+
+00:02:47.270 --> 00:02:47.280 align:start position:0%
+or object that you want to reference,
+ 
+
+00:02:47.280 --> 00:02:48.949 align:start position:0%
+or object that you want to reference,
+this<00:02:47.519><c> will</c><00:02:47.840><c> inline</c><00:02:48.319><c> the</c><00:02:48.480><c> name</c><00:02:48.640><c> of</c><00:02:48.800><c> that</c>
+
+00:02:48.949 --> 00:02:48.959 align:start position:0%
+this will inline the name of that
+ 
+
+00:02:48.959 --> 00:02:50.949 align:start position:0%
+this will inline the name of that
+function,<00:02:49.440><c> the</c><00:02:49.599><c> file</c><00:02:49.840><c> it</c><00:02:50.000><c> belongs</c><00:02:50.239><c> to,</c><00:02:50.720><c> and</c>
+
+00:02:50.949 --> 00:02:50.959 align:start position:0%
+function, the file it belongs to, and
+ 
+
+00:02:50.959 --> 00:02:52.710 align:start position:0%
+function, the file it belongs to, and
+the<00:02:51.120><c> exact</c><00:02:51.440><c> line</c><00:02:51.680><c> number</c><00:02:52.000><c> so</c><00:02:52.160><c> you</c><00:02:52.319><c> can</c><00:02:52.480><c> ask</c>
+
+00:02:52.710 --> 00:02:52.720 align:start position:0%
+the exact line number so you can ask
+ 
+
+00:02:52.720 --> 00:02:54.710 align:start position:0%
+the exact line number so you can ask
+more<00:02:53.040><c> specific</c><00:02:53.519><c> questions.</c><00:02:54.160><c> And</c><00:02:54.319><c> if</c><00:02:54.480><c> you</c><00:02:54.560><c> want</c>
+
+00:02:54.710 --> 00:02:54.720 align:start position:0%
+more specific questions. And if you want
+ 
+
+00:02:54.720 --> 00:02:56.630 align:start position:0%
+more specific questions. And if you want
+to<00:02:54.800><c> locate</c><00:02:55.040><c> a</c><00:02:55.280><c> file</c><00:02:55.519><c> directly,</c><00:02:56.080><c> there's</c><00:02:56.400><c> a</c>
+
+00:02:56.630 --> 00:02:56.640 align:start position:0%
+to locate a file directly, there's a
+ 
+
+00:02:56.640 --> 00:02:58.710 align:start position:0%
+to locate a file directly, there's a
+project<00:02:57.040><c> explorer</c><00:02:57.519><c> available.</c><00:02:58.239><c> This</c><00:02:58.480><c> pulls</c>
+
+00:02:58.710 --> 00:02:58.720 align:start position:0%
+project explorer available. This pulls
+ 
+
+00:02:58.720 --> 00:03:00.949 align:start position:0%
+project explorer available. This pulls
+up<00:02:58.879><c> a</c><00:02:59.040><c> simple</c><00:02:59.360><c> file</c><00:02:59.680><c> tree</c><00:03:00.000><c> to</c><00:03:00.319><c> look</c><00:03:00.400><c> at</c><00:03:00.560><c> all</c><00:03:00.720><c> the</c>
+
+00:03:00.949 --> 00:03:00.959 align:start position:0%
+up a simple file tree to look at all the
+ 
+
+00:03:00.959 --> 00:03:02.949 align:start position:0%
+up a simple file tree to look at all the
+files<00:03:01.200><c> in</c><00:03:01.440><c> your</c><00:03:01.680><c> project.</c><00:03:02.239><c> and</c><00:03:02.480><c> clicking</c><00:03:02.800><c> on</c>
+
+00:03:02.949 --> 00:03:02.959 align:start position:0%
+files in your project. and clicking on
+ 
+
+00:03:02.959 --> 00:03:05.430 align:start position:0%
+files in your project. and clicking on
+it<00:03:03.120><c> will</c><00:03:03.360><c> open</c><00:03:03.760><c> an</c><00:03:04.000><c> inline</c><00:03:04.480><c> editor</c><00:03:04.959><c> to</c><00:03:05.120><c> either</c>
+
+00:03:05.430 --> 00:03:05.440 align:start position:0%
+it will open an inline editor to either
+ 
+
+00:03:05.440 --> 00:03:07.589 align:start position:0%
+it will open an inline editor to either
+edit<00:03:05.760><c> the</c><00:03:05.920><c> file</c><00:03:06.159><c> directly</c><00:03:06.800><c> or</c><00:03:07.200><c> reference</c>
+
+00:03:07.589 --> 00:03:07.599 align:start position:0%
+edit the file directly or reference
+ 
+
+00:03:07.599 --> 00:03:09.670 align:start position:0%
+edit the file directly or reference
+specific<00:03:08.080><c> parts</c><00:03:08.319><c> of</c><00:03:08.480><c> that</c><00:03:08.640><c> file</c><00:03:08.959><c> for</c><00:03:09.200><c> context</c>
+
+00:03:09.670 --> 00:03:09.680 align:start position:0%
+specific parts of that file for context
+ 
+
+00:03:09.680 --> 00:03:11.910 align:start position:0%
+specific parts of that file for context
+in<00:03:09.920><c> your</c><00:03:10.080><c> LLM</c><00:03:10.640><c> queries.</c><00:03:11.200><c> This</c><00:03:11.440><c> will</c><00:03:11.599><c> also</c>
+
+00:03:11.910 --> 00:03:11.920 align:start position:0%
+in your LLM queries. This will also
+ 
+
+00:03:11.920 --> 00:03:14.070 align:start position:0%
+in your LLM queries. This will also
+insert<00:03:12.239><c> the</c><00:03:12.480><c> line</c><00:03:12.720><c> number</c><00:03:13.040><c> and</c><00:03:13.280><c> the</c><00:03:13.519><c> file</c><00:03:13.760><c> name</c>
+
+00:03:14.070 --> 00:03:14.080 align:start position:0%
+insert the line number and the file name
+ 
+
+00:03:14.080 --> 00:03:15.830 align:start position:0%
+insert the line number and the file name
+so<00:03:14.239><c> that</c><00:03:14.400><c> the</c><00:03:14.560><c> agent</c><00:03:14.800><c> knows</c><00:03:15.040><c> where</c><00:03:15.200><c> to</c><00:03:15.360><c> look.</c>
+
+00:03:15.830 --> 00:03:15.840 align:start position:0%
+so that the agent knows where to look.
+ 
+
+00:03:15.840 --> 00:03:17.670 align:start position:0%
+so that the agent knows where to look.
+Now<00:03:16.000><c> let's</c><00:03:16.239><c> discuss</c><00:03:16.640><c> model</c><00:03:16.959><c> selection.</c>
+
+00:03:17.670 --> 00:03:17.680 align:start position:0%
+Now let's discuss model selection.
+ 
+
+00:03:17.680 --> 00:03:19.589 align:start position:0%
+Now let's discuss model selection.
+Claude<00:03:18.159><c> has</c><00:03:18.319><c> a</c><00:03:18.560><c> number</c><00:03:18.720><c> of</c><00:03:18.879><c> options</c><00:03:19.200><c> available</c>
+
+00:03:19.589 --> 00:03:19.599 align:start position:0%
+Claude has a number of options available
+ 
+
+00:03:19.599 --> 00:03:21.990 align:start position:0%
+Claude has a number of options available
+from<00:03:19.760><c> the</c><00:03:19.920><c> slash</c><00:03:20.319><c> menu</c><00:03:20.800><c> including</c><00:03:21.360><c> model.</c>
+
+00:03:21.990 --> 00:03:22.000 align:start position:0%
+from the slash menu including model.
+ 
+
+00:03:22.000 --> 00:03:23.830 align:start position:0%
+from the slash menu including model.
+This<00:03:22.159><c> lets</c><00:03:22.400><c> you</c><00:03:22.560><c> select</c><00:03:22.959><c> between</c><00:03:23.440><c> Claude's</c>
+
+00:03:23.830 --> 00:03:23.840 align:start position:0%
+This lets you select between Claude's
+ 
+
+00:03:23.840 --> 00:03:27.430 align:start position:0%
+This lets you select between Claude's
+models.<00:03:24.319><c> So</c><00:03:24.800><c> Claude</c><00:03:25.120><c> Forson</c><00:03:26.080><c> opus</c><00:03:26.800><c> and</c><00:03:27.040><c> opus</c>
+
+00:03:27.430 --> 00:03:27.440 align:start position:0%
+models. So Claude Forson opus and opus
+ 
+
+00:03:27.440 --> 00:03:29.990 align:start position:0%
+models. So Claude Forson opus and opus
+plan<00:03:27.680><c> mode</c><00:03:28.000><c> for</c><00:03:28.239><c> researching</c><00:03:28.720><c> tasks</c><00:03:29.440><c> in</c><00:03:29.680><c> warp.</c>
+
+00:03:29.990 --> 00:03:30.000 align:start position:0%
+plan mode for researching tasks in warp.
+ 
+
+00:03:30.000 --> 00:03:31.670 align:start position:0%
+plan mode for researching tasks in warp.
+You<00:03:30.159><c> can</c><00:03:30.239><c> hit</c><00:03:30.400><c> the</c><00:03:30.560><c> model</c><00:03:30.879><c> dropown</c><00:03:31.280><c> to</c><00:03:31.440><c> select</c>
+
+00:03:31.670 --> 00:03:31.680 align:start position:0%
+You can hit the model dropown to select
+ 
+
+00:03:31.680 --> 00:03:33.589 align:start position:0%
+You can hit the model dropown to select
+your<00:03:31.840><c> model</c><00:03:32.159><c> here.</c><00:03:32.720><c> This</c><00:03:32.879><c> gives</c><00:03:33.120><c> you</c><00:03:33.280><c> access</c>
+
+00:03:33.589 --> 00:03:33.599 align:start position:0%
+your model here. This gives you access
+ 
+
+00:03:33.599 --> 00:03:35.430 align:start position:0%
+your model here. This gives you access
+to<00:03:34.080><c> a</c><00:03:34.319><c> number</c><00:03:34.480><c> of</c><00:03:34.720><c> different</c><00:03:34.959><c> models</c>
+
+00:03:35.430 --> 00:03:35.440 align:start position:0%
+to a number of different models
+ 
+
+00:03:35.440 --> 00:03:37.430 align:start position:0%
+to a number of different models
+including<00:03:35.920><c> Claude</c><00:03:36.239><c> and</c><00:03:36.400><c> Claude</c><00:03:36.720><c> for</c><00:03:36.959><c> Opus</c>
+
+00:03:37.430 --> 00:03:37.440 align:start position:0%
+including Claude and Claude for Opus
+ 
+
+00:03:37.440 --> 00:03:40.070 align:start position:0%
+including Claude and Claude for Opus
+along<00:03:37.760><c> with</c><00:03:37.920><c> the</c><00:03:38.080><c> Gemini</c><00:03:38.640><c> and</c><00:03:38.879><c> GBD5</c><00:03:39.599><c> series</c><00:03:39.920><c> of</c>
+
+00:03:40.070 --> 00:03:40.080 align:start position:0%
+along with the Gemini and GBD5 series of
+ 
+
+00:03:40.080 --> 00:03:41.830 align:start position:0%
+along with the Gemini and GBD5 series of
+models<00:03:40.560><c> with</c><00:03:40.879><c> different</c><00:03:41.120><c> reasoning</c><00:03:41.519><c> levels</c>
+
+00:03:41.830 --> 00:03:41.840 align:start position:0%
+models with different reasoning levels
+ 
+
+00:03:41.840 --> 00:03:43.910 align:start position:0%
+models with different reasoning levels
+for<00:03:42.080><c> GPT5.</c><00:03:43.120><c> Now</c><00:03:43.280><c> let's</c><00:03:43.519><c> discuss</c>
+
+00:03:43.910 --> 00:03:43.920 align:start position:0%
+for GPT5. Now let's discuss
+ 
+
+00:03:43.920 --> 00:03:45.990 align:start position:0%
+for GPT5. Now let's discuss
+configuration<00:03:44.720><c> options.</c><00:03:45.200><c> In</c><00:03:45.360><c> cloud</c><00:03:45.760><c> code,</c>
+
+00:03:45.990 --> 00:03:46.000 align:start position:0%
+configuration options. In cloud code,
+ 
+
+00:03:46.000 --> 00:03:47.430 align:start position:0%
+configuration options. In cloud code,
+you<00:03:46.159><c> can</c><00:03:46.239><c> configure</c><00:03:46.640><c> all</c><00:03:46.879><c> aspects</c><00:03:47.200><c> of</c><00:03:47.280><c> the</c>
+
+00:03:47.430 --> 00:03:47.440 align:start position:0%
+you can configure all aspects of the
+ 
+
+00:03:47.440 --> 00:03:49.750 align:start position:0%
+you can configure all aspects of the
+tool<00:03:47.760><c> from</c><00:03:48.080><c> the</c><00:03:48.239><c> slash</c><00:03:48.640><c> command.</c><00:03:49.280><c> This</c><00:03:49.519><c> lets</c>
+
+00:03:49.750 --> 00:03:49.760 align:start position:0%
+tool from the slash command. This lets
+ 
+
+00:03:49.760 --> 00:03:52.070 align:start position:0%
+tool from the slash command. This lets
+you<00:03:49.920><c> see</c><00:03:50.239><c> simple</c><00:03:50.799><c> options</c><00:03:51.280><c> like</c><00:03:51.519><c> the</c><00:03:51.760><c> current</c>
+
+00:03:52.070 --> 00:03:52.080 align:start position:0%
+you see simple options like the current
+ 
+
+00:03:52.080 --> 00:03:54.309 align:start position:0%
+you see simple options like the current
+status,<00:03:52.720><c> a</c><00:03:52.959><c> model</c><00:03:53.200><c> switcher</c><00:03:53.599><c> to</c><00:03:53.840><c> change</c><00:03:54.080><c> which</c>
+
+00:03:54.309 --> 00:03:54.319 align:start position:0%
+status, a model switcher to change which
+ 
+
+00:03:54.319 --> 00:03:56.470 align:start position:0%
+status, a model switcher to change which
+model<00:03:54.640><c> you're</c><00:03:54.879><c> going</c><00:03:54.959><c> to</c><00:03:55.120><c> use,</c><00:03:55.840><c> a</c><00:03:56.000><c> permissions</c>
+
+00:03:56.470 --> 00:03:56.480 align:start position:0%
+model you're going to use, a permissions
+ 
+
+00:03:56.480 --> 00:03:58.630 align:start position:0%
+model you're going to use, a permissions
+menu<00:03:56.799><c> to</c><00:03:57.040><c> choose</c><00:03:57.280><c> what</c><00:03:57.519><c> tools</c><00:03:57.840><c> are</c><00:03:58.000><c> allowed</c><00:03:58.400><c> or</c>
+
+00:03:58.630 --> 00:03:58.640 align:start position:0%
+menu to choose what tools are allowed or
+ 
+
+00:03:58.640 --> 00:04:01.429 align:start position:0%
+menu to choose what tools are allowed or
+denied,<00:03:59.120><c> and</c><00:03:59.360><c> also</c><00:03:59.519><c> an</c><00:03:59.840><c> agents</c><00:04:00.239><c> creator</c><00:04:00.959><c> to</c>
+
+00:04:01.429 --> 00:04:01.439 align:start position:0%
+denied, and also an agents creator to
+ 
+
+00:04:01.439 --> 00:04:03.990 align:start position:0%
+denied, and also an agents creator to
+spin<00:04:01.760><c> off</c><00:04:01.920><c> a</c><00:04:02.159><c> sub</c><00:04:02.480><c> agent</c><00:04:02.879><c> for</c><00:04:03.200><c> specific</c><00:04:03.599><c> coding</c>
+
+00:04:03.990 --> 00:04:04.000 align:start position:0%
+spin off a sub agent for specific coding
+ 
+
+00:04:04.000 --> 00:04:06.390 align:start position:0%
+spin off a sub agent for specific coding
+tasks.<00:04:04.720><c> Heading</c><00:04:05.040><c> over</c><00:04:05.120><c> to</c><00:04:05.360><c> warp,</c><00:04:05.920><c> there's</c><00:04:06.159><c> a</c>
+
+00:04:06.390 --> 00:04:06.400 align:start position:0%
+tasks. Heading over to warp, there's a
+ 
+
+00:04:06.400 --> 00:04:07.910 align:start position:0%
+tasks. Heading over to warp, there's a
+couple<00:04:06.640><c> different</c><00:04:06.879><c> ways</c><00:04:07.120><c> to</c><00:04:07.360><c> configure</c><00:04:07.680><c> your</c>
+
+00:04:07.910 --> 00:04:07.920 align:start position:0%
+couple different ways to configure your
+ 
+
+00:04:07.920 --> 00:04:09.910 align:start position:0%
+couple different ways to configure your
+setup.<00:04:08.480><c> You</c><00:04:08.640><c> can</c><00:04:08.720><c> use</c><00:04:08.879><c> a</c><00:04:09.040><c> slash</c><00:04:09.439><c> command</c><00:04:09.760><c> here</c>
+
+00:04:09.910 --> 00:04:09.920 align:start position:0%
+setup. You can use a slash command here
+ 
+
+00:04:09.920 --> 00:04:12.789 align:start position:0%
+setup. You can use a slash command here
+as<00:04:10.080><c> well</c><00:04:10.319><c> to</c><00:04:10.640><c> add</c><00:04:10.959><c> MCP</c><00:04:11.519><c> tools,</c><00:04:12.159><c> prompts,</c><00:04:12.640><c> as</c>
+
+00:04:12.789 --> 00:04:12.799 align:start position:0%
+as well to add MCP tools, prompts, as
+ 
+
+00:04:12.799 --> 00:04:14.869 align:start position:0%
+as well to add MCP tools, prompts, as
+well<00:04:12.959><c> as</c><00:04:13.120><c> global</c><00:04:13.519><c> rules.</c><00:04:14.000><c> Cloud</c><00:04:14.400><c> code</c><00:04:14.560><c> scopes</c>
+
+00:04:14.869 --> 00:04:14.879 align:start position:0%
+well as global rules. Cloud code scopes
+ 
+
+00:04:14.879 --> 00:04:17.110 align:start position:0%
+well as global rules. Cloud code scopes
+the<00:04:15.040><c> rules</c><00:04:15.360><c> to</c><00:04:15.519><c> specific</c><00:04:15.840><c> git</c><00:04:16.160><c> repos,</c><00:04:16.720><c> but</c><00:04:16.959><c> in</c>
+
+00:04:17.110 --> 00:04:17.120 align:start position:0%
+the rules to specific git repos, but in
+ 
+
+00:04:17.120 --> 00:04:18.870 align:start position:0%
+the rules to specific git repos, but in
+warp<00:04:17.519><c> you</c><00:04:17.600><c> can</c><00:04:17.759><c> have</c><00:04:17.840><c> a</c><00:04:18.000><c> global</c><00:04:18.400><c> rules</c>
+
+00:04:18.870 --> 00:04:18.880 align:start position:0%
+warp you can have a global rules
+ 
+
+00:04:18.880 --> 00:04:20.870 align:start position:0%
+warp you can have a global rules
+directory<00:04:19.519><c> to</c><00:04:19.759><c> describe</c><00:04:20.079><c> how</c><00:04:20.320><c> all</c><00:04:20.560><c> projects</c>
+
+00:04:20.870 --> 00:04:20.880 align:start position:0%
+directory to describe how all projects
+ 
+
+00:04:20.880 --> 00:04:22.469 align:start position:0%
+directory to describe how all projects
+should<00:04:21.120><c> behave</c><00:04:21.440><c> and</c><00:04:21.600><c> that's</c><00:04:21.840><c> accessible</c><00:04:22.240><c> from</c>
+
+00:04:22.469 --> 00:04:22.479 align:start position:0%
+should behave and that's accessible from
+ 
+
+00:04:22.479 --> 00:04:25.110 align:start position:0%
+should behave and that's accessible from
+here.<00:04:22.960><c> Warp</c><00:04:23.360><c> also</c><00:04:23.680><c> offers</c><00:04:24.000><c> codebase</c><00:04:24.479><c> indexing</c>
+
+00:04:25.110 --> 00:04:25.120 align:start position:0%
+here. Warp also offers codebase indexing
+ 
+
+00:04:25.120 --> 00:04:27.670 align:start position:0%
+here. Warp also offers codebase indexing
+which<00:04:25.280><c> you</c><00:04:25.440><c> can</c><00:04:25.600><c> kick</c><00:04:25.759><c> off</c><00:04:26.000><c> right</c><00:04:26.240><c> here</c><00:04:26.960><c> to</c>
+
+00:04:27.670 --> 00:04:27.680 align:start position:0%
+which you can kick off right here to
+ 
+
+00:04:27.680 --> 00:04:29.590 align:start position:0%
+which you can kick off right here to
+create<00:04:27.919><c> embeddings</c><00:04:28.479><c> for</c><00:04:28.639><c> your</c><00:04:28.800><c> codebase</c><00:04:29.360><c> to</c>
+
+00:04:29.590 --> 00:04:29.600 align:start position:0%
+create embeddings for your codebase to
+ 
+
+00:04:29.600 --> 00:04:31.510 align:start position:0%
+create embeddings for your codebase to
+improve<00:04:29.919><c> file</c><00:04:30.240><c> search.</c><00:04:30.720><c> As</c><00:04:30.880><c> for</c><00:04:31.120><c> agent</c>
+
+00:04:31.510 --> 00:04:31.520 align:start position:0%
+improve file search. As for agent
+ 
+
+00:04:31.520 --> 00:04:33.749 align:start position:0%
+improve file search. As for agent
+configuration,<00:04:32.400><c> you</c><00:04:32.639><c> can</c><00:04:32.720><c> edit</c><00:04:33.040><c> that</c><00:04:33.280><c> using</c>
+
+00:04:33.749 --> 00:04:33.759 align:start position:0%
+configuration, you can edit that using
+ 
+
+00:04:33.759 --> 00:04:35.830 align:start position:0%
+configuration, you can edit that using
+profiles.<00:04:34.400><c> Here</c><00:04:34.639><c> I'm</c><00:04:34.800><c> in</c><00:04:34.960><c> the</c><00:04:35.120><c> warp</c><00:04:35.520><c> settings</c>
+
+00:04:35.830 --> 00:04:35.840 align:start position:0%
+profiles. Here I'm in the warp settings
+ 
+
+00:04:35.840 --> 00:04:38.070 align:start position:0%
+profiles. Here I'm in the warp settings
+menu<00:04:36.400><c> and</c><00:04:36.560><c> I've</c><00:04:36.800><c> set</c><00:04:36.880><c> up</c><00:04:37.040><c> a</c><00:04:37.280><c> default</c><00:04:37.600><c> profile</c>
+
+00:04:38.070 --> 00:04:38.080 align:start position:0%
+menu and I've set up a default profile
+ 
+
+00:04:38.080 --> 00:04:40.550 align:start position:0%
+menu and I've set up a default profile
+with<00:04:38.240><c> my</c><00:04:38.479><c> preferences</c><00:04:38.880><c> for</c><00:04:39.199><c> base</c><00:04:39.840><c> planning</c>
+
+00:04:40.550 --> 00:04:40.560 align:start position:0%
+with my preferences for base planning
+ 
+
+00:04:40.560 --> 00:04:42.550 align:start position:0%
+with my preferences for base planning
+and<00:04:41.040><c> read</c><00:04:41.280><c> and</c><00:04:41.440><c> write</c><00:04:41.680><c> permissions.</c><00:04:42.320><c> I've</c>
+
+00:04:42.550 --> 00:04:42.560 align:start position:0%
+and read and write permissions. I've
+ 
+
+00:04:42.560 --> 00:04:44.310 align:start position:0%
+and read and write permissions. I've
+also<00:04:42.720><c> created</c><00:04:43.040><c> another</c><00:04:43.360><c> profile</c><00:04:43.840><c> that's</c><00:04:44.160><c> a</c>
+
+00:04:44.310 --> 00:04:44.320 align:start position:0%
+also created another profile that's a
+ 
+
+00:04:44.320 --> 00:04:46.310 align:start position:0%
+also created another profile that's a
+little<00:04:44.400><c> bit</c><00:04:44.560><c> more</c><00:04:44.800><c> relaxed,</c><00:04:45.600><c> always</c><00:04:45.919><c> allowing</c>
+
+00:04:46.310 --> 00:04:46.320 align:start position:0%
+little bit more relaxed, always allowing
+ 
+
+00:04:46.320 --> 00:04:48.629 align:start position:0%
+little bit more relaxed, always allowing
+code<00:04:46.560><c> diffs</c><00:04:46.960><c> without</c><00:04:47.199><c> my</c><00:04:47.360><c> manual</c><00:04:47.759><c> review.</c>
+
+00:04:48.629 --> 00:04:48.639 align:start position:0%
+code diffs without my manual review.
+ 
+
+00:04:48.639 --> 00:04:50.550 align:start position:0%
+code diffs without my manual review.
+Comparing<00:04:49.040><c> these</c><00:04:49.280><c> tools,</c><00:04:49.680><c> they</c><00:04:49.919><c> both</c><00:04:50.240><c> offer</c>
+
+00:04:50.550 --> 00:04:50.560 align:start position:0%
+Comparing these tools, they both offer
+ 
+
+00:04:50.560 --> 00:04:52.310 align:start position:0%
+Comparing these tools, they both offer
+extensive<00:04:51.120><c> configuration</c><00:04:51.680><c> over</c><00:04:51.919><c> what</c><00:04:52.160><c> an</c>
+
+00:04:52.310 --> 00:04:52.320 align:start position:0%
+extensive configuration over what an
+ 
+
+00:04:52.320 --> 00:04:54.310 align:start position:0%
+extensive configuration over what an
+agent<00:04:52.639><c> is</c><00:04:52.880><c> allowed</c><00:04:53.199><c> to</c><00:04:53.360><c> do,</c><00:04:53.759><c> but</c><00:04:53.919><c> I</c><00:04:54.160><c> would</c><00:04:54.240><c> give</c>
+
+00:04:54.310 --> 00:04:54.320 align:start position:0%
+agent is allowed to do, but I would give
+ 
+
+00:04:54.320 --> 00:04:56.710 align:start position:0%
+agent is allowed to do, but I would give
+an<00:04:54.560><c> edge</c><00:04:54.800><c> to</c><00:04:54.960><c> Claude</c><00:04:55.360><c> Code</c><00:04:55.600><c> for</c><00:04:55.840><c> also</c><00:04:56.160><c> allowing</c>
+
+00:04:56.710 --> 00:04:56.720 align:start position:0%
+an edge to Claude Code for also allowing
+ 
+
+00:04:56.720 --> 00:04:59.270 align:start position:0%
+an edge to Claude Code for also allowing
+sub<00:04:57.040><c> agents</c><00:04:57.440><c> and</c><00:04:57.680><c> hooks.</c><00:04:58.479><c> Now,</c><00:04:58.639><c> let's</c><00:04:58.880><c> discuss</c>
+
+00:04:59.270 --> 00:04:59.280 align:start position:0%
+sub agents and hooks. Now, let's discuss
+ 
+
+00:04:59.280 --> 00:05:01.350 align:start position:0%
+sub agents and hooks. Now, let's discuss
+managing<00:04:59.680><c> agents</c><00:05:00.160><c> over</c><00:05:00.400><c> time.</c><00:05:00.800><c> Since</c><00:05:01.040><c> Claude</c>
+
+00:05:01.350 --> 00:05:01.360 align:start position:0%
+managing agents over time. Since Claude
+ 
+
+00:05:01.360 --> 00:05:03.590 align:start position:0%
+managing agents over time. Since Claude
+Code<00:05:01.520><c> is</c><00:05:01.680><c> a</c><00:05:01.759><c> CLI</c><00:05:02.240><c> tool,</c><00:05:02.479><c> you'll</c><00:05:02.720><c> need</c><00:05:02.880><c> to</c><00:05:03.280><c> watch</c>
+
+00:05:03.590 --> 00:05:03.600 align:start position:0%
+Code is a CLI tool, you'll need to watch
+ 
+
+00:05:03.600 --> 00:05:06.230 align:start position:0%
+Code is a CLI tool, you'll need to watch
+that<00:05:03.919><c> CLI</c><00:05:04.400><c> tab</c><00:05:04.800><c> to</c><00:05:05.040><c> see</c><00:05:05.120><c> if</c><00:05:05.280><c> the</c><00:05:05.440><c> agent</c><00:05:05.759><c> is</c><00:05:05.919><c> ever</c>
+
+00:05:06.230 --> 00:05:06.240 align:start position:0%
+that CLI tab to see if the agent is ever
+ 
+
+00:05:06.240 --> 00:05:07.909 align:start position:0%
+that CLI tab to see if the agent is ever
+blocked<00:05:06.560><c> on</c><00:05:06.720><c> a</c><00:05:06.880><c> coding</c><00:05:07.199><c> task.</c><00:05:07.600><c> Though,</c><00:05:07.759><c> it</c>
+
+00:05:07.909 --> 00:05:07.919 align:start position:0%
+blocked on a coding task. Though, it
+ 
+
+00:05:07.919 --> 00:05:10.150 align:start position:0%
+blocked on a coding task. Though, it
+will<00:05:08.160><c> update</c><00:05:08.560><c> your</c><00:05:08.800><c> tab</c><00:05:09.199><c> description</c><00:05:09.759><c> to</c><00:05:10.080><c> see</c>
+
+00:05:10.150 --> 00:05:10.160 align:start position:0%
+will update your tab description to see
+ 
+
+00:05:10.160 --> 00:05:12.150 align:start position:0%
+will update your tab description to see
+what<00:05:10.320><c> the</c><00:05:10.560><c> agent</c><00:05:10.800><c> is</c><00:05:10.960><c> currently</c><00:05:11.280><c> doing.</c><00:05:11.919><c> Since</c>
+
+00:05:12.150 --> 00:05:12.160 align:start position:0%
+what the agent is currently doing. Since
+ 
+
+00:05:12.160 --> 00:05:14.390 align:start position:0%
+what the agent is currently doing. Since
+the<00:05:12.320><c> warp</c><00:05:12.639><c> coding</c><00:05:12.960><c> agent</c><00:05:13.360><c> is</c><00:05:13.600><c> built</c><00:05:13.919><c> into</c><00:05:14.160><c> the</c>
+
+00:05:14.390 --> 00:05:14.400 align:start position:0%
+the warp coding agent is built into the
+ 
+
+00:05:14.400 --> 00:05:16.070 align:start position:0%
+the warp coding agent is built into the
+tool,<00:05:14.880><c> we</c><00:05:15.120><c> can</c><00:05:15.199><c> give</c><00:05:15.360><c> you</c><00:05:15.520><c> more</c><00:05:15.759><c> information</c>
+
+00:05:16.070 --> 00:05:16.080 align:start position:0%
+tool, we can give you more information
+ 
+
+00:05:16.080 --> 00:05:18.150 align:start position:0%
+tool, we can give you more information
+about<00:05:16.320><c> what</c><00:05:16.560><c> an</c><00:05:16.720><c> agent</c><00:05:17.039><c> is</c><00:05:17.280><c> doing,</c><00:05:17.759><c> like</c><00:05:17.919><c> a</c>
+
+00:05:18.150 --> 00:05:18.160 align:start position:0%
+about what an agent is doing, like a
+ 
+
+00:05:18.160 --> 00:05:20.150 align:start position:0%
+about what an agent is doing, like a
+status<00:05:18.479><c> indicator</c><00:05:18.960><c> to</c><00:05:19.280><c> show</c><00:05:19.440><c> where</c><00:05:19.759><c> the</c><00:05:19.919><c> agent</c>
+
+00:05:20.150 --> 00:05:20.160 align:start position:0%
+status indicator to show where the agent
+ 
+
+00:05:20.160 --> 00:05:22.870 align:start position:0%
+status indicator to show where the agent
+is<00:05:20.320><c> in</c><00:05:20.560><c> the</c><00:05:20.720><c> process,</c><00:05:21.440><c> a</c><00:05:21.759><c> more</c><00:05:22.000><c> descriptive</c>
+
+00:05:22.870 --> 00:05:22.880 align:start position:0%
+is in the process, a more descriptive
+ 
+
+00:05:22.880 --> 00:05:25.909 align:start position:0%
+is in the process, a more descriptive
+query<00:05:23.360><c> in</c><00:05:23.600><c> the</c><00:05:23.680><c> tool</c><00:05:24.000><c> tip,</c><00:05:24.639><c> and</c><00:05:24.960><c> also</c><00:05:25.520><c> toast</c>
+
+00:05:25.909 --> 00:05:25.919 align:start position:0%
+query in the tool tip, and also toast
+ 
+
+00:05:25.919 --> 00:05:28.150 align:start position:0%
+query in the tool tip, and also toast
+notifications<00:05:26.960><c> whenever</c><00:05:27.360><c> an</c><00:05:27.520><c> agent</c><00:05:27.919><c> is</c>
+
+00:05:28.150 --> 00:05:28.160 align:start position:0%
+notifications whenever an agent is
+ 
+
+00:05:28.160 --> 00:05:30.230 align:start position:0%
+notifications whenever an agent is
+blocked,<00:05:28.639><c> so</c><00:05:28.800><c> you</c><00:05:28.960><c> can</c><00:05:29.120><c> quickly</c><00:05:29.600><c> jump</c><00:05:29.840><c> over</c><00:05:30.080><c> to</c>
+
+00:05:30.230 --> 00:05:30.240 align:start position:0%
+blocked, so you can quickly jump over to
+ 
+
+00:05:30.240 --> 00:05:32.469 align:start position:0%
+blocked, so you can quickly jump over to
+that<00:05:30.479><c> tab</c><00:05:30.880><c> and</c><00:05:31.120><c> take</c><00:05:31.360><c> action.</c><00:05:32.000><c> You</c><00:05:32.160><c> can</c><00:05:32.240><c> also</c>
+
+00:05:32.469 --> 00:05:32.479 align:start position:0%
+that tab and take action. You can also
+ 
+
+00:05:32.479 --> 00:05:34.310 align:start position:0%
+that tab and take action. You can also
+choose<00:05:32.639><c> to</c><00:05:32.880><c> receive</c><00:05:33.120><c> desktop</c><00:05:33.600><c> notifications</c>
+
+00:05:34.310 --> 00:05:34.320 align:start position:0%
+choose to receive desktop notifications
+ 
+
+00:05:34.320 --> 00:05:36.390 align:start position:0%
+choose to receive desktop notifications
+with<00:05:34.560><c> or</c><00:05:34.800><c> without</c><00:05:35.039><c> sound</c><00:05:35.440><c> if</c><00:05:35.680><c> you</c><00:05:35.840><c> prefer.</c>
+
+00:05:36.390 --> 00:05:36.400 align:start position:0%
+with or without sound if you prefer.
+ 
+
+00:05:36.400 --> 00:05:38.469 align:start position:0%
+with or without sound if you prefer.
+Now,<00:05:36.639><c> let's</c><00:05:36.800><c> run</c><00:05:37.039><c> encoding</c><00:05:37.520><c> tasks</c><00:05:37.840><c> to</c><00:05:38.080><c> compare</c>
+
+00:05:38.469 --> 00:05:38.479 align:start position:0%
+Now, let's run encoding tasks to compare
+ 
+
+00:05:38.479 --> 00:05:40.629 align:start position:0%
+Now, let's run encoding tasks to compare
+performance.<00:05:39.199><c> I</c><00:05:39.440><c> have</c><00:05:39.600><c> warp</c><00:05:39.919><c> on</c><00:05:40.080><c> the</c><00:05:40.240><c> left</c><00:05:40.320><c> and</c>
+
+00:05:40.629 --> 00:05:40.639 align:start position:0%
+performance. I have warp on the left and
+ 
+
+00:05:40.639 --> 00:05:42.550 align:start position:0%
+performance. I have warp on the left and
+claw<00:05:40.960><c> code</c><00:05:41.199><c> on</c><00:05:41.360><c> the</c><00:05:41.440><c> right.</c><00:05:42.000><c> And</c><00:05:42.160><c> I'm</c><00:05:42.320><c> going</c><00:05:42.400><c> to</c>
+
+00:05:42.550 --> 00:05:42.560 align:start position:0%
+claw code on the right. And I'm going to
+ 
+
+00:05:42.560 --> 00:05:44.870 align:start position:0%
+claw code on the right. And I'm going to
+give<00:05:42.720><c> each</c><00:05:42.960><c> of</c><00:05:43.120><c> them</c><00:05:43.440><c> a</c><00:05:43.759><c> sentry</c><00:05:44.240><c> issue.</c><00:05:44.720><c> Going</c>
+
+00:05:44.870 --> 00:05:44.880 align:start position:0%
+give each of them a sentry issue. Going
+ 
+
+00:05:44.880 --> 00:05:46.629 align:start position:0%
+give each of them a sentry issue. Going
+to<00:05:45.039><c> pass</c><00:05:45.199><c> off</c><00:05:45.440><c> the</c><00:05:45.600><c> URL.</c><00:05:46.160><c> And</c><00:05:46.320><c> I'm</c><00:05:46.479><c> not</c><00:05:46.560><c> going</c>
+
+00:05:46.629 --> 00:05:46.639 align:start position:0%
+to pass off the URL. And I'm not going
+ 
+
+00:05:46.639 --> 00:05:48.790 align:start position:0%
+to pass off the URL. And I'm not going
+to<00:05:46.720><c> give</c><00:05:46.960><c> much</c><00:05:47.120><c> more</c><00:05:47.360><c> direction</c><00:05:47.680><c> than</c><00:05:48.000><c> that.</c><00:05:48.560><c> I</c>
+
+00:05:48.790 --> 00:05:48.800 align:start position:0%
+to give much more direction than that. I
+ 
+
+00:05:48.800 --> 00:05:51.029 align:start position:0%
+to give much more direction than that. I
+ran<00:05:48.960><c> this</c><00:05:49.199><c> task</c><00:05:49.520><c> three</c><00:05:49.919><c> times</c><00:05:50.240><c> across</c><00:05:50.720><c> each</c><00:05:50.880><c> of</c>
+
+00:05:51.029 --> 00:05:51.039 align:start position:0%
+ran this task three times across each of
+ 
+
+00:05:51.039 --> 00:05:52.710 align:start position:0%
+ran this task three times across each of
+the<00:05:51.199><c> coding</c><00:05:51.520><c> agents</c><00:05:51.919><c> to</c><00:05:52.160><c> see</c><00:05:52.240><c> how</c><00:05:52.479><c> they</c>
+
+00:05:52.710 --> 00:05:52.720 align:start position:0%
+the coding agents to see how they
+ 
+
+00:05:52.720 --> 00:05:54.950 align:start position:0%
+the coding agents to see how they
+perform<00:05:53.120><c> on</c><00:05:53.520><c> code</c><00:05:53.840><c> quality</c><00:05:54.400><c> and</c><00:05:54.639><c> the</c><00:05:54.800><c> amount</c>
+
+00:05:54.950 --> 00:05:54.960 align:start position:0%
+perform on code quality and the amount
+ 
+
+00:05:54.960 --> 00:05:56.950 align:start position:0%
+perform on code quality and the amount
+of<00:05:55.120><c> time</c><00:05:55.280><c> it</c><00:05:55.520><c> takes.</c><00:05:56.160><c> You</c><00:05:56.320><c> can</c><00:05:56.479><c> see</c><00:05:56.639><c> a</c>
+
+00:05:56.950 --> 00:05:56.960 align:start position:0%
+of time it takes. You can see a
+ 
+
+00:05:56.960 --> 00:05:59.189 align:start position:0%
+of time it takes. You can see a
+breakdown<00:05:57.440><c> here</c><00:05:58.000><c> where</c><00:05:58.320><c> each</c><00:05:58.560><c> agent</c><00:05:58.880><c> takes</c>
+
+00:05:59.189 --> 00:05:59.199 align:start position:0%
+breakdown here where each agent takes
+ 
+
+00:05:59.199 --> 00:06:01.189 align:start position:0%
+breakdown here where each agent takes
+between<00:05:59.680><c> two</c><00:05:59.840><c> and</c><00:06:00.080><c> four</c><00:06:00.240><c> minutes</c><00:06:00.560><c> using</c><00:06:00.800><c> Cloud</c>
+
+00:06:01.189 --> 00:06:01.199 align:start position:0%
+between two and four minutes using Cloud
+ 
+
+00:06:01.199 --> 00:06:03.270 align:start position:0%
+between two and four minutes using Cloud
+Force<00:06:01.440><c> Sonnet</c><00:06:02.160><c> with</c><00:06:02.400><c> a</c><00:06:02.639><c> slight</c><00:06:02.880><c> edge</c><00:06:03.120><c> to</c>
+
+00:06:03.270 --> 00:06:03.280 align:start position:0%
+Force Sonnet with a slight edge to
+ 
+
+00:06:03.280 --> 00:06:05.749 align:start position:0%
+Force Sonnet with a slight edge to
+claude<00:06:03.680><c> code</c><00:06:03.919><c> on</c><00:06:04.160><c> the</c><00:06:04.319><c> average</c><00:06:04.720><c> time.</c><00:06:05.440><c> Looking</c>
+
+00:06:05.749 --> 00:06:05.759 align:start position:0%
+claude code on the average time. Looking
+ 
+
+00:06:05.759 --> 00:06:07.749 align:start position:0%
+claude code on the average time. Looking
+at<00:06:05.919><c> the</c><00:06:06.160><c> quality</c><00:06:06.560><c> of</c><00:06:06.880><c> research</c><00:06:07.360><c> before</c>
+
+00:06:07.749 --> 00:06:07.759 align:start position:0%
+at the quality of research before
+ 
+
+00:06:07.759 --> 00:06:09.670 align:start position:0%
+at the quality of research before
+coding,<00:06:08.319><c> we</c><00:06:08.560><c> see</c><00:06:08.800><c> similar</c><00:06:09.199><c> performance</c>
+
+00:06:09.670 --> 00:06:09.680 align:start position:0%
+coding, we see similar performance
+ 
+
+00:06:09.680 --> 00:06:11.749 align:start position:0%
+coding, we see similar performance
+between<00:06:10.000><c> the</c><00:06:10.240><c> two</c><00:06:10.319><c> of</c><00:06:10.479><c> them.</c><00:06:11.039><c> Each</c><00:06:11.360><c> were</c><00:06:11.520><c> able</c>
+
+00:06:11.749 --> 00:06:11.759 align:start position:0%
+between the two of them. Each were able
+ 
+
+00:06:11.759 --> 00:06:14.469 align:start position:0%
+between the two of them. Each were able
+to<00:06:12.080><c> identify</c><00:06:12.479><c> the</c><00:06:12.800><c> Sentry</c><00:06:13.280><c> MCP</c><00:06:13.919><c> server,</c>
+
+00:06:14.469 --> 00:06:14.479 align:start position:0%
+to identify the Sentry MCP server,
+ 
+
+00:06:14.479 --> 00:06:15.830 align:start position:0%
+to identify the Sentry MCP server,
+although<00:06:14.800><c> there</c><00:06:14.960><c> was</c><00:06:15.120><c> one</c><00:06:15.360><c> example</c><00:06:15.600><c> in</c><00:06:15.759><c> the</c>
+
+00:06:15.830 --> 00:06:15.840 align:start position:0%
+although there was one example in the
+ 
+
+00:06:15.840 --> 00:06:17.430 align:start position:0%
+although there was one example in the
+Cloud<00:06:16.160><c> Code</c><00:06:16.319><c> trial</c><00:06:16.560><c> that</c><00:06:16.720><c> used</c><00:06:16.960><c> a</c><00:06:17.120><c> fetch</c>
+
+00:06:17.430 --> 00:06:17.440 align:start position:0%
+Cloud Code trial that used a fetch
+ 
+
+00:06:17.440 --> 00:06:20.070 align:start position:0%
+Cloud Code trial that used a fetch
+query.<00:06:18.160><c> Though</c><00:06:18.479><c> asking</c><00:06:18.880><c> it</c><00:06:19.039><c> to</c><00:06:19.199><c> use</c><00:06:19.360><c> the</c><00:06:19.520><c> MCP</c>
+
+00:06:20.070 --> 00:06:20.080 align:start position:0%
+query. Though asking it to use the MCP
+ 
+
+00:06:20.080 --> 00:06:22.790 align:start position:0%
+query. Though asking it to use the MCP
+server<00:06:20.479><c> explicitly</c><00:06:21.280><c> got</c><00:06:21.520><c> it</c><00:06:21.680><c> back</c><00:06:21.840><c> on</c><00:06:22.080><c> track,</c>
+
+00:06:22.790 --> 00:06:22.800 align:start position:0%
+server explicitly got it back on track,
+ 
+
+00:06:22.800 --> 00:06:25.029 align:start position:0%
+server explicitly got it back on track,
+they<00:06:23.039><c> were</c><00:06:23.199><c> also</c><00:06:23.440><c> able</c><00:06:23.759><c> to</c><00:06:24.080><c> identify</c><00:06:24.479><c> the</c><00:06:24.800><c> root</c>
+
+00:06:25.029 --> 00:06:25.039 align:start position:0%
+they were also able to identify the root
+ 
+
+00:06:25.039 --> 00:06:26.950 align:start position:0%
+they were also able to identify the root
+cause<00:06:25.280><c> of</c><00:06:25.440><c> the</c><00:06:25.600><c> issue,</c><00:06:25.919><c> which</c><00:06:26.080><c> is</c><00:06:26.240><c> this</c><00:06:26.560><c> render</c>
+
+00:06:26.950 --> 00:06:26.960 align:start position:0%
+cause of the issue, which is this render
+ 
+
+00:06:26.960 --> 00:06:29.110 align:start position:0%
+cause of the issue, which is this render
+keyboard<00:06:27.360><c> shortcut</c><00:06:27.840><c> function.</c><00:06:28.560><c> This</c><00:06:28.800><c> is</c><00:06:28.880><c> a</c>
+
+00:06:29.110 --> 00:06:29.120 align:start position:0%
+keyboard shortcut function. This is a
+ 
+
+00:06:29.120 --> 00:06:31.029 align:start position:0%
+keyboard shortcut function. This is a
+utility<00:06:29.440><c> that</c><00:06:29.759><c> was</c><00:06:30.080><c> expecting</c><00:06:30.560><c> a</c><00:06:30.720><c> keyboard</c>
+
+00:06:31.029 --> 00:06:31.039 align:start position:0%
+utility that was expecting a keyboard
+ 
+
+00:06:31.039 --> 00:06:32.950 align:start position:0%
+utility that was expecting a keyboard
+shortcut<00:06:31.440><c> to</c><00:06:31.680><c> always</c><00:06:31.919><c> be</c><00:06:32.080><c> bound</c><00:06:32.479><c> when</c><00:06:32.720><c> the</c>
+
+00:06:32.950 --> 00:06:32.960 align:start position:0%
+shortcut to always be bound when the
+ 
+
+00:06:32.960 --> 00:06:34.790 align:start position:0%
+shortcut to always be bound when the
+user<00:06:33.360><c> could</c><00:06:33.680><c> have</c><00:06:33.840><c> unbound</c><00:06:34.319><c> it</c><00:06:34.479><c> from</c><00:06:34.639><c> their</c>
+
+00:06:34.790 --> 00:06:34.800 align:start position:0%
+user could have unbound it from their
+ 
+
+00:06:34.800 --> 00:06:36.629 align:start position:0%
+user could have unbound it from their
+settings.<00:06:35.440><c> Looking</c><00:06:35.680><c> at</c><00:06:35.840><c> the</c><00:06:36.000><c> code</c><00:06:36.240><c> output</c>
+
+00:06:36.629 --> 00:06:36.639 align:start position:0%
+settings. Looking at the code output
+ 
+
+00:06:36.639 --> 00:06:39.430 align:start position:0%
+settings. Looking at the code output
+first<00:06:36.960><c> for</c><00:06:37.199><c> clawed</c><00:06:37.680><c> code,</c><00:06:38.160><c> we</c><00:06:38.400><c> see</c><00:06:38.880><c> a</c><00:06:39.120><c> mixed</c>
+
+00:06:39.430 --> 00:06:39.440 align:start position:0%
+first for clawed code, we see a mixed
+ 
+
+00:06:39.440 --> 00:06:41.189 align:start position:0%
+first for clawed code, we see a mixed
+bag<00:06:39.680><c> on</c><00:06:39.919><c> the</c><00:06:40.080><c> quality</c><00:06:40.319><c> of</c><00:06:40.479><c> the</c><00:06:40.639><c> solution.</c>
+
+00:06:41.189 --> 00:06:41.199 align:start position:0%
+bag on the quality of the solution.
+ 
+
+00:06:41.199 --> 00:06:44.150 align:start position:0%
+bag on the quality of the solution.
+Though<00:06:41.600><c> all</c><00:06:41.840><c> of</c><00:06:42.000><c> them</c><00:06:42.400><c> were</c><00:06:42.800><c> working</c><00:06:43.680><c> here,</c><00:06:43.919><c> we</c>
+
+00:06:44.150 --> 00:06:44.160 align:start position:0%
+Though all of them were working here, we
+ 
+
+00:06:44.160 --> 00:06:46.629 align:start position:0%
+Though all of them were working here, we
+can<00:06:44.319><c> see</c><00:06:44.639><c> it's</c><00:06:45.120><c> stubbing</c><00:06:45.440><c> out</c><00:06:45.600><c> some</c><00:06:45.840><c> empty</c><00:06:46.160><c> UI</c>
+
+00:06:46.629 --> 00:06:46.639 align:start position:0%
+can see it's stubbing out some empty UI
+ 
+
+00:06:46.639 --> 00:06:48.550 align:start position:0%
+can see it's stubbing out some empty UI
+if<00:06:46.880><c> we</c><00:06:47.039><c> try</c><00:06:47.280><c> to</c><00:06:47.440><c> render</c><00:06:47.680><c> the</c><00:06:47.919><c> keystroke</c><00:06:48.400><c> when</c>
+
+00:06:48.550 --> 00:06:48.560 align:start position:0%
+if we try to render the keystroke when
+ 
+
+00:06:48.560 --> 00:06:50.469 align:start position:0%
+if we try to render the keystroke when
+it's<00:06:48.720><c> not</c><00:06:48.880><c> available.</c><00:06:49.840><c> But</c><00:06:50.000><c> it</c><00:06:50.240><c> would</c><00:06:50.319><c> have</c>
+
+00:06:50.469 --> 00:06:50.479 align:start position:0%
+it's not available. But it would have
+ 
+
+00:06:50.479 --> 00:06:52.390 align:start position:0%
+it's not available. But it would have
+been<00:06:50.639><c> better</c><00:06:50.800><c> to</c><00:06:51.039><c> avoid</c><00:06:51.440><c> calling</c><00:06:51.759><c> this</c><00:06:52.000><c> render</c>
+
+00:06:52.390 --> 00:06:52.400 align:start position:0%
+been better to avoid calling this render
+ 
+
+00:06:52.400 --> 00:06:54.870 align:start position:0%
+been better to avoid calling this render
+function<00:06:52.880><c> entirely.</c><00:06:53.680><c> It</c><00:06:53.919><c> was</c><00:06:54.000><c> able</c><00:06:54.240><c> to</c><00:06:54.560><c> half</c>
+
+00:06:54.870 --> 00:06:54.880 align:start position:0%
+function entirely. It was able to half
+ 
+
+00:06:54.880 --> 00:06:57.110 align:start position:0%
+function entirely. It was able to half
+identify<00:06:55.440><c> that</c><00:06:55.759><c> by</c><00:06:56.080><c> adding</c><00:06:56.400><c> a</c><00:06:56.560><c> check</c><00:06:56.800><c> here</c>
+
+00:06:57.110 --> 00:06:57.120 align:start position:0%
+identify that by adding a check here
+ 
+
+00:06:57.120 --> 00:06:59.589 align:start position:0%
+identify that by adding a check here
+before<00:06:57.440><c> calling</c><00:06:57.759><c> it,</c><00:06:58.080><c> but</c><00:06:58.319><c> it</c><00:06:58.560><c> also</c><00:06:58.880><c> added</c><00:06:59.280><c> the</c>
+
+00:06:59.589 --> 00:06:59.599 align:start position:0%
+before calling it, but it also added the
+ 
+
+00:06:59.599 --> 00:07:01.029 align:start position:0%
+before calling it, but it also added the
+extra<00:06:59.919><c> check</c><00:07:00.240><c> below,</c><00:07:00.639><c> which</c><00:07:00.880><c> was</c>
+
+00:07:01.029 --> 00:07:01.039 align:start position:0%
+extra check below, which was
+ 
+
+00:07:01.039 --> 00:07:03.430 align:start position:0%
+extra check below, which was
+unnecessary.<00:07:02.319><c> Warp</c><00:07:02.720><c> offered</c><00:07:03.120><c> three</c>
+
+00:07:03.430 --> 00:07:03.440 align:start position:0%
+unnecessary. Warp offered three
+ 
+
+00:07:03.440 --> 00:07:04.950 align:start position:0%
+unnecessary. Warp offered three
+different<00:07:03.599><c> solutions</c><00:07:04.000><c> that</c><00:07:04.240><c> all</c><00:07:04.479><c> compiled</c>
+
+00:07:04.950 --> 00:07:04.960 align:start position:0%
+different solutions that all compiled
+ 
+
+00:07:04.960 --> 00:07:07.749 align:start position:0%
+different solutions that all compiled
+and<00:07:05.199><c> ran</c><00:07:05.440><c> as</c><00:07:05.759><c> well.</c><00:07:06.400><c> In</c><00:07:06.639><c> this</c><00:07:06.880><c> example,</c><00:07:07.520><c> it</c>
+
+00:07:07.749 --> 00:07:07.759 align:start position:0%
+and ran as well. In this example, it
+ 
+
+00:07:07.759 --> 00:07:10.070 align:start position:0%
+and ran as well. In this example, it
+decided<00:07:08.240><c> to</c><00:07:08.639><c> return</c><00:07:08.960><c> an</c><00:07:09.199><c> optional</c><00:07:09.599><c> type</c><00:07:09.919><c> from</c>
+
+00:07:10.070 --> 00:07:10.080 align:start position:0%
+decided to return an optional type from
+ 
+
+00:07:10.080 --> 00:07:11.909 align:start position:0%
+decided to return an optional type from
+the<00:07:10.240><c> render</c><00:07:10.639><c> function,</c><00:07:11.120><c> so</c><00:07:11.360><c> we</c><00:07:11.520><c> could</c><00:07:11.680><c> decide</c>
+
+00:07:11.909 --> 00:07:11.919 align:start position:0%
+the render function, so we could decide
+ 
+
+00:07:11.919 --> 00:07:13.830 align:start position:0%
+the render function, so we could decide
+whether<00:07:12.160><c> or</c><00:07:12.319><c> not</c><00:07:12.479><c> to</c><00:07:12.639><c> use</c><00:07:12.800><c> the</c><00:07:13.039><c> result.</c><00:07:13.599><c> This</c>
+
+00:07:13.830 --> 00:07:13.840 align:start position:0%
+whether or not to use the result. This
+ 
+
+00:07:13.840 --> 00:07:16.070 align:start position:0%
+whether or not to use the result. This
+is<00:07:14.000><c> probably</c><00:07:14.240><c> my</c><00:07:14.560><c> favorite</c><00:07:15.039><c> example</c><00:07:15.680><c> out</c><00:07:15.919><c> of</c>
+
+00:07:16.070 --> 00:07:16.080 align:start position:0%
+is probably my favorite example out of
+ 
+
+00:07:16.080 --> 00:07:18.070 align:start position:0%
+is probably my favorite example out of
+all<00:07:16.240><c> of</c><00:07:16.400><c> the</c><00:07:16.560><c> trials,</c><00:07:17.199><c> although</c><00:07:17.599><c> if</c><00:07:17.759><c> I</c><00:07:17.919><c> wrote</c>
+
+00:07:18.070 --> 00:07:18.080 align:start position:0%
+all of the trials, although if I wrote
+ 
+
+00:07:18.080 --> 00:07:19.990 align:start position:0%
+all of the trials, although if I wrote
+it<00:07:18.240><c> myself,</c><00:07:18.560><c> I</c><00:07:18.720><c> would</c><00:07:18.880><c> have</c><00:07:18.960><c> put</c><00:07:19.120><c> an</c><00:07:19.280><c> if</c><00:07:19.599><c> check</c>
+
+00:07:19.990 --> 00:07:20.000 align:start position:0%
+it myself, I would have put an if check
+ 
+
+00:07:20.000 --> 00:07:22.550 align:start position:0%
+it myself, I would have put an if check
+instead.<00:07:20.560><c> Also</c><00:07:21.199><c> note</c><00:07:21.520><c> one</c><00:07:21.759><c> outlier</c><00:07:22.240><c> from</c><00:07:22.400><c> the</c>
+
+00:07:22.550 --> 00:07:22.560 align:start position:0%
+instead. Also note one outlier from the
+ 
+
+00:07:22.560 --> 00:07:24.390 align:start position:0%
+instead. Also note one outlier from the
+warp<00:07:22.880><c> side</c><00:07:23.120><c> that</c><00:07:23.360><c> decided</c><00:07:23.680><c> to</c><00:07:23.840><c> render</c><00:07:24.160><c> an</c>
+
+00:07:24.390 --> 00:07:24.400 align:start position:0%
+warp side that decided to render an
+ 
+
+00:07:24.400 --> 00:07:27.670 align:start position:0%
+warp side that decided to render an
+empty<00:07:24.720><c> flex</c><00:07:25.280><c> row</c><00:07:25.520><c> with</c><00:07:25.919><c> this</c><00:07:26.240><c> margin</c><00:07:26.639><c> value.</c><00:07:27.360><c> I</c>
+
+00:07:27.670 --> 00:07:27.680 align:start position:0%
+empty flex row with this margin value. I
+ 
+
+00:07:27.680 --> 00:07:29.749 align:start position:0%
+empty flex row with this margin value. I
+don't<00:07:27.840><c> even</c><00:07:28.080><c> know</c><00:07:28.240><c> where</c><00:07:28.479><c> it</c><00:07:28.639><c> came</c><00:07:28.880><c> from,</c><00:07:29.440><c> but</c>
+
+00:07:29.749 --> 00:07:29.759 align:start position:0%
+don't even know where it came from, but
+ 
+
+00:07:29.759 --> 00:07:31.909 align:start position:0%
+don't even know where it came from, but
+cla<00:07:30.080><c> isn't</c><00:07:30.319><c> always</c><00:07:30.560><c> predictable.</c><00:07:31.360><c> And</c><00:07:31.520><c> as</c><00:07:31.759><c> a</c>
+
+00:07:31.909 --> 00:07:31.919 align:start position:0%
+cla isn't always predictable. And as a
+ 
+
+00:07:31.919 --> 00:07:33.749 align:start position:0%
+cla isn't always predictable. And as a
+bit<00:07:32.000><c> of</c><00:07:32.080><c> a</c><00:07:32.240><c> wild</c><00:07:32.479><c> card,</c><00:07:32.720><c> I</c><00:07:32.960><c> decided</c><00:07:33.280><c> to</c><00:07:33.440><c> use</c>
+
+00:07:33.749 --> 00:07:33.759 align:start position:0%
+bit of a wild card, I decided to use
+ 
+
+00:07:33.759 --> 00:07:36.870 align:start position:0%
+bit of a wild card, I decided to use
+GPT5<00:07:34.720><c> in</c><00:07:34.960><c> the</c><00:07:35.120><c> warp</c><00:07:35.440><c> coding</c><00:07:35.759><c> agent</c><00:07:36.160><c> as</c><00:07:36.400><c> well.</c>
+
+00:07:36.870 --> 00:07:36.880 align:start position:0%
+GPT5 in the warp coding agent as well.
+ 
+
+00:07:36.880 --> 00:07:38.629 align:start position:0%
+GPT5 in the warp coding agent as well.
+This<00:07:37.039><c> is</c><00:07:37.199><c> obviously</c><00:07:37.599><c> something</c><00:07:37.840><c> you</c><00:07:38.080><c> can't</c><00:07:38.400><c> do</c>
+
+00:07:38.629 --> 00:07:38.639 align:start position:0%
+This is obviously something you can't do
+ 
+
+00:07:38.639 --> 00:07:40.870 align:start position:0%
+This is obviously something you can't do
+with<00:07:38.960><c> Claude</c><00:07:39.280><c> code.</c><00:07:39.840><c> So</c><00:07:40.160><c> maybe</c><00:07:40.400><c> it's</c><00:07:40.560><c> not</c><00:07:40.720><c> a</c>
+
+00:07:40.870 --> 00:07:40.880 align:start position:0%
+with Claude code. So maybe it's not a
+ 
+
+00:07:40.880 --> 00:07:43.510 align:start position:0%
+with Claude code. So maybe it's not a
+direct<00:07:41.280><c> comparison,</c><00:07:42.319><c> but</c><00:07:42.720><c> you</c><00:07:42.960><c> do</c><00:07:43.199><c> have</c>
+
+00:07:43.510 --> 00:07:43.520 align:start position:0%
+direct comparison, but you do have
+ 
+
+00:07:43.520 --> 00:07:45.830 align:start position:0%
+direct comparison, but you do have
+multiple<00:07:44.000><c> models</c><00:07:44.319><c> available</c><00:07:44.800><c> in</c><00:07:45.199><c> warp</c><00:07:45.520><c> code.</c>
+
+00:07:45.830 --> 00:07:45.840 align:start position:0%
+multiple models available in warp code.
+ 
+
+00:07:45.840 --> 00:07:48.070 align:start position:0%
+multiple models available in warp code.
+So<00:07:46.000><c> it</c><00:07:46.160><c> is</c><00:07:46.240><c> worth</c><00:07:46.479><c> trying</c><00:07:46.720><c> out</c><00:07:46.960><c> GPT</c><00:07:47.520><c> or</c><00:07:47.680><c> Gemini</c>
+
+00:07:48.070 --> 00:07:48.080 align:start position:0%
+So it is worth trying out GPT or Gemini
+ 
+
+00:07:48.080 --> 00:07:50.790 align:start position:0%
+So it is worth trying out GPT or Gemini
+to<00:07:48.319><c> see</c><00:07:48.400><c> what</c><00:07:48.639><c> works</c><00:07:49.039><c> in</c><00:07:49.280><c> your</c><00:07:49.520><c> codebase.</c><00:07:50.560><c> And</c>
+
+00:07:50.790 --> 00:07:50.800 align:start position:0%
+to see what works in your codebase. And
+ 
+
+00:07:50.800 --> 00:07:52.710 align:start position:0%
+to see what works in your codebase. And
+in<00:07:51.039><c> this</c><00:07:51.280><c> trial</c><00:07:51.599><c> using</c><00:07:51.840><c> the</c><00:07:52.000><c> low</c><00:07:52.319><c> reasoning</c>
+
+00:07:52.710 --> 00:07:52.720 align:start position:0%
+in this trial using the low reasoning
+ 
+
+00:07:52.720 --> 00:07:54.710 align:start position:0%
+in this trial using the low reasoning
+model,<00:07:53.199><c> I</c><00:07:53.440><c> was</c><00:07:53.520><c> able</c><00:07:53.759><c> to</c><00:07:53.919><c> get</c><00:07:54.160><c> some</c><00:07:54.400><c> really</c>
+
+00:07:54.710 --> 00:07:54.720 align:start position:0%
+model, I was able to get some really
+ 
+
+00:07:54.720 --> 00:07:57.029 align:start position:0%
+model, I was able to get some really
+great<00:07:55.120><c> results.</c><00:07:55.919><c> You</c><00:07:56.080><c> can</c><00:07:56.160><c> see</c><00:07:56.319><c> the</c><00:07:56.560><c> breakdown</c>
+
+00:07:57.029 --> 00:07:57.039 align:start position:0%
+great results. You can see the breakdown
+ 
+
+00:07:57.039 --> 00:07:59.909 align:start position:0%
+great results. You can see the breakdown
+here<00:07:57.680><c> where</c><00:07:58.000><c> GBD5</c><00:07:58.800><c> is</c><00:07:59.039><c> performing</c><00:07:59.360><c> at</c><00:07:59.599><c> a</c><00:07:59.759><c> very</c>
+
+00:07:59.909 --> 00:07:59.919 align:start position:0%
+here where GBD5 is performing at a very
+ 
+
+00:07:59.919 --> 00:08:02.390 align:start position:0%
+here where GBD5 is performing at a very
+consistent<00:08:00.639><c> minute</c><00:08:01.280><c> 12</c><00:08:01.599><c> seconds</c><00:08:01.840><c> to</c><00:08:02.080><c> 20</c>
+
+00:08:02.390 --> 00:08:02.400 align:start position:0%
+consistent minute 12 seconds to 20
+ 
+
+00:08:02.400 --> 00:08:05.189 align:start position:0%
+consistent minute 12 seconds to 20
+seconds<00:08:03.120><c> with</c><00:08:03.599><c> high</c><00:08:03.919><c> quality</c><00:08:04.240><c> output.</c><00:08:04.879><c> All</c><00:08:05.120><c> of</c>
+
+00:08:05.189 --> 00:08:05.199 align:start position:0%
+seconds with high quality output. All of
+ 
+
+00:08:05.199 --> 00:08:06.950 align:start position:0%
+seconds with high quality output. All of
+the<00:08:05.440><c> solutions</c><00:08:05.840><c> compile</c><00:08:06.160><c> and</c><00:08:06.400><c> ran</c><00:08:06.720><c> no</c>
+
+00:08:06.950 --> 00:08:06.960 align:start position:0%
+the solutions compile and ran no
+ 
+
+00:08:06.960 --> 00:08:08.950 align:start position:0%
+the solutions compile and ran no
+problem.<00:08:07.440><c> And</c><00:08:07.599><c> they</c><00:08:07.759><c> gave</c><00:08:08.000><c> a</c><00:08:08.160><c> pretty</c><00:08:08.400><c> similar</c>
+
+00:08:08.950 --> 00:08:08.960 align:start position:0%
+problem. And they gave a pretty similar
+ 
+
+00:08:08.960 --> 00:08:10.869 align:start position:0%
+problem. And they gave a pretty similar
+answer<00:08:09.440><c> every</c><00:08:09.759><c> time.</c><00:08:10.080><c> It</c><00:08:10.240><c> is</c><00:08:10.400><c> stubbing</c><00:08:10.720><c> out</c>
+
+00:08:10.869 --> 00:08:10.879 align:start position:0%
+answer every time. It is stubbing out
+ 
+
+00:08:10.879 --> 00:08:13.430 align:start position:0%
+answer every time. It is stubbing out
+empty<00:08:11.199><c> UI,</c><00:08:11.599><c> which</c><00:08:11.919><c> as</c><00:08:12.080><c> I</c><00:08:12.240><c> noted</c><00:08:12.560><c> earlier</c><00:08:13.120><c> isn't</c>
+
+00:08:13.430 --> 00:08:13.440 align:start position:0%
+empty UI, which as I noted earlier isn't
+ 
+
+00:08:13.440 --> 00:08:15.510 align:start position:0%
+empty UI, which as I noted earlier isn't
+the<00:08:13.599><c> solution</c><00:08:13.919><c> I</c><00:08:14.240><c> would</c><00:08:14.400><c> have</c><00:08:14.560><c> done,</c><00:08:14.960><c> but</c><00:08:15.199><c> it</c>
+
+00:08:15.510 --> 00:08:15.520 align:start position:0%
+the solution I would have done, but it
+ 
+
+00:08:15.520 --> 00:08:18.790 align:start position:0%
+the solution I would have done, but it
+was<00:08:15.919><c> a</c><00:08:16.319><c> concise</c><00:08:16.800><c> and</c><00:08:17.039><c> working</c><00:08:17.440><c> solution.</c><00:08:18.400><c> So,</c>
+
+00:08:18.790 --> 00:08:18.800 align:start position:0%
+was a concise and working solution. So,
+ 
+
+00:08:18.800 --> 00:08:21.029 align:start position:0%
+was a concise and working solution. So,
+conclusion<00:08:19.360><c> time.</c><00:08:19.759><c> Warp</c><00:08:20.160><c> code</c><00:08:20.400><c> or</c><00:08:20.639><c> clawed</c>
+
+00:08:21.029 --> 00:08:21.039 align:start position:0%
+conclusion time. Warp code or clawed
+ 
+
+00:08:21.039 --> 00:08:23.510 align:start position:0%
+conclusion time. Warp code or clawed
+code?<00:08:21.520><c> If</c><00:08:21.759><c> you</c><00:08:22.000><c> know</c><00:08:22.319><c> you</c><00:08:22.560><c> want</c><00:08:22.639><c> to</c><00:08:22.879><c> use</c><00:08:23.120><c> the</c>
+
+00:08:23.510 --> 00:08:23.520 align:start position:0%
+code? If you know you want to use the
+ 
+
+00:08:23.520 --> 00:08:25.909 align:start position:0%
+code? If you know you want to use the
+clawed<00:08:24.000><c> set</c><00:08:24.160><c> of</c><00:08:24.319><c> models</c><00:08:24.960><c> and</c><00:08:25.280><c> you</c><00:08:25.440><c> prefer</c>
+
+00:08:25.909 --> 00:08:25.919 align:start position:0%
+clawed set of models and you prefer
+ 
+
+00:08:25.919 --> 00:08:27.830 align:start position:0%
+clawed set of models and you prefer
+working<00:08:26.319><c> in</c><00:08:26.720><c> a</c><00:08:26.960><c> terminal</c><00:08:27.360><c> environment</c>
+
+00:08:27.830 --> 00:08:27.840 align:start position:0%
+working in a terminal environment
+ 
+
+00:08:27.840 --> 00:08:29.909 align:start position:0%
+working in a terminal environment
+instead<00:08:28.160><c> of</c><00:08:28.240><c> a</c><00:08:28.479><c> UI,</c><00:08:29.199><c> you</c><00:08:29.360><c> might</c><00:08:29.599><c> want</c><00:08:29.759><c> to</c>
+
+00:08:29.909 --> 00:08:29.919 align:start position:0%
+instead of a UI, you might want to
+ 
+
+00:08:29.919 --> 00:08:31.830 align:start position:0%
+instead of a UI, you might want to
+choose<00:08:30.160><c> claw</c><00:08:30.560><c> code.</c><00:08:30.960><c> But</c><00:08:31.120><c> if</c><00:08:31.280><c> you</c><00:08:31.440><c> value</c><00:08:31.680><c> the</c>
+
+00:08:31.830 --> 00:08:31.840 align:start position:0%
+choose claw code. But if you value the
+ 
+
+00:08:31.840 --> 00:08:33.909 align:start position:0%
+choose claw code. But if you value the
+coding<00:08:32.159><c> features</c><00:08:32.399><c> of</c><00:08:32.640><c> Warp,</c><00:08:33.120><c> like</c><00:08:33.360><c> a</c><00:08:33.680><c> file</c>
+
+00:08:33.909 --> 00:08:33.919 align:start position:0%
+coding features of Warp, like a file
+ 
+
+00:08:33.919 --> 00:08:36.389 align:start position:0%
+coding features of Warp, like a file
+tree<00:08:34.240><c> for</c><00:08:34.399><c> context,</c><00:08:35.200><c> code</c><00:08:35.519><c> diffs,</c><00:08:36.159><c> and</c>
+
+00:08:36.389 --> 00:08:36.399 align:start position:0%
+tree for context, code diffs, and
+ 
+
+00:08:36.399 --> 00:08:38.870 align:start position:0%
+tree for context, code diffs, and
+selecting<00:08:36.880><c> different</c><00:08:37.200><c> models</c><00:08:37.519><c> like</c><00:08:37.760><c> GPT5,</c>
+
+00:08:38.870 --> 00:08:38.880 align:start position:0%
+selecting different models like GPT5,
+ 
+
+00:08:38.880 --> 00:08:40.550 align:start position:0%
+selecting different models like GPT5,
+then<00:08:39.200><c> Warp</c><00:08:39.599><c> Code</c><00:08:39.839><c> is</c><00:08:40.000><c> going</c><00:08:40.080><c> to</c><00:08:40.159><c> be</c><00:08:40.240><c> a</c><00:08:40.399><c> good</c>
+
+00:08:40.550 --> 00:08:40.560 align:start position:0%
+then Warp Code is going to be a good
+ 
+
+00:08:40.560 --> 00:08:44.039 align:start position:0%
+then Warp Code is going to be a good
+choice<00:08:40.800><c> for</c><00:08:41.039><c> you.</c>
+
