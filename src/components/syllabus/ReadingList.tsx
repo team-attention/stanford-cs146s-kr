@@ -28,7 +28,6 @@ export default function ReadingList({ readings, weekNumber }: ReadingListProps) 
     <ul className="pl-3 space-y-2">
       {readings.map((reading, i) => {
         const status = getTranslationStatus(reading)
-        const hasKorean = reading.krSlug && status === 'complete'
         const isGitHub = isGitHubSource(reading.url)
 
         return (
@@ -49,12 +48,15 @@ export default function ReadingList({ readings, weekNumber }: ReadingListProps) 
               ) : (
                 // 일반 소스인 경우 한국어/English 링크 표시
                 <>
-                  {hasKorean ? (
+                  {reading.krSlug ? (
                     <Link
                       to={`/readings/week${weekNumber}/${reading.krSlug}`}
                       className="text-kr-accent hover:underline"
                     >
                       한국어
+                      {status !== 'complete' && (
+                        <span className="text-[12px] ml-1 opacity-70">({statusLabel[status as Exclude<TranslationStatus, 'complete'>]})</span>
+                      )}
                     </Link>
                   ) : (
                     <span className="text-text-secondary/60">
