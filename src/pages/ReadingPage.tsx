@@ -387,11 +387,44 @@ function ParentReadingPage({ week, reading }: { week: string; reading: typeof re
           <h2 className="text-xl font-bold text-stanford-red mb-4 pb-2 border-b border-border">
             {reading.contentType === 'youtube' ? '챕터 목록' : '기법 목록'}
           </h2>
-          <div className="grid gap-3">
-            {reading.children?.map((child, i) => (
-              <ChildLink key={i} week={week} parentSlug={reading.slug} child={child} index={i + 1} />
-            ))}
-          </div>
+
+          {reading.categories && reading.categories.length > 0 ? (
+            // 카테고리가 있는 경우: 그룹화하여 표시
+            reading.categories.map((category) => {
+              const categoryChildren = reading.children?.filter(
+                child => child.category === category.id
+              ) || []
+
+              if (categoryChildren.length === 0) return null
+
+              return (
+                <div key={category.id} className="mb-6">
+                  <h3 className="text-lg font-semibold text-text-primary mb-3 flex items-center gap-2">
+                    <span className="w-2 h-2 bg-stanford-red rounded-full"></span>
+                    {category.titleKr} ({category.title})
+                  </h3>
+                  <div className="grid gap-3 pl-4">
+                    {categoryChildren.map((child, i) => (
+                      <ChildLink
+                        key={child.slug}
+                        week={week}
+                        parentSlug={reading.slug}
+                        child={child}
+                        index={i + 1}
+                      />
+                    ))}
+                  </div>
+                </div>
+              )
+            })
+          ) : (
+            // 카테고리가 없는 경우: 기존 방식 (flat list)
+            <div className="grid gap-3">
+              {reading.children?.map((child, i) => (
+                <ChildLink key={i} week={week} parentSlug={reading.slug} child={child} index={i + 1} />
+              ))}
+            </div>
+          )}
         </section>
 
         {/* Key Takeaways */}

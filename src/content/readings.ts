@@ -7,6 +7,7 @@ export interface ChildReading {
   published?: boolean    // 번역 완료 여부
   hasMarkdown?: boolean  // 마크다운 파일 존재 여부 (동적 로딩용)
   cheatsheetImage?: string  // 치트시트 이미지 경로 (예: '/cheatsheets/prompt-engineering-guide/zeroshot.png')
+  category?: string      // 카테고리 ID (예: 'getting-started') - 카테고리별 그룹화용
   // 콘텐츠 필드 (번역 완료 시 추가)
   author?: string
   readTime?: string
@@ -77,6 +78,12 @@ export interface ReadingContent {
   isParent?: boolean        // 부모 페이지 여부 (하위 페이지가 있는 경우)
   children?: ChildReading[] // 하위 페이지 목록
   parentSlug?: string       // 부모 페이지 slug (자식 페이지인 경우)
+  // 카테고리 정의 (부모 페이지에서 자식들을 그룹화할 때 사용)
+  categories?: {
+    id: string        // 'getting-started'
+    title: string     // 'Getting Started'
+    titleKr: string   // '시작하기'
+  }[]
   // YouTube 콘텐츠 전용 필드
   contentType?: 'youtube' | 'article' | 'pdf'
   duration?: string         // 영상 길이 (예: "3:31:05")
