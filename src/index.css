@@ -91,6 +91,15 @@ a.hover\:text-white:hover {
   line-height: 1.75;
 }
 
+/* h3 스타일 - 소제목 강조 */
+.prose h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-stanford-red);
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
 /* 전체 번역 자막 블록 스타일 */
 .transcript-block {
   border-left: 3px solid var(--color-stanford-red);
