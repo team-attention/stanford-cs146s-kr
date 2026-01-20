@@ -25,7 +25,7 @@ export default function TeamGrid() {
       <h2 className="text-[32px] font-semibold text-text-primary mb-6 pb-2 border-b-2 border-stanford-red">
         Team
       </h2>
-      <div className="grid grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {teamMembers.map((member) => (
           <a
             key={member.name}
