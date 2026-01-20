@@ -5584,8 +5584,8 @@ export const readings: Record<string, ReadingContent> = {
                         "content": "LLM 파라미터 수(B)와 비슷한 양의 VRAM 필요 (예: 10억 파라미터 ≈ 1GB VRAM)"
                 },
                 {
-                        "title": "**모델 선택 기준**:",
-                        "content": ""
+                        "title": "모델 선택 기준",
+                        "content": "Thinking(복잡한 문제 해결), Tools(웹 검색 등 도구 호출), Vision(이미지 분석), Embedding(자연어 검색), Quantization(메모리 최적화, 4비트 권장)"
                 },
                 {
                         "title": "애플리케이션 통합",
