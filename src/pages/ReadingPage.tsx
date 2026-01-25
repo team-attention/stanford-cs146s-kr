@@ -143,7 +143,7 @@ export default function ReadingPage() {
     <>
       {/* Header */}
       <header className="bg-stanford-red text-white py-8">
-        <div className="max-w-3xl mx-auto px-6">
+        <div className="max-w-[680px] mx-auto px-6">
           <div className="text-sm mb-4">
             <Link to="/" style={{ color: '#FFD0D0' }} className="hover:text-white hover:underline">
               CS146S Korean Edition
@@ -167,7 +167,7 @@ export default function ReadingPage() {
       </header>
 
       {/* Content */}
-      <main className="max-w-3xl mx-auto px-6 py-8">
+      <main className="max-w-[680px] mx-auto px-6 py-8">
         {/* Source Box */}
         <div className="bg-amber-50 border-l-4 border-amber-400 rounded-r-lg p-4 mb-6">
           <strong>원본 자료: </strong>
@@ -220,32 +220,28 @@ export default function ReadingPage() {
           </div>
         )}
 
-        {/* Sections */}
-        {reading.sections.map((section, i) => (
-          <section key={i} className="mb-8">
-            <h2 className="text-xl font-bold text-stanford-red mb-4 pb-2 border-b border-border">
-              {section.title}
-            </h2>
-            {/* Section Motivation */}
-            {section.motivation && (
-              <p className="text-sm text-violet-600 bg-violet-50/50 px-3 py-2 rounded mb-4 border-l-2 border-violet-300">
-                💡 {section.motivation}
-              </p>
-            )}
-            <p className="text-text-primary leading-relaxed mb-4">
-              {section.content}
-            </p>
-            {section.items && (
-              <ul className="list-disc list-inside space-y-2 text-text-primary">
-                {section.items.map((item, j) => (
-                  <li key={j} className="leading-relaxed">
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            )}
-          </section>
-        ))}
+        {/* Sections - prose-reading 스타일 적용 */}
+        <div className="prose-reading">
+          {reading.sections.map((section, i) => (
+            <section key={i}>
+              <h2>{section.title}</h2>
+              {/* Section Motivation */}
+              {section.motivation && (
+                <p className="!text-sm !text-violet-600 !bg-violet-50/50 !px-3 !py-2 !rounded !mb-4 !border-l-2 !border-violet-300 !font-sans">
+                  💡 {section.motivation}
+                </p>
+              )}
+              <p>{section.content}</p>
+              {section.items && (
+                <ul>
+                  {section.items.map((item, j) => (
+                    <li key={j}><span>{item}</span></li>
+                  ))}
+                </ul>
+              )}
+            </section>
+          ))}
+        </div>
 
         {/* Key Takeaways */}
         {reading.keyTakeaways?.map((takeaway, i) => (
@@ -286,7 +282,7 @@ function ParentReadingPage({ week, reading }: { week: string; reading: typeof re
     <>
       {/* Header */}
       <header className="bg-stanford-red text-white py-8">
-        <div className="max-w-3xl mx-auto px-6">
+        <div className="max-w-[680px] mx-auto px-6">
           <div className="text-sm mb-4">
             <Link to="/" style={{ color: '#FFD0D0' }} className="hover:text-white hover:underline">
               CS146S Korean Edition
@@ -310,7 +306,7 @@ function ParentReadingPage({ week, reading }: { week: string; reading: typeof re
       </header>
 
       {/* Content */}
-      <main className="max-w-3xl mx-auto px-6 py-8">
+      <main className="max-w-[680px] mx-auto px-6 py-8">
         {/* Source Box */}
         <div className="bg-amber-50 border-l-4 border-amber-400 rounded-r-lg p-4 mb-6">
           <strong>원본 자료: </strong>
@@ -355,32 +351,30 @@ function ParentReadingPage({ week, reading }: { week: string; reading: typeof re
           </div>
         )}
 
-        {/* Sections (개요) */}
-        {reading.sections.map((section, i) => (
-          <section key={i} className="mb-8">
-            <h2 className="text-xl font-bold text-stanford-red mb-4 pb-2 border-b border-border">
-              {section.title}
-            </h2>
-            {/* Section Motivation */}
-            {section.motivation && (
-              <p className="text-sm text-violet-600 bg-violet-50/50 px-3 py-2 rounded mb-4 border-l-2 border-violet-300">
-                💡 {section.motivation}
-              </p>
-            )}
-            <p className="text-text-primary leading-relaxed mb-4">
-              {section.content}
-            </p>
-            {section.items && (
-              <ul className="list-disc list-inside space-y-2 text-text-primary">
-                {section.items.map((item, j) => (
-                  <li key={j} className="leading-relaxed">
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            )}
-          </section>
-        ))}
+        {/* Sections (개요) - prose-reading 스타일 적용 */}
+        {reading.sections.length > 0 && (
+          <div className="prose-reading">
+            {reading.sections.map((section, i) => (
+              <section key={i}>
+                <h2>{section.title}</h2>
+                {/* Section Motivation */}
+                {section.motivation && (
+                  <p className="!text-sm !text-violet-600 !bg-violet-50/50 !px-3 !py-2 !rounded !mb-4 !border-l-2 !border-violet-300 !font-sans">
+                    💡 {section.motivation}
+                  </p>
+                )}
+                <p>{section.content}</p>
+                {section.items && (
+                  <ul>
+                    {section.items.map((item, j) => (
+                      <li key={j}><span>{item}</span></li>
+                    ))}
+                  </ul>
+                )}
+              </section>
+            ))}
+          </div>
+        )}
 
         {/* Children List */}
         <section className="mb-8">
@@ -599,27 +593,17 @@ function ChildReadingPage({
                   <p className="text-text-secondary">콘텐츠를 로딩 중입니다...</p>
                 </div>
               ) : markdown ? (
-                <article className="prose prose-lg max-w-none prose-headings:text-stanford-red prose-a:text-stanford-red prose-strong:text-text-primary">
+                <article className="prose-reading">
                   <ReactMarkdown
                     components={{
-                      h1: ({ children }) => (
-                        <h1 className="text-2xl font-bold text-stanford-red mt-6 mb-4">
-                          {children}
-                        </h1>
-                      ),
-                      h2: ({ children }) => (
-                        <h2 className="text-xl font-bold text-stanford-red mt-8 mb-4 pb-2 border-b-2 border-stanford-red/20">
-                          {children}
-                        </h2>
-                      ),
-                      hr: () => (
-                        <hr className="my-6 border-t-2 border-stanford-red/10" />
-                      ),
+                      h1: ({ children }) => <h1>{children}</h1>,
+                      h2: ({ children }) => <h2>{children}</h2>,
+                      h3: ({ children }) => <h3>{children}</h3>,
+                      hr: () => <hr />,
                       a: ({ href, children }) => {
                         const text = extractText(children)
                         // 영상 바로가기 링크를 배지 형태로 변환
                         if (text.includes('영상 바로가기') && href?.includes('youtube.com')) {
-                          // 타임스탬프 추출 (예: "영상 바로가기 (7:47)" -> "7:47")
                           const match = text.match(/\(([0-9:]+)\)/)
                           const timestamp = match ? match[1] : ''
                           return (
@@ -627,7 +611,7 @@ function ChildReadingPage({
                               href={href}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="inline-flex items-center gap-2 px-3 py-1.5 bg-stanford-red !text-white rounded-full text-sm font-medium hover:bg-stanford-red-dark transition-colors no-underline"
+                              className="inline-flex items-center gap-2 px-3 py-1.5 bg-stanford-red !text-white rounded-full text-sm font-medium hover:bg-stanford-red-dark transition-colors no-underline font-sans"
                             >
                               <span>🎬</span>
                               <span>{timestamp}</span>
@@ -635,7 +619,7 @@ function ChildReadingPage({
                           )
                         }
                         return (
-                          <a href={href} target="_blank" rel="noopener noreferrer" className="text-stanford-red hover:underline">
+                          <a href={href} target="_blank" rel="noopener noreferrer">
                             {children}
                           </a>
                         )
@@ -644,11 +628,9 @@ function ChildReadingPage({
                         const text = extractText(children)
                         // [8:00] 또는 [1:23:45] 형태의 타임스탬프로 시작하는 단락 감지
                         const timestampMatch = text.match(/^\[(\d{1,2}:\d{2}(?::\d{2})?)\]/)
-
                         if (timestampMatch) {
                           const timestamp = timestampMatch[1]
                           const content = text.substring(timestampMatch[0].length).trim()
-
                           return (
                             <div className="transcript-block">
                               <span className="transcript-timestamp">{timestamp}</span>
@@ -656,21 +638,11 @@ function ChildReadingPage({
                             </div>
                           )
                         }
-
-                        return <p className="mb-4 leading-relaxed text-text-primary">{children}</p>
+                        return <p>{children}</p>
                       },
-                      strong: ({ children }) => (
-                        <strong className="font-semibold text-stanford-red">{children}</strong>
-                      ),
-                      ul: ({ children }) => (
-                        <ul className="space-y-2 my-4 list-none pl-0">{children}</ul>
-                      ),
-                      li: ({ children }) => (
-                        <li className="flex gap-2 text-text-primary pl-0">
-                          <span className="text-stanford-red flex-shrink-0">•</span>
-                          <span>{children}</span>
-                        </li>
-                      ),
+                      strong: ({ children }) => <strong>{children}</strong>,
+                      ul: ({ children }) => <ul>{children}</ul>,
+                      li: ({ children }) => <li><span>{children}</span></li>,
                     }}
                   >
                     {markdown}
@@ -711,32 +683,28 @@ function ChildReadingPage({
                   </div>
                 )}
 
-                {/* Sections */}
-                {child.sections.map((section, i) => (
-                  <section key={i} className="mb-8">
-                    <h2 className="text-xl font-bold text-stanford-red mb-4 pb-2 border-b border-border">
-                      {section.title}
-                    </h2>
-                    {/* Section Motivation */}
-                    {section.motivation && (
-                      <p className="text-sm text-violet-600 bg-violet-50/50 px-3 py-2 rounded mb-4 border-l-2 border-violet-300">
-                        💡 {section.motivation}
-                      </p>
-                    )}
-                    <p className="text-text-primary leading-relaxed mb-4">
-                      {section.content}
-                    </p>
-                    {section.items && (
-                      <ul className="list-disc list-inside space-y-2 text-text-primary">
-                        {section.items.map((item, j) => (
-                          <li key={j} className="leading-relaxed">
-                            {item}
-                          </li>
-                        ))}
-                      </ul>
-                    )}
-                  </section>
-                ))}
+                {/* Sections - prose-reading 스타일 적용 */}
+                <div className="prose-reading">
+                  {child.sections.map((section, i) => (
+                    <section key={i}>
+                      <h2>{section.title}</h2>
+                      {/* Section Motivation */}
+                      {section.motivation && (
+                        <p className="!text-sm !text-violet-600 !bg-violet-50/50 !px-3 !py-2 !rounded !mb-4 !border-l-2 !border-violet-300 !font-sans">
+                          💡 {section.motivation}
+                        </p>
+                      )}
+                      <p>{section.content}</p>
+                      {section.items && (
+                        <ul>
+                          {section.items.map((item, j) => (
+                            <li key={j}><span>{item}</span></li>
+                          ))}
+                        </ul>
+                      )}
+                    </section>
+                  ))}
+                </div>
 
                 {/* Key Takeaways */}
                 {child.keyTakeaways?.map((takeaway, i) => (

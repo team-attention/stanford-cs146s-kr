@@ -24,6 +24,11 @@
 
   /* Font - Inter for English, Noto Sans KR for Korean */
   --font-sans: Inter, -apple-system, system-ui, "Segoe UI", "Noto Sans KR", sans-serif;
+  --font-serif: "Noto Serif KR", Georgia, "Times New Roman", serif;
+
+  /* Reading 전용 색상 */
+  --color-text-reading: #292929;
+  --color-text-reading-secondary: #6B6B6B;
 }
 
 body {
@@ -127,4 +132,135 @@ a.hover\:text-white:hover {
   color: var(--color-text-primary);
   line-height: 1.75;
   margin: 0;
+}
+
+/* ========================================
+   Reading Page Typography - Medium Style
+   ======================================== */
+
+.prose-reading {
+  font-family: var(--font-serif);
+  font-size: 1.125rem;          /* 18px */
+  line-height: 1.78;
+  color: var(--color-text-reading);
+  max-width: 680px;
+  margin: 0 auto;
+  word-break: keep-all;         /* 한글 단어 분리 방지 */
+}
+
+@media (min-width: 768px) {
+  .prose-reading {
+    font-size: 1.25rem;         /* 20px on desktop */
+    line-height: 1.82;
+  }
+}
+
+/* 제목 - 산세리프로 대비 효과 */
+.prose-reading h1,
+.prose-reading h2,
+.prose-reading h3 {
+  font-family: var(--font-sans);
+  color: var(--color-stanford-red);
+  line-height: 1.35;
+  margin-top: 2em;
+  margin-bottom: 0.75em;
+  word-break: keep-all;
+}
+
+.prose-reading h1 {
+  font-size: 1.875rem;          /* 30px */
+  font-weight: 700;
+}
+
+.prose-reading h2 {
+  font-size: 1.5rem;            /* 24px */
+  font-weight: 600;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid rgba(139, 0, 0, 0.15);
+}
+
+.prose-reading h3 {
+  font-size: 1.25rem;           /* 20px */
+  font-weight: 600;
+}
+
+/* 문단 */
+.prose-reading p {
+  margin-bottom: 1.5em;
+}
+
+/* 목록 */
+.prose-reading ul,
+.prose-reading ol {
+  margin: 1.5em 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.prose-reading li {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.75em;
+  line-height: 1.7;
+}
+
+.prose-reading li::before {
+  content: "•";
+  color: var(--color-stanford-red);
+  flex-shrink: 0;
+  font-weight: bold;
+}
+
+/* 링크 */
+.prose-reading a {
+  color: var(--color-stanford-red);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+
+.prose-reading a:hover {
+  text-decoration-thickness: 2px;
+}
+
+/* 강조 */
+.prose-reading strong {
+  font-weight: 600;
+  color: var(--color-stanford-red);
+}
+
+/* 인용 */
+.prose-reading blockquote {
+  font-style: italic;
+  border-left: 3px solid var(--color-stanford-red);
+  padding-left: 1.25em;
+  margin: 2em 0;
+  color: var(--color-text-reading-secondary);
+}
+
+/* 구분선 */
+.prose-reading hr {
+  margin: 2.5em 0;
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(139, 0, 0, 0.2), transparent);
+}
+
+/* 코드 */
+.prose-reading code {
+  font-family: "SF Mono", Monaco, "Cascadia Code", monospace;
+  font-size: 0.85em;
+  background: #f5f5f5;
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+}
+
+/* 트랜스크립트 블록 - prose-reading 내부 */
+.prose-reading .transcript-block {
+  font-size: 1rem;              /* 본문보다 약간 작게 */
+}
+
+.prose-reading .transcript-text {
+  font-family: var(--font-serif);
+  line-height: 1.7;
 }
