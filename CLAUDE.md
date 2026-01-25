@@ -88,6 +88,36 @@ pnpm preview  # 빌드 결과 미리보기
   - `--color-stanford-red`: #8B0000 (Stanford 공식 색상)
   - `--color-kr-accent`: #0066CC (한국어 강조)
 
+### Reading 페이지 타이포그래피
+
+Reading 페이지는 Medium 스타일 타이포그래피를 적용합니다.
+
+**CSS 클래스**: `.prose-reading` (src/index.css)
+
+**핵심 특징**:
+- 본문: Noto Serif KR (세리프), 18-20px, line-height 1.78-1.82
+- 제목: Inter (산세리프) - 본문과 대비 효과
+- 최대 너비: 680px (65-75자, 최적 가독성)
+- 문단 간격: 1.5em
+
+**CSS 변수**:
+- `--font-serif`: Noto Serif KR 폰트 스택
+- `--color-text-reading`: #292929 (부드러운 검정)
+- `--color-text-reading-secondary`: #6B6B6B (보조 텍스트)
+
+**사용 예시**:
+```tsx
+<div className="prose-reading">
+  <h2>제목</h2>
+  <p>본문 내용...</p>
+</div>
+```
+
+**특수 요소 오버라이드**: Tailwind `!` 접두사 사용
+```tsx
+<p className="!text-sm !font-sans">특수 요소</p>
+```
+
 ### 콘텐츠 추가
 
 - 새 Reading 번역: `src/content/readings.ts`에 추가

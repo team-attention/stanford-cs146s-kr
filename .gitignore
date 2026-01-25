@@ -29,5 +29,8 @@ _legacy/
 .env
 .env*.local
 
+# Playwright MCP
+.playwright-mcp/
+
 # YouTube media files (large files)
 docs/**/media/*.mp3
