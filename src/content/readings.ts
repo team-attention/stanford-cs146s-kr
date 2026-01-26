@@ -3125,7 +3125,7 @@ export const readings: Record<string, ReadingContent> = {
     readTime: '약 11분',
     sourceUrl: 'https://semgrep.dev/blog/2025/finding-vulnerabilities-in-modern-web-apps-using-claude-code-and-openai-codex/',
     sourceTitle: 'Semgrep Blog',
-    published: false,
+    published: true,
     sections: [
       {
         title: 'TL;DR',
@@ -3217,7 +3217,7 @@ export const readings: Record<string, ReadingContent> = {
     readTime: '약 8분',
     sourceUrl: 'https://embracethered.com/blog/posts/2025/github-copilot-remote-code-execution-via-prompt-injection/',
     sourceTitle: 'Embrace The Red Blog',
-    published: false,
+    published: true,
     sections: [
       {
         title: '개요',
@@ -3369,7 +3369,7 @@ export const readings: Record<string, ReadingContent> = {
     readTime: '약 15분',
     sourceUrl: 'https://unit42.paloaltonetworks.com/agentic-ai-threats/',
     sourceTitle: 'Palo Alto Networks Unit 42',
-    published: false,
+    published: true,
     sections: [
       {
         title: '핵심 요약',
