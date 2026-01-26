@@ -231,11 +231,11 @@ export default function ReadingPage() {
                   💡 {section.motivation}
                 </p>
               )}
-              <p>{section.content}</p>
+              <ReactMarkdown components={{ p: ({ children }) => <p>{children}</p> }}>{section.content}</ReactMarkdown>
               {section.items && (
                 <ul>
                   {section.items.map((item, j) => (
-                    <li key={j}><span>{item}</span></li>
+                    <li key={j}><span><ReactMarkdown components={{ p: ({ children }) => <>{children}</> }}>{item}</ReactMarkdown></span></li>
                   ))}
                 </ul>
               )}
@@ -363,11 +363,11 @@ function ParentReadingPage({ week, reading }: { week: string; reading: typeof re
                     💡 {section.motivation}
                   </p>
                 )}
-                <p>{section.content}</p>
+                <ReactMarkdown components={{ p: ({ children }) => <p>{children}</p> }}>{section.content}</ReactMarkdown>
                 {section.items && (
                   <ul>
                     {section.items.map((item, j) => (
-                      <li key={j}><span>{item}</span></li>
+                      <li key={j}><span><ReactMarkdown components={{ p: ({ children }) => <>{children}</> }}>{item}</ReactMarkdown></span></li>
                     ))}
                   </ul>
                 )}
